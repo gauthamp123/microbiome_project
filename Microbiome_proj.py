@@ -14,15 +14,12 @@ print('---------')
 print(df.columns)
 print('---------')
 
-# construct filtered_df with only relevant data points for each protein matche
 filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_start', 'S_end', 
 'Query_Coverage', 'Hit_Coverage', 'Query_Pfam']]
-#print(filtered_df)
 
 
-# for index, row in filtered_df.iterrows():
-#     #print(row['#Query_id'])
 
+#This is a helper function for finding common pFam domains and can be used to check if a value is a float
 def isfloat(num):
     try:
         float(num)
@@ -30,7 +27,7 @@ def isfloat(num):
     except ValueError:
         return False
 
-#print(filtered_df[2])
+#This function checks to see if there is potential for fusion if the alignment coordinates have overlap
 def find_fusion(row):
     q_start = int(row[9])
     q_end = int(row[10])
@@ -56,26 +53,14 @@ def PfamDoms(row):
     q_pfam = row[20].split(',')
     s_pfam = row[21].split(',')
 
-    print('q: ')
-    print(q_pfam)
-
-    print('s: ')
-    print(s_pfam)
 
     for q_domain in q_pfam:
         for s_domain in s_pfam:
             if q_domain == s_domain:
                 doms.append(q_domain)
-    #print(common_doms)
     common_doms = [*set(doms)]
-    print('res')
-    print(common_doms)
     return common_doms
 
-
-for index, row in df.iterrows():
-    #print(PfamDoms(row))
-    PfamDoms(row)
 
 
 '''
