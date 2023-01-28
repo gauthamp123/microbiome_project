@@ -5,6 +5,7 @@
 
 import pandas as pd
 import numpy as np
+import os
 
 # construct df with all data from results.tsv
 df = pd.read_table('results.tsv')
@@ -32,12 +33,27 @@ tcdbSystems = {}
 
 # TODO
 
+input = open("tcdb.faa")
+tcdbSystems = {}
+
 #This function will fill the dictionary tcdbSystems with data.
 def parseTCDBcontent():
-     return True
+    for line in input:
+        if(">" in line):
+            first = line.split("-")[0][1:]
+            if(first in tcdbSystems.keys()):
+                tcdbSystems.get(first).append(line.strip(">\n"))
+            else:
+                tcdbSystems[first] = [line.strip(">\n")]
 
+# This function will check the tcdbSystems dictionary for the tcid given 
 def isSingleComp(row):
-    return True
+    tcid = row["Hit_tcid"]
+    tc_arr = tcdbSystems.get(tcid)
+    if(len(tc_arr) == 1):
+        return True
+    else:
+        return False
 
 def qCoverage(row):
     return 0
@@ -51,6 +67,11 @@ def eVal(row):
 def PfamDoms(row):
     common_doms = ""
     return common_doms
+
+parseTCDBcontent()
+
+for index, row in df.iterrows():
+    print(isSingleComp(row))
 
 '''
 for index, row in df.iterrows():
