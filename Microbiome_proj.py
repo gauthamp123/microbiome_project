@@ -15,7 +15,7 @@ print(df.columns)
 print('---------')
 
 filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_start', 'S_end', 
-'Query_Coverage', 'Hit_Coverage', 'Query_Pfam']]
+'Query_Coverage', 'Hit_Coverage', 'Query_Pfam', 'Subject_Pfam']]
 
 
 
@@ -29,11 +29,11 @@ def isfloat(num):
 
 #This function checks to see if there is potential for fusion if the alignment coordinates have overlap
 def find_fusion(row):
-    q_start = int(row[9])
-    q_end = int(row[10])
+    q_start = int(row[3])
+    q_end = int(row[4])
 
-    s_start = int(row[11])
-    s_end = int(row[12])
+    s_start = int(row[5])
+    s_end = int(row[6])
 
     if q_start < s_start and q_end > s_end:
         return True
@@ -45,13 +45,13 @@ def find_fusion(row):
 # For each query this function will return common pFam domains between the query and the subject
 def PfamDoms(row):
     doms = []
-    if isfloat(row[20]):
+    if isfloat(row[10]):
         return doms
-    elif isfloat(row[21]):
+    elif isfloat(row[11]):
         return doms
         
-    q_pfam = row[20].split(',')
-    s_pfam = row[21].split(',')
+    q_pfam = row[10].split(',')
+    s_pfam = row[11].split(',')
 
 
     for q_domain in q_pfam:
