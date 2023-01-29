@@ -20,5 +20,13 @@ filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_s
 
 for index, row in filtered_df.iterrows():
     print(row['#Query_id'])
+    
+def qCoverage(row):
+    return float(row[7])
 
+def hCoverage(row):
+    return float(row[8])
+
+def eVal(row):
+    return float(row[2]))
 
