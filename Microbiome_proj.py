@@ -41,7 +41,7 @@ def parseTCDBcontent():
     for line in input:
         if(">" in line):
             first = line.split("-")[0][1:]
-            if(first in tcdbSystems.keys()):
+            if(first in tcdbSystems):
                 tcdbSystems.get(first).append(line.strip(">\n"))
             else:
                 tcdbSystems[first] = [line.strip(">\n")]
