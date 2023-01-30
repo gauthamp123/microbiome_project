@@ -56,13 +56,13 @@ def isSingleComp(row):
         return False
 
 def qCoverage(row):
-    return 0
+    return row["Query_Coverage"]
 
 def hCoverage(row):
-    return 0
+    return row["Hit_Coverage"]
 
 def eVal(row):
-    return 0
+    return row["e-value"]
 
 def PfamDoms(row):
     common_doms = ""
@@ -72,7 +72,7 @@ parseTCDBcontent()
 
 for index, row in df.iterrows():
     print(isSingleComp(row))
-
+    
 '''
 for index, row in df.iterrows():
     if(isSingleComp(row)):
