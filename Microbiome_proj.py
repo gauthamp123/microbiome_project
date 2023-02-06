@@ -70,17 +70,45 @@ def PfamDoms(row):
 
 parseTCDBcontent()
 
-for index, row in df.iterrows():
-    print(isSingleComp(row))
-    
+##for index, row in df.iterrows():
+    ##print(isSingleComp(row))
+'''    
+GREEN (Best hits)
+   a) High coverage (e.g., >=75% in both proteins; set as a threshold variable)
+   b) low E-value (e.g., <= 1e-10)
+   c) shared Pfam domains
+   d) If the value is larger (e.g., > 1e-10) but there is reasonable coverage (e.g. > 50%) in both proteins AND they have shared domains.
+
+   YELLOW (not so sure)
+   a)lower coverage (e.g. <75% in both proteins)
+   b)Ok value (< 1e-3)
+   c)there are no shared domains
+   d) if one protein has very low coverage (e.g., ~10%) and there is other protein in the genome matching other region of the TCDB protein, select this proteins as potential fusions. 
+   e) 2 or more proteins in TCDB can fuse to form a single component system in your reference genome.
+      ** d and e required the coordinates that Clark is going to add to the file.
+
+
+   RED (no good)
+   a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
 '''
 for index, row in df.iterrows():
     if(isSingleComp(row)):
+        if(eVal(row) <= float("1e-10") and qCoverage(row) >= 75 and hCoverage(row) >= 75):
+            ##green_df = green_df.append([row])
+            green_df = pd.concat([green_df,row.to_frame().T])
+        elif(eVal(row) <= float("1e-3")and qCoverage(row) <75 and hCoverage(row) <75):
+            ##yellow_df = yellow_df.append([row])
+            yellow_df = pd.concat([yellow_df,row.to_frame().T])
+        elif(qCoverage(row) <=10 and hCoverage(row) <=10):
+            ##red_df = red_df.append([row])
+            red_df = pd.concat([red_df,row.to_frame().T])
+        
+    '''
         if(eVal(row) <= -10 and pfamDoms().size != 0):
             green_df = green_df.append([row])
         elif(eVal(row) < -3 and qCoverage() >= 90 and hCoverage >= 90):
             yellow_df = yellow_df.append([row])
         else:
             red_df = red_df.append([row])
-
-'''
+    '''
+print(green_df)
