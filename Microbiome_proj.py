@@ -2,7 +2,6 @@
 # coding: utf-8
 
 # Take the results.tsv file and parse it
-
 import pandas as pd
 import numpy as np
 import os
@@ -20,18 +19,11 @@ green_df = green_df.iloc[0:0]
 yellow_df = green_df.copy()
 red_df = green_df.copy()
 
-# construct filtered_df with only relevant data points for each protein matche
-filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_start', 'S_end', 
-'Query_Coverage', 'Hit_Coverage', 'Query_Pfam']]
-#print(filtered_df)
-
 #Example content:
 #  1.A.1.1.1 =>  ["1.A.1.1.1-P0A334"],
 #  3.A.1.1.1 =>  ["3.A.1.1.1-P02916", ""3.A.1.1.1-XXXXX", "3.A.1.1.1-YYYYYY", "3.A.1.1.1-ZZZZZZZZZ"],
 #  ....
 tcdbSystems = {}
-
-# TODO
 
 input = open("tcdb.faa")
 tcdbSystems = {}
