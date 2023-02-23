@@ -12,9 +12,15 @@ def genDict(dict, input):
         tcid = row["Hit_tcid"] + "-" + row["Hit_xid"]
         if tcid in dict:
             dict.get(tcid).append(new_entry)
-            print("Appending : " + tcid)
+            #print("Appending : " + tcid)
         else:
             dict[tcid] = [new_entry]
-            print("New entry")
+            #print("New entry")
 
 genDict(genomeFusions, df)
+
+#sorts the genomeFusions dictionary by the genome start index
+for id in genomeFusions:
+    sorted(genomeFusions[id], key=lambda x: x['sstart'])
+
+#print(genomeFusions)
