@@ -4,10 +4,14 @@ import os
 
 df = pd.read_table('results.tsv')
 
-genomeFusions = {}
+geneFusions = {}
 
-def genDict(dict, input):
-    for index, row in input.iterrows():
+# compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
+# (if an individual candidate overlaps with all others with greater than thresh, reject)
+MAX_OVERLAP = 20
+
+def genDict(dict, input_df):
+    for index, row in input_df.iterrows():
         new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"]}
         tcid = row["Hit_tcid"] + "-" + row["Hit_xid"]
         if tcid in dict:
@@ -17,10 +21,19 @@ def genDict(dict, input):
             dict[tcid] = [new_entry]
             #print("New entry")
 
-genDict(genomeFusions, df)
+def isFusion(sortedArr):
+    for i in range(len(sortedArr) - 1):
+        
+
+#genDict(geneFusions, df)
+
 
 #sorts the genomeFusions dictionary by the genome start index
-for id in genomeFusions:
-    sorted(genomeFusions[id], key=lambda x: x['sstart'])
+for id in geneFusions:
+    if(len(geneFusions[id]) == 1):
+        continue
+    sortedGeneArr = sorted(geneFusions[id], key=lambda x: x['sstart'])
+    print(sortedGeneArr)
+    x = input()
 
 #print(genomeFusions)
