@@ -9,6 +9,8 @@ geneFusions = {}
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
 MAX_OVERLAP = 20
+MAX_THRESHOLD = 80
+MIN_THRESHOLD = 10
 
 def genDict(dict, input_df):
     for index, row in input_df.iterrows():
@@ -22,10 +24,44 @@ def genDict(dict, input_df):
             #print("New entry")
 
 def isFusion(sortedArr):
-    for i in range(len(sortedArr) - 1):
+    fus_list = []
+    overlap_length = 0
+
+    
+    for i in range(len(sortedArr)):
+        if sortedArr[i]['qcov'] > MAX_THRESHOLD:
+            return []
+        else:
+            inv_fus_count = 0
+            for j in range(i+1, len(sortedArr)):
+                # This looks for proteins that have too much overlap with the current protein
+                if sortedArr[i]['send'] >= sortedArr[j]['send']:
+                    inv_fus_count += 1
+                elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[j]['send'] - sortedArr[i]['sstart'])) * 100 < MAX_OVERLAP:
+                    inv_fus_count += 1
+                elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[i]['sstart'] - sortedArr[j]['send'])) * 100 == 0:
+                    i += 1
+                else:
+                    overlap_length += abs(sortedArr[i]['send'] - sortedArr[j]['sstart'])
+            if inv_fus_count < len(sortedArr) - i:
+                fus_list.append(sortedArr[i])
+
+    tot_length = 0
+
+    for i in range(len(fus_list)):
+        tot_length += (fus_list[i]['send'] - fus_list[i]['sstart'])
+    tot_length -= overlap_length
+    
+    if tot_length > MIN_THRESHOLD:
+        return fus_list
+    else:
+        return []
+    
+
+    
         
 
-#genDict(geneFusions, df)
+genDict(geneFusions, df)
 
 
 #sorts the genomeFusions dictionary by the genome start index
@@ -33,7 +69,10 @@ for id in geneFusions:
     if(len(geneFusions[id]) == 1):
         continue
     sortedGeneArr = sorted(geneFusions[id], key=lambda x: x['sstart'])
-    print(sortedGeneArr)
-    x = input()
+    #print(sortedGeneArr)
+    #x = input()
+    if len(isFusion(sortedGeneArr)) != 0:
+        print(isFusion(sortedGeneArr))
+    #y = input()
 
 #print(genomeFusions)
