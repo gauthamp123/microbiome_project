@@ -5,6 +5,8 @@ import os
 df = pd.read_table('results.tsv')
 
 geneFusions = {}
+test_fus = {'query': 'YP_501170.1', 'qcov': 50, 'sstart': 1, 'send': 10, 'scov': 99.7}, {'query': 'YP_500726.1', 'qcov': 77.5, 'sstart': 6, 'send': 20, 'scov': 87.1}
+
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
@@ -59,7 +61,8 @@ def isFusion(sortedArr):
     
 
     
-        
+print(isFusion(test_fus))
+x = input()        
 
 genDict(geneFusions, df)
 
@@ -69,8 +72,8 @@ for id in geneFusions:
     if(len(geneFusions[id]) == 1):
         continue
     sortedGeneArr = sorted(geneFusions[id], key=lambda x: x['sstart'])
-    #print(sortedGeneArr)
-    #x = input()
+    # print(sortedGeneArr)
+    # x = input()
     if len(isFusion(sortedGeneArr)) != 0:
         print(isFusion(sortedGeneArr))
     #y = input()
