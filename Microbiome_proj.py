@@ -55,6 +55,49 @@ def isSingleComp(row):
     else:
         return False
 
+def FindMembrance(row,df):
+    tcid = row["Hit_tcid"]
+    tc_arr = tcdbSystems.get(tcid)
+    if(len(tc_arr) == 1):
+        return [row["Hit_xid"]]
+    elif(len(tc_arr) == 0):
+        return []
+    elif(len(tc_arr) > 1):
+        ##print(tc_arr)
+        tc_filter_arr= [arr.split("-")[1] for arr in tc_arr]
+        tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
+        final_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
+        max_value = final_df['Hit_n_TMS'].max()
+        result = final_df.loc[final_df['Hit_n_TMS'] == max_value]
+        ##print(row["Hit_xid"],tc_arr)
+        ##pd.set_option('display.max_colwidth', None)
+        
+        Final_result= result['Hit_xid'].drop_duplicates().tolist()
+        print(Final_result)
+        return(Final_result)
+        ##if(len(Final_result)==3):
+            ##print(Final_result)
+            ##print(tc_arr)
+            ##print(tc_filter_arr)
+        
+      
+    
+def isMultiComp(row,df):
+    tcid = row["Hit_tcid"]
+    tc_arr = tcdbSystems.get(tcid)
+    if(len(tc_arr) >1):
+        tc_filter_arr= [arr.split("-")[1] for arr in tc_arr]
+        tc_filter_arr.remove(row["Hit_xid"])
+        for arr in tc_filter_arr:
+            if(len(df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}' "))) ==0 :
+                ##print(arr,row["Hit_xid"],tc_arr)
+                return False
+
+        ##print(row["Hit_xid"],tc_arr)
+        return True   
+    else:
+        return False
+
 def qCoverage(row):
     return row["Query_Coverage"]
 
@@ -91,7 +134,10 @@ GREEN (Best hits)
    RED (no good)
    a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
 '''
+
 for index, row in df.iterrows():
+    ##isMultiComp(row,df)
+    FindMembrance(row,df)
     if(isSingleComp(row)):
         if(eVal(row) <= float("1e-10") and qCoverage(row) >= 75 and hCoverage(row) >= 75):
             ##green_df = green_df.append([row])
@@ -111,4 +157,4 @@ for index, row in df.iterrows():
         else:
             red_df = red_df.append([row])
     '''
-print(green_df)
+###print(green_df)
