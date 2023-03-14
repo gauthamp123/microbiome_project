@@ -55,9 +55,10 @@ def isSingleComp(row):
     else:
         return False
 
-def FindMembrance(row,df):
+def FindMembraneProtein(row,df):
     tcid = row["Hit_tcid"]
     tc_arr = tcdbSystems.get(tcid)
+    tc_arr= list(set(tc_arr))
     if(len(tc_arr) == 1):
         return [row["Hit_xid"]]
     elif(len(tc_arr) == 0):
@@ -68,7 +69,7 @@ def FindMembrance(row,df):
         tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
         final_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
         max_value = final_df['Hit_n_TMS'].max()
-        result = final_df.loc[final_df['Hit_n_TMS'] == max_value]
+        result = final_df.loc[final_df['Hit_n_TMS'] >=3]
         ##print(row["Hit_xid"],tc_arr)
         ##pd.set_option('display.max_colwidth', None)
         
@@ -81,7 +82,7 @@ def FindMembrance(row,df):
             ##print(tc_filter_arr)
         
       
-    
+'''    
 def isMultiComp(row,df):
     tcid = row["Hit_tcid"]
     tc_arr = tcdbSystems.get(tcid)
@@ -97,6 +98,66 @@ def isMultiComp(row,df):
         return True   
     else:
         return False
+'''
+
+def isMultiComp(row,df):
+    ##result=FindMembraneProtein(row,df)
+    tcid = row["Hit_tcid"]
+    tc_arr = tcdbSystems.get(tcid)
+    tc_arr = list(set(tc_arr))
+    if(len(tc_arr) >1):
+        tc_filter_arr = [arr.split("-")[1] for arr in tc_arr]
+        mutiComp_arr=[]
+        mutiComp_arr_xid=[]
+        for arr in tc_filter_arr:
+            query_result_df=df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}' ")
+            query_result_list=query_result_df.values.tolist()
+            query_result_xid=query_result_df["Hit_xid"].tolist()
+            if(len(query_result_list)) !=0 :
+                mutiComp_arr += query_result_list
+                mutiComp_arr_xid += query_result_xid
+        ##print(tc_filter_arr,query_result_xid)
+        if set(tc_filter_arr) == set(mutiComp_arr_xid):
+            ##print("green")
+            ##print(tc_filter_arr,mutiComp_arr_xid)
+            return("green", mutiComp_arr)
+        elif(len(mutiComp_arr)==0):
+            return("red",mutiComp_arr)
+        else:
+            tc_filter_arr_list= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
+            mutiComp_arr_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr_list]).drop_duplicates()
+            if mutiComp_arr_df.loc[mutiComp_arr_df['Hit_n_TMS'] >=3].values.tolist() != []:
+                return("yellow",mutiComp_arr_df.values.tolist())
+            else:
+                return("red",mutiComp_arr_df.values.tolist())
+
+def isMultiComp2(row,df):
+    ##result=FindMembraneProtein(row,df)
+    tcid = row["Hit_tcid"]
+    tc_arr = tcdbSystems.get(tcid)
+    tc_arr = list(set(tc_arr))
+    if(len(tc_arr) >1):
+        tc_filter_arr = [arr.split("-")[1] for arr in tc_arr]
+        mutiComp_arr_df=pd.DataFrame(columns=df.columns)
+        mutiComp_arr_xid=[]
+        for arr in tc_filter_arr:
+            query_result_df=df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}' ")
+            query_result_xid=query_result_df["Hit_xid"].tolist()
+            if(len(query_result_df)) !=0 :
+                ##print(mutiComp_arr_df,query_result_df)
+                mutiComp_arr_df = pd.concat([mutiComp_arr_df,query_result_df])
+                mutiComp_arr_xid += query_result_xid
+        if set(tc_filter_arr) == set(mutiComp_arr_xid):
+            return("green", mutiComp_arr_df)
+        elif(len(mutiComp_arr_df)==0):
+            return("red",mutiComp_arr_df)
+        else:
+            tc_filter_arr_list= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
+            mutiComp_arr_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr_list]).drop_duplicates()
+            if len(mutiComp_arr_df.loc[mutiComp_arr_df['Hit_n_TMS'] >=3]) != 0:
+                return("yellow",mutiComp_arr_df)
+            else:
+                print("red",mutiComp_arr_df)
 
 def qCoverage(row):
     return row["Query_Coverage"]
@@ -136,8 +197,10 @@ GREEN (Best hits)
 '''
 
 for index, row in df.iterrows():
-    ##isMultiComp(row,df)
-    FindMembrance(row,df)
+    isMultiComp2(row,df)
+   
+   
+    ##FindMembraneProtein(row,df)
     if(isSingleComp(row)):
         if(eVal(row) <= float("1e-10") and qCoverage(row) >= 75 and hCoverage(row) >= 75):
             ##green_df = green_df.append([row])
@@ -148,13 +211,7 @@ for index, row in df.iterrows():
         elif(qCoverage(row) <=10 and hCoverage(row) <=10):
             ##red_df = red_df.append([row])
             red_df = pd.concat([red_df,row.to_frame().T])
-        
-    '''
-        if(eVal(row) <= -10 and pfamDoms().size != 0):
-            green_df = green_df.append([row])
-        elif(eVal(row) < -3 and qCoverage() >= 90 and hCoverage >= 90):
-            yellow_df = yellow_df.append([row])
-        else:
-            red_df = red_df.append([row])
-    '''
+            
+   
+   
 ###print(green_df)
