@@ -58,28 +58,23 @@ def isSingleComp(row):
 def FindMembraneProtein(row,df):
     tcid = row["Hit_tcid"]
     tc_arr = tcdbSystems.get(tcid)
-    tc_arr= list(set(tc_arr))
-    if(len(tc_arr) == 1):
-        return [row["Hit_xid"]]
-    elif(len(tc_arr) == 0):
-        return []
-    elif(len(tc_arr) > 1):
-        ##print(tc_arr)
-        tc_filter_arr= [arr.split("-")[1] for arr in tc_arr]
-        tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
-        final_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
-        max_value = final_df['Hit_n_TMS'].max()
-        result = final_df.loc[final_df['Hit_n_TMS'] >=3]
-        ##print(row["Hit_xid"],tc_arr)
-        ##pd.set_option('display.max_colwidth', None)
-        
-        Final_result= result['Hit_xid'].drop_duplicates().tolist()
-        print(Final_result)
-        return(Final_result)
-        ##if(len(Final_result)==3):
-            ##print(Final_result)
+    tc_filter_arr= [arr.split("-")[1] for arr in tc_arr]
+    tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
+    final_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
+    if final_df.empty:
+        return final_df
+    if final_df['Hit_n_TMS'].nunique() == 1: ##and str(final_df['Hit_n_TMS'].unique()[0]) != "0":
+        if abs(final_df['Hit_n_TMS'].iloc[0] - final_df['Query_n_TMS'].iloc[0]) <= 2:
             ##print(tc_arr)
-            ##print(tc_filter_arr)
+            ##print(final_df)
+            ##print(final_df[['Query_n_TMS','Hit_n_TMS']])
+            return(final_df)
+
+    filtered_df = final_df[(final_df['Hit_n_TMS'] >= 3) & (abs(final_df['Hit_n_TMS'] - final_df['Query_n_TMS']) <= 2)]
+    ##print(tc_arr)
+    ##print(final_df)
+    ##print(filtered_df[['Query_n_TMS','Hit_n_TMS']])
+    return(filtered_df)
         
       
 '''    
@@ -197,10 +192,10 @@ GREEN (Best hits)
 '''
 
 for index, row in df.iterrows():
-    isMultiComp2(row,df)
+    ##isMultiComp2(row,df)
    
    
-    ##FindMembraneProtein(row,df)
+    FindMembraneProtein(row,df)
     if(isSingleComp(row)):
         if(eVal(row) <= float("1e-10") and qCoverage(row) >= 75 and hCoverage(row) >= 75):
             ##green_df = green_df.append([row])
