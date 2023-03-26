@@ -5,7 +5,7 @@ import os
 df = pd.read_table('results.tsv')
 
 geneFusions = {}
-test_fus = [{'query': 'YP_501037.1', 'qcov': 63.9, 'sstart': 242, 'send': 356, 'scov': 31.8}, {'query': 'YP_501311.1', 'qcov': 72.0, 'sstart': 247, 'send': 356, 'scov': 30.4}]
+test_fus =  [{'query': 'A', 'qcov': 69.6, 'sstart': 295, 'send': 713, 'scov': 58.2}, {'query': 'B', 'qcov': 65.4, 'sstart': 405, 'send': 709, 'scov': 42.3}, {'query': 'C', 'qcov': 41.4, 'sstart': 481, 'send': 717, 'scov': 32.9}]
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
@@ -48,12 +48,12 @@ def isFusion(sortedArr):
                 perc_protein1 = (overlap_size / (sortedArr[i]['send'] - sortedArr[i]['sstart'])) * 100
                 perc_protein2 = (overlap_size / (sortedArr[j]['send'] - sortedArr[j]['sstart'])) * 100
                 
-                # making sure theres not total overlap between 2 proteins
-                if sortedArr[i]['send'] >= sortedArr[j]['send']:
-                    print("invalid identified")
-                    inv_fus_count += 1
+                # making sure theres not total overlap between 2 proteins (actually, this might be fine? )
+                # if sortedArr[i]['send'] >= sortedArr[j]['send']:
+                    # print("invalid identified with j of " + sortedArr[j]["query"])
+                    # inv_fus_count += 1
                 # checking to see if the minimum overlap among comparable proteins is less than the threshold
-                elif (min(perc_protein1, perc_protein2)) < MAX_OVERLAP:
+                if (min(perc_protein1, perc_protein2)) < MAX_OVERLAP:
                     inv_fus_count += 1
                 # if theres no overlap move on
                 elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[i]['sstart'] - sortedArr[j]['send'])) * 100 == 0:
@@ -62,7 +62,11 @@ def isFusion(sortedArr):
                     overlap_length += overlap_size
             # if there is a potential fusion add to fus_list
             print("comparing inv_fus of " + str(inv_fus_count) + " with " + str((len(sortedArr[i+1:]))))
-            if inv_fus_count < (len(sortedArr[i+1:])):
+            if i == len(sortedArr)-1:
+                if inv_fus_count < 1:
+                    print("adding i protein")
+                    fus_list.append(sortedArr[i])
+            elif inv_fus_count < (len(sortedArr[i+1:])):
                 print("adding i protein ")
                 fus_list.append(sortedArr[i])
             else:
@@ -78,6 +82,7 @@ def isFusion(sortedArr):
     if tot_length > MIN_THRESHOLD:
         return fus_list
     else:
+        print("Didn't meet MIN_THRESHOLD")
         return []
     
 print(isFusion(test_fus))
