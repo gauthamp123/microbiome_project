@@ -5,7 +5,7 @@ import os
 df = pd.read_table('results.tsv')
 
 geneFusions = {}
-test_fus = {'query': 'YP_501170.1', 'qcov': 50, 'sstart': 1, 'send': 10, 'scov': 99.7}, {'query': 'YP_500726.1', 'qcov': 77.5, 'sstart': 5, 'send': 30, 'scov': 87.1}, {'query': 'YP_501170.1', 'qcov': 80, 'sstart': 40, 'send': 100, 'scov': 99.7}
+test_fus = {'query': 'YP_501037.1', 'qcov': 63.9, 'sstart': 242, 'send': 356, 'scov': 31.8}, {'query': 'YP_501311.1', 'qcov': 72.0, 'sstart': 247, 'send': 356, 'scov': 30.4}
 
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
