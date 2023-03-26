@@ -29,6 +29,9 @@ def genDict(dict, input_df):
 # outputs list of dictionary (each dictionary is a fusion candidate)
 def isFusion(sortedArr):
 
+    print("-------")
+    print("Input is " + str(sortedArr))
+
     # output list
     fus_list = []
     overlap_length = 0
@@ -36,6 +39,7 @@ def isFusion(sortedArr):
     # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
         if sortedArr[i]['qcov'] > MAX_THRESHOLD:
+            print("NOT FUSION (individual candidate was too long)")
             return []
         else:
             print("Analyzing i protein: " + sortedArr[i]["query"])
@@ -80,15 +84,17 @@ def isFusion(sortedArr):
     tot_length -= overlap_length
     
     if tot_length > MIN_THRESHOLD:
+        print("output is: " + str(fus_list))
+        print("-------")
         return fus_list
     else:
         print("Didn't meet MIN_THRESHOLD")
+        print("-------")
         return []
-    
-print(isFusion(test_fus))
+#print(isFusion(test_fus))
 
 
-'''
+
 genDict(geneFusions, df)
 
 
@@ -100,7 +106,5 @@ for id in geneFusions:
     # print(sortedGeneArr)
     # x = input()
     if len(isFusion(sortedGeneArr)) != 0:
-        print(isFusion(sortedGeneArr))
+        print("SUCCESS")
     #y = input()
-
-'''
