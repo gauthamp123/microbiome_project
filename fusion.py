@@ -26,20 +26,26 @@ def genDict(dict, input_df):
             dict[tcid] = [new_entry]
             #print("New entry")
 
-
+# takes in sorted array (subset of dictionary) and 
+# outputs list of dictionary (each dictionary is a fusion candidate)
 def isFusion(sortedArr):
+
+    # output list
     fus_list = []
     overlap_length = 0
-
     
+    # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
         if sortedArr[i]['qcov'] > MAX_THRESHOLD:
             return []
         else:
+            # invalid fusion counter
             inv_fus_count = 0
+
             for j in range(i+1, len(sortedArr)):
                 # This looks for proteins that have too much overlap with the current protein
                 overlap_size = sortedArr[i]['send'] - sortedArr[j]['sstart']
+                # vars represent the percent overlap
                 perc_protein1 = (overlap_size / sortedArr[i]['send'] - sortedArr[i]['sstart']) * 100
                 perc_protein2 = (overlap_size / sortedArr[j]['send'] - sortedArr[j]['sstart']) * 100
                 
