@@ -51,14 +51,13 @@ def isFusion(sortedArr):
                 
                 # making sure theres not total overlap between 2 proteins
                 if sortedArr[i]['send'] >= sortedArr[j]['send']:
-                    inv_fus_count = len(sortedArr)
-                    break
+                    inv_fus_count += 1
                 # checking to see if the minimum overlap among comparable proteins is less than the threshold
                 elif (min(perc_protein1, perc_protein2)) < MAX_OVERLAP:
                     inv_fus_count += 1
                 # if theres no overlap move on
                 elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[i]['sstart'] - sortedArr[j]['send'])) * 100 == 0:
-                    i += 1
+                    break
                 else:
                     overlap_length += overlap_size
             # if there is a potential fusion add to fus_list
