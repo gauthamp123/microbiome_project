@@ -14,6 +14,7 @@ MAX_OVERLAP = 20
 MAX_THRESHOLD = 80
 MIN_THRESHOLD = 10
 
+# generates a dictionary from the dataframe
 def genDict(dict, input_df):
     for index, row in input_df.iterrows():
         new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"]}
