@@ -46,6 +46,7 @@ def isFusion(sortedArr):
             # invalid fusion counter
             inv_fus_count = 0
             for j in range(i+1, len(sortedArr)):
+                print("Comparing with j protein " + sortedArr[j]["query"])
                 # This looks for proteins that have too much overlap with the current protein
                 overlap_size = sortedArr[i]['send'] - sortedArr[j]['sstart']
                 # vars represent the percent overlap
@@ -58,23 +59,26 @@ def isFusion(sortedArr):
                     # inv_fus_count += 1
                 # checking to see if the minimum overlap among comparable proteins is less than the threshold
                 if (min(perc_protein1, perc_protein2)) < MAX_OVERLAP:
+                    print("Exceeds MAX_OVERLAP between i and j")
                     inv_fus_count += 1
                 # if theres no overlap move on
                 elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[i]['sstart'] - sortedArr[j]['send'])) * 100 == 0:
+                    print("No overlap between i and j; ending future j comparisons")
                     break
                 else:
+                    print("overlap between i and j added to net overlap_size var")
                     overlap_length += overlap_size
             # if there is a potential fusion add to fus_list
             print("comparing inv_fus of " + str(inv_fus_count) + " with " + str((len(sortedArr[i+1:]))))
             if i == len(sortedArr)-1:
                 if inv_fus_count < 1:
-                    print("adding i protein")
+                    print("adding i protein (last i protein in list)")
                     fus_list.append(sortedArr[i])
             elif inv_fus_count < (len(sortedArr[i+1:])):
-                print("adding i protein ")
+                print("adding i protein (general)")
                 fus_list.append(sortedArr[i])
             else:
-                print("not adding i protein")
+                print("not adding i protein (rejected)")
 
     tot_length = 0
 
@@ -85,7 +89,6 @@ def isFusion(sortedArr):
     
     if tot_length > MIN_THRESHOLD:
         print("output is: " + str(fus_list))
-        print("-------")
         return fus_list
     else:
         print("Didn't meet MIN_THRESHOLD")
