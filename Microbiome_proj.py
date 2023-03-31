@@ -6,7 +6,7 @@
 import pandas as pd
 import numpy as np
 import os
-
+import re
 # construct df with all data from results.tsv
 df = pd.read_table('results.tsv')
 # print columns of df for dev use in constructing filtered_df later
@@ -55,30 +55,70 @@ def isSingleComp(row):
     else:
         return False
 
+with open('hmmtop.out') as f:
+    lines = f.readlines()
+    hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS'])
+    for line in lines:
+        fields = re.split(r'[ -]+', line.strip())
+        new_col=[fields[2],fields[3],fields[5]]
+        new_row = pd.Series([fields[2],fields[3],fields[5]], index=hmmtop_df.columns)
+        hmmtop_df.loc[len(hmmtop_df)] = new_row
+    hmmtop_df['Hit_n_TMS'] = hmmtop_df['Hit_n_TMS'].astype(int)
+
 def FindMembraneProtein(row,df):
+    if isSingleComp(row):
+        return ([])
+    ##get rid of single comp system first
     tcid = row["Hit_tcid"]
     tc_arr = tcdbSystems.get(tcid)
-    tc_filter_arr= [arr.split("-")[1] for arr in tc_arr]
-    tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
-    final_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
-    if final_df.empty:
-        return final_df
-    if final_df['Hit_n_TMS'].nunique() == 1: ##and str(final_df['Hit_n_TMS'].unique()[0]) != "0":
-        if abs(final_df['Hit_n_TMS'].iloc[0] - final_df['Query_n_TMS'].iloc[0]) <= 2:
-            ##print(tc_arr)
-            ##print(final_df)
-            ##print(final_df[['Query_n_TMS','Hit_n_TMS']])
-            return(final_df)
+    tc_all_arr= [arr.split("-")[1] for arr in tc_arr] ##All the proteins that TCDB provide
+    if tcid.split(".")[1]=="B":
+        return (tc_all_arr)
+    tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
+    tc_Notfind_arr=list(set(tc_all_arr)-set(tc_filter_arr))
+    find_df = pd.concat([df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}'") for arr in tc_all_arr])
+    unfind_df = pd.concat([hmmtop_df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}'") for arr in tc_all_arr])
 
+    if find_df['Hit_n_TMS'].nunique() == 1 and unfind_df['Hit_n_TMS'].nunique() == 1 :
+        if str(find_df['Hit_n_TMS'].unique()[0]) == str(unfind_df['Hit_n_TMS'].unique()[0]):
+            
+            return (tc_all_arr)
+    
+    Found_arr_gblast = find_df[(find_df['Hit_n_TMS'] >= 3) & (abs(find_df['Hit_n_TMS'] - find_df['Query_n_TMS']) <= 2)]["Hit_xid"].tolist()
+    tcdb_arr= Found_arr_gblast +tc_Notfind_arr
+    if len(tcdb_arr)==0:
+        return([])
+    tcdb_df = pd.concat([hmmtop_df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}'") for arr in tcdb_arr])
+    Final_return = tcdb_df[(tcdb_df['Hit_n_TMS']>= 3)]  
+    ##print(tc_all_arr)
+    ##print(Final_return)
+    return(Final_return["Hit_xid"].tolist())  
+    ##final_df = pd.concat([df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
+'''
+    tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
+    ##This is the actual proteins we find in the gblast result
+    ##tc_Notfind_arr=list(set(tc_all_arr)-set(tc_filter_arr))
+    final_df = pd.concat([df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
+    ##final df is the whole line that tc_filter_arr locate
+    if final_df.empty:
+        return ([])
+    
+    if final_df['Hit_n_TMS'].nunique() == 1: ##and str(final_df['Hit_n_TMS'].unique()[0]) != "0":
+        ##This means if all the proteins have same hit TMS in their system
+        if abs(final_df['Hit_n_TMS'].iloc[0] - final_df['Query_n_TMS'].iloc[0]) <= 2: ##If the Query TMS has less than 3 difference
+            
+            return(final_df)
+    ##Otherwise we check the protein that has TMS greater than 2, and if the systems contain such protein and has
+    ##query TMS difference less than 3, then we say they are membrane protein
     filtered_df = final_df[(final_df['Hit_n_TMS'] >= 3) & (abs(final_df['Hit_n_TMS'] - final_df['Query_n_TMS']) <= 2)]
     ##print(tc_arr)
     ##print(final_df)
     ##print(filtered_df[['Query_n_TMS','Hit_n_TMS']])
     return(filtered_df)
-        
+'''        
       
 '''    
-def isMultiComp(row,df):
+def isMultiComp(row,df,int input):
     tcid = row["Hit_tcid"]
     tc_arr = tcdbSystems.get(tcid)
     if(len(tc_arr) >1):
@@ -94,6 +134,25 @@ def isMultiComp(row,df):
     else:
         return False
 '''
+def isMultiComp3(row,df,input):
+    if isSingleComp(row):
+        return (False)
+    ##get rid of single comp system first
+    tcid = row["Hit_tcid"]
+    tc_arr = tcdbSystems.get(tcid)
+    tc_all_arr= [arr.split("-")[1] for arr in tc_arr] ##All the proteins that TCDB provide
+    tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
+    if(set(tc_all_arr)==set(tc_filter_arr)):
+        return("green",tc_filter_arr)
+    MembraneProteins= FindMembraneProtein(row, df)
+    if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
+        print(tc_all_arr)
+        print("MP",MembraneProteins)
+        print("Yellow",tc_filter_arr)
+        return("Yellow", tc_filter_arr)
+    else:
+        return ("Red", tc_filter_arr)
+
 
 def isMultiComp(row,df):
     ##result=FindMembraneProtein(row,df)
@@ -192,10 +251,10 @@ GREEN (Best hits)
 '''
 
 for index, row in df.iterrows():
-    ##isMultiComp2(row,df)
+    isMultiComp3(row,df,0.5)
    
    
-    FindMembraneProtein(row,df)
+    ##FindMembraneProtein(row,df)
     if(isSingleComp(row)):
         if(eVal(row) <= float("1e-10") and qCoverage(row) >= 75 and hCoverage(row) >= 75):
             ##green_df = green_df.append([row])
