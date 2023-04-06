@@ -5,8 +5,7 @@ import os
 df = pd.read_table('results.tsv')
 
 geneFusions = {}
-test_fus = {'query': 'YP_501037.1', 'qcov': 63.9, 'sstart': 242, 'send': 356, 'scov': 31.8}, {'query': 'YP_501311.1', 'qcov': 72.0, 'sstart': 247, 'send': 356, 'scov': 30.4}
-
+test_fus =  [{'query': 'A', 'qcov': 69.6, 'sstart': 295, 'send': 713, 'scov': 58.2}, {'query': 'B', 'qcov': 65.4, 'sstart': 405, 'send': 709, 'scov': 42.3}, {'query': 'C', 'qcov': 41.4, 'sstart': 481, 'send': 717, 'scov': 32.9}]
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
@@ -26,37 +25,59 @@ def genDict(dict, input_df):
             dict[tcid] = [new_entry]
             #print("New entry")
 
-
+# takes in sorted array (subset of dictionary) and 
+# outputs list of dictionary (each dictionary is a fusion candidate)
 def isFusion(sortedArr):
+
+    # print("-------")
+    # print("Input is " + str(sortedArr))
+
+    # output list
     fus_list = []
     overlap_length = 0
-
     
+    # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
         if sortedArr[i]['qcov'] > MAX_THRESHOLD:
+            #print("NOT FUSION (individual candidate was too long)")
             return []
         else:
+            #print("Analyzing i protein: " + sortedArr[i]["query"])
+            # invalid fusion counter
             inv_fus_count = 0
             for j in range(i+1, len(sortedArr)):
+                #print("Comparing with j protein " + sortedArr[j]["query"])
                 # This looks for proteins that have too much overlap with the current protein
                 overlap_size = sortedArr[i]['send'] - sortedArr[j]['sstart']
-                perc_protein1 = (overlap_size / sortedArr[i]['send'] - sortedArr[i]['sstart']) * 100
-                perc_protein2 = (overlap_size / sortedArr[j]['send'] - sortedArr[j]['sstart']) * 100
+                # vars represent the percent overlap
+                perc_protein1 = (overlap_size / (sortedArr[i]['send'] - sortedArr[i]['sstart'])) * 100
+                perc_protein2 = (overlap_size / (sortedArr[j]['send'] - sortedArr[j]['sstart'])) * 100
                 
-                # making sure theres not total overlap between 2 proteins
-                if sortedArr[i]['send'] >= sortedArr[j]['send']:
-                    inv_fus_count += 1
+                # making sure theres not total overlap between 2 proteins (actually, this might be fine? )
+                # if sortedArr[i]['send'] >= sortedArr[j]['send']:
+                    # print("invalid identified with j of " + sortedArr[j]["query"])
+                    # inv_fus_count += 1
                 # checking to see if the minimum overlap among comparable proteins is less than the threshold
-                elif (min(perc_protein1, perc_protein2)) < MAX_OVERLAP:
+                if (min(perc_protein1, perc_protein2)) < MAX_OVERLAP:
+                    #print("Exceeds MAX_OVERLAP between i and j")
                     inv_fus_count += 1
                 # if theres no overlap move on
                 elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[i]['sstart'] - sortedArr[j]['send'])) * 100 == 0:
-                    i += 1
+                    #print("No overlap between i and j; ending future j comparisons")
+                    break
                 else:
+                    #print("overlap between i and j added to net overlap_size var")
                     overlap_length += overlap_size
             # if there is a potential fusion add to fus_list
-            if inv_fus_count <= len(sortedArr) - i:
+            #print("comparing inv_fus of " + str(inv_fus_count) + " with " + str((len(sortedArr[i+1:]))))
+            if i == len(sortedArr)-1:
+                if inv_fus_count < 1:
+                    #print("adding i protein (last i protein in list)")
+                    fus_list.append(sortedArr[i])
+            elif inv_fus_count < (len(sortedArr[i+1:])):
+                #print("adding i protein (general)")
                 fus_list.append(sortedArr[i])
+
 
     tot_length = 0
 
@@ -66,10 +87,14 @@ def isFusion(sortedArr):
     tot_length -= overlap_length
     
     if tot_length > MIN_THRESHOLD:
+        # print("output is: " + str(fus_list))
         return fus_list
     else:
+        # print("Didn't meet MIN_THRESHOLD")
+        # print("-------")
         return []
-    
+#print(isFusion(test_fus))
+
 
 
 genDict(geneFusions, df)
@@ -85,4 +110,3 @@ for id in geneFusions:
     if len(isFusion(sortedGeneArr)) != 0:
         print(isFusion(sortedGeneArr))
     #y = input()
-
