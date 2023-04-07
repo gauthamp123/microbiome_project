@@ -19,7 +19,8 @@ green_df = green_df.iloc[0:0]
 yellow_df = green_df.copy()
 red_df = green_df.copy()
 
-#Example content:
+# To distinguish between single and multiple component systems. 
+# Example content:
 #  1.A.1.1.1 =>  ["1.A.1.1.1-P0A334"],
 #  3.A.1.1.1 =>  ["3.A.1.1.1-P02916", ""3.A.1.1.1-XXXXX", "3.A.1.1.1-YYYYYY", "3.A.1.1.1-ZZZZZZZZZ"],
 #  ....

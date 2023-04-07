@@ -120,4 +120,4 @@ for id in geneFusions:
         potential_fusions.append(isFusion(sortedGeneArr))
     #y = input()
 print("-------")
-print(str(num_out) + " fusions found out of " + str(num_in))        
+print(str(num_out) + " fusions found out of " + str(num_in))
