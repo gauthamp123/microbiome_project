@@ -1,11 +1,14 @@
 import pandas as pd
 import numpy as np
+from matplotlib import pyplot as plt
+from scipy.signal import argrelextrema
 import os
 
 df = pd.read_table('results.tsv')
 
 geneFusions = {}
 test_fus =  [{'query': 'A', 'qcov': 69.6, 'sstart': 295, 'send': 713, 'scov': 58.2}, {'query': 'B', 'qcov': 65.4, 'sstart': 405, 'send': 709, 'scov': 42.3}, {'query': 'C', 'qcov': 41.4, 'sstart': 481, 'send': 717, 'scov': 32.9}]
+potential_fusions = []
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
@@ -14,6 +17,7 @@ MIN_QUERY_COV_THRESHOLD = 80
 MIN_SUBJECT_COV_THRESHOLD = 5
 MAX_SUBJECT_COV_THRESHOLD = 90
 MIN_FUSION_COVERAGE = 50
+MIN_LENGTH_NOCOV = 50   # should we make this a percent? I think so
 
 # generates a dictionary from the dataframe
 def genDict(dict, input_df):
@@ -31,8 +35,8 @@ def genDict(dict, input_df):
 # outputs list of dictionary (each dictionary is a fusion candidate)
 def isFusion(sortedArr):
 
-    print("-------")
-    print("Input is " + str(sortedArr))
+    # print("-------")
+    # print("Input is " + str(sortedArr))
 
     # output list
     fus_list = []
@@ -41,13 +45,13 @@ def isFusion(sortedArr):
     # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
         if sortedArr[i]['scov'] > MAX_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov too long")
+            # print("i rejected, candidate scov too long")
             continue
         elif sortedArr[i]['scov'] < MIN_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov was too small")
+            # print("i rejected, candidate scov was too small")
             continue
         elif sortedArr[i]['qcov'] < MIN_QUERY_COV_THRESHOLD:
-            print("i rejected, candidate qcov was too small")
+            # print("i rejected, candidate qcov was too small")
             continue
         else:
             print("Accepting i protein: " + sortedArr[i]["query"])
@@ -81,6 +85,20 @@ def isFusion(sortedArr):
         print("hit length: " + str(fus_list[0]['hit_length']))
         return fus_list
 
+def getDistribution(protein):
+    # Input takes in a list of potential fusions generated from the isFusion function
+    # Create empty list of times the reference tcdb protein is hit
+    ref_map = [0] * protein[0]['hit_length']
+    # Loop through the candidates in the protein to see where they align to reference
+    for curr in protein:
+        for i in range(curr['sstart'], curr['send']):
+            ref_map[i] += 1
+    
+    return ref_map
+
+def getMaxMin(freqs):
+    list_of_maxima = argrelextrema(freqs, np.greater)
+    list_of_minima = argrelextrema(freqs, np.less)
 
 genDict(geneFusions, df)
 
@@ -98,6 +116,8 @@ for id in geneFusions:
     if len(isFusion(sortedGeneArr)) != 0:
         print("SUCCESS")
         num_out+=1
+        print(getDistribution(isFusion(sortedGeneArr)))
+        potential_fusions.append(isFusion(sortedGeneArr))
     #y = input()
 print("-------")
-print(str(num_out) + " fusions found out of " + str(num_in))
+print(str(num_out) + " fusions found out of " + str(num_in))        
