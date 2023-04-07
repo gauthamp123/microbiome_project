@@ -9,9 +9,11 @@ test_fus =  [{'query': 'A', 'qcov': 69.6, 'sstart': 295, 'send': 713, 'scov': 58
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
-MAX_OVERLAP = 20
-MAX_THRESHOLD = 80
-MIN_THRESHOLD = 10
+MAX_FUSION_COV_OVERLAP = 20
+MIN_QUERY_COV_THRESHOLD = 80
+MIN_SUBJECT_COV_THRESHOLD = 5
+MAX_SUBJECT_COV_THRESHOLD = 90
+MIN_FUSION_COVERAGE = 20
 
 # generates a dictionary from the dataframe
 def genDict(dict, input_df):
@@ -38,9 +40,15 @@ def isFusion(sortedArr):
     
     # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
-        if sortedArr[i]['qcov'] > MAX_THRESHOLD:
-            #print("NOT FUSION (individual candidate was too long)")
-            return []
+        if sortedArr[i]['scov'] > MAX_SUBJECT_COV_THRESHOLD:
+            print("i rejected, candidate scov too long")
+            continue
+        elif sortedArr[i]['scov'] < MIN_SUBJECT_COV_THRESHOLD:
+            print("i rejected, candidate scov was too small")
+            continue
+        elif sortedArr[i]['qcov'] < MIN_QUERY_COV_THRESHOLD:
+            print("i rejected, candidate qcov was too small")
+            continue
         else:
             #print("Analyzing i protein: " + sortedArr[i]["query"])
             # invalid fusion counter
@@ -54,12 +62,13 @@ def isFusion(sortedArr):
                 perc_protein2 = (overlap_size / (sortedArr[j]['send'] - sortedArr[j]['sstart'])) * 100
                 
                 # making sure theres not total overlap between 2 proteins (actually, this might be fine? )
-                # if sortedArr[i]['send'] >= sortedArr[j]['send']:
-                    # print("invalid identified with j of " + sortedArr[j]["query"])
-                    # inv_fus_count += 1
+                # if total overlap, reassign the overlap 
+                if sortedArr[i]['send'] >= sortedArr[j]['send']:
+                    overlap_size = sortedArr[j]['send'] - sortedArr[j]['sstart']
+
                 # checking to see if the minimum overlap among comparable proteins is less than the threshold
-                if (min(perc_protein1, perc_protein2)) < MAX_OVERLAP:
-                    #print("Exceeds MAX_OVERLAP between i and j")
+                if (min(perc_protein1, perc_protein2)) > MAX_FUSION_COV_OVERLAP:
+                    print("Exceeds MAX_OVERLAP between i and j")
                     inv_fus_count += 1
                 # if theres no overlap move on
                 elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[i]['sstart'] - sortedArr[j]['send'])) * 100 == 0:
@@ -68,6 +77,7 @@ def isFusion(sortedArr):
                 else:
                     #print("overlap between i and j added to net overlap_size var")
                     overlap_length += overlap_size
+                
             # if there is a potential fusion add to fus_list
             #print("comparing inv_fus of " + str(inv_fus_count) + " with " + str((len(sortedArr[i+1:]))))
             if i == len(sortedArr)-1:
@@ -86,8 +96,12 @@ def isFusion(sortedArr):
         tot_length += (fus_list[i]['send'] - fus_list[i]['sstart'])
     tot_length -= overlap_length
     
-    if tot_length > MIN_THRESHOLD:
-        # print("output is: " + str(fus_list))
+    
+    if len(fus_list) < 2:
+        print("Only ONE CANDIDATE identified")
+        return []
+    elif tot_length > MIN_FUSION_COVERAGE:  # need to either convert tot_length to percent or convert MIN_FUSION_COV to percent
+        print("output is: " + str(fus_list))
         return fus_list
     else:
         # print("Didn't meet MIN_THRESHOLD")
@@ -101,6 +115,7 @@ genDict(geneFusions, df)
 
 
 #sorts the genomeFusions dictionary by the genome start index
+num_out = 0
 for id in geneFusions:
     if(len(geneFusions[id]) == 1):
         continue
@@ -108,5 +123,7 @@ for id in geneFusions:
     # print(sortedGeneArr)
     # x = input()
     if len(isFusion(sortedGeneArr)) != 0:
-        print(isFusion(sortedGeneArr))
+        print("SUCCESS")
+        num_out+=1
     #y = input()
+print(str(num_out) + " fusions found")
