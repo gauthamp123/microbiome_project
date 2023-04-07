@@ -1,11 +1,14 @@
 import pandas as pd
 import numpy as np
+from matplotlib import pyplot as plt
+from scipy.signal import argrelextrema
 import os
 
 df = pd.read_table('results.tsv')
 
 geneFusions = {}
 test_fus =  [{'query': 'A', 'qcov': 69.6, 'sstart': 295, 'send': 713, 'scov': 58.2}, {'query': 'B', 'qcov': 65.4, 'sstart': 405, 'send': 709, 'scov': 42.3}, {'query': 'C', 'qcov': 41.4, 'sstart': 481, 'send': 717, 'scov': 32.9}]
+potential_fusions = []
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
@@ -13,12 +16,13 @@ MAX_FUSION_COV_OVERLAP = 20
 MIN_QUERY_COV_THRESHOLD = 80
 MIN_SUBJECT_COV_THRESHOLD = 5
 MAX_SUBJECT_COV_THRESHOLD = 90
-MIN_FUSION_COVERAGE = 20
+MIN_FUSION_COVERAGE = 50
+MIN_LENGTH_NOCOV = 50   # should we make this a percent? I think so
 
 # generates a dictionary from the dataframe
 def genDict(dict, input_df):
     for index, row in input_df.iterrows():
-        new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"]}
+        new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"], "hit_length": row["Hit_Length"]}
         tcid = row["Hit_tcid"] + "-" + row["Hit_xid"]
         if tcid in dict:
             dict.get(tcid).append(new_entry)
@@ -41,74 +45,62 @@ def isFusion(sortedArr):
     # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
         if sortedArr[i]['scov'] > MAX_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov too long")
+            # print("i rejected, candidate scov too long")
             continue
         elif sortedArr[i]['scov'] < MIN_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov was too small")
+            # print("i rejected, candidate scov was too small")
             continue
         elif sortedArr[i]['qcov'] < MIN_QUERY_COV_THRESHOLD:
-            print("i rejected, candidate qcov was too small")
+            # print("i rejected, candidate qcov was too small")
             continue
         else:
-            #print("Analyzing i protein: " + sortedArr[i]["query"])
-            # invalid fusion counter
-            inv_fus_count = 0
-            for j in range(i+1, len(sortedArr)):
-                #print("Comparing with j protein " + sortedArr[j]["query"])
-                # This looks for proteins that have too much overlap with the current protein
-                overlap_size = sortedArr[i]['send'] - sortedArr[j]['sstart']
-                # vars represent the percent overlap
-                perc_protein1 = (overlap_size / (sortedArr[i]['send'] - sortedArr[i]['sstart'])) * 100
-                perc_protein2 = (overlap_size / (sortedArr[j]['send'] - sortedArr[j]['sstart'])) * 100
-                
-                # making sure theres not total overlap between 2 proteins (actually, this might be fine? )
-                # if total overlap, reassign the overlap 
-                if sortedArr[i]['send'] >= sortedArr[j]['send']:
-                    overlap_size = sortedArr[j]['send'] - sortedArr[j]['sstart']
-
-                # checking to see if the minimum overlap among comparable proteins is less than the threshold
-                if (min(perc_protein1, perc_protein2)) > MAX_FUSION_COV_OVERLAP:
-                    print("Exceeds MAX_OVERLAP between i and j")
-                    inv_fus_count += 1
-                # if theres no overlap move on
-                elif ((sortedArr[i]['send'] - sortedArr[j]['sstart']) / (sortedArr[i]['sstart'] - sortedArr[j]['send'])) * 100 == 0:
-                    #print("No overlap between i and j; ending future j comparisons")
-                    break
-                else:
-                    #print("overlap between i and j added to net overlap_size var")
-                    overlap_length += overlap_size
-                
-            # if there is a potential fusion add to fus_list
-            #print("comparing inv_fus of " + str(inv_fus_count) + " with " + str((len(sortedArr[i+1:]))))
-            if i == len(sortedArr)-1:
-                if inv_fus_count < 1:
-                    #print("adding i protein (last i protein in list)")
-                    fus_list.append(sortedArr[i])
-            elif inv_fus_count < (len(sortedArr[i+1:])):
-                #print("adding i protein (general)")
-                fus_list.append(sortedArr[i])
-
-
+            # print("Accepting i protein: " + sortedArr[i]["query"])
+            fus_list.append(sortedArr[i])
     tot_length = 0
+    overlap_length = 0
 
     #checks for extra fusions if proteins are lined up end to end
     for i in range(len(fus_list)):
         tot_length += (fus_list[i]['send'] - fus_list[i]['sstart'])
+        if i < len(fus_list)-1:
+            overlap_length += min(fus_list[i+1]['send'], fus_list[i]['send']) - max(fus_list[i+1]['sstart'], fus_list[i]['sstart'])
     tot_length -= overlap_length
     
-    
-    if len(fus_list) < 2:
-        print("Only ONE CANDIDATE identified")
+    if len(fus_list) == 0:
+        # print("No candidates identified")
         return []
-    elif tot_length > MIN_FUSION_COVERAGE:  # need to either convert tot_length to percent or convert MIN_FUSION_COV to percent
-        print("output is: " + str(fus_list))
-        return fus_list
-    else:
+    elif len(fus_list) < 2:
+        # print("Insufficient Candidates identified")
+        # print(fus_list)
+        return []
+    elif (tot_length/fus_list[0]['hit_length'])*100 < MIN_FUSION_COVERAGE:
         # print("Didn't meet MIN_THRESHOLD")
+        # print("total length: " + str(tot_length))
+        # print("hit length: " + str(fus_list[0]['hit_length']))
         # print("-------")
         return []
-#print(isFusion(test_fus))
+    else:
+        # print("output is: " + str(fus_list))
+        # print("total length: " + str(tot_length))
+        # print("hit length: " + str(fus_list[0]['hit_length']))
+        return fus_list
 
+def getDistribution(protein):
+    # Input takes in a list of potential fusions generated from the isFusion function
+    # Create empty list of times the reference tcdb protein is hit
+    ref_map = [0] * protein[0]['hit_length']
+    # Loop through the candidates in the protein to see where they align to reference
+    for curr in protein:
+        for i in range(curr['sstart'], curr['send']):
+            ref_map[i] += 1
+    
+    return ref_map
+
+def getMaxMin(freqs):
+    list_of_maxima = argrelextrema(freqs, np.greater)
+    list_of_minima = argrelextrema(freqs, np.less)
+
+    
 
 
 genDict(geneFusions, df)
@@ -116,14 +108,21 @@ genDict(geneFusions, df)
 
 #sorts the genomeFusions dictionary by the genome start index
 num_out = 0
+num_in = 0
 for id in geneFusions:
     if(len(geneFusions[id]) == 1):
         continue
     sortedGeneArr = sorted(geneFusions[id], key=lambda x: x['sstart'])
     # print(sortedGeneArr)
     # x = input()
+    # num_in+=1
     if len(isFusion(sortedGeneArr)) != 0:
-        print("SUCCESS")
-        num_out+=1
-    #y = input()
-print(str(num_out) + " fusions found")
+        print(isFusion(sortedGeneArr))
+        print('---------')
+        x = input()
+        print(getDistribution(isFusion(sortedGeneArr)))
+        potential_fusions.append(isFusion(sortedGeneArr))
+
+
+
+
