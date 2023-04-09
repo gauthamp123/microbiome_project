@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # Take the results.tsv file and parse it
 import pandas as pd
 import numpy as np
