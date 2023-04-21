@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import os
 import re
+from fusion_distribution import isFusion,geneFusions
 # construct df with all data from results.tsv
 df = pd.read_table('results.tsv')
 # print columns of df for dev use in constructing filtered_df later
@@ -148,6 +149,12 @@ def isMultiComp3(row,df,input):
         return (False)
     ##get rid of single comp system first
     tcid = row["Hit_tcid"]
+    Fusion_results= geneFusions[row["Hit_tcid"] + "-" + row["Hit_xid"]]
+    if(len(Fusion_results) !=1):
+        sortedGeneArr = sorted(Fusion_results, key=lambda x: x['sstart'])
+        if(len(isFusion(sortedGeneArr))!=0):
+            #print("green",isFusion(sortedGeneArr))
+            return("green",isFusion(sortedGeneArr))        
     tc_arr = tcdbSystems.get(tcid)
     tc_all_arr= [arr.split("-")[1] for arr in tc_arr] ##All the proteins that TCDB provide
     tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
@@ -263,10 +270,10 @@ GREEN (Best hits)
 '''
 
 for index, row in df.iterrows():
-    ##isMultiComp3(row,df,0.5)
+    isMultiComp3(row,df,0.5)
    
    
-    FindMembraneProtein(row,df)
+    #FindMembraneProtein(row,df)
     if(isSingleComp(row)):
         if(eVal(row) <= float("1e-10") and qCoverage(row) >= 75 and hCoverage(row) >= 75):
             ##green_df = green_df.append([row])
