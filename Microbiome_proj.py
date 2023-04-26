@@ -50,7 +50,7 @@ with open('hmmtop.out') as f:
     hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS'])
     ##Create a dataframe that include above columns 
     for line in lines:
-        fields = re.split(r'[ -]+', line.strip())
+        fields = line.split(r'[ -]+', line.strip())
         ##split the system and protein names
         new_col=[fields[2],fields[3],fields[5]]
         new_row = pd.Series([fields[2],fields[3],fields[5]], index=hmmtop_df.columns)
@@ -264,5 +264,4 @@ for index, row in df.iterrows():
             yellow_df = yellow_df.append([row])
         else:
             red_df = red_df.append([row])
-
 '''
