@@ -48,8 +48,15 @@ def fusion_dist(fusion_candidate_list):
         plt.plot([candidate['sstart'],candidate['send']], [y_count, y_count], label = candidate['query'] + "(" + str(candidate['sstart']) + "-" + str(candidate['send']) + ")")
         y_count -= 1
 
+    print("COV LIST")
+    print(coverage_list)
+    print("-------")
+
+    print("FREQ LIST")
     frequency_list = {x:coverage_list.count(x) for x in coverage_list}
     print(frequency_list)
+    print("-------")
+    next = input("Next output")
 
     plt.plot(frequency_list.keys(), frequency_list.values(), label = "Frequency Distribution")
     plt.legend()

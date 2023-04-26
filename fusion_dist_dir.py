@@ -9,11 +9,16 @@ import os
 import seaborn as sns
 import seaborn.objects as so
 
+'''
+WP_024544048.1(c).png
+'''
+
 def fusion_dist(fusion_candidate_list):
 
     plt.cla()
     y_count = len(fusion_candidate_list) + 0.5
 
+    plt.plot(0,0)
     plt.plot([0,fusion_candidate_list[0]['hit_length']],[y_count+1,y_count+1],label = "TCDB Reference" + "(0-" + str(fusion_candidate_list[0]['hit_length']) + ")")
 
     coverage_list = []
@@ -22,12 +27,28 @@ def fusion_dist(fusion_candidate_list):
         plt.plot([candidate['sstart'],candidate['send']], [y_count, y_count], label = candidate['query'] + "(" + str(candidate['sstart']) + "-" + str(candidate['send']) + ")")
         y_count -= 1
 
+    residue_cov = 0
     frequency_list = {x:coverage_list.count(x) for x in coverage_list}
-    print(frequency_list)
+    for key in frequency_list:
+        if(frequency_list[key] > 0):
+            residue_cov += 1
+    
+    if(residue_cov/fusion_candidate_list[0]['hit_length'] > 0.8):
+        print(fusion_candidate_list[0]['query'])
+        print("COV LIST")
+        print(coverage_list)
+        print("-------")
+        print("FREQ LIST")
+        print(frequency_list)
+        print("-------")
+        #x= input("next")
+        plt.plot(frequency_list.keys(), frequency_list.values(), '.--',label = "Frequency Distribution")
+        #for point in frequency_list:
+            #plt.plot(point, frequency_list[point])
+        plt.savefig("output/" + fusion_candidate_list[0]['query'] + "(c).png", dpi=300)
+        plt.legend()
+        plt.savefig("output/" + fusion_candidate_list[0]['query'] + "(l).png", dpi=300)
 
-    plt.plot(frequency_list.keys(), frequency_list.values(), label = "Frequency Distribution")
-    plt.legend()
-    plt.savefig("output/" + fusion_candidate_list[0]['query'] + ".png", dpi=300)
 
 # compare overlap between individual fusion candidates to ensure there is not over a 20% overlap 
 # (if an individual candidate overlaps with all others with greater than thresh, reject)
@@ -53,8 +74,8 @@ def genDict(dict, input_df):
 # outputs list of dictionary (each dictionary is a fusion candidate)
 def isFusion(sortedArr):
 
-    print("-------")
-    print("Input is " + str(sortedArr))
+    #print("-------")
+    #print("Input is " + str(sortedArr))
 
     # output list
     fus_list = []
@@ -63,16 +84,16 @@ def isFusion(sortedArr):
     # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
         if sortedArr[i]['scov'] > MAX_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov too long")
+            #print("i rejected, candidate scov too long")
             continue
         elif sortedArr[i]['scov'] < MIN_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov was too small")
+            #print("i rejected, candidate scov was too small")
             continue
         elif sortedArr[i]['qcov'] < MIN_QUERY_COV_THRESHOLD:
-            print("i rejected, candidate qcov was too small")
+            #print("i rejected, candidate qcov was too small")
             continue
         else:
-            print("Accepting i protein: " + sortedArr[i]["query"])
+            #print("Accepting i protein: " + sortedArr[i]["query"])
             fus_list.append(sortedArr[i])
     tot_length = 0
     overlap_length = 0
@@ -85,22 +106,22 @@ def isFusion(sortedArr):
     tot_length -= overlap_length
     
     if len(fus_list) == 0:
-        print("No candidates identified")
+        #print("No candidates identified")
         return []
     elif len(fus_list) < 2:
-        print("Insufficient Candidates identified")
-        print(fus_list)
+        #print("Insufficient Candidates identified")
+        #print(fus_list)
         return []
     elif (tot_length/fus_list[0]['hit_length'])*100 < MIN_FUSION_COVERAGE:
-        print("Didn't meet MIN_THRESHOLD")
-        print("total length: " + str(tot_length))
-        print("hit length: " + str(fus_list[0]['hit_length']))
-        print("-------")
+        #print("Didn't meet MIN_THRESHOLD")
+        #print("total length: " + str(tot_length))
+        #print("hit length: " + str(fus_list[0]['hit_length']))
+        #print("-------")
         return []
     else:
-        print("output is: " + str(fus_list))
-        print("total length: " + str(tot_length))
-        print("hit length: " + str(fus_list[0]['hit_length']))
+        #print("output is: " + str(fus_list))
+        #print("total length: " + str(tot_length))
+        #print("hit length: " + str(fus_list[0]['hit_length']))
         return fus_list
 
 
@@ -122,17 +143,17 @@ def fusion_analysis(input_tsv):
         # x = input()
         num_in+=1
         if len(isFusion(sortedGeneArr)) != 0:
-            print(isFusion(sortedGeneArr))
+            #print(isFusion(sortedGeneArr))
             fusion_dist(isFusion(sortedGeneArr))
             num_out+=1
-        else:
-            print("FAIL")
+        #else:
+            #print("FAIL")
             #isGraph = input()
             #if(isGraph == "Y"):
                 #fusion_dist(isFusion(sortedGeneArr))
         #y = input()
-    print("-------")
-    print(str(num_out) + " fusions found out of " + str(num_in))
+    #print("-------")
+    #print(str(num_out) + " fusions found out of " + str(num_in))
 
 directory = 'data'
 for filename in os.listdir(directory):
