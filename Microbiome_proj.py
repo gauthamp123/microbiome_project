@@ -1,14 +1,14 @@
 # Take the results.tsv file and parse it
 import pandas as pd
+import csv
 import numpy as np
 import os
-
+import re
+from fusion_distribution import isFusion,geneFusions
 # construct df with all data from results.tsv
-df = pd.read_table('results.tsv')
+df = pd.read_table('data/results.tsv')
 # print columns of df for dev use in constructing filtered_df later
-print('---------')
-print(df.columns)
-print('---------')
+
 
 # create empty dfs for tagging with green, yellow, and red labels
 green_df = df.copy()
@@ -16,6 +16,9 @@ green_df = green_df.iloc[0:0]
 yellow_df = green_df.copy()
 red_df = green_df.copy()
 
+green = []
+yellow = []
+red = []
 # To distinguish between single and multiple component systems. 
 # Example content:
 #  1.A.1.1.1 =>  ["1.A.1.1.1-P0A334"],
@@ -25,6 +28,24 @@ tcdbSystems = {}
 
 input = open("tcdb.faa")
 tcdbSystems = {}
+
+cols = df.iloc[0]
+header = []
+for key in cols.keys():
+    header.append(key)
+header.append('Fusion')
+
+with open('green.tsv', 'w') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)
+
+with open('yellow.tsv', 'w') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)
+
+with open('red.tsv', 'w') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)
 
 #This function will fill the dictionary tcdbSystems with data.
 def parseTCDBcontent():
@@ -36,21 +57,105 @@ def parseTCDBcontent():
             else:
                 tcdbSystems[first] = [line.strip(">\n")]
 
+#This is a helper function for finding common pFam domains and can be used to check if a value is a float
+def isfloat(num):
+    try:
+        float(num)
+        return True
+    except ValueError:
+        return False
+    
+def qCoverage(row):
+    return float(row.get(key='Query_Coverage'))
+
+def hCoverage(row):
+    return float(row.get(key='Hit_Coverage'))
+
+def eVal(row):
+    
+    return float(row.get(key='e-value'))
+
+def pfamDoms(row):
+    doms = []
+    if isfloat(row.get(key='Query_Pfam')):
+        return doms
+    elif isfloat(row.get(key='Subject_Pfam')):
+        return doms
+
+    q_pfam = row.get(key='Query_Pfam').split(',')
+    s_pfam = row.get(key='Subject_Pfam').split(',')
+
+
+    for q_domain in q_pfam:
+        for s_domain in s_pfam:
+            if q_domain == s_domain:
+                doms.append(q_domain)
+    common_doms = [*set(doms)]
+    return common_doms
+
+
+parseTCDBcontent()
+
 # This function will check the tcdbSystems dictionary for the tcid given 
 def isSingleComp(row):
     tcid = row["Hit_tcid"]
+    hit_id = row['Hit_xid']
     tc_arr = tcdbSystems.get(tcid)
     if(len(tc_arr) == 1):
         return True
     else:
         return False
     
+def categorizeSingleComp(row):
+    # check if it is a fusion
+    fusion_results= geneFusions[row["Hit_tcid"] + "-" + row["Hit_xid"]]
+    if(len(fusion_results) !=1):
+        sortedGeneArr = sorted(fusion_results, key=lambda x: x['sstart'])
+        if(len(isFusion(sortedGeneArr))!=0):
+            #print("green",isFusion(sortedGeneArr))
+            with open('yellow.tsv', 'a') as file:
+                writer = csv.writer(file)
+                row_to_write = row.tolist()
+                row_to_write.append(True)
+                writer.writerow(row_to_write)
+            yellow.append(row.get(key='#Query_id') + '(f)')
+            return("green",isFusion(sortedGeneArr))
+    
+
+    # check evalue
+    if eVal(row) <= 1e-10 and len(pfamDoms(row)) != 0:
+        green.append(row.get(key='#Query_id'))
+        with open('green.tsv', 'a') as file:
+                writer = csv.writer(file)
+                row_to_write = row.tolist()
+                row_to_write.append(False)
+                writer.writerow(row_to_write)
+                file.close()
+    elif eVal(row) < 1e-3 and qCoverage(row) >= 90 and hCoverage(row) >= 90:
+        yellow.append(row.get(key='#Query_id'))
+        with open('yellow.tsv', 'a') as file:
+                writer = csv.writer(file)
+                row_to_write = row.tolist()
+                row_to_write.append(False)
+                writer.writerow(row_to_write)
+                file.close()
+    else:
+        red.append(row.get(key='#Query_id'))
+        with open('red.tsv', 'a') as file:
+                writer = csv.writer(file)
+                row_to_write = row.tolist()
+                row_to_write.append(False)
+                writer.writerow(row_to_write)
+                file.close()
+    
+
+    
 with open('hmmtop.out') as f:
     lines = f.readlines()
     hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS'])
     ##Create a dataframe that include above columns 
     for line in lines:
-        fields = line.split(r'[ -]+', line.strip())
+        fields = re.split(r'[ -]+', line.strip())
         ##split the system and protein names
         new_col=[fields[2],fields[3],fields[5]]
         new_row = pd.Series([fields[2],fields[3],fields[5]], index=hmmtop_df.columns)
@@ -93,50 +198,19 @@ def FindMembraneProtein(row,df):
     ##print(Final_return["Hit_xid"].tolist())
     return(Final_return["Hit_xid"].tolist())  
     ##final_df = pd.concat([df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
-'''
-    tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
-    ##This is the actual proteins we find in the gblast result
-    ##tc_Notfind_arr=list(set(tc_all_arr)-set(tc_filter_arr))
-    final_df = pd.concat([df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
-    ##final df is the whole line that tc_filter_arr locate
-    if final_df.empty:
-        return ([])
-    
-    if final_df['Hit_n_TMS'].nunique() == 1: ##and str(final_df['Hit_n_TMS'].unique()[0]) != "0":
-        ##This means if all the proteins have same hit TMS in their system
-        if abs(final_df['Hit_n_TMS'].iloc[0] - final_df['Query_n_TMS'].iloc[0]) <= 2: ##If the Query TMS has less than 3 difference
-            
-            return(final_df)
-    ##Otherwise we check the protein that has TMS greater than 2, and if the systems contain such protein and has
-    ##query TMS difference less than 3, then we say they are membrane protein
-    filtered_df = final_df[(final_df['Hit_n_TMS'] >= 3) & (abs(final_df['Hit_n_TMS'] - final_df['Query_n_TMS']) <= 2)]
-    ##print(tc_arr)
-    ##print(final_df)
-    ##print(filtered_df[['Query_n_TMS','Hit_n_TMS']])
-    return(filtered_df)
-'''        
-      
-'''    
-def isMultiComp(row,df,int input):
-    tcid = row["Hit_tcid"]
-    tc_arr = tcdbSystems.get(tcid)
-    if(len(tc_arr) >1):
-        tc_filter_arr= [arr.split("-")[1] for arr in tc_arr]
-        tc_filter_arr.remove(row["Hit_xid"])
-        for arr in tc_filter_arr:
-            if(len(df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}' "))) ==0 :
-                ##print(arr,row["Hit_xid"],tc_arr)
-                return False
-        ##print(row["Hit_xid"],tc_arr)
-        return True   
-    else:
-        return False
-'''
+
+
 def isMultiComp3(row,df,input):
     if isSingleComp(row):
         return (False)
     ##get rid of single comp system first
     tcid = row["Hit_tcid"]
+    Fusion_results= geneFusions[row["Hit_tcid"] + "-" + row["Hit_xid"]]
+    if(len(Fusion_results) !=1):
+        sortedGeneArr = sorted(Fusion_results, key=lambda x: x['sstart'])
+        if(len(isFusion(sortedGeneArr))!=0):
+            #print("green",isFusion(sortedGeneArr))
+            return("green",isFusion(sortedGeneArr))        
     tc_arr = tcdbSystems.get(tcid)
     tc_all_arr= [arr.split("-")[1] for arr in tc_arr] ##All the proteins that TCDB provide
     tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
@@ -149,119 +223,46 @@ def isMultiComp3(row,df,input):
         
         return("Yellow", tc_filter_arr)
     else:
-        print(tc_arr)
-        print("MP",MembraneProteins)
-        print("Red",tc_filter_arr)
+        # print(tc_arr)
+        # print("MP",MembraneProteins)
+        # print("Red",tc_filter_arr)
         return ("Red", tc_filter_arr)
 
 
-def isMultiComp(row,df):
-    ##result=FindMembraneProtein(row,df)
-    tcid = row["Hit_tcid"]
-    tc_arr = tcdbSystems.get(tcid)
-    tc_arr = list(set(tc_arr))
-    if(len(tc_arr) >1):
-        tc_filter_arr = [arr.split("-")[1] for arr in tc_arr]
-        mutiComp_arr=[]
-        mutiComp_arr_xid=[]
-        for arr in tc_filter_arr:
-            query_result_df=df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}' ")
-            query_result_list=query_result_df.values.tolist()
-            query_result_xid=query_result_df["Hit_xid"].tolist()
-            if(len(query_result_list)) !=0 :
-                mutiComp_arr += query_result_list
-                mutiComp_arr_xid += query_result_xid
-        ##print(tc_filter_arr,query_result_xid)
-        if set(tc_filter_arr) == set(mutiComp_arr_xid):
-            ##print("green")
-            ##print(tc_filter_arr,mutiComp_arr_xid)
-            return("green", mutiComp_arr)
-        elif(len(mutiComp_arr)==0):
-            return("red",mutiComp_arr)
-        else:
-            tc_filter_arr_list= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
-            mutiComp_arr_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr_list]).drop_duplicates()
-            if mutiComp_arr_df.loc[mutiComp_arr_df['Hit_n_TMS'] >=3].values.tolist() != []:
-                return("yellow",mutiComp_arr_df.values.tolist())
-            else:
-                return("red",mutiComp_arr_df.values.tolist())
+'''    
+GREEN (Best hits)
+   a) High coverage (e.g., >=75% in both proteins; set as a threshold variable)
+   b) low E-value (e.g., <= 1e-10)
+   c) shared Pfam domains
+   d) If the value is larger (e.g., > 1e-10) but there is reasonable coverage (e.g. > 50%) in both proteins AND they have shared domains.
 
-def isMultiComp2(row,df):
-    ##result=FindMembraneProtein(row,df)
-    tcid = row["Hit_tcid"]
-    tc_arr = tcdbSystems.get(tcid)
-    tc_arr = list(set(tc_arr))
-    if(len(tc_arr) >1):
-        tc_filter_arr = [arr.split("-")[1] for arr in tc_arr]
-        mutiComp_arr_df=pd.DataFrame(columns=df.columns)
-        mutiComp_arr_xid=[]
-        for arr in tc_filter_arr:
-            query_result_df=df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}' ")
-            query_result_xid=query_result_df["Hit_xid"].tolist()
-            if(len(query_result_df)) !=0 :
-                ##print(mutiComp_arr_df,query_result_df)
-                mutiComp_arr_df = pd.concat([mutiComp_arr_df,query_result_df])
-                mutiComp_arr_xid += query_result_xid
-        if set(tc_filter_arr) == set(mutiComp_arr_xid):
-            return("green", mutiComp_arr_df)
-        elif(len(mutiComp_arr_df)==0):
-            return("red",mutiComp_arr_df)
-        else:
-            tc_filter_arr_list= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_filter_arr))
-            mutiComp_arr_df = pd.concat([ df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr_list]).drop_duplicates()
-            if len(mutiComp_arr_df.loc[mutiComp_arr_df['Hit_n_TMS'] >=3]) != 0:
-                return("yellow",mutiComp_arr_df)
-            else:
-                print("red",mutiComp_arr_df)
-
-#This is a helper function for finding common pFam domains and can be used to check if a value is a float
-def isfloat(num):
-    try:
-        float(num)
-        return True
-    except ValueError:
-        return False
-
-def qCoverage(row):
-    return float(row[7])
-
-def hCoverage(row):
-    return float(row[8])
-
-def eVal(row):
-    return float(row[2])
-
-def PfamDoms(row):
-    doms = []
-    if isfloat(row[10]):
-        return doms
-    elif isfloat(row[11]):
-        return doms
-        
-    q_pfam = row[10].split(',')
-    s_pfam = row[11].split(',')
+   YELLOW (not so sure)
+   a)lower coverage (e.g. <75% in both proteins)
+   b)Ok value (< 1e-3)
+   c)there are no shared domains
+   d) if one protein has very low coverage (e.g., ~10%) and there is other protein in the genome matching other region of the TCDB protein, select this proteins as potential fusions. 
+   e) 2 or more proteins in TCDB can fuse to form a single component system in your reference genome.
+      ** d and e required the coordinates that Clark is going to add to the file.
 
 
-    for q_domain in q_pfam:
-        for s_domain in s_pfam:
-            if q_domain == s_domain:
-                doms.append(q_domain)
-    common_doms = [*set(doms)]
-    return common_doms
-
-
-parseTCDBcontent()
+   RED (no good)
+   a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
+'''
 
 for index, row in df.iterrows():
-    print(isSingleComp(row))
+    if isSingleComp(row):
+        categorizeSingleComp(row)
+    else:
+        isMultiComp3(row,df,0.5)
 
-'''
-for index, row in df.iterrows():
-    if(isSingleComp(row)):
-        if(eVal(row) <= -10 and pfamDoms().size != 0):
-            green_df = green_df.append([row])
-        elif(eVal(row) < -3 and qCoverage() >= 90 and hCoverage >= 90):
-            yellow_df = yellow_df.append([row])
-        else:
-            red_df = red_df.append([row])
-'''
+    
+# print('Green')
+# print(green)
+# print('Yellow')
+# print(yellow)
+# print('Red')
+# print(red)
+    
+   
+   
+    
