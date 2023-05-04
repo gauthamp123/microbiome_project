@@ -7,7 +7,8 @@ import pandas as pd
 import numpy as np
 import os
 import re
-from fusion_distribution import isFusion,geneFusions
+from fusion_dist_dir import isFusion,genDict
+from pprint import pprint
 # construct df with all data from results.tsv
 df = pd.read_table('results.tsv')
 # print columns of df for dev use in constructing filtered_df later
@@ -24,6 +25,10 @@ red_df = green_df.copy()
 # construct filtered_df with only relevant data points for each protein matche
 filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_start', 'S_end', 
 'Query_Coverage', 'Hit_Coverage', 'Query_Pfam']]
+
+Output_df= df[['Hit_tcid','Hit_xid','#Query_id','Match_length','e-value','%_identity','Query_Length','Hit_Length','Q_start',
+'Q_end','S_start','S_end','Query_Coverage','Hit_Coverage','Query_n_TMS','Hit_n_TMS','TM_Overlap_Score','Family_Abrv'
+,'Predicted_Substrate','Query_Pfam','Subject_Pfam']]
 #print(filtered_df)
 
 #Example content:
@@ -149,28 +154,59 @@ def isMultiComp3(row,df,input):
         return (False)
     ##get rid of single comp system first
     tcid = row["Hit_tcid"]
+    Fusion_Add=[]
     Fusion_results= geneFusions[row["Hit_tcid"] + "-" + row["Hit_xid"]]
     if(len(Fusion_results) !=1):
         sortedGeneArr = sorted(Fusion_results, key=lambda x: x['sstart'])
-        if(len(isFusion(sortedGeneArr))!=0):
-            #print("green",isFusion(sortedGeneArr))
-            return("green",isFusion(sortedGeneArr))        
+        #if(len(isFusion(sortedGeneArr))!=0):
+            #print(Fusion_results,isFusion(sortedGeneArr))
+            #print(row["Hit_tcid"] + "-" + row["Hit_xid"])
+            #pprint(isFusion(sortedGeneArr))
+            #return("green",isFusion(sortedGeneArr))  
+        Fusion_Add=[x["query"] for x in isFusion(sortedGeneArr)]             
     tc_arr = tcdbSystems.get(tcid)
     tc_all_arr= [arr.split("-")[1] for arr in tc_arr] ##All the proteins that TCDB provide
     tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
+    tc_missing_arr= list(set(tc_all_arr) - set(tc_filter_arr))
+
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
-        
-        return("green",tc_filter_arr)
+        #print(tc_arr)
+        #print("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
+       
+        if(eVal(row) <= float("1e-10") and (len(Fusion_Add)!=0 or (qCoverage(row) >= 75 and hCoverage(row) >= 75))):
+            
+            #print(tc_arr)
+            #print("green",tc_filter_arr,eVal(row),hCoverage(row))
+            return({"color":"Green",
+                    "Found_proteins":tc_filter_arr,
+                    "All_proteins":tc_arr,
+                    'Missing_proteins':tc_missing_arr,
+                    "Fusion_results":Fusion_Add,
+                    "isFusion":len(Fusion_Add)>0})
+            #return("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
     MembraneProteins= FindMembraneProtein(row, df)
-    if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
+    if(input*len(tc_all_arr)<=len(tc_filter_arr)) and (len(Fusion_Add)!=0 or len(set(MembraneProteins) & set(tc_filter_arr)))>0:
         ##given some proteins can be found while containing the membrane proteins 
-        
-        return("Yellow", tc_filter_arr)
-    else:
-        print(tc_arr)
-        print("MP",MembraneProteins)
-        print("Red",tc_filter_arr)
-        return ("Red", tc_filter_arr)
+       if(eVal(row) <= float("1e-3")and qCoverage(row) <75 and hCoverage(row) <75):
+            return({"color":"Yellow",
+                    "Found_proteins":tc_filter_arr,
+                    "All_proteins":tc_arr,
+                    'Missing_proteins':tc_missing_arr,
+                    "Fusion_results":Fusion_Add,
+                    "isFusion":len(Fusion_Add)>0})
+            #return("Yellow","Fusion Results:", tc_filter_arr,Fusion_Add)
+    
+    #print(tc_arr)
+    #print("MP",MembraneProteins)    1.a.-P1,1.1.a-P2,1.a.-P3          P1,P2
+    #print("Red",tc_filter_arr)
+    #print(("Red", tc_filter_arr,"Fusion Results:",Fusion_Add,eVal(row),hCoverage(row)))
+    return({"color":"Red",
+                    "Found_proteins":tc_filter_arr,
+                    "All_proteins":tc_arr,
+                    'Missing_proteins':tc_missing_arr,
+                    "Fusion_results":Fusion_Add,
+                    "isFusion":len(Fusion_Add)>0})
+    #return ("Red", tc_filter_arr,"Fusion Results:",Fusion_Add)
 
 
 def isMultiComp(row,df):
@@ -268,11 +304,30 @@ GREEN (Best hits)
    RED (no good)
    a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
 '''
+def Write_multicomp(Output_dict,Output_df_row):
+    Intermediate=Output_df_row.copy()
+    Intermediate['isFusion']=Output_dict['isFusion']
+    missing_proteins= "NA" if(len(Output_dict['Missing_proteins'])==0) else ",".join(Output_dict['Missing_proteins'])
+    Intermediate['Missing_components']= missing_proteins
+    filename=f"{Output_dict['color']}.tsv"
+    filemode='a' if os.path.exists(filename) else 'w' 
+    #print(Intermediate)
+    with open(filename, mode=filemode, encoding='utf-8') as f:
+        Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
 
+geneFusions={}
+genDict(geneFusions, df)
+for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
+    if os.path.exists(filename):
+        os.remove(filename)
 for index, row in df.iterrows():
-    isMultiComp3(row,df,0.5)
-   
-   
+    #isMultiComp3(row,df,0.5)
+    #isMultiComp3(row, df, 0.5)
+    Output_dict= isMultiComp3(row, df, 0.5)
+    if(Output_dict):
+        Write_multicomp(Output_dict,Output_df.loc[[index],Output_df.columns])
+    #print(Output_dict)
+
     #FindMembraneProtein(row,df)
     if(isSingleComp(row)):
         if(eVal(row) <= float("1e-10") and qCoverage(row) >= 75 and hCoverage(row) >= 75):
