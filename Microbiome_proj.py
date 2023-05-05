@@ -185,9 +185,10 @@ def isMultiComp3(row,df,input):
                     "isFusion":len(Fusion_Add)>0})
             #return("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
     MembraneProteins= FindMembraneProtein(row, df)
-    if(input*len(tc_all_arr)<=len(tc_filter_arr)) and (len(Fusion_Add)!=0 or len(set(MembraneProteins) & set(tc_filter_arr)))>0:
+    if(input*len(tc_all_arr)<=len(tc_filter_arr)) or len(set(MembraneProteins) & set(tc_filter_arr))>0:
         ##given some proteins can be found while containing the membrane proteins 
        if(eVal(row) <= float("1e-3")and qCoverage(row) <75 and hCoverage(row) <75):
+            print("yellow")
             return({"color":"Yellow",
                     "Found_proteins":tc_filter_arr,
                     "All_proteins":tc_arr,
