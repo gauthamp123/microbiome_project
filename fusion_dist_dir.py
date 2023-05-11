@@ -34,13 +34,13 @@ def fusion_dist(fusion_candidate_list):
             residue_cov += 1
     
     if(residue_cov/fusion_candidate_list[0]['hit_length'] > 0.8):
-        print(fusion_candidate_list[0]['query'])
-        print("COV LIST")
-        print(coverage_list)
-        print("-------")
-        print("FREQ LIST")
-        print(frequency_list)
-        print("-------")
+        # print(fusion_candidate_list[0]['query'])
+        # print("COV LIST")
+        # print(coverage_list)
+        # print("-------")
+        # print("FREQ LIST")
+        # print(frequency_list)
+        # print("-------")
         #x= input("next")
         plt.plot(frequency_list.keys(), frequency_list.values(), '.--',label = "Frequency Distribution")
         #for point in frequency_list:
