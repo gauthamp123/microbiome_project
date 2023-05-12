@@ -63,16 +63,16 @@ def isSingleComp(row):
 
 with open('hmmtop.out') as f:
     lines = f.readlines()
-    hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS'])
+    hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
     ##Create a dataframe that include above columns 
     for line in lines:
         fields = re.split(r'[ -]+', line.strip())
         ##split the system and protein names
-        new_col=[fields[2],fields[3],fields[5]]
-        new_row = pd.Series([fields[2],fields[3],fields[5]], index=hmmtop_df.columns)
+        new_col=[fields[2],fields[3],fields[5],fields[1]]
+        new_row = pd.Series([fields[2],fields[3],fields[5],fields[1]], index=hmmtop_df.columns)
         hmmtop_df.loc[len(hmmtop_df)] = new_row
     hmmtop_df['Hit_n_TMS'] = hmmtop_df['Hit_n_TMS'].astype(int)
-
+#print(hmmtop_df)
 def FindMembraneProtein(row,df):
     if isSingleComp(row): ##get rid of single comp system first
         return ([])
@@ -142,7 +142,7 @@ def isMultiComp(row,df,input):
     # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
     if(input*len(tc_all_arr)<=len(tc_filter_arr)) or len(set(MembraneProteins) & set(tc_filter_arr))>0:
         ##given some proteins can be found while containing the membrane proteins 
-       if(eVal(row) <= float("1e-3") and ((qCoverage(row) <75 and hCoverage(row) <75) or len(Fusion_Add)!=0 )):
+       if(eVal(row) <= float("1e-3") and ((qCoverage(row) >=50 and hCoverage(row) >=50) or len(Fusion_Add)!=0 )):
             #print("Yellow")
             return({"color":"Yellow",
                     "Found_proteins":tc_filter_arr,
@@ -202,6 +202,7 @@ GREEN (Best hits)
    RED (no good)
    a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
 '''
+'''
 def Write_multicomp(Output_dict,Output_df_row):
     Intermediate=Output_df_row.copy()
     Intermediate['isFusion']=Output_dict['isFusion']
@@ -212,7 +213,30 @@ def Write_multicomp(Output_dict,Output_df_row):
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
         Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
+'''
+def Write_multicomp(Output_dict,Output_df_row):
+    Intermediate=Output_df_row.copy()
+    Intermediate['isFusion']=Output_dict['isFusion']
+    filename=f"{Output_dict['color']}.tsv"
+    filemode='a' if os.path.exists(filename) else 'w' 
+    #print(Intermediate)
+    with open(filename, mode=filemode, encoding='utf-8') as f:
+        Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
 
+    for hit_xid in Output_dict['Missing_proteins']:
+        _Intermediate=Output_df_row.copy()
+        _Intermediate=_Intermediate.applymap(lambda x: 'NA')
+        #print(_Intermediate)
+
+        _Intermediate["Hit_tcid"]=Output_df_row["Hit_tcid"]
+        _Intermediate["Hit_xid"]=hit_xid
+        Missing_infor = hmmtop_df.loc[(hmmtop_df['Hit_xid'] ==  hit_xid)]
+
+        _Intermediate["Match_length"]=Missing_infor["Match_length"].iloc[0] if not Missing_infor.empty else "NA"
+        _Intermediate["Hit_n_TMS"]=Missing_infor["Hit_n_TMS"].iloc[0] if not Missing_infor.empty else "NA"
+        with open(filename, mode="a", encoding='utf-8') as f:
+            _Intermediate.to_csv(f, sep='\t', header=False, index=False)
+            
 geneFusions={}
 genDict(geneFusions, df)
 for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
@@ -225,4 +249,11 @@ for index, row in df.iterrows():
         Write_multicomp(Output_dict,Output_df.loc[[index],Output_df.columns])
     #print(Output_dict)
 
-
+for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
+    if os.path.exists(filename):
+        df = pd.read_csv(filename, sep='\t')
+        df = df.fillna('NA')
+        NA_count = df.eq('NA').sum(axis=1).rename('NA_count')
+        df['na_sort'] = NA_count
+        df = df.sort_values(by=['Hit_tcid','na_sort']).drop(columns=['na_sort'])
+        df.to_csv(filename, sep='\t', index=False)
