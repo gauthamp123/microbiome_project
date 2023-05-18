@@ -124,13 +124,13 @@ def categorizeSingleComp(row):
     
 with open('hmmtop.out') as f:
     lines = f.readlines()
-    hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS'])
+    hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
     ##Create a dataframe that include above columns 
     for line in lines:
         fields = re.split(r'[ -]+', line.strip())
         ##split the system and protein names
         new_col=[fields[2],fields[3],fields[5]]
-        new_row = pd.Series([fields[2],fields[3],fields[5]], index=hmmtop_df.columns)
+        new_row = pd.Series([fields[2],fields[3],fields[5],fields[1]], index=hmmtop_df.columns)
         hmmtop_df.loc[len(hmmtop_df)] = new_row
     hmmtop_df['Hit_n_TMS'] = hmmtop_df['Hit_n_TMS'].astype(int)
 
@@ -251,44 +251,63 @@ GREEN (Best hits)
    RED (no good)
    a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
 '''
-def Write_multicomp(Output_dict,Output_df_row, isSingle): 
-    if not isSingle:
-        Intermediate=Output_df_row.copy()
-        Intermediate['isFusion']=Output_dict['isFusion']
-        missing_proteins= "NA" if(len(Output_dict['Missing_proteins'])==0) else ",".join(Output_dict['Missing_proteins'])
-        Intermediate['Missing_components']= missing_proteins
-        filename=f"{Output_dict['color']}.tsv"
-    else:
-        color = output_dict[0]
-        dictionary = output_dict[1]
-        Intermediate = Output_df_row.copy()
-        Intermediate['isFusion'] = dictionary[len(dictionary) - 1]
-        missing_proteins = "NA"
-        Intermediate['Missing_components']= missing_proteins
-        filename=f"{color}.tsv"
+def Write_multicomp(Output_dict,Output_df_row): 
+
+    Intermediate=Output_df_row.copy()
+    Intermediate['isFusion']=Output_dict['isFusion']
+    missing_proteins= "NA" if(len(Output_dict['Missing_proteins'])==0) else ",".join(Output_dict['Missing_proteins'])
+    Intermediate['Missing_components']= missing_proteins
+    filename=f"{Output_dict['color']}.tsv"
+    filemode='a' if os.path.exists(filename) else 'w' 
+    #print(Intermediate)
+    with open(filename, mode=filemode, encoding='utf-8') as f:
+        Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
+    Intermediate=Output_df_row.copy()
+    Intermediate['isFusion']=Output_dict['isFusion']
+    filename=f"{Output_dict['color']}.tsv"
     filemode='a' if os.path.exists(filename) else 'w' 
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
         Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
 
-def write_singlecomp(output_dict, row):
+    for hit_xid in Output_dict['Missing_proteins']:
+        _Intermediate=Output_df_row.copy()
+        _Intermediate=_Intermediate.applymap(lambda x: 'NA')
+
+        _Intermediate["Hit_tcid"]=Output_df_row["Hit_tcid"]
+        _Intermediate["Hit_xid"]=hit_xid
+        Missing_infor = hmmtop_df.loc[(hmmtop_df['Hit_xid'] ==  hit_xid)]
+
+        _Intermediate["Match_length"]=Missing_infor["Match_length"].iloc[0] if not Missing_infor.empty else "NA"
+        _Intermediate["Hit_n_TMS"]=Missing_infor["Hit_n_TMS"].iloc[0] if not Missing_infor.empty else "NA"
+        with open(filename, mode="a", encoding='utf-8') as f:
+            _Intermediate.to_csv(f, sep='\t', header=False, index=False)
+    
+        
+        
+
+def write_singlecomp(Output_dict,Output_df_row):
     color = output_dict[0]
     dictionary = output_dict[1]
-    intermediate = row.copy()
-    intermediate['isFusion'] = dictionary[len(dictionary) - 1]
-    missing_proteins = 'NA'
-    intermediate['Missing_components'] = missing_proteins
-    filename = ''
-    if color == 'Green':
-        filename = 'Green.tsv'
-    elif color == 'Yellow':
-        filename = 'Yellow.tsv'
-    else:
-        filename = 'Red.tsv'
+    Intermediate = Output_df_row.copy()
+    Intermediate['isFusion'] = dictionary[len(dictionary) - 1]
+    missing_proteins = "NA"
+    Intermediate['Missing_components']= missing_proteins
+    filename=f"{color}.tsv"
+
     filemode='a' if os.path.exists(filename) else 'w' 
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
-        intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
+        Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
+    Intermediate=Output_df_row.copy()
+    Intermediate['isFusion'] = dictionary[len(dictionary) - 1]
+    filename=f"{color}.tsv"
+    filemode='a' if os.path.exists(filename) else 'w' 
+    #print(Intermediate)
+    with open(filename, mode=filemode, encoding='utf-8') as f:
+        Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
+
+
 
 
 geneFusions={}
@@ -302,10 +321,10 @@ for index, row in df.iterrows():
     Output_dict= isMultiComp(row, df, 0.5)
 
     if(Output_dict):
-        Write_multicomp(Output_dict,Output_df.loc[[index],Output_df.columns], False)
+        Write_multicomp(Output_dict,Output_df.loc[[index],Output_df.columns])
     else:
         output_dict = categorizeSingleComp(row)
-        Write_multicomp(output_dict, Output_df.loc[[index],Output_df.columns], True)
+        write_singlecomp(output_dict, Output_df.loc[[index],Output_df.columns])
 
 
     
