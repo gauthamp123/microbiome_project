@@ -252,16 +252,6 @@ GREEN (Best hits)
    a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
 '''
 def Write_multicomp(Output_dict,Output_df_row): 
-
-    Intermediate=Output_df_row.copy()
-    Intermediate['isFusion']=Output_dict['isFusion']
-    missing_proteins= "NA" if(len(Output_dict['Missing_proteins'])==0) else ",".join(Output_dict['Missing_proteins'])
-    Intermediate['Missing_components']= missing_proteins
-    filename=f"{Output_dict['color']}.tsv"
-    filemode='a' if os.path.exists(filename) else 'w' 
-    #print(Intermediate)
-    with open(filename, mode=filemode, encoding='utf-8') as f:
-        Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
     Intermediate=Output_df_row.copy()
     Intermediate['isFusion']=Output_dict['isFusion']
     filename=f"{Output_dict['color']}.tsv"
@@ -273,6 +263,7 @@ def Write_multicomp(Output_dict,Output_df_row):
     for hit_xid in Output_dict['Missing_proteins']:
         _Intermediate=Output_df_row.copy()
         _Intermediate=_Intermediate.applymap(lambda x: 'NA')
+        #print(_Intermediate)
 
         _Intermediate["Hit_tcid"]=Output_df_row["Hit_tcid"]
         _Intermediate["Hit_xid"]=hit_xid
@@ -299,13 +290,7 @@ def write_singlecomp(Output_dict,Output_df_row):
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
         Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
-    Intermediate=Output_df_row.copy()
-    Intermediate['isFusion'] = dictionary[len(dictionary) - 1]
-    filename=f"{color}.tsv"
-    filemode='a' if os.path.exists(filename) else 'w' 
-    #print(Intermediate)
-    with open(filename, mode=filemode, encoding='utf-8') as f:
-        Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
+    
 
 
 
