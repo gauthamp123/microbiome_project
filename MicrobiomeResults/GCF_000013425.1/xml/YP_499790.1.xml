@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499790.1 hypothetical protein SAOUHSC_01257 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>234</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499790.1 hypothetical protein SAOUHSC_01257 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>234</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10356</Hit_id>
+  <Hit_def>gnl|TC-DB|P40471|1.A.115.1.1 NADPH-dependent 1-acyldihydroxyacetone phosphate reductase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=AYR1 PE=1 SV=1</Hit_def>
+  <Hit_accession>10356</Hit_accession>
+  <Hit_len>297</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.1738</Hsp_bit-score>
+      <Hsp_score>178</Hsp_score>
+      <Hsp_evalue>2.20375e-15</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>182</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>187</Hsp_align-len>
+      <Hsp_qseq>ALVLGGSGSIGSEIVKQLLTDGFEVYVQYYRTD-INELTSKFNDDKVRFIQADLSQTIDIDKTFGDIKS------LDCLIYASGQSLYGVLQDMKDHDIDACYQLNVLQLIRLCRYFVDVLRQSANGRIIVISSIWGETGASMETIYSAMKSAQLGFVKALSQELALTSVTVNAIAPGFVAGNMASE</Hsp_qseq>
+      <Hsp_hseq>AVVTGASGGIGYEVTKELARNGYLVYACARRLEPMAQLAIQFGNDSIKPYKLDISKPEEIVTFSGFLRANLPDGKLDLLYNNAGQSCTFPALDATDAAVEQCFKVNVFGHINMCRELSEFLIK-AKGTIVFTGSLAGVVSFPFGSIYSASKAAIHQYARGLHLEMKPFNVRVINAITGGVATDIADK</Hsp_hseq>
+      <Hsp_midline>A+V G SG IG E+ K+L  +G+ VY    R + + +L  +F +D ++  + D+S+  +I    G +++      LD L   +GQS      D  D  ++ C+++NV   I +CR   + L + A G I+   S+ G       +IYSA K+A   + + L  E+   +V V     G VA ++A +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19998</Hit_id>
+  <Hit_def>gnl|TC-DB|RZD32576|1.A.115.1.2 NAD-binding protein [Euryarchaeota archaeon]</Hit_def>
+  <Hit_accession>19998</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>1.72042e-10</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>182</Hsp_align-len>
+      <Hsp_qseq>ALVLGGSGSIGSEIVKQLLTDGFEVYVQYYRTD-INELTSKFNDDKVRFIQADLSQTID----IDKTFGDIKSLDCLIYASGQSLYGVLQDMKDHDIDAC---YQLNVLQLIRLCRYFVDVLRQSANGRIIVISSIWGETGASMETIYSAMKSAQLGFVKALSQELALTSVTVNAIAPGFVA</Hsp_qseq>
+      <Hsp_hseq>ALVTGASSGIGFEMARQLADAGAQVFASARREQRLAQLAAEFPAGRITPLVADLAEAGAGARLVKQVLADAGRLDLLVNNAG---YGELVKADEQTTEAVARQMQVNFMAVIEATLAVIPTMKSQGGGRILNVASIVGHMGLPGIAAYVASKHALQGWSEASGYDLREHGIAVTCLCPGGTA</Hsp_hseq>
+      <Hsp_midline>ALV G S  IG E+ +QL   G +V+    R   + +L ++F   ++  + ADL++       + +   D   LD L+  +G   YG L    +   +A     Q+N + +I      +  ++    GRI+ ++SI G  G      Y A K A  G+ +A   +L    + V  + PG  A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21287</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_062382148.1|1.A.115.1.5 SDR family oxidoreductase [Pseudomonas abietaniphila]</Hit_def>
+  <Hit_accession>21287</Hit_accession>
+  <Hit_len>250</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>7.38609e-10</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>230</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>239</Hsp_align-len>
+      <Hsp_qseq>ALVLGGSGSIGSEIVKQLLTDGFEVYVQYYR-TDINELTSKF-NDDKVRFIQADLSQTIDIDKTFGDIKS-LDCLIYASGQSLYGVLQDMKDHDIDACYQLNVLQLIRLCRYFVDVLRQSANGRIIVISSIWGETGASMETIYSAMKSAQLGFVKALSQELALTSVTVNAIAPGF--------VAGNMASEWQEDELQAMITELPQQRLVLPSEVAHTCAYLYHPNARSVTGTIQKVNG</Hsp_qseq>
+      <Hsp_hseq>ALVTGGTTGIGLATAKRFAEEGAYVYITGRRQAELDAAVARVGNATGVQVDSTNLEQLDALYRQIGTEKGRLDVLFANAGGGSMLPLGDITEAQYQDTFDRNVKGVLFTVQKALPLLAKGAS--VILTGSTAGSSGTAAFSVYAASKAAVRAFARNWILDLKDRNVRVNTLSPGATRTPGLVDLAGPDAAQ-QQGLLDYLASQIPMGRVGEPEEIAAAALFLASDDASFVNGIELFVDG</Hsp_hseq>
+      <Hsp_midline>ALV GG+  IG    K+   +G  VY+   R  +++   ++  N   V+    +L Q   + +  G  K  LD L   +G      L D+ +      +  NV  ++   +  + +L + A+  +I+  S  G +G +  ++Y+A K+A   F +    +L   +V VN ++PG         +AG  A++ Q+  L  + +++P  R+  P E+A    +L   +A  V G    V+G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>95</Statistics_hsp-len>
+      <Statistics_eff-space>1090753433</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

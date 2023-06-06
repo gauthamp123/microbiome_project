@@ -1,0 +1,845 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_501152.1 hypothetical protein SAOUHSC_02690 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>516</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_501152.1 hypothetical protein SAOUHSC_02690 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>516</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6750</Hit_id>
+  <Hit_def>gnl|TC-DB|O05703|3.A.1.15.3 ADCA PROTEIN (FRAGMENT) - Streptococcus pneumoniae.</Hit_def>
+  <Hit_accession>6750</Hit_accession>
+  <Hit_len>501</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>360.918</Hsp_bit-score>
+      <Hsp_score>925</Hsp_score>
+      <Hsp_evalue>9.92947e-120</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>516</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>501</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>199</Hsp_identity>
+      <Hsp_positive>285</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>512</Hsp_align-len>
+      <Hsp_qseq>LLLVPAVTLSLAACGNDDGKDKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAE-DPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKALDS-GVKVKDDKAESKHDKAISDGYFKDEQVKDRELSDYAGEWQSVYPYLKDGTLDEVMEHKAENDPKKSAKDLKAYYDKGYKTDITNIDIKGNEITFTKDGKKHTGKYEYNGKKTLKYPKGNRGVRFMFKLVDGNDKDLPKFIQFSDHNIAPKKAEHFHIFM-GNDNDALLKEMDNWPTYYPSKLNKDQIKEEMLAH</Hsp_qseq>
+      <Hsp_hseq>LLLASLCALFLVACSNQ--KQADGKLNIVTTFYPVYEFTKQVAGDTANVELLIGAGTEPHEYEPSAKAVAKIQDADTFVYENENMETWVPKLLDTL-DKKKVKTIKATGDMLLLPGGEEEEGD------HDHGEEGHHHE---FDPHVWLSPVRAIKLVEHIRDSLSADYPDKKETFEKNAAAYIEKLQALDKAYAEGLSQAKQKSFVTQHAAFNYLALDYGLKQVAISGLSPDAEPSAARLAELTEYVKKNKIAYIYFEENASQALANTLSKEAGVKTDVLNPLESLTEEDTKAGE-NYISVMEKNLKALKQTTDQEGPAIEPEKAEDT--KTVQNGYFEDAAVKDRTLSDYAGNWQSVYPFLEDGTFDQVFDYKAKLTGKMTQAEYKAYYTKGYHTDVTKINITDNTMEFVQGGQSKKYTYKYVGKKILTYKKGNRGVRFLFEATDA-DAGQFKYVQFSDHNVAPVKAEHFHIFFGGTSQEALFEEMDNWPTYYPDNLSGQEIAQEMLAH</Hsp_hseq>
+      <Hsp_midline>LLL     L L AC N   K  DGK+ I TT YP+  F +Q+ G    V  +  AGT+ H YEP+ K +     +D F+Y  +N++    K+  T+ DK K  +++   D   L   + E G+      HDH +E HHH    +DPHVWL P       + I+D L    P  K+ +EKN     + L+ +D    +     +  +    H +  YLA  YG  Q  I  ++ + +PS   L ++ + ++ +   YI +E+N +  +  T+ KE   K      +ESL +E  K     Y S+M+ N++ + +  D  G  ++ +KAE    K + +GYF+D  VKDR LSDYAG WQSVYP+L+DGT D+V ++KA+   K +  + KAYY KGY TD+T I+I  N + F + G+     Y+Y GKK L Y KGNRGVRF+F+  D  D    K++QFSDHN+AP KAEHFHIF  G   +AL +EMDNWPTYYP  L+  +I +EMLAH</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7165</Hit_id>
+  <Hit_def>gnl|TC-DB|O34966|3.A.1.15.11 Probable zinc transport system zinc-binding lipoprotein adcA OS=Bacillus subtilis GN=adcA PE=1 SV=1</Hit_def>
+  <Hit_accession>7165</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.933</Hsp_bit-score>
+      <Hsp_score>424</Hsp_score>
+      <Hsp_evalue>8.39383e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>315</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>163</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>326</Hsp_align-len>
+      <Hsp_qseq>MKKKLGMLLLVPAVTLSLAACGNDDGK----DKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNA-EDPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>MFKKWSGLFVIAACFLLVAACGNSSTKGSADSKGDKLHVVTTFYPMYEFTKQIVKDKGDVDLLIPSSVEPHDWEPTPKDIANIQDADLFVYNSEYMETW---VPSAEKSMGQGHAVFVNASKGIDLME----GSEEEHEEHDHGEHEHSH---AMDPHVWLSPVLAQKEVKNITAQIVKQDPDNKEYYEKNSKEYIAKLQDLDKLYRTTAKKAEKKEFITQHTAFGYLAKEYGLKQVPIAGLSPDQEPSAASLAKLKTYAKEHNVKVIYFEEIASSKVADTLASEIGAKTEVLNTLEGLSKEEQDK-GLGYIDIMKQNLDALKDSL</Hsp_hseq>
+      <Hsp_midline>M KK   L ++ A  L +AACGN   K     K  K+ + TT YP+  F +QI      V  + P+  + H +EPT KDI +   +DLF+Y  + ++     V S  K   +  ++     K   L +    G E EHE HDH + EH H     DPHVWL P + Q   K I  ++VK+DP +K+ YEKN K+    L+ +D   +   K  +       H + GYLA  YG  Q  I  ++  ++PS   L K+    ++ N K I +E+  ++KV +T+  E  AK      +E L+KE+Q K  + Y  +MK N++ +  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4557</Hit_id>
+  <Hit_def>gnl|TC-DB|G0LRW7|3.A.1.15.15 ABC transporter extracellular binding protein OS=Staphylococcus aureus subsp. aureus LGA251 GN=mntC PE=3 SV=1</Hit_def>
+  <Hit_accession>4557</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>130.568</Hsp_bit-score>
+      <Hsp_score>327</Hsp_score>
+      <Hsp_evalue>3.84016e-34</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>317</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>304</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>149</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>321</Hsp_align-len>
+      <Hsp_qseq>KKLGMLLLVPAVTLSLAACGNDDGKDKD---GKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKD--KQGNAVFISHESIGYLADCYGFVQKGIQNMNAE-DPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENI</Hsp_qseq>
+      <Hsp_hseq>KKLVPLLL--ALLLLVAACGTGGKQSSDKSNGKLKVVTTNSILYDMAKNVGGDNVDIHSIVPVGQDPHEYEVKPKDIKKLTDADVILYNGLNLETGNGWFEKALEQAGKSLKDKKVIAVSKDVKPIYLNGEEGNKDKQ--------------DPHAWLSLDNGIKYVKTIQQTFIDNDKKHKADYEKQGNKYIAQLEKLNNDSKDKFNDIPKEQRAMITSEGAFKYFSKQYGITPGYIWEINTEKQGTPEQMRQAIEFVKKHKLKHLLVETSVDKKAMESLSEETKKDIFGEVYTDSIGKEGTKGD--SYYKMMKSNIETV</Hsp_hseq>
+      <Hsp_midline>KKL  LLL  A+ L +AACG    +  D   GK+ + TT   L   A+ +GG +V + SI P G D H YE   KDI   + +D+ +Y G NL+         ++   K L  +  +  +K +   + +GEE   +                DPH WL       + K I+   +  D KHK DYEK   K    L+K++ND K    D  K+  A+  S  +  Y +  YG     I  +N E   + +++ + ++ ++    K++L E +V  K  E++ +ET          +S+ KE  K D  +Y  +MKSNIE +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8581</Hit_id>
+  <Hit_def>gnl|TC-DB|P0A4G2|3.A.1.15.14 Manganese ABC transporter substrate-binding lipoprotein OS=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4) GN=psaA PE=1 SV=1</Hit_def>
+  <Hit_accession>8581</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.865</Hsp_bit-score>
+      <Hsp_score>307</Hsp_score>
+      <Hsp_evalue>2.26615e-31</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>325</Hsp_align-len>
+      <Hsp_qseq>KKLGMLLLVPAVTLSLAACGNDDGKDKDG-KVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMK----QVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDPSQKELTK-IVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>KKLGTLLVLFLSAIILVACASGKKDTTSGQKLKVVATNSIIADITKNIAGDKIDLHSIVPIGQDPHEYEPLPEDVKKTSEADLIFYNGINLETGGNAWFTKLVENAKKTENKDYFAVS---------------DGVDVIYLEGQNEKGKEDPHAWLNLENGIIFAKNIAKQLSAKDPNNKEFYEKNLKEYTDKLDKLDKESKDKFNKIPAEKK--LIVTSEGAFKYFSKAYGVPSAYIWEINTEEEGTPEQIKTLVEKLRQTKVPSLFVESSVDDRPMKTVSQDTNIPIYAQIFTDSI--AEQGKEGDSYYSMMKYNLDKIAEGL</Hsp_hseq>
+      <Hsp_midline>KKLG LL++    + L AC +       G K+ +  T   +    + I G  + + SI P G D H YEP  +D+   S++DL  Y G NL+       + + +  KK   +D    +               +G D    E  +  G  DPH WL+ +    FAK I  +L  KDP +K+ YEKN K+  D L K+D + K    ++  +K+   +  S  +  Y +  YG     I  +N E+    E  K +V+++R +    +  E +V ++  +T+ ++T+         +S+   +Q K+  +Y S+MK N++ I + L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14340</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5FA63|3.A.1.15.10 Putative ABC transporter, periplasmic binding protein - Neisseria gonorrhoeae (strain ATCC 700825 / FA 1090).</Hit_def>
+  <Hit_accession>14340</Hit_accession>
+  <Hit_len>308</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.094</Hsp_bit-score>
+      <Hsp_score>305</Hsp_score>
+      <Hsp_evalue>4.18609e-31</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>281</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>270</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>122</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>251</Hsp_align-len>
+      <Hsp_qseq>IKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHE-GHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQV--TKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAE-DPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKET</Hsp_qseq>
+      <Hsp_hseq>VVTSFSILGDVAKQIGGERVAVQSLVGANQDTHAYHMTSGDIKKIRSAKLVLLNGLGLE--AADIQRAVEQS--KVSYAEATKGIQPLKAEEEGGHHHDHHHDHDHDHEGHHHDHGEYDPHVWNDPVLMSDYAQNVAETLIKADPEGKVYYQQRLGNYQMQLKKLHSDAQAAFNAVPAAKRKVLTGHDAFSYMGNRYNISFIAPQGVSSEAEPSAKQVAAIIRQIKREGIKAVFTENIKDTRMVDRIAKET</Hsp_hseq>
+      <Hsp_midline>+ T+   L   A+QIGG+ V V S+  A  D H+Y  T  DI     + L +  G  L+  A  +   ++    K+S  +     + L  + E G  H+H   HDH+ E HHH HG YDPHVW DP +   +A+ + + L+K DP+ K  Y++        LKK+ +D +            V   H++  Y+ + Y       Q +++E +PS K++  I+++I+    K +  E+    ++ + I KET</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18354</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9KIJ3|3.A.1.15.20 Metal ABC transporter substrate-binding lipoprotein OS=Streptococcus mutans serotype c (strain ATCC 700610 / UA159) OX=210007 GN=sloC PE=3 SV=2</Hit_def>
+  <Hit_accession>18354</Hit_accession>
+  <Hit_len>306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>121.324</Hsp_bit-score>
+      <Hsp_score>303</Hsp_score>
+      <Hsp_evalue>7.57071e-31</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>304</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>144</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>327</Hsp_align-len>
+      <Hsp_qseq>KKLGMLLLVPAVTLSLAACGNDDGKDKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDP-----VAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTK--DKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDP-SQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>KKLSLLLLVCLSLLGLFACTSKKTADK--KLTVVATNSIIADITKNIAGNKVVLHSIVPVGRDPHEYEPLPEDVKKTSQADVIFYNGINLENGGNAWFTKLVKNAHKKTDKDYFAVSDSVKTIYLENAKEKGKE--------------------DPHAWLDLKNGIIYAKNIMKRLSEKDPKNKSYYQKNFQAYSAKLEKLHKVAKEKISRIPTEKKMIVTSEGCFKYFSKAYDIPSAYIWEINTEEEGTPNQIKALVKKLRKSRVSALFVESSVDDRPMKTVSKDTGIPIAAKIFTDSVAKKGQAGD--SYYAMMKWNIDKIANGL</Hsp_hseq>
+      <Hsp_midline>KKL +LLLV    L L AC +    DK  K+T+  T   +    + I G  V + SI P G D H YEP  +D+   S++D+  Y G NL+        K V +  K  DK         K   L +  E G+E                    DPH WLD K    +AK I   L +KDPK+K  Y+KN++  +  L+K+    K+       +   +  S     Y +  Y      I  +N E+  +  ++  +VK++R S    +  E +V ++  +T+ K+T          +S+ K+ Q  D  +Y ++MK NI+ I   L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16024</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8DQ09|3.A.1.15.3 Lipoprotein OS=Streptococcus pneumoniae (strain ATCC BAA-255 / R6) GN=lmb PE=1 SV=1</Hit_def>
+  <Hit_accession>16024</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.857</Hsp_bit-score>
+      <Hsp_score>294</Hsp_score>
+      <Hsp_evalue>1.43796e-29</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>159</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>327</Hsp_align-len>
+      <Hsp_qseq>MKKKLGMLLLVPAVTLSLAACGNDDGKDKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKN----YKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAE-DPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNK-EQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>MKKQNLFLVLLSVFLLCLGACGQKESQTGKG-MKIVTSFYPIYAMVKEVSGDLNDVRMIQ-SSSGIHSFEPSANDIAAIYDADVFVYHSHTLESWAGSLDPNLKKSKVKV-----LEASEGMTLERVPGLEDVEAGDGVDEKTL------YDPHTWLDPEKAGEEAQIIADKLSEVDSEHKETYQKNAQAFIKKAQELTKKFQPKFEKATQ----KTFVTQHTAFSYLAKRFGLNQLGIAGISPEQEPSPRQLTEIQEFVKTYKVKTIFTESNASSKVAETLVKSTGV------GLKTLNPLESDPQNDKTYLENLEENMSILAEEL</Hsp_hseq>
+      <Hsp_midline>MKK+   L+L+    L L ACG  + +   G + I T+ YP+ +  +++ G    V  I  + + +HS+EP+  DI +   +D+F+Y    L+  A  +   +K    K+     L+ ++ +T +   G E    G   +++        YDPH WLDP+     A+ I D+L + D +HK+ Y+KN     KK  +  KK     ++ T+          H +  YLA  +G  Q GI  ++ E +PS ++LT+I + ++    K I  E N ++KV ET+ K T         +++LN  E   +++ TY   ++ N+  + + L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13871</Hit_id>
+  <Hit_def>gnl|TC-DB|Q4V0W6|3.A.1.15.21 Adhesion lipoprotein OS=Bacillus cereus (strain ZK / E33L) OX=288681 GN=mntA PE=3 SV=1</Hit_def>
+  <Hit_accession>13871</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>110.923</Hsp_bit-score>
+      <Hsp_score>276</Hsp_score>
+      <Hsp_evalue>4.03921e-27</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>317</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>322</Hsp_align-len>
+      <Hsp_qseq>MKKKLGMLLLVPAVTLSLAACGNDDGKDKDG--KVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKI-DNDMKQVTKDKQGNAVFISHE-SIGYLADCYGFVQKGIQNMNAEDP-SQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENI</Hsp_qseq>
+      <Hsp_hseq>MKFKNILFSILCIFVFALTACSSNTNGKAEGSEKLKIVTTYSIIYDMVKQIGGDKVEIHSLVPIGANPHEYDPLPKDVMKMTDADMVFYNGLNLE----EGGAWFK---KLLKTANKSEKDAPVYKVSEGVEPIYLETKGLEKEP--------DPHAWLNIKNGIVYAENVKKALIKEDPKNKELYTKNTDKYIAELQKLHDETVNRIHQIPEEKRFLISSEGAFKYFGKAYGIKTGYIWEINSENQGTPDQIRDVVSLIQTNKVPALFVETSVDRRSMETVSKETNVPIAGTIFTDSLGKSGE--DGDTYLKMMKWNTDTI</Hsp_hseq>
+      <Hsp_midline>MK K  +  ++     +L AC ++     +G  K+ I TT   +    +QIGG  V++ S+ P G + H Y+P  KD++  + +D+  Y G NL+    +  +  K   K L   +K +K   +    E  E    E    EKE         DPH WL+ K    +A+ +K  L+K+DPK+K+ Y KN  K   +L+K+ D  + ++ +  +     IS E +  Y    YG     I  +N+E+  +  ++  +V  I+ +    +  E +V  +  ET+ KET+         +SL K  +  D  TY  +MK N + I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10462</Hit_id>
+  <Hit_def>gnl|TC-DB|P42364|3.A.1.15.2 Metal ABC transporter substrate-binding lipoprotein precursor (Coaggregation-mediating adhesin) - Streptococcus gordonii Challis.</Hit_def>
+  <Hit_accession>10462</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>110.153</Hsp_bit-score>
+      <Hsp_score>274</Hsp_score>
+      <Hsp_evalue>7.39056e-27</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>144</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>324</Hsp_align-len>
+      <Hsp_qseq>KKLGMLLLVPAVTLSLAACGNDDGK--DKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKD--KQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDP-SQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>KKCRFLVLLLLAFVGLAACSSQKSSTDSSSSKLNVVATNSIIADITKNIAGDKINLHSIVPVGQDPHKYEPLPEDVKKTSKADLIFYNGINLETGGNAWFTKLVENAQKKENKDYYAVS---------------EGVDVIYLEGQNEKGKEDPHAWLNLENGIIYAQNIAKRLIEKDPDNKATYEKNLKAYIEKLTALDKEAKEKFNNIPEEKKMIVTSEGCPKYFSKAYNVPSAYIWEINTEEEGTPDQIKSLVEKLRKTKVPSLFVESSVDDRPMKTVSKDTNIPIYAKIFTDSI--AEKGEDGDSYYSMMKYNLDKISEGL</Hsp_hseq>
+      <Hsp_midline>KK   L+L+    + LAAC +          K+ +  T   +    + I G  + + SI P G D H YEP  +D+   SK+DL  Y G NL+       + + +  +K   +D    +               EG D    E  +  G  DPH WL+ +    +A+ I   L++KDP +K  YEKN K   + L  +D + K+   +  ++   +  S     Y +  Y      I  +N E+  +  ++  +V+++R +    +  E +V ++  +T+ K+T+         +S+   ++ +D  +Y S+MK N++ I + L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8582</Hit_id>
+  <Hit_def>gnl|TC-DB|P0A4G4|3.A.1.15.6 Metal ABC transporter substrate-binding lipoprotein - Streptococcus pyogenes serotype.</Hit_def>
+  <Hit_accession>8582</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>1.20673e-25</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>333</Hsp_align-len>
+      <Hsp_qseq>MKKKLGMLLLVPAVTLSLAACGNDDGKD-KDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDP-----VAKKVASTIKDKDKK-LSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQ----VTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDP-SQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>MGKRMSLILGAFLSVFLLVACSSTGTKTAKSDKLKVVATNSIIADMTKAIAGDKIDLHSIVPIGQDPHEYEPLPEDVEKTSNADVIFYNGINLEDGGQAWFTKLVKNAQKTKNKDYFAVSDGIDVIYL-------------EGASEKGKE--------DPHAWLNLENGIIYSKNIAKQLIAKDPKNKETYEKNLKAYVAKLEKLDKEAKSKFDAIAENKK--LIVTSEGCFKYFSKAYGVPSAYIWEINTEEEGTPDQISSLIEKLKVIKPSALFVESSVDRRPMETVSKDSGIPIYSEIFTDSIAKKGKPGD--SYYAMMKWNLDKISEGL</Hsp_hseq>
+      <Hsp_midline>M K++ ++L        L AC +   K  K  K+ +  T   +    + I G  + + SI P G D H YEP  +D+   S +D+  Y G NL+        K V +  K K+K   ++ D +D   L             EG   + +E        DPH WL+ +    ++K I  +L+ KDPK+K+ YEKN K     L+K+D + K     + ++K+   +  S     Y +  YG     I  +N E+  +  +++ ++++++      +  E +V  +  ET+ K++          +S+ K+ +  D  +Y ++MK N++ I + L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14710</Hit_id>
+  <Hit_def>gnl|TC-DB|Q66AT6|3.A.1.15.18 ABC high-affinity zinc uptake transporter, periplasmic binding protein OS=Yersinia pseudotuberculosis serotype I (strain IP32953) OX=273123 GN=znuA PE=4 SV=1</Hit_def>
+  <Hit_accession>14710</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.531</Hsp_bit-score>
+      <Hsp_score>262</Hsp_score>
+      <Hsp_evalue>3.50539e-25</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>284</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>256</Hsp_align-len>
+      <Hsp_qseq>IKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEG---HDHEKEE--HHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAE-DPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAK</Hsp_qseq>
+      <Hsp_hseq>VVTSIRPLGFIAAAIADGVLPTEVLLPDGASPHDYALRPSDVQRLRSAELVIWVGPEMEAFLSKPLTQVAE-NKQIALSQLPSVTPLLMKSDEHDEAEEGESGHHHDHAKDNPTDDHHHGEYNMHIWLSPAIAKQAAIAIHDRLLELTPQNKDKLDANLRRFEDQLAQNEKNIVTMLKPVQGKGYFVFHDAYGYFENHFGLSPLGHFTVNPEIQPGAQRLHQIRTQLVEHKAVCVFAEPQFRPAVINAVAKGTNVR</Hsp_hseq>
+      <Hsp_midline>+ T++ PL   A  I    +    + P G   H Y     D+     ++L ++ G  ++    K  + + + +K+++L        LL    EH E  E E    HDH K+     HHHG Y+ H+WL P I +  A  I D L++  P++KD  + N ++  D L + + ++  + K  QG   F+ H++ GY  + +G    G   +N E  P  + L +I  ++ +  A  +  E      V   + K T+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14150</Hit_id>
+  <Hit_def>gnl|TC-DB|Q56952|3.A.1.15.4 Periplasmic chelated iron-binding protein yfeA precursor - Yersinia pestis.</Hit_def>
+  <Hit_accession>14150</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>2.6833e-24</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>319</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>LSLAACGNDDGKDKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTK--DKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDPS-QKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGK</Hsp_qseq>
+      <Hsp_hseq>ISTAALAENNPSDTAKKFKVVTTFTIIQDIAQNIAGDVAVVESITKPGAEIHDYQPTPRDIVKAQSADLILWNGMNLERWFEKFFESIKD------VPSAVVTAGITPLPIREGP----------------YSGIANPHAWMSPSNALIYIENIRKALVEHDPAHAETYNRNAQAYAEKIKALDAPLRERLSRIPAEQRWLVTSEGAFSYLAKDYGFKEVYLWPINAEQQGIPQQVRHVIDIIRENKIPVVFSESTISDKPAKQVSKETGAQYGGVLYVDSLSGE--KGPVPTYISLINMTVDTIAK</Hsp_hseq>
+      <Hsp_midline>+S AA   ++  D   K  + TT   +Q  A+ I G    V SI   G ++H Y+PT +DI+ A  +DL ++ G NL+   +K   +IKD      +   +  A +       G                 + G  +PH W+ P     + + I+  LV+ DP H + Y +N +   + +K +D  +++       +   +  S  +  YLA  YGF +  +  +NAE     +++  ++  IR++    +  E  +++K  + + KET A+      ++SL+ E  K    TY SL+   ++ I K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1711</Hit_id>
+  <Hit_def>gnl|TC-DB|B2IWS9|3.A.1.15.13 Periplasmic solute binding protein OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) GN=Npun_F4575 PE=3 SV=1</Hit_def>
+  <Hit_accession>1711</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.523</Hsp_bit-score>
+      <Hsp_score>249</Hsp_score>
+      <Hsp_evalue>2.54133e-23</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>315</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>330</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>287</Hsp_align-len>
+      <Hsp_qseq>GKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKD-KDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFIS-HESIGYLADCYGFVQKGIQNMNAEDPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIE</Hsp_qseq>
+      <Hsp_hseq>GKTKVVTTFLPIYLFTKAVAGNVADVEILVPPGTEVHEYQATPENVKAIATANVLVKNGLGLEGFLE---NTVKNAQNTKLA---EIDASKGIKPLNEISPVVKTA-----KEEEDHEHAQGNPHVWLDPVLAKQQVTNIRDGLIAADPANKVTYEANAAAYIKELESLNNEF-QRTLQKTPSCTFITFHDAFPYLAKRYNLKQVAVVQIPEDQLSPTDVQNAVNAVKKYKVKALFSEPGVDNKLLSSLSKDL---KLTLRPLDSL--ETGETDPQHYFKAMKANLQ</Hsp_hseq>
+      <Hsp_midline>GK  + TT  P+  F + + G    V  + P GT++H Y+ T +++ + + +++ +  G  L+   +   +T+K+ ++ KL+   ++D +K +   +E     +       KEE  H H   +PHVWLDP + +     I+D L+  DP +K  YE N      +L+ ++N+  Q T  K  +  FI+ H++  YLA  Y   Q  +  +  +  S  ++   V  ++    K +  E  V NK+  ++ K+     L    ++SL  E  + D   Y   MK+N++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10243</Hit_id>
+  <Hit_def>gnl|TC-DB|P39172|3.A.1.15.5 High-affinity zinc uptake system protein znuA precursor - Escherichia coli.</Hit_def>
+  <Hit_accession>10243</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.1225</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>6.06811e-20</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>274</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>261</Hsp_align-len>
+      <Hsp_qseq>GKDKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDH-EKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAE-DPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAK</Hsp_qseq>
+      <Hsp_hseq>GATQAADAAVVASLKPVGFIASAIADGVTETEVLLPDGASEHDYSLRPSDVKRLQNADLVVWVGPEMEAFMQKPVSKLPGA-KQVTIA-QLEDVKPLLMKSIHGDDDDH---DHAEKSDEDHHHGDFNMHLWLSPEIARATAVAIHGKLVELMPQSRAKLDANLKDFEAQLASTETQVGNELAPLKGKGYFVFHDAYGYFEKQFGLTPLGHFTVNPEIQPGAQRLHEIRTQLVEQKATCVFAEPQFRPAVVESVARGTSVR</Hsp_hseq>
+      <Hsp_midline>G  +     +  ++ P+   A  I     +   + P G   H Y     D+     +DL ++ G  ++   +K  S +    K++++  +L+  K L  +  HG++ +H   DH EK +  HHHG ++ H+WL P+I +  A  I  +LV+  P+ +   + N K     L   +  +       +G   F+ H++ GY    +G    G   +N E  P  + L +I  ++ +  A  +  E      V E++ + T  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14077</Hit_id>
+  <Hit_def>gnl|TC-DB|Q55280|3.A.1.15.1 PERIPLASMIC-BINDING PROTEIN - Synechocystis sp. (strain PCC 6803).</Hit_def>
+  <Hit_accession>14077</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.0409</Hsp_bit-score>
+      <Hsp_score>214</Hsp_score>
+      <Hsp_evalue>8.71983e-19</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>301</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>122</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>274</Hsp_align-len>
+      <Hsp_qseq>DKDGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFI--SHESIGYLADCYGFVQKGIQNMNAEDP-SQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQ</Hsp_qseq>
+      <Hsp_hseq>ETEEKKKVLTTFTVLADMVQNVAGDKLVVESITRIGAEIHGYEPTPSDIVKAQDADLILYNGMNLERWFEQFLGNVKDV-PSVVLTEGIEPIPIA------------DGPYTDKP---------NPHAWMSPRNALVYVENIRQAFVELDPDNAKYYNANAAVYSEQLKAIDRQLGADLEQVPANQRFLVSCEGAFSYLARDYGMEEIYMWPINAEQQFTPKQVQTVIEEVKTNNVPTIFCESTVSDKGQKQVAQATGARFGGNLYVDSLSTEE</Hsp_hseq>
+      <Hsp_midline>+ + K  + TT   L    + + G  + V SI   G ++H YEPT  DI+ A  +DL +Y G NL+   ++    +KD    + L + ++   +             +G   +K          +PH W+ P+    + + I+   V+ DP +   Y  N    ++ LK ID  +    +    N  F+     +  YLA  YG  +  +  +NAE   + K++  +++E++ +N   I  E  V++K  + + + T A+      ++SL+ E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11736</Hit_id>
+  <Hit_def>gnl|TC-DB|P96116|3.A.1.15.8 Periplasmic zinc-binding protein troA (TROMP-1) - Treponema pallidum.</Hit_def>
+  <Hit_accession>11736</Hit_accession>
+  <Hit_len>308</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.9518</Hsp_bit-score>
+      <Hsp_score>193</Hsp_score>
+      <Hsp_evalue>3.45545e-16</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>266</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>258</Hsp_align-len>
+      <Hsp_qseq>DGKVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKD--KQGNAVFISHESIGYLADCYGFVQKGIQNMN-AEDPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAK</Hsp_qseq>
+      <Hsp_hseq>DGKPLVVTTIGMIADAVKNIAQGDVHLKGLMGPGVDPHLYTATAGDVEWLGNADLILYNGLHLETKMGEVFSKLRGSRLVVAVSETIPVSQRLS-----LEEAE-----------------FDPHVWFDVKLWSYSVKAVYESLCKLLPGKTREFTQRYQAYQQQLDKLDAYVRRKAQSLPAERRVLVTAHDAFGYFSRAYGFEVKGLQGVSTASEASAHDMQELAAFIAQRKLPAIFIESSIPHKNVEALRDAVQAR</Hsp_hseq>
+      <Hsp_midline>DGK  + TT+  +    + I    V +  +   G D H Y  T  D+     +DL +Y G +L+    +V S ++     +++ + +  ++ L+      EE E                 +DPHVW D K+     K + + L K  P    ++ + Y+     L K+D  +++  +    +   +  +H++ GY +  YGF  KG+Q ++ A + S  ++ ++   I       I  E ++ +K  E +R    A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17225</Hit_id>
+  <Hit_def>gnl|TC-DB|Q92LL5|3.A.1.15.9 PUTATIVE IRON-BINDING PERIPLASMIC ABC TRANSPORTER PROTEIN - Rhizobium meliloti (Sinorhizobium meliloti).</Hit_def>
+  <Hit_accession>17225</Hit_accession>
+  <Hit_len>301</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>76.6406</Hsp_bit-score>
+      <Hsp_score>187</Hsp_score>
+      <Hsp_evalue>1.88775e-15</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>295</Hsp_align-len>
+      <Hsp_qseq>KVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKN----YKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDP-SQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>KLKAVTTFTVIADMAQNVAGDAAVVESITKPGAEIHNYQPTPRDILKAHDADLILWNGLNLELWFERFFQNFDGVPGVVV----------------------SEGVEPMGIAEGPYTGKPNPHAWMSPSAALIYVDNIRDAFVQHDPPNAEVYKANAEAYKKKIEAAVAPIRTELERIPAERRW--LVSSEGAFSYLARDFGMKELYLWPINADQQGTPQQVRKVIDVVRANRIPVVFSESTISPDPAEQVARETGAKYGGVLYVDSLSEADGPVP--TYIDLLRVTSETIAKGL</Hsp_hseq>
+      <Hsp_midline>K+   TT   +   A+ + G    V SI   G ++H+Y+PT +DIL A  +DL ++ G NL+   ++           +                        EG +        + G  +PH W+ P     +   I+D  V+ DP + + Y+ N     KK+   +  I  +++++  +++   +  S  +  YLA  +G  +  +  +NA+   + +++ K++  +R +    +  E  ++    E + +ET AK      ++SL++        TY  L++   E I K L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1715</Hit_id>
+  <Hit_def>gnl|TC-DB|B2J0B7|3.A.1.15.13 Periplasmic solute binding protein OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) GN=Npun_F4924 PE=3 SV=1</Hit_def>
+  <Hit_accession>1715</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.3958</Hsp_bit-score>
+      <Hsp_score>163</Hsp_score>
+      <Hsp_evalue>2.88555e-12</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>341</Hsp_align-len>
+      <Hsp_qseq>MKKKL----GMLLLVPAVTLSLAACGNDDGKDKDGKVT---------IKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKD---KQGNAVFISHESIGYLADCYGF-VQKGIQNMN-AEDPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAK--PLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>MSKKLPSTNSFRAILVALTIGFVGCGNQTARTAFTQTTTPVNENLPQVVATTSVLCDLTKQVAGDTVNLTCLIDPSADPHTYKPKPEDRRAIEQANLILYSGYNLEPNLIKLIKATKNTVPRIAV-GQLAVSK--------PQKFQKDGKNL-----------INPHLWHNTKNAIRMVQVINSNLRKLESSNAETYNSNTKKITNELTQLDSWIKSTITSIPAKERKLVTTSN-ALSYYAKAYSIPLAGGLQGISTGENLTATRMKNLVANIKQTQVSTIFSDAATNENSLQSVAKVAEVKISDRKLY-VEGLGEPGTEAD--TYQKMMIANTRTIVEGL</Hsp_hseq>
+      <Hsp_midline>M KKL        ++ A+T+    CGN   +    + T         +  T   L    +Q+ G  V ++ +     D H+Y+P  +D  +  +++L +Y+G NL+P   K+    K+   ++++  +L  +K         ++ + +G +             +PH+W + K      + I   L K +  + + Y  N KK+ ++L ++D+ +K        K+   V  S+ ++ Y A  Y   +  G+Q ++  E+ +   +  +V  I+ +    I  +        +++ K  + K    K Y +E L +   + D  TYQ +M +N   I + L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19416</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9XCS2|3.A.1.15.7 SitA (Salmonella iron transporter: fur regulated) (Iron transport protein, periplasmic-binding protein) - Salmonella typhimurium, and Salmonella typhi.</Hit_def>
+  <Hit_accession>19416</Hit_accession>
+  <Hit_len>305</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.6994</Hsp_bit-score>
+      <Hsp_score>156</Hsp_score>
+      <Hsp_evalue>1.81571e-11</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>326</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>302</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>129</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>300</Hsp_align-len>
+      <Hsp_qseq>KVTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDN----DMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDP-SQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKALDSGVK</Hsp_qseq>
+      <Hsp_hseq>KFKVITTFTVIADMAKNVAGDAAEVSSITKPGAEIHEYQPTPGDIKRAQGAQLILANGLNLERWFARFYQHLSG----------VPEVVVSTGVKPMGIT---EGP---------YNGKPNPHAWMSAENALIYVDNIRDALVKYDPDNAQIYKQNAERYKAKIRQMADPLRAELEKIPADQRW--LVTSEGAFSYLARDNDMKELYLWPINADQQGTPKQVRKVIDTIKKHHIPAIFSESTVSDKPARQVARESGAHYGGVLYVDSLSAADGPVP--TYLDLLRVTTETIVNGINDGLR</Hsp_hseq>
+      <Hsp_midline>K  + TT   +   A+ + G   +VSSI   G ++H Y+PT  DI  A  + L +  G NL+    +    +            + +  + T     G     EG          ++G  +PH W+  +    +   I+D LVK DP +   Y++N ++    ++++ +    +++++  D++   +  S  +  YLA      +  +  +NA+   + K++ K++  I+  +   I  E  V++K    + +E+ A       ++SL+         TY  L++   E I   ++ G++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|140</Hit_id>
+  <Hit_def>gnl|TC-DB|A1B2F3|3.A.1.15.19 Periplasmic solute binding protein OS=Paracoccus denitrificans (strain Pd 1222) OX=318586 GN=Pden_1597 PE=1 SV=1</Hit_def>
+  <Hit_accession>140</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>6.0244e-11</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>280</Hsp_align-len>
+      <Hsp_qseq>FAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQ--VTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAE-DPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKAL</Hsp_qseq>
+      <Hsp_hseq>FAAKVGGDRIRLNVLVGPDSDTHVYEPRPADAIALAGADVVLTNGLEFEGFLTRLIAASGTDAAVATLTDGVE------TMEEPGGGHYH----YIDGKAVFHAGAHDPHAWQAVPNAKVYVQNIAAAFCAADAEGCAAYQANAARYIGELDALDTEIRAAIAALPQDRRTVVVAHNAFRYFEAAYGVHFLSPQGVSTESEAAAADVAGLIREIRARNASAIFAENISDTRLLEQIAREAGLPLAGTLYSDALSGPDGPASN--YIAMMRHNAGAIAAAL</Hsp_hseq>
+      <Hsp_midline>FA ++GG  ++++ +    +D H YEP   D ++ + +D+ +  G   +    ++ +         +L D ++         E G  H H    +   +   H G +DPH W      + + + I       D +    Y+ N  +   +L  +D +++       +    V ++H +  Y    YG      Q ++ E + +  ++  +++EIR  NA  I  E+    ++ E I +E           ++L+       N  Y ++M+ N   I  AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1157</Hit_id>
+  <Hit_def>gnl|TC-DB|AID56185|3.A.1.15.16 zinc ABC transporter periplasmic-binding protein ZnuA [Leptospira sp. GIMC2001:Bairam-Ali]</Hit_def>
+  <Hit_accession>1157</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.0191e-09</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>322</Hsp_query-to>
+      <Hsp_hit-from>58</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>36</Hsp_gaps>
+      <Hsp_align-len>303</Hsp_align-len>
+      <Hsp_qseq>VTIKTTVYPLQSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLD----PVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGF-VQKGIQNMNAEDPSQKELTKIVKEIRDSNAKYIL--------YEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKALD</Hsp_qseq>
+      <Hsp_hseq>LNVVTTSTDLRYIASQVGGNRVNVISLIRGFDDPHFVMTRPDFLVKLNRADVFCMVGLDLEVGWVPLILEQSRNSSIQKGQNGYCDASVGIKILGKPTMQVDRSMGDMHIFG-----------NPHYWSDPVNVIQIARTMTEAFSRVDPEHKDYYNKNYSDFKAKLVDLVKTEMKKFEPYFGSRVAVFHDEFLYLANRFRFNANLTLEERPGVPPSSRYLEQIIRSMIANNIKVILVSPVNNRQYAEYVSSRVPDSV---VIVMPT---SVEAI------PEAITYEDTIRISLDKIRTALD</Hsp_hseq>
+      <Hsp_midline>+ + TT   L+  A Q+GG  V V S+     D H        ++  +++D+F   G +L+    P+  + +     +  +    D     K+L       +    + H              +PH W DP      A+ + +   + DP+HKD Y KNY      L  +     +  +   G+ V + H+   YLA+ + F     ++      PS + L +I++ +  +N K IL        Y + V+++V +++       P    ++E++       + ITY+  ++ +++ I  ALD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|249</Hit_id>
+  <Hit_def>gnl|TC-DB|A2ETW9|1.C.105.2.2 Viral A-type inclusion protein, putative OS=Trichomonas vaginalis GN=TVAG_192230 PE=4 SV=1</Hit_def>
+  <Hit_accession>249</Hit_accession>
+  <Hit_len>2010</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>1.87506e-06</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>495</Hsp_query-to>
+      <Hsp_hit-from>411</Hsp_hit-from>
+      <Hsp_hit-to>901</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>101</Hsp_identity>
+      <Hsp_positive>204</Hsp_positive>
+      <Hsp_gaps>74</Hsp_gaps>
+      <Hsp_align-len>503</Hsp_align-len>
+      <Hsp_qseq>KVSSIYPAGTDLHSYEPTQKD--ILSASKSDLFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHE---GHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKD----KQGN------------AVFISHESIGYLADCYGFVQKGIQNMNAEDPSQ----KELTKIV-------KEIRDSN---AKYILYEDNVANKVTETIRKETDAKPLK--------FYNMESLNKEQQ--KKDNITYQSLMKSNIENIGKALDSGVKVKDDKAESKHD------------KAISDGYFKDEQVKDRELSDYAGEWQSVYPYLKDGTLDEVMEHKAENDPKKSAKDLKAYYD-KGYKTDITNIDIKGNEITFTKDGKKHTGKYEYNGKKTLKYPKGNRGVRFMFKLVDGNDKDLPKFIQ--FSDHNIAPKKAEHFHIF--MGNDNDALLKEMDN</Hsp_qseq>
+      <Hsp_hseq>KMNSILKENQNLKSEYIKMKDENTLLREENERIMEESNAAKENLKKENENQKNEISSLTNEDELYKLREENDKLIKSREAQNEIIQKLNNEMNQMKEKEKDFDKLAQ-----EKKLLKDENDRLINSEMEELDKYKKENQDLNNELQRIKNERQENENKENNLKQGNEQLNEELQRTKQTVINKEEELKKVRDEADKLRKKIEELKEKQQNQINDNEELRKEIKSSEEKMKEIQSENEILKKQIEKEDENSSNISDDLQKLVNKSLVKESIDENNDVETIENLKKEIEDLKKEKDNFDSISIEN-EDLRSQVEVLIKVEDERNQMSEELEKLRANYNELQSQISKQNFENNKETIEKLIGEKSKLQEELESIKN-ELDSIQVEKIESENESSSKIIALTEEIDELKNQINNISEQKSTLEFTIDEIKAQNESEISQLK-----KENEDLNSKIESLSKENNELKTEIENIQNSHSLSLLETEMNNKLTNLNEENDMLKNENEN</Hsp_hseq>
+      <Hsp_midline>K++SI     +L S     KD   L   +++  M   +      KK     K++   L+ ED+L K +   D+     E ++E     ++E  +       +D          +   K+  D L+  + +  D Y+K  + LN++L++I N+ ++        KQGN             V    E +  + D    ++K I+ +  +  +Q    +EL K +       KEI+  N    K I  ED  ++ +++ ++K  +   +K           +E+L KE +  KK+   + S+   N E++   ++  +KV+D++ +   +              IS   F++ +    +L     + Q     +K+  LD +   K E++ + S+K +    +    K  I NI  + + + FT D  K   + E +  K     K N  +    + +   + +L   I+   + H+++  + E  +    +  +ND L  E +N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16287</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8I5A6|2.A.18.2.12 Amino acid transporter, putative OS=Plasmodium falciparum (isolate 3D7) OX=36329 GN=PF3D7_1231400 PE=4 SV=2</Hit_def>
+  <Hit_accession>16287</Hit_accession>
+  <Hit_len>1944</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>2.88774e-05</Hsp_evalue>
+      <Hsp_query-from>104</Hsp_query-from>
+      <Hsp_query-to>434</Hsp_query-to>
+      <Hsp_hit-from>986</Hsp_hit-from>
+      <Hsp_hit-to>1313</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>43</Hsp_gaps>
+      <Hsp_align-len>351</Hsp_align-len>
+      <Hsp_qseq>KDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDEL-------VKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDPSQ-KELTKIVKEI---RDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKALDSGVKVKDDKAESKHDKAISDGYFKDEQVKDRELSDYAGEWQS---VYPYLKDGTLDE-VMEHKAENDPKKSAKDLKAYYDKGYKTDI---TNIDIKGNEITFTKDGKKHTGKY--EYNGKK</Hsp_qseq>
+      <Hsp_hseq>KVKKKGVTFMDELEEDKKFDDPKKNNIEKNDNNHNSKNNE-------YNENTKKDEQSTVLFLDDVKKEQNVYNSDKISFQNQPEIIYSNNIKVINENNNDLKNIILEERKEKNQEVNFLNVPKISVIKE----------KKNEIDYSENKVITKVLNFTEYERNFSDSFVNFKINRLNNMT-THEEELLKKNRSFENHEQIYKRQREKLKSHYKSSMSKVIENSNKYNN---LIKD--IEALNSKDINENNQCDNITIEKEKLNVKNDLDNPVFIFNTINNDSNDKTLITETLDDEDNNNLNDENDKYNYSIKNDILYNLNIDKQDKYLINIKDSSDKNDVYVKKYNSCK</Hsp_hseq>
+      <Hsp_midline>K K K ++  D+L++ K   D  ++  E     H+ +  E       Y+ +   D +    F  ++K E        +    + +  Y  N K +N++   + N + +  K+K     F++   I  + +            N  D S+ K +TK++      R+ +  ++ ++ N  N +T T  +E   K   F N E + K Q++K    Y+S M   IEN  K  +    +KD   E+ + K I++    D    ++E  +   +  +   ++  + + + D+ ++    +++   +  D    Y+   K DI    NID +   +   KD       Y  +YN  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7571</Hit_id>
+  <Hit_def>gnl|TC-DB|O76329|1.I.1.1.5 Interaptin OS=Dictyostelium discoideum OX=44689 GN=abpD PE=1 SV=1</Hit_def>
+  <Hit_accession>7571</Hit_accession>
+  <Hit_len>1738</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>6.48977e-05</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>1228</Hsp_hit-from>
+      <Hsp_hit-to>1548</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>66</Hsp_identity>
+      <Hsp_positive>153</Hsp_positive>
+      <Hsp_gaps>41</Hsp_gaps>
+      <Hsp_align-len>357</Hsp_align-len>
+      <Hsp_qseq>QSFAEQIGGKHVKVSSIYPAGTDLHSYEPTQKDILSASKSDLFMYTGDNLDPVAKKVASTIK---DKDKKL-SLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITY-QSLMKSNIENIGKALDSGVKVKDDKAESKHDKAISDGYFKDEQVKDRELSDYAGEWQSVYPYLKDGTLDEVMEHKAENDPKKSAKDLK</Hsp_qseq>
+      <Hsp_hseq>QEKEKQLSEKDEKLQSI--------QFENQEKEKQLSEKDEKLQSIQQNLNQLNDENQEKVKQFSEKDEKLQSIQQDLNQLKQENQEKEKQLSEKDEKLQSIQQDLNQLN---DDQIKKNEKL-----KEKEEQLLKLQQDFNDQQSQQLKQLEEKLSEKENQLQQLKQENEINQLNQQQQSNEIIQQLKDQLLKQQQQEQQENNNEKEIERLIQEIEQLKQQQEIDQSELSNKEIK------------------IQTTQQEFDQLSHNRSKDQLHLQQLQQELDQ-LKQSFDDQDHQFKKVIDERYNLQLQLEQSTLSNNQLD-QLLKEKLKPLELDSNEKQKTIDDLLSNISNLQ</Hsp_hseq>
+      <Hsp_midline>Q   +Q+  K  K+ SI         +E  +K+   + K +       NL+ +  +    +K   +KD+KL S++  L++ K    + E     + E     +++ +  +   D  +  + K+     KE +++L+K      D   +  K+L + L + +N ++Q+ ++ + N +    +S   +      + K  Q    E+ ++KE+ ++++EI     +  + +  ++NK  +                  +   QQ+ D +++ +S  + +++ + + LD  +K   D  + +  K I + Y    Q++   LS+   + Q +   LK   LD   + K  +D   +  +L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16268</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8I3A0|2.A.3.5.42 Copper-transporting ATPase OS=Plasmodium falciparum (isolate 3D7) OX=36329 GN=PF3D7_0904900 PE=4 SV=2</Hit_def>
+  <Hit_accession>16268</Hit_accession>
+  <Hit_len>2568</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000345526</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>385</Hsp_query-to>
+      <Hsp_hit-from>839</Hsp_hit-from>
+      <Hsp_hit-to>1125</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>136</Hsp_positive>
+      <Hsp_gaps>54</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>KKVASTIKDKDKKLSLEDKLDKAKL----LTDQHEH------GEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAKE-----------IKDELVKKDPKHKDDYEKNYKKLNDD-LKKIDN-DMKQVTKDKQGNAVFISHESIGYLADCYGFVQKGIQNMNAEDPSQKELTKIVKEIRDSNAKYILYEDNV-ANKVTETIRKETDAKPLKFYNMESLNKEQQKKDNITYQSLMKSNIENIGKALDSGVKVKDD--KAESKHDKAISDGYFKDEQVKDRELSDYAGEWQSVYPYLKDGTLDEVMEHKAEND</Hsp_qseq>
+      <Hsp_hseq>KHINTNLKNKNNKNESDGEEEKGNIDGIYILKQKNHKKDMIKGEEENKDNFSKKEEKSDNENSNEE----IDKNYNYLKRKEKDHNSSNDEDNINDSVLKENVKEEEIHESSSNEQSDSYLKKIEKKDNKNISVDNNENDNFLK--------------KKEMKDVNNENEENRESSSLLKENKKKDNKNISVENNENDNFLKKNEMEDQNNKHVGSNVGDIVLKKNKKKDN---KNTNDENNEN-----DNFLKKKEKLYNNSSNEQNEENENFLKKKENTDNKNTNIQDKQNAI--FLKNKKKKDDKNSKEEND</Hsp_hseq>
+      <Hsp_midline>K + + +K+K+ K   + + +K  +    +  Q  H      GEE   +    ++E+  + +   +    +D   N    KE           I D ++K++ K ++ +E +  + +D  LKKI+  D K ++ D   N  F+               +K ++++N E+   +E + ++KE +  + K I  E+N   N + +   ++ + K +     + + K+ +KKDN   ++    N EN     D+ +K K+      S      ++ + K ++  D + ++   +  ++  +LK+    +    K END</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5507</Hit_id>
+  <Hit_def>gnl|TC-DB|J9IU59|1.A.17.1.16 Anoctamin-like protein OS=Oxytricha trifallax GN=OXYTRI_16388 PE=4 SV=1</Hit_def>
+  <Hit_accession>5507</Hit_accession>
+  <Hit_len>1267</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.00042471</Hsp_evalue>
+      <Hsp_query-from>103</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>1167</Hsp_hit-from>
+      <Hsp_hit-to>1265</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>IKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWLDPKINQTFAK---EIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQ</Hsp_qseq>
+      <Hsp_hseq>IEEKNSKRDHKDKGPKDK----DKDHNKDKDHKDKDHKDKK--------DKDIKDDKNVRNSYASIGSKDKDKKHNKGNKSDSEDEKKQKKLNKSLDSLDSDHGKKNKDKK</Hsp_hseq>
+      <Hsp_midline>I++K+ K   +DK  K K      +H ++ +H+  DH+ ++        D  +  D  +  ++A    + KD+   K  K   + EK  KKLN  L  +D+D  +  KDK+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000558525</Hsp_evalue>
+      <Hsp_query-from>84</Hsp_query-from>
+      <Hsp_query-to>350</Hsp_query-to>
+      <Hsp_hit-from>982</Hsp_hit-from>
+      <Hsp_hit-to>1246</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>272</Hsp_align-len>
+      <Hsp_qseq>LFMYTGDNLDPVAKKVASTIKDKDKKLSLEDKLDKAKLLTDQHEHGEEHEHEGHDHEKEEHHHHHGGYDPHVWL--DPKINQTFAKEIKDELVKKDPKHKDDYEKNYKKLNDDLKKIDNDMKQVTKDKQ--GNAVFISHESIGYLADCYGFVQKGIQNMNAEDPSQKELTKIVKEIRDSNAKYILYEDNVANKVTETIRKETDAKPL-KFYNMESLNKEQQKKDNITYQSLMKSNIENIGKALDSGVKVKDDKAESKHDKAISDGYFKDEQV</Hsp_qseq>
+      <Hsp_hseq>LYDVLDDKAEEFKAKGGQLLSDQINEMKEANRVEQLENIRNEGTISQKTAEEEDEEYKNEHALKYQGKKDKKKLKKQKKITLQELQKAQDHSKKKDKKDKNDSSRDKHNKKDDEKKMKDLKKELILQRMQGGDDVELVQQDLKQLLQ----TNNNATNLNNKTQNHSSHENLMQGIKLTDNQPSLDEWNIEEKNSKRDHKDKGPKDKDKDHNKDKDHKDKDHKDKKDKDIKDDKNVRNSYASIGSKDK---DKKHNKGNKSDSEDEKKQKKL</Hsp_hseq>
+      <Hsp_midline>L+    D  +    K    + D+  ++   +++++ + + ++    ++   E  +  K EH   + G      L    KI     ++ +D   KKD K K+D  ++     DD KK+ +  K++   +   G+ V +  + +  L            N+N +  +      +++ I+ ++ +  L E N+  K ++   K+   K   K +N +  +K++  KD          N+ N   ++ S  K   DK  +K +K+ S+   K +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12664</Hit_id>
+  <Hit_def>gnl|TC-DB|Q13433|2.A.5.4.13 Zinc transporter ZIP6 OS=Homo sapiens GN=SLC39A6 PE=1 SV=3</Hit_def>
+  <Hit_accession>12664</Hit_accession>
+  <Hit_len>755</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000507583</Hsp_evalue>
+      <Hsp_query-from>108</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>KKLSLEDKLDKAKLLTDQHEHGEEHEHEGH-DHEKEEHHHHHGGYDPHVWLDPKINQTFAKEIKDELVKKDPKHKDD</Hsp_qseq>
+      <Hsp_hseq>RKLLQNIGIDKIKRIHIHHDHDHHSDHEHHSDHERHSDHEHHSEHEHHSDHDHHSHHNHAASGKNKRKALCPDHDSD</Hsp_hseq>
+      <Hsp_midline>+KL     +DK K +   H+H    +HE H DHE+   H HH  ++ H   D   +   A   K++     P H  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1720</Hit_id>
+  <Hit_def>gnl|TC-DB|B2JAZ6|2.A.113.2.3 High-affinity nickel-transporter OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) GN=Npun_AR245 PE=4 SV=1</Hit_def>
+  <Hit_accession>1720</Hit_accession>
+  <Hit_len>488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000763877</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>350</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>29</Hsp_align-len>
+      <Hsp_qseq>HEHGEEHEHEGHDHEKEEHHHHHGGYDPH</Hsp_qseq>
+      <Hsp_hseq>HSHDHEHENHVHTHQHSHHHHHHEHLPPH</Hsp_hseq>
+      <Hsp_midline>H H  EHE+  H H+   HHHHH    PH</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3182432904</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

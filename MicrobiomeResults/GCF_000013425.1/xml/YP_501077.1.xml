@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_501077.1 hypothetical protein SAOUHSC_02615 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>108</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_501077.1 hypothetical protein SAOUHSC_02615 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>108</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|961</Hit_id>
+  <Hit_def>gnl|TC-DB|A9T501|2.A.7.26.4 Predicted protein OS=Physcomitrella patens subsp. patens GN=PHYPADRAFT_88158 PE=3 SV=1</Hit_def>
+  <Hit_accession>961</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.99</Hsp_bit-score>
+      <Hsp_score>258</Hsp_score>
+      <Hsp_evalue>2.22689e-29</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>IFIFILAGLCEIGGGYLIWLWLREGQSSLVGLIGGAILMLYGVIATFQSFPSFGRVYAAYGGVFIIMSLIFAMVVDKQMPDKYDVIGAIICIVGV-LVMLLP</Hsp_qseq>
+      <Hsp_hseq>IALFVAAGLCEIGGGWFVWKWRRSGWHWGFFILGSAILVLYGIVPTLQD-EMFGRVYAAYGGFFILLSFFWAWAFDGVQPDRWDLIGSAIAIGGVCLIMFIP</Hsp_hseq>
+      <Hsp_midline>I +F+ AGLCEIGGG+ +W W R G      ++G AIL+LYG++ T Q    FGRVYAAYGG FI++S  +A   D   PD++D+IG+ I I GV L+M +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3258</Hit_id>
+  <Hit_def>gnl|TC-DB|D5ADJ3|2.A.7.26.3 Putative uncharacterized protein OS=Picea sitchensis PE=2 SV=1</Hit_def>
+  <Hit_accession>3258</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.523</Hsp_bit-score>
+      <Hsp_score>249</Hsp_score>
+      <Hsp_evalue>1.31458e-28</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>103</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IFIFILAGLCEIGGGYLIWLWLREGQSSLVGLIGGAILMLYGVIATFQSFPSFGRVYAAYGGVFIIMSLIFAMVVDKQMPDKYDVIGAIICIVGVLVML</Hsp_qseq>
+      <Hsp_hseq>IGLFVGAGVCEIGGGWFVWKFRKEGWHWIFFILGSFALVLYGLIPTFQSQP-FGRTYAAYGGFFIGLSLLWGWVFDSQQPDRWDLICAAIAVGAVIVMI</Hsp_hseq>
+      <Hsp_midline>I +F+ AG+CEIGGG+ +W + +EG   +  ++G   L+LYG+I TFQS P FGR YAAYGG FI +SL++  V D Q PD++D+I A I +  V+VM+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16858</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8TJ52|2.A.7.26.2 UPF0060 membrane protein MA_3936 - Methanosarcina acetivorans.</Hit_def>
+  <Hit_accession>16858</Hit_accession>
+  <Hit_len>155</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.3521</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>4.07711e-24</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>88</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>90</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>FILAGLCEIGGGYLIWLWLREGQSSLVGLIGGAILMLYGVIATFQSFPS-FGRVYAAYGGVFIIMSLIFAMVVDKQMPDKYD</Hsp_qseq>
+      <Hsp_hseq>FFLAALFEIRGGYLICLWLRNNMRAVFGPLGRLMLAVCGIIPTFQ--PSHFGRVYAAHGGIFIVFSLIWDLFVDKKIPDRYD</Hsp_hseq>
+      <Hsp_midline>F LA L EI GGYLI LWLR    ++ G +G  +L + G+I TFQ  PS FGRVYAA+GG+FI+ SLI+ + VDK++PD+YD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11442</Hit_id>
+  <Hit_def>gnl|TC-DB|P76169|2.A.7.26.1 Hypothetical protein ynfA - Escherichia coli.</Hit_def>
+  <Hit_accession>11442</Hit_accession>
+  <Hit_len>108</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>2.14024e-17</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>103</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>102</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>MLYPIFIFILAGLCEIGGGYLIWLWLREGQSSLVGLIGGAILMLYGVIATFQSFPSFGRVYAAYGGVFIIMSLIFAMVVDKQMPDKYDVIGAIICIVGVLVML</Hsp_qseq>
+      <Hsp_hseq>MIKTTLLFFATALCEIIGCFLPWLWLKRNASIWLLLPAGISLALFVWLLTLHPAAS-GRVYAAYGGVYVCTALMWLRVVDGVKLTLYDWTGALIALCGMLIIV</Hsp_hseq>
+      <Hsp_midline>M+    +F    LCEI G +L WLWL+   S  + L  G  L L+  + T     S GRVYAAYGGV++  +L++  VVD      YD  GA+I + G+L+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16691</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8PYW4|2.A.7.26.6 Conserved protein OS=Methanosarcina mazei GN=MM_0735 PE=4 SV=1</Hit_def>
+  <Hit_accession>16691</Hit_accession>
+  <Hit_len>94</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>1.56329e-14</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>41</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>56</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>LYPIFIFILAGLCEIGGGYLIWLWLREGQSSLVGLIGGAI</Hsp_qseq>
+      <Hsp_hseq>LYTILLFILAGVFEIGGGYLVWLWLRENKGALFGLLGGLI</Hsp_hseq>
+      <Hsp_midline>LY I +FILAG+ EIGGGYL+WLWLRE + +L GL+GG I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14404</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5KY59|2.A.7.26.5 Hypothetical conserved protein OS=Geobacillus kaustophilus GN=GK2092 PE=4 SV=1</Hit_def>
+  <Hit_accession>14404</Hit_accession>
+  <Hit_len>104</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>2.44779e-09</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>48</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>70</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>MLYPIFIFILAGLCEIGGGYLIWLWLREGQSSLVGLIGGAILMLYGVI</Hsp_qseq>
+      <Hsp_hseq>MLQAIVLFLLAGMAEIVGGYLIWLRLREGKPLYWGIFGG---LAFGVV</Hsp_hseq>
+      <Hsp_midline>ML  I +F+LAG+ EI GGYLIWL LREG+    G+ GG   + +GV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>78</Statistics_hsp-len>
+      <Statistics_eff-space>247079640</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

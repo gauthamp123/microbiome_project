@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500396.1 hypothetical protein SAOUHSC_01895 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>284</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500396.1 hypothetical protein SAOUHSC_01895 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>284</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7698</Hit_id>
+  <Hit_def>gnl|TC-DB|O86919|1.C.105.2.7 AAS surface protein OS=Staphylococcus saprophyticus GN=aas PE=4 SV=1</Hit_def>
+  <Hit_accession>7698</Hit_accession>
+  <Hit_len>1463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>207.608</Hsp_bit-score>
+      <Hsp_score>527</Hsp_score>
+      <Hsp_evalue>1.00114e-60</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>276</Hsp_query-to>
+      <Hsp_hit-from>1221</Hsp_hit-from>
+      <Hsp_hit-to>1463</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>245</Hsp_align-len>
+      <Hsp_qseq>KSDIKIEKLNVTLNDAAKKQINNYTSQQVSNKKNDAWRDASATEIKSAMDSGTFIDNEKQKYQFLDLSKYQGIDKNRIKRMLVDRPTLLKHTDDFLKAAKDKHVNEVYLISHALLETGAVKSELANGVE-IDGK-------KYYNFYGVGALDKDPIKTGAEYAKKHGWDTPEKAISGGADFIHKHFLSSTDQNTLYSMRWNPKNPGEHQYATDIKWAESNATIIADFYKNMKTEGKYFKYFVYK</Hsp_qseq>
+      <Hsp_hseq>KELVKYYKSGLTLDQAVAIQKGLKFKPQIQHTAGK-WEDASATEIKNAMDSSKLIKDPTQKYQFLRLDKSQNISSADLDKLLVGKGILEGQGEAFSEAAKAYNINEVYLISHALLETGNGTSKLANGGDVVNGKVVTNGKDKYYNMFGIGAVDSDAVKQGFATAKNNGWNTVKKAIVGGAKFIAGSYINQ-GQNTLYKMRWNPENPGVHQYATDVAWAAHNATRIKGFYDSMGKLGKYFDVDTYK</Hsp_hseq>
+      <Hsp_midline>K  +K  K  +TL+ A   Q       Q+ +     W DASATEIK+AMDS   I +  QKYQFL L K Q I    + ++LV +  L    + F +AAK  ++NEVYLISHALLETG   S+LANG + ++GK       KYYN +G+GA+D D +K G   AK +GW+T +KAI GGA FI   +++   QNTLY MRWNP+NPG HQYATD+ WA  NAT I  FY +M   GKYF    YK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17738</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9AIS0|1.C.105.2.6 Fibronectin binding autolysin OS=Staphylococcus caprae GN=atlC PE=4 SV=1</Hit_def>
+  <Hit_accession>17738</Hit_accession>
+  <Hit_len>1395</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>178.718</Hsp_bit-score>
+      <Hsp_score>452</Hsp_score>
+      <Hsp_evalue>1.06119e-50</Hsp_evalue>
+      <Hsp_query-from>40</Hsp_query-from>
+      <Hsp_query-to>276</Hsp_query-to>
+      <Hsp_hit-from>1153</Hsp_hit-from>
+      <Hsp_hit-to>1395</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>102</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>245</Hsp_align-len>
+      <Hsp_qseq>KSDIKIEKLNVTLNDAAKKQINNYTSQQVSNKKNDAWRDASATEIKSAMDSGTFIDNEKQKYQFLDLSKYQGIDKNRIKRMLVDRPTLLKHTDDFLKAAKDKHVNEVYLISHALLETGAVKSELANGVEI-DGK-------KYYNFYGVGALDKDPIKTGAEYAKKHGWDTPEKAISGGADFIHKHFLSSTDQNTLYSMRWNPKNPGEHQYATDIKWAESNATIIADFYKNMKTEGKYFKYFVYK</Hsp_qseq>
+      <Hsp_hseq>KESVKYVNTGYTLAHAAEIQNDLYDTPQIQ-KVPGQWTNANYNEIKDAMDPNKLTKDSGARYQFLRLDQPQSLSVAALNELLKGQGVLEGQGAAFSEAAKKYGINEIYLVAHALVETGNGTSQLAKGGDIVNGKFSDKTKTKYHNVFGIGAYDSSPLIEGIKYAKNAGWDSVSKAIIGGAKFIGQSYIKA-GQNTLYKMRWNPSNPGTHQYATDIHWATVNAQTIKGFYDKIGEVGKYYEIPKYK</Hsp_hseq>
+      <Hsp_midline>K  +K      TL  AA+ Q + Y + Q+  K    W +A+  EIK AMD      +   +YQFL L + Q +    +  +L  +  L      F +AAK   +NE+YL++HAL+ETG   S+LA G +I +GK       KY+N +G+GA D  P+  G +YAK  GWD+  KAI GGA FI + ++ +  QNTLY MRWNP NPG HQYATDI WA  NA  I  FY  +   GKY++   YK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>97</Statistics_hsp-len>
+      <Statistics_eff-space>1458861987</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

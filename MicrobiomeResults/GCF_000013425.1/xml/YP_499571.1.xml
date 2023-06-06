@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499571.1 hypothetical protein SAOUHSC_01022 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>191</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499571.1 hypothetical protein SAOUHSC_01022 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>191</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7145</Hit_id>
+  <Hit_def>gnl|TC-DB|O34738|3.A.1.30.1 Putative HMP/thiamine permease protein ykoE OS=Bacillus subtilis GN=ykoE PE=1 SV=1</Hit_def>
+  <Hit_accession>7145</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.5153</Hsp_bit-score>
+      <Hsp_score>236</Hsp_score>
+      <Hsp_evalue>7.26649e-25</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>KGLKLSEILVTVLISVVFAVIYNLWWFVYNGVQATGLH---LEQLTNGVWFMAAIVCYLIIPKPGIALLAEFAAGAGETIIMGRFDIPTIVYAFIQGLACELVFAIFKYQSRSVMVAMLAGFCTAIAAFPIDYFY-GYLNEVAGWNLTLFIVFRLISGAVVAGVLSYLLVKALDKTGV</Hsp_qseq>
+      <Hsp_hseq>KSWKVKEIVIMSVISIVFAVVYLL--FTHFGNVLAGMFGPIAYEPIYGIWFIVSVIAAYMIRKPGAALVSEIIAALVECLLGNPSGPMVIVIGIVQGLGAEAVFLATRWKAYSLPVLMLAGMGSSVASFIYDLFVSGYAAYSPGY-LLIMLVIRLISGALLAGLLGKAVSDSLAYTGV</Hsp_hseq>
+      <Hsp_midline>K  K+ EI++  +IS+VFAV+Y L  F + G    G+      +   G+WF+ +++   +I KPG AL++E  A   E ++        IV   +QGL  E VF   ++++ S+ V MLAG  +++A+F  D F  GY     G+ L + +V RLISGA++AG+L   +  +L  TGV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17596</Hit_id>
+  <Hit_def>gnl|TC-DB|Q97RS4|3.A.1.30.2 Putative uncharacterized protein OS=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4) GN=SP_0719 PE=4 SV=1</Hit_def>
+  <Hit_accession>17596</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>6.94028e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>MSKGLKLSEILVTVLISVVFAVIYNLWWFVYN--GVQATGLHLEQLTN----GVWFMAAIVCYLIIPKPGIALLAEFAAGAGETIIMGRFDIPTIVYAFIQGLACELVFAIFKYQSRSVMVAMLAGFCTAIAAFPIDYF-YGYLNEVAGWNLTLFIVFRLISGAVVAGVLSYLLVK</Hsp_qseq>
+      <Hsp_hseq>MLKKWQLKDVILLAFLSIFFGGVFVGSGYVYNILSLLLTPLGLQAFANEILFGLWCMAAPIAAIFVPRVGSATIGEVLAALAEVLYGSQFGLGALLSGFVQGLGSEFGFIVTKNRYESWLSLTANSIGITLVSFVYEYIKLGYYAFSLPFVLSLLVV-RFISVYFFCTILVRAIVK</Hsp_hseq>
+      <Hsp_midline>M K  +L ++++   +S+ F  ++    +VYN   +  T L L+   N    G+W MAA +  + +P+ G A + E  A   E +   +F +  ++  F+QGL  E  F + K +  S +          + +F  +Y   GY      + L+L +V R IS      +L   +VK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>92</Statistics_hsp-len>
+      <Statistics_eff-space>783660834</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

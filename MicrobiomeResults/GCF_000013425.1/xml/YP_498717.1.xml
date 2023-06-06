@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_498717.1 capsular polysaccharide biosynthesis protein Cap5D [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>607</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_498717.1 capsular polysaccharide biosynthesis protein Cap5D [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>607</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|22111</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_216200341.1|9.B.18.2.2 polysaccharide biosynthesis protein [Clostridium algidicarnis]</Hit_def>
+  <Hit_accession>22111</Hit_accession>
+  <Hit_len>640</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>456.447</Hsp_bit-score>
+      <Hsp_score>1173</Hsp_score>
+      <Hsp_evalue>8.34256e-154</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>595</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>595</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>253</Hsp_identity>
+      <Hsp_positive>378</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>584</Hsp_align-len>
+      <Hsp_qseq>IVTFSVFVSYYILEPYFKTYSVKLLILAAISLFISHHISAFIFNMYHRAWEYASVSELILIVKAVTTSIVITMVVVTIVTGNRPFFRLYLITWMMHLILIGGSRLFWRIYRKYLGG----KSFNKKPTLVVGAGQAGSMLIRQMLKSDEMKLEPVLAVDDDEHKRNITITEGVKVQGKIADIPELVRKYKIKKIIIAIPTIGQERLKEINNICHMDGVELLKMPNIEDVMSGELEVNQLKKVEVEDLLGRDPVELDMDMISNELTNKTILVTGAGGSIGSEICRQVCNFYPERIILLGHGENSIYLINRELRNRFGKNVDIVPIIADVQNRARMFEIMETYKPYAVYHAAAHKHVPLMEDNPEEAVRNNILGTKNTAEAAKNAEVKKFVMISTDKAVNPPNVMGASKRIAEMIIQSLNDETHRTNFVAVRFGNVLGSRGSVIPLFKSQIEEGGPVTVTHPEMTRYFMTIPEASRLVLQAGALAEGGEVFVLDMGEPVKIVDLARNLIKLSG-KKEDDIRITYTGIRPGEKMFEELMNKDEVHPEQVFEKIYRGKVQHMKCNEVEAIIQD---IVNDFSKEKIIN</Hsp_qseq>
+      <Hsp_hseq>IIAFSL-IYYGIPRLYFDSFKKDAIIISLIYIVVF-----YIMKLYESLWNYASIDELMLVVTANIISGCLVMGYGRSIGHYFPI-NIHIIAIVLAMALTLSFRLSFRIYRRGIVSVYIRHNRNRNRVMVIGAGSAGNMIMKEMLTKREKRYNPIAIIDDSPYKIGKRIC-GVKVMGNRQDIERIAKEERIDTILIAIPSINQKDKSEIINICKKTACKLQIIPGLYEILNGQAKLNTMRDVSVEDLLGRDQINLDSKGISEYIHNKVVMVTGGGGSIGSELCRQIAIFNPKELIIFDIYENNAYDIQNELKYNY-PSLNLKVLIGSIRDKKRLETIFCKYRPEIVFNAAAHKHVPLMEESPGEAIKNNVFGTLNLAETADKYGVKRFVMISTDKAVNPTNVMGASKRICEMIVQAM-DKVSKTEFVAVRFGNVLGSNGSVIPLFKKQIAKGGPVTLTHKDITRFFMLIPEAAQLVIQAGAYAKGGEIFVLDMGSPIKIYDLATDLIKLSGLVPNEDIEIKVTGLRPGEKLYEELLMSEEGLEETRHDKIFIGRPTYTNIEELKRNLNSLKFIIDNDNEEEIKN</Hsp_hseq>
+      <Hsp_midline>I+ FS+ + Y I   YF ++    +I++ I + +      +I  +Y   W YAS+ EL+L+V A   S  + M     +    P   +++I  ++ + L    RL +RIYR+ +       + N+   +V+GAG AG+M++++ML   E +  P+  +DD  +K    I  GVKV G   DI  + ++ +I  I+IAIP+I Q+   EI NIC     +L  +P + ++++G+ ++N ++ V VEDLLGRD + LD   IS  + NK ++VTG GGSIGSE+CRQ+  F P+ +I+    EN+ Y I  EL+  +  ++++  +I  ++++ R+  I   Y+P  V++AAAHKHVPLME++P EA++NN+ GT N AE A    VK+FVMISTDKAVNP NVMGASKRI EMI+Q++ D+  +T FVAVRFGNVLGS GSVIPLFK QI +GGPVT+TH ++TR+FM IPEA++LV+QAGA A+GGE+FVLDMG P+KI DLA +LIKLSG    +DI I  TG+RPGEK++EEL+  +E   E   +KI+ G+  +    E++  +     I+++ ++E+I N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|22062</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_176323877.1|9.B.18.2.3 polysaccharide biosynthesis protein [Burkholderia vietnamiensis]</Hit_def>
+  <Hit_accession>22062</Hit_accession>
+  <Hit_len>626</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>426.017</Hsp_bit-score>
+      <Hsp_score>1094</Hsp_score>
+      <Hsp_evalue>3.86469e-142</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>554</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>555</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>235</Hsp_identity>
+      <Hsp_positive>340</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>527</Hsp_align-len>
+      <Hsp_qseq>LEPYFKTYSVKLLILAAISLFISHHISAFIFNMYHRAWEYASVSELILIVKAVTTSIVITMVVVTIVTGNRPFFR-LYLITWMMHLILIGGSRLFWRIYRKYL--GGKSFNKKPTLVVGAGQAGSMLIRQMLKSDEMKLEPVLAVDDDEHKRNITITEGVKVQGKIADIPELVRKYKIKKIIIAIPTIGQERLKEINNICHMDGVELLKMPNIEDVMSGELEVNQLKKVEVEDLLGRDPVELDMDMISNELTNKTILVTGAGGSIGSEICRQVCNFYPERIILLGHGENSIYLINRELRNRFGKNVDIVPIIADVQNRARMFEIMETYKPYAVYHAAAHKHVPLMED-NPEEAVRNNILGTKNTAEAAKNAEVKKFVMISTDKAVNPPNVMGASKRIAEMIIQSLNDETHRTNFVAVRFGNVLGSRGSVIPLFKSQIEEGGPVTVTHPEMTRYFMTIPEASRLVLQAGALAEGGEVFVLDMGEPVKIVDLARNLIKLSGKKEDDIRITYTGIRPGEKMFEELMNKDE</Hsp_qseq>
+      <Hsp_hseq>IPPEFMSGGLTALIWALPVYALMFHV----FGLYRGLWVFASLPDLMRISKAVIGGGLIVMIGAVMFQPSPIIPRSVLLVSPLMLFLVMGGARALYRATKEFYLYGGLVGQGKPILVLGAGTAGASLARELSRSGEWRLVGLL--DDDPTKRGREIY-GYKVLGSFNDLKHWTDALKVEYAIIAIPSASVETQRRVATLCVRAGIKAMVLPSLTALMPGQGFLSQVRNIDLEDLLGRDAVTIDTPHVEALLRGRVVMVTGAGGSIGSELCRQILRFKPAQLVAFDLSEYAMYRLTEELRERF-PDQHVVPIIGDAKDSLLLDQVMSRYAPHIVFHAAAYKHVPLMEELNAWQALRNNVLGTYRVARSAIRHDVRHFVLISTDKAVNPTNVMGASKRLAEMACQALQQTSEGTQFETVRFGNVLGSAGSVIPKFQQQIAKGGPVTVTHPEITRFFMAIPEASQLVLQASSMGHGGEIFILDMGEPVKIVDLARDLIRLYGFSEGQIRIEFTGLRPGEKLYEELLADDE</Hsp_hseq>
+      <Hsp_midline>+ P F +  +  LI A     +  H+    F +Y   W +AS+ +L+ I KAV    +I M+   +   +    R + L++ +M  +++GG+R  +R  +++   GG     KP LV+GAG AG+ L R++ +S E +L  +L  DDD  KR   I  G KV G   D+       K++  IIAIP+   E  + +  +C   G++ + +P++  +M G+  ++Q++ +++EDLLGRD V +D   +   L  + ++VTGAGGSIGSE+CRQ+  F P +++     E ++Y +  ELR RF  +  +VPII D ++   + ++M  Y P+ V+HAAA+KHVPLME+ N  +A+RNN+LGT   A +A   +V+ FV+ISTDKAVNP NVMGASKR+AEM  Q+L   +  T F  VRFGNVLGS GSVIP F+ QI +GGPVTVTHPE+TR+FM IPEAS+LVLQA ++  GGE+F+LDMGEPVKIVDLAR+LI+L G  E  IRI +TG+RPGEK++EEL+  DE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14925</Hit_id>
+  <Hit_def>gnl|TC-DB|Q6MMD5|9.B.18.2.1 Nucleotide sugar epimerase/dehydratase OS=Bdellovibrio bacteriovorus (strain ATCC 15356 / DSM 50701 / NCIB 9529 / HD100) GN=wbpM PE=4 SV=1</Hit_def>
+  <Hit_accession>14925</Hit_accession>
+  <Hit_len>626</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>364.77</Hsp_bit-score>
+      <Hsp_score>935</Hsp_score>
+      <Hsp_evalue>2.17244e-118</Hsp_evalue>
+      <Hsp_query-from>87</Hsp_query-from>
+      <Hsp_query-to>555</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>572</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>199</Hsp_identity>
+      <Hsp_positive>308</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>480</Hsp_align-len>
+      <Hsp_qseq>SIVITMVVVTIVTGNRPFF--RLYLITWMMHLILIGGSRLFWRIYRKYLGGKSFNKKPTLVVGAGQAGSMLIRQMLKSDEMKLEPVLAVDDDEHKRNITITEGVKVQGKIADIPELVRKYKIKKIIIAIPTIGQERLKEINNICHMDGVELLKMPNIEDVMSGELEVNQLKKVEVEDLLGRDPVELDMDMISNELTNKTILVTGAGGSIGSEICRQVCNFYPERIILLGHGENSIYLINRE-LRNRFGKNVDIVPIIADVQNRARMFEIMETYKPYAVYHAAAHKHVPLMEDNPEEAVRNNILGTKNTAEAAKNAEVKKFVMISTDKAVNPPNVMGASKRIAEMIIQSLN-DETHRTNFVAVRFGNVLGSRGSVIPLFKSQIEEGGPVTVTHPEMTRYFMTIPEASRLVLQAGALAEGGEVFVLDMGEPVKIVDLARNLIKLSGKK-------EDDIRITYTGIRPGEKMFEELMNKDEV</Hsp_qseq>
+      <Hsp_hseq>SLSVLLLTAAVVMGNVTGVPRSSIVIYWIIAIAYITSSRFIARGVLRSLEREQDRRQPVAIYGAGRSGLQTALALMSGPEFR--PVAFFDDNRQLHGTSVA-GIRVYSPDEAL-NIMGAEDCNQLLIAMPSASRSRRREIIQRFENVDIRLKTLPGIGELVDGKVRIEDIREVGVEDLLGRDPVPPFEDLIKSCIRDKVVLVTGAGGSIGSELCRQIILNTPKKLIIFEQAEYALYKIEQDILKHRI--NFEVVPVLGDVLNTEHLEKIIASHGVQTIYHAAAYKHVPLVESNVIAGIVNNVFGTLSASKAAIKCKVETFVLISTDKAVRPTNIMGASKRLAELVLQGLSQDKSHSTRFCMVRFGNVLGSSGSVVPLFKEQIRHGGPVTVTHPDITRYFMTIPEAAQLVLQAGAMGKGGDVFVLDMGESVKIVDLAKKMIELSGLEVRNPDTGQGDISIEFTGLRPGEKLYEELLIGENV</Hsp_hseq>
+      <Hsp_midline>S+ + ++   +V GN         +I W++ +  I  SR   R   + L  +   ++P  + GAG++G      ++   E +  PV   DD+      ++  G++V      +  ++      +++IA+P+  + R +EI        + L  +P I +++ G++ +  +++V VEDLLGRDPV    D+I + + +K +LVTGAGGSIGSE+CRQ+    P+++I+    E ++Y I ++ L++R   N ++VP++ DV N   + +I+ ++    +YHAAA+KHVPL+E N    + NN+ GT + ++AA   +V+ FV+ISTDKAV P N+MGASKR+AE+++Q L+ D++H T F  VRFGNVLGS GSV+PLFK QI  GGPVTVTHP++TRYFMTIPEA++LVLQAGA+ +GG+VFVLDMGE VKIVDLA+ +I+LSG +       + DI I +TG+RPGEK++EEL+  + V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9629</Hit_id>
+  <Hit_def>gnl|TC-DB|P27830|9.B.18.2.4 dTDP-glucose 4,6-dehydratase 2 OS=Escherichia coli (strain K12) OX=83333 GN=rffG PE=1 SV=3</Hit_def>
+  <Hit_accession>9629</Hit_accession>
+  <Hit_len>355</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>5.33585e-07</Hsp_evalue>
+      <Hsp_query-from>282</Hsp_query-from>
+      <Hsp_query-to>410</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>KTILVTGAGGSIGSEICRQVCNFYPERIIL---LGHGENSIYLINRELRNRFGKNVDIVPIIADVQNRARMFEIMETYKPYAVYHAAAHKHVPLMEDNPEEAVRNNILGTKNTAEAAK---NA--EVKK----FVMISTDK</Hsp_qseq>
+      <Hsp_hseq>RKILITGGAGFIGSALVRYIINETSDAVVVVDKLTYAGNLMSLAPVAQSERFAFEK------VDICDRAELARVFTEHQPDCVMHLAAESHVDRSIDGPAAFIETNIVGTYTLLEAARAYWNALTEDKKSAFRFHHISTDE</Hsp_hseq>
+      <Hsp_midline>+ IL+TG  G IGS + R + N   + +++   L +  N + L       RF           D+ +RA +  +   ++P  V H AA  HV    D P   +  NI+GT    EAA+   NA  E KK    F  ISTD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21192</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_052176713|9.B.18.1.3 sugar transferase [Pedobacter glucosidilyticus]</Hit_def>
+  <Hit_accession>21192</Hit_accession>
+  <Hit_len>453</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.89249e-05</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>254</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>246</Hsp_align-len>
+      <Hsp_qseq>VFVSYYILEPYFKTYSVKLLILAAISL-FISHHISAFIFNMYHRAWEYASVSELILIVKAVTTSIVITMVVV---TIVTGNRPFFRLYLITWM----MHLILIGGSRLFWRIYRK---YLGGKSFNKKPTLVVGAGQAGSMLIRQMLKSDEMKLE-----PVLAVDDDEHKRNITITEGVKVQGKIADIPELVRKYKIKKIIIAIPTIGQERLKEINNICHMDGVELLKMPNIEDVMSGELEVNQL</Hsp_qseq>
+      <Hsp_hseq>LFICVDLLAALFFLFSTKSILKENLFLVFITFILLVLLYAFTGTYAQFTRKSRFKELVRTFNQSIIITLFYIWLFTTIKGSN-LFSVYLEEFLNFGFCHLLIVGFSRLLFLTWIKRQIQKGSIGFN---TILVGNNLKAKQLLEE-IQSQPKKLGFKFIGYVYLNDGTLDSPAINLPK----LGSFDKIHQLIKDQEVEEVIIAIESKQHHQLKNILSQLEQTEVIINIIPDIYDIISGFVKLNYL</Hsp_hseq>
+      <Hsp_midline>+F+   +L   F  +S K ++   + L FI+  +   ++       ++   S    +V+    SI+IT+  +   T + G+   F +YL  ++     HL+++G SRL +  + K     G   FN   T++VG       L+ + ++S   KL       V   D       I + +     G    I +L++  +++++IIAI +    +LK I +      V +  +P+I D++SG +++N L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>104</Statistics_hsp-len>
+      <Statistics_eff-space>3843568870</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499002.1 hypothetical protein SAOUHSC_00416 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>224</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499002.1 hypothetical protein SAOUHSC_00416 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>224</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20023</Hit_id>
+  <Hit_def>gnl|TC-DB|S2NE98|9.B.105.2.2 Membrane-associated phospholipid phosphatase OS=Lactobacillus paracasei subsp. paracasei Lpp225 GN=Lpp225_0501 PE=4 SV=1</Hit_def>
+  <Hit_accession>20023</Hit_accession>
+  <Hit_len>223</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.0922</Hsp_bit-score>
+      <Hsp_score>170</Hsp_score>
+      <Hsp_evalue>9.65833e-15</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>202</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>LIVFIGMFYSVVTNQEWLKNIDMGSLTWFTDYFGEPQRQYVNNLFNYYMTFSAEIGDVKGVVLISIIVTIILFIKQRHL-AVWFVTYLVSGVIMNKLIKDTVLRPRPYNHLAVDTGFSFPSGHSNASTLLYFALMIIIISLAAKTITKVLSALVMGILWLS-ILFCRLYFHAHYFSDVIGGTSLA</Hsp_qseq>
+      <Hsp_hseq>LLLFALLTWSVVMQVAWVGELDR-SVQGIIKY----DTQMDTRIFEVV----ALLGSPPVVISLTAAICGYLWVKGRRSDSIWIGACQLLGSGLLLLIKLLVQRPRPIHQLVADTGFSFPSGHVMCSMVLMLSLLMLMLP-KIKEQENQFVAILLSMIWIGMVATSRIYLRDHFASDILGSLLLA</Hsp_hseq>
+      <Hsp_midline>L++F  + +SVV    W+  +D  S+     Y      Q    +F       A +G    V+ ++  +   L++K R   ++W     + G  +  LIK  V RPRP + L  DTGFSFPSGH   S +L  +L+++++    K       A+++ ++W+  +   R+Y   H+ SD++G   LA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21169</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_050771967.1|9.B.105.2.4 phosphatase PAP2 family protein [Maritimibacter alkaliphilus]</Hit_def>
+  <Hit_accession>21169</Hit_accession>
+  <Hit_len>237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.003</Hsp_bit-score>
+      <Hsp_score>149</Hsp_score>
+      <Hsp_evalue>9.68745e-12</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>231</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>154</Hsp_align-len>
+      <Hsp_qseq>IGDVKGVVLISIIVTIILFIK-QRHLAVWFVTYLVSGVIMNKLIKDTVLRPRP--YNHLAVDTGFSFPSGHSNASTLLYFALMIIIISLAAKTITKVLSALVMGILWLSILFCRLYFHAHYFSDVIGGTSLAIIWVALFLMVYPYFINHRRQRV</Hsp_qseq>
+      <Hsp_hseq>LGGITVLTLLTLSVLAYLLLRGKRASALFLAVAIVGGQLLSHGFKTLFSRPRPDLVPHGVDVATASFPSGHSMMAAVTYLTLAVMLARLDGHTKVRVFFVSLAAILALAVGVSRVYLGVHWPSDVLAGWTLGAAWALLVWLIARWL--ERRGRI</Hsp_hseq>
+      <Hsp_midline>+G +  + L+++ V   L ++ +R  A++    +V G +++   K    RPRP    H       SFPSGHS  + + Y  L +++  L   T  +V    +  IL L++   R+Y   H+ SDV+ G +L   W  L  ++  +    RR R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7128</Hit_id>
+  <Hit_def>gnl|TC-DB|O34349|9.B.105.2.3 Putative lipid phosphate phosphatase YodM OS=Bacillus subtilis (strain 168) GN=yodM PE=3 SV=1</Hit_def>
+  <Hit_accession>7128</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>1.40718e-09</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>154</Hsp_align-len>
+      <Hsp_qseq>NYYMTFSAEIGDVKGVVLISIIVTIILFIKQRHLAVW--FVTYLVSGV--IMNKLIKDTVLRPRP-YNHLAVDTGFSFPSGHSNASTLLYFALMIIIIS-LAAKTITKVLSALVMGILWLSILFCRLYFHAHYFSDVIGGTSLAIIWVALFLMV</Hsp_qseq>
+      <Hsp_hseq>NEVMTGITHLGASSFLLPLIVIIGAGMFFYRK---TWDGLLMLLVFGTDRLLNKVLKEWIERVRPDFAPLVHESSFSFPSGHSMNAACVYPVIAYFLVKHLPFLSKHKKMVYIIAGVIAVLVGISRVYLGVHFVTDVLGGFSLGLL---LFFLV</Hsp_hseq>
+      <Hsp_midline>N  MT    +G    ++ + +I+   +F  ++    W   +  LV G   ++NK++K+ + R RP +  L  ++ FSFPSGHS  +  +Y  +   ++  L   +  K +  ++ G++ + +   R+Y   H+ +DV+GG SL ++   LF +V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16123</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8F224|9.B.105.2.1 Membrane associated acid phosphatase OS=Leptospira interrogans serogroup Icterohaemorrhagiae serovar Lai (strain 56601) GN=LA_2954 PE=4 SV=1</Hit_def>
+  <Hit_accession>16123</Hit_accession>
+  <Hit_len>321</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>3.75363e-07</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>LTWFTD--YFGEP-QRQYVNNLFNYYMTFSAEIGDVKGVVLISIIVTIILFIK-QRHLAVWFVTYLVSGVIMNKLIKDTVLRPRP---YNHLA--VDTGFSFPSGHSNASTLLYFALMIIIISLAAKTITKVLSALVMGILWLSILFCRLYFHAHYFSDVIGGTSLAIIWVALFLMVYPYF</Hsp_qseq>
+      <Hsp_hseq>INWFQDSFWFGETFLRSLRGSVFDPIWSVFALVFHYLGETFFFMALLSIVYVYVDRKLGIRLGIGLLTTAILNAFLKIVFESPRPTLPWNGPGKLVEFSYGFPSGHVQTTVVIWG---LLLLHLKSKTV-RFISVLVI----VFMPFARMYAGVHFAGDVLGGFIFGLLGLVLIEIIFRIF</Hsp_hseq>
+      <Hsp_midline>+ WF D  +FGE   R    ++F+   +  A +    G     + +  I+++   R L +     L++  I+N  +K     PRP   +N     V+  + FPSGH   + +++    ++++ L +KT+ + +S LV+    + + F R+Y   H+  DV+GG    ++ + L  +++  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2802</Hit_id>
+  <Hit_def>gnl|TC-DB|CAD79428.1|9.B.105.1.10 exo-ppase [Sulfolobus acidocaldarius]</Hit_def>
+  <Hit_accession>2802</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>6.91162e-05</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>NYYMTFSAEIGDVKGVVLISIIVTIILFIKQRHLAVWFVTYLVSGVIMNKLIKDTVLRPRPYNHL-------AVDTGFSFPSGHSNASTLLYFALMIIIISLAAKT--ITKVLSALVMGIL-WLSILFCRLYFHAHYFSDVIGGTSLAIIWVALFLMV</Hsp_qseq>
+      <Hsp_hseq>NGLMVFLSKYG--REYVWIPVTALLLIFKRTRKIGITLVISFVIAIVLGEVSKYVMAQLRPFNFVNPTYLLEPKPTDYSYPSGHA------------LIVSTGAVTLLLTSPKWMWILGIIEAVLVSYSRVYVGVHWPLDVIAGWLLG-SWIS-FLSV</Hsp_hseq>
+      <Hsp_midline>N  M F ++ G  +  V I +   +++F + R + +  V   V  +++ ++ K  + + RP+N +          T +S+PSGH+            +I+S  A T  +T      ++GI+  + + + R+Y   H+  DVI G  L   W++ FL V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21191</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_052132252.1|2.A.127.1.16 phosphatase PAP2 family protein [Solemya velum gill symbiont]</Hit_def>
+  <Hit_accession>21191</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000623633</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>221</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>45</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>WLKNIDMGSLTWFTD---YFGEPQRQYVNNLFNYYMTFSAEIGDVKGVVLISIIVTIILF-IKQRHLAVWFVTYLV------SGVIMNKLIKDTVLRPRPY--------NHLAVDTGF---------SFPSGHSNASTLLYFALMIIIISLAAKTITKVLSALVMGILWLSILFCRLYFHAHYFSDVI--GGTSLAIIWVALFLMVYPYFINHRR</Hsp_qseq>
+      <Hsp_hseq>WLTDLDILVASLFVEDGEWIGE------NNPFAIF--FYESIPILMRVSLVGSIAAICWFWFKKRSRYRNYATYLLLVLLIGPGLIANLILKDNWGRPRPVQTLELAGENHYVPPLMFNGETSGKAKSFPSGHASAA----FSMFAFWFMAAPGRRNKYIFWGVMAYGSL-VGLSRMAQGGHYLSDVIWAGLIVYATAWVLAQWLIVPM---HRR</Hsp_hseq>
+      <Hsp_midline>WL ++D+   + F +   + GE      NN F  +  F   I  +  V L+  I  I  F  K+R     + TYL+       G+I N ++KD   RPRP         NH      F         SFPSGH++A+    F++       A     K +   VM    L +   R+    HY SDVI  G    A  WV    ++ P    HRR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19818</Hit_id>
+  <Hit_def>gnl|TC-DB|R7XRS7|9.B.27.2.12 Dolichyl-phosphate beta-D-mannosyltransferase OS=Nocardioides sp. CF8 OX=110319 GN=CF8_4119 PE=4 SV=1</Hit_def>
+  <Hit_accession>19818</Hit_accession>
+  <Hit_len>770</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000784992</Hsp_evalue>
+      <Hsp_query-from>108</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>337</Hsp_hit-from>
+      <Hsp_hit-to>437</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>SGVIMNKLIKDTVLRPRP--YNHLAVDTGFSFPSGHSNASTLLYFALMIIIISLAAKTITKVLSALVMGILWLSILFCRLYFHAHYFSDVIGGTSLAIIWVA</Hsp_qseq>
+      <Hsp_hseq>TAVLLHAVVGQLVHRHRPPATDWLASAGGWAYPSGHTTQAVAAWGILAAIVCAGASRRARVLAVSIAVSVAGL-VAVSRVYLGMHWATDVLGAAAMSVAVLA</Hsp_hseq>
+      <Hsp_midline>+ V+++ ++   V R RP   + LA   G+++PSGH+  +   +  L  I+ + A++    +  ++ + +  L +   R+Y   H+ +DV+G  ++++  +A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>1023102600</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

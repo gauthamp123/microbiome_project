@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499231.1 hypothetical protein SAOUHSC_00672 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>214</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499231.1 hypothetical protein SAOUHSC_00672 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>214</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7057</Hit_id>
+  <Hit_def>gnl|TC-DB|O31539|1.A.14.2.3 Uncharacterized protein YetJ OS=Bacillus subtilis GN=yetJ PE=3 SV=1</Hit_def>
+  <Hit_accession>7057</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.2478</Hsp_bit-score>
+      <Hsp_score>173</Hsp_score>
+      <Hsp_evalue>2.58236e-15</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>NQHAQSI-SKVWLYFMYYWIIFGIGCYLGQFLPLSWRQPLSFGLLIIILATLVFERARRFGLIISHIYAVVIGLLSYATFTTYLQNLGPDIFYKNIALAIFAFIAFGIIGYFFVGDASSIGKYLFVTLITLIIASLIGIFLQ-NPIFYTIITVVSLLLFLLYTLYDFNRLKR----GDYSPREMGFNLFINLLNIIKDIL</Hsp_qseq>
+      <Hsp_hseq>HESKQSIMQRILTVFVFTLLIATVGLFIGQFVPVALMLPLSILEVAMIILAFWMRRRKAVGYAFVYTFAFVSGITLFPIVSHYASIAGAYVVLEAFGSTFVIFAVLGTIGAKMKKDLSFLWSFLLVAVLALAVVGIFNIFSPLNSAAMMAYSVIGTIVFSLYILYDLNQIKHRHITEDLIP-VMALSLYLDFINLFINLL</Hsp_hseq>
+      <Hsp_midline>++  QSI  ++   F++  +I  +G ++GQF+P++   PLS   + +I+      R +  G    + +A V G+  +   + Y    G  +  +        F   G IG     D S +  +L V ++ L +  +  IF   N       +V+  ++F LY LYD N++K      D  P  M  +L+++ +N+  ++L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3924</Hit_id>
+  <Hit_def>gnl|TC-DB|E9CCY6|1.A.14.3.2 Glutamate receptor Gr2 OS=Capsaspora owczarzaki ATCC 30864 GN=CAOG_05976 PE=4 SV=1</Hit_def>
+  <Hit_accession>3924</Hit_accession>
+  <Hit_len>316</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.61947e-09</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>208</Hsp_query-to>
+      <Hsp_hit-from>154</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>IIILATLVFERARR---FGLIISHIYAVVIGLLSYATFTTYLQNLGPDIFYKNIALAIFAFIAFGIIGYFFVG--DASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRLKRGDY----SPREMGF---NLFINLLNIIKDILYL</Hsp_qseq>
+      <Hsp_hseq>VLILAMACVEKIRRQTPYNYIFLGLFTLAESYLLGVTASYY------DVDAVLIAVGITAFVTFGLTLFAFQTKWDFTGYGGYLFGALLVLICFGFMCIFIRGEIVRIVYAALGALIFSMYLVYDTQLMLGGTHKLALSPEEWVFAALNLYLDIINLFLFILSL</Hsp_hseq>
+      <Hsp_midline>++ILA    E+ RR   +  I   ++ +    L   T + Y      D+    IA+ I AF+ FG+  + F    D +  G YLF  L+ LI    + IF++  I   +   +  L+F +Y +YD   +  G +    SP E  F   NL+++++N+   IL L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8652</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAC4|1.A.14.2.2 Inner membrane protein ybhL - Escherichia coli.</Hit_def>
+  <Hit_accession>8652</Hit_accession>
+  <Hit_len>234</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>1.46585e-08</Hsp_evalue>
+      <Hsp_query-from>56</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>LIIILATLVFERARRFGLIISHIYAVVIGLLSYATFTTYLQNLGPDIFYKNIALAIFAFIAFGIIGYFFVGDASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRLK</Hsp_qseq>
+      <Hsp_hseq>LVIVLSAMIQKLSAGVTTMLFMLYSALTGLTLSSIFIVYTAASIASTFVVTAGM----FGAMSLYGYTTKRDLSGFGNMLFMALIGIVLASLVNFWLKSEALMWAVTYIGVIVFVGLTAYDTQKLK</Hsp_hseq>
+      <Hsp_midline>L+I+L+ ++ + +     ++  +Y+ + GL   + F  Y        F     +    F A  + GY    D S  G  LF+ LI +++ASL+  +L++      +T + +++F+  T YD  +LK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1538</Hit_id>
+  <Hit_def>gnl|TC-DB|B0CIK0|1.A.14.2.7 Uncharacterized protein OS=Brucella suis (strain ATCC 23445 / NCTC 10510) OX=470137 GN=BSUIS_A0092 PE=3 SV=1</Hit_def>
+  <Hit_accession>1538</Hit_accession>
+  <Hit_len>245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>7.35397e-08</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>62</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>180</Hsp_align-len>
+      <Hsp_qseq>FLPLSWRQPLSFGLLIIILATLVFERARRFGLIISHI------YAVVIGLLSYATFTTYLQNLGPDIFYKNIALAIFAFIAFGIIGYFFVGDASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRLKRGDY---SPREMGFNLFINLLNIIKDILYLANMF</Hsp_qseq>
+      <Hsp_hseq>FQQLLFASPLRWVIMLAPLAAVFFLSFRIQSLSVGTAQAIFWGYAALVGLSLSSIFIVFTGQSIVRTFFVTAA----SFGALSLYGYTTKRNLSAMGSFLMMGLFGLILASVVNIFLGSTALQFAISVIGVLIFAGLTAYDTQEIKEMYYEGDAADTQGRKIVMGALRLYLDFI---NMF</Hsp_hseq>
+      <Hsp_midline>F  L +  PL + +++  LA + F   R   L +         YA ++GL   + F  +        F+   A    +F A  + GY    + S++G +L + L  LI+AS++ IFL +      I+V+ +L+F   T YD   +K   Y   +    G  + +  L +  D +   NMF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|307</Hit_id>
+  <Hit_def>gnl|TC-DB|A2VCJ6|1.A.14.3.3 Golgi anti-apoptotic protein OS=Vaccinia virus GN=E6 PE=4 SV=1</Hit_def>
+  <Hit_accession>307</Hit_accession>
+  <Hit_len>237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.08874e-06</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>208</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>GLLIIILATLVFERARRFGLIIS-HIYAVVIGLLSYATFTTYLQNLGPDIFY------KNIALAIFAFIAFGIIGYFFVGDASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRLKRGDYSPRE---MGFNLFINLLNIIKDILYL</Hsp_qseq>
+      <Hsp_hseq>GSPVLILASMFGSIGLIFALTLHRHKHPLNLYLLCGFTLSESLTLASVVTFYDVHVVMQAFMLTTAAFLALTTYTLQSKRDFSKLGAGLFAALWILILSGLLGIFVQNETVELVLSAFGALVFCGFIIYDTHSLIH-KLSPEEYVLASINLYLDIINLFLHLLQL</Hsp_hseq>
+      <Hsp_midline>G  ++ILA++       F L +  H + + + LL   T +  L       FY      +   L   AF+A          D S +G  LF  L  LI++ L+GIF+QN     +++    L+F  + +YD + L     SP E      NL+++++N+   +L L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1710</Hit_id>
+  <Hit_def>gnl|TC-DB|B2IRN2|2.A.1.47.3 Lantibiotic efflux protein OS=Streptococcus pneumoniae (strain CGSP14) GN=SPCG_0147 PE=4 SV=1</Hit_def>
+  <Hit_accession>1710</Hit_accession>
+  <Hit_len>418</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>1.31954e-05</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>298</Hsp_hit-from>
+      <Hsp_hit-to>415</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>QFLPLSWRQPLSFGLLIIILATLVFERARRFGLIISHIYAVVIGLLSYATFTTYLQNLGPDIFYKNIALAIFAFIAFGIIGYFFVGDASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRLK</Hsp_qseq>
+      <Hsp_hseq>KFKNLSIENLLKMNLMTILLSFIAF--------YYQNIYFIVLTLFLSSVFVSALNPKIGAIIFNNLDETKLATIFGGMVTYFQLGDV--VSRLLFSTLV---------IYLS----YTYIAVIYMILVLIVAIYTFRRVQ</Hsp_hseq>
+      <Hsp_midline>+F  LS    L   L+ I+L+ + F           +IY +V+ L   + F + L      I + N+     A I  G++ YF +GD   + + LF TL+         I+L     YT I V+ ++L L+  +Y F R++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14746</Hit_id>
+  <Hit_def>gnl|TC-DB|Q6AWP0|1.A.14.3.9 CG3814, isoform A OS=Drosophila melanogaster GN=BEST:CK02213 PE=2 SV=1</Hit_def>
+  <Hit_accession>14746</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.66321e-05</Hsp_evalue>
+      <Hsp_query-from>107</Hsp_query-from>
+      <Hsp_query-to>213</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>238</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>IALAIFAFIAFGIIGYFFVG--DASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRLKRGDY----SPREMGF---NLFINLLNIIKDILYLANMFR</Hsp_qseq>
+      <Hsp_hseq>MAVGITAAVALGLTLFALQTKYDFTMCGGVLVACLVVFIIFGIIAIFIPGKVIGLVYASLGALLFSVYLVYDTQLMLGGNHKYSISPEEYIFAALNLYLDIINIFMYILTIIGLSR</Hsp_hseq>
+      <Hsp_midline>+A+ I A +A G+  +      D +  G  L   L+  II  +I IF+   +   +   +  LLF +Y +YD   +  G++    SP E  F   NL+++++NI   IL +  + R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|313</Hit_id>
+  <Hit_def>gnl|TC-DB|A3CPR5|1.A.14.2.6 Integral membrane protein, possible receptor, putative OS=Streptococcus sanguinis (strain SK36) GN=SSA_1788 PE=4 SV=1</Hit_def>
+  <Hit_accession>313</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000314112</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>LSYATFTTYLQNLGPDIFYKNIALAIFA-----FIAFGIIGYFFVGDASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRLK---------RGDYSPREMGFNLFINLLNIIKDIL</Hsp_qseq>
+      <Hsp_hseq>LAYSAINGFTLSIIMALYLQSTVLLAFLTTTVMFFAMGFIGKVTKKDLSGMGRACMAGLIGIIAASVLNIFLRSGGLDFIISIVGVLIFSGLIAWDNQKIRYVYEQTNGNPGNGWAISLALHLYLDFINLFLSLL</Hsp_hseq>
+      <Hsp_midline>L+Y+    +  ++   ++ ++  L  F      F A G IG     D S +G+     LI +I AS++ IFL++     II++V +L+F     +D  +++          G+     +  +L+++ +N+   +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12972</Hit_id>
+  <Hit_def>gnl|TC-DB|Q1ECY6|1.A.14.3.15 Zgc:136572 OS=Danio rerio OX=7955 GN=grinaa PE=2 SV=1</Hit_def>
+  <Hit_accession>12972</Hit_accession>
+  <Hit_len>363</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000571309</Hsp_evalue>
+      <Hsp_query-from>107</Hsp_query-from>
+      <Hsp_query-to>213</Hsp_query-to>
+      <Hsp_hit-from>248</Hsp_hit-from>
+      <Hsp_hit-to>362</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>IALAIFAFIAFGIIGYFFVG--DASSIGKYLFVTLITLIIASLIGIFLQNPIFYTIITVVSLLLFLLYTLYDFNRL---KRGDYSPREMGF---NLFINLLNIIKDILYLANMFR</Hsp_qseq>
+      <Hsp_hseq>MAVGITVVVCFAVVVFSLQTKYDFTSCYGVLLVCTIVLLVACILCIFIRNKILHIVYASLGALLFTCFLAVDTQLLLGNKKLAISPEEYVFAALNLYTDIINIFLYILAIVGRTR</Hsp_hseq>
+      <Hsp_midline>+A+ I   + F ++ +      D +S    L V  I L++A ++ IF++N I + +   +  LLF  +   D   L   K+   SP E  F   NL+ +++NI   IL +    R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11125</Hit_id>
+  <Hit_def>gnl|TC-DB|P60686|2.A.63.1.3 Na(+)/H(+) antiporter subunit D - Staphylococcus aureus.</Hit_def>
+  <Hit_accession>11125</Hit_accession>
+  <Hit_len>498</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000852609</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>65</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>SWRQPLSFGLLIIILATLVFERARRFGLIISHIYAVVIGLLSYATFTTYLQNLGPDIFYKNIALAIFAFIAFGIIGYFFVGDASSIGKYLFVTLITLIIASLIG---IFLQNPIFYTIITVVSLLLFLL</Hsp_qseq>
+      <Hsp_hseq>SWKAPYSIVFVLDIFSALL--------IITSIIITAIVILYSYQTI-----GIERERYYYYFSVL---FMLIGIIGAFTTGDIFNLFVFFEVFLMSSYFLLVIGSTKIQLQETIKYVLVNVVSSSFFVM</Hsp_hseq>
+      <Hsp_midline>SW+ P S   ++ I + L+        +I S I   ++ L SY T       +  + +Y   ++    F+  GIIG F  GD  ++  +  V L++     +IG   I LQ  I Y ++ VVS   F++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>944402400</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

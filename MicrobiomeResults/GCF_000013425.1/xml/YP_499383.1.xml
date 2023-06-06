@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499383.1 hypothetical protein SAOUHSC_00828 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>205</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499383.1 hypothetical protein SAOUHSC_00828 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>205</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9046</Hit_id>
+  <Hit_def>gnl|TC-DB|P11667|2.A.75.1.2 Hypothetical protein yggA - Escherichia coli.</Hit_def>
+  <Hit_accession>9046</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>99.3673</Hsp_bit-score>
+      <Hsp_score>246</Hsp_score>
+      <Hsp_evalue>4.75826e-26</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>201</Hsp_align-len>
+      <Hsp_qseq>MVTAIIHGFILAIGLILPLGAQNVFIFNQGANQPKYRYVLPAIITAGLSDSLLIIIAVVGVSIIIMSLPVLQAIIYIVGLIFLMYMAWTIWHDKPSTDGETQIMSPMKQ-----VSFALSVSLLNPHAILDTIGVIGSSAALYSGSNKIAFTIACISVSWLWFFLLAILGKMVGSIDKTGKLLTIINKISSIIIIIVALMI</Hsp_qseq>
+      <Hsp_hseq>MFSYYFQGLALGAAMILPLGPQNAFVMNQGIRR---QYHIMIALLCAISDLVLICAGIFGGSALLMQSPWLLALVTWGGVAFLLWYGFGAFKTAMSSNIELASAEVMKQGRWKIIATMLAVTWLNPHVYLDTFVVLGSLGGQLDVEPKRWFALGTISASFLWFFGLALLAAWLAPRLRTAKAQRIINLVVGCVMWFIALQL</Hsp_hseq>
+      <Hsp_midline>M +    G  L   +ILPLG QN F+ NQG  +   +Y +   +   +SD +LI   + G S ++M  P L A++   G+ FL++  +  +    S++ E      MKQ     ++  L+V+ LNPH  LDT  V+GS         K  F +  IS S+LWFF LA+L   +    +T K   IIN +   ++  +AL +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1925</Hit_id>
+  <Hit_def>gnl|TC-DB|B5U2Z3|2.A.75.1.4 MsiA OS=Mesorhizobium tianshanense GN=msiA PE=4 SV=1</Hit_def>
+  <Hit_accession>1925</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>2.42357e-15</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>GFILAIGLILPLGAQNVFIFNQGANQPKYRYVLPAIITAGLSDSLLIIIAVVGVSIIIMSLPVLQAIIYIVGLIFLM-YMAWTIWHDKPS----TDGETQIMSPMKQVSFALSVSLLNPHAILDTIGVIGSSAALYSGSNKIAFTIACISVSWLWFFLLAILGKMVGSIDKTGKLLTIINKISSIIIIIVALMIL</Hsp_qseq>
+      <Hsp_hseq>GLMMGLSLIVAIGAQNAFLLRQGLRN---EHIFAVCLACAVSDAALIVLGVTSLHQIARFMPWLDPVMRYGGAMFLVWYGARSLYSALRSSAALTAAEAKPSSFRQTLATCLALTWLNPHVYLDTVVLLGTISTRYPG-EQASFAAGAVTGSFLFFFSLGYGAKRLRPIFSKPSSWRMLETLVAFTMWIIAFKLL</Hsp_hseq>
+      <Hsp_midline>G ++ + LI+ +GAQN F+  QG       ++    +   +SD+ LI++ V  +  I   +P L  ++   G +FL+ Y A +++    S    T  E +  S  + ++  L+++ LNPH  LDT+ ++G+ +  Y G  + +F    ++ S+L+FF L    K +  I        ++  + +  + I+A  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11215</Hit_id>
+  <Hit_def>gnl|TC-DB|P64711|2.A.75.1.3 Putative amino-acid transporter Rv0488/MT0507 OS=Mycobacterium tuberculosis GN=Rv0488 PE=3 SV=1</Hit_def>
+  <Hit_accession>11215</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>1.15983e-11</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>187</Hsp_align-len>
+      <Hsp_qseq>LILPLGAQNVFIFNQGANQPKYRYVLPAIITAGLSDSLLIIIAVVGVSIIIMSLPVLQAIIYIVGLIFL----MYMAWTIWHDKPSTDGETQIMSPMKQVSFALSVSLLNPHAILDTIGVIGSSAALYSGSNKIAFTIACISVSWLWFFLLAILGKMVGSIDKTGKLLTIINKISSIIIIIVALMIL</Hsp_qseq>
+      <Hsp_hseq>LKVAIGPQNAFVLRQGIRR---EYVLVIVALCGIADGALIAAGVGGFAALIHAHPNMTLVARFGGAAFLIGYALLAARNAWRPSGLVPSESGPAALIGVVQMCLVVTFLNPHVYLDTVVLIGALANEES-DLRWFFGAGAWAASVVWFAVLGFSAGRLQPFFATPAAWRILDALVAVTMIGVAVVVL</Hsp_hseq>
+      <Hsp_midline>L + +G QN F+  QG  +    YVL  +   G++D  LI   V G + +I + P +  +    G  FL    +  A   W        E+   + +  V   L V+ LNPH  LDT+ +IG+ A   S   +  F     + S +WF +L      +     T     I++ + ++ +I VA+++L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11721</Hit_id>
+  <Hit_def>gnl|TC-DB|P94633|2.A.75.1.1 LYSINE EXPORTER PROTEIN - Corynebacterium glutamicum (Brevibacterium flavum).</Hit_def>
+  <Hit_accession>11721</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>1.15358e-10</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>IHGFILAIGLILPLGAQNVFIFNQGANQPKYRYVLPAIITAGLSDSLLIIIAVVGVSIIIMSLPVLQAIIYIVGLIFLMYMAW----------------------TIWHDKP------STDGETQIMSP---------MKQVSFALSVSLLNPHAILDTIGVIGSSAALYSGSNKIAFTIACISVSWLWFFLLAILGKMVGSIDKTGKLLTIINKISSIIIIIVALMIL</Hsp_qseq>
+      <Hsp_hseq>ITGLLLGASLLLSIGPQNVLVIKQGI---KREGLIAVLLVCLISDVFLFIAGTLGVDLLSNAAPIVLDIMRWGGIAYLLWFAVMAAKDAMTNKVEAPQIIEETEPTVPDDTPLGGSAVATDTRNRVRVEVSVDKQRVWVKPMLMAIVLTWLNPNAYLDAFVFIGGVGAQYGDTGRWIFAAGAFAASLIWFPLVGFGAAALSRPLSSPKVWRWINVVVAVVMTALAIKLM</Hsp_hseq>
+      <Hsp_midline>I G +L   L+L +G QNV +  QG    K   ++  ++   +SD  L I   +GV ++  + P++  I+   G+ +L++ A                       T+  D P      +TD   ++            +K +  A+ ++ LNP+A LD    IG   A Y  + +  F     + S +WF L+      +     + K+   IN + ++++  +A+ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11453</Hit_id>
+  <Hit_def>gnl|TC-DB|P76249|2.A.76.1.5 Hypothetical protein yeaS - Escherichia coli.</Hit_def>
+  <Hit_accession>11453</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>9.53643e-06</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>178</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>174</Hsp_align-len>
+      <Hsp_qseq>AIGLILPLGAQNVFIF-NQGANQPKYRYVLPAIITAGLSDSLLIIIAVVGVSIIIMSLPVLQAIIYIVGLIFLMYMAWTI-WHDKPSTDGETQIMSPMKQVSF--ALSVSLLNPHAILDTIGVIGSSAALYSGSNKIAFTIACIS---VSWLWFFLLAILGKMVGSIDKTGKLL</Hsp_qseq>
+      <Hsp_hseq>AIFIVLVPGPNTLFVLKNSVSSGMKGGYLAACGVFIG--DAVLMFLAWAGVATLIKTTPILFNIVRYLGAFYLLYLGSKILYATLKGKNSEAKSDEPQYGAIFKRALILSLTNPKAILFYVSFFVQFIDVNAPHTGISFFILAATLELVSFCYLSFLIISGAFVTQYIRTKKKL</Hsp_hseq>
+      <Hsp_midline>AI ++L  G   +F+  N  ++  K  Y+    +  G  D++L+ +A  GV+ +I + P+L  I+  +G  +L+Y+   I +      + E +   P     F  AL +SL NP AIL  +        + +    I+F I   +   VS+ +   L I G  V    +T K L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4727</Hit_id>
+  <Hit_def>gnl|TC-DB|G4NW86|2.A.76.1.7 Transporter, LysE family OS=Bacillus subtilis subsp. spizizenii (strain TU-B-10) GN=GYO_0727 PE=4 SV=1</Hit_def>
+  <Hit_accession>4727</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000142691</Hsp_evalue>
+      <Hsp_query-from>45</Hsp_query-from>
+      <Hsp_query-to>199</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>TAGLSDSLLI--IIAVVGVSIIIMSLPVLQAIIYIVGLIFLMYMAWTIWHDKPS--TDGETQIMSPMKQVSFALSVSLLNPHAILDTIGVIGSSAALYSGSNKIAFTI---ACISVSWLWFFLLAILGKMVGSIDKTGKLL-TIINKISSIIIIIVA--LMILQK</Hsp_qseq>
+      <Hsp_hseq>SAGIATGAFVHTILATVGLSIILAKSVVLFTAIKLVGGLYLIYIGMKALLKKNDGITLKDAANETLKKHYIQGVITNIANPKNILFYLSFLPQFASTSGSTVSLSFLILGSIFAVIALLWYILVTYFSTMATKTLKDNKKFNNILNKVSGTVFIALGCKLMVSQK</Hsp_hseq>
+      <Hsp_midline>+AG++    +  I+A VG+SII+    VL   I +VG ++L+Y+       K    T  +    +  K     +  ++ NP  IL  +  +   A+    +  ++F I       ++ LW+ L+     M     K  K    I+NK+S  + I +   LM+ QK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4880</Hit_id>
+  <Hit_def>gnl|TC-DB|G8WDN4|2.A.76.1.10 Lysine exporter (LYSE/YGGA) OS=Klebsiella oxytoca (strain ATCC 8724 / DSM 4798 / JCM 20051 / NBRC 3318 / NRRL B-199 / KCTC 1686) GN=KOX_20240 PE=4 SV=1</Hit_def>
+  <Hit_accession>4880</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.000649377</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>88</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>ILAIGLILPLGAQNVFIFNQGANQPKYRYVLPAIITAGLSDSLLIIIAVVGVSIIIMSLPVLQAIIYIVGLIFLMYMAW</Hsp_qseq>
+      <Hsp_hseq>LVALGLVLTPGPNMIYLISRSICQGR-RAGLVSLGGVALGFVFYMLCAAFGITALIFAVPYAYDALRISGVVYLLYLAW</Hsp_hseq>
+      <Hsp_midline>++A+GL+L  G   +++ ++   Q + R  L ++    L     ++ A  G++ +I ++P     + I G+++L+Y+AW</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>93</Statistics_hsp-len>
+      <Statistics_eff-space>884004016</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

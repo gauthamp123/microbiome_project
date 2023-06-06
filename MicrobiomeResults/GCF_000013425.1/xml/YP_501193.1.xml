@@ -1,0 +1,1302 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_501193.1 hypothetical protein SAOUHSC_02731 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>692</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_501193.1 hypothetical protein SAOUHSC_02731 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>692</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7097</Hit_id>
+  <Hit_def>gnl|TC-DB|O32212|2.A.36.3.2 YvgP protein - Bacillus subtilis.</Hit_def>
+  <Hit_accession>7097</Hit_accession>
+  <Hit_len>670</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>338.576</Hsp_bit-score>
+      <Hsp_score>867</Hsp_score>
+      <Hsp_evalue>9.35256e-107</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>680</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>659</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>214</Hsp_identity>
+      <Hsp_positive>363</Hsp_positive>
+      <Hsp_gaps>39</Hsp_gaps>
+      <Hsp_align-len>689</Hsp_align-len>
+      <Hsp_qseq>MALLEAFLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWV-YFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVLPLITPSAEDTTFKGMTYQSAKIFIVQKVIQHFKNESKKDKNDTNYRPVLNQYYGEL--LFLLNSEPDNQNTKELKRLEDIAKVIETSTLERLIDKGKATYQDINNYRNIVELTETHRTASFVEKFANFFK--MLWLRLKAMKHYKALNKESKKQEFENSFKDVQKIMRIVNHNIILRLKEEQNSTNVLEVSLVINHYYDMSRSLKWRAQRRKERQENSNQIIPQAMFHNHKLE----ALYLQRHLLDELIRKNKINNIVAAQIRENIN</Hsp_qseq>
+      <Hsp_hseq>MDIFLVVLVLLTIIAISNIVNRFIPFIPVPLIQVALGILAASFPQGLHFELNTELFFVLFIAPLLFNDGKRTPRAELWNLRAPILLLALGLVFATVIVGGYTIHWMIPAIPLAAAFGLAAILSPTDVVAVSALSGRVKMPKGILRLLEGEGLMNDASGLVAFKFAIAAAVTGAFSLAQAAVSFVFISLGGLLCGVVISFLIIRFRLFL-RRLGMQDVTMHMLIQILTPFVIYLAAEEIGVSGILAVVAGGITHAVEQDRLESTMIKLQIVSSSTWNIILFILNGLVFVILGTQIPDVISVIFNDTAISNMKVIGYILVITFTLMLLRFLWVLFFWNGKWFFNKDQNIY-----------KPGLRSTLLISISGVRGAVTLAGSFSIPYFLEDGTPFPERNLILFLAAGVILCTLVIATVVLPILTEKEEEDEERNKKLLTARRKLIKTALQTIK-EDMNETNKTASLAVIAEYNEKMKNLRFQQYTSSNRIKKHERKVRAQGVKAEQEALMKMLERGDIPEETAN------VLQERFNELEIL--YANPFKVGLSKTRLKRLMYWIFFGEHKKPEMSILNEAGLIRATRVKTAKAAIEYLEKHKTDEHKEVFLSVITFY---KQLIFRLEHSHHELKSS------AHFENQKLEVKLKAVQAIRNEIQTLFEEREISRDISHELRQYIN</Hsp_hseq>
+      <Hsp_midline>M +    L+ +  + IS+++N   P IP   IQ+ALG++    P  + F+ N+E+F    IAPLLF +G    R +L   R PILL+++ LVFATV+  GY IHW+ PA+P+ AAF +AAIL PTD VAVSA++    +PKG + +LEGE L+NDA+G+++FK A+ A VTG FSL QA   F+  ++ G+L G +I F+++R R+ L    G++D      IQ+LTPFV+Y  AEE+  SGI+AVV  G+ H +E+DRL     +LQ+     WN   + LNG VFV+LG  IP V+  IF     +   +I   ++I   +   RF+WV +FW   ++F K+   Y              +R   ++++ G+ G ++L+ + ++P+ +  G  F  RN +LF+A+ ++L +L++A +VLP++T   E+   +     +A+  +++  +Q  K E   + N T    V+ +Y  ++  L        N+  K  +++       E   L +++++G    +  N       L E       +  +AN FK  +   RLK + ++    +  K +    +   + +  R+      +   E+  +    EV L +  +Y   + L +R +      ++S      A F N KLE    A+   R+ +  L  + +I+  ++ ++R+ IN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9851</Hit_id>
+  <Hit_def>gnl|TC-DB|P32703|2.A.36.3.1 PUTATIVE NA(+)/H(+) EXCHANGER YJCE - Escherichia coli.</Hit_def>
+  <Hit_accession>9851</Hit_accession>
+  <Hit_len>549</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>215.698</Hsp_bit-score>
+      <Hsp_score>548</Hsp_score>
+      <Hsp_evalue>7.93381e-62</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>509</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>502</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>154</Hsp_identity>
+      <Hsp_positive>259</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>523</Hsp_align-len>
+      <Hsp_qseq>MALLEAFLIFIFAVIISSVINNRFP-QIPTAFIQIALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAV-TALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLI-RAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVV-IDIFQTEPD-NFSFLIVIT--ILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVLPLITPSAEDTTFKGMTYQ-------SAKIFIVQKVIQHFKNESKKDKNDTNYRPVLNQYYGELLFLLNSEPDNQNTKELKRLEDIAKVIETSTLER</Hsp_qseq>
+      <Hsp_hseq>MEIFFTILIMTLVVSLSGVVTRVMPFQIPLPLMQIAIGALLAWPTFGLHVEFDPELFLVLFIPPLLFADGWKTPTREFLEHGREIFGLALALVVVTVVGIGFLIYWVVPGIPLIPAFALAAVLSPTDAVALSGIVGEGRIPKKIMGILQGEALMNDASGLVSLKFAVAVAMGTMIFTVGGATVEFMKVAIGGILAGFVVSWLYGR-SLRFLSRWGGDEPATQIVLLFLLPFASYLIAEHIGVSGILAAVAAGMT--ITRSGVMRRAPLAMRLRANSTWAMLEFVFNGMVFLLLGLQLPGILETSLMAAEIDPNVEIWMLFTNIILIYAALMLVRFGWLWTMKK---FSNRFLKKKPMEFGSWTT-----REILIASFAGVRGAITLAGVLSIPLLLPDGNVFPARYELVFLAAGVILFSLFVGVVMLPILLQHIEVADHSQQLKEERIARAATAEVAIV--AIQKMEERLAADTEENIDNQLLTEVSSRVIGNLRRRADGRN--------DVESSVQEENLER</Hsp_hseq>
+      <Hsp_midline>M +    LI    V +S V+    P QIP   +QIA+G ++      +  +F+ E+F+   I PLLF +G      + LE+ + I  +++ALV  TVVG+G+ I+W+ P +P+  AFA+AA+L PTDAVA+S I     +PK  M IL+GE+L+NDA+G++S K AV  A+ T  F++  A  +F+   I G+L G ++ ++  R  +   +  G  +  T   +  L PF  Y +AE +  SGI+A V AG+   + R  ++ RA   +++  +  W    +  NG VF++LG  +P ++   +   E D N    ++ T  ILI  A+   RF W++   K   F          E  S  T     R   I +  G+ G I+L+  L++P ++  G  F  R +L+F+A+ ++L SL +  ++LP++    E         +       +A++ IV   IQ  +     D  +     +L +    ++  L    D +N        D+   ++   LER</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11225</Hit_id>
+  <Hit_def>gnl|TC-DB|P65526|2.A.36.3.3 Uncharacterized Na(+)/H(+) exchanger Rv2287/MT2345 OS=Mycobacterium tuberculosis GN=Rv2287 PE=3 SV=1</Hit_def>
+  <Hit_accession>11225</Hit_accession>
+  <Hit_len>542</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.007</Hsp_bit-score>
+      <Hsp_score>419</Hsp_score>
+      <Hsp_evalue>4.71414e-44</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>423</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>414</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>121</Hsp_identity>
+      <Hsp_positive>212</Hsp_positive>
+      <Hsp_gaps>39</Hsp_gaps>
+      <Hsp_align-len>429</Hsp_align-len>
+      <Hsp_qseq>LEAFLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMP--AAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQA--VEQFIISTILGVLIGAIIGFVV--VRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSR---VRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVLPLI</Hsp_qseq>
+      <Hsp_hseq>LVVIVALVAAVVVGTVLGHRYRVGPPVLL-ILSGSLLGLIPRFGDVQIDGEVVLLLFLPAILYWESMNTSFREIRWNLRVIVMFSIGLVIATAVAVS----WTARALGMESHAAAVLGAVLSPTDAAAVAGLA--KRLPRRALTVLRGESLINDGTALVLFAVTV-AVAEGAAGIGPAALVGRFVVSYLGGIMAGLLVGGLVTLLRRRIDAPLEEGA--------LSLLTPFAAFLLAQSLKCSGVVAVLVSALVLTYVGPTVIRARSRLQA--HAFWDIATFLINGSLWVFVGVQIPGA-IDHIAGEDGGLPRATVLALAVTGVVIATRIAWV-----------QATTVLGHTVDRVLKKPTRHVGFRQRCVTSWAGFRGAVSLAAALAVPMTTNSGAPFPDRNLIIFVVSVVILVTVLVQGTSLPTV</Hsp_hseq>
+      <Hsp_midline>L   +  + AV++ +V+ +R+   P   + I  G ++ +IP   D Q + EV +   +  +L+ E  + S  ++    + I++ S+ LV AT V V     W   AL M   AA  + A+L PTDA AV+ +   K LP+ ++T+L GESL+ND   ++ F + V A+  G   +  A  V +F++S + G++ G ++G +V  +R RID    +G         + LLTPF  + LA+ +  SG++AV+++ L+       +IRA++ LQ   H  W+  ++ +NG ++V +G  IP   ID    E        V+ + +   + A R  WV              + L    D     P+R    R   + +  G  G +SL+ AL +P     G  F  RN ++F+ S ++L+++++    LP +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17289</Hit_id>
+  <Hit_def>gnl|TC-DB|Q93HU4|2.A.36.7.1 Na+/H+ antiporter - Aphanothece halophytica.</Hit_def>
+  <Hit_accession>17289</Hit_accession>
+  <Hit_len>521</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>124.02</Hsp_bit-score>
+      <Hsp_score>310</Hsp_score>
+      <Hsp_evalue>6.73142e-30</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>515</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>504</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>253</Hsp_positive>
+      <Hsp_gaps>69</Hsp_gaps>
+      <Hsp_align-len>535</Hsp_align-len>
+      <Hsp_qseq>LEAFLIFI---FAVIISSVINNRFPQIPTAFIQIALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAV-TALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRI--RIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRL-IRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIV-------LPLITPSAEDTTFKGMTYQSAKIFIVQKVIQH---------FKNESKKDKNDTNYRPVLNQYYGELLFLLNSEPDNQNTKELKRLEDIAKVIETSTLERLIDKGK</Hsp_qseq>
+      <Hsp_hseq>LEQFLIVLSVSLGVATLSQISSFFRQIPYTLLLVIVGLGLAFVDIRL-VNLSPELILEIFLPPLLFEAAWNIRWRNLKKNLFPVVLLAIIGVVISVVGIGFSLNY-FSGLSLPIALLVGAILAATDPVSVIALFRELGVGERLTVLMEGESLFNDGVAVVAFSLLVGIPLGTQEFSVTNTLIQFVTLQGIGIGCGGVIGFGISYLTQRFDLPLVE-----QSLT---LVSAYGTYLITEELGGSGVIGVVTVGLILGNFGSRIGMNPRTRLLVS--EFWEFIAFFVNSIVFLLIGDQIN------IRGLADN-GQLILITIIALVIIRAI----------SIYGLGTISNLITKQDISWQEET-------VLWWGGLRGSVSIALALSVPVML------DGRQDIIEAVFGVVLFTLLVQGLTMQTVIEKLGLIGDRAQRRTYSELI---ARRSALERVLAHLNAVPPSPSIRMKSLKTTKEASKGQLESRQTKKLRSYNNSYPQLRSL-EQEQLRELTFKVEADTYAELIRAGK</Hsp_hseq>
+      <Hsp_midline>LE FLI +     V   S I++ F QIP   + + +G+ +  + I++    + E+ +   + PLLF    ++    L +   P++L+++  V  +VVG+G+ +++ +  L +P A  + AIL  TD V+V A+ R   + +    ++EGESL ND   +++F + V   L T  FS+   + QF+    +G+  G +IGF +  +  R DL   +      +LT   L++ +  Y + EE+  SG+I VV  GLI G    R+ +  +T L ++  + W   ++ +N  VF+++G  I        +   DN   LI+ITI+  + I A             Y    I + + ++  S +          ++   G+ G++S+++AL++P ++      + R D++     +VL +L++  +        L LI   A+  T+  +    A+   +++V+ H          + +S K   + +   + ++   +L    NS P  ++  E ++L ++   +E  T   LI  GK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7006</Hit_id>
+  <Hit_def>gnl|TC-DB|O29412|2.A.36.6.1 NA+/H+ ANTIPORTER (NHE2) - Archaeoglobus fulgidus.</Hit_def>
+  <Hit_accession>7006</Hit_accession>
+  <Hit_len>494</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>121.709</Hsp_bit-score>
+      <Hsp_score>304</Hsp_score>
+      <Hsp_evalue>3.00223e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>422</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>373</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>185</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>422</Hsp_align-len>
+      <Hsp_qseq>LLEAFLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHG-LERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASF-MVLISLILAQIVLPL</Hsp_qseq>
+      <Hsp_hseq>LVEFIEILMLATAVAVTV--KFIRLPYTIALVLAGLFVGLAGLLPEVPLSREIVFFIFLPPLLFEAAMNMDLKELRENFGPIALIAFLGVVVTTTVVGFSLNWIL-GIPLALALIFGAMVSATDPVSVLATFKSISAPKKLSILIEGESVLNDGAAIVVFAIALEMMLKGVFDPLNAALDFAVVCVGGAAVGLAVGYLAYRILAK------IDDALVEIAVTIVAAYLGFVLAERFHFSGVIAVVAAGLILGNYGRDFSMSPTTRVIM--LDFWSVIVFLVNSIIFILIG----------VNTHITIFSAWKEILVAIAAVILARAFV-VYPVMTYYRFPN--------------------LWKHVVFWGGLRGVIPVALALS------------FGNQLLSAMAFGVVLFSLLLQGISLEI</Hsp_hseq>
+      <Hsp_midline>L+E   I + A  ++  +  +F ++P     +  G+ + +  +  +   + E+  F  + PLLF    ++   +L E   PI L++   V  T   VG+ ++WI   +P+  A    A++  TD V+V A  +    PK    ++EGES+LND A I+ F IA+  ++ G F    A   F +  + G  +G  +G++  RI         + D      + ++  ++ + LAE  H SG+IAVV AGLI G   RD  +   T + M     W+   + +N  +F+++G            T    FS    I + IA  I A  FV VY     + FP                      +  ++   G+ G I +++AL+            + N LL   +F +VL SL+L  I L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18474</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9LCB5|2.A.36.6.2 NhaG Na/H antiporter - Bacillus subtilis.</Hit_def>
+  <Hit_accession>18474</Hit_accession>
+  <Hit_len>524</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.242</Hsp_bit-score>
+      <Hsp_score>295</Hsp_score>
+      <Hsp_evalue>5.51227e-28</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>534</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>524</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>242</Hsp_positive>
+      <Hsp_gaps>71</Hsp_gaps>
+      <Hsp_align-len>555</Hsp_align-len>
+      <Hsp_qseq>FLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPI---QVDFQFNSEVFMFAVIA---PLLFVEGT-HVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVT----GTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVL-PLI-----------TPSAEDTTFKGMTYQSAKIFIVQKVIQHFKNESKKDKNDTNYRPVLNQYYGELLFLLNSEPDNQNTKE--LKRLEDIA--KVIETSTLERLIDKGKATYQDINNYRNIVELTETH</Hsp_qseq>
+      <Hsp_hseq>FFVVMIAAGITAIAKKCRQPYPIALVIVGTIIGLVHIPLFEPLKEFITEGEVFNFVIITLFLPALLGEAALKLPFSHLRENKRPVLALFGGTLISFLI-VGFSSMWLMH-LAIPAAFVFAALMSATDPVSVLSIFKSVGAPKKLSIVVEGESLFNDGLAVVLFNISAFYLMTYLDLGIQGAGLGLWEFVKVISLGLIIGGVLGYVFSQL------TKYFDDYPLEIIFSIILFYSSFLLAEMAGASGVIAVVVAALIFGNYGAKIGMSPT-TKLNINNFWDVAALLANSLVFLMVGLEITRIDL------TDKWGLAIMAIVIVLIARSAAVYISLAFIKK---FP--------------------VTWKHTINWGGLKGSLSIALVLSLP------RDFPGREDILVFAFSVVLFSLVVQGLTIKPLLERLGVNQKEEGNQEYEELLAKGHRLETAIKEVQQVKHNLLIHEAVSSELTDQYKKEVSQLHQQTNKLFETYPELKNKQQTILKKHSLYAQYQAIENLSREDIISNEVAELEQARIIDEIVRLQNDH</Hsp_hseq>
+      <Hsp_midline>F + + A  I+++        P A + +   + +  IP+     +F    EVF F +I    P L  E    +  + L E ++P+L +    + + ++ VG+   W+   L +PAAF  AA++  TD V+V +I +    PK    ++EGESL ND   ++ F I+   L+T    G       + +F+    LG++IG ++G+V  ++       K   D        ++  +  + LAE   ASG+IAVV+A LI G    ++  + T  ++N +  W+  +   N  VF+++G  I  + +       D +   I+  +++ IA  A  ++ + F  K   FP                    V +   +   G+ G++S+++ L+LP      + F  R D+L  A  +VL SL++  + + PL+               E+   KG   ++A   + Q       +E+   +    Y+  ++Q + +   L  + P+ +N ++  LK+    A  + IE  + E +I    A  +       IV L   H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13347</Hit_id>
+  <Hit_def>gnl|TC-DB|Q2XWL3|2.A.36.6.7 NhaH OS=Halobacillus dabanensis GN=nhaH PE=4 SV=1</Hit_def>
+  <Hit_accession>13347</Hit_accession>
+  <Hit_len>403</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.161</Hsp_bit-score>
+      <Hsp_score>287</Hsp_score>
+      <Hsp_evalue>1.5196e-27</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>423</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>397</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>63</Hsp_gaps>
+      <Hsp_align-len>433</Hsp_align-len>
+      <Hsp_qseq>LIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFI--IPIQVDFQ---FNSEVFMFAVIA---PLLFVEGT-HVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVT----GTFSLFQAVEQFIISTILGVLIGAIIGFV---VVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVL-PLI</Hsp_qseq>
+      <Hsp_hseq>ILLLLAISVSVIAIAKLLKEPDSIALVLVGLVLGLTELPIIEDAERYITQSEVFQATIISLFLPILLGDATLKLPFHHLFSQKKTVLGLAFVGTFVSSICIGTAAYFLLD-LPLAVAFTFAALMSATDPISVLSIFKSLGVPQKMSTVMEGESLFNDGIAVVLFKIASIYLLTYMEMGWAGLGSGVFLFLKFAIGGALVGLVLGYFFSQVIRVFDDYPLE--------VAFSALLF-FGSYFIAEHFHTSGVIAVVVGGFVFG-DYGAKIGMSKETKTNINTFWDSVTLIANALIFLMVGLEIRN--IDLAGNWGVIVGAILIVLVGRTIAVY-LGTGWV------------------QELSSKE--------RLLINWGGLRGSLSVALALSLP------MDFAGRDQVLLLTFSVVLFSLIVQGLTLKPLI</Hsp_hseq>
+      <Hsp_midline>++ + A+ +S +   +  + P +   + +G+V+ +  +PI  D +     SEVF   +I+   P+L  + T  +    L   +K +L ++    F + + +G   +++   LP+  AF  AA++  TD ++V +I +   +P+   T++EGESL ND   ++ FKIA   L+T    G   L   V  F+   I G L+G ++G+    V+R+  D            + F  LL  F  YF+AE  H SG+IAVV+ G + G +    I    E + N +  W++ +   N  +F+++G  I    ID+          ++++ +   IA+Y     WV                  +E  S E          ++   G+ G++S+++AL+LP        F  R+ +L +   +VL SLI+  + L PLI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1549</Hit_id>
+  <Hit_def>gnl|TC-DB|B0LJC9|2.A.36.6.10 Na(+)/H(+) antiporter NhaH OS=Halobacillus aidingensis GN=nhaH PE=1 SV=1</Hit_def>
+  <Hit_accession>1549</Hit_accession>
+  <Hit_len>403</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>112.464</Hsp_bit-score>
+      <Hsp_score>280</Hsp_score>
+      <Hsp_evalue>1.22021e-26</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>420</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>393</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>197</Hsp_positive>
+      <Hsp_gaps>68</Hsp_gaps>
+      <Hsp_align-len>432</Hsp_align-len>
+      <Hsp_qseq>LIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPIQV-----DFQFNSEVFMFAVIA---PLLFVEGT-HVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVT----GTFSLFQAVEQFIISTILGVLIGAIIGFV---VVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYF---WYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVL</Hsp_qseq>
+      <Hsp_hseq>ILLLLAISVTVIAIAKLLKEPDSVALVLVGLVLGLTQLPFIEEAESYITQSEVFQATVISLFLPILLGDATLKLPFHHLFSQKKTVMGLAFLGTFISSLTIGAASYFLLD-LPLAVAFTFAALMSATDPISVLSIFKSLGVKQKMSTIMEGESLFNDGIAVVLFKIASIYLLTYIEMGWAGLGSGVFMFLKFAVGGALVGLILGYVFSQVIRVYDDYPLE--------VAFSALLF-FGSYFIAEHFHTSGVIAVVVGGFVFG-DYGAKIGMSEETKTNLNTFWDSVTLLANALIFLMVGLEIRNIDL------AGNWGYIVGAIAIVLVG----RTIAVYIGTGWIKELSSKERI----------------------LINWGGLRGSLSIALALSLP------MDFDGREQVLLLTFSVVLFSLIVQGLTL</Hsp_hseq>
+      <Hsp_midline>++ + A+ ++ +   +  + P +   + +G+V+ +  +        +   SEVF   VI+   P+L  + T  +    L   +K ++ ++    F + + +G   +++   LP+  AF  AA++  TD ++V +I +   + +   TI+EGESL ND   ++ FKIA   L+T    G   L   V  F+   + G L+G I+G+V   V+R+  D            + F  LL  F  YF+AE  H SG+IAVV+ G + G +    I    E + N +  W++ +   N  +F+++G  I  + +        N+ +++    ++ +     R + VY    W K+    + I                      ++   G+ G++S+++AL+LP        F+ R  +L +   +VL SLI+  + L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11370</Hit_id>
+  <Hit_def>gnl|TC-DB|P73863|2.A.36.7.2 EUKARYOTIC NA+/H+ EXCHANGER - Synechocystis sp. (strain PCC 6803).</Hit_def>
+  <Hit_accession>11370</Hit_accession>
+  <Hit_len>527</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>113.235</Hsp_bit-score>
+      <Hsp_score>282</Hsp_score>
+      <Hsp_evalue>2.44315e-26</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>420</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>404</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>43</Hsp_gaps>
+      <Hsp_align-len>425</Hsp_align-len>
+      <Hsp_qseq>LEAFLIFIFAVIISSVINNRFP---QIPTAFIQIALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAV-TALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRI--RIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRL-IRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLF-IASFMVLISLILAQIVL</Hsp_qseq>
+      <Hsp_hseq>LEQFLIVLSVSLSIATLSKTVPILRKIPYTLLLVIVGMALAFVDVKL-INLSPELIMEIFLPPLLFEAAWNLQWRNLKENWFPITLFATLGVVICVVGIAFPLSY-WGGMELAIAFLAAAALSATDPVSVIALFKELGASKKLNTLMEGESLFNDGVAVVVFLILVGIPLGTSTFDLSVTLARFVTVIGIGVGCGLVIGFSLSLLTQRFDLPFVE-----QSLT---LVSAYGAYILAENLGGSGVIGVVVVGMVLGNYGSRIGMNPRTRLIVSI--FWEFVAFFVNSIIFLLIGDQIGLSSLS---------DHLNLILIAIA-AVVVTRLVSVF----------GLSLISNKVSDQISSTHITLQEQTVLWWGGLRGSVAIAVALSVPQAIAERQAI---IDIVFGVVLFTLLVQGLTTQFVL</Hsp_hseq>
+      <Hsp_midline>LE FLI +   +  + ++   P   +IP   + + +G+ +  + +++    + E+ M   + PLLF    ++    L E   PI L +   V   VVG+ + + + W  + +  AF  AA L  TD V+V A+ +     K   T++EGESL ND   ++ F I V   L T TF L   + +F+    +GV  G +IGF +  +  R DL   +      +LT   L++ +  Y LAE +  SG+I VV+ G++ G    R+ +  +T L ++    W   ++ +N  +F+++G  I    +            L +I I IA A+   R V V+           +    ++  D   +    ++   ++   G+ G++++++AL++P  I + QA     D++F +  F +L+  +  Q VL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4703</Hit_id>
+  <Hit_def>gnl|TC-DB|G3XD29|2.A.36.6.8 Na(+)/H(+) antiporter NhaP OS=Pseudomonas aeruginosa (strain ATCC 15692 / PAO1 / 1C / PRS 101 / LMG 12228) GN=nhaP PE=1 SV=1</Hit_def>
+  <Hit_accession>4703</Hit_accession>
+  <Hit_len>424</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.5153</Hsp_bit-score>
+      <Hsp_score>236</Hsp_score>
+      <Hsp_evalue>6.41682e-21</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>423</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>408</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>179</Hsp_positive>
+      <Hsp_gaps>69</Hsp_gaps>
+      <Hsp_align-len>449</Hsp_align-len>
+      <Hsp_qseq>LLEAFLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFII---------PI----------QVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFA----IAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVE-QFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLG---FMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVL-PLI</Hsp_qseq>
+      <Hsp_hseq>MLDLVAAFIALTTLLTYVNYRFIRLPPTIGVMATALVFSLIVQGLSELGYPILEVEMQEIIRRIDF---SEVLMTWFLPALLFAGALHVDLSDLRSYKWPIGLLATAGVLIATFVIGGLAYYTFPLFGWQVDFIYCLLFGALISPTDPIAVLGILKSAGAPKPLATTIVGESLFNDGTAVVVFAIILGILQLGEAPTVSATAILFVQEAIGGVVFGAVLGYGV------FVMMRGIDQYQVEVMLTLALVIGGAALAARLHVSAPIAMVVAGLIIG-NHGRHYAMSDETRRYVDKFWELIDEILNALLFALIGLELLLLPFSWLHVAAAFALGGAVLVSRLLTVGPAILVLRRF---------------------RGANRQVPAGTIR---ILVWGGLRGGVSVALALSLPL-------GPERDLILSLTYIVVLVSILLQGLSIGPLV</Hsp_hseq>
+      <Hsp_midline>+L+    FI    + + +N RF ++P     +A  +V  +I         PI          ++DF   SEV M   +  LLF    HV  + L  Y+ PI L++ A V      +G   ++ +P       F       A++ PTD +AV  I +    PK   T + GESL ND   ++ F I +  L  G      A    F+   I GV+ GA++G+ V          +G+        + L        LA  +H S  IA+V+AGLI G    R      E +    + W      LN  +F ++G    ++P   + +        + L+   + +  AI   R                          + + P   +R   I+   G+ G +S+++AL+LP           R+ +L +   +VL+S++L  + + PL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12157</Hit_id>
+  <Hit_def>gnl|TC-DB|Q04121|2.A.36.1.12 Endosomal/prevacuolar sodium/hydrogen exchanger OS=Saccharomyces cerevisiae GN=NHX1 PE=1 SV=1</Hit_def>
+  <Hit_accession>12157</Hit_accession>
+  <Hit_len>633</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.9669</Hsp_bit-score>
+      <Hsp_score>219</Hsp_score>
+      <Hsp_evalue>2.15317e-18</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>415</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>474</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>400</Hsp_align-len>
+      <Hsp_qseq>FIQIALGVVIFIIP---IQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPA-------AFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTAL-VTGTF-SLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYF--WYKDFYFPKNIQSYLDEEHDSHETPPS-RVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLIL</Hsp_qseq>
+      <Hsp_hseq>FYGMVIGLIIRMSPGHYIQDTVTFNSSYFFNVLLPPIILNSGYELNQVNFFNNMLSILIFAIPGTFISAVVIGIILY-IWTFLGLESIDISFADAMSVGATLSATDPVTILSIFNAYKVDPKLYTIIFGESLLNDAISIVMFETCQKFHGQPATFSSVFEGAGLFLMTFSVSLLIGVLIGILVALLLKHTHIRRYPQIESCLI---LLIAYESYFFSNGCHMSGIVSLLFCGIT--LKHYAYYNMSRRSQITIKYIFQLLARLSENFIFIYLGLELFTEVELVYKP-----LLIIVAAISICVARWCAVFPLSQFVNW---IYRVKTIRSMSGITGENISVPDEIPYNYQMMTFWAGLRGAVGVALAL--------GIQGEYKFTLLATVLVVVVLTVII</Hsp_hseq>
+      <Hsp_midline>F  + +G++I + P   IQ    FNS  F   ++ P++   G  +++         IL+ ++   F + V +G  ++ IW  L + +       A ++ A L  TD V + +I     +     TI+ GESLLNDA  I+ F+          TF S+F+    F+++  + +LIG +IG +V  +       +  +  + L    LL  +  YF +   H SGI++++  G+   L+           Q+    I+   +     F+F+ LG  + T V  +++        +IV  I I +A +   F    F  W    Y  K I+S      ++   P      Y  +    G+ G + +++AL        G   EY+  LL     +V++++I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19475</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9Y2E8|2.A.36.1.9 Sodium/hydrogen exchanger 8 OS=Homo sapiens GN=SLC9A8 PE=1 SV=4</Hit_def>
+  <Hit_accession>19475</Hit_accession>
+  <Hit_len>581</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.1738</Hsp_bit-score>
+      <Hsp_score>178</Hsp_score>
+      <Hsp_evalue>1.76971e-13</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>423</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>471</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>184</Hsp_positive>
+      <Hsp_gaps>66</Hsp_gaps>
+      <Hsp_align-len>443</Hsp_align-len>
+      <Hsp_qseq>LIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPIQVDFQ----------FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSM--ALVFATVVGVG-YFIHW--IWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTAL------VTGTFSLFQAVEQFII----STILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTF-IQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLIS-LILAQIVLPLI</Hsp_qseq>
+      <Hsp_hseq>VLAICIILVHLLIRYRLHFLPESVAVVSLGILMGAVIKIIEFKKLANWKEEEMFRPNMFFLLLLPPIIFESGYSLHKGNFFQNIGSITLFAVFGTAISAFVVGGGIYFLGQADVISKLNMTDSFAFGSLISAVDPVATIAIFNALHVDPVLNMLVFGESILNDAVSIVLTNTAEGLTRKNMSDVSGWQTFLQALDYFLKMFFGSAALGTLTGLISALVLKHI--------DLRKTPSLEFGMMIIFAYLPYGLAEGISLSGIMAILFSGIVMSHYTHHNLSPVTQILM--QQTLRTVAFLCETCVFAFLG-------LSIF-SFPHKFEISFVIWCI----------VLVLFGRAVNIFP---LSYLLNFFRDHKITP---KMMFIMWFSGLRGAIPYALSLHLDL-----EPMEKRQLIGTTTIVIVLFTILLLGGSTMPLI</Hsp_hseq>
+      <Hsp_midline>++ I  +++  +I  R   +P +   ++LG+++  +   ++F+          F   +F   ++ P++F  G  + +    +    I L ++    + A VVG G YF+    +   L M  +FA  +++   D VA  AI     +      ++ GES+LNDA  I+    A          V+G  +  QA++ F+     S  LG L G I   V+  I         L+   +L F + ++  ++ Y LAE +  SGI+A++ +G++        +   T++ M   Q   T ++     VF  LG       + IF + P  F    VI  +          V V F      FP    SYL      H+  P   +  FIM   G+ G I  +++L L       +  E R  +      +VL + L+L    +PLI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18510</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9LKW9|2.A.36.7.6 Sodium/hydrogen exchanger 7 OS=Arabidopsis thaliana GN=NHX7 PE=1 SV=1</Hit_def>
+  <Hit_accession>18510</Hit_accession>
+  <Hit_len>1146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.1738</Hsp_bit-score>
+      <Hsp_score>178</Hsp_score>
+      <Hsp_evalue>2.66113e-13</Hsp_evalue>
+      <Hsp_query-from>83</Hsp_query-from>
+      <Hsp_query-to>334</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>385</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>264</Hsp_align-len>
+      <Hsp_qseq>PILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVL-IGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVID----IFQTEPDNFSFLIVITILIAIAIYA-------CRFVWVYFW</Hsp_qseq>
+      <Hsp_hseq>PGVLISTACL-GSLVKVTFPYEWDWKT-----SLLLGGLLSATDPVAVVALLKELGASKKLSTIIEGESLMNDGTAIVVFQLFL-KMAMGQNSDWSSIIKFLLKVALGAVGIGLAFGIASV-IWLKFIFNDTVIE---ITLTIAVSYFAYYTAQEWAGASGVLTVMTLGMFYAAFARTAFKGDS--QKSLHHFWEMVAYIANTLIFILSGVVIAEGILDSDKIAYQGNSWRFLFLLYVYIQLSRVVVVGVLYPLLCRFGYGLDW</Hsp_hseq>
+      <Hsp_midline>P +L+S A +  ++V V +   W W       +  +  +L  TD VAV A+ +     K   TI+EGESL+ND   I+ F++ +  +  G  S + ++ +F++   LG + IG   G   V I +    N  + +   +T    ++ F  Y   E   ASG++ V+  G+ +        +  +  Q + H  W   +Y  N  +F++ G +I   ++D     +Q     F FL+ + I ++  +         CRF +   W</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|22203</Hit_id>
+  <Hit_def>gnl|TC-DB|XP_002271865.1|2.A.36.1.23 PREDICTED: sodium/hydrogen exchanger 6 [Vitis vinifera]</Hit_def>
+  <Hit_accession>22203</Hit_accession>
+  <Hit_len>529</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.4774</Hsp_bit-score>
+      <Hsp_score>171</Hsp_score>
+      <Hsp_evalue>1.12208e-12</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>329</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>366</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>149</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>347</Hsp_align-len>
+      <Hsp_qseq>LLEAFLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIP--------IQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVF--ATVVGVGYFIH---WIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIA--VTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTF---IQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIA--IYACRFV</Hsp_qseq>
+      <Hsp_hseq>LLQIMMLVLSFVLGHVLRRKKFYYLPEASASLLIGLIVGGLANISDTETSIRAWFNFHEEFFFLFLLPPIIFQSGFSLSPKPFFSNFGAIVTFAIVGTFIASTVTGILVYLGGLIYLMYRLPFLECMMFGALISATDPVTVLSIFQELGSDMNLYALVFGESVLNDAMAISLYRTISLIKSHVPSEQNFFMVIVKFLETFVGSMSSGVGVGFTAAL----LFKYAGLDIDNLLNLECCLFVLFPYFSYMLAEGLGLSGIVSILFTGIV--MKHYTFSNLSENSQRFVSAFFHLISSLAETFVFIYMGF---DIAMEQHSWSHVGFIFFSILFIIVARAANVFSCAYM</Hsp_hseq>
+      <Hsp_midline>LL+  ++ +  V+   +   +F  +P A   + +G+++  +         I+  F F+ E F   ++ P++F  G  +S          I+  ++   F  +TV G+  ++    ++   LP        A++  TD V V +I +          ++ GES+LNDA  I  ++    + + V    + F  + +F+ + +  +  G  +GF        L    GL  +N L     + +L P+  Y LAE +  SGI++++  G++  ++           Q      ++  S     FVF+ +GF    + ++        F F  ++ I++A A  +++C ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17363</Hit_id>
+  <Hit_def>gnl|TC-DB|Q93YH1|2.A.36.1.5 Na+/H+ antiporter, isoform 2 - Lycopersicon esculentum (Tomato).  </Hit_def>
+  <Hit_accession>17363</Hit_accession>
+  <Hit_len>531</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.0922</Hsp_bit-score>
+      <Hsp_score>170</Hsp_score>
+      <Hsp_evalue>1.489e-12</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>329</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>365</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>36</Hsp_gaps>
+      <Hsp_align-len>351</Hsp_align-len>
+      <Hsp_qseq>LLEAFLIFIFAVIISSVINNR-FPQIPTAFIQIALGVVIFIIP--------IQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIH-----WIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQA--------VEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIA--IYACRFV</Hsp_qseq>
+      <Hsp_hseq>ILLQIMMLVLSFVIGHVLRRRHFYYIPEASASLLIGLIVGGLANVSDTETSIRAWFNFHEEFFFLFLLPPIIFQSGFSLSPKPFFSNFGAIITFAILGTFIASFVTGILVYLGGVTYLMYRLPFVECLMFGALISATDPVTVLSIFQELGTDVNLYALVFGESVLNDAMAISLYR--TMSLVRSHMSTDQNYFMITIRFVETFMGSLSAGVGVGFVSALLFKYAGLDIDNLQNLE-----SCLFVLFPYFSYMLAEGLGLSGIVSILFTGVV--MKRYTYPNLSESSQRFVSAFFHLISSLAETFVFIYMGF---DIAMEKHSWSHVGFIFFSILFIVIARAANVFGCAYL</Hsp_hseq>
+      <Hsp_midline>+L   ++ + + +I  V+  R F  IP A   + +G+++  +         I+  F F+ E F   ++ P++F  G  +S          I+  ++   F      G  ++     ++   LP        A++  TD V V +I +          ++ GES+LNDA  I  ++    +LV    S  Q         VE F+ S   GV +G +   +     +D+   + L+     + + +L P+  Y LAE +  SGI++++  G++  ++R          Q      ++  S     FVF+ +GF    + ++        F F  ++ I+IA A  ++ C ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14080</Hit_id>
+  <Hit_def>gnl|TC-DB|Q552S0|2.A.36.1.11 Sodium/hydrogen exchanger 1 OS=Dictyostelium discoideum GN=nhe1 PE=2 SV=1</Hit_def>
+  <Hit_accession>14080</Hit_accession>
+  <Hit_len>674</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>2.4269e-12</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>329</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>39</Hsp_gaps>
+      <Hsp_align-len>346</Hsp_align-len>
+      <Hsp_qseq>LIFIFAVIISS-------VINNRFPQIPTAFIQIALGVVIFII-------PIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSM--ALVFATVVGVGYFI---HWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFII----STILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILI-AIAIYACRFV</Hsp_qseq>
+      <Hsp_hseq>IIFIIMLILTGSVLIVYFIISLDIPFVPESVAVVTYGIILGIVFRFFYSDIVNHVVSFEPENFFLFILPTIIFETGYSLHKTDFFNNIGPILMFAVFGTIITFLVVGFGIYIVGYFGVSIALSLKDSFAFGSIISSTDPVCTLAIFQALNVDPMLYILVLGESILNDATSMMLYSVVED---TSTRDIIISCAMFTVVAIGSVILGVVMALLLSLILKWINIG-------KFPALETIFMVMFSYMSYVLAGALDISGVLAVFFFGITLNQYGAYSLSPYTKLTSG--QLFRTAAFISETFLFLYFGL---SLTAHEFKFDLGLFSWSILFTCLARAISVFPMCFL</Hsp_hseq>
+      <Hsp_midline>+IFI  +I++        +I+   P +P +   +  G+++ I+        +     F  E F   ++  ++F  G  + +T       PIL+ ++   ++   VVG G +I     +  AL +  +FA  +I+  TD V   AI +   +      ++ GES+LNDA  ++ + +      T T  +  +   F +    S ILGV++  ++  ++  I I        K     T   ++  ++ Y LA  +  SG++AV   G+         +   T+L     Q++ T ++    F+F+  G    ++    F+ +   FS+ I+ T L  AI+++   F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12834</Hit_id>
+  <Hit_def>gnl|TC-DB|Q19N58|2.A.36.7.10 Na+/H+ antiporter OS=Populus euphratica GN=sos1 PE=2 SV=1</Hit_def>
+  <Hit_accession>12834</Hit_accession>
+  <Hit_len>1145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.3218</Hsp_bit-score>
+      <Hsp_score>168</Hsp_score>
+      <Hsp_evalue>4.11417e-12</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>385</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>407</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>336</Hsp_align-len>
+      <Hsp_qseq>MFAVIAP-LLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA-LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHA-SGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVI---DIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDF-YFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTL</Hsp_qseq>
+      <Hsp_hseq>LLAVFLPALLFESSFSMEVHQIKRCMGQMLLLAVPGVLISTCCLGCALKLIFPYNWSWTTSLLLGGLLSATDPVAVVALLKELGASKKLSTIIEGESLMNDGTAIVVYQLFYRMVLGESFN-SGAIIKFLTQVSLGA-VGIGIAFGIASF---LWLGFIFNDTVIEIALTLAVSYVTYFTAQEGAAVSGVLAVMTLGMFYAAVARTAFKG--DGQQSLHHFWEMVAYIANTLIFILSGVVIAEGVLSSGNTFHRHAHTWGYLFLLYAFVLLS----RFIVVGVLYPILRYFGYGLE----------------WKEAIIVIWSGLRGAVALSLSLSV</Hsp_hseq>
+      <Hsp_midline>+ AV  P LLF     +   ++      +LL+++  V  +   +G  +  I+P       +  +  +L  TD VAV A+ +     K   TI+EGESL+ND   I+ +++    ++  +F+   A+ +F+    LG  +G  I F +      L       D      + L   +V YF A+E  A SG++AV+  G+ +        +   + Q + H  W   +Y  N  +F++ G +I   V+   + F      + +L ++   + ++    RF+ V   Y    YF   ++                 + A I+   G+ G ++LS++L++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19183</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9UZ55|2.A.36.6.9 Na+/H+ antiporter, putative OS=Pyrococcus abyssi (strain GE5 / Orsay) GN=PAB1518 PE=1 SV=1</Hit_def>
+  <Hit_accession>19183</Hit_accession>
+  <Hit_len>443</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.781</Hsp_bit-score>
+      <Hsp_score>164</Hsp_score>
+      <Hsp_evalue>6.30228e-12</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>291</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>MALLEAFLIFIFAVIISSVINNR--FPQIPTAFIQ-IALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTG-TFSLFQAVEQFIISTILGVLIGAIIGFVV-VRIRIDL-----------TANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHG-------LERDRLI-RAQTELQMNYHQIWNTFSYALNGFVFVVLG</Hsp_qseq>
+      <Hsp_hseq>LSLAEALFLILFTGVISMLISRRTGISYVPIFILTGLVIGPLLKLIPRDLAHEIFDFVRVFGLVI-ILFTEGHNLSWRLLKKNMPTIVTLDTIGLILTALIAGFIFKVVFNSSFL-LGFLFGAIIGATDPATLIPLFRQYRVKQDIETVIVTESIFNDPLGIVLTLIAISMLVPGYGGGIFST-----LSEKLGIYAGGVIYFLYNVSVSISLGIFLGILGYKFIKRTGIFDFPEIEAFSLSLAFLGFFIGERLDASGYLVATVTGIVLGNYKLLKPRENIRILKRLQRAIEKEVH-FNDTLAALATIFIFVLLG</Hsp_hseq>
+      <Hsp_midline>++L EA  + +F  +IS +I+ R     +P   +  + +G ++ +IP  +  +    V +F ++  +LF EG ++S   L +    I+ +    +  T +  G+    ++ +  +   F   AI+  TD   +  + R   + +   T++  ES+ ND  GI+   IA++ LV G    +F       +S  LG+  G +I F+  V + I L               G+ D   +    L   F+ +F+ E + ASG +   + G++ G        E  R++ R Q  ++   H   +T +     F+FV+LG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13562</Hit_id>
+  <Hit_def>gnl|TC-DB|Q3YL57|2.A.36.7.3 Sodium/hydrogen exchanger 8 OS=Arabidopsis thaliana GN=NHX8 PE=2 SV=1</Hit_def>
+  <Hit_accession>13562</Hit_accession>
+  <Hit_len>756</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2402</Hsp_bit-score>
+      <Hsp_score>160</Hsp_score>
+      <Hsp_evalue>3.10978e-11</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>454</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>479</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>177</Hsp_positive>
+      <Hsp_gaps>53</Hsp_gaps>
+      <Hsp_align-len>416</Hsp_align-len>
+      <Hsp_qseq>MFAVIAPLLFVEGTHVSRTKLLE--YRKPILLMSMALVFAT-----VVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVL-IGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEE-VHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVI--DIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAF---EYRNDLLFIASFMVLISLIL----AQIVLPLITPSAEDTTFKGMTYQSAKIFIVQKVIQHFKN</Hsp_qseq>
+      <Hsp_hseq>LLAVFLPVLLFESSFSMDVHQIKRCMGQMVLLAGPGVLISTFCLGALIKLTFPYNWDWKT-----SLLLGGLLGATDPVAVVALLKELGASKKMTTLIDGESLMNDGVSVVVFQL-FFKMVMGHNSDWGSIIKFLVQNSFGAVGIGLAFGIASV-----FWLKFIFNDTVAQITVTLSASYFAYYTAQEWAGVSGILTVMILGMFFAAFARTAFKGDS--HQSLHHFWEMAAYIANTLVFMLSGVIIAESVLSGQTISYKGNSWSFLFLLYLYVQLS--RCVVVGV-------LYPLLCRSGYGLDW----------KESIILTWSGLRGAVSLSLALSVK--QSSGNSYLSSDTGTRFLFLTGGIVFLTLVVNGSTTQLLLHLLRMDTLTAT-KKRILEYTKFEMMKTALKAFEN</Hsp_hseq>
+      <Hsp_midline>+ AV  P+L  E +       ++    + +LL    ++ +T     ++ + +  +W W       +  +  +L  TD VAV A+ +     K   T+++GESL+ND   ++ F++    +V G  S + ++ +F++    G + IG   G   V             D      + L   +  Y+ A+E    SGI+ V+I G+          +  +    + H  W   +Y  N  VF++ G +I   V+       + +++SFL ++ + + ++   C  V V        +P   +S    +           + + I+T  G+ G +SLS+AL++    + G ++   +     LF+   +V ++L++     Q++L L+       T K    +  K  +++  ++ F+N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18984</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9SLJ7|2.A.36.1.20 Sodium/hydrogen exchanger 5 OS=Arabidopsis thaliana GN=NHX5 PE=2 SV=2</Hit_def>
+  <Hit_accession>18984</Hit_accession>
+  <Hit_len>521</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.855</Hsp_bit-score>
+      <Hsp_score>159</Hsp_score>
+      <Hsp_evalue>3.1203e-11</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>348</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>384</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>368</Hsp_align-len>
+      <Hsp_qseq>LLEAFLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIP--------IQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIH-----WIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIA--VTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTF---IQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIA----IYACRFVWVYFWYKDFYFPKNIQSYL</Hsp_qseq>
+      <Hsp_hseq>LLQIMMLVLSFVLGHVLRRHRFHYLPEASGSLLIGLIVGILANISDTETSIRTWFNFHEEFFFLFLLPPIIFQSGFSLQPKPFFSNFGAIVTFAIIGTFVASVVTGGLVYLGGSMYLMYKLPFVECLMFGALISATDPVTVLSIFQDVGTDVNLYALVFGESVLNDAMAISLYRTMSLVNRQSSSGEHFFMVVIRFFETFAGSMSAGVGVGFTSAL----LFKYAGLDTENLQNLECCLFVLFPYFSYMLAEGVGLSGIVSILFTGIV--MKRYTFSNLSEASQSFVSSFFHLISSLAETFTFIYMGFDIA-----MEQHSWSHVGFILFSILFIGVARAVNVFGCAYLVNLFRQENQKIPMKHQKAL</Hsp_hseq>
+      <Hsp_midline>LL+  ++ +  V+   +  +RF  +P A   + +G+++ I+         I+  F F+ E F   ++ P++F  G  +           I+  ++   F   V  G  ++     ++   LP        A++  TD V V +I +          ++ GES+LNDA  I  ++    V    +     F  V +F  +    +  G  +GF        L    GL   N       + +L P+  Y LAE V  SGI++++  G++  ++R          Q      ++  S     F F+ +GF I      + Q    +  F++   + I +A    ++ C ++   F  ++   P   Q  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20543</Hit_id>
+  <Hit_def>gnl|TC-DB|V9PPA7|2.A.36.5.3 Sodium/hydrogen exchanger OS=Chrysanthemum morifolium GN=NHX1 PE=2 SV=1</Hit_def>
+  <Hit_accession>20543</Hit_accession>
+  <Hit_len>510</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.4698</Hsp_bit-score>
+      <Hsp_score>158</Hsp_score>
+      <Hsp_evalue>4.03302e-11</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>291</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>254</Hsp_align-len>
+      <Hsp_qseq>QFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAA-----FAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVE-------QFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLG</Hsp_qseq>
+      <Hsp_hseq>EFKQEFFFIYLLPPIIFNAGFQVKKKRFFQNFMTISSFGIIGTLISFAIISYGATLLFPILDIGYLEIKDYLALGAIFSATDSVCTLQVLNQNETPL-LYSLVFGEGVVNDATSVVLFN-AITKFDVSDTNLTTALEFFGNFFSLFVLSTLLGVFVGLVCAFIVRKL------YSGRHSTDGEVALMILMAYLSYITAEVFELSGILTVFFCGIVMSHYAWHNVTHSSQVTTNH--AFATMSYIAEVFIFLYVG</Hsp_hseq>
+      <Hsp_midline>+F  E F   ++ P++F  G  V + +  +    I    +     +   + Y    ++P L +         A+ AI   TD+V    +      P    +++ GE ++NDA  ++ F  A+T       +L  A+E        F++ST+LGV +G +  F+V ++        G    +    + +L  ++ Y  AE    SGI+ V   G++        +   +++  N+   + T SY    F+F+ +G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16776</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8S397|2.A.36.5.8 Sodium/hydrogen exchanger 4 OS=Arabidopsis thaliana OX=3702 GN=NHX4 PE=2 SV=2</Hit_def>
+  <Hit_accession>16776</Hit_accession>
+  <Hit_len>529</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.929</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>1.27098e-10</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>335</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>272</Hsp_align-len>
+      <Hsp_qseq>FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAA-----FAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISF----KIAVTALVTGT-FSLF-QAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSF</Hsp_qseq>
+      <Hsp_hseq>FDEELFFIYLLPPIIFNAGFQVKKKKFFHNFLTIMSFGVIGVFISTVIISFGTWWLFPKLGFKGLSARDYLAIGTIFSSTDTVCTLQILHQDETPL-LYSLVFGEGVVNDATSVVLFNAVQKIQFESLTGWTALQVFGNFLYLFSTSTLLGIGVGLITSFVL------KTLYFGRHSTTRELAIMVLMAYLSYMLAELFSLSGILTVFFCGVL--MSHYASYNVTESSRITSRHVFAMLSFIAETFIFLYVG----TDALDFTKWKTSSLSF</Hsp_hseq>
+      <Hsp_midline>F+ E+F   ++ P++F  G  V + K       I+   +  VF + V + +   W++P L           AI  I   TD V    I      P    +++ GE ++NDA  ++ F    KI   +L   T   +F   +  F  ST+LG+ +G I  FV+       T   G         I +L  ++ Y LAE    SGI+ V   G++  +            ++    ++   S+    F+F+ +G    T  +D  + +  + SF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13798</Hit_id>
+  <Hit_def>gnl|TC-DB|Q4G0N8|2.A.36.7.5 Sodium/hydrogen exchanger 10 OS=Homo sapiens GN=SLC9C1 PE=2 SV=2</Hit_def>
+  <Hit_accession>13798</Hit_accession>
+  <Hit_len>1177</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>1.45281e-10</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>526</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>533</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>204</Hsp_positive>
+      <Hsp_gaps>69</Hsp_gaps>
+      <Hsp_align-len>504</Hsp_align-len>
+      <Hsp_qseq>QFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRK-PILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAI-AAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLK---------DNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVLPLITPSAEDTTFKGM-TYQSAKIFIVQKVIQHFKNESK---------KDKNDTNYRPVLNQYYGELLFLLNSE--PDNQNTKELKRLEDIAKVIETSTLE----RLIDKGKATYQDINNYRN</Hsp_qseq>
+      <Hsp_hseq>QWMSPDLFFRIFTPVVFFTTAFDMDTYMLQKLFWQILLISIPGFLVNYILVLWHLASVNQLLLKPTQWLLFSAILVSSDPMLTAAAIRDLGLSRSLISLINGESLMTSVISLITF--------TSIMDFDQRLQSKRNHTLAEEIVGGICSYIIASFLFGILSSKLIQFWMSTVFGDDVNHISLIFSIL-YLIFYICELVGMSGIFTLAIVGLLLNSTSFKAAIEETLLL----EFWTFLSRIAFLMVFTFFGLLIPAHTYLYIEFVDIYYSLNIYLTLIV------LRFLTLLL----------ISPVLSRV--GHE---FSWRWIFIMVCSEMKGMPNINMALLLAYSDLYFGSDKEKSQILFHGVLVCLITLVVNRFILPVA------VTILGLRDATSTKYKSVCCTFQHFQELTKSAASALKFDKDLANADWNMIEKAITLENPYMLNEEETTEHQKVKCPHCNKEIDEIFNTEAMELANRRLLSAQIASYQ--RQYRN</Hsp_hseq>
+      <Hsp_midline>Q+ S    F +  P++F        T +L+     ILL+S+       + V + +  +   L  P  + + +AIL  +D +  +A  R   L +  ++++ GESL+     +I+F        T      Q ++     T+   ++G I  +++      + ++K ++         D N ++ I  +  ++++++ E V  SGI  + I GL+      +    +T L     + W   S      VF   G +IP       +     +S  I +T+++       RF+ +            I   L      HE      R+ FIM    + G  +++MAL L +      + + ++ +LF    + LI+L++ + +LP+        T  G+    S K   V    QHF+  +K         KD  + ++  +      E  ++LN E   ++Q  K     ++I ++  T  +E    RL+    A+YQ    YRN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15651</Hit_id>
+  <Hit_def>gnl|TC-DB|Q7XYX2|2.A.36.5.7 Na+/H+ antiporter NHX4 OS=Zea mays OX=4577 PE=2 SV=1</Hit_def>
+  <Hit_accession>15651</Hit_accession>
+  <Hit_len>538</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>2.24773e-10</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>423</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>440</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>49</Hsp_gaps>
+      <Hsp_align-len>446</Hsp_align-len>
+      <Hsp_qseq>MALLEAFLIFIFAVIISSVI--NNRF--PQIPTAFIQIALGVVIFIIPIQVDFQ---FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLM----SMALVFATVVG-VGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVT--GTFSLFQAVEQFII----STILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSF---LIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLI--SLILAQIVLPLI</Hsp_qseq>
+      <Hsp_hseq>VVIITLFVALLCACIVLGHLLEENRWLNESITALIIGLGTGVVILLISRGKNSRLLVFSEDLFFIYLLPPIIFNAGFQVKKKQFFRNFMTITLFGAVGTMISFFTISLGAIATFSRMSIGTLDVGDFLAIGAIFSATDSVCTLQVLHQDETPF-LYSLVFGEGVVNDATSVVLFNAVQKIQFTHINAWTALQLIGNFLYLFSTSTLLGIGTGLITAFVLKKLYF------GRHSTTRELAIMILMAYLSYMLAELFSLSGLLTVFFCGVL--MSHVTWHNVTESSRTTSRHVFATLSFISETFIFLYVGM----DALDFEKWKTSSLSFGGTLGVSGVLMGL---------VMLGRAAFVFPLSFLSNLAKKHQSEKI---SFRMQVVIWWAGLMRG-AVSMALALNKFTRSGHTQLHGNAIMITSTITVVLFSTMVFGMITKPLI</Hsp_hseq>
+      <Hsp_midline>+ ++  F+  + A I+   +   NR+    I    I +  GVVI +I    + +   F+ ++F   ++ P++F  G  V + +       I L     +M   F   +G +  F       L +    AI AI   TD+V    +      P    +++ GE ++NDA  ++ F        T    ++  Q +  F+     ST+LG+  G I  FV+ ++        G         I +L  ++ Y LAE    SG++ V   G++  +            +     ++ T S+    F+F+ +G       +D  + +  + SF   L V  +L+ +         V      F FP +  S L ++H S +      R   ++   G+    ++SMAL L      G    + N ++  ++  V++  +++   I  PLI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1411</Hit_id>
+  <Hit_def>gnl|TC-DB|AQN76374.1|2.A.36.5.6 Na+/H+ antiporter [Populus euphratica]</Hit_def>
+  <Hit_accession>1411</Hit_accession>
+  <Hit_len>545</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>2.27259e-10</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>442</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>456</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>48</Hsp_gaps>
+      <Hsp_align-len>434</Hsp_align-len>
+      <Hsp_qseq>IPTAFIQIALGVVIFIIPIQVDFQ---FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMA--LVFATVVGVG---YFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIA-------VTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRV--RYAFIMTMCGI-HGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLILAQIVLPLITPSAEDTTFKGMTYQSAKI</Hsp_qseq>
+      <Hsp_hseq>ITALIIGVGTGIVILLISGGKSSRLLVFSEDLFFIYLLPPIIFNAGFQVKKKQFFRNFMTIILFGAVGTLICCAIISIGAMQIFEKMDIGPLDIGDYLAIGAIFAATDSVCTLQVLSQDDTPL-LYSLVFGEGVVNDATSVVLFNAIQSFDLTNINAVIAWEF-VRNFLYLFLTSTMLGVLTGLVSAYIIKKLYF------GRHSTDREVALMILMAYLSYMLAELFYLSGILTVFFCGIV--MSHYTWHNVTESSRVTTKHAFATLSFVAEIFIFLYVGMDALDIEKWRFVSDSPGTSVAVSSILLGLVMVGRAAFV----------FPLSFVSNL-----SKKSPHEKIGFRQQFIIWWAGLMRGAVSMALAYNK---FTSAGHTNLRANAIMITSTITVV--LFSTVVFGLMTKPLISILLPHPKYQSRSL</Hsp_hseq>
+      <Hsp_midline>I    I +  G+VI +I      +   F+ ++F   ++ P++F  G  V + +       I+L      L+   ++ +G    F       L +    AI AI   TD+V    +      P    +++ GE ++NDA  ++ F          + A++   F +   +  F+ ST+LGVL G +  +++ ++        G    +    + +L  ++ Y LAE  + SGI+ V   G++  +            ++     + T S+    F+F+ +G     +    F ++    S  +   +L  + +    FV          FP +  S L     S ++P  ++  R  FI+   G+  G +S+++A       T       R + + I S + ++  + + +V  L+T            YQS  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14164</Hit_id>
+  <Hit_def>gnl|TC-DB|Q56XP4|2.A.36.5.9 Sodium/hydrogen exchanger 2 OS=Arabidopsis thaliana OX=3702 GN=NHX2 PE=2 SV=2</Hit_def>
+  <Hit_accession>14164</Hit_accession>
+  <Hit_len>546</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.7734</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>3.00329e-10</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>423</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>441</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>51</Hsp_gaps>
+      <Hsp_align-len>444</Hsp_align-len>
+      <Hsp_qseq>LEAFLIFIFAVIISSVI--NNRF--PQIPTAFIQIALGVVIFIIPIQVDFQ---FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMA----LVFATVVGVG---YFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVT--GTFSLFQAVEQF----IISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGI-HGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLI---SLILAQIVLPLI</Hsp_qseq>
+      <Hsp_hseq>LNLFVALLCACIVIGHLLEENRWMNESITALLIGLGTGVVILLISRGKNSHLLVFSEDLFFIYLLPPIIFNAGFQVKKKQF--FRNFVTIMAFGAIGTVVSCTIISLGAIQFFKKLDIGTFDLGDFLAIGAIFAATDSVCTLQVLNQDETPL-LYSLVFGEGVVNDATSVVLFNAIQSFDLTHLNHEAAFQFLGNFFYLFLLSTGLGVATGLISAYVIKKLYF------GRHSTDREVALMMLMAYLSYMLAELFALSGILTVFFCGIVMSHYTWHNVTESSRITTKH--AFATLSFLAETFIFLYVG--MDALDIEKWRFVSDSPGTSVAVSSILMGLVMLGRAA--------FVFPLSFLSNLAKKHQSEKI---SIKQQVVIWWAGLMRGAVSMALAYNK---FTRSGHTELRGNAIMITSTITVCLFSTMVFGMLTKPLI</Hsp_hseq>
+      <Hsp_midline>L  F+  + A I+   +   NR+    I    I +  GVVI +I    +     F+ ++F   ++ P++F  G  V + +   +R  + +M+      +V  T++ +G   +F         +    AI AI   TD+V    +      P    +++ GE ++NDA  ++ F    +  +T     + FQ +  F    ++ST LGV  G I  +V+ ++        G    +    + +L  ++ Y LAE    SGI+ V   G++        +   + +   +   + T S+    F+F+ +G  +  + I+ ++   D+    + ++ ++   +   R          F FP +  S L ++H S +     ++   ++   G+  G +S+++A       T+    E R + + I S + +    +++   +  PLI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13089</Hit_id>
+  <Hit_def>gnl|TC-DB|Q21386|2.A.36.1.7 Sodium/hydrogen exchanger - Caenorhabditis elegans.</Hit_def>
+  <Hit_accession>13089</Hit_accession>
+  <Hit_len>783</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.33137e-08</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>385</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>484</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>78</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>347</Hsp_align-len>
+      <Hsp_qseq>QFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMA-LVFATVVGVGYFIHWIWPA------LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSL---FQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLL-TPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTL</Hsp_qseq>
+      <Hsp_hseq>EFKSKVFFFYLLPPIILESAYSLKDRAFIENIGTILLYAVVGTILNIVLLAAALLILIWVGIMGKYNLSVMDILTFASLVAAVDPVAVLAVFQEVGVNKMLYFMVFGESLFNDAVTIVCYNLAIEFQTLPDFTWYHGFLGLLSFLCVSIGGLIIGLICG------AISSFVTKFTTDVRVVEPVVLFGMAYLAYLGSEMFHFSGIIALIACGLFQTHYACCNISYKSFTSVMY--ITKVCSTLCESLIFIILGVMLVN-EREWFWTDWHPV-FSAVSVVLCVVVRFGVTFFLTYFVNQ---FTGGVRHISFQEQ-------------FIMSYGGLRGAVSFSLVFMI</Hsp_hseq>
+      <Hsp_midline>+F S+VF F ++ P++      +     +E    ILL ++   +   V+     +  IW        L +      A+++   D VAV A+ +   + K    ++ GESL NDA  I+ + +A+       F+    F  +  F+  +I G++IG I G       I     K   D   +  + L    ++ Y  +E  H SGIIA++  GL         I  ++   + Y  I    S      +F++LG M+     + F T+     F  V  +L  +  +   F   YF  +   F   ++    +E              FIM+  G+ G +S S+   +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4696</Hit_id>
+  <Hit_def>gnl|TC-DB|G3MDF0|2.A.36.5.4 Sodium/hydrogen exchanger OS=Vigna radiata GN=nhx1 PE=2 SV=1</Hit_def>
+  <Hit_accession>4696</Hit_accession>
+  <Hit_len>542</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>1.44204e-08</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>291</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>322</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>279</Hsp_align-len>
+      <Hsp_qseq>IPTAFIQIALGVVIFIIPIQVDFQ---FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSM--ALVFATVVGVG---YFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGII------SFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLG</Hsp_qseq>
+      <Hsp_hseq>ITALLIGISTGVVILLLSGGKSSHILVFSEDLFFIYLLPPIIFNAGFQVKKKQFFVNFMTIILFGAIGTLISCAVITLGASQIFEKLDIGPLELGDYLAIGAIFAATDSVCTLQVLNQDETPL-LYSLVFGEGVVNDATSVVLFNAIQSFDLDHIDSSIALHFLGNFLYLFVASTMLGVLTGLLSAYIIKKLYI------GRHSTDREVALMMLMAYLSYMLAELCYLSGILTVFFCGIVMSHYTWHNVTESSRITTKHS--FATLSFVAEIFIFLYVG</Hsp_hseq>
+      <Hsp_midline>I    I I+ GVVI ++          F+ ++F   ++ P++F  G  V + +       I+L      L+   V+ +G    F       L +    AI AI   TD+V    +      P    +++ GE ++NDA  ++      SF +           L   +  F+ ST+LGVL G +  +++ ++ I      G    +    + +L  ++ Y LAE  + SGI+ V   G++        +   + +   +   + T S+    F+F+ +G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12377</Hit_id>
+  <Hit_def>gnl|TC-DB|Q09432|2.A.36.1.8 Sodium/hydrogen exchanger - Caenorhabditis elegans.</Hit_def>
+  <Hit_accession>12377</Hit_accession>
+  <Hit_len>627</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>6.2555e-08</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>250</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>266</Hsp_align-len>
+      <Hsp_qseq>IFIFAVIISSVINNRFPQIPTAF--------IQIALGVVIFIIPIQVD-FQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAI----------AAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSL-----FQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAG</Hsp_qseq>
+      <Hsp_hseq>LWLIGASIAKIIFNLIPHLNELFPDSALLIMIGLIIGIIFKLIGVNKNAFFLESEVFMLYLLPPLVFDAGYFMPARQFFDNFGSILCFAMIGTSFNIVAIALSL---W-AISLTGLFSVETPLMHMLLFGSVAADVDPVAVIVIFEELKVNEVLFIAVFGESLLNDGVAVVLYRMFLTFSEIGTENLITSDYINGGVSFLVVAFGGIGIGLLFAFLTSLV-TRFARDEEVKVLNSV-FI-LILPYTCYLCGELFGLSSIMAIVFCG</Hsp_hseq>
+      <Hsp_midline>+++    I+ +I N  P +   F        I + +G++  +I +  + F   SEVFM  ++ PL+F  G  +   +  +    IL  +M      +V +   +   W A+ +   F++           ++    D VAV  I     + +     + GESLLND   ++ +++ +T    GT +L           F++    G+ IG +  F+   +      ++ +K  N++ FI L+ P+  Y   E    S I+A+V  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|22657</Hit_id>
+  <Hit_def>gnl|TC-DB|XP_027226799.1|2.A.36.1.22 Na(+)/H(+) exchanger beta-like [Penaeus vannamei]</Hit_def>
+  <Hit_accession>22657</Hit_accession>
+  <Hit_len>917</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>9.57006e-08</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>174</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>45</Hsp_gaps>
+      <Hsp_align-len>263</Hsp_align-len>
+      <Hsp_qseq>INNRFPQIPTAFIQ-IALGVVIFII--------PIQVDFQ---FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPA--------------AFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFK-----IAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGL</Hsp_qseq>
+      <Hsp_hseq>LSNKIPESCVLIILGVLLGVVVFFTVDDGNGTSSCSFNFEVPHFTSDKFFFVLLPPIILESAYSLHDRAFFDN------LGTVLVFA-VIGTLFNIFTIGPALYGVAQGGLMGTIAIGFTETLVFSSLISAVDPVAVLAIFQELGVNKDLYFLVFGESLLNDGVTIVVYTTLTSFVTMEVISAGQYAL--AVASFFIVVFAGAVIGILFGCVTALI-TKYTAEVRVVEPLAL----LGLAYLCYLTAELFHFSGIISLIMCGL</Hsp_hseq>
+      <Hsp_midline>++N+ P+     I  + LGVV+F              +F+   F S+ F F ++ P++      +      +       +   LVFA V+G  + I  I PAL   A                  ++++   D VAV AI +   + K    ++ GESLLND   I+ +      + +  +  G ++L  AV  F I    G +IG + G V   I    TA   + +   L    L   ++ Y  AE  H SGII++++ GL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12802</Hit_id>
+  <Hit_def>gnl|TC-DB|Q17L17|2.A.36.1.10 Sodium/hydrogen exchanger 3 - Aedes aegypti (Yellowfever mosquito).</Hit_def>
+  <Hit_accession>12802</Hit_accession>
+  <Hit_len>1179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>3.99446e-07</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>256</Hsp_hit-from>
+      <Hsp_hit-to>512</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>272</Hsp_align-len>
+      <Hsp_qseq>IFIFAVIISSVINNRFPQIPTAFIQIALGVVI-FIIPIQVDFQFNSEV-------FMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA---------LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKI-----AVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTP-------FVVYFLAEEVHASGIIAVVIAGL</Hsp_qseq>
+      <Hsp_hseq>VWILSASIAKIGFHMTPKLSKIFPESCLLIVVGVIIGVLLRYATNLHVSPLTPNTFFFYMLPPIILDAGYFMPNRMFFDNIGTILLMA---VIGTIFNIATIGVSLWACGLTGIFGVDLPFLHVFLFSSLISAVDPVAVLAVFEEIHVNEVLYIVVFGESLLNDAVTVVMYHMFESYNEIGASNIQVVDIVSGVASFFVVALGGTIIGVIWGFLT-----------GLVTRFT-DHVRVIEPIFIFVMAYLAYLNAEIFHMSGILAITFCGI</Hsp_hseq>
+      <Hsp_midline>++I +  I+ +  +  P++   F +  L +V+  II + + +  N  V       F F ++ P++   G  +      +    ILLM+   V  T+  +      +W           LP    F  ++++   D VAV A+     + +    ++ GESLLNDA  ++ + +      + A       +   V  F +  + G +IG I GF+            GL    T   ++++ P       ++ Y  AE  H SGI+A+   G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19088</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9UBY0|2.A.36.1.17 Sodium/hydrogen exchanger 2 OS=Homo sapiens GN=SLC9A2 PE=2 SV=1</Hit_def>
+  <Hit_accession>19088</Hit_accession>
+  <Hit_len>812</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>6.25717e-07</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>423</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>483</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>51</Hsp_gaps>
+      <Hsp_align-len>405</Hsp_align-len>
+      <Hsp_qseq>IQIALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA-------LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIIS---FKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLI---SLILAQIVLPLI</Hsp_qseq>
+      <Hsp_hseq>VGLLLGGIIFGVDEKSPPAMKTDVFFLYLLPPIVLDAGYFMPTRPFFENIGTIFWYAVVGTLWNSIGIGVSLFGICQIEAFGLSDITLLQNLLFGSLISAVDPVAVLAVFENIHVNEQLYILVFGESLLNDAVTVVLYNLFKSFCQMKTIETIDVFAGIANFFVVGIGGVLIGIFLGFIAA-FTTRFTHNIRVIE----PLFVFLYSYLSYITAEMFHLSGIMAITACAMTMNKYVEENVSQKSYTTIKY--FMKMLSSVSETLIFIFMG------VSTVGKNHEWNWAF--VCFTLAFCLMWRALGVFV----------------LTQVINRFRTIPLTFKDQFIIAYGGLRGAICFALVFLLP-------AAVFPRKKLFITAAIVVIFFTVFILGITIRPLV</Hsp_hseq>
+      <Hsp_midline>+ + LG +IF +  +      ++VF   ++ P++   G  +      E    I   ++       +G+G  +  I          + +       +++   D VAV A+     + +    ++ GESLLNDA  ++    FK         T  +F  +  F +  I GVLIG  +GF+        T N  + +         L  ++ Y  AE  H SGI+A+    +      +  +  ++   + Y       S      +F+ +G      V  + +    N++F  V   L    ++    V+V                L +  +   T P   +  FI+   G+ G I  ++   LP       A  +    LFI + +V+I     IL   + PL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14630</Hit_id>
+  <Hit_def>gnl|TC-DB|Q60362|2.A.36.6.6 Na(+)/H(+) antiporter 1 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) GN=MJ0057 PE=1 SV=1</Hit_def>
+  <Hit_accession>14630</Hit_accession>
+  <Hit_len>426</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>1.77493e-06</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>300</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>302</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>321</Hsp_align-len>
+      <Hsp_qseq>MALLEAFLIFIFAVIISSVINN-----RFPQIPTAFIQ-IALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFV--EGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPM--PAAFAIAAILCPTD-AVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFI-ISTILG--VLIGAIIGFVVVRIRI-----DLTANKGLKDNNTLTFI--QLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVID</Hsp_qseq>
+      <Hsp_hseq>MELMMAIGYLGLALVLGSLVAKIAEKLKIPDIPLLLLLGLIIGPFLQIIPSDSAM----EIFEYAGPIGLIFILLGGAFTMRISLLKRVIKTVVRLDTITFLITLLISGFIFNMVLNLPYTSPVGYLFGAITAATDPATLIPVFSRVRTNPEVAIT-LEAESIFNDPLGIVS-----TSVILGLFGLFSSSNPLIDLITLAGGAIVVGLLLAKIYEKIIIHCDFHEYVAPLVLGGAMLLLYVGDDLLPSICGYGF------SGYMAVAIMGLYLG---DALFRADDIDYKYIVSFCDDLSLLARVFIFVFLGACIKLSMLE</Hsp_hseq>
+      <Hsp_midline>M L+ A      A+++ S++       + P IP   +  + +G  + IIP         E+F +A    L+F+   G    R  LL+     ++    + F   + +  FI  +   LP   P  +   AI   TD A  +   +R +  P+ ++T LE ES+ ND  GI+S     T+++ G F LF +    I + T+ G  +++G ++  +  +I I     +  A   L     L ++   LL     Y        SG +AV I GL  G   D L RA            +  S     F+FV LG  I   +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14076</Hit_id>
+  <Hit_def>gnl|TC-DB|Q55190|2.A.37.2.4 NAH-ANTIPORTER PROTEIN - Synechocystis sp. (strain PCC 6803).</Hit_def>
+  <Hit_accession>14076</Hit_accession>
+  <Hit_len>461</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>5.71372e-06</Hsp_evalue>
+      <Hsp_query-from>106</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>169</Hsp_hit-from>
+      <Hsp_hit-to>372</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>219</Hsp_align-len>
+      <Hsp_qseq>IWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAI-IGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAI</Hsp_qseq>
+      <Hsp_hseq>IFGVAAIPAIFAGAALTATSIGITAKVLAEINRLSSNEGQIIIGAAVLDDILGIIVLAVVGSLVKTGEIQISNII--YLILSATGFVVGSILIGRLLSPFYVSLV--NRMKTRGQLLLVSICVAFVLSYIAQIVQLEAILGSFAAG---------LILAETEKREDLEEQILPLADFFVPVFFVCVGAKTDVSVLN--PAVPANREGLIIAAFLILVAI</Hsp_hseq>
+      <Hsp_midline>I+    +PA FA AA+   +  +    +     L      I+ G ++L+D  GII   +  + + TG   +   +  ++I +  G ++G+I IG ++    + L     +K    L  + +   FV+ ++A+ V    I+    AG         LI A+TE + +  +     +       FV +G      V++     P N   LI+   LI +AI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15890</Hit_id>
+  <Hit_def>gnl|TC-DB|Q87KV8|2.A.36.6.3 Cell volume regulation protein A homolog - Vibrio parahaemolyticus.</Hit_def>
+  <Hit_accession>15890</Hit_accession>
+  <Hit_len>581</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>8.554e-06</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>415</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>379</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>61</Hsp_gaps>
+      <Hsp_align-len>352</Hsp_align-len>
+      <Hsp_qseq>RTKLLEYRK---PILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGT-------FSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLISLIL</Hsp_qseq>
+      <Hsp_hseq>RTRVASFRVALWPSVSLATIGVAITTLLTGLMATWLFD-LDLLQGILVGAIVGSTDAAAVFSLLKGRSLNERVGSTLEIESGTNDPMAVF-LTVTLIAILSSTGTGLSAGFLALSFVKQFGIGALLGFAGGWVLWKVI---------NRNQLPDGLYSILTVSGGLIIFALSNSLGGSGILSIYLVGLLLG-------NRPTRSRHSILHVLDGMTWLAQIGMFLVLGLLV----------TPSNLLSIAVPGLALAFGM--------------ILFARPISVWIGLLPFKSFTP----REKWFVSWVGLRGAVPIILAV-FPMMAGLPDAQLYFN----LAFFVVMVSLIV</Hsp_hseq>
+      <Hsp_midline>RT++  +R    P + ++   V  T +  G    W++  L +     + AI+  TDA AV ++ +G+ L +   + LE ES  ND   +    + + A+++ T       F     V+QF I  +LG   G ++  V+         N+    +   + + +    +++ L+  +  SGI+++ + GL+ G          T  + +   + +  ++     +F+VLG ++           P N   + V  + +A  +                F + I  ++        TP    R  + ++  G+ G + + +A+  P +     A  Y N    +A F+V++SLI+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14743</Hit_id>
+  <Hit_def>gnl|TC-DB|Q6AI14|2.A.36.1.18 Sodium/hydrogen exchanger 4 OS=Homo sapiens GN=SLC9A4 PE=1 SV=2</Hit_def>
+  <Hit_accession>14743</Hit_accession>
+  <Hit_len>798</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>9.61449e-06</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>411</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>460</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>155</Hsp_positive>
+      <Hsp_gaps>61</Hsp_gaps>
+      <Hsp_align-len>405</Hsp_align-len>
+      <Hsp_qseq>IPTAFIQIALGVVIFIIPIQVDFQ----FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA-------LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVE------QFIISTILGVLIGAIIGFV---VVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAFEYRNDLLFIASFMVLI</Hsp_qseq>
+      <Hsp_hseq>MPESCLLILVGALVGGIIFGTDHKSPPVMDSSIYFLYLLPPIVLEGGYFMPTRPFFENIGSILWWAVLGALINALGIGLSLYLICQVKAFGLGDVNLLQNLLFGSLISAVDPVAVLAVFEEARVNEQLYMMIFGEALLNDGITVVLYNMLIAFTKMHKFEDIETVDILAGCARFIVVGLGGVLFGIVFGFISAFITRFTQNISAIEPL--------IVFMFSYLSYLAAETLYLSGILAITACAVTMKKYVEENVSQTSYTTIKY--FMKMLSSVSETLIFIFMG------VSTVGKNHEWNWAF-------ICFTLAFCQIWRAISVFALFYISNQFRTF-----------PFSIKDQCIIFYSGVRGAGSFSLAFLLPLSL-------FPRKKMFVTATLVVI</Hsp_hseq>
+      <Hsp_midline>+P + + I +G ++  I    D +     +S ++   ++ P++   G  +      E    IL  ++       +G+G  ++ I          + +       +++   D VAV A+     + +    ++ GE+LLND   ++ + + +       F   + V+      +FI+  + GVL G + GF+   + R   +++A + L        I  +  ++ Y  AE ++ SGI+A+    +      +  +   +   + Y       S      +F+ +G      V  + +    N++F       I   +  C+       +  FY     +++           P  ++   I+   G+ G  S S+A  LP  +       +    +F+ + +V+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1507</Hit_id>
+  <Hit_def>gnl|TC-DB|AXV43378.1|2.A.36.1.24 sodium/hydrogen exchanger 2a [Lateolabrax maculatus]</Hit_def>
+  <Hit_accession>1507</Hit_accession>
+  <Hit_len>818</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>9.68392e-06</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>395</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>450</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>152</Hsp_positive>
+      <Hsp_gaps>49</Hsp_gaps>
+      <Hsp_align-len>404</Hsp_align-len>
+      <Hsp_qseq>LIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPIQVDFQ----FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA-------LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGII---SFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLI--HGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFYFPKNIQSYLDEEHDSHETPPSRVRYAFIMTMCGIHGTISLSMALTLPFIITKGQAF</Hsp_qseq>
+      <Hsp_hseq>LLASFAKIGFHVYQKMTVWVPESCLLITIGLIVGGIMHSVHEEPPAVLTSNVFFLYMLPPIVLDSGYFMPTRAFFENIGTVLWFAVVGTLWNSIGIGMSLFAICQIEAFGVQDINLQENLLFATIISAVDPVAVLSVFEDVSVNEQLYIVVFGECLFNDAVTVVLYNMFNFVAEMPVVEPVDVFLGVARFFVVGLGGMGFGVLFGFVAA-----FTTRFTSKVREIEPLFIFMYSYLAYLVAELFAISSIMAIVTCALSMKYYVEENVSQRSCTTIR-HVVKMLGSISETL---IFFFLG------VVTITTEHEWNWGY-ILFTLLFA-------FVWRGLGV----------LVLTQIINPFRTIPFNLKDQFGLAYGGLRGAISFALVFTLPDNIGRKQLF</Hsp_hseq>
+      <Hsp_midline>L+  FA I   V       +P + + I +G+++  I   V  +      S VF   ++ P++   G  +      E    +L  ++       +G+G  +  I          + +      A I+   D VAV ++     + +    ++ GE L NDA  ++    F       V     +F  V +F +  + G+  G + GFV        T     K          +  ++ Y +AE    S I+A+V   L   + +E +   R+ T ++ +  ++  + S  L   +F  LG      V+ I      N+ + I+ T+L A       FVW                 L +  +   T P  ++  F +   G+ G IS ++  TLP  I + Q F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18390</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9KNM9|2.A.36.6.5 Cell volume regulation protein A homolog OS=Vibrio cholerae GN=cvrA PE=3 SV=1</Hit_def>
+  <Hit_accession>18390</Hit_accession>
+  <Hit_len>581</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>1.12643e-05</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>142</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>LLEAFLIFIFAVIISSVINNRFPQIPTAFIQIALGVVIFIIPI-QVDFQFNSEVFMFAVIA-PLLFVEGTHVSRTKLLEYRK---PILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTAL------VTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNT---FSYALNGFVFVVLGFMI-PTVVIDI</Hsp_qseq>
+      <Hsp_hseq>MIGALLIGI-SVLLSPVSSKL--GIPILLVFLAVGMLAGEDGIGQIAFDNYPVAYLVSNLALAIILLDGG--MRTRVASFRVAFWPSVSLATLGVAVTTLLTGLLAMWLFN-LSLLQGVLVGAIVGSTDAAAVFSLLKGRSLNERVGATLEIESGTNDPMAVFLTVTLIAVLGSAETNLSAGFLLLSFIQQFGVGALLGLAGGWILWWLI---------NRNQLPEGLYSILAVSGGLMIFALSNALGGSGILSIYLTGLLLGNRPTR----------SRHAILNVLDGMTWLAQIGMFLVLGLLVTPSELMEI</Hsp_hseq>
+      <Hsp_midline>++ A LI I +V++S V +     IP   + +A+G++     I Q+ F      ++ + +A  ++ ++G    RT++  +R    P + ++   V  T +  G    W++  L +     + AI+  TDA AV ++ +G+ L +     LE ES  ND   +      +  L      ++  F L   ++QF +  +LG+  G I+ +++         N+        + + +    +++ L+  +  SGI+++ + GL+ G    R          + H I N     ++     +F+VLG ++ P+ +++I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11429</Hit_id>
+  <Hit_def>gnl|TC-DB|P76007|2.A.36.6.11 K(+)/H(+) antiporter NhaP2 OS=Escherichia coli (strain K12) GN=cvrA PE=1 SV=2</Hit_def>
+  <Hit_accession>11429</Hit_accession>
+  <Hit_len>578</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>4.44858e-05</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>294</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>290</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>126</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>292</Hsp_align-len>
+      <Hsp_qseq>VIISSVINNRFPQ---IPTAFIQIALGVVIFIIPIQVDFQFNSEVFMFAV----IAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTI----LGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMI</Hsp_qseq>
+      <Hsp_hseq>LVTSSILLSSFSSRLGIPILVIFLAIGMLAGVDGVG-GIPFDNYPFAYMVSNLALAIILLDGGMRTQASSFRVALGPALSLATLGVLITSGLTGMMAAWLFN-LDLIEGLLIGAIVGSTDAAAVFSLLGGKGLNERVGSTLEIESGSNDPMAVF---LTITLIAMIQHHESNISWMFIVDILQQFGLGIVIGLGGGYLLLQMINRIALPAGL-----YPLLALSGGILIFSLTTALEGSGILAVYLCGFLLG---NRPIRNRYGILQNF----DGLAWLAQIAMFLVLGLLV</Hsp_hseq>
+      <Hsp_midline>++ SS++ + F     IP   I +A+G++  +  +     F++  F + V    +A +L   G     +       P L ++   V  T    G    W++  L +     I AI+  TDA AV ++  GK L +   + LE ES  ND   +    + +T +             FI+  +    LG++IG   G++++++   +    GL        + L    +++ L   +  SGI+AV + G + G   +R IR +  +  N+    +  ++     +F+VLG ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12716</Hit_id>
+  <Hit_def>gnl|TC-DB|Q14940|2.A.36.1.16 Sodium/hydrogen exchanger 5 OS=Homo sapiens GN=SLC9A5 PE=1 SV=2</Hit_def>
+  <Hit_accession>12716</Hit_accession>
+  <Hit_len>896</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>6.71927e-05</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>85</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>231</Hsp_align-len>
+      <Hsp_qseq>IALGVVIFIIPIQVDFQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA-LPMPAAFA-------IAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSL-----FQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGL</Hsp_qseq>
+      <Hsp_hseq>LVLGGIVLAVAKKAEYQLEPGTFFLFLLPPIVLDSGYFMPSRLFFDNLGAILTYAVVGTLWNAFTTGAALWGLQQAGLVAPRVQAGLLDFLLFGSLISAVDPVAVLAVFEEVHVNETLFIIVFGESLLNDAVTVVLYKVCNSFVEMGSANVQATDYLKGVASLFVVSLGGAAVGLVFAFLLA-----LTTRFTKRVRIIEPLLVFLLAYAAYLTAEMASLSAILAVTMCGL</Hsp_hseq>
+      <Hsp_midline>+ LG ++  +  + ++Q     F   ++ P++   G  +      +    IL  ++          G  +  +  A L  P   A         +++   D VAV A+     + +    I+ GESLLNDA  ++ +K+  + +  G+ ++      + V    + ++ G  +G +  F++      LT     +       +  L  +  Y  AE    S I+AV + GL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3509</Hit_id>
+  <Hit_def>gnl|TC-DB|D9IWI0|2.A.36.7.9 Sodium/hydrogen exchanger (Fragment) OS=Plasmodium falciparum GN=nhe-1 PE=4 SV=1</Hit_def>
+  <Hit_accession>3509</Hit_accession>
+  <Hit_len>1690</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>7.45547e-05</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>325</Hsp_query-to>
+      <Hsp_hit-from>237</Hsp_hit-from>
+      <Hsp_hit-to>563</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>343</Hsp_align-len>
+      <Hsp_qseq>IFIFAVIISSVIN--NRFPQIPTAFIQIALGVVIFIIPIQVDF--------------QFNSEVFMFAVIAPLLFVEGT----HVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIW--PALPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTILGVLIG---AIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAE-EVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYA</Hsp_qseq>
+      <Hsp_hseq>IFISATMLQFILSKIHKF-NIPVSVIWFLYGMCTYVIAKNFNMFEENTLHKSIINARNIDSSVLYF-VLLPILLYEATQDINYYAFKNFLYGGIGLAVVGVALQVG-ILGILFYYTFMYRQEQSPLSSSFLLASILSSTDPVAVLSILNVVDAPSKISSMFHVESLINDGSSVLLFQFFFYLTIGYKANTSQYAVLFVKLLFLSPVFGIGMAMITFAWINLYRKHYYNQCLA---TITMC-----YLCYFVSEYYLNLSGPLSIVCYGLF--INAYGHIALDEIAQRKHKEIVELLALMGNSSIFIISGIISFGMMENVFK---DNLYFFLYIALTYVYLLLA</Hsp_hseq>
+      <Hsp_midline>IFI A ++  +++  ++F  IP + I    G+  ++I    +                 +S V  F V+ P+L  E T    + +    L     + ++ +AL    ++G+ ++  +++     P+ ++F +A+IL  TD VAV +I      P    ++   ESL+ND + ++ F+      +    +  Q    F+    L  + G   A+I F  + +      N+ L    T+T       ++ YF++E  ++ SG +++V  GL   +     I      Q  + +I    +   N  +F++ G +   ++ ++F+   DN  F + I +     + A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17644</Hit_id>
+  <Hit_def>gnl|TC-DB|Q99271|2.A.36.4.1 NA(+)/H(+) ANTIPORTER - Saccharomyces cerevisiae (Baker&apos;s yeast).</Hit_def>
+  <Hit_accession>17644</Hit_accession>
+  <Hit_len>985</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>0.000155552</Hsp_evalue>
+      <Hsp_query-from>60</Hsp_query-from>
+      <Hsp_query-to>230</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>255</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>VIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPALPMPAAFAIAAILCPTDAVAVSAITRGKL---LPKGSMTILEGESLLNDAAGIISFKIAVTALVTGTFSLFQAVEQFIISTIL-----GVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFV</Hsp_qseq>
+      <Hsp_hseq>VLCLQIFAVAVELPRKYMLKHWVSVTMLLLPVMTAGWLIIGLFVWILIPGLNFSASLLISACITATDPILAQSVVSGKFAQRVPGHLRNLLSAESGCNDGMA-FPFLFLSMNLILHPGNGREIVKDWICVTILYECLFGCLLGCFIGY-VGRITIRFAEKKNIIDRESFLAFYVVLAFM</Hsp_hseq>
+      <Hsp_midline>V+   +F     + R  +L++   + ++ + ++ A  + +G F+  + P L   A+  I+A +  TD +   ++  GK    +P     +L  ES  ND      F      L+    +  + V+ +I  TIL     G L+G  IG+ V RI I     K + D  +     ++  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10721</Hit_id>
+  <Hit_def>gnl|TC-DB|P48764|2.A.36.1.15 Sodium/hydrogen exchanger 3 OS=Homo sapiens GN=SLC9A3 PE=1 SV=2</Hit_def>
+  <Hit_accession>10721</Hit_accession>
+  <Hit_len>834</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.000197045</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>339</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>396</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>129</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>330</Hsp_align-len>
+      <Hsp_qseq>IPTAFIQIALGVVIFIIPIQVD----FQFNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA-------LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKI--AVTAL----VTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLIHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIAIYACRFVWVYFWYKDFY</Hsp_qseq>
+      <Hsp_hseq>VPESALLIVLGLVLGGIVWAADHIASFTLTPTVFFFYLLPPIVLDAGYFMPNRLFFGNLGTILLYAVVGTVWNAATTGLSLYGVFLSGLMGDLQIGLLDFLLFGSLMAAVDPVAVLAVFEEVHVNEVLFIIVFGESLLNDAVTVVLYNVFESFVALGGDNVTGV-DCVKGIVSFFVVSLGGTLVGVVFAFLLSLV-TRFTKHVRIIEPGFVFIISYLS----YLTSEMLSLSAILAITFCGICCQKYVKANISEQSATTVRY--TMKMLASSAETIIFMFLGISAVNPFIWTWNT-------AFVLLTLVFISVYRAIGVVLQTWLLNRY</Hsp_hseq>
+      <Hsp_midline>+P + + I LG+V+  I    D    F     VF F ++ P++   G  +           ILL ++          G  ++ ++ +       + +       +++   D VAV A+     + +    I+ GESLLNDA  ++ + +  +  AL    VTG     + +  F + ++ G L+G +  F++  +    T +  + +   +  I  L+    Y  +E +  S I+A+   G+         I  Q+   + Y       + +    +F+ LG       I  + T         V+  L+ I++Y    V +  W  + Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16710</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8R4H8|2.A.36.1.4 Chloride-dependent sodium/hydrogen exchanger - Rattus norvegicus (Rat).</Hit_def>
+  <Hit_accession>16710</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000203182</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>162</Hsp_hit-from>
+      <Hsp_hit-to>366</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>210</Hsp_align-len>
+      <Hsp_qseq>SEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPA-------LPMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGIISFKIA---VTALVTGTFSLFQAVEQFIISTILGVLIGAIIGFVVVRIRIDLTANKGLKDNNTLTFIQLLTPFVVYFLAEEVHASGIIAVVIAGLI</Hsp_qseq>
+      <Hsp_hseq>SDVFFLFLLPPIILDAGYFLPLRQFTENLGTILIFAVVGTLWNAFFLGGLLYAVCLVGGEQINNIGLLDTLLFGSIISAVDPVAVLAVFEEIHINELLHILVFGESLLNDAVTVVLYHLFEEFASYEYVGISDIFLGFLSFFVVSLGGVFVGVVYG-VIAAFTSRFTSHIRVIE----PLFVFLYSYMAYLSAELFHLSGIMALIASGVV</Hsp_hseq>
+      <Hsp_midline>S+VF   ++ P++   G  +   +  E    IL+ ++         +G  ++ +          + +       +I+   D VAV A+     + +    ++ GESLLNDA  ++ + +     +    G   +F     F + ++ GV +G + G V+       T++  + +         L  ++ Y  AE  H SGI+A++ +G++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16383</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8IVB4|2.A.36.1.19 Sodium/hydrogen exchanger 9 OS=Homo sapiens GN=SLC9A9 PE=1 SV=1</Hit_def>
+  <Hit_accession>16383</Hit_accession>
+  <Hit_len>645</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000240891</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>322</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>407</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>292</Hsp_align-len>
+      <Hsp_qseq>FNSEVFMFAVIAPLLFVEGTHVSRTKLLEYRKPILLMSMALVFATVVGVGYFIHWIWPAL-----------PMPAAFAIAAILCPTDAVAVSAITRGKLLPKGSMTILEGESLLNDAAGII-SFKIAVTALVTGTFSLFQAVEQFIISTILGVLIGAI-IGFVVVRIRIDLTANKGLKDNNTL-TFIQLLTPFVVYFLAEEVHASGIIAVVIAGL------IHGLERDRLIRAQTELQMNYHQIWNTFSYALNGFVFVVLGFMIPTVVIDIFQTEPDNFSFLIVITILIAIA</Hsp_qseq>
+      <Hsp_hseq>FDPEIFFNVLLPPIIFHAGYSLKKRHFFQNLGSILTYAFLGTAISCIVIGLIMYGFVKAMIHAGQLKNGDFHFTDCLFFGSLMSATDPVTVLAIFHELHVDPDLYTLLFGESVLNDAVAIVLTYSISIYSPKENPNAFDAAAFFQSVGNFLGIFAGSFAMGSAYAIITALLTKFTKLCEFPMLETGLFFLLSWSAFLSAEAAGLTGIVAVLFCGVTQAHYTYNNLSSDSKIRTK--------QLFEFMNFLAENVIFCYMGLALFT-----FQNHIFNALFILGAFLAIFVA</Hsp_hseq>
+      <Hsp_midline>F+ E+F   ++ P++F  G  + +    +    IL  +      + + +G  ++    A+                    +++  TD V V AI     +     T+L GES+LNDA  I+ ++ I++ +      +   A     +   LG+  G+  +G     I   LT    L +   L T +  L  +  +  AE    +GI+AV+  G+       + L  D  IR +        Q++   ++     +F  +G  + T     FQ    N  F++   + I +A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>105</Statistics_hsp-len>
+      <Statistics_eff-space>4472010779</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

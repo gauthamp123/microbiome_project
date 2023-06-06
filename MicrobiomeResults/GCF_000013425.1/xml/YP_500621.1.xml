@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500621.1 hypothetical protein SAOUHSC_02131 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>200</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500621.1 hypothetical protein SAOUHSC_02131 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>200</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|917</Hit_id>
+  <Hit_def>gnl|TC-DB|A9BEW3|2.A.115.1.8 UPF0316 protein Pmob_0092 OS=Petrotoga mobilis (strain DSM 10674 / SJ95) GN=Pmob_0092 PE=3 SV=1</Hit_def>
+  <Hit_accession>917</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.8265</Hsp_bit-score>
+      <Hsp_score>242</Hsp_score>
+      <Hsp_evalue>1.1348e-25</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>LTIFIINVCYVTFLTMRTILTLKGYRYIAASVSFLEVLVYIVGLGLVMSNLDHIQNIIAYAFGFSIGIIVGMKIEEKLALGYTVVNVTSAEYELDLPNELRNLGYGVTHYAAFGRDGSRMVMQILTPRKYERKLMDTIKNLDPKAFIIAYEPRNIHGGFW</Hsp_qseq>
+      <Hsp_hseq>IIIFAMRLCDVSLMTIRIIFVSKGIKFWASVLGFFEITVWLIAISQVMNNLDKPLYAIAYALGFATGNYLGAFLEEKIAIGVNLVRVITNKEAQPLVDYLNKEGFGVTSIDAEGSKGPVKIIYSVVRRKDLKKIIDIVNEFNPNAFYSIEEVRGINKGIF</Hsp_hseq>
+      <Hsp_midline>+ IF + +C V+ +T+R I   KG ++ A+ + F E+ V+++ +  VM+NLD     IAYA GF+ G  +G  +EEK+A+G  +V V + +    L + L   G+GVT   A G  G   ++  +  RK  +K++D +   +P AF    E R I+ G +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3549</Hit_id>
+  <Hit_def>gnl|TC-DB|E0HYB9|2.A.115.1.6 UPF0316 protein ThebaDRAFT_0822 OS=Thermotogales bacterium MesG1.Ag.4.2 GN=ThebaDRAFT_0822 PE=3 SV=1</Hit_def>
+  <Hit_accession>3549</Hit_accession>
+  <Hit_len>194</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>7.90902e-21</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>LMVLTIFIINVCYVTFLTMRTILTLKGYRYIAASVSFLEVLVYIVGLGLVMSNLDHIQNIIAYAFGFSIGIIVGMKIEEKLALGYTVVNVTSAEYELDLPNELRNLGYGVTHYAAFGRDGSRMVMQILTPRKYERKLMDTIKNLDPKAFIIAYEPRNIHGGFW</Hsp_qseq>
+      <Hsp_hseq>IMPLIIFFARIVDVSLGTTRIIMVSRGKKEIASLIGFFEVIVWLLVASKVIQSVDNVLYILAYAGGFAAGSYIGILIDERLAMGTVSIRLITSVEPTELINKLCQAGFGVTKIDAQGSRGKAYIIYSIINRKEVSEFERIAQECVPKAFMSVEDIRKVREGIF</Hsp_hseq>
+      <Hsp_midline>+M L IF   +  V+  T R I+  +G + IA+ + F EV+V+++    V+ ++D++  I+AYA GF+ G  +G+ I+E+LA+G   + + ++    +L N+L   G+GVT   A G  G   ++  +  RK   +     +   PKAF+   + R +  G +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|691</Hit_id>
+  <Hit_def>gnl|TC-DB|A7I6E8|2.A.115.1.7 UPF0316 protein Mboo_0791 OS=Methanoregula boonei (strain 6A8) GN=Mboo_0791 PE=3 SV=1</Hit_def>
+  <Hit_accession>691</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.3445</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>2.73405e-20</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>LMVLTIFIINVCYVTFLTMRTILTLKGYRYIAASVSFLEVLVYIVGLGLVMSNLDHIQNIIAYAFGFSIGIIVGMKIEEKLALGYTVVNVTSAEYELD-LPNELRNLGYGVTHYAAFGRDGSRMVMQILTPRKYERKLMDTIKNLDPKAFIIAYEPRNIHGG</Hsp_qseq>
+      <Hsp_hseq>VLPVLIFLAQIANVCMETLRIVFLSKGMKYLAPVIAFFEIIIWLLAIVGVLNNLSNIAYFLAYAFGFALGTYVGLVIEEKLSIGMVIMRIITTDGSGDGITEYLQQENYGTTCLDAKGARGGVKMIISLVNRDDVPRITRHIEETNPGAFFSIEDVRYVNQG</Hsp_hseq>
+      <Hsp_midline>++ + IF+  +  V   T+R +   KG +Y+A  ++F E++++++ +  V++NL +I   +AYAFGF++G  VG+ IEEKL++G  ++ + + +   D +   L+   YG T   A G  G   ++  L  R    ++   I+  +P AF    + R ++ G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>93</Statistics_hsp-len>
+      <Statistics_eff-space>844539551</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

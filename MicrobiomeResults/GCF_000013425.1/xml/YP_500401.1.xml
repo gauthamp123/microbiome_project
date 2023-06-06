@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500401.1 hypothetical protein SAOUHSC_01900 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>211</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500401.1 hypothetical protein SAOUHSC_01900 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>211</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17694</Hit_id>
+  <Hit_def>gnl|TC-DB|Q99Z60|9.B.2.1.10 Putative uncharacterized protein OS=Streptococcus pyogenes serotype M1 GN=SPy_1384 PE=4 SV=1</Hit_def>
+  <Hit_accession>17694</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>4.42413e-10</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>98</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>ITIILFIGIVVSEVHLLYSMLIVLVGLI------LLRLFKINLFSFKKLTLSQVIYIIGGALLIYG-LDNLYLYFHDVPANEQQLEQAIR----NTPFYISIFTVTI--IPAIVEEIVFRGMIIRVIFR-KHLFLGLIVSSLVFASLHESDTWIGYLPYLYSGLIFGLIYIKTKRLEVVIFMHFLNNLLALLFII</Hsp_qseq>
+      <Hsp_hseq>IPMVLNWGIGIFYLVIVGSVLIVLWGLYQAKQDTFIKQQKMRLVDWGYLAL---FWLIIRVIAIVGTLVNQLWSGQQVSANDAAIHTLARLIKGGFPLYTALFVLVIAFIAPIMEELVFRGFPMIDLFKGKSLKVAGLVTSLVFALPHATNS-VEFIMYSCMGIFLFVAYQRRGNLKDAILLHIFNNLIEVILLM</Hsp_hseq>
+      <Hsp_midline>I ++L  GI +  + ++ S+LIVL GL        ++  K+ L  +  L L    ++I   + I G L N       V AN+  +    R      P Y ++F + I  I  I+EE+VFRG  +  +F+ K L +  +V+SLVFA  H +++ + ++ Y   G+   + Y +   L+  I +H  NNL+ ++ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2690</Hit_id>
+  <Hit_def>gnl|TC-DB|C7T7I3|9.B.2.1.18 Putative protease OS=Lactobacillus rhamnosus (strain ATCC 53103 / GG) GN=LRHM_2521 PE=4 SV=1</Hit_def>
+  <Hit_accession>2690</Hit_accession>
+  <Hit_len>215</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>1.81863e-09</Hsp_evalue>
+      <Hsp_query-from>76</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>VIYIIGGALLIYGLDNLYLYFHDVP--ANEQQLEQAIRNTPFYISIFTVTIIPAIVEEIVFRGMIIRVIF----RKHLFLGLIVSSLVFASLHESDTWIGYLPYLYS--GLIFGLIYIKTKRLEVVIFMHFLNNLLALL</Hsp_qseq>
+      <Hsp_hseq>VLQGIGLLLLIQVTNSLIMQLTDAPLAANQSNLIKLVHTYPWGIKLLAVVGGP-IVEEYLFRGLLMNSFGSLQKRSWQWVSVLVSAFAFGFAHVAGSRIDYNIFIYAALGAVLAWTYLRTRDMRYSIGLHILNNATILL</Hsp_hseq>
+      <Hsp_midline>V+  IG  LLI   ++L +   D P  AN+  L + +   P+ I +  V   P IVEE +FRG+++        R   ++ ++VS+  F   H + + I Y  ++Y+  G +    Y++T+ +   I +H LNN   LL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3977</Hit_id>
+  <Hit_def>gnl|TC-DB|EEG30438|9.B.2.1.23 CAAX amino terminal protease family protein [[Clostridium] methylpentosum DSM 5476]</Hit_def>
+  <Hit_accession>3977</Hit_accession>
+  <Hit_len>351</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>2.23413e-08</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>275</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>192</Hsp_align-len>
+      <Hsp_qseq>ILFIGIVVSEVHLLYSMLIVLVGLILL-RLFKINLFSFKKLTLSQVIYIIGGALLIYG------------LDNLYLYFHDVPANEQQLEQAIRNTPFYISIFTVTIIPAIVEEIVFRGMIIRVIFRKHLFLGLIVSSLVFASLHESDTWIGYLPYLYSGLIFGLIYIKTKRLEVVIFMHFLNNLLALLFIIW</Hsp_qseq>
+      <Hsp_hseq>ILTDSTILWAIQLVVMVIADLVEILLFWKLSKLRVKSFFARPVDGVENTIKGTVVFYGVMIVGMVLVNIILQIFYALFNHYPLSPDFNVSASEPIALVFYLLVTCVAAPILEEILFRGFVLRSLQKFGNVFAILISGILFGLFHGNLEQT--IPTALGGIVLAYIAVKSNSIIPCVVAHFFNNALSSAFMIF</Hsp_hseq>
+      <Hsp_midline>IL    ++  + L+  ++  LV ++L  +L K+ + SF    +  V   I G ++ YG            L   Y  F+  P +      A         +    +   I+EEI+FRG ++R + +      +++S ++F   H +      +P    G++   I +K+  +   +  HF NN L+  F+I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6159</Hit_id>
+  <Hit_def>gnl|TC-DB|L1NER1|9.B.2.1.5 CAAX amino terminal protease family protein OS=Porphyromonas catoniae F0037 GN=HMPREF9134_00861 PE=4 SV=1</Hit_def>
+  <Hit_accession>6159</Hit_accession>
+  <Hit_len>239</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>6.78784e-08</Hsp_evalue>
+      <Hsp_query-from>107</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>132</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>EQAIRNTPFYISIF-TVTIIPAIVEEIVFRGMIIRVIFRK---HLFLGLIVSSLVFASLHESDTWIGYLPYLYSGLIFGLIYIKTKRLEVVIFMHFLNNLLALL</Hsp_qseq>
+      <Hsp_hseq>EELQSGTNSFVALWIAMALLPAFAEELFFRGMMQPLFMRLCSGRAWLAILVTAVIFSILHFS--WVGALGRVAIGCALGWLSYSSQGLRLPILYHLLNNTVALV</Hsp_hseq>
+      <Hsp_midline>E+    T  +++++  + ++PA  EE+ FRGM+  +  R      +L ++V++++F+ LH S  W+G L  +  G   G +   ++ L + I  H LNN +AL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21247</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_057706366|9.B.2.1.20 CPBP family intramembrane metalloprotease [Lactobacillus xiangfangensis]</Hit_def>
+  <Hit_accession>21247</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>1.18468e-06</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>202</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>FLTLMAAFFITIILF-IGIVVSEVHLLYSMLIVLVGLILLRLFKIN---LFSFKKLTLSQVIYIIGGALLIYGLDNLYLYFHDVPANEQQLEQAIRNTPFYISIFTVTIIPAIVEEIVFRGMIIRVIFR----KHLFLGLIVSSLVFASLHESDTWIGYLPYLYSGLIFGL--------IYIKTKRLEVVIFMHFLNNL</Hsp_qseq>
+      <Hsp_hseq>FIWVIALFFATAVLFSFGLIPKQYSGIVQDAIVLFGVWIFNHYLAHVPVLFWNHHNGWGQLEQAVP-ALLVVGLL--------VSANLTRLF-TVPFTPLILMYLGYIILVGLTEEYVFRGVMIPLLARSLPGKNLAV-VLISSFLFGGLHLMNSTHLSLTYVLPQILFAMALGTLFAGVYIRTRNLGLPILMHAATDL</Hsp_hseq>
+      <Hsp_midline>F+ ++A FF T +LF  G++  +   +    IVL G+ +   +  +   LF        Q+   +  ALL+ GL         V AN  +L   +  TP  +      I+  + EE VFRG++I ++ R    K+L + +++SS +F  LH  ++    L Y+   ++F +        +YI+T+ L + I MH   +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4488</Hit_id>
+  <Hit_def>gnl|TC-DB|F9DWD5|9.B.2.1.8 CAAX amino protease OS=Sporosarcina newyorkensis 2681 GN=HMPREF9372_3116 PE=4 SV=1</Hit_def>
+  <Hit_accession>4488</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>3.39278e-06</Hsp_evalue>
+      <Hsp_query-from>76</Hsp_query-from>
+      <Hsp_query-to>205</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>VIYIIGGALLIY-------GLDNLYLYFHDVPANEQQLEQAIRNTPFYISIFTVTIIPAIVEEIVFRGMIIRVIFRKH-LFLGLIVSSLVFASLHESDTWIGYLPYLY-SGLIFGLIYIKTKRLEVVIFMHFLNNLLAL</Hsp_qseq>
+      <Hsp_hseq>VVLIIGSILMVFLMSFVGIGVDN---------SKTESVQTHLSPLTFFIAFVSACIISPVYEEIFYRGFLYRWFRSRYGLAFGMIGSSFIFMLVHIPN--YNVLPVTFVSGLLFSWTYEKTGSVFPGMIIHGAFNAIAL</Hsp_hseq>
+      <Hsp_midline>V+ IIG  L+++       G+DN         +  + ++  +    F+I+  +  II  + EEI +RG + R    ++ L  G+I SS +F  +H  +     LP  + SGL+F   Y KT  +   + +H   N +AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16053</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8DV46|9.B.2.1.16 Uncharacterized protein OS=Streptococcus mutans serotype c (strain ATCC 700610 / UA159) GN=SMU_662 PE=4 SV=1</Hit_def>
+  <Hit_accession>16053</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>8.36787e-06</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>LLYSMLIVLVGLILLRLFK--------INLFSFKKLTLSQVIYIIGGALLIYG-LDNLYLYFHDVPANEQQLEQ--AIRNTPFYIS----IFTVTIIPAIVEEIVFRGMIIRVIFRK-HLFLGLIVSSLVFASLHESDTWIGYLPYLYSGLIFGLIYIKTKRLEVVIFMHFLNNLLALLFIIW</Hsp_qseq>
+      <Hsp_hseq>LVYIVLIILVIYFLWQAHKKHDSAEVATQKMTAKDIGIALLFFLVARVVAITGTLINQILSGQSTTTNDAALQSLTAFFKNGFFLYTLLYVILVGIVGPIIEEMAYRAFPNHLWFKNSHKVLAGIITTLLFAFPHAT-TLFEFVLYACIGAILYLAYARRGNIKDSMLVHILNNLPTALYFLF</Hsp_hseq>
+      <Hsp_midline>L+Y +LI+LV   L +  K            + K + ++ + +++   + I G L N  L       N+  L+   A     F++     +  V I+  I+EE+ +R     + F+  H  L  I+++L+FA  H + T   ++ Y   G I  L Y +   ++  + +H LNNL   L+ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4243</Hit_id>
+  <Hit_def>gnl|TC-DB|F4DIL5|9.B.2.1.2 CAAX amino terminal protease family OS=Chlamydophila pecorum (strain ATCC VR-628 / E58) GN=G5S_0738 PE=4 SV=1</Hit_def>
+  <Hit_accession>4243</Hit_accession>
+  <Hit_len>258</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>1.73246e-05</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>208</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>98</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>194</Hsp_align-len>
+      <Hsp_qseq>MAAFFITIILFIGIVVSEVHLLYS--MLIVLVGLILLRLFKINLFSFKKLTLSQVIYIIGGALLIYGLDNLYLYFHDVPANEQQLEQAIRNTPFYISIFTVTIIPAIVEEIVFRGMIIRVIFRKHL--FLGLIVSSLVFASLHESDTW--IGYLPYLYS-GLIFGLIYIKTKRLEVVIFMHFLNNL--LALLFI</Hsp_qseq>
+      <Hsp_hseq>LAFSFLTYIFFLPIEVSRA-ILFSGDQPIAHVGKMLLSSLRMWVIT------TSVTELMGILLNKFLMLSLSLQGVRAQAITEEI-QSRASSDSLIFILSIGILIPIGEELFFRG-ILQTFLKGKLGRIWALVMTSVIFALSHIEHSLGSLVFIPILFVFSLCAGFLYEKERNILAPIFLHVLYNLTSLGLLFL</Hsp_hseq>
+      <Hsp_midline>+A  F+T I F+ I VS   +L+S    I  VG +LL   ++ + +      + V  ++G  L  + + +L L      A  +++ Q+  ++   I I ++ I+  I EE+ FRG I++   +  L     L+++S++FA  H   +   + ++P L+   L  G +Y K + +   IF+H L NL  L LLF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|854</Hit_id>
+  <Hit_def>gnl|TC-DB|A8JDF8|9.B.2.1.17 Metal-dependent CAAX amino terminal protease-like protein OS=Chlamydomonas reinhardtii GN=CPLD6 PE=4 SV=1</Hit_def>
+  <Hit_accession>854</Hit_accession>
+  <Hit_len>223</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>4.95097e-05</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>YISIFTVTIIPAIVEEIVFRGMIIRVIFRKHLFLGLI-VSSLVFASLH-ESDTWIGYLPYLYSGLIFGLIYIKTKRLEVVIFMHFLNNLLALLFIIWR</Hsp_qseq>
+      <Hsp_hseq>YFSV--VSLCAPIWEEAIFRGFLLTSLARYMPTPGAVALSSVVFAMCHFRLQT---FLPLLVLGGVFSAIFIRTNNLLPPILLHSAWNLYVLVSLVLR</Hsp_hseq>
+      <Hsp_midline>Y S+  V++   I EE +FRG ++  + R     G + +SS+VFA  H    T   +LP L  G +F  I+I+T  L   I +H   NL  L+ ++ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6225</Hit_id>
+  <Hit_def>gnl|TC-DB|L9W103|9.B.2.9.1 Uncharacterized protein OS=Natronorubrum tibetense GA33 GN=C496_06647 PE=4 SV=1</Hit_def>
+  <Hit_accession>6225</Hit_accession>
+  <Hit_len>329</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>6.70686e-05</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>137</Hsp_hit-from>
+      <Hsp_hit-to>315</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>DLSVTRGNYFLTLMAAFFITIILFIGIVVSEVHLLYSMLIVLVGLILLRLFKINLFSFKKLTLSQVIYIIGGALLIYGLDNLYLYFHDVPANEQQLEQAIRNTPFYISIFTVTIIPAIVEEIVFRGMIIRVI---FRKHLFLGLIVSSLVFASLHESDTWIGYLPYLYSGLIFGLIYIKTKRLEVVIFMHFLNNLLALLFII</Hsp_qseq>
+      <Hsp_hseq>NVALSQGLFALVLLGA-----VIYTGIPADALGIEFSTGYLEQGLLLGTAFGLVLYVANEIGAA--------AATRFGFD------HDEELRELLAPDSARG--WSALLLVVLPIIAVFEELLFRAALIGVIAAGFGVSPWLLAVVSSVAFAVGHGMQGSVGVVVTGLLGFVLAAIFIVTGSFLAVVVAHYLVN--ALEFVV</Hsp_hseq>
+      <Hsp_midline>++++++G + L L+ A     +++ GI    + + +S   +  GL+L   F + L+   ++  +        A   +G D      HD    E     + R   +   +  V  I A+ EE++FR  +I VI   F    +L  +VSS+ FA  H     +G +     G +   I+I T     V+  H+L N  AL F++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3024</Hit_id>
+  <Hit_def>gnl|TC-DB|D1R570|9.B.2.1.1 Putative uncharacterized protein OS=Parachlamydia acanthamoebae str. Hall&apos;s coccus GN=pah_c008o033 PE=4 SV=1</Hit_def>
+  <Hit_accession>3024</Hit_accession>
+  <Hit_len>302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>8.5954e-05</Hsp_evalue>
+      <Hsp_query-from>89</Hsp_query-from>
+      <Hsp_query-to>211</Hsp_query-to>
+      <Hsp_hit-from>169</Hsp_hit-from>
+      <Hsp_hit-to>301</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>LDNLYLYFHDVPANEQQLEQ--AIRNTP--FYISIFTVTIIPAIVEEIVFRGMIIRVIFRK-HLFLGLIVSSLVFASLHESDTWIGYLPYLYSGLIFGLI----YIKTKRLEV--VIFMHFLNNLLALLFIIWR</Hsp_qseq>
+      <Hsp_hseq>LEVVFEIFHIPPIEQVPVEKIVAIRDNPSLFLVTSLSVLFLVPFAEEILFRGYLQTWIKQKLGRFSGIVLTSLIFAFFHYADKQ-GIRNVQFIGTLFVLSCFLGYVKERQQSIWAPFGLHAAFNSIALAAIYFK</Hsp_hseq>
+      <Hsp_midline>L+ ++  FH  P  +  +E+  AIR+ P  F ++  +V  +    EEI+FRG +   I +K   F G++++SL+FA  H +D   G     + G +F L     Y+K ++  +     +H   N +AL  I ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13500</Hit_id>
+  <Hit_def>gnl|TC-DB|Q3KMA8|9.B.2.1.3 CaaX amino terminal protease family OS=Chlamydia trachomatis serovar A (strain HAR-13 / ATCC VR-571B) GN=CTA_0276 PE=4 SV=1</Hit_def>
+  <Hit_accession>13500</Hit_accession>
+  <Hit_len>256</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000138705</Hsp_evalue>
+      <Hsp_query-from>104</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>146</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>QQLEQAIRNTPFYISIFTVTIIPAIVEEIVFRGMIIRVIFRKHLF---LGLIVSSLVFASLHESDTWIG---YLPYLY-SGLIFGLIYIKTKRLEVVIFMHFLNN--LLALL</Hsp_qseq>
+      <Hsp_hseq>EEIREQLSTRPDLLYIFCIAMLIPIAEEIFFRGIL--QTFFKNTFSRSKAVVTSSLIFAITH-IEASLGSFIFVPTLFVFSLCAGFIYEKVRHIAAPVTLHILFNSCQLALL</Hsp_hseq>
+      <Hsp_midline>+++ + +   P  + IF + ++  I EEI FRG++    F K+ F     ++ SSL+FA  H  +  +G   ++P L+   L  G IY K + +   + +H L N   LALL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>920792340</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

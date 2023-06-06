@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500939.1 hypothetical protein SAOUHSC_02471 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>468</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500939.1 hypothetical protein SAOUHSC_02471 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>468</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20672</Hit_id>
+  <Hit_def>gnl|TC-DB|W7G0Y1|1.C.105.2.10 Reticulocyte-binding protein OS=Plasmodium falciparum Santa Lucia GN=PFAG_00579 PE=4 SV=1</Hit_def>
+  <Hit_accession>20672</Hit_accession>
+  <Hit_len>2968</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>4.6072e-08</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>464</Hsp_query-to>
+      <Hsp_hit-from>1943</Hsp_hit-from>
+      <Hsp_hit-to>2365</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>207</Hsp_positive>
+      <Hsp_gaps>88</Hsp_gaps>
+      <Hsp_align-len>484</Hsp_align-len>
+      <Hsp_qseq>NVELIGTKIITMEDFYKMKEEEFFLKSKLPLYLYSF---NYVDEYTMKLLDRGRISI----LNTKTNKDCIFDISKYIHENIIFRRDIFELNDIRDDDLKYKINGYNIEVYLSGELEKIVKHLFENKFDVEYGFYILFIKPIFEIVFSSNYVKEEFNTKIESSEYRESLDSFNEILMKYLENEINFKEVWKKYIDELFKKLNVQKLLIHKKIESLISSYDKKISDDCSMYSKVFEQYKKNVVLDKVYYSEVYKYSDNL---IKVFSEDVWNIMGYKKYNEYFTNRDDTTLK-ITNLYIGQSFGTEGNRNVIDRIGKGHEKLQEIMTYQPENRKTVLIFYKIQPDNIYITNQYGKEAVSRLKRILEQ--SIPNKEYIDLSEI---------SLITFFKPEYNK-QHVN----EEFNSLSSSKIKNLAKENDGIIIYLNFKDVNYQLISEGNTFFSAKPYLHCVFNKDILNMDKVDIENFFKSIEV</Hsp_qseq>
+      <Hsp_hseq>NIEKIKQEINTLSDVFK--KPFFFIQLNTDSSQHEKDINNNVETYKNNIDEIYNVFIQSYNLIQKYSSEIFSSTLNYIQTKEIKEKSIKEQNQLNQNEKEASVLLKNIKINETIKLFKQIKN--ERQNDV-------------------HNIKEDYNLL---QQYLNYMKNEMEQLKKY-KNDVHMD---KNYVENN----NGEK---EKLLKETISSYYDKINN---INNKLYIYKNK----EDTYFNNMIKVSEILNIIIKKKQQNEQRIVINAEYDSSLINKDEEIKKEINNQIIELNKHNENISNIFKDIQNIKKQSQDIITNMNDMHKSTILLVDII--------QKKEEALNKQKNILRNIDNILNKKENIIDKVIKCNCDDYKDILIQNETEYQKLQNINHTYEEKKKSIDILKIKNIKQKN--IQEYKN-------KLEQMNTIINQSIEQHVFINADILQNEKIKLEEIIKNLDI</Hsp_hseq>
+      <Hsp_midline>N+E I  +I T+ D +K  +  FF++       +     N V+ Y   + +   + I    L  K + +       YI    I  + I E N +  ++ +  +   NI++  + +L K +K+  E + DV                   + +KE++N      +Y   + +  E L KY +N+++     K Y++      N +K    K ++  ISSY  KI++   + +K++    K    +  Y++ + K S+ L   IK   ++   I+   +Y+    N+D+   K I N  I  +   E   N+   I    ++ Q+I+T   +  K+ ++   I         Q  +EA+++ K IL    +I NK+   + ++          ++   + EY K Q++N    E+  S+   KIKN+ ++N  I  Y N        + + NT  +     H   N DIL  +K+ +E   K++++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>3.74787e-06</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>468</Hsp_query-to>
+      <Hsp_hit-from>66</Hsp_hit-from>
+      <Hsp_hit-to>514</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>190</Hsp_positive>
+      <Hsp_gaps>69</Hsp_gaps>
+      <Hsp_align-len>482</Hsp_align-len>
+      <Hsp_qseq>YKMKEEEFFLKSKLPLYLYSFNYVDEYTMKLLDRGRISILNTKTNKDCIFDISKYIHENIIFRRDIFELNDIRDDDLKYKINGYNIEVYLSG----------------ELEKIVKHLFENKFDVEYGFYILFIKPIFEIVFSSNYVKEEF-NTKIESSEYRESLDSFNE------ILMKYLENEI-NFKEVWKKYIDE----LFKKLNVQKLLIHKKIESLISSYDKKISD-DCSMYSKVFEQYKKNVVLDKVY----YSEVYKYSDNLIKVFSEDVWN--IMGYKKYNEYFTNRDDTTLKITNLYIGQSFGTEGNRNVIDRIGKGHEKLQEIMTYQPENRKTVLIFYKIQPDNIYITNQYGKEAVSRLKRILEQSIPNKEYIDLSEISLITFFKPEYNKQHVNEEFNSLSSSKIKN-LAKENDGIIIYLNFKDVNYQLISEGNTFFSAKPYLHCVFNKDILNMDKVDIENFFKSIEVKYSK</Hsp_qseq>
+      <Hsp_hseq>YRGNNFSYDLSKNSSIFLHMGNGSNSKTLKRCNKKK----NIKTNFLRPIEEEKTVLNNYVYKGVNF-LDTIKRNDSSYKFDVYKDTSFLKNREYKELITMQYDYAYLEATKEVLYLIPKDKDYHKFYKNKLEKILFNLKDSLKLLREEYIQSKLEMIRIHSDIDILNEFHQGNIINDNYFNNEIKKKKEDVEKYIREYNLYIYKYENQLKIKIQKLTNEVSINLNKSTCEKNCYYYILKLEKY-KNIIKDKINKWNDLPEIYIDDKSFSYTFLKDVINNKIDIYKTISSFISTQKQ-LYYLEYIYI-------MNKNTLNLLSYNIQKTD----INSSSKYTYTKSHFLKDNHILLSKYYTAKFIDILNKTY--------YYNLYKNKILLFNKYIINLRNDLKEYAFKSIQFIQDKIKKHKDELSIENILQEVNNIYIKYDTSINEISKYNNLIINTDLQIVQQ-------KLLEIKQKK</Hsp_hseq>
+      <Hsp_midline>Y+     + L     ++L+  N  +  T+K  ++ +    N KTN     +  K +  N +++   F L+ I+ +D  YK + Y    +L                  E  K V +L     D    +     K +F +  S   ++EE+  +K+E       +D  NE      I   Y  NEI   KE  +KYI E    ++K  N  K+ I K    +  + +K   + +C  Y    E+Y KN++ DK+       E+Y    +    F +DV N  I  YK  + + + +      +  +YI        N+N ++ +    +K          ++ T    + ++ ++I ++  Y  + +  L +          Y +L +  ++ F K   N ++  +E+   S   I++ + K  D + I    ++VN   I    +      Y + + N D+  + +       K +E+K  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13319</Hit_id>
+  <Hit_def>gnl|TC-DB|Q2SRZ2|3.A.5.3.1 Membrane protein, putative OS=Mycoplasma capricolum subsp. capricolum (strain California kid / ATCC 27343 / NCTC 10154) OX=340047 GN=MCAP_0498 PE=4 SV=1</Hit_def>
+  <Hit_accession>13319</Hit_accession>
+  <Hit_len>1404</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>7.16892e-05</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>465</Hsp_query-to>
+      <Hsp_hit-from>694</Hsp_hit-from>
+      <Hsp_hit-to>1069</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>158</Hsp_positive>
+      <Hsp_gaps>59</Hsp_gaps>
+      <Hsp_align-len>402</Hsp_align-len>
+      <Hsp_qseq>DDLKYKINGYNIEVYLSGELEKIVKHLFE-NKFDVEYGFYILFIKPIFEIVFSSNYVKEEF------NTKIESSEYRESLDSFNEILMKYLENEINFKEVWKKYIDELFKKLNVQKLLIHKKIESL---ISSYDKKISDDCSMYSKVFEQYKKNVVLDKVYYSEVYKYSDNLIKVFSEDVWNIMGYKKYNEYFTNRDDTTLKITNLYIGQSFGTEGNRNVIDRIGKG------HEKLQEIMTYQPENRKTVLIFYKIQPDNIYITNQYGKEAVSR---LKRILE------QSIPNKEYIDLSEIS--------LITFFKPEYNKQHVNEEFNSLSSSKIKNLAKENDGIIIYLNFKDVNYQLISEGNTFFSAKPYLHCVFNKDILNMDKVDIENFFKSIEVK</Hsp_qseq>
+      <Hsp_hseq>NDLMLSIYSSRIE-NLNSKLKLTTKDLIKLKKFKDKYNFYLNKQQQIIKSKKENRLKKDQIKLESVNNSLLKLEDKREKLTTKDLIKLKKFKDKYNFYLNKQQQIIKSKKEETREYKTIQAKLELLNKRLLKFENKISKKANRNSLIKSSIKNNLIKQEYLKARIDELTSNQVLESLENKNNQRKIFKVNKIF-----TIIFIICTFLGAIIGFTIGPNYSSSFGKSLSVIAYGQKVNDIYDNLDESIRNYKQFDK--------STKRGKEIVKMGEYLERVKSSQDAYMKSILNKSYADLDKVNKNRWASYVVAQIYKEIVNKNYVSLWKNPVSYNKYFRASVD----------VDYGYDFVDTNNKDLDNKQLAYVSFR--IINAKDNRIINIFEKLFVR</Hsp_hseq>
+      <Hsp_midline>+DL   I    IE  L+ +L+   K L +  KF  +Y FY+   + I +    +   K++       N+ ++  + RE L + + I +K  +++ NF    ++ I +  K+   +   I  K+E L   +  ++ KIS   +  S +    K N++  +   + + + + N +    E+  N     K N+ F     T + I   ++G   G     N     GK        +K+ +I     E+ +    F K        + + GKE V     L+R+        +SI NK Y DL +++        +   +K   NK +V+   N +S +K    + +           D  Y  +   N     K   +  F   I+N     I N F+ + V+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|744</Hit_id>
+  <Hit_def>gnl|TC-DB|A7XLD3|3.A.1.208.33 MRP OS=Plasmodium falciparum GN=mrp1 PE=2 SV=1</Hit_def>
+  <Hit_accession>744</Hit_accession>
+  <Hit_len>1822</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000871259</Hsp_evalue>
+      <Hsp_query-from>175</Hsp_query-from>
+      <Hsp_query-to>466</Hsp_query-to>
+      <Hsp_hit-from>447</Hsp_hit-from>
+      <Hsp_hit-to>730</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>129</Hsp_positive>
+      <Hsp_gaps>76</Hsp_gaps>
+      <Hsp_align-len>326</Hsp_align-len>
+      <Hsp_qseq>ILMKYLENEINFKEVWKKYIDELFKKLNVQKLLIHKKIESLISSYDKKISDDCSMYSKVFEQYKKNVVLDKVYYSEVYKYSDNLIKVFSEDVWNIMGYKKY--NEYFTNRDDTTLKITNLYIGQSFGTEGNRNVIDRIGKGHEKLQEIMTYQPENRKTVLIFYKIQPDNIYITNQYGKEAVSRLKRILEQSIPNKEYIDLSEISLITFFKPEYNKQHVNEE----------FNSLSSSKIKNLAKENDGIIIYLN----------------FKDVNYQL------ISEGNTFFSAKPYLHCVFNKDILNMDKVDIENFFKSIEVKY</Hsp_qseq>
+      <Hsp_hseq>IFFIYLKDRLNKKEEIK--FTSIIMPLYVYKILI-----SNVANFPNLVNN--VMEGIVNIKRLNNYINDHLYYNDIKNYFMYRTR-YNED-YNIVVDKTFLQNENITSHDD----------GTSHNLKHLKNVIKN------KLTNMFKY-------FFFYHKMN----YHKNIINKQILSGLLKNVDDNT-NKKICFQEHKSNSTY---NYNSSHIHEKKEEYENIHNSSNSTMSNEFKEKKKNNEYIIKLENCSFGLSYDNKCDNDHILKNINFNLKRNSLAIIIGNVGSGKSAFFHSILGDFNMTHGNLYIENFFKKMPILY</Hsp_hseq>
+      <Hsp_midline>I   YL++ +N KE  K     +   L V K+LI     S ++++   +++   M   V  +   N + D +YY+++  Y     + ++ED +NI+  K +  NE  T+ DD          G S   +  +NVI        KL  +  Y          ++K+     Y  N   K+ +S L + ++ +  NK+       S  T+    YN  H++E+           NS  S++ K   K N+ II   N                 K++N+ L      I  GN       + H +     +    + IENFFK + + Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2813455176</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

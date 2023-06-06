@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_498811.1 PTS system transporter [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>419</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_498811.1 PTS system transporter [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>419</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15189</Hit_id>
+  <Hit_def>gnl|TC-DB|Q71WA6|4.A.5.1.2 PTS system, galactitol-specific, IIC component OS=Listeria monocytogenes serotype 4b (strain F2365) GN=LMOf2365_2645 PE=4 SV=1</Hit_def>
+  <Hit_accession>15189</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>459.529</Hsp_bit-score>
+      <Hsp_score>1181</Hsp_score>
+      <Hsp_evalue>5.83272e-161</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>413</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>414</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>226</Hsp_identity>
+      <Hsp_positive>307</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>408</Hsp_align-len>
+      <Hsp_qseq>VRGFLDLGATVILPVVIFLLGLFFRQKIGAAFRSGLTIGVAFVGIFLVIDLLVKNLGPAAQAMVKNLGVSLNVIDVGWPATSSIAWASSVAAFIIPLGIIVNVVLLVTKVTKTMNVDIWNFWHYTFTAAMVYAVSGSIWQ-ALLAAVIFQIICLKVADWTAPMMSEFFDLPGVSIATGSTISYA-PGIYLVKLLQKVPGLNKLDADPETIQKRFGAFGESIFVGLILGLGIGVLAGYKPGDIINLGMSMAAVMVLMPRMVKILMEGLMPVSESARTWLNKRFGEREIYIGLDAAVALGHPAVISTALILVPITVLLAVILPGNQVLPFGDLATIPFVVAFIVGAARGNIIHSVIVGTIMIAISLYIATDVAPIFTDMAKGTNVQMPKGSSEISSIDQGGNIVNYLIFK</Hsp_qseq>
+      <Hsp_hseq>VQYVLNLGPTVILPIMIFFIALIFRVPAKKALRSAITIGIGFVGINLVISLLSSNLGPAAQQMVERFGLNLTIIDAGWPAAAAASWASPVAAILIPICLVVNLALIFFKVTKTLDIDIWNYWHFIAAGATGYIVTGGNWWFAILCAIIYEVAVLWMADRTQPMVEEFYGLKGISLPTGSTAAFGFIGIPVGWLIAKIPGIKNIHVDPETIQKRFGIFGEPMMMGLILGIAIGILAGYDVGAVAQLGMSMGAVMFLMPRMVKILMEGLIPISESAREFMKSRFKGRELYIGLDAALSIGHPANISTGLILVPITLFLAVIIPGNKVLPFGDLATIPFYVSFVVASRKGNILHSVLAGTVVIALALLMATDFGLVHTEMMKGV-YEFPKGATQVSTLDMGGNFFNWVILK</Hsp_hseq>
+      <Hsp_midline>V+  L+LG TVILP++IF + L FR     A RS +TIG+ FVGI LVI LL  NLGPAAQ MV+  G++L +ID GWPA ++ +WAS VAA +IP+ ++VN+ L+  KVTKT+++DIWN+WH+    A  Y V+G  W  A+L A+I+++  L +AD T PM+ EF+ L G+S+ TGST ++   GI +  L+ K+PG+  +  DPETIQKRFG FGE + +GLILG+ IG+LAGY  G +  LGMSM AVM LMPRMVKILMEGL+P+SESAR ++  RF  RE+YIGLDAA+++GHPA IST LILVPIT+ LAVI+PGN+VLPFGDLATIPF V+F+V + +GNI+HSV+ GT++IA++L +ATD   + T+M KG   + PKG++++S++D GGN  N++I K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16165</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8FCM4|4.A.5.1.4 PTS system, galactitol-specific IIC component OS=Escherichia coli O6 GN=c4279 PE=4 SV=1</Hit_def>
+  <Hit_accession>16165</Hit_accession>
+  <Hit_len>462</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>410.223</Hsp_bit-score>
+      <Hsp_score>1053</Hsp_score>
+      <Hsp_evalue>5.29768e-141</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>416</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>194</Hsp_identity>
+      <Hsp_positive>297</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>414</Hsp_align-len>
+      <Hsp_qseq>DFVRGFLDLGATVILPVVIFLLGLFFRQKIGAAFRSGLTIGVAFVGIFLVIDLLVKNLGPAAQAMVKNLGVSLNVIDVGWPATSSIAWASSVAAFIIPLGIIVNVVLLVTKVTKTMNVDIWNFWHYTFTAAMVYAVSGSIWQALLAAVIFQIICLKVADWTAPMMSEFFDLPGVSIATGSTISYAP-GIYLVKLLQKVPGLNKLDADPETIQKRFGAFGESIFVGLILGLGIGVLAGYKPGDIINLGMSMAAVMVLMPRMVKILMEGLMPVSESARTWLNKRFGER-EIYIGLDAAVALGHPAVISTALILVPITVLLAVILPGNQVLPFGDLATIPFVVAFIVGAARGNIIHSVIVGTIMIAISLYIATDVAPIFTDMAKGTNVQMPKGSS-EISSIDQGGNIVNYLIFKLFS</Hsp_qseq>
+      <Hsp_hseq>NIVQYILGFGPTVMLPLVLFILALFFKVKPAKALRSSLTVGIGFVGIYAIFDILTSNVGPAAQAMVERTGINLPVVDLGWPPLSAITWGSPIAPFVIPLTILINVAMLALNKTRTVDVDMWNYWHFALAGTLVYYSTGSLFFGLLAAAIAAVVVLKLADWSAPLVQKYFGLEGISLPTLSSVVFFPVGLLVDKIIDHIPGLNRIHIDPETVQKKFGIFGEPMMVGTILGILLGVIAGYDFKKVLLLGISIGGVMFILPRMVRILMEGLLPLSEAIKKYLNAKYPDRDDLYIGLDIAVAVGNPAIISTALLLTPISVFIAFVLPGNEVLPLGDLANLAVMASMIALASRGNIFRTVLAAIPVIIADLWIATKIAPFITGMAKDVNFKFAEGSSGQVSSFLDGGNPFRFWLLEIFN</Hsp_hseq>
+      <Hsp_midline>+ V+  L  G TV+LP+V+F+L LFF+ K   A RS LT+G+ FVGI+ + D+L  N+GPAAQAMV+  G++L V+D+GWP  S+I W S +A F+IPL I++NV +L    T+T++VD+WN+WH+     +VY  +GS++  LLAA I  ++ LK+ADW+AP++ ++F L G+S+ T S++ + P G+ + K++  +PGLN++  DPET+QK+FG FGE + VG ILG+ +GV+AGY    ++ LG+S+  VM ++PRMV+ILMEGL+P+SE+ + +LN ++ +R ++YIGLD AVA+G+PA+ISTAL+L PI+V +A +LPGN+VLP GDLA +  + + I  A+RGNI  +V+    +I   L+IAT +AP  T MAK  N +  +GSS ++SS   GGN   + + ++F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11288</Hit_id>
+  <Hit_def>gnl|TC-DB|P69831|4.A.5.1.1 Galactitol permease IIC component - Escherichia coli.</Hit_def>
+  <Hit_accession>11288</Hit_accession>
+  <Hit_len>451</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>377.867</Hsp_bit-score>
+      <Hsp_score>969</Hsp_score>
+      <Hsp_evalue>1.8309e-128</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>416</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>413</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>280</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>414</Hsp_align-len>
+      <Hsp_qseq>FTDFVRGFLDLGATVILPVVIFLLGLFFRQKIGAAFRSGLTIGVAFVGIFLVIDLLVKNLGPAAQAMVKNLGVSLNVIDVGWPATSSIAWASSVAAFIIPLGIIVNVVLLVTKVTKTMNVDIWNFWHYTFTAAMVYAVSGSIWQALLAAVIFQIICLKVADWTAPMMSEFFDLPGVSIATGSTISYAPGIYLVK-LLQKVPGLNKLDADPETIQKRFGAFGESIFVGLILGLGIGVLAGYKPGDIINLGMSMAAVMVLMPRMVKILMEGLMPVSESARTWLNKRFGEREIYIGLDAAVALGHPAVISTALILVPITVLLAVILPGNQVLPFGDLATIPFVVAFIVGAARGNIIHSVIVGTIMIAISLYIATDVAPIFTDMAKGTNVQMPKGSSEISSIDQGGNIVNYLIFKLFS</Hsp_qseq>
+      <Hsp_hseq>FSEVMRYILDLGPTVMLPIVIIIFSKILGMKAGDCFKAGLHIGIGFVGIGLVIGLMLDSIGPAAKAMAENFDLNLHVVDVGWPGSSPMTWASQIALVAIPIAILVNVAMLLTRMTRVVNVDIWNIWHMTFTGALLHLATGSWMIGMAGVVIHAAFVYKLGDWFARDTRNFFELEGIAIPHGTSAYMGPIAVLVDAIIEKIPGVNRIKFSADDIQRKFGPFGEPVTVGFVMGLIIGILAGYDVKGVLQLAVKTAAVMLLMPRVIKPIMDGLTPIAKQARSRLQAKFGGQEFLIGLDPALLLGHTAVVSASLIFIPLTILIAVCVPGNQVLPFGDLATIGFFVAMAVAVHRGNLFRTLISGVIIMSITLWIATQTIGLHTQLA--ANAGALKAGGMVASMDQGGSPITWLLIQVFS</Hsp_hseq>
+      <Hsp_midline>F++ +R  LDLG TV+LP+VI +       K G  F++GL IG+ FVGI LVI L++ ++GPAA+AM +N  ++L+V+DVGWP +S + WAS +A   IP+ I+VNV +L+T++T+ +NVDIWN WH TFT A+++  +GS    +   VI      K+ DW A     FF+L G++I  G++    P   LV  +++K+PG+N++    + IQ++FG FGE + VG ++GL IG+LAGY    ++ L +  AAVM+LMPR++K +M+GL P+++ AR+ L  +FG +E  IGLD A+ LGH AV+S +LI +P+T+L+AV +PGNQVLPFGDLATI F VA  V   RGN+  ++I G I+++I+L+IAT    + T +A   N    K    ++S+DQGG+ + +L+ ++FS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17079</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8Y9L9|4.A.5.1.7 Lmo0508 protein OS=Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) GN=lmo0508 PE=4 SV=1</Hit_def>
+  <Hit_accession>17079</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>336.65</Hsp_bit-score>
+      <Hsp_score>862</Hsp_score>
+      <Hsp_evalue>1.03736e-112</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>412</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>413</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>158</Hsp_identity>
+      <Hsp_positive>263</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>413</Hsp_align-len>
+      <Hsp_qseq>MSYFTDFVRGFLDLGATVILPVVIFLLGLFFRQKIGAAFRSGLTIGVAFVGIFLVIDLLVKNLGPAAQAMVKNLGVSLNVIDVGWPATSSIAWASSVAAFIIPLGIIVNVVLLVTKVTKTMNVDIWNFWHYTFTAAMVYAVSGSIWQALLAAVIFQIICLKVADWTAPMMSEFFDLPGVSIATGSTISYA-PGIYLVKLLQKVPGLNKLDADPETIQKRFGAFGESIFVGLILGLGIGVLAGYKPGDIINLGMSMAAVMVLMPRMVKILMEGLMPVSESARTWLNKRFGEREIYIGLDAAVALGHPAVISTALILVPITVLLAVILPGNQVLPFGDLATIPFVVAFIVGAARGNIIHSVIVGTIMIAISLYIATDVAPIFTDMAKGTNVQMPKGSSEISSIDQGGNIVNYLIF</Hsp_qseq>
+      <Hsp_hseq>MDIILDFFKYIIGLGVTVMMPIIITILGVIFRKKISVAFKAGLTVGVGFVGLGVITSLMLTTITPVTKALVENYNFKLTATDIGWGVGSSLAWGTEVVPFVFVAIIATNILMIAFKWTKTMDVDIWNYWQPLFIASALYLTTGSMIIAVLSSIINMAIIFKIADWTQKDVEDVLGLEGISLPQIQTTGWALVGYPMNWLLGKIPGVRKINWSTEKVQSRLGIFGEPMLMGLIIGGGLAAIAQMPLSQVLQTGVTIAASLVLIPRMVSLLMDGLTVISEAAHEFMEKRFPGRELFIGLDSAVGIGHPFVLSLGLLMIPITLILAFILPGNKVLPLADLTALPFYMIFAIVPSKGNLFRGIFTGIVIVIITLYLSGAAAPLMTELAGQIGYNIPKDAVEVTSLAVGTQWYTWIVY</Hsp_hseq>
+      <Hsp_midline>M    DF +  + LG TV++P++I +LG+ FR+KI  AF++GLT+GV FVG+ ++  L++  + P  +A+V+N    L   D+GW   SS+AW + V  F+    I  N++++  K TKTM+VDIWN+W   F A+ +Y  +GS+  A+L+++I   I  K+ADWT   + +   L G+S+    T  +A  G  +  LL K+PG+ K++   E +Q R G FGE + +GLI+G G+  +A      ++  G+++AA +VL+PRMV +LM+GL  +SE+A  ++ KRF  RE++IGLD+AV +GHP V+S  L+++PIT++LA ILPGN+VLP  DL  +PF + F +  ++GN+   +  G +++ I+LY++   AP+ T++A      +PK + E++S+  G     ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10263</Hit_id>
+  <Hit_def>gnl|TC-DB|P39365|4.A.5.1.3 Putative permease IIC component OS=Escherichia coli (strain K12) GN=sgcC PE=3 SV=1</Hit_def>
+  <Hit_accession>10263</Hit_accession>
+  <Hit_len>437</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>321.242</Hsp_bit-score>
+      <Hsp_score>822</Hsp_score>
+      <Hsp_evalue>1.69023e-106</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>417</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>411</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>163</Hsp_identity>
+      <Hsp_positive>258</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>407</Hsp_align-len>
+      <Hsp_qseq>LDLGATVILPVVIFLLGLFFRQKIGAAFRSGLTIGVAFVGIFLVIDLLVKNLGPAAQAMVKNLGVSLNVIDVGWPATSSIAWASSVAAFIIPLGIIVNVVLLVTKVTKTMNVDIWNFWHYTFTAAMVYAVSGSIWQALLAAVIFQIICLKVADWTAPMMSEFFDLPGVSIATGSTISYAPGIYLVKLL-QKVPGLNKLDADPETIQKRFGAFGESIFVGLILGLGIGVLAGYKPGDIINLGMSMAAVMVLMPRMVKILMEGLMPVSESARTWLNKRFGEREIYIGLDAAVALGHPAVISTALILVPITVLLAVILPGNQVLPFGDLATIPFVVAFIVGAARGNIIHSVIVGTIMIAISLYIATDVAPIFTDMAKGTNVQMPKGSSEISSIDQGGNIVNYLIFKLFSL</Hsp_qseq>
+      <Hsp_hseq>LSLGGTVFVPIIMIVIGLIFRIPWLQAIKAGVTVGIGFVGMGLVIVMAIDSLSPPIKVMIERFGLALHVFDVGAGPASGVGYATAIGAMIIPVIFLLNVAMLVTRLTKTMNVDIYNYWHYAITGTVVQLMTGSLIYGVLGAICHAALSLKMADWTAKRVQNIVGLEGISIPQGYGSSSVPLFVLLDAIYEKIPFMKGRNIDAQEIQKRYGMVGDPVIIGVVLGLIFGLAAGEGFKGCASLMITVAAIMVLFPRMIRLIVEGLLPISDGARKFFQKYFKGREVYIGLDTAVTLGHPTTIAVGLLLIPIMLILASILPGNKVLPLADLPVAPFFICMATVIHRGDLVRTLISGVIVMITVLLIATQFAPYFTEMALKGGFSFAGESAQISALSV-GNMFGWSISELMSL</Hsp_hseq>
+      <Hsp_midline>L LG TV +P+++ ++GL FR     A ++G+T+G+ FVG+ LVI + + +L P  + M++  G++L+V DVG    S + +A+++ A IIP+  ++NV +LVT++TKTMNVDI+N+WHY  T  +V  ++GS+   +L A+    + LK+ADWTA  +     L G+SI  G   S  P   L+  + +K+P +   + D + IQKR+G  G+ + +G++LGL  G+ AG       +L +++AA+MVL PRM+++++EGL+P+S+ AR +  K F  RE+YIGLD AV LGHP  I+  L+L+PI ++LA ILPGN+VLP  DL   PF +       RG+++ ++I G I++   L IAT  AP FT+MA          S++IS++   GN+  + I +L SL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3204</Hit_id>
+  <Hit_def>gnl|TC-DB|D4GUQ0|4.A.5.1.5 PTS system, galactitol-specific enzyme II, C component OS=Haloferax volcanii (strain ATCC 29605 / DSM 3757 / JCM 8879 / NBRC 14742 / NCIMB 2012 / VKM B-1768 / DS2) GN=HVO_2103 PE=4 SV=1</Hit_def>
+  <Hit_accession>3204</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>312.768</Hsp_bit-score>
+      <Hsp_score>800</Hsp_score>
+      <Hsp_evalue>1.98469e-102</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>383</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>392</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>163</Hsp_identity>
+      <Hsp_positive>240</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>379</Hsp_align-len>
+      <Hsp_qseq>LGATVILPVVIFLLGLFFRQKIGAAFRSGLTIGVAFVGIFLVIDLLVKNLGPAAQAMVKNLGVSLNVIDVGWPATSSIAWA-SSVAAFIIPLGIIVNVVLLVTKVTKTMNVDIWNFWHYTFTAAMVYAVSGSIWQALLAAVIFQIICLKVADWTAPMMSEFFDLPGVSIATGSTISYAPGIYLVKLLQKVPGLNKLDADPETIQKRFGAFGESIFVGLILGLGIGVLAGYKPG--------DIINLGMSMAAVMVLMPRMVKILMEGLMPVSESARTWLNKRFGEREIYIGLDAAVALGHPAVISTALILVPITVLLAVILPGNQVLPFGDLATIPFVVAFIVGAARGNIIHSVIVGTIMIAISLYIATDVAPIFTDMA</Hsp_qseq>
+      <Hsp_hseq>LGVSVLLPIIIFLIALAFRVDVLKAARSSILIGIGFIGINLVIGLFSENISPLAQQMVEVTGVTLPAVDVGWPAAAAIAFGIAELGVWMIPLFVVMNLVLFAIGFTYTLNVDIWNYWHFAFIGGLVYMSTNNWLYSVAVGLTLGLFVLVAADWTQPAVEETFDTPGISIPHGTSAPYAVAAIPIHWAVDKTPLGNIEADPDAIQDRFGILGEPIFVGLAIGLVIGI-AAYSNALFVAESWYAILTAGISFAAVMHILPMMVGILMEGLTPLSESIRNYMTSRFEDRDMAIGLDSAILIGHESVIASSLLIVPIAIVMSIILPGNDVLWGIDLATFPFFFALMVPIMNGNIVKMVVTGTILLVPLHYISSAVAPLLTQAA</Hsp_hseq>
+      <Hsp_midline>LG +V+LP++IFL+ L FR  +  A RS + IG+ F+GI LVI L  +N+ P AQ MV+  GV+L  +DVGWPA ++IA+  + +  ++IPL +++N+VL     T T+NVDIWN+WH+ F   +VY  + +   ++   +   +  L  ADWT P + E FD PG+SI  G++  YA     +        L  ++ADP+ IQ RFG  GE IFVGL +GL IG+ A Y            I+  G+S AAVM ++P MV ILMEGL P+SES R ++  RF +R++ IGLD+A+ +GH +VI+++L++VPI +++++ILPGN VL   DLAT PF  A +V    GNI+  V+ GTI++    YI++ VAP+ T  A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2746</Hit_id>
+  <Hit_def>gnl|TC-DB|C9MZ79|4.A.5.1.6 PTS system Galactitol-specific IIC component OS=Leptotrichia hofstadii F0254 GN=GCWU000323_01876 PE=4 SV=1</Hit_def>
+  <Hit_accession>2746</Hit_accession>
+  <Hit_len>444</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>256.914</Hsp_bit-score>
+      <Hsp_score>655</Hsp_score>
+      <Hsp_evalue>2.13965e-81</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>393</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>394</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>394</Hsp_align-len>
+      <Hsp_qseq>FTDFVRGFLDLGATVILPVVIFLLGLFFRQKIGAAFRSGLTIGVAFVGIFLVIDLLVKNLGPAAQAMVKNLGVSLNVIDVGWPATSSIAWASSVAAFIIPLGIIVNVVLLVTKVTKTMNVDIWNFWHYTFTAAMVYAVSGSIWQALLAAVIFQIICLKVADWTAPMMSEFFDLPGVSIATGSTISYAPGIYLVKLLQKVPGLNKLDADPETIQKRFGAFGESIFVGLILGLGIGVLAGYKPGDIINLGMSMAAVMVLMPRMVKILMEGLMPVSESARTWLNKRFGEREIYIGLDAAVALGHPAVISTALILVPITVLLAVILPG---NQVLPFGDLATIPFVVAFIVGAARGNIIHSVIVGTIMIAISLYIATDVAPIFTDMAKGTN-VQMPKG</Hsp_qseq>
+      <Hsp_hseq>FGNILNYILGLGAAIFLPIIMIIIGLIIKMKFKRAIISGLTLGVAFTGMNVVLGFMFDTISPVASAFVEKTGIQLNIIDVGWSPMSAIAWAWPYALFMFPLQIGINLLMLIFKQTNILNVDLWNVWGKIFTATMVTAITGNIALGFVAAAIQVIVELKIGEATQKRTQEITGIPGVTCTHYMTLQCAIMEPVNKLLDYIPLFKKENANADKLKDKIGIFGDNSVMGFIIGGLIAILAGYSVKDTLNVAIKVGTALVLFPMVAKLFMQALAPIADAASEFMKNKFKDREIYIGLDWPFMAGQSELWVVAILLVPIELLLAVVFSKMGISNVLPLAGIVNIVVVVPAMI-VSKKNLLKMLILSILYTPIYLVISSSFAPFATQLAKATKAIEIPAG</Hsp_hseq>
+      <Hsp_midline>F + +   L LGA + LP+++ ++GL  + K   A  SGLT+GVAF G+ +V+  +   + P A A V+  G+ LN+IDVGW   S+IAWA   A F+ PL I +N+++L+ K T  +NVD+WN W   FTA MV A++G+I    +AA I  I+ LK+ + T     E   +PGV+     T+  A    + KLL  +P   K +A+ + ++ + G FG++  +G I+G  I +LAGY   D +N+ + +   +VL P + K+ M+ L P++++A  ++  +F +REIYIGLD     G   +   A++LVPI +LLAV+      + VLP   +  I  VV  ++  ++ N++  +I+  +   I L I++  AP  T +AK T  +++P G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2451751062</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

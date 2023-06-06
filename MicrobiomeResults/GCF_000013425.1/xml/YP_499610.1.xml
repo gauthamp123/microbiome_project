@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499610.1 pyruvate carboxylase [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>1150</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499610.1 pyruvate carboxylase [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>1150</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14739</Hit_id>
+  <Hit_def>gnl|TC-DB|Q6A1F6|3.B.1.1.6 Oxaloacetate decarboxylase OS=Vibrio cholerae GN=oadA-2 PE=1 SV=1</Hit_def>
+  <Hit_accession>14739</Hit_accession>
+  <Hit_len>599</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>335.88</Hsp_bit-score>
+      <Hsp_score>860</Hsp_score>
+      <Hsp_evalue>1.87044e-102</Hsp_evalue>
+      <Hsp_query-from>535</Hsp_query-from>
+      <Hsp_query-to>1143</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>596</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>213</Hsp_identity>
+      <Hsp_positive>333</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>620</Hsp_align-len>
+      <Hsp_qseq>LTDTTFRDAHQSLLATRVRTKDMINIASKTADVFKDGFSLEMWGGATFDVAYNFLKENPWERLERLRKAIPNVLFQMLLRASNAVGYKNYPDNVIHKFVQESAKAGIDVFRIFDSLNWVDQMKVANEAVQEAGKISEGTICYTGDILNPERSNIYTLEYYVKLAKELEREGFHILAIKDMAGLLKPKAAYELIGELKSAVDLPIHLHTHDTSGNGLLTYKQAIDAGVDIIDTAVASMSGLTSQPSANSLYYALNGFPRHLRTDIEGMESLSHYWSTVRTYYSDFESDIKSPNTEIYQHEMPGGQYSNLSQQAKSLGLGERFDEVKDMYRRVNFLFGDIVKVTPSSKVVGDMALYMVQNDLDEQSVITDGYKLDFPESVVSFFKGEIGQPVNGFNKDLQAVILKGQEALTARPGEYLEPVDFEKVRELLEEEQQGPVTE-----QDIISYVLYPKVYEQYIQTRNQYGNLSLLDTPTFFFGMRNGETVEIEIDKGKRLIIKLETISEPDENGNRTIYYAMNGQARRIYIKDENVHTNA------NVKPKADKSNPSHIGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLI</Hsp_qseq>
+      <Hsp_hseq>VTDVVLRDAHQSLFATRLRIDDMLPIAQQLDQI--GYWSLECWGGATFDSCIRFLGEDPWQRLRLLKQAMPNTPLQMLLRGQNLLGYRHYADDVVDTFVERAVKNGMDVFRVFDAMNDVRNMQQALQAVKKMGAHAQGTLCYT-------TSPVHNLQTWVDVAQQLAELGVDSIALKDMAGILTPYAAEELVSTLKKQVDVELHLHCHSTAGLADMTLLKAIEAGVDRVDTAISSMSGTYGHPATESLVATLQGTGYDTGLDIAKLEQIAAYFRDVRKKYHAFEGMMKGSDARILVAQVPGGMLTNMESQLKQQNALDKLDLVLEEIPRVREELGFLPLVTPTSQIVGTQAVINV--------VLGERYKTITKETS-GVLKGEYGKTPAPVNTELQARVLAGAEAITCRPADLIAAEMPTLQDRVLQQAKEQHITLAENAIDDVLTIALFDQVGWKFLA--NRHNPEAFEPAPQ---AISSACTPKAPTEKSK--------VQPVESHGVYTI--TVNNQSYVVKVDEGGDLTHVAPTASTNHAPVPSAAEGENLAAPLSGNIWKIHASAGDEVAEGDVLLILEAMKMETEIRAPRAGVISAIEVNEGDAVQVGDALL</Hsp_hseq>
+      <Hsp_midline>+TD   RDAHQSL ATR+R  DM+ IA +   +    +SLE WGGATFD    FL E+PW+RL  L++A+PN   QMLLR  N +GY++Y D+V+  FV+ + K G+DVFR+FD++N V  M+ A +AV++ G  ++GT+CYT        S ++ L+ +V +A++L   G   +A+KDMAG+L P AA EL+  LK  VD+ +HLH H T+G   +T  +AI+AGVD +DTA++SMSG    P+  SL   L G       DI  +E ++ Y+  VR  Y  FE  +K  +  I   ++PGG  +N+  Q K     ++ D V +   RV    G +  VTP+S++VG  A+  V        V+ + YK    E+     KGE G+     N +LQA +L G EA+T RP + +          +L++ ++  +T       D+++  L+ +V  +++   N++   +    P     + +  T +   +K K        +   + +G  TI   +N Q+  + + +    T+       N  P    +   ++ A + G++ ++  S G+ V     LLI EAMKMET I+AP  GVI  + VN GD +  GD L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12100</Hit_id>
+  <Hit_def>gnl|TC-DB|Q03030|3.B.1.1.1 OXALOACETATE DECARBOXYLASE ALPHA CHAIN (EC 4.1.1.3) - Salmonella typhimurium.</Hit_def>
+  <Hit_accession>12100</Hit_accession>
+  <Hit_len>591</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>333.954</Hsp_bit-score>
+      <Hsp_score>855</Hsp_score>
+      <Hsp_evalue>7.71277e-102</Hsp_evalue>
+      <Hsp_query-from>533</Hsp_query-from>
+      <Hsp_query-to>1145</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>590</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>212</Hsp_identity>
+      <Hsp_positive>330</Hsp_positive>
+      <Hsp_gaps>53</Hsp_gaps>
+      <Hsp_align-len>627</Hsp_align-len>
+      <Hsp_qseq>VLLTDTTFRDAHQSLLATRVRTKDMINIASKTADVFKDGF-SLEMWGGATFDVAYNFLKENPWERLERLRKAIPNVLFQMLLRASNAVGYKNYPDNVIHKFVQESAKAGIDVFRIFDSLNWVDQMKVANEAVQEAGKISEGTICYTGDILNPERSNIYTLEYYVKLAKELEREGFHILAIKDMAGLLKPKAAYELIGELKSAVDLPIHLHTHDTSGNGLLTYKQAIDAGVDIIDTAVASMSGLTSQPSANSLYYALNGFPRHLRTDIEGMESLSHYWSTVRTYYSDFESDIKSPNTEIYQHEMPGGQYSNLSQQAKSLGLGERFDEVKDMYRRVNFLFGDIVKVTPSSKVVGDMALYMVQNDLDEQSVITDGYKLDFPESVVSFFKGEIGQPVNGFNKDLQAVILKGQEALTARPGEYLEPVDFEKVRELLEEEQQGPVT-----EQDIISYVLYPKVYEQYIQTRNQYGNLSLLDTPTFFFGMRNGE--------TVEIEIDKGKRLIIKLETISEPDENGNRTIYYAMNGQARRIYIKDENVHTNANVKPKADKSNPSHIGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLIEI</Hsp_qseq>
+      <Hsp_hseq>IAITDVVLRDAHQSLFATRLRLDDMLPIAAALDDV---GYGSLECWGGATFDACIRFLGEDPWLRLRELKKAMPKTPLQMLLRGQNLLGYRHYADDVVERFVERAVKNGMDVFRVFDAMNDPRNMKAALQAVRSHGAHAQGTLSYT-------TSPAHTLQTWLDLTEQLLETGVDSIAIKDMSGILTPMAAYELVSEIKKRFEVRLHLHCHATTGMAEMALLKAIEAGVDGVDTAISSMSATYGHPATEALVATLAGTEHDTGLDILKLENIAAYFREVRKKYHAFEGQLKGYDSRILVAQVPGGMLTNLESQLKQQNAADKLDQVLAEIPRVREDLGFIPLVTPTSQIVGTQAVL---------NVLTGERYKTIAKETAGILKGEYGHTPVPVNAALQARVLEGGAPVTCRPADLLKPELAELEADVRRQAQEKGITLAGNAIDDVLTVALFPQIGLKFLENRNNPAAFEPLPQAEAAQPVAKAEKPAASGIYTVEVE---GKAFVVKV------SDGGDISQLTAAVPAA-----------SSAPVQAAAPAGAGTPVTAPLAGNIWKVIATEGQTVAEGDVLLILEAMKMETEIRAAQAGTVRGIAVKSGDAVSVGDTLMTL</Hsp_hseq>
+      <Hsp_midline>+ +TD   RDAHQSL ATR+R  DM+ IA+   DV   G+ SLE WGGATFD    FL E+PW RL  L+KA+P    QMLLR  N +GY++Y D+V+ +FV+ + K G+DVFR+FD++N    MK A +AV+  G  ++GT+ YT        S  +TL+ ++ L ++L   G   +AIKDM+G+L P AAYEL+ E+K   ++ +HLH H T+G   +   +AI+AGVD +DTA++SMS     P+  +L   L G       DI  +E+++ Y+  VR  Y  FE  +K  ++ I   ++PGG  +NL  Q K     ++ D+V     RV    G I  VTP+S++VG  A+          +V+T        +      KGE G      N  LQA +L+G   +T RP + L+P   E   ++  + Q+  +T       D+++  L+P++  ++++ RN       L        +   E        TVE+E   GK  ++K+       + G+ +   A    A           ++A V+  A     + + A + G++ +V  + G+TV     LLI EAMKMET I+A   G ++ + V +GD ++ GD L+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19589</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9ZAA7|3.B.1.1.3 GLUTACONYL-COA DECARBOXYLASE GAMMA SUBUNIT (EC 4.1.1.70) - Acidaminococcus fermentans.</Hit_def>
+  <Hit_accession>19589</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>6.98613e-14</Hsp_evalue>
+      <Hsp_query-from>1080</Hsp_query-from>
+      <Hsp_query-to>1143</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>64</Hsp_align-len>
+      <Hsp_qseq>IGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLI</Hsp_qseq>
+      <Hsp_hseq>VSAPMPGKILSVNVKPGDKVEAGDVLLILEAMKMQNEIMAPEDGTVSEVRVNAGDTVATGDVMV</Hsp_hseq>
+      <Hsp_midline>+ A MPG +  V V  G+ V+A   LLI EAMKM+  I AP DG + +V VN GDT+ATGD+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19188</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9V0A6|3.B.1.1.5 Methylmalonyl-CoA decarboxylase gamma chain - Pyrococcus abyssi.</Hit_def>
+  <Hit_accession>19188</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.3958</Hsp_bit-score>
+      <Hsp_score>163</Hsp_score>
+      <Hsp_evalue>4.46077e-13</Hsp_evalue>
+      <Hsp_query-from>1080</Hsp_query-from>
+      <Hsp_query-to>1145</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>IGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLIEI</Hsp_qseq>
+      <Hsp_hseq>VTAPMPGKVLKILVQEGQQVKLGQGLLILEAMKMENEIPAPRDGVVKRILVKEGDAVDTGTPLIEL</Hsp_hseq>
+      <Hsp_midline>+ A MPG V ++ V  G+ VK  Q LLI EAMKME  I AP DGV+K++ V  GD + TG  LIE+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6772</Hit_id>
+  <Hit_def>gnl|TC-DB|O06930|3.B.1.1.4 BIOTIN PROTEIN - Malonomonas rubra.</Hit_def>
+  <Hit_accession>6772</Hit_accession>
+  <Hit_len>69</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>7.08585e-13</Hsp_evalue>
+      <Hsp_query-from>1080</Hsp_query-from>
+      <Hsp_query-to>1146</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>69</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>IGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLIEIE</Hsp_qseq>
+      <Hsp_hseq>IKSKMPGSIIEVKVSVGDNLEAGSLILIMEALKMKQEIRSQEGGVVKELKVNTGDRVSPGQVLAIIE</Hsp_hseq>
+      <Hsp_midline>I ++MPGS+ EVKVSVG+ ++A   +LI EA+KM+  I++   GV+K++ VN GD ++ G +L  IE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2047</Hit_id>
+  <Hit_def>gnl|TC-DB|B7TVP3|3.B.1.1.7 Acetyl-CoA carboxylase biotin carboxyl carrier protein subunit OS=Clostridium symbiosum OX=1512 GN=gcdC2 PE=4 SV=1</Hit_def>
+  <Hit_accession>2047</Hit_accession>
+  <Hit_len>139</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>4.56561e-12</Hsp_evalue>
+      <Hsp_query-from>1080</Hsp_query-from>
+      <Hsp_query-to>1143</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>64</Hsp_align-len>
+      <Hsp_qseq>IGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLI</Hsp_qseq>
+      <Hsp_hseq>VEAPMPGKVLDVKVAAGQAVKFGQVVITMEAMKMETEIVAPADGTVAQILVKAGDAVETGTAMV</Hsp_hseq>
+      <Hsp_midline>+ A MPG V +VKV+ G+ VK  Q ++  EAMKMET I AP DG + Q+ V  GD + TG  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2048</Hit_id>
+  <Hit_def>gnl|TC-DB|B7TVP4|3.B.1.1.7 Biotin/lipoyl-binding protein OS=Clostridium symbiosum OX=1512 GN=gcdC1 PE=4 SV=1</Hit_def>
+  <Hit_accession>2048</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.7734</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>1.99133e-11</Hsp_evalue>
+      <Hsp_query-from>1070</Hsp_query-from>
+      <Hsp_query-to>1143</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>74</Hsp_align-len>
+      <Hsp_qseq>PKADKSNPSHIGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLI</Hsp_qseq>
+      <Hsp_hseq>PAPAAAGATTVEAPMPGKVLDVKVTAGQVVKYGDVVAIMEAMKMETEIVAPADGTVSQILVKAGDPVDTGAAMV</Hsp_hseq>
+      <Hsp_midline>P    +  + + A MPG V +VKV+ G+ VK    + I EAMKMET I AP DG + Q+ V  GD + TG  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14174</Hit_id>
+  <Hit_def>gnl|TC-DB|Q57111|3.B.1.1.2 GAMMA-SUBUNIT,METHYLMALONYL-COA DECARBOXYLASE - Veillonella parvula.</Hit_def>
+  <Hit_accession>14174</Hit_accession>
+  <Hit_len>129</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.003</Hsp_bit-score>
+      <Hsp_score>149</Hsp_score>
+      <Hsp_evalue>2.28614e-11</Hsp_evalue>
+      <Hsp_query-from>1080</Hsp_query-from>
+      <Hsp_query-to>1143</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>64</Hsp_align-len>
+      <Hsp_qseq>IGAQMPGSVTEVKVSVGETVKANQPLLITEAMKMETTIQAPFDGVIKQVTVNNGDTIATGDLLI</Hsp_qseq>
+      <Hsp_hseq>VKAPMPGKILSVAVSAGQAVKKGETLLILEAMKMQNEIAAPHDAVVSEVRVSANQTVSTGDDMV</Hsp_hseq>
+      <Hsp_midline>+ A MPG +  V VS G+ VK  + LLI EAMKM+  I AP D V+ +V V+   T++TGD ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>109</Statistics_hsp-len>
+      <Statistics_eff-space>7835528925</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

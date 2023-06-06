@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500824.1 F0F1 ATP synthase subunit B [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>173</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500824.1 F0F1 ATP synthase subunit B [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>173</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8504</Hit_id>
+  <Hit_def>gnl|TC-DB|P09221|3.A.2.1.14 ATP synthase subunit b OS=Bacillus sp. (strain PS3) OX=2334 GN=atpF PE=1 SV=1</Hit_def>
+  <Hit_accession>8504</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.502</Hsp_bit-score>
+      <Hsp_score>345</Hsp_score>
+      <Hsp_evalue>6.99269e-42</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>ANLFVLG-AAGGVEWGTVIVQVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKA</Hsp_qseq>
+      <Hsp_hseq>ANVWVLGEAAHGISGGTIIYQLLMFIILLALLRKFAWQPLMNIMKQREEHIATKSTRRKNDRQEAEKLLEEQRELMKQSRQEAQALIENAASLAEEQKEQIVASARAEAERVKEAAKKEIEREKEQAMAALREQVASLSVLIASKVIEKELTEQDQAA</Hsp_hseq>
+      <Hsp_midline>AN++VLG AA G+  GT+I Q+L FI+LLALL+KFAW PL ++M +RE  I       +  +  A+KL EE ++ +K++++E Q ++E+A   A +Q+EQI+  A   A  + E A+ EI  +KE+A+A +  QV+ LSVLIASKV+ KE++EQDQ A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18868</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9RMB4|3.A.2.1.5 ATP synthase subunit b OS=Acetobacterium woodii GN=atpF PE=3 SV=1</Hit_def>
+  <Hit_accession>18868</Hit_accession>
+  <Hit_len>184</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.1225</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>3.5877e-23</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>172</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>LFVLGAAGGVEWGTVIVQVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDKYLKEAGD</Hsp_qseq>
+      <Hsp_hseq>IFEYAGLVGIDLKLLLATIVNFIIFFLLLEHFFYGKVKDILAKRQDDVTAEIVGATEKNTAAAKLKQEYEGLLSDIRAKEREIIRNATVEGQSERQEIIDKAHSDAKLIIEKAMAEIEVEKRKAMNEVKSNIVDLSLYAAEKIIVETLAQKKHEAMVLDFIDKGGD</Hsp_hseq>
+      <Hsp_midline>+F      G++   ++  ++ FI+   LL+ F +G +KD++ KR+ D+  +I  A +    A KL++E +  L + + + ++I+ +A V+ + ++++II +A+  A  +IE A +EI  +K +A+ ++ + + +LS+  A K++ + ++++  +A+V  ++ + GD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9379</Hit_id>
+  <Hit_def>gnl|TC-DB|P21904|3.A.2.1.2 ATP synthase B chain, sodium ion specific (EC 3.6.3.15) - Propionigenium modestum.</Hit_def>
+  <Hit_accession>9379</Hit_accession>
+  <Hit_len>168</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.9593</Hsp_bit-score>
+      <Hsp_score>206</Hsp_score>
+      <Hsp_evalue>5.8337e-21</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>QVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDKYLKEAGDK</Hsp_qseq>
+      <Hsp_hseq>QIINFLILMFFFKKYFQKPIAKVLDARKEKIANDLKQAEIDKEMAAKANGEAQGIVKSAKTEANEMLLRAEKKADERKETILKEANTQREKMLKSAEVEIEKMKEQARKELQLEVTDLAVKLAEKMINEKVDAKIGANLLDQFIGEVGEE</Hsp_hseq>
+      <Hsp_midline>Q++ F++L+   KK+   P+  V+D R+  I  D+  AE  K  A K   E +  +K  + E  ++L  A+ +A +++E I+ EAN +   M+++A+ EI   KE+A  ++  +V++L+V +A K++ +++  +    L+D+++ E G++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4460</Hit_id>
+  <Hit_def>gnl|TC-DB|F8L1Z5|3.A.2.1.6 ATP synthase subunit b OS=Parachlamydia acanthamoebae (strain UV7) GN=atpF PE=3 SV=1</Hit_def>
+  <Hit_accession>4460</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>5.86387e-19</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>156</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>154</Hsp_align-len>
+      <Hsp_qseq>VEWGTVIVQVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDKYLKE</Hsp_qseq>
+      <Hsp_hseq>LELEQIISQIVAFLIMVWILKRYAWQPLLKIIEERRAKIQNEFSKIEEQKKEISQLMEDYQEKLKDIDVEARQRLEATAERGFKIAQQIREDAYRQANYIMNKAHEDALKETERAKLQLKEQIVELVVNATQKVIQEKLDLQKDKQMIETFIEK</Hsp_hseq>
+      <Hsp_midline>+E   +I Q++ F++++ +LK++AW PL  ++++R   I  +    E+ K    +L E+ ++KLK+   E ++ LE    +  +  +QI  +A  +AN ++  A  +   + ERA   +  Q+ EL V    KV+++++  Q  K +++ ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8695</Hit_id>
+  <Hit_def>gnl|TC-DB|P0ABA0|3.A.2.1.1 ATP synthase B chain - Escherichia coli.</Hit_def>
+  <Hit_accession>8695</Hit_accession>
+  <Hit_len>156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.7962</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>1.03282e-18</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>TVIVQVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDKYLKE</Hsp_qseq>
+      <Hsp_hseq>TILGQAIAFVLFVLFCMKYVWPPLMAAIEKRQKEIADGLASAERAHKDLDLAKASATDQLKKAKAEAQVIIEQANKRRSQILDEAKAEAEQERTKIVAQAQAEIEAERKRAREELRKQVAILAVAGAEKIIERSVDEAANSDIVDKLVAE</Hsp_hseq>
+      <Hsp_midline>T++ Q + F++ +    K+ W PL   ++KR+++I   +  AE+A  +    +     +LK+ + E Q I+E A  +  Q  ++   EA      ++  AQ+EI ++++RA  ++  QV+ L+V  A K++ + + E     +VDK + E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2231</Hit_id>
+  <Hit_def>gnl|TC-DB|BAK19943|3.A.2.1.10 ApH+ATPase b subunit [Aphanothece halophytica]</Hit_def>
+  <Hit_accession>2231</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.1738</Hsp_bit-score>
+      <Hsp_score>178</Hsp_score>
+      <Hsp_evalue>7.25037e-17</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>161</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>TVIVQVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEI</Hsp_qseq>
+      <Hsp_hseq>TLPLMAVQFLVLVALLNVLFYKPLTRVLDERAEYIRKNLNEAKENAKKSEELAQKFDEQLKDVRRESQEIIAQAQAEAQEQAAKNIAQAQQEVQAQREKATAEITAQKQEALQSLESQVDTLSRQILEKLVGADL</Hsp_hseq>
+      <Hsp_midline>T+ +  + F+VL+ALL    + PL  V+D+R   I +++++A++    +++L ++  ++LK+ + E Q+I+  A+ +A++Q  + I +A        E A +EI +QK+ A+  + +QV  LS  I  K++  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13681</Hit_id>
+  <Hit_def>gnl|TC-DB|Q467F5|3.A.2.1.12 ATP synthase F0 subcomplex B subunit OS=Methanosarcina barkeri (strain Fusaro / DSM 804) OX=269797 GN=Mbar_A3100 PE=3 SV=1</Hit_def>
+  <Hit_accession>13681</Hit_accession>
+  <Hit_len>413</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.9442</Hsp_bit-score>
+      <Hsp_score>180</Hsp_score>
+      <Hsp_evalue>5.30624e-16</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>VEWGTVIVQVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDKYLK</Hsp_qseq>
+      <Hsp_hseq>IDWFTVIAQVINFLILVWLLKRFLYKPILNAVDAREKRVADELKNADEKEAEAQKEKEKFKRKNEEFDQQRNDFLNKAKEEVQAERQRLFEDVREEASYLRAKQQEALRNEGQNLSQEIGRRTQQEVFFIARKVLTDLTETSLEERAVDVFVQ</Hsp_hseq>
+      <Hsp_midline>++W TVI QV+ F++L+ LLK+F + P+ + +D RE+ +  ++ +A++ +  AQK +E+ K+K +E  ++    L  AK + + +++++  +    A+ +    Q  + ++ +    +I  +  +    IA KVL        ++  VD +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2226</Hit_id>
+  <Hit_def>gnl|TC-DB|BAK19937|3.A.2.1.9 ApNa+ATPase b subunit [Aphanothece halophytica]</Hit_def>
+  <Hit_accession>2226</Hit_accession>
+  <Hit_len>256</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.3218</Hsp_bit-score>
+      <Hsp_score>168</Hsp_score>
+      <Hsp_evalue>9.10935e-15</Hsp_evalue>
+      <Hsp_query-from>17</Hsp_query-from>
+      <Hsp_query-to>173</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>EWGTVIVQVLTFIVLLALLKKFAWGPLKDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDKYLKEAGDK</Hsp_qseq>
+      <Hsp_hseq>DWFTFFAQIINFVILVYLLWRFLYRPINKVMDDRQRQLQERWNDAREQEEKAQQEAQKYRDQQAELEAQREALISEAKAEAEQKRQQLRQSAREEIQQRREQWQEALQQEKESFYARSRQKLQQETITICRRVLQDLADAELEDQAIALFLERLKDQ</Hsp_hseq>
+      <Hsp_midline>+W T   Q++ F++L+ LL +F + P+  VMD R+R +    +DA + +  AQ+  ++ + +  E + + + ++ +AK +A Q+++Q+   A        E  Q  +  +KE   A    ++ + ++ I  +VL+     + +   +  +L+   D+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3126</Hit_id>
+  <Hit_def>gnl|TC-DB|D3E1Y5|3.A.2.3.2 A1A0 archaeal ATP synthase subunit H AhaH OS=Methanobrevibacter ruminantium (strain ATCC 35063 / DSM 1093 / JCM 13430 / M1) GN=ahaH PE=4 SV=1</Hit_def>
+  <Hit_accession>3126</Hit_accession>
+  <Hit_len>104</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.000208482</Hsp_evalue>
+      <Hsp_query-from>78</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>87</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>KLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDK</Hsp_qseq>
+      <Hsp_hseq>QIKKAESDADSLVEQSTVDAKA----MIDEAHVKANEMVEAAKNEANEEAQSTVFDAEENAKKEATSISSQ------ADSDVEAIKNK</Hsp_hseq>
+      <Hsp_midline>++K+ + +   ++E + V A+     +I EA+V+AN M+E A++E N + +  + D      + +  I+S+      ++ D +A+ +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7571</Hit_id>
+  <Hit_def>gnl|TC-DB|O76329|1.I.1.1.5 Interaptin OS=Dictyostelium discoideum OX=44689 GN=abpD PE=1 SV=1</Hit_def>
+  <Hit_accession>7571</Hit_accession>
+  <Hit_len>1738</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000305224</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>933</Hsp_hit-from>
+      <Hsp_hit-to>1051</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>VMDKRER--DINRDIDDAEQAKLNAQKLEE----ENKQKLKETQEEVQKILEDAKVQARQQQ--EQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQK</Hsp_qseq>
+      <Hsp_hseq>VNEKNEKLIQLQQDYDQLKQQNRSNDEKDENDLIEKENQLKSIQNELNQLIEKNESDHKEQQLKQQSIENDLIEKENQIQQLQSQLNEQRQQQ----SNQLSEKDQQLNQLIEKNQFDQKEQQ</Hsp_hseq>
+      <Hsp_midline>V +K E+   + +D D  +Q   +  + +E    E + +LK  Q E+ +++E  +   ++QQ  +Q I    +     I+  QS++N Q+++     +NQ+SE    +   + + +  +++Q+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000305224</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>996</Hsp_hit-from>
+      <Hsp_hit-to>1105</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>RERDINRDIDDAE------QAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQ--EQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQK</Hsp_qseq>
+      <Hsp_hseq>KQQSIENDLIEKENQIQQLQSQLNEQRQQQSNQ--LSEKDQQLNQLIEKNQFDQKEQQLKQQSIENDLFEKENQIQQLQSQLNEQRQQQSNQLSEKDQQLNQLI-------EKNESDQK</Hsp_hseq>
+      <Hsp_midline>+++ I  D+ + E      Q++LN Q+ ++ N+  L E  +++ +++E  +   ++QQ  +Q I          I+  QS++N Q+++    ++ +  +L+ LI       E +E DQK</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000554284</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>169</Hsp_query-to>
+      <Hsp_hit-from>1029</Hsp_hit-from>
+      <Hsp_hit-to>1158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>MDKRERDINRDID----DAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQK------ERAIADINNQVSELSV-LIASKVLRKEISEQDQKAL-VDKYLKE</Hsp_qseq>
+      <Hsp_hseq>LSEKDQQLNQLIEKNQFDQKEQQLKQQSIEND----LFEKENQIQQLQSQLNEQ-RQQQSNQLSEKDQQLNQLIEKNESDQKEQQLKQQSIENDLIEKENQIQQLQLQLNEQRQLQSEVSIDNDKILELEKQLKQ</Hsp_hseq>
+      <Hsp_midline>+ ++++ +N+ I+    D ++ +L  Q +E +    L E + ++Q++      Q RQQQ   + E + + N +IE  +S+   Q+      E  + +  NQ+ +L + L   + L+ E+S  + K L ++K LK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12871</Hit_id>
+  <Hit_def>gnl|TC-DB|Q1CY80|2.A.6.7.3 Putative membrane protein OS=Myxococcus xanthus (strain DK 1622) GN=MXAN_6520 PE=4 SV=1</Hit_def>
+  <Hit_accession>12871</Hit_accession>
+  <Hit_len>894</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000389973</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>IVLLALLKKFAWGPLKDVMDKRERD-INRDIDDAEQAKLNAQK----------LEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKALVDKY</Hsp_qseq>
+      <Hsp_hseq>LVMLALLAVSLWGTSKLHINSNQLDLISQDLEEVKDVKQVIDMVGGSGFLMVALRSEDEAALKRTADDLAKIMQDDKENVRNVSYKLPVEF-IQQNMVLFVKTEDLVEGKRRIMAFLRDKLKRSNPFFIDLGGSKPV-ELDMQDLVDKY</Hsp_hseq>
+      <Hsp_midline>+V+LALL    WG  K  ++  + D I++D+++ +  K               L  E++  LK T +++ KI++D K   R    ++  E  ++ N ++     ++   K R +A + +++   +         K + E D + LVDKY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9058</Hit_id>
+  <Hit_def>gnl|TC-DB|P12270|1.I.1.1.3 Nucleoprotein TPR OS=Homo sapiens GN=TPR PE=1 SV=3</Hit_def>
+  <Hit_accession>9058</Hit_accession>
+  <Hit_len>2363</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.000757442</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>161</Hsp_query-to>
+      <Hsp_hit-from>946</Hsp_hit-from>
+      <Hsp_hit-to>1054</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>KDVMDKRERDINRDIDDAEQAKLNAQKLEEENKQKLKETQEEVQKILEDAKVQARQQQEQIIHEANVRANGMIETAQSEINSQKERAIADINNQVSELSVLIASKVLRKEISEQDQKA</Hsp_qseq>
+      <Hsp_hseq>EQVNDLKER-LKTSTSNVEQYQAMVTSLEE-SLNKEKQVTEEVRKNIEVRLKESAEFQTQLEKKLME-----VEKEKQELQDDKRRAIESMEQQLSELKKTLSS--VQNEVQEALQRA</Hsp_hseq>
+      <Hsp_midline>+ V D +ER +     + EQ +     LEE +  K K+  EEV+K +E    ++ + Q Q+  +        +E  + E+   K RAI  +  Q+SEL   ++S  ++ E+ E  Q+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>91</Statistics_hsp-len>
+      <Statistics_eff-space>650968398</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

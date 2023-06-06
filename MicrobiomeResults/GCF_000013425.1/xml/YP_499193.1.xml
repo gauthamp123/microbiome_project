@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499193.1 monovalent cation/H+ antiporter subunit G [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>152</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499193.1 monovalent cation/H+ antiporter subunit G [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>152</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6724</Hit_id>
+  <Hit_def>gnl|TC-DB|O05227|2.A.63.1.4 Na(+)/H(+) antiporter subunit G - Bacillus subtilis.</Hit_def>
+  <Hit_accession>6724</Hit_accession>
+  <Hit_len>124</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.2041</Hsp_bit-score>
+      <Hsp_score>230</Hsp_score>
+      <Hsp_evalue>2.56933e-25</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>106</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>96</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>EIFSLIAAVMLLLGSFIALISAIGIVKFQDVFLRSHAATKSSTLSVLLTLIGVLIYFIVNTGFFSVRLLLSLVFINLTSPVGMHLVARAAYRNG</Hsp_qseq>
+      <Hsp_hseq>ETAKVVVAVFILLGALICLIASFGVLRLPDVFTRAHAASKGSTLGVNMILLGVFFYLWFVTGELSAKILLGILFIFITSPIGGHLICRAAYNSG</Hsp_hseq>
+      <Hsp_midline>E   ++ AV +LLG+ I LI++ G+++  DVF R+HAA+K STL V + L+GV  Y    TG  S ++LL ++FI +TSP+G HL+ RAAY +G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18344</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9KDA1|2.A.63.1.2 Na+/H+ antiporter OS=Bacillus halodurans GN=BH1313 PE=4 SV=1</Hit_def>
+  <Hit_accession>18344</Hit_accession>
+  <Hit_len>117</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.3445</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>6.13132e-22</Hsp_evalue>
+      <Hsp_query-from>17</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>99</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>LIAAVMLLLGSFIALISAIGIVKFQDVFLRSHAATKSSTLSVLLTLIGVLIYFIVNTGFFSVRLLLSLVFINLTSPVGMHLVARAAYRNGAYMY</Hsp_qseq>
+      <Hsp_hseq>IIVSLFILLGAFLSFLASVGIIRFPDVYGRIHAATKSATLGVISIMVATFLYFLLIEGLFVGKILFTILFVFLTAPVAGLMISRSAYRIGVPLW</Hsp_hseq>
+      <Hsp_midline>+I ++ +LLG+F++ ++++GI++F DV+ R HAATKS+TL V+  ++   +YF++  G F  ++L +++F+ LT+PV   +++R+AYR G  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11128</Hit_id>
+  <Hit_def>gnl|TC-DB|P60698|2.A.63.1.3 Na(+)/H(+) antiporter subunit G - Staphylococcus aureus.</Hit_def>
+  <Hit_accession>11128</Hit_accession>
+  <Hit_len>118</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.8037</Hsp_bit-score>
+      <Hsp_score>203</Hsp_score>
+      <Hsp_evalue>2.51032e-21</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>103</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>94</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>65</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>KEIFSLIAAVMLLLGSFIALISAIGIVKFQDVFLRSHAATKSSTLSVLLTLIGVLIYFIVNTGFFSVRLLLSLVFINLTSPVGMHLVARAAY</Hsp_qseq>
+      <Hsp_hseq>KIILISLALIFVIIGALISALAAIGLLRLEDVYSRAHAAGKASTLGAMSLLFGTFLYFIATQGFVNMQLIVAIIFVLITGPLSSHMIMKAAY</Hsp_hseq>
+      <Hsp_midline>K I   +A + +++G+ I+ ++AIG+++ +DV+ R+HAA K+STL  +  L G  +YFI   GF +++L+++++F+ +T P+  H++ +AAY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16909</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8U105|3.D.1.4.1 Hypothetical protein PF1425 - Pyrococcus furiosus.</Hit_def>
+  <Hit_accession>16909</Hit_accession>
+  <Hit_len>124</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>3.04683e-08</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>106</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>102</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>LISAIGIVKFQDVFLRSHAATKSSTLSVLLTLIGVLIYFIVN---TG-----FFSVRLLLSLVFINLTSPVGMHLVARAAYRNG</Hsp_qseq>
+      <Hsp_hseq>MLGSIALHRFPDVYTRLHGATKCTTFGTIFAALAVITHAIVKLQATGNPKYLQMAIHSFVAMLALLLTNPVGAHAIAKAAHKTG</Hsp_hseq>
+      <Hsp_midline>++ +I + +F DV+ R H ATK +T   +   + V+ + IV    TG       ++   ++++ + LT+PVG H +A+AA++ G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19564</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9Z3Q3|2.A.63.1.1 PHAG protein (PH adaptation potassium efflux system G transmembrane protein) - Rhizobium meliloti (Sinorhizobium meliloti).</Hit_def>
+  <Hit_accession>19564</Hit_accession>
+  <Hit_len>121</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>1.53237e-06</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>102</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>SLIAAVMLLLGSFIALISAIGIVKFQDVFLRSHAATKSSTLSVLLTLIGVLIYFIVNTGFFSVRLLLSLVFINLTSPVGMHLVARAA-YRN</Hsp_qseq>
+      <Hsp_hseq>ALLVCGLMLVGAATTLIGSLGLLRLPDFYARLHAPTIATSGGTILLCLASILCFAVLQSRWVFHEVLIIFFVTVTTPVTLMLLGQATLYRD</Hsp_hseq>
+      <Hsp_midline>+L+   ++L+G+   LI ++G+++  D + R HA T +++   +L  +  ++ F V    +    +L + F+ +T+PV + L+ +A  YR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>89</Statistics_hsp-len>
+      <Statistics_eff-space>503016255</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

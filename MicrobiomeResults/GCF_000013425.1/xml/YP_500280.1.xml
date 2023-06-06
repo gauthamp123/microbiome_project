@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500280.1 hypothetical protein SAOUHSC_01775 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>271</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500280.1 hypothetical protein SAOUHSC_01775 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>271</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|647</Hit_id>
+  <Hit_def>gnl|TC-DB|A6V120|9.B.14.3.5 Membrane protein, putative OS=Pseudomonas aeruginosa (strain PA7) GN=PSPA7_1371 PE=4 SV=1</Hit_def>
+  <Hit_accession>647</Hit_accession>
+  <Hit_len>266</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>1.93975e-08</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>264</Hsp_query-to>
+      <Hsp_hit-from>58</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>PLGSISDVFYTLSWLIISISLILNLIKVLNFSVFFLNLIGLTLLGMNTFQPTHYTNKVQKIAVVDELLLVHIGLAVLSYVFFALAFVNALLYIMQYRNLKEKRFDQKYFRIGSVATLESIVFYSTLSGWIILIFSIILGTQWGVISVGERIFIDPKVILSSIITVLYGSYILLRINKWLNSRYLIYYNIILFCLNMINLF</Hsp_qseq>
+      <Hsp_hseq>PAGLVLDFFNAAS-LIAAAVILLTLLATLRIPVENLLLLLFPLGALTTLLAVFIPHGTVEPINEQPGILAHILLSILAYGLLTIAVFQALLLLLQDYRLKHKHPSGLIRNFPPLQTMESLLFGFLWGGWSLLSLSLLSG--WLFVDNLFAQHLAHKTILSCFAWVVFAVLLWGRHQLGWRGHKAIRWTLAGFCLLMLAYF</Hsp_hseq>
+      <Hsp_midline>P G + D F   S LI +  ++L L+  L   V  L L+   L  + T       +   +       +L HI L++L+Y    +A   ALL ++Q   LK K           + T+ES++F     GW +L  S++ G  W  +       +  K ILS    V++   +  R          I + +  FCL M+  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2149</Hit_id>
+  <Hit_def>gnl|TC-DB|B8ZT62|9.B.14.3.4 Possible cytochrome C biogenesis protein OS=Mycobacterium leprae (strain Br4923) GN=MLBr02409 PE=4 SV=1</Hit_def>
+  <Hit_accession>2149</Hit_accession>
+  <Hit_len>327</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>2.05562e-06</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>265</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>312</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>239</Hsp_align-len>
+      <Hsp_qseq>LGIYLLGIVWVLQTISLSIFIIQTRHIPLGSISDVFYTLSWL--IISISLILNLIKVLNFSVFFLN--LIGLTLLGMNTFQPTHYTNKVQKIAVVDELLL-VHIGLAVLSYVFFALAFVNALLYIMQYRNLKE------KRFDQKYFRIGSVATLESIVFYSTLSGWIILIFSIILGTQWGVISVGERIFIDPKVILSSIITVLYGSYILLRINKWLNSRYLIYYNIILFCLNMINLFF</Hsp_qseq>
+      <Hsp_hseq>LAVAYLGIGLLLACILLRG--LATLRVPWGNMYE-FINLTCFSELVAGAIVLRRRQYRPLWVFLLVSVLILLTISGRWL-----YANAAPVIPALQSYWLPIHVSVVSLGSGIFLVAGIASILFLLSTSRLVASDPEGAKALARLVRRFPDAQTLDRIAYRTTIFAFPVFGFGVIFGAIWAEQAWGRYWGWDPKETVSFVAWVVYAAYLHARSTAGWRDRRAAWINVVGCVAMVFNLFF</Hsp_hseq>
+      <Hsp_midline>L +  LGI  +L  I L    + T  +P G++ + F  L+    +++ +++L   +     VF L   LI LT+ G        Y N    I  +    L +H+ +  L    F +A + ++L+++    L        K   +   R     TL+ I + +T+  + +  F +I G  W   + G     DPK  +S +  V+Y +Y+  R       R   + N++     + NLFF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19662</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9ZZP7|9.B.14.1.4 Cytochrome C-type biogenesis protein CCMF OS=Cyanidioschyzon merolae GN=yejR or ccmF PE=4 SV=1</Hit_def>
+  <Hit_accession>19662</Hit_accession>
+  <Hit_len>620</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>2.11882e-05</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>FNEIILLIYLISIICYFYDF----VQKSHKIRSLGIYLLGIVWVLQTISLSI-----FIIQTRHIPLGSISDVFYTLSWLIISISLILNLIKVL-NFSVFFLNLIGLTLLGMNTFQPTHYTNKVQKIAVVDELLLVHIGLAVLSYVFFALAFVNALLYIMQYRNLKEKRFDQKYFRIGSVATLESIVFYSTLSGWIILIFSIILGTQWGVISVG</Hsp_qseq>
+      <Hsp_hseq>YNIIIIIIWLIGIILLLSDFSILFVVELSSVNQPSLYKLITLWSNNEGSLFLGYFLQFIIYFTFI------NYFINKLTLIVKLTFFYNVYFILFNISFLSLTLLLIFLRFDFFFNFTVLEGNELNFLLQDINILIHPPLIYISYASYSIIFSISFTILI---------IKCKFYVL-------YILRFLNLIGWFIASFSILLGSRWAYTELG</Hsp_hseq>
+      <Hsp_midline>+N II++I+LI II    DF    V +   +    +Y L  +W     SL +     FII    I      + F     LI+ ++   N+  +L N S   L L+ + L     F  T          + D  +L+H  L  +SY  +++ F  +   ++            K++ +        I+ +  L GW I  FSI+LG++W    +G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15605</Hit_id>
+  <Hit_def>gnl|TC-DB|Q7VCA3|9.B.14.3.2 Cytochrome c biogenesis protein CcsA OS=Prochlorococcus marinus (strain SARG / CCMP1375 / SS120) GN=ccsA PE=3 SV=1</Hit_def>
+  <Hit_accession>15605</Hit_accession>
+  <Hit_len>316</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>4.8999e-05</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>258</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>290</Hsp_align-len>
+      <Hsp_qseq>NLFIRFN---------EIILLIYLISIICYFYDFVQKSHKIRSLGIYLLGIVWVLQTISLSIFIIQTRHIPLGSISDVFYTLSWLIISISLILNLIKVLNFSVFFLNLIGLTLLGMNTFQPTHYTNKVQKI--AVVDELLLVHIGLAVLSYVFFALAFVNALLYIMQ-----------------YRNLKE-----KRFDQKY-FRIGSVATLESIVFYSTLSGWIILIFSIILGTQWGVISVGERIFIDPKVILSSIITVLYGSYILLRINK-WLNSRYLIYYNIILFCL</Hsp_qseq>
+      <Hsp_hseq>NLFLYINGLDPVLTLGSLAFVLILISLPFSFWNVGENSNS--SIVRILIASANILLAIQLVFRWIQSGHFPISNLYESLCFLTWGLTFIQLLIERTFPYPLIQAALTPISLLSIAFASFVLPDELKASSSLVPALKSNWLVMHVSVIMCSYAALLIGSLLSLVVLLSSSRETLQIRSNSMGIGGFKNKSENLNIVKSIDELIPITFSKSEELDNLSYRTITFGFLLLTFGLISGAVWANEAWGSWWSWDPKETWAFISWLIYAAYLHTRLSRGWQGKRPAIIAIIGLFII</Hsp_hseq>
+      <Hsp_midline>NLF+  N          +  ++ LIS+   F++  + S+   S+   L+    +L  I L    IQ+ H P+ ++ +    L+W +  I L++            L  I L  +   +F           +  A+    L++H+ + + SY    +  + +L+ ++                  ++N  E     K  D+           L+++ + +   G+++L F +I G  W   + G     DPK   + I  ++Y +Y+  R+++ W   R  I   I LF +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11202</Hit_id>
+  <Hit_def>gnl|TC-DB|P64432|9.B.14.3.6 Inner membrane protein YpjD OS=Escherichia coli (strain K12) GN=ypjD PE=1 SV=1</Hit_def>
+  <Hit_accession>11202</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000100139</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>253</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>242</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>253</Hsp_align-len>
+      <Hsp_qseq>FNEIILLIYLISIICYFYDFVQKSHKIRSLGIYLLGIVWVLQTISLSIFIIQTRHIPLGSISDVFYTL---SWLIISISLILNLIKVLNFSVFFLNLI---GLTLLGMNTFQPTHYTNKVQKIAVVDELLLVHIGLAVLSYVFFALAFVNALLYIMQYRNLKEKR--FDQKYFRIGSVATLESIVFYSTLSGWIILIFSIILGTQWGVISVGERIFIDPKVILSSIITVLYGSYILLRINKWLNSRYLIYYNI</Hsp_qseq>
+      <Hsp_hseq>FALLALVAYSVSLALIVPGLLQKNGGWRRMAIISAVIALVCHAIAL-----EARILPDGDSGQNLSLLNVGSLVSLMICTVMTIVASRNRGWLLLPIVYAFALINLALATFMPNEYITHLEATPG----MLVHIGLSLFSYATLIIAALYALQLAWIDYQLKNKKLAFNQE---MPPLMSIERKMFHITQIGVVLLTLTLCTGLFY-MHNLFSMENID-KAVLSIVAWFVYIVLLWGHYHEGWRGRRVVWFNV</Hsp_hseq>
+      <Hsp_midline>F  + L+ Y +S+       +QK+   R + I    I  V   I+L     + R +P G        L   S + + I  ++ ++   N     L ++    L  L + TF P  Y   ++        +LVHIGL++ SY    +A + AL        LK K+  F+Q+   +  + ++E  +F+ T  G ++L  ++  G  + + ++     ID K +LS +   +Y   +    ++    R ++++N+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6549</Hit_id>
+  <Hit_def>gnl|TC-DB|MSR49334.1|9.B.14.3.10 hypothetical protein EXS07_04720 [Gemmataceae bacterium]</Hit_def>
+  <Hit_accession>6549</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.00013797</Hsp_evalue>
+      <Hsp_query-from>65</Hsp_query-from>
+      <Hsp_query-to>263</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>259</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>206</Hsp_align-len>
+      <Hsp_qseq>PLGSISDVFYTLSWLIISISL--ILNLIKVLNFSVFFLNLIGLTLLGMNTFQPTHYT--NKVQK-IAVVDELLLVHIGLAVLSYVFFALAFVNALLYIMQYRNLKEKRFDQKYFRIGSVATLESIVFYSTLSGWIILIFSIILGTQWGVISVGERI--FIDPKVILSSIITVLYGSYILLRINKWLNSRYLIYYNIILFCLNMINL</Hsp_qseq>
+      <Hsp_hseq>PLAQQFGWFLLSSWILSTFYLYGIIHYRKIA-WGIFVLPLIILLVTLAAFFPPAMDAAGNRIGGLVSNIKTLGLLHVVFLLTATVVICLGSLASFMYLLHANQLKLKLAPGKGLAMLSLEKLETFIRFCIALSFPLLSMGLLLGLYLMLKNV-EKITGWTDPKIIGSSILWLAFLVLIYARYGFHLRGKQLASLTITVFALLILCL</Hsp_hseq>
+      <Hsp_midline>PL      F   SW++ +  L  I++  K+  + +F L LI L +     F P      N++   ++ +  L L+H+   + + V   L  + + +Y++    LK K    K   + S+  LE+ + +     + +L   ++LG    + +V E+I  + DPK+I SSI+ + +   I  R    L  + L    I +F L ++ L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1369247950</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

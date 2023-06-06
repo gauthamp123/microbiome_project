@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499644.1 thioredoxin [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>104</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499644.1 thioredoxin [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>104</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9706</Hit_id>
+  <Hit_def>gnl|TC-DB|P30101|8.A.88.2.7 Protein disulfide-isomerase A3 OS=Homo sapiens OX=9606 GN=PDIA3 PE=1 SV=4</Hit_def>
+  <Hit_accession>9706</Hit_accession>
+  <Hit_len>505</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>7.91829e-16</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>102</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>104</Hsp_align-len>
+      <Hsp_qseq>IVKVTDADFDSKVE----SGVQLVDFWATWCGPCKMIAPVLEELAADYEGKADILKLDVDENPSTAAKYEVMSIPTLIVFKDGQPVDKVVGFQPKENLAEVLDK</Hsp_qseq>
+      <Hsp_hseq>VLELTDDNFESRISDTGSAGLMLVEFFAPWCGHCKRLAPEYEAAATRLKGIVPLAKVDCTANTNTCNKYGVSGYPTLKIFRDGEEAGAYDGPRTADGIVSHLKK</Hsp_hseq>
+      <Hsp_midline>++++TD +F+S++     +G+ LV+F+A WCG CK +AP  E  A   +G   + K+D   N +T  KY V   PTL +F+DG+      G +  + +   L K</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>3.82131e-05</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>75</Hsp_query-to>
+      <Hsp_hit-from>378</Hsp_hit-from>
+      <Hsp_hit-to>453</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>VKVTDAD-FDSKV--ESGVQLVDFWATWCGPCKMIAPVLEELAADYEGKADIL--KLDVDENPSTAAKYEVMSIPTL</Hsp_qseq>
+      <Hsp_hseq>VKVVVAENFDEIVNNENKDVLIEFYAPWCGHCKNLEPKYKELGEKLSKDPNIVIAKMDATAN-DVPSPYEVRGFPTI</Hsp_hseq>
+      <Hsp_midline>VKV  A+ FD  V  E+   L++F+A WCG CK + P  +EL        +I+  K+D   N    + YEV   PT+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16325</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8IDP4|3.A.26.1.1 Thioredoxin 2 OS=Plasmodium falciparum (isolate 3D7) GN=trx2 PE=1 SV=1</Hit_def>
+  <Hit_accession>16325</Hit_accession>
+  <Hit_len>157</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>2.52416e-11</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>104</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>157</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>VESGVQLVDFWATWCGPCKMIAPVLEELAADYEGKADILKLDVDENPSTAAKYEVMSIPTLIVFKDGQPVDKVVGFQPKENLAEVLDKHL</Hsp_qseq>
+      <Hsp_hseq>MKNTVIVLYFFAKWCQACTMQSTEMDKLQKYYGKRIYLLKVDLDKNESLARKFSVKSLPTIILLKNKTMLARKDHFVSSNDLIALIKKHL</Hsp_hseq>
+      <Hsp_midline>+++ V ++ F+A WC  C M +  +++L   Y  +  +LK+D+D+N S A K+ V S+PT+I+ K+   + +   F    +L  ++ KHL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5813</Hit_id>
+  <Hit_def>gnl|TC-DB|KAG7207183.1|9.B.438.1.5 hypothetical protein KM043_008870 [Ampulex compressa]</Hit_def>
+  <Hit_accession>5813</Hit_accession>
+  <Hit_len>256</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>1.44932e-10</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>102</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>LVDFWATWCGPCKMIAPVLEELAADYEGKADILKLDVDENPSTAAKYEVMSIPTLIVFKDGQPVDKVVGFQPKENLAEVLDK</Hsp_qseq>
+      <Hsp_hseq>IVNFHAEWCDPCKILTPKLIELIEPMD-KLHLAIVNVELNPELVHIFEVKAVPAVIAISNGLVVDKFIGLVDTEMIENLIQK</Hsp_hseq>
+      <Hsp_midline>+V+F A WC PCK++ P L EL    + K  +  ++V+ NP     +EV ++P +I   +G  VDK +G    E +  ++ K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5720</Hit_id>
+  <Hit_def>gnl|TC-DB|KAE8286768.1|8.A.88.2.1 Protein disulfide-isomerase A6 [Larimichthys crocea]</Hit_def>
+  <Hit_accession>5720</Hit_accession>
+  <Hit_len>441</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>1.29677e-09</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>98</Hsp_query-to>
+      <Hsp_hit-from>163</Hsp_hit-from>
+      <Hsp_hit-to>264</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>IVKVTDADFDSKVESG--VQLVDFWATWCGPCKMIAP----VLEELAADYEGKADILKLDVDENPSTAAKYEVMSIPTLIVFKDGQPVDKVVGFQPKENLAE</Hsp_qseq>
+      <Hsp_hseq>VVELTDDNFDKLVLEGDDVWMVEFFAPWCGHCKSLEPEWAAAASAIKEQTKGKVRLGAVDATVHQAVSSRYGIRGFPTIKIFRKGEEPEDYQGGRSRGDIIE</Hsp_hseq>
+      <Hsp_midline>+V++TD +FD  V  G  V +V+F+A WCG CK + P        +    +GK  +  +D   + + +++Y +   PT+ +F+ G+  +   G + + ++ E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>6.15413e-09</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>78</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>78</Hsp_align-len>
+      <Hsp_qseq>IVKVTDADFDSKV--ESGVQLVDFWATWCGPCKMIAPVLEELAADYEGKADILKLDVDENPSTAAKYEVMSIPTLIVF</Hsp_qseq>
+      <Hsp_hseq>VIVLTPSNFNKEVIQSDSLWLVEFYAPWCGHCQSLTPDWKKAATALKGIVKIGAVDADEHKSLGGQYGVRGFPTIKIF</Hsp_hseq>
+      <Hsp_midline>++ +T ++F+ +V     + LV+F+A WCG C+ + P  ++ A   +G   I  +D DE+ S   +Y V   PT+ +F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5842</Hit_id>
+  <Hit_def>gnl|TC-DB|KDB12436.1|8.A.88.2.4 disulfide isomerase [Ustilaginoidea virens]</Hit_def>
+  <Hit_accession>5842</Hit_accession>
+  <Hit_len>455</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>5.46578e-08</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>IVKVTDADFDSKVESG--VQLVDFWATWCGPCKMIAPVLEELAADYEGKADILKLDVDE--NPSTAAKYEVMSIPTLIVFKDGQ</Hsp_qseq>
+      <Hsp_hseq>VLQVTSKTYSSLIAQSNHTSIVEFYAPWCGHCKNLKPAYENAAKKLDGLAKVAAVDCDDDANKQLCGAMDVKGFPTLKIVRPGK</Hsp_hseq>
+      <Hsp_midline>+++VT   + S +       +V+F+A WCG CK + P  E  A   +G A +  +D D+  N       +V   PTL + + G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18116</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9H3N1|8.A.88.2.5 Thioredoxin-related transmembrane protein 1 OS=Homo sapiens OX=9606 GN=TMX1 PE=1 SV=1</Hit_def>
+  <Hit_accession>18116</Hit_accession>
+  <Hit_len>280</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>9.11314e-08</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>110</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>78</Hsp_align-len>
+      <Hsp_qseq>VTDADFDSKVESGVQLVDFWATWCGPCKMIAPVLEELAADYEG-KADILKLDVDENPSTAAKYEVMSIPTLIVFKDGQ</Hsp_qseq>
+      <Hsp_hseq>ITDENWRELLE-GDWMIEFYAPWCPACQNLQPEWESFAEWGEDLEVNIAKVDVTEQPGLSGRFIITALPTIYHCKDGE</Hsp_hseq>
+      <Hsp_midline>+TD ++   +E G  +++F+A WC  C+ + P  E  A   E  + +I K+DV E P  + ++ + ++PT+   KDG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17507</Hit_id>
+  <Hit_def>gnl|TC-DB|Q96JJ7|8.A.88.2.3 Protein disulfide-isomerase TMX3 OS=Homo sapiens OX=9606 GN=TMX3 PE=1 SV=2</Hit_def>
+  <Hit_accession>17507</Hit_accession>
+  <Hit_len>454</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>4.83303e-07</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>79</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>106</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>VKVTDADFDSKVESGVQLVDFWATWCGPCKMIAPVLEELAADYE---GKADILKLDVDENPSTAAKYEVMSIPTLIVFK</Hsp_qseq>
+      <Hsp_hseq>VEDLDESFKENRNDDIWLVDFYAPWCGHCKKLEPIWNEVGLEMKSIGSPVKVGKMDATSYSSIASEFGVRGYPTIKLLK</Hsp_hseq>
+      <Hsp_midline>V+  D  F       + LVDF+A WCG CK + P+  E+  + +       + K+D     S A+++ V   PT+ + K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20389</Hit_id>
+  <Hit_def>gnl|TC-DB|U3IW20|8.A.88.2.2 Uncharacterized protein OS=Anas platyrhynchos GN=ERP44 PE=4 SV=1</Hit_def>
+  <Hit_accession>20389</Hit_accession>
+  <Hit_len>406</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>8.87816e-07</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>81</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>116</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>VQLVDFWATWCGPCKMIAPVLEE----LAADYEGKADIL--KLDVDENPSTAAKYEVMSIPTLIVFKDG</Hsp_qseq>
+      <Hsp_hseq>VALVNFYADWCRFSQMLHPIFEEASNVIKEEYPDKNQVVFARVDCDQHSDIAQRYRISKYPTLKLFRNG</Hsp_hseq>
+      <Hsp_midline>V LV+F+A WC   +M+ P+ EE    +  +Y  K  ++  ++D D++   A +Y +   PTL +F++G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6638</Hit_id>
+  <Hit_def>gnl|TC-DB|NP_648847.3|8.A.88.2.6 uncharacterized protein Dmel_CG5027 [Drosophila melanogaster]</Hit_def>
+  <Hit_accession>6638</Hit_accession>
+  <Hit_len>430</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>7.9095e-06</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>79</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>78</Hsp_align-len>
+      <Hsp_qseq>IVKVTDADFDSKVESGVQLVDFWATWCGPCKMIAPVLEELA-ADYEGKADILKLDVDENPSTAAKYEVMSIPTLIVFK</Hsp_qseq>
+      <Hsp_hseq>VLELSDRFIDVRHE-GQWLVMFYAPWCGYCKKTEPIFALVAQALHATNVRVGRLDCTKYPAAAKEFKVRGYPTIMFIK</Hsp_hseq>
+      <Hsp_midline>+++++D   D + E G  LV F+A WCG CK   P+   +A A +     + +LD  + P+ A +++V   PT++  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6927</Hit_id>
+  <Hit_def>gnl|TC-DB|O23166|3.D.3.5.2 Thioredoxin-like protein HCF164, chloroplastic OS=Arabidopsis thaliana GN=HCF164 PE=2 SV=2</Hit_def>
+  <Hit_accession>6927</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>1.82376e-05</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>98</Hsp_query-to>
+      <Hsp_hit-from>142</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>81</Hsp_align-len>
+      <Hsp_qseq>LVDFWATWCGPCKMIAPVLEELAADYEGKADILKLDVDEN--PSTAAKYEVMSIPTL-IVFKDGQPVDKVVGFQPKENLAE</Hsp_qseq>
+      <Hsp_hseq>VVEFYADWCEVCRELAPDVYKIEQQYKDKVNFVMLNVDNTKWEQELDEFGVEGIPHFAFLDREGNEEGNVVGRLPRQYLVE</Hsp_hseq>
+      <Hsp_midline>+V+F+A WC  C+ +AP + ++   Y+ K + + L+VD         ++ V  IP    + ++G     VVG  P++ L E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19482</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9Y320|1.I.1.1.3 Thioredoxin-related transmembrane protein 2 OS=Homo sapiens OX=9606 GN=TMX2 PE=1 SV=1</Hit_def>
+  <Hit_accession>19482</Hit_accession>
+  <Hit_len>296</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.000167298</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>LVDFWATWCGPCKMIAPVLEELAADYEGKA-DILKLDVDENPSTAAKYEVMS------IPTLIVFKDGQ</Hsp_qseq>
+      <Hsp_hseq>IVEFFANWSNDCQSFAPIYADLSLKYNCTGLNFGKVDVGRYTDVSTRYKVSTSPLTKQLPTLILFQGGK</Hsp_hseq>
+      <Hsp_midline>+V+F+A W   C+  AP+  +L+  Y     +  K+DV      + +Y+V +      +PTLI+F+ G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>74</Statistics_hsp-len>
+      <Statistics_eff-space>249824400</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

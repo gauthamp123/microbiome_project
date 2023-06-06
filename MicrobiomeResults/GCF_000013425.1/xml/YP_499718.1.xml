@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499718.1 primosomal protein N [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>802</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499718.1 primosomal protein N [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>802</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1287</Hit_id>
+  <Hit_def>gnl|TC-DB|AKM80781.1|3.A.11.1.5 hypothetical protein UW38_C0001G0951 [Candidatus Saccharibacteria bacterium GW2011_GWC2_44_17]</Hit_def>
+  <Hit_accession>1287</Hit_accession>
+  <Hit_len>646</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>345.895</Hsp_bit-score>
+      <Hsp_score>886</Hsp_score>
+      <Hsp_evalue>1.33969e-108</Hsp_evalue>
+      <Hsp_query-from>165</Hsp_query-from>
+      <Hsp_query-to>774</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>628</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>210</Hsp_identity>
+      <Hsp_positive>325</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>617</Hsp_align-len>
+      <Hsp_qseq>KTILTQNITKKTKRAVRVIEGYHPDEVLAKLEKVIKQYDLY--AYLSEEQHKTIFLTDIEDM---GFSKSSLDGLIKKGYVEKYDAVVERDPFKDRVFEQESKQQLTEDQYKAYEAIKAKIVSQEQETFLLHGVTGSGKTEVYLQTIEDVLSQGKQAMMLVPEIALTPQMVLRFKRRFGDDVAVLHSGLSNGERYDEWQKIRDGRA-RVSVGARSSVFAPFKNLGLIIIDEEHESTYKQEDYPRYHAREIAQWRSEYHHCPVILGSATPCLESYARAEKGVYHLLSLPNRVNQQALPE-IDIVDMREELSEGNRSMFSKDLREAIQLRLDRQEQVVLFLNRRGYASFMLCRDCGYVPQCPNCDISLTYHKTTDLLKCHYCGYQETPPNQCPNCESEHIRQVGTGTQKVEELLQQEFEDARIIRMDVDTTSKKGAHEKLLTEFEKGNGDILLGTQMIAKGLDYPNITLVGVLNADTMLNLPDFRASERTYQLLTQVAGRAGRHEKAGQVIIQTYNPDHYSILDVQKNDYLTFYRQEMEYRKLGKYPPYYYLINFTISHKEMKKVMVASQHVHKILLQHLTEKALVLGPSPAALARINNEFRFQILVKYKSEPGLLQAI</Hsp_qseq>
+      <Hsp_hseq>KKQLTGIITSATKKP-----SYETKSILSTIETAPLPTELIKLAFWLKEYYNSPLATVLQTLLPRGLQKNRRDRLS-----------THRESLRDR-----TTIVLTKDQHDAVQAVE----SMTPGSALVHGVTGSGKTHIYIELAKHTLARNQSVIILVPEIALTSQVVDEFSHHF-ENIILVHSRQTEAERHLAWQDALNSKSPRVVIGPRSALFTPLHHLGLIVIDEAHEPSFKQEQSPRYSALRAASVLTRLHDAKLILGSATPLVTDYYLAAQSDRPIITLPERAKKDATPPTITLVDMTKKASFTHHRFLSNTLLSELEASFSRGDQVLIFHNRRGSASTTLCENCGWSATCPQCFIPLTLHADAHHLRCHLCGRNEKVPTSCPTCHSADIIHKGIGTKLIESELRKRYPHKVIVRFDGDNESGDTV-ESRYNDLYSGAIDIIIGTQVIAKGLDLPKLRLVGVIQADAGLALPDYTSSERTFQLLAQVVGRVGRSHHPTTVVVQSYQPNHLAVTTGLAQNYEQFYETTIDERRRANFPPFTYLLKLTCIYKTEIAAIKNAKKLATELRAACPQSVQILGPTPSFYERQRDTYRWQLVLKSPRRADLVAAL</Hsp_hseq>
+      <Hsp_midline>K  LT  IT  TK+       Y    +L+ +E      +L   A+  +E + +   T ++ +   G  K+  D L              R+  +DR     +   LT+DQ+ A +A++    S    + L+HGVTGSGKT +Y++  +  L++ +  ++LVPEIALT Q+V  F   F +++ ++HS  +  ER+  WQ   + ++ RV +G RS++F P  +LGLI+IDE HE ++KQE  PRY A   A   +  H   +ILGSATP +  Y  A +    +++LP R  + A P  I +VDM ++ S  +    S  L   ++    R +QV++F NRRG AS  LC +CG+   CP C I LT H     L+CH CG  E  P  CP C S  I   G GT+ +E  L++ +    I+R D D  S     E    +   G  DI++GTQ+IAKGLD P + LVGV+ AD  L LPD+ +SERT+QLL QV GR GR      V++Q+Y P+H ++      +Y  FY   ++ R+   +PP+ YL+  T  +K     +  ++ +   L     +   +LGP+P+   R  + +R+Q+++K      L+ A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19619</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9ZKE4|3.A.11.3.1 Primosomal protein N&apos; OS=Helicobacter pylori J99 GN=priA PE=3 SV=1</Hit_def>
+  <Hit_accession>19619</Hit_accession>
+  <Hit_len>619</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>279.256</Hsp_bit-score>
+      <Hsp_score>713</Hsp_score>
+      <Hsp_evalue>8.8128e-84</Hsp_evalue>
+      <Hsp_query-from>283</Hsp_query-from>
+      <Hsp_query-to>774</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>597</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>172</Hsp_identity>
+      <Hsp_positive>261</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>492</Hsp_align-len>
+      <Hsp_qseq>QEQETFLLHGVTGSGKTEVYLQTIEDVLSQGKQAMMLVPEIALTPQMVLRFKRRFGDDVAVLHSGLSNGERYDEWQKIRDGRARVSVGARSSVFAPFKNLGLIIIDEEHESTYKQEDYPRYHAREIAQWRSEYHHCPVILGSATPCLESYARAEKGVYHLLSLPNRVNQQALPEIDIVDMREELSEGNRSMFSKDLREAIQLRLDRQEQVVLFLNRRGYASFMLCRDCGYVPQCPNCDISLTYHKTTDLLKCHYCGYQETPPNQCPNCESEHIRQVGTGTQKVEELLQQEFEDARIIRMDVDTTSKKGAHEKLLTEFEKGNGDILLGTQMIAKGLDYPNITLVGVLNADTMLNLPDFRASERTYQLLTQVAGRAGRHEKAGQVIIQTYNPDHYSILDVQKNDYLTFYRQEMEYRKLGKYPPYYYLINFTISHKEMKKVMVASQHVHKILLQHLTEKALVLGPSPAALARINNEFRFQILVKYKSEPGLLQAI</Hsp_qseq>
+      <Hsp_hseq>QKHPASLLFGDTGSGKTEIYMHAIAQTLEQKKSALLLVPEIALTPQMQQRLKKVFKENLGLWHSKLSQNQKKQFLEKLYSQEIKLVVGTRSALFLPLKELGLIIVDEEHDFSYKSQQSPMYNARDLCLYLSHKFPIQVILGSATPSLSSYQRFKDKA--LVRLKGRYTP---------TQKNIIFEKTERFITPKLLEALKQVIDKNEQAIIFVPTRANFKTLLCPNCYKSVQCPFCSVNMSLHLKTNKLMCHYCHFSSPIPKICNACQSEVLVGKRIGTMQVLKELESLLEGAKIAILDKDHTSTPKKLHNILNDFNAQKTNILIGTQMISKGHDYAKVSLAVVLGIDNIIKSNSYRALEEGVSLLYQIAGRSAR-QISGQVFIQSTETD---LLENFLEDYEDFLQYELQER-CELYPPFSRLCLLEFKHKNEEKAQQLSLEASQTLSLCL-EKGVTLSNFKAPIEKIASSYRYLILLRSKNPLSLIKSV</Hsp_hseq>
+      <Hsp_midline>Q+    LL G TGSGKTE+Y+  I   L Q K A++LVPEIALTPQM  R K+ F +++ + HS LS  ++    +K+     ++ VG RS++F P K LGLII+DEEH+ +YK +  P Y+AR++  + S      VILGSATP L SY R +     L+ L  R              +  + E      +  L EA++  +D+ EQ ++F+  R     +LC +C    QCP C ++++ H  T+ L CHYC +    P  C  C+SE +     GT +V + L+   E A+I  +D D TS       +L +F     +IL+GTQMI+KG DY  ++L  VL  D ++    +RA E    LL Q+AGR+ R + +GQV IQ+   D   +L+    DY  F + E++ R    YPP+  L      HK  +K    S    + L   L EK + L    A + +I + +R+ IL++ K+   L++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1256</Hit_id>
+  <Hit_def>gnl|TC-DB|AKM80112|3.A.11.1.5 putative ATP-dependent DNA helicase [Candidatus Saccharibacteria bacterium GW2011_GWC2_44_17]</Hit_def>
+  <Hit_accession>1256</Hit_accession>
+  <Hit_len>676</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>3.29822e-10</Hsp_evalue>
+      <Hsp_query-from>264</Hsp_query-from>
+      <Hsp_query-to>733</Hsp_query-to>
+      <Hsp_hit-from>255</Hsp_hit-from>
+      <Hsp_hit-to>651</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>182</Hsp_positive>
+      <Hsp_gaps>99</Hsp_gaps>
+      <Hsp_align-len>483</Hsp_align-len>
+      <Hsp_qseq>QLTEDQYKAYEAIKAKIVSQEQETFLLHGVTGSGKTEVYLQTIEDVLSQGKQAMMLVPEIALTPQ---MVLRFKRRFGDDVAVLHSGLSNGERYDEWQKIRDGRARVSVGARSSVF--APFKNLGLIIIDEEHESTYKQEDYPRYHAREIAQWRSEYHHCPVILG-SATPCLESYARAEKGVYHLLSLPNRVNQQALPEIDIVDMREELSEGNRSMFSKDLREAIQLRLDRQEQVVLFLNRRGYASFMLCRDCGYVPQCPNCDISLTYHKTTDLLKCHYCGYQETPPNQCPNCESEHIRQVGTGTQKVEELLQQEFEDARIIRMDVDTTSKKGAHEKLLTEFEKGNGDILLGTQMIAKGLDYPNITLVGVLNADTMLNLPDFRASERTYQLLTQVAGRAGR--HEKAGQVIIQTYNPDHYSILDVQK-NDYLTFYRQEMEYRKLGKYPPY----YYLINFTISHKEMKKVMVASQHVHKILLQ</Hsp_qseq>
+      <Hsp_hseq>ELTGAQRRAAWEIIQDFERQVPMNRLLQGDVGSGKTVVAGLAARQAAHHGFQTALMAPTEILASQHAETLSSLLAPFGVSVGLIMGGVKGQARKTLYEQIANGAVDVVVGTHALIQEKVQFKKLGFVAIDEQH----------RFGVKQRQQLLAKSEHLPHLLAMTATPIPRSLALTVYG-----------------ELD-VSIINELPKGRKPIDTRLWSPNSRAQLYEKIDIEIKTGRQAYVI------CSLIDENPDNDVKSVQEEYKKL----------------QNSVFKH-RRIGLLHGKL----------------------KSDEKEAVMAQFSSGSIDILVSTTVVEVGVDVPNATIIMIENADR------FGLSQ-----LHQLRGRVGRSSHQSYCYLVMSDSSKPSQRLKAIEKSND--GFYLAEVDLQLRGPGEIYGRSQHGALNLQIATLADTKMIARAQQAAKSFVE</Hsp_hseq>
+      <Hsp_midline>+LT  Q +A   I      Q     LL G  GSGKT V           G Q  ++ P   L  Q    +      FG  V ++  G+    R   +++I +G   V VG  + +     FK LG + IDE+H          R+  ++  Q  ++  H P +L  +ATP   S A    G                 E+D V +  EL +G + + ++      + +L  +  + +   R+ Y        C  + + P+ D+     +   L                 N   +H R++G    K+                      K    E ++ +F  G+ DIL+ T ++  G+D PN T++ + NAD       F  S+     L Q+ GR GR  H+    +++   +     +  ++K ND   FY  E++ +  G    Y    +  +N  I+     K++  +Q   K  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10241</Hit_id>
+  <Hit_def>gnl|TC-DB|P39145|3.A.11.1.1 COMF OPERON PROTEIN 1 - Bacillus subtilis.</Hit_def>
+  <Hit_accession>10241</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>4.74256e-08</Hsp_evalue>
+      <Hsp_query-from>264</Hsp_query-from>
+      <Hsp_query-to>496</Hsp_query-to>
+      <Hsp_hit-from>120</Hsp_hit-from>
+      <Hsp_hit-to>336</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>237</Hsp_align-len>
+      <Hsp_qseq>QLTEDQYKAYEAIKAKIVSQEQETFLLHGVTGSGKTEVYLQTIEDVLSQGKQAMMLVPEIALTPQMVLRFKRRF-GDDVAVLHSGLSNGERYDEWQKIRDGRARVS---VGARSSVFAPFKNLGLIIIDEEHESTYKQEDYPRYHAREIAQWRSEYHHCPVILGSATPCLESYARAEKGVYHLLSLPNRVNQQALPEIDIVDMREELSEGNRSMFSKDLREAIQLRLDRQEQVVLFL</Hsp_qseq>
+      <Hsp_hseq>KLSSGQQKAANVLIEAISKKEE--LLIWAVCGAGKTEMLFPGIESALNQGLRVCIATPRTDVVLELAPRLKAAFQGADISALYGG-------------SDDKGRLSPLMISTTHQLLRYKDAIDVMIIDEVDAFPYSAD-----QTLQFAVQKARKKNSTLVYLSATPPKELKRKALNGQLHSVRIPARHHRKPLPEPRFVWCGNWKKKLNRNKIPPAVKRWIEFHVKEGRPVFLFV</Hsp_hseq>
+      <Hsp_midline>+L+  Q KA   +   I  +E+   L+  V G+GKTE+    IE  L+QG +  +  P   +  ++  R K  F G D++ L+ G              D + R+S   +     +      + ++IIDE     Y  +        + A  ++   +  ++  SATP  E   +A  G  H + +P R +++ LPE   V       + NR+     ++  I+  +     V LF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15994</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8CWM9|3.A.11.1.2 Involved in transformation; required for DNA uptake but not for binding; Related to ATP-dependent RNA/DNA helicases - Streptococcus pneumoniae (strain ATCC BAA-255 / R6).</Hit_def>
+  <Hit_accession>15994</Hit_accession>
+  <Hit_len>432</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.0618</Hsp_bit-score>
+      <Hsp_score>118</Hsp_score>
+      <Hsp_evalue>2.87957e-06</Hsp_evalue>
+      <Hsp_query-from>264</Hsp_query-from>
+      <Hsp_query-to>491</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>QLTEDQYKAYEAIKAKIVSQEQETFLLHGVTGSGKTEVYLQTIEDVLSQGKQAMMLVPEIALTPQMVLRFKRRFGDDVAVLHSGLSNGERYDEWQKIRDGRARVSVGARSSVFAPFKNLGLIIIDEEHESTYKQEDYPR-YHAREIAQWRSEYHHCPVILGSATPCLESYARAEKGVYHLLSLPNRVNQQALPEIDIVDMREELSEGNRSMFSKDLREAIQLRLDRQEQ</Hsp_qseq>
+      <Hsp_hseq>QLTPFQEKVSEGLLQAV--DKQKPTLVHAVTGAGKTEMIYQVVAKVINAGGAVCLASPRIDVCLELYKRLQQDFSCGIALLH---GESEPY--------FRTPLVVATTHQLLKFYQAFDLLIVDEVDAFPY--VDNPMLYHAVK----NSVKENGLRIFLTATSTNELDKKVRLGELKRLNLPRRFHGNPL----IIPKPIWLSDFNRYLDKNRLSPKLKSYIEKQRK</Hsp_hseq>
+      <Hsp_midline>QLT  Q K  E +   +   +Q+  L+H VTG+GKTE+  Q +  V++ G    +  P I +  ++  R ++ F   +A+LH      E Y         R  + V     +   ++   L+I+DE     Y   D P  YHA +     S   +   I  +AT   E   +   G    L+LP R +   L    I+     LS+ NR +    L   ++  +++Q +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4651</Hit_id>
+  <Hit_def>gnl|TC-DB|G2JSZ9|3.A.11.1.4 Competence protein ComFA OS=Listeria monocytogenes J0161 GN=LMOG_02350 PE=4 SV=1</Hit_def>
+  <Hit_accession>4651</Hit_accession>
+  <Hit_len>439</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000426025</Hsp_evalue>
+      <Hsp_query-from>265</Hsp_query-from>
+      <Hsp_query-to>455</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>269</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>192</Hsp_align-len>
+      <Hsp_qseq>LTEDQYKAYEAIKAKIVSQEQETFLLHGVTGSGKTEVYLQTIEDVLSQGKQAMMLVPEIALTPQMVLRFKRRFGD-DVAVLHSGLSNGERYDEWQKIRDGRARVSVGARSSVFAPFKNLGLIIIDEEHESTYKQEDYPRYHAREIAQWRSEYHHCPVILGSATPCLESYARAEKGVYHLLSLPNRVNQQALP</Hsp_qseq>
+      <Hsp_hseq>LSAGQRKASNAVVINLKGKMD--MLLWAVAGSGKTEMMFEGMDWALRQGFRICVASPRVDVCLELLPRLKEAFPSMDIVCLY-----GDSKDNYQ-----GEQFVIATTHQLIRFYETFQVIFIDEVDAFPYAKDPFLEY-----AVMKARAKEGSTIIITATPEKKWQEECIRGKRNFVKIPGRYHRKKLP</Hsp_hseq>
+      <Hsp_midline>L+  Q KA  A+   +  +     LL  V GSGKTE+  + ++  L QG +  +  P + +  +++ R K  F   D+  L+     G+  D +Q       +  +     +   ++   +I IDE     Y ++ +  Y     A  ++       I+ +ATP  +      +G  + + +P R +++ LP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10221</Hit_id>
+  <Hit_def>gnl|TC-DB|P38919|3.A.18.1.1 Eukaryotic initiation factor 4A-III - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>10221</Hit_accession>
+  <Hit_len>411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000940705</Hsp_evalue>
+      <Hsp_query-from>562</Hsp_query-from>
+      <Hsp_query-to>682</Hsp_query-to>
+      <Hsp_hit-from>286</Hsp_hit-from>
+      <Hsp_hit-to>394</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>TQKVEELLQQEFEDARIIRMDVDTTSKKGAHEKLLTEFEKGNGDILLGTQMIAKGLDYPNITLVGVLNADTMLNLPDFRASERTYQLLTQVAGRAGRHEKAGQVIIQTYNPDHYSILDVQK</Hsp_qseq>
+      <Hsp_hseq>TKRKVDWLTEKMREANFTVSSMHGDMPQKERESIMKEFRSGASRVLISTDVWARGLDVPQVSL--IINYD----LPNNR------ELYIHRIGRSGRYGRKGVAINFVKNDDIRILRDIEQ</Hsp_hseq>
+      <Hsp_midline>T++  + L ++  +A      +     +   E ++ EF  G   +L+ T + A+GLD P ++L  ++N D    LP+ R      +L     GR+GR+ + G  I    N D   + D+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>106</Statistics_hsp-len>
+      <Statistics_eff-space>5286498624</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

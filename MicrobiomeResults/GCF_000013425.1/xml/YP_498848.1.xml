@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_498848.1 hypothetical protein SAOUHSC_00254 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>217</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_498848.1 hypothetical protein SAOUHSC_00254 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>217</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14268</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5AG49|9.B.14.1.12 Putative uncharacterized protein OS=Candida albicans (strain SC5314 / ATCC MYA-2876) GN=CaO19.4331 PE=4 SV=1</Hit_def>
+  <Hit_accession>14268</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000252391</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>TVLGVFVVAVSLF-FDAIMFFYAKLYDKLPMYLLVFMAFTAVILIMMYIQEKNENYKVEKRYVVRYLTLNVIVGYTLP-LLFVSIYVFGVVGFGFDVFNYCLGIILMLFISWLGLFLFYKNEFDSENPNPAVNAIAIIIKLFAFGGIFYISLIVPVTQQEEIFIGLSIFINIIVDALLVRSYFNY</Hsp_qseq>
+      <Hsp_hseq>TFLMVFKKFITIFIFETIMFFLFTMVFRFLFFMILFLFLFMILFFLMILFFLMILFFLMILFFLMVLFLSMVLSLSVFFLLFMFFFLFFFLSMVFFLFLFMFLLFFMFFLFFMFLLFFMFLLF-----------FMFMIFLFTFMIFLFLSFMFLLLFMFMIFLLLLIMILLLLSLMVLFLFINY</Hsp_hseq>
+      <Hsp_midline>T L VF   +++F F+ IMFF   +  +   ++++F+    ++  +M +      + +   + +  L L++++  ++  LLF+  ++F  +   F +F +   +  M F+ ++ L  F    F              +I LF F    ++S +  +     IF+ L I I +++  +++  + NY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1139</Hit_id>
+  <Hit_def>gnl|TC-DB|AHW68364|3.A.1.204.34 hypothetical protein NP_c37 [Nosema pernyi]</Hit_def>
+  <Hit_accession>1139</Hit_accession>
+  <Hit_len>324</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000751303</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>IMFFYAKLYDKLPM-----YLLVFMAFTAVILIMMYIQEKNEN--YKVEKRYVVRYLTLNVIVGYTLPLLFVS----IYVFGVVGFG--FDVFNYCLGIILMLFISWLGL-FLFYKNEFDSENPNPAVNAIAIIIKLFAFGGIF------YISLIVPVTQQEEIFIGLSIFINIIVDALLVRSYFNYALYKSI---KKDIEN</Hsp_qseq>
+      <Hsp_hseq>ILVDYGKSYFTSDMKRFLSHFLFTIFFIVATLYVFYLKNVCDNRIQILEDIYSAKYSVLTCFLGYMLHDFFVTTFWFTFTYGVVLFSGLLSLINYWYPIYIFLAICCFTINYIFMKYLFGFSNKSKILSSIMLGTGIFAGDPKFFNNMINFISRSAPGHENKIKYVG-SIF--IIFPQMLLVGLINYKNIQSIQDHKGDLKN</Hsp_hseq>
+      <Hsp_midline>I+  Y K Y    M     + L  + F    L + Y++   +N    +E  Y  +Y  L   +GY L   FV+     + +GVV F     + NY   I + L I    + ++F K  F   N +  +++I +   +FA    F      +IS   P  + +  ++G SIF  II   +L+    NY   +SI   K D++N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>968012460</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

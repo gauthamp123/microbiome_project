@@ -1,0 +1,1134 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500751.1 ammonium transporter [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>416</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500751.1 ammonium transporter [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>416</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16043</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8DSV1|1.A.11.1.9 Ammonium transporter OS=Streptococcus mutans serotype c (strain ATCC 700610 / UA159) OX=210007 GN=nrgA PE=3 SV=1</Hit_def>
+  <Hit_accession>16043</Hit_accession>
+  <Hit_len>411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>337.421</Hsp_bit-score>
+      <Hsp_score>864</Hsp_score>
+      <Hsp_evalue>3.19437e-113</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>403</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>177</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>408</Hsp_align-len>
+      <Hsp_qseq>MNLNDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPH---IPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHS--ESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIEN-GFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>MDSGSIAFIIICSALVFLMTPGLAFFYGGLGRRKNVINTMMMAVVPLALASLLWVVVGYSLSFSGVGKVFGDFSHVFLNGV----KEGASSRGLTIPDTLFSGFQMMFSIITVAILTGAVAGRMRFTPLVIFIIFWLLLVYYPFAHMVWDDGLLAKWGTLDFAGGDVVHITSGVSGLVLALVVGKRRDYDRLEYRPHNIPFVLLGAGLLWFGWFGFNAGSALAANGLAVHALLTTHISAAAAMFSWLLLEKYLNGKPSLVGGSTGLVAGLVAITPGAGFVPLWSSLLIGLMVSPLCYFAIAVLKSKFGYDDALDAFGCHGIGGIFGGIVTGLFTTPHLALDKSNIGLIY-GNARLFLVILAAILFTIIWSALISFLIIKVISLFMPIRVSDREEATGLDDKEHGETAY</Hsp_hseq>
+      <Hsp_midline>M+     F+ +C+ LV+LMTPGL+ FYGGL + KN +NT+M ++  + L + +W+ VG+++SF      FG++ + FLN V    +E  S     IP  LF  FQMMF  I ++IL+G++A +M+F P ++F++ W  LVY P AH VW  G + K G LDFAGG VVHITSGVSGLVLA+++GK   +   E  PHN+   L+G   +W GW+GFN GSA   + +A+ A   T ISA+A    WL+LE       SL+G   G +AGLV ITP AG+V   S+ ++ L+    CY  I  +K K  Y DALDAFG HG+GGI G ++T +F +     D  N G IY G+  + LV +  +   +I+S +++F+I KVI L  P+ V+++E   GLD   HGE AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7469</Hit_id>
+  <Hit_def>gnl|TC-DB|O67997|1.A.11.1.4 AmtB OS=Azospirillum brasilense GN=amtB PE=4 SV=1</Hit_def>
+  <Hit_accession>7469</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>330.487</Hsp_bit-score>
+      <Hsp_score>846</Hsp_score>
+      <Hsp_evalue>3.85353e-110</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>399</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>435</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>172</Hsp_identity>
+      <Hsp_positive>255</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>403</Hsp_align-len>
+      <Hsp_qseq>MNLNDTIFMFLCTLLVWLMT-PGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGK--GNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGE</Hsp_qseq>
+      <Hsp_hseq>LSSGDTAWMLVATALVLFMTIPGLALFYGGMVRKMNVLSVVMQSFAICCLVSILWFFAGYSIAFTEGTPYFGSLSKFMLAGI---TKDSLTGVIPETIFVVFQMTFAIITPALITGAFADRMKFSSMLVFTGLWSLIVYAPITHWVWGPGGYLAGDGVLDYAGGTVVHINAGVAGLVAAIVLGKRKGYPNENFAPHNLVLSLIGASMLWVGWFGFNAGSAVAADGRAGMAMLVTQIAAATAAMSWLLVEWATKGKGSVLGIISGAIAGLVAITPASGFVGPTGALVIGLAAGVICYWGATGLKRALGYDDSLDAFGVHGVGGIVGAILTGVFAQEAIG---GTAGALEGNVGQIWTQVYGILATIVYSAVGSFIILKVIDVVMGLRVDEDVERDGLDLALHGE</Hsp_hseq>
+      <Hsp_midline>++  DT +M + T LV  MT PGL+LFYGG+V+  N L+ VMQS A   LV+ +W   G++I+F  G  +FG+     L  +   T++ ++  IP  +F++FQM F  I  ++++G+ A++MKF   L+F  +W+ +VY+P+ HWVWG GG++   GVLD+AGGTVVHI +GV+GLV AI++GK  G  +    PHNL+++LIG   +W+GW+GFN GSA   D  A +A   T I+A+  A+ WL++E+  K   S+LG++ GA+AGLV ITPA+G+V    A ++ L  G+ CY     +K  L Y D+LDAFG+HGVGGI+GA+LT VF  +             G++  I  Q+  + A +++S V +FII KVI ++  L V E     GLD  +HGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7453</Hit_id>
+  <Hit_def>gnl|TC-DB|O66515|1.A.11.1.5 Ammonia channel OS=Aquifex aeolicus (strain VF5) GN=amt PE=1 SV=1</Hit_def>
+  <Hit_accession>7453</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>315.464</Hsp_bit-score>
+      <Hsp_score>807</Hsp_score>
+      <Hsp_evalue>1.79038e-104</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>421</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>254</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>405</Hsp_align-len>
+      <Hsp_qseq>MNLNDTIFMFLCTLLVWLMT-PGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIEN--GFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>LDTGNTAWMLVASALVVFMTVPGLALFYGGLDKSKSILNTIAMSFSAFAVVTLTWIFVGYSVAYGDDIFGFIGNPFQYVLGKGISGINSDTGY-PALLDLMFQLTFATITTALISGSFVGRMKFSAWILFAILWSVFVYPPVAHWVWGGGFLANDGALDFAGGTVVHINAGIAGLVGALILGR-RKDTSLIPNNVPLVALGAGILWFGWFGFNAGSALGANESAAWAMINTTVATSTAALAWMFTEWLHVGKPTVVGISSGIVAGLVAITPAAGFVNLIGSIFIGAIASVCAYFMVALVKPKFGYDDALDVFGIHGVRGIVGAVLTGVF----ADPNVGGTPGLLY-GNPKQVLIQIEGVIATILYSAILTAVILLVLKAVVGLRVSEEE-ELELDSSLHGEKAY</Hsp_hseq>
+      <Hsp_midline>++  +T +M + + LV  MT PGL+LFYGGL +SK+ LNT+  S +A  +VT  WI VG+++++G+    F    + ++   G +     + + P  L ++FQ+ F TI  +++SGS   +MKF  ++LF ++W+  VY PVAHWVWGGG++   G LDFAGGTVVHI +G++GLV A+++G+  K +   P+N+ +  +G   +W GW+GFN GSA   +  A  A  NT ++ S  A+ W+  E++     +++G+  G +AGLV ITPAAG+V  + +  +  I  +C Y ++  +K K  Y DALD FGIHGV GI+GAVLT VF    A+P++    G +Y G+   +L+QI  V A +++S ++T +I  V+K +  L V+E+E  + LD  +HGE AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7005</Hit_id>
+  <Hit_def>gnl|TC-DB|O29285|1.A.11.1.6 Ammonium transporter - Archaeoglobus fulgidus.</Hit_def>
+  <Hit_accession>7005</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>298.901</Hsp_bit-score>
+      <Hsp_score>764</Hsp_score>
+      <Hsp_evalue>1.94701e-98</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>390</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>248</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>407</Hsp_align-len>
+      <Hsp_qseq>MNLNDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNG-NLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGK--GNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGF--IYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>MSDGNVAWILASTALVMLMVPGVGFFYAGMVRRKNAVNMIALSFISLIITVLLWIFYGYSVSFGNDISGIIGGLNYALLSGV---KGEDL-------LFMMYQMMFAAVTIAILTSAIAERAKVSSFILLSALWLTFVYAPFAHWLWGGGWLAKLGALDFAGGMVVHISSGFAALAVAMTIGKRAGFEEYSIEPHSIPLTLIGAALLWFGWFGFNGGSALAANDVAINAVVVTNTSAAVAGFVWMVIGWIKGKPGS-LGIVSGAIAGLAAITPAAGFVDVKGAIVIGLVAGIVCYLAMDF-RIKKKIDESLDAWAIHGIGGLWGSVAVGIL----ANPEV-NGYAGLLFGNPQLLVSQLIAVASTTAYAFLVTLILAKAVDAAVGLRVSSQEEYVGLDLSQHEEVAY</Hsp_hseq>
+      <Hsp_midline>M+  +  ++   T LV LM PG+  FY G+V+ KNA+N +  S  ++++   +WI  G+++SFGN  +   G   Y  L+ V     ED+       LFM++QMMF  + I+IL+ +IAE+ K   ++L   +W   VY+P AHW+WGGGW+ KLG LDFAGG VVHI+SG + L +A+ IGK  G +     PH++ +TLIG   +W GW+GFN GSA   +++A+ A   T  SA+     W+++ +I  K  S LG++ GA+AGL  ITPAAG+V    A ++ L+ GI CY+ +++ ++K K  ++LDA+ IHG+GG+ G+V   +     ANP++ NG+  +  G+  +++ Q++ V +   ++ ++T I+AK +     L V+ QE  +GLD   H E AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11268</Hit_id>
+  <Hit_def>gnl|TC-DB|P69681|1.A.11.1.1 Ammonia channel - Escherichia coli.</Hit_def>
+  <Hit_accession>11268</Hit_accession>
+  <Hit_len>428</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>298.13</Hsp_bit-score>
+      <Hsp_score>762</Hsp_score>
+      <Hsp_evalue>1.20595e-97</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>426</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>161</Hsp_identity>
+      <Hsp_positive>235</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>402</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMT-PGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGF-ATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGK--GNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>DNAFMMICTALVLFMTIPGIALFYGGLIRGKNVLSMLTQVTVTFALVCILWVVYGYSLAFGEGNNFFGNINWLMLKNIELTAVMGSIYQYIHVA----FQGSFACITVGLIVGALAERIRFSAVLIFVVVWLTLSYIPIAHMVWGGGLLASHGALDFAGGTVVHINAAIAGLVGAYLIGKRVGFGKEAFKPHNLPMVFTGTAILYIGWFGFNAGSAGTANEIAALAFVNTVVATAAAILGWIFGEWALRGKPSLLGACSGAIAGLVGVTPACGYIGVGGALIIGVVAGLAGLWGVTMLKRLLRVDDPCDVFGVHGVCGIVGCIMTGIFAASSLGGVGFAEGVTMG--HQLLVQLESIAITIVWSGVVAFIGYKLADLTVGLRVPEEQEREGLDVNSHGENAY</Hsp_hseq>
+      <Hsp_midline>D  FM +CT LV  MT PG++LFYGGL++ KN L+ + Q      LV  +W+  G++++FG GN +FGN  +  L ++   A    I  +I  A    FQ  F  I + ++ G++AE+++F   L+FVV+W  L Y P+AH VWGGG +   G LDFAGGTVVHI + ++GLV A +IGK  G       PHNL +   G   ++IGW+GFN GSA T + IA LAF NTV++ +A  +GW+  E+  +   SLLG   GA+AGLV +TPA GY+    A I+ ++ G+     +  +K  L+  D  D FG+HGV GI+G ++T +F +           +  G  H +LVQ+  +   +++S V+ FI  K+  L   L V E++   GLD   HGE+AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17756</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9BLG4|1.A.11.1.7 Ammonium transporter AmtA - Dictyostelium discoideum (Slime mold).</Hit_def>
+  <Hit_accession>17756</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>285.419</Hsp_bit-score>
+      <Hsp_score>729</Hsp_score>
+      <Hsp_evalue>2.97168e-92</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>413</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>153</Hsp_identity>
+      <Hsp_positive>236</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>415</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWF-GNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINK-LGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKH----SESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAYFEGELNRFNKH</Hsp_qseq>
+      <Hsp_hseq>NTTWVLLSTILVLGMMPALAFFEAGLLRSKNTLSIITQIMSGIVVLTVMWQAFGYSLTFGPDQKGIIGNLDHAFLINVSYDDCSPNAPNIPAAAYAFFMMMFANITPLLMTGAFAERVKFKAFIALTVAWEIIVFYPVAHWIWGGGWLHKYFGVLDFAGGIVIHTSAGVSALVIALYVGRRKDFEKYGGEFPPSNLPLATIGAALLWMGWFGFNAGSALAAGNIATSAVASTQIGGSFSAIVWIILS-AAKGKPNTVSVINGVIAGLAGITPASGYINSQYSIGLGICLGLASYYSVVLLKHKLHIDDALDVSSVHGLTGIIGSLAIGFCAELSVNPNGANGAFY-GNPKLIGTQLLGVVSVAVWAAAWTWVLLKIIDATIGVKIDESEEELGLDLVEHGEFAYHNISLQGNENH</Hsp_hseq>
+      <Hsp_midline>+T ++ L T+LV  M P L+ F  GL++SKN L+ + Q M+ IV++T +W   G++++FG       GN ++ FL +V +      +P+IP A +  F MMF  I   +++G+ AE++KF  ++   V W  +V+ PVAHW+WGGGW++K  GVLDFAGG V+H ++GVS LV+A+ +G+         E  P NL +  IG   +W+GW+GFN GSA    NIA  A  +T I  S  AI W+IL    K   + + ++ G +AGL  ITPA+GY+    +  + +  G+  Y  +  +K KL   DALD   +HG+ GIIG++          NP+  NG  Y G+  +I  Q+L V +V +++   T+++ K+I     + + E E  +GLD + HGE AY    L     H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16635</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8NKD5|1.A.11.3.3 Ammonium transporter - Hebeloma cylindrosporum.</Hit_def>
+  <Hit_accession>16635</Hit_accession>
+  <Hit_len>477</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>273.478</Hsp_bit-score>
+      <Hsp_score>698</Hsp_score>
+      <Hsp_evalue>1.88277e-87</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>435</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>160</Hsp_identity>
+      <Hsp_positive>242</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>417</Hsp_align-len>
+      <Hsp_qseq>NLNDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGN-GNLWFGNWEYTFLNHVGFATQEDI-SPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGK----GNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVF-QSKKANPD----IENGFIYTGDIHIILV--QILCVTAVVIFSIVMTFIIAKVIKLITPLSV--TEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>NLGDMAWIAASMALVWIMIPGVGLFYSGLLRRKNALSMIWTSLASIAVVSFQWFFWGYSLAFSETGNAFIGDLKYFGLK--GVLDQPSIGSSRIPAILFCIYQLMFAAITAALAVGAIAERGRLGPLLVFIFVWSTIVYDPIANWTWNTNGWSFILGGLDFAGGTPVHISSGTAALAISIFLGKRRGYGTERLAYKPHNTTYVILGTVFLWFGWFGFNGGSALSANLRAIQACIVTNLAASVGGLTWMLWDYRIERKWSAVGFCSGAVSGLVAITPASGFVGAPAAVAFGVLGGTACNFA-TQLKFVLGYDDALDIFATHAIGGIVGNLLTGLFAQASVAGFDGITEIPGGWL---DRHYIQLAHQLADSVAGFAYSFVMTTIILWVMHIIPGLTLRTTEEAEILGVDDAEMGEFAY</Hsp_hseq>
+      <Hsp_midline>NL D  ++     LVW+M PG+ LFY GL++ KNAL+ +  S+A+I +V+F W   G++++F   GN + G+ +Y  L   G   Q  I S  IP  LF ++Q+MF  I  ++  G+IAE+ +  P L+F+ +W+ +VY P+A+W W   GW   LG LDFAGGT VHI+SG + L ++I +GK    G +     PHN    ++G +F+W GW+GFN GSA + +  A+ A   T ++AS G + W++ +Y  ++  S +G   GA++GLV ITPA+G+V   +A    ++GG  C      +K  L Y DALD F  H +GGI+G +LT +F Q+  A  D    I  G++   D H I +  Q+    A   +S VMT II  V+ +I  L++  TE+   +G+D    GE AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17561</Hit_id>
+  <Hit_def>gnl|TC-DB|Q96UY0|1.A.11.3.4 Ammonium transporter - Hebeloma cylindrosporum.</Hit_def>
+  <Hit_accession>17561</Hit_accession>
+  <Hit_len>471</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>250.366</Hsp_bit-score>
+      <Hsp_score>638</Hsp_score>
+      <Hsp_evalue>1.36897e-78</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>435</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>154</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>414</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNG-NLWFGNWEYTFLNHVGFATQEDI-SPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGG-GWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGK----GNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVF-QSKKANPD----IENGFIYTGDIHIILV--QILCVTAVVIFSIVMTFIIAKVIKLI--TPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>DIAWVLASTALVWIMVPGVGFFYSGLLRRKNALSMIYLSMMTVAVVSFQWFFWGFSLAFSDGASLFIGDLKYFGMK--GVLEEPSIGSTRIPAIVFSVYQLMFAAITPMIAVGGFAERAHLGPLLFFVFVWSTLVYDPIACWTWNSKGWSFVHGSYDFAGGTPVHISSGTAALAISIYLGKRRGYGTEVLTYKPHNTTYVILGTIFLWFGWFGFNGGSALAANLRAAQACIVTNLAASVGGLTWMLWDYRIEKKWSAVGFCSGAIAGLVAITPGSGFVGSPAAVLFGFMAGTVCNFA-TQLKFFAGYDDSLDIFASHAVGGVVGNLLTALFAQASVAGFDGFTVIPGGWL---DRHYIQLAWHVADSAAGLSYSFVVTTIILWVMHFIPGLRLRVPEETEIIGIDEADMGEFAY</Hsp_hseq>
+      <Hsp_midline>D  ++   T LVW+M PG+  FY GL++ KNAL+ +  SM  + +V+F W   GF+++F +G +L+ G+ +Y  +   G   +  I S  IP  +F ++Q+MF  I   I  G  AE+    P L FV +W+ LVY P+A W W   GW    G  DFAGGT VHI+SG + L ++I +GK    G +     PHN    ++G IF+W GW+GFN GSA   +  A  A   T ++AS G + W++ +Y  +K  S +G   GA+AGLV ITP +G+V   +A +   + G  C      +K    Y D+LD F  H VGG++G +LTA+F Q+  A  D    I  G++   D H I +   +    A + +S V+T II  V+  I    L V E+   IG+D+   GE AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13777</Hit_id>
+  <Hit_def>gnl|TC-DB|Q4DC59|1.A.11.1.8 Ammonium transporter OS=Trypanosoma cruzi (strain CL Brener) GN=Tc00.1047053508317.50 PE=3 SV=1</Hit_def>
+  <Hit_accession>13777</Hit_accession>
+  <Hit_len>514</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>248.054</Hsp_bit-score>
+      <Hsp_score>632</Hsp_score>
+      <Hsp_evalue>3.19536e-77</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>401</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>415</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>225</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>406</Hsp_align-len>
+      <Hsp_qseq>NDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGN---GNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGG-GWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNK---HSESTPHN-LIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHA</Hsp_qseq>
+      <Hsp_hseq>SDISWVLISSVLVLGMMPGLGFFEAGLLRSKNTTSVFAQIFSGCAVLSVLWVCAGYSLTMGRSAGGKGIIGTFRRAFMMNVDYNTCYG-GTVIPEALFAFFQMMFATITPLLMTGAYAERLAFRPFLFFTILWEIIVYFFVAHWVWAPEGWMRGMGVQDFAGGIVIHVTAGVSSLVCAVVLGRRRDFHIHRGEAPYSSLPLTCIGATMLWTGWFGFNGGSALQSGKGAVYAVINSQVAAAVCSCCFLFFHMLRTKKASLIAMINGAIAGLAGITPTSGYITVPSSIICAFFIAVFATVSVYLIKHKLRIDDALDVSSIHGVPGLVGAVFIGFSGSSAVGG--ADGLLYGGGIRLLGLQCLGCIVAATWAGFWTFVILLIIGRFYRLRVTDEQEHHGLD---HGQHS</Hsp_hseq>
+      <Hsp_midline>+D  ++ + ++LV  M PGL  F  GL++SKN  +   Q  +   +++ +W+  G++++ G    G    G +   F+ +V + T       IP ALF  FQMMF TI   +++G+ AE++ F P+L F ++W  +VY  VAHWVW   GW+  +GV DFAGG V+H+T+GVS LV A+++G+      H    P++ L +T IG   +W GW+GFN GSA      A+ A  N+ ++A+  +  +L    +  K  SL+ ++ GA+AGL  ITP +GY+T  S+ I A    +   + +  IK KL+  DALD   IHGV G++GAV      S        +G +Y G I ++ +Q L       ++   TF+I  +I     L VT+++ + GLD   HG+H+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15364</Hit_id>
+  <Hit_def>gnl|TC-DB|Q79VF1|1.A.11.1.3 Ammonia permeases - Corynebacterium glutamicum (Brevibacterium flavum).</Hit_def>
+  <Hit_accession>15364</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>239.58</Hsp_bit-score>
+      <Hsp_score>610</Hsp_score>
+      <Hsp_evalue>8.2076e-75</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>430</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>144</Hsp_identity>
+      <Hsp_positive>230</Hsp_positive>
+      <Hsp_gaps>47</Hsp_gaps>
+      <Hsp_align-len>432</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDI-----------SPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWIN------------------KLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHSEST--PHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTG---DIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>NSAWMLMSASLVLLMTPALALFYGGMSRQKSVLNMMMMSFGALGVVTVIYLLWGWSMSYGTQSI-----AGIFANPFEFFGLKDSIVDADGNYIEGAAGYPNIIDIGFQLTFAVISTALISGALAERVKFSTWLIFSGAWVTLVYFPLAHMVWGGGLLGHNVTGFASWLFGSTDGEANIAPIDFAGGTVVHISAGTAALVLAFIVGKRKTFGKAIARPHNLPMVMLGAALLWFGWFGFNGGSAFAADGLAGLAWVNTTAATAAAMLGWLATEKFRDGHATSLGAASGVVAGLVAITPAAGALTPVTSLILGAIGGILACLGVG-LKYRFGFDDSLDVVGVHLVAGLWGTVGVGLLAT-------DIGWFSGGGMDGLKLFIVQIVIALVAVVFAGVITALIAFALKATVGWRVDDDVEQQGIDTHEHAESAY</Hsp_hseq>
+      <Hsp_midline>++ +M +   LV LMTP L+LFYGG+ + K+ LN +M S  A+ +VT +++  G+++S+G  ++        F N   F   +D            +   P  + + FQ+ F  I+ +++SG++AE++KF  +L+F   W  LVY P+AH VWGGG +                    +  +DFAGGTVVHI++G + LVLA ++GK     ++   PHNL + ++G   +W GW+GFN GSAF  D +A LA+ NT  + +A  +GWL  E       + LG   G +AGLV ITPAAG +T +++ I+  IGGI   + +  +K +  + D+LD  G+H V G+ G V   +  +       + G+   G    + + +VQI+     V+F+ V+T +IA  +K      V +     G+D   H E AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10426</Hit_id>
+  <Hit_def>gnl|TC-DB|P41948|1.A.11.3.2 AMMONIUM TRANSPORTER MEP2 - Saccharomyces cerevisiae (Baker&apos;s yeast).</Hit_def>
+  <Hit_accession>10426</Hit_accession>
+  <Hit_len>499</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>233.032</Hsp_bit-score>
+      <Hsp_score>593</Hsp_score>
+      <Hsp_evalue>1.27847e-71</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>404</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>446</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>223</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>410</Hsp_align-len>
+      <Hsp_qseq>VWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGN---GNLWFGNWEYT-FLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGG-GWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNK------HSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYI-FKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKAN-------PDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLI--TPLSVTEQETNIGLDKIVHGEHAYFE</Hsp_qseq>
+      <Hsp_hseq>VWIMVPGIGLLYSGLSRKKHALSLLWASMMASAVCIFQWFFWGYSLAFSHNTRGNGFIGTLEFFGFRNVLGAPSSVSSLPDI---LFAVYQGMFAAVTGALMLGGACERARLFPMMVFLFLWMTIVYCPIACWVWNAEGWLVKLGSLDYAGGLCVHLTSGHGGLVYALILGKRNDPVTRKGMPKYKPHSVTSVVLGTVFLWFGWMFFNGGSAGNATIRAWYSIMSTNLAAACGGLTWMVIDYFRCGRKWTTVGLCSGIIAGLVGITPAAGFVPIWSAVVIGVVTGAGCNLAVD-LKSLLRIDDGLDCYSIHGVGGCIGSVLTGIFAADYVNATAGSYISPIDGGWI-NHHYKQVGYQLAGICAALAWTVTVTSILLLTMNAIPFLKLRLSADEEELGTDAAQIGEFTYEE</Hsp_hseq>
+      <Hsp_midline>VW+M PG+ L Y GL + K+AL+ +  SM A  +  F W   G++++F +   GN + G  E+  F N +G  +     P I   LF ++Q MF  +  +++ G   E+ +  P ++F+ +W  +VY P+A WVW   GW+ KLG LD+AGG  VH+TSG  GLV A+++GK N         +  PH++   ++G +F+W GW  FN GSA      A  +  +T ++A+ G + W++++Y    +  + +GL  G +AGLV ITPAAG+V   SA ++ ++ G  C + ++ +K  L+  D LD + IHGVGG IG+VLT +F +   N         I+ G+I       +  Q+  + A + +++ +T I+   +  I    L ++  E  +G D    GE  Y E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14258</Hit_id>
+  <Hit_def>gnl|TC-DB|Q59UP8|1.A.11.3.5 Putative uncharacterized protein MEP2 OS=Candida albicans GN=MEP2 PE=4 SV=1</Hit_def>
+  <Hit_accession>14258</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>229.95</Hsp_bit-score>
+      <Hsp_score>585</Hsp_score>
+      <Hsp_evalue>1.218e-70</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>414</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>447</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>229</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>425</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFG-NGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGG-GWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGN------KHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYI-FKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKA----NPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVT--EQETNIGLDKIVHGEHAYFEGELNRFNKHI</Hsp_qseq>
+      <Hsp_hseq>DMVWIGTASVLVWIMIPGVGLLYSGISRKKHALSLMWAALMAACVAAFQWFWWGYSLVFAHNGSVFLGTLQNFCLKDVLGAPS--IVKTVPDILFCLYQGMFAAVTAILMAGAGCERARLGPMMVFLFIWLTVVYCPIAYWTWGGNGWLVSLGALDFAGGGPVHENSGFAALAYSLWLGKRHDPVAKGKVPKYKPHSVSSIVMGTIFLWFGWYGFNGGSTGNSSMRSWYACVNTNLAAATGGLTWMLVDWFRTGGKWSTVGLCMGAIAGLVGITPAAGYVPVYTSVIFGIVPAIICNFAVD-LKDLLQIDDGMDVWALHGVGGFVGNFMTGLFAADYVAMIDGTEIDGGWM-NHHWKQLGYQLAGSCAVAAWSFTVTSIILLAMDRIPFLRIRLHEDEEMLGTDLAQIGEYAYYADDDPETNPYV</Hsp_hseq>
+      <Hsp_midline>D +++   ++LVW+M PG+ L Y G+ + K+AL+ +  ++ A  +  F W   G+++ F  NG+++ G  +   L  V  A    I   +P  LF L+Q MF  +   +++G+  E+ +  P ++F+ IW  +VY P+A+W WGG GW+  LG LDFAGG  VH  SG + L  ++ +GK +      K  +  PH++   ++G IF+W GWYGFN GS       +  A  NT ++A+ G + W+++++       S +GL +GA+AGLV ITPAAGYV   ++ I  ++  I C   ++ +K  L+  D +D + +HGVGG +G  +T +F +         +I+ G++       +  Q+    AV  +S  +T II   +  I  L +   E E  +G D    GE+AY+  +    N ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10926</Hit_id>
+  <Hit_def>gnl|TC-DB|P54146|1.A.11.1.2 Ammonia channel - Corynebacterium glutamicum (Brevibacterium flavum).</Hit_def>
+  <Hit_accession>10926</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>227.254</Hsp_bit-score>
+      <Hsp_score>578</Hsp_score>
+      <Hsp_evalue>6.53802e-70</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>407</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>232</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>417</Hsp_align-len>
+      <Hsp_qseq>MNLNDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTF--LNHVGFAT--QEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG---------GGWI-NKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHSEST-PHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>MDPSDLAWILAAFALVSLMFPGLSLLYGGMLGGQHVLNTFMMVMSSLGIISLVYIIYGHGLVLGNS---IGGWGIIGNPLEYFGFRNIMEDDGTGDLMWAGFYI---LFAAISLALVSSGAAGRMRFGAWLVFGVLWFTFVYAPLAHWVFAIDDPESGYVGGWMKNVLEFHDFAGGTAVHMNAGASGLALAIVLGR--RHSMAVRPHNLPLILIGAGLIVAGWFGFNGGTAGGANFLASYVVVTSLIAAAGGMMGFMLVERVFSGKPTFFGSATGTIAGLVAITPAADAVSPLGAFAVGALGAVVSFWAISW-KKGHRVDDSFDVFAVHGMAGIAGALFVMLFGDPLA-PAGVSGVFFGGELSLLWREPLAIIVTLTYAFGVTWLIATILNKFMTLRITSEAEYEGIDRAEHAESAY</Hsp_hseq>
+      <Hsp_midline>M+ +D  ++     LV LM PGLSL YGG++  ++ LNT M  M+++ +++ V+I  G  +  GN     G W      L + GF    ++D +  + +A F +   +F  I+++++S   A +M+F  +L+F V+W   VY+P+AHWV+          GGW+ N L   DFAGGT VH+ +G SGL LAI++G+  +HS +  PHNL + LIG   +  GW+GFN G+A   + +A      ++I+A+ G +G++++E +F    +  G   G +AGLV ITPAA  V+ L A  +  +G +  +  I++ K   +  D+ D F +HG+ GI GA+   +F    A P   +G  + G++ ++  + L +   + ++  +T++IA ++     L +T +    G+D+  H E AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10340</Hit_id>
+  <Hit_def>gnl|TC-DB|P40260|1.A.11.3.1 AMMONIUM TRANSPORTER MEP1 - Saccharomyces cerevisiae (Baker&apos;s yeast).</Hit_def>
+  <Hit_accession>10340</Hit_accession>
+  <Hit_len>492</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>221.861</Hsp_bit-score>
+      <Hsp_score>564</Hsp_score>
+      <Hsp_evalue>2.02212e-67</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>409</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>431</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>135</Hsp_identity>
+      <Hsp_positive>219</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>416</Hsp_align-len>
+      <Hsp_qseq>FMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNG---NLWFGNWE-YTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHS--ESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQS-----KKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLI--TPLSVTEQETNIGLDKIVHGEHAYFEGELNR</Hsp_qseq>
+      <Hsp_hseq>FMILGAALVFFMVPGLGFLYSGLARRKSALALIWVVLMATLVGILQWYFWGYSLAFSKSAPNNKFIGNLDSFGFRNVYGKKFDEDAYPELAYATF---QMMFSCVNLSIIAGATAERGRLLPHMVFLFILATIGYCPVTYWIWSPGGWAYQWGVLDWAGGGNIEILSAVSGFVYSWFLGKRNEKLLINFRPHNVSLVTLGTSILWFGWLLFNSASSLSPNLRSVYAFMNTCLSAITGGMTWCLLDYRSEKKWSTVGLCSGIISGLVAATPSSGCITLYGSLIQGIVAGVVCNFATK-LKYYAKVDDAMDILAEHGVAGVIGLIFNALFGADWVIGMDGTTEHEGGWV-THNYKQMYKQIAYIAASIGYTAAVTAIICFVLGYIPGMRLRISEEAEEAGMDEDQIGEFAYDYVEVRR</Hsp_hseq>
+      <Hsp_midline>FM L   LV+ M PGL   Y GL + K+AL  +   + A ++    W   G++++F      N + GN + + F N  G    ED  P + +A F   QMMF  + +SI++G+ AE+ + +P+++F+ I   + Y PV +W+W  GGW  + GVLD+AGG  + I S VSG V +  +GK N+       PHN+ +  +G   +W GW  FN  S+ + +  ++ AF NT +SA  G + W +L+Y  +K  S +GL  G ++GLV  TP++G +T   + I  ++ G+ C      +K   K  DA+D    HGV G+IG +  A+F +          + E G++ T +   +  QI  + A + ++  +T II  V+  I    L ++E+    G+D+   GE AY   E+ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18590</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9M6N7|1.A.11.2.2 Ammonium transporter - Arabidopsis thaliana (Mouse-ear cress).</Hit_def>
+  <Hit_accession>18590</Hit_accession>
+  <Hit_len>475</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>206.068</Hsp_bit-score>
+      <Hsp_score>523</Hsp_score>
+      <Hsp_evalue>1.42025e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>415</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>222</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>441</Hsp_align-len>
+      <Hsp_qseq>MNLNDTIFMFLCTLLVWLMT-PGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGN-----WEYTFLNHVGFATQEDIS-PHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNK--HSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVK----LKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDI---------ENGFIYTGD-IHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAYF---EGELNRFNKHIR</Hsp_qseq>
+      <Hsp_hseq>LNKGDNAWQLTAATLVGLQSMPGLVILYASIVKKKWAVNSAFMALYAFAAVLLCWVLLCYKMAFGEELLPFWGKGGPAFDQGYLKGQAKIPNSNVAAPYFPMATLVYFQFTFAAITTILVAGSVLGRMNIKAWMAFVPLWLIFSYTVGAYSIWGGGFLYQWGVIDYSGGYVIHLSSGVAGFVAAYWVGPRPKADRERFPPNNVLLMLAGAGLLWMGWSGFNGGAPYAANLTSSIAVLNTNLSAATSLLVWTTLDVIFFGKPSVIGAIQGMVTGLAGVTPGAGLIQTWAAIIIGVVSGTAPWASMMIIHKKSALLQKVDDTLAVFYTHAVAGLLGGIMTGLF----AHPDLCVLVLPLPATRGAFYGGNGGKQLLKQLAGAAFIAVWNVVSTTIILLAIRVFIPLRMAEEELGIG-DDAAHGEEAYALWGDGEKFDATRHVQ</Hsp_hseq>
+      <Hsp_midline>+N  D  +      LV L + PGL + Y  +V+ K A+N+   ++ A   V   W+ + + ++FG   L F       ++  +L         +++ P+ P A  + FQ  F  I   +++GS+  +M    ++ FV +W    Y+  A+ +WGGG++ + GV+D++GG V+H++SGV+G V A  +G   K       P+N+++ L G   +W+GW GFN G+ +  +  + +A  NT +SA+   + W  L+ IF    S++G + G + GL  +TP AG +   +A I+ ++ G   +  +  I  K     K  D L  F  H V G++G ++T +F    A+PD+           G  Y G+    +L Q+     + ++++V T II   I++  PL + E+E  IG D   HGE AY    +GE     +H++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12430</Hit_id>
+  <Hit_def>gnl|TC-DB|Q0IDE4|1.A.11.2.5 Ammonium transporter OS=Synechococcus sp. (strain CC9311) GN=amt PE=4 SV=1</Hit_def>
+  <Hit_accession>12430</Hit_accession>
+  <Hit_len>490</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>201.83</Hsp_bit-score>
+      <Hsp_score>512</Hsp_score>
+      <Hsp_evalue>8.04579e-60</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>74</Hsp_hit-from>
+      <Hsp_hit-to>482</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>126</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>414</Hsp_align-len>
+      <Hsp_qseq>LNDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGN----GNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLG---VLDFAGGTVVHITSGVSGLVLAIMIG-KGNKHSESTP-----HNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVI-KLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>LANNLWLLVATILVIFMNAGFAMVEAGMCRQKNAVNILAKNLFVFALAVTAYWFVGYSLMYGNAIAAGWLYFNGLFFDPAVTPELISEAGLVPSVDF----LFQAAFAGTAATIVSGLVAERVKFGEFVVFSLILTAFIYPIAGSWEWNGGWLNSVGDKEFIDFAGSSIVHSVGAWAGLIGAMLLGPRIGKFIDGKPQAIPGHNMAIATLGALILWIGWYGFNPGSQLAMDQWVPYVAVTTTLAAAGGAIGATVISTLTSGKPDLTMIINGILAGLVSITAGCGNLTFVGSWVAGLIGGIIVVFAVSALDAS-GIDDPVGAFSVHGVCGVWGTLVVGLWGFDIQGDGSPLGLLVGGGISQLGIQALGCAAYAIWTIVTCWIAWSVIGGLFGGIRVTEKEEVEGLDIGEHGMEAY</Hsp_hseq>
+      <Hsp_midline>L + +++ + T+LV  M  G ++   G+ + KNA+N + +++    L    +  VG+++ +GN    G L+F    +         ++  + P + F    LFQ  F   A +I+SG +AE++KF  +++F +I TA +Y     W W GGW+N +G    +DFAG ++VH     +GL+ A+++G +  K  +  P     HN+ I  +G + +WIGWYGFN GS    D         T ++A+ GAIG  ++  +      L  ++ G LAGLV IT   G +T++ + +  LIGGI     ++ +       D + AF +HGV G+ G ++  ++           G +  G I  + +Q L   A  I++IV  +I   VI  L   + VTE+E   GLD   HG  AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1091</Hit_id>
+  <Hit_def>gnl|TC-DB|AFC35023.1|1.A.11.2.14 hypothetical protein OtV6_115c [Ostreococcus tauri virus RT-2011]</Hit_def>
+  <Hit_accession>1091</Hit_accession>
+  <Hit_len>439</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.438</Hsp_bit-score>
+      <Hsp_score>498</Hsp_score>
+      <Hsp_evalue>2.83893e-58</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>436</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>215</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>426</Hsp_align-len>
+      <Hsp_qseq>NDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGWINK----------LGVLDFAGGTVVHITSGVSGLVLAIMIG--KGNKHSES--TP---HNLIITLIGGIFVWIGWYGFNVGSAFTF---DNIAMLAFT--NTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDI----ENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>SNTQFLLNSAYLVFLMQAGFAMLCAGSVRTKNTKNILIKNVLDACVGAIAWFLFGYGFAFGKTD---GHTPNSFIGSGNFAMNDITTPYD--TAFYLFQWAFSAAAATIVSGSVAERTKFIAYLGYSFFLTAFVYPCIVHWGWSTEGWLGPWRENGPKLLGVGMLDFAGSGIVHMVGGLAGLMGAYMVGPRRGRFAADGRVTPMPGHSAPLVVLGTFILWVGWYGFNPGSQLGLMGEDNAKVISRTAVTTTLSAASGGLTAMALNYKSDKIWDLIAVCNGALAGLVSITAGCSTTEPWAAIICGMLGAMCIKASSNLL-LKLKIDDPLEAAPMHGFCGALGVLWVGFMAKRQYVNDVFGIDEAGVFYGGGGKLLGAQIIGVVTIATWTMGMLGAFFGLYKKLGLLRVTEEEESIGLDESKHGGSAY</Hsp_hseq>
+      <Hsp_midline>++T F+     LV+LM  G ++   G V++KN  N +++++    +    W   G+  +FG  +   G+   +F+    FA  +  +P+     F LFQ  F   A +I+SGS+AE+ KFI YL +    TA VY  + HW W   GW+            +G+LDFAG  +VH+  G++GL+ A M+G  +G   ++   TP   H+  + ++G   +W+GWYGFN GS       DN  +++ T   T +SA++G +  + L Y   K   L+ +  GALAGLV IT         +A I  ++G +C     N + +KLK  D L+A  +HG  G +G +       ++   D+    E G  Y G   ++  QI+ V  +  +++ M      + K +  L VTE+E +IGLD+  HG  AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17290</Hit_id>
+  <Hit_def>gnl|TC-DB|Q93IP6|1.A.11.2.3 Ammonium/methylammonium permease - Synechococcus sp. (strain PCC 7942) (Anacystis nidulans R2).</Hit_def>
+  <Hit_accession>17290</Hit_accession>
+  <Hit_len>491</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.193</Hsp_bit-score>
+      <Hsp_score>474</Hsp_score>
+      <Hsp_evalue>2.75081e-54</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>384</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>463</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>121</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>400</Hsp_align-len>
+      <Hsp_qseq>LNDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGN----GNLWFGNWEYTFLNHVGFATQEDISPH------IPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVW--GGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIG-KGNKHSESTP-----HNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVT</Hsp_qseq>
+      <Hsp_hseq>LVNNLWLMVATVLVIFMNAGFAMVETGLCRQKNAVNVLAKNLIVFTLAATAYWFIGYSLMYGSPVVDGFLYFGKG-----GPLGFFFDPTVSAETIKNDGLISSLDFLFQAAFAGTAATIVSGSVAERIKFVDFIIFSLILTAVIYPIAGSWQWNVGSGWLNKAGFIDFAGSTVVHSVGGWAALIGAITLGPRMGKFQDGPPGALTGHNLAIATLGALILWIGWYGFNGGSVLAFNTAVPYVAVTTTLGGAAGGISATITSWSTSGKPDLSMVINGILAGLVGVTAGCDGFGMGGSFIVGLIAGVLVVFSV-YTFENLKIDDPVGACSVHLVCGIWGTLAVGLF-------NLEKGLFYGGGFGQLGSQILGIISYGVWTVVASVIIWNILKALLGLRVS</Hsp_hseq>
+      <Hsp_midline>L + +++ + T+LV  M  G ++   GL + KNA+N + +++    L    +  +G+++ +G+    G L+FG         +GF     +S        +  +L  LFQ  F   A +I+SGS+AE++KF+ +++F +I TA++Y     W W  G GW+NK G +DFAG TVVH   G + L+ AI +G +  K  +  P     HNL I  +G + +WIGWYGFN GS   F+         T +  +AG I   I  +       L  ++ G LAGLV +T          + I+ LI G+     + Y    LK  D + A  +H V GI G +   +F       ++E G  Y G    +  QIL + +  ++++V + II  ++K +  L V+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19810</Hit_id>
+  <Hit_def>gnl|TC-DB|R7QP87|1.A.11.2.12 Uncharacterized protein OS=Chondrus crispus GN=CHC_T00000615001 PE=4 SV=1</Hit_def>
+  <Hit_accession>19810</Hit_accession>
+  <Hit_len>458</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>180.259</Hsp_bit-score>
+      <Hsp_score>456</Hsp_score>
+      <Hsp_evalue>5.67204e-52</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>411</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>440</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>203</Hsp_positive>
+      <Hsp_gaps>61</Hsp_gaps>
+      <Hsp_align-len>436</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKL---GVLDFAGGTVVHITSGVSGLVLAIMIGK--GNKHSESTP-----HNLIITLIGGIFVWIGWYGFNVGSAF-----TFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKAN-----PDIENGFIYTGDIH------IILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAYFE---GELNRFN</Hsp_qseq>
+      <Hsp_hseq>DTMFVLVSGYMVFLMQCGFAMLTAGSVRTKNTKNVLLKNILDACVGAIAYYLFGWAFAYGGDSKING-----FIGSGNFALSASSEGDFDDFTGFFFQWAFAATAATIVSGSVAERTSFYAYISYAFFLTAFVYPVVSHWVWGGGFLSNIFGHGMIDFAGCSVVHMVGGFAGLAGAAIVGPRYGRFNAEGKPVPMPGHSATLCTLGTFMLWFGWYGFNPGSALGISGGAYTVVARCAVT-TTIAAAAGGITTLVLKKVMDHIFDLLAVLNGILAGLVAITACCAFVEVWAAVIIGAIGA---------------------AFPIHGAVGFWGALCSGIFNSKTYQAAAGLPDQQGGFVM--DISEWKLFASNLVGCIIIVCWVLVLIVPFFFALNVMGL---LRISESEELIGNDISKHGGPAYPNDPVGELEETN</Hsp_hseq>
+      <Hsp_midline>DT+F+ +   +V+LM  G ++   G V++KN  N +++++    +    +   G+  ++G  +   G     F+    FA                FQ  F   A +I+SGS+AE+  F  Y+ +    TA VY  V+HWVWGGG+++ +   G++DFAG +VVH+  G +GL  A ++G   G  ++E  P     H+  +  +G   +W GWYGFN GSA       +  +A  A T T I+A+AG I  L+L+ +      LL +L G LAGLV IT    +V   +A I+  IG                      AF IHG  G  GA+ + +F SK        PD + GF+   DI         LV  + +   V+  IV  F    V+ L   L ++E E  IG D   HG  AY     GEL   N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6993</Hit_id>
+  <Hit_def>gnl|TC-DB|O28528|1.A.11.2.7 Ammonium transporter (Amt-2) OS=Archaeoglobus fulgidus GN=AF_1746 PE=4 SV=1</Hit_def>
+  <Hit_accession>6993</Hit_accession>
+  <Hit_len>468</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.548</Hsp_bit-score>
+      <Hsp_score>423</Hsp_score>
+      <Hsp_evalue>3.95554e-47</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>38</Hsp_hit-from>
+      <Hsp_hit-to>448</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>111</Hsp_identity>
+      <Hsp_positive>192</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>421</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINK----------LGVLDFAGGTVVHITSGVSGLVLAIMIGK--GNKHSESTP-----HNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAM-LAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKK-----ANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>DFVWALICGFLVMFMQAGFAMLEAGFSRAKNVANVMMKNLMDFAVGSLAFFAVGFALMMG------ADWQGIAGTTGWFLAGE--SYDVSTIELWFFMLVFAATAATIVSGSIAERPKFSVYLVYSAVVSAVIYPIYGHWLWGGGWLSSSEFMVKLGGGYGALDFAGSGVVHALGGYIALAAVMLLGPRLGKYDSDGNPRAIPGHNLAFAVIGTFILWFGWFGFNAGSTLSAHELRVSIIASNTNLAAAAGAVTAMAITWLRNGKPDVGMTCNGAVAGLVAITAPCAWVQPWSSVVIGTIAGFIATYGYWWLE-KRGLDDVVGAIPVHGFSGTWGLIALGIFADGSYGLYATESPLVTGLLY-GNWGFFIVQLISAIVNFAWAFGTGFALFWILKKVIGIRVSPEEEMLGLDIAEHAAVAY</Hsp_hseq>
+      <Hsp_midline>D ++  +C  LV  M  G ++   G  ++KN  N +M+++    + +  +  VGF +  G       +W+        F   E  S  +       F ++F   A +I+SGSIAE+ KF  YL++  + +A++Y    HW+WGGGW++            G LDFAG  VVH   G   L   +++G   G   S+  P     HNL   +IG   +W GW+GFN GS  +   + + +  +NT ++A+AGA+  + + ++      +     GA+AGLV IT    +V   S+ ++  I G        +++ K    D + A  +HG  G  G +   +F             +  G +Y G+    +VQ++       ++    F +  ++K +  + V+ +E  +GLD   H   AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2150</Hit_id>
+  <Hit_def>gnl|TC-DB|B8ZYW2|1.A.11.2.11 Ammonium transporter protein OS=Haloferax mediterranei (strain ATCC 33500 / DSM 1411 / JCM 8866 / NBRC 14739 / NCIMB 2177 / R-4) GN=amt1 PE=4 SV=1</Hit_def>
+  <Hit_accession>2150</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>157.147</Hsp_bit-score>
+      <Hsp_score>396</Hsp_score>
+      <Hsp_evalue>2.60653e-43</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>404</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>395</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>193</Hsp_positive>
+      <Hsp_gaps>59</Hsp_gaps>
+      <Hsp_align-len>420</Hsp_align-len>
+      <Hsp_qseq>MTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWF-GNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINK---------LGVLDFAGGTVVHITSGVSGLVLAIMIG--KGN--KHSESTP---HNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTN-----------------TVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAYFE</Hsp_qseq>
+      <Hsp_hseq>MQPGFALLEAGQVRAKNVGNVLMKNMTDWALGVLVYFVVGAGVATIVGGLTSPGGFDVA----AAFSYIGDSGAWIDW----LFGAVFAMTAATIVSGAVAERMDFRAYVVFAATITGFIYPVVQGLTWSGGLLSGSGYLGAALGVGYLDFAGATVVHMCGGVAGLVGAKMVGPRKGRFGASGESQPIPGHSMLLAVLGTLILAFGWYGFNVGTQAT-----VLATTESGGLEFMGAALGRVALVTTLGMGAGAVAAMVVSTNYQGKPDPLWMANGLLAGLVAVTGAVPHVTWWGGLVLGALGGAIVLPAYRWTVDSLKIDDVCGVFAVHGVAGAVGTALIPVF--------AVGGFSATQ----LVMQVAGVGIIALWTIVASAVVFAAAGTVFGLRVSEEEELEGLDIGEHGVSVYPE</Hsp_hseq>
+      <Hsp_midline>M PG +L   G V++KN  N +M++M    L   V+  VG  ++   G L   G ++        F+   D    I +    LF  +F   A +I+SG++AE+M F  Y++F    T  +Y  V    W GG ++          +G LDFAG TVVH+  GV+GLV A M+G  KG      ES P   H++++ ++G + +  GWYGFNVG+  T     +LA T                  T +   AGA+  +++   ++     L +  G LAGLV +T A  +VT+    ++  +GG        +    LK  D    F +HGV G +G  L  VF           GF  T     +++Q+  V  + +++IV + ++      +  L V+E+E   GLD   HG   Y E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17755</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9BLG3|1.A.11.2.9 Ammonium transporter 2 OS=Dictyostelium discoideum GN=amtB PE=1 SV=1</Hit_def>
+  <Hit_accession>17755</Hit_accession>
+  <Hit_len>431</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.836</Hsp_bit-score>
+      <Hsp_score>390</Hsp_score>
+      <Hsp_evalue>1.04832e-42</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>427</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>114</Hsp_identity>
+      <Hsp_positive>204</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>432</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNG----NLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGWINKL---GVLDFAGGTVVHITSGVSGLVLAIMIGK--GNKHSES------TPHNLIITLIGGIFVWIGWYGFNVGSAFTFDN-----IAMLAFTNTVISASAGAIGWLILEY------IFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSK-------KANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>DDMWVLNATYLVFYMQAGFCMLEAGVVRAKNAKSIIMKSIIDTAIGSLLFWALGFGLAFGNADKASNPVIGTSHFFLINYQNLS-------------FFAFQWAFCATSITIVSGSLAERVHVTSCLVYTIVMSAFIYPLSAHWVWSYNGWLRMIGFNGIIDFSGSIVVHIVGGCIGLVGTYLVGPRIGRFDSESGKPKPLPGHSITIYTLGAFIIWYGFYGFNTGSTLGISGGGIAIASRSAVTMTIIACASCATTLLAIKIKSGKYDVVKSVNSLLGGLVSSAAVCSLIDPWAAFIIGCVTSFV--------YLGCSHLLIKLRIDDPLDSSAIHLGCGIWGALSVGLFSTQENLSLVLKKSTNV-YGLFFGGGFEQLGIQLLGIIIVMAWCFFCASILFTILKKFHLLRIEPTKELMGIDIDSAGGPAY</Hsp_hseq>
+      <Hsp_midline>D +++   T LV+ M  G  +   G+V++KNA + +M+S+    + + ++  +GF ++FGN     N   G   +  +N+   +             F  FQ  FC  +I+I+SGS+AE++     L++ ++ +A +Y   AHWVW   GW+  +   G++DF+G  VVHI  G  GLV   ++G   G   SES        H++ I  +G   +W G+YGFN GS            +  A T T+I+ ++ A   L ++       + K   SLLG L+ + A   +I P A ++     + +        Y+  +++ +KL+  D LD+  IH   GI GA+   +F ++       K + ++  G  + G    + +Q+L +  V+ +      I+  ++K    L +   +  +G+D    G  AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10925</Hit_id>
+  <Hit_def>gnl|TC-DB|P54144|1.A.11.2.1 HIGH AFFINITY AMMONIUM TRANSPORTER - Arabidopsis thaliana (Mouse-ear cress).</Hit_def>
+  <Hit_accession>10925</Hit_accession>
+  <Hit_len>501</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.288</Hsp_bit-score>
+      <Hsp_score>373</Hsp_score>
+      <Hsp_evalue>8.39964e-40</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>415</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>480</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>54</Hsp_gaps>
+      <Hsp_align-len>452</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGWIN----------KLGVLDFAGGTVVHITSGVSGLVLAIMIG-------KGNKHSESTPHNLIITLIGGIFVWIGWYGFNVGS----AFTFDN---------IAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKK-------ANPDIENGFIYTGDIHII---LVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAYFEGELNRFNKHIR</Hsp_qseq>
+      <Hsp_hseq>DNTYLLFSAYLVFSMQLGFAMLCAGSVRAKNTMNIMLTNVLDAAAGGLFYYLFGYAFAFGSPSNGFIGKHYFGLKDIPTASADYSN--------FLYQWAFAIAAAGITSGSIAERTQFVAYLIYSSFLTGFVYPVVSHWFWSVDGWASPFRTDGDLLFSTGAIDFAGSGVVHMVGGIAGLWGALIEGPRLGRFDNGGRAIALRGHSASLVVLGTFLLWFGWYGFNPGSFNKILVTYETGTYNGQWSAVGRTAVTTTLAGCTA-ALTTLFGKRLLSGHWNVTDVCNGLLGGFAAITGGCSVVEPWAAIICGFVAAL-VLLGCNKLAEKLKYDDPLEAAQLHGGCGAWGLIFTALFAQEKYLNQIYGNKPGRPHGLFMGGGGKLLGAQLIQIIVITGWVSATMGTLFFILKKMKL---LRISSEDEMAGMDMTRHGGFAYMYFDDDESHKAIQ</Hsp_hseq>
+      <Hsp_midline>D  ++     LV+ M  G ++   G V++KN +N ++ ++         +   G+  +FG+ +  F    Y  L  +  A+ +  +         L+Q  F   A  I SGSIAE+ +F+ YL++    T  VY  V+HW W   GW +            G +DFAG  VVH+  G++GL  A++ G        G +      H+  + ++G   +W GWYGFN GS      T++          +   A T T+   +A A+  L  + +     ++  +  G L G   IT     V   +A I   +  +   +  N +  KLKY D L+A  +HG  G  G + TA+F  +K         P   +G    G   ++   L+QI+ +T  V  ++   F I K +KL   L ++ ++   G+D   HG  AY   + +  +K I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18992</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9SQH9|1.A.11.2.13 Ammonium transporter 1 member 3 OS=Arabidopsis thaliana GN=AMT1-3 PE=2 SV=2</Hit_def>
+  <Hit_accession>18992</Hit_accession>
+  <Hit_len>498</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.902</Hsp_bit-score>
+      <Hsp_score>372</Hsp_score>
+      <Hsp_evalue>1.11155e-39</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>471</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>189</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>440</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGWIN----------KLGVLDFAGGTVVHITSGVSGLVLAIMIG-------KGNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFT--------------FDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKK-------ANPDIENGFIYTGDIHII---LVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>DNTYLLFSAYLVFAMQLGFAMLCAGSVRAKNTMNIMLTNVLDAAAGGLFYYLFGYAFAFGGSS-------EGFIGRHNFALRDFPTPTADYSFF-LYQWAFAIAAAGITSGSIAERTQFVAYLIYSSFLTGFVYPVVSHWFWSPDGWASPFRSADDRLFSTGAIDFAGSGVVHMVGGIAGLWGALIEGPRRGRFEKGGRAIALRGHSASLVVLGTFLLWFGWYGFNPGS-FTKILVPYNSGSNYGQWSGIGRTA-VNTTLSGCTAALTTLFGKRLLSGHWNVTDVCNGLLGGFAAITAGCSVVEPWAAIVCGFMASV-VLIGCNKLAELVQYDDPLEAAQLHGGCGAWGLIFVGLFAKEKYLNEVYGATPGRPYGLFMGGGGKLLGAQLVQILVIVGWVSATMGTLFFILKRLNL---LRISEQHEMQGMDMTRHGGFAY</Hsp_hseq>
+      <Hsp_midline>D  ++     LV+ M  G ++   G V++KN +N ++ ++         +   G+  +FG  +         F+    FA ++  +P   ++ F L+Q  F   A  I SGSIAE+ +F+ YL++    T  VY  V+HW W   GW +            G +DFAG  VVH+  G++GL  A++ G       KG +      H+  + ++G   +W GWYGFN GS FT              +  I   A  NT +S    A+  L  + +     ++  +  G L G   IT     V   +A +   +  +   I  N +   ++Y D L+A  +HG  G  G +   +F  +K       A P    G    G   ++   LVQIL +   V  ++   F I K + L   L ++EQ    G+D   HG  AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19010</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9SVT8|1.A.11.2.6 Ammonium transporter 1 member 4 OS=Arabidopsis thaliana GN=AMT1.4 PE=2 SV=1</Hit_def>
+  <Hit_accession>19010</Hit_accession>
+  <Hit_len>504</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>146.362</Hsp_bit-score>
+      <Hsp_score>368</Hsp_score>
+      <Hsp_evalue>4.38003e-39</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>406</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>482</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>119</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>72</Hsp_gaps>
+      <Hsp_align-len>453</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGN------GNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGG-GWIN---------KLGVLDFAGGTVVHITSGVSGLVLAIM-------IGKGNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFT----------------FDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVI--NYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKK-------ANPDIENGFIYTGDIHII---LVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAYFEGE</Hsp_qseq>
+      <Hsp_hseq>DNTYLLFSAYLVFAMQLGFAMLCAGSVRAKNTMNIMLTNVIDAAAGGLFYYLFGFAFAFGSPSNGFIGKHFFGMYDFP-------------QPTFDYPYF-LYQWTFAIAAAGITSGSIAERTQFVAYLIYSSFLTGLVYPIVSHWFWSSDGWASPARSENLLFQSGVIDFAGSGVVHMVGGIAGLWGALIEGPRIGRFGVGGKPVTLRGHSATLVVLGTFLLWFGWYGFNPGSFATIFKAYGETPGSSFYGQWSAVGRTAVTTTLAGCTA-ALTTLFGKRLIDGYWNVTDVCNGLLGGFAAITSGCSVVEPWAALV---CGFVAAWVLMGCNRLAEKLQFDDPLEAAQLHGGCGAWGIIFTGLFAEKRYIAEIFGGDPNRPFGLLMGGGGRLLAAHVVQILVITGWVSVTMGTLFFILHKLKL---LRIPAEDEIAGVDPTSHGGLAYMYTE</Hsp_hseq>
+      <Hsp_midline>D  ++     LV+ M  G ++   G V++KN +N ++ ++         +   GF  +FG+      G  +FG +++               P   +  F L+Q  F   A  I SGSIAE+ +F+ YL++    T LVY  V+HW W   GW +         + GV+DFAG  VVH+  G++GL  A++        G G K      H+  + ++G   +W GWYGFN GS  T                +  +   A T T+   +A A+  L  + +     ++  +  G L G   IT     V   +A +    G +  ++++  N +  KL++ D L+A  +HG  G  G + T +F  K+        +P+   G +  G   ++   +VQIL +T  V  ++   F I   +KL   L +  ++   G+D   HG  AY   E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13079</Hit_id>
+  <Hit_def>gnl|TC-DB|Q20605|1.A.11.2.10 Putative ammonium transporter 2 OS=Caenorhabditis elegans GN=amt-2 PE=2 SV=3</Hit_def>
+  <Hit_accession>13079</Hit_accession>
+  <Hit_len>515</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.05</Hsp_bit-score>
+      <Hsp_score>362</Hsp_score>
+      <Hsp_evalue>3.46526e-38</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>398</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>448</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>48</Hsp_gaps>
+      <Hsp_align-len>433</Hsp_align-len>
+      <Hsp_qseq>MNLNDTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFA---------TQEDISPH--IPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGG-GWINKLGVLDFAGGTVVHITSGVSGLVLAIMI----GKGNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDN----IAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIG---GICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKK-----------ANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVI-KLITPLSVTEQETNIGLDKIVHG</Hsp_qseq>
+      <Hsp_hseq>LSQDDGVWMMASSFIIFTMTAGFGLLESGRVSSKDEVNCMVKNVFDVIFGGLAYWMFGYGLTFGDSKHQLGRY-------VGFGDFFFDPERVSDDDSTDEKGISYSLF-IFQMSFATTTSTIVSAGMSERIHLKSHC-FISFFITLVHSVAGHWVWDQEGVFRMMGVVDSAGCSAVHLVGGVSGLVATLYLKPRRNRFAKNGIRTVSDPTKAILGFLMIWWGWLAFNTSSNYAVTHGQWTEGMRSAVGTILASAGGGVVTVIITRLSTKKIQMDMLIDGMLASLVASTGGCLYFTPWQATLVGAIGSSLALAAYPVTEWLKI----DDPVGVFPVHVVGSIWGMIAPAIFVYRRPMNFGPPECDFQTSDEINGLLYGGGFYLLFLQSFVILVIGTYSAICAFIILFLIHHSPVGLRVDKYTEELGADLIEHG</Hsp_hseq>
+      <Hsp_midline>++ +D ++M   + +++ MT G  L   G V SK+ +N +++++  ++     +   G+ ++FG+     G +       VGF          + +D +    I ++LF +FQM F T   +I+S  ++E++    +  F+  +  LV+S   HWVW   G    +GV+D AG + VH+  GVSGLV  + +     +  K+   T  +    ++G + +W GW  FN  S +   +      M +   T+++++ G +  +I+  +  K   +  L+ G LA LV  T    Y T   AT++  IG    +  Y V  ++K+     D +  F +H VG I G +  A+F  ++              D  NG +Y G  +++ +Q   +  +  +S +  FII  +I      L V +    +G D I HG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3640</Hit_id>
+  <Hit_def>gnl|TC-DB|E2CWJ2|1.A.11.2.8 AMT1;1 ammonium/proton co-transporter OS=Phaseolus vulgaris PE=2 SV=1</Hit_def>
+  <Hit_accession>3640</Hit_accession>
+  <Hit_len>500</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>141.354</Hsp_bit-score>
+      <Hsp_score>355</Hsp_score>
+      <Hsp_evalue>2.68636e-37</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>402</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>472</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>194</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>440</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWG-GGW-----INKL----GVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHSEST-------PHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAM---------------LAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQSKK-------ANPDIENGFIYTGDIHII---LVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAY</Hsp_qseq>
+      <Hsp_hseq>DSTYLLFSAYLVFSMQLGFAMLCAGSVRAKNTMNIMLTNVLDAAAGGLFYYLFGFAFAFGSPSNGFIGKHY-------FGLTDIHAQNLDYSNF-LYQWAFAIAAAGITSGSIAERTQFVAYLVYSSFLTGFVYPVVSHWFWSPDGWASAFNLNNLLFSTGVIDFAGSGVVHMVGGVAGLWGALIEGPRIGRFDHTGRAVALRGHSASLVVLGTFMLWFGWYGFNPGS---FNRILVPYNSGSKYGQWSAVGRTAVTTTLAGSTAALTTLFGKRVLSGHWNVTDVCNGLLGGFAAITAGCAVVEPWAAIVCGFVASV-VLIACNKLAERVRFDDPLEAAQLHGGCGAWGVIFTALFAKKEYVFEAYGGDASRPHGLFMGGGGRLLAAHLIQILVIVGWVSATMGPLFWLLKKLNL---LRISSEDELAGMDMTRHGGFAY</Hsp_hseq>
+      <Hsp_midline>D+ ++     LV+ M  G ++   G V++KN +N ++ ++         +   GF  +FG+ +  F    Y       F   +  + ++ ++ F L+Q  F   A  I SGSIAE+ +F+ YL++    T  VY  V+HW W   GW     +N L    GV+DFAG  VVH+  GV+GL  A++ G      + T        H+  + ++G   +W GWYGFN GS   F+ I +                    T ++ S  A+  L  + +     ++  +  G L G   IT     V   +A +   +  +   I  N +  ++++ D L+A  +HG  G  G + TA+F  K+        +    +G    G   ++   L+QIL +   V  ++   F + K + L   L ++ ++   G+D   HG  AY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11082</Hit_id>
+  <Hit_def>gnl|TC-DB|P58905|1.A.11.2.4 Ammonium transporter 1, member 1 (LeAMT1;1) - Lycopersicon esculentum (Tomato).</Hit_def>
+  <Hit_accession>11082</Hit_accession>
+  <Hit_len>488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>131.724</Hsp_bit-score>
+      <Hsp_score>330</Hsp_score>
+      <Hsp_evalue>6.61463e-34</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>415</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>480</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>188</Hsp_positive>
+      <Hsp_gaps>55</Hsp_gaps>
+      <Hsp_align-len>451</Hsp_align-len>
+      <Hsp_qseq>DTIFMFLCTLLVWLMTPGLSLFYGGLVQSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVW-GGGWINKL--------GVLDFAGGTVVHITSGVSGLVLAIM----IGKGNKHSESTP---HNLIITLIGGIFVWIGWYGFNVGS--------------AFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAVF-------QSKKANPDIENGFIYTGDIHII---LVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQETNIGLDKIVHGEHAYFEGELNRFNKHIR</Hsp_qseq>
+      <Hsp_hseq>DSTYLLFSAYLVFSMQLGFAMLLAGSV--RNTMNIMLTNVLDAAAGGLFYYLFGFAFALGGPS-------NGFIGRHFFGLKEIPSNSFDYMNF-LYQWAFAIAAAGITSGSIAERTQFVAYLIYSSFLTGFVYPVVSHWFWTPDGWASPTNSNLLFGSGVIDFAGSGVVHMVGGIAGFYGALIEGPRIGRYDHTGRSVALRGHSASLVVLGTFLLWFGWYGFNPGSFNKILVTYGASGGYYGQWSAVGRTAVTTTLAGCTA-ALTTLFGKRILSGHWNVTDVCNGLLGGFAAITAGCSVVEPWAAIICGFVAAL-VLIGFNMLAEKFKYDDPLEAAQLHGGCGAWGIIFTGLFAKGEFVDQVYPGKPGRPHGLFMGGGGKLLGAHIIQILVIIGWVSATMGPLFYILHKFKL---LRISSEDEMAGMDLTRHGGFAYYHEEDPKLGMQMR</Hsp_hseq>
+      <Hsp_midline>D+ ++     LV+ M  G ++   G V  +N +N ++ ++         +   GF  + G  +         F+    F  +E  S    +  F L+Q  F   A  I SGSIAE+ +F+ YL++    T  VY  V+HW W   GW +          GV+DFAG  VVH+  G++G   A++    IG+ +    S     H+  + ++G   +W GWYGFN GS                 +  +   A T T+   +A A+  L  + I     ++  +  G L G   IT     V   +A I   +  +   I  N +  K KY D L+A  +HG  G  G + T +F       Q     P   +G    G   ++   ++QIL +   V  ++   F I    KL   L ++ ++   G+D   HG  AY+  E  +    +R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4164</Hit_id>
+  <Hit_def>gnl|TC-DB|F1TE58|1.A.11.4.7 Ammonium transporter OS=[Clostridium] papyrosolvens DSM 2782 GN=Cpap_1880 PE=4 SV=1</Hit_def>
+  <Hit_accession>4164</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>4.74234e-13</Hsp_evalue>
+      <Hsp_query-from>75</Hsp_query-from>
+      <Hsp_query-to>344</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>352</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>283</Hsp_align-len>
+      <Hsp_qseq>YTFLNHVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHS----ESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIF-----KKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVK----LKYHDALDAFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYT</Hsp_qseq>
+      <Hsp_hseq>YLLLRYTGVISLESVNPQTIKGLLLA---EFAVAAALISMGAVLGRLRLYQYAL-ISVFLVPIYMINEWLVLDGGLGITKGFVDAAGSIVIHAFGAYFGLGLAIALTK-QKHMDHPIESDASSDRFSMLGSMVLWIFW------PSFCSAIVPAEQFEQTVVNTVLALCGATLITYLFSALLRKGKPAIADIANASLAGGVAIGATCNLVSAHVAFLIGLLAGALCVVGYTIIQPRLQRLLKIVDTCGVHNLHGMPGLLGGII-AIFVVPEAAKAQVAGIVFT</Hsp_hseq>
+      <Hsp_midline>Y  L + G  + E ++P     L +     F   A  I  G++  +++   Y L + ++   +Y      V  GG     G +D AG  V+H      GL LAI + K  KH     ES   +   +++G + +WI W       +F    +    F  TV++      G  ++ Y+F     K   ++  +   +LAG V I      V+   A ++ L+ G  C +    I+ +    LK  D      +HG+ G++G ++ A+F   +A      G ++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13112</Hit_id>
+  <Hit_def>gnl|TC-DB|Q22947|1.A.11.4.10 RH (Rhesus) antigen Related OS=Caenorhabditis elegans OX=6239 GN=rhr-1 PE=1 SV=1</Hit_def>
+  <Hit_accession>13112</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>1.06813e-12</Hsp_evalue>
+      <Hsp_query-from>96</Hsp_query-from>
+      <Hsp_query-to>328</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>350</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>246</Hsp_align-len>
+      <Hsp_qseq>ALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWT--ALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGK----GNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAI-GWLILEYIFK-KTTSLLGLLLGALAGLVVITPAAGYVTY-LSATIMALIGGICCYIVINYI----KVKLKYHDALDAFGIHGVGGIIGAVLTAVF</Hsp_qseq>
+      <Hsp_hseq>SLEQLLTADFAAAVILISMGAMLGKLSPSQYVIMAFFETPVALIVEHIC--------VHNLQINDVGGSIIVHAFGAYFGLACAKGFGKKEQRGHTNEGSTYHTDIFAMIGAIFLWIYWPSFNAAVAAT-DDARQRAVANTFLSLCACTMTTFLVSQAVDKHKRFDMVHIANSTLAGGVAIGTTANVVLEPYHAMIIGVIAGAVSVIGYKYITPFLSEKLGIHDTCGVNNLHGMPGLIAGFASIAF</Hsp_hseq>
+      <Hsp_midline>+L  L    F    I I  G++  K+    Y++     T  AL+   +         ++ L + D  G  +VH      GL  A   GK    G+ +  ST H  I  +IG IF+WI W  FN   A T D+    A  NT +S  A  +  +L+ + + K K   ++ +    LAG V I   A  V     A I+ +I G    I   YI      KL  HD      +HG+ G+I    +  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1148</Hit_id>
+  <Hit_def>gnl|TC-DB|AIC81181|1.A.11.4.8 Rh family A glycoprotein [Anabas testudineus]</Hit_def>
+  <Hit_accession>1148</Hit_accession>
+  <Hit_len>437</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.929</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>4.09992e-11</Hsp_evalue>
+      <Hsp_query-from>97</Hsp_query-from>
+      <Hsp_query-to>332</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>363</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>250</Hsp_align-len>
+      <Hsp_qseq>LFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGK-----GNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYI--FKKTTSLLGLLLGALAGLVVI-TPAAGYVTYLSATIMALIGGICCYIVINYIK----VKLKYHDALDAFGIHGVGGIIG--AVLTAVFQSKK</Hsp_qseq>
+      <Hsp_hseq>IFKIINADFSTATVLISFGAVLGKTSPVQ-LLIMTILEITIFSVNEHLV-----ANILGANDVGASMIIHAFGAYFGLAVARVLYRPGLRNGHENDGSVYHSDMFAMIGTVFLWMFWPSFNSAIAES-DNDQLTAVINTYLSLAACVLSAYAISSLVEHKGKLDMVHIQNATLAGGVAVGTCADMSIGPVGAMVIGFVAGIISTLGFKYLSPILASKLGIQDTCGVHNLHGMPGILGGLAGIVAVALGKK</Hsp_hseq>
+      <Hsp_midline>+F +    F T  + I  G++  K   +  LL + I    ++S   H V      N LG  D     ++H      GL +A ++ +     G+++  S  H+ +  +IG +F+W+ W  FN   A + DN  + A  NT +S +A  +    +  +   K    ++ +    LAG V + T A   +  + A ++  + GI   +   Y+      KL   D      +HG+ GI+G  A + AV   KK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1141</Hit_id>
+  <Hit_def>gnl|TC-DB|AHY27545.2|1.A.11.4.11 Rh protein [Portunus trituberculatus]</Hit_def>
+  <Hit_accession>1141</Hit_accession>
+  <Hit_len>478</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>4.34317e-10</Hsp_evalue>
+      <Hsp_query-from>155</Hsp_query-from>
+      <Hsp_query-to>387</Hsp_query-to>
+      <Hsp_hit-from>177</Hsp_hit-from>
+      <Hsp_hit-to>445</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>273</Hsp_align-len>
+      <Hsp_qseq>GVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHSE---STPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIF--KKTTSLLGLLLGALAGLVVITPAAGYVTY----LSATIMALIGGICCYIVIN-YIKVKLKYHDALDAFGIHGVGGIIGAVLTAVFQS------------------------------KKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFIIAKVIKLITPLSVTEQE</Hsp_qseq>
+      <Hsp_hseq>GAVDIGDSMFVHVFGAYFGLAASLILYRRDASTEKEGSSYQSDMFAMIGTVFLWLYWPSFNAGTAPGDDQ--HRGIINTYISLISCCVTTYALSSLLDKHKKFDMVHVQNSTLAGGVAVGTAADLMIHPWGAALLGILAAVISVCGYVYITPLLASRLRIHDTCGVHNLHGLPGILAAIAGAVAAALASEATYGISLYEIFPARVPVEGSPELARLQQKMPDLEGGSGLSGSSQ-ALFQLLTLVVTLVISIAGGIVTGCILRL-SPLSVLKTE</Hsp_hseq>
+      <Hsp_midline>G +D      VH+     GL  ++++ + +  +E   S+  + +  +IG +F+W+ W  FN G+A   D        NT IS  +  +    L  +    K   ++ +    LAG V +  AA  + +        I+A +  +C Y+ I   +  +L+ HD      +HG+ GI+ A+  AV  +                              ++  PD+E G   +G     L Q+L +   ++ SI    +   +++L +PLSV + E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18111</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9H310|1.A.11.4.2 Ammonium transporter Rh type B - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>18111</Hit_accession>
+  <Hit_len>441</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>7.12417e-10</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>324</Hsp_query-to>
+      <Hsp_hit-from>65</Hsp_hit-from>
+      <Hsp_hit-to>355</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>134</Hsp_positive>
+      <Hsp_gaps>46</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>QSKNALNTVMQSMAAIVLVTFVWITVGFTISFGNGNLWFGNWEYTFLN--HVGFATQEDISPHIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKG----NKHSE-STPHNLIITLIGGIFVWIGWYGFNVG-----------SAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITP----AAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVL</Hsp_qseq>
+      <Hsp_hseq>QDVHAMVFVGFGFLMVFLQRYGFSSVGFTFLLAAFALQWSTLVQGFLHSFHGG---------HIHVGVESMINADFCAGAVLISFGAVLGKTG--PTQLLLMALLEVVLFGINEFVL----LHLLGVRDAGGSMTIHTFGAYFGLVLSRVLYRPQLEKSKHRQGSVYHSDLFAMIGTIFLWIFWPSFNAALTALGAGQHRTALNTYYSLAASTLGTFALSALVGEDGRLDMVHI--QNAALAGGVVVGTSSEMMLTPFGALAAG---FLAGTVSTL--GYKFFTPI--LESKFKVQDTCGVHNLHGMPGVLGALL</Hsp_hseq>
+      <Hsp_midline>Q  +A+  V      + L  + + +VGFT       L +      FL+  H G         HI   +  +    FC  A+ I  G++  K    P  L ++    +V   +  +V     ++ LGV D  G   +H      GLVL+ ++ +     +KH + S  H+ +  +IG IF+WI W  FN             +  T+ ++A        +SA  G  G L + +I  +  +L G ++   +  +++TP    AAG   +L+ T+  L  G   +  I  ++ K K  D      +HG+ G++GA+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19669</Hit_id>
+  <Hit_def>gnl|TC-DB|QBZ81837.1|1.A.11.4.12 Rhesus protein [Acropora yongei]</Hit_def>
+  <Hit_accession>19669</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>5.54921e-09</Hsp_evalue>
+      <Hsp_query-from>92</Hsp_query-from>
+      <Hsp_query-to>327</Hsp_query-to>
+      <Hsp_hit-from>134</Hsp_hit-from>
+      <Hsp_hit-to>377</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>256</Hsp_align-len>
+      <Hsp_qseq>HIPFALFMLFQMMFCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDF-----AGGTV-VHITSGVSGLVLAIMIGKGNKHSE----STPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTT-----SLLGLLLGALAGLVVITPAAGY-VTYLSATIMALIGGICCYIVINYIKVKL----KYHDALDAFGIHGVGGIIGAVLTAV</Hsp_qseq>
+      <Hsp_hseq>HIELSIQTLVTAEFAAATVLITYGAVLGKVSRLQ-LLVIGILEVVFYA-----------INELVAIEFLKFSDAGGSILIHTFGAYFGLALSRVLHNKDAHGSPKEGSNYHSDLFAMIGTVFLWMYWPSFNAALVAPDYVAQHRSVINTYFSLSAACVTTFAISPIFQRRAGKWRLSMVHVQNATLAGGVAIGTASNMSVSPWGALLIGCCAGGLSTVGYAYLTPFLTKYTKTHDTCGVNNLHGMPGILGAIAGAI</Hsp_hseq>
+      <Hsp_midline>HI  ++  L    F    + I  G++  K+  +  LL + I   + Y+           IN+L  ++F     AGG++ +H      GL L+ ++   + H      S  H+ +  +IG +F+W+ W  FN             +  NT  S SA  +    +  IF++       S++ +    LAG V I  A+   V+   A ++    G    +   Y+   L    K HD      +HG+ GI+GA+  A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1149</Hit_id>
+  <Hit_def>gnl|TC-DB|AIC81184|1.A.11.4.9 Rh family C glycoprotein 2 [Anabas testudineus]</Hit_def>
+  <Hit_accession>1149</Hit_accession>
+  <Hit_len>482</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>5.57531e-09</Hsp_evalue>
+      <Hsp_query-from>105</Hsp_query-from>
+      <Hsp_query-to>327</Hsp_query-to>
+      <Hsp_hit-from>140</Hsp_hit-from>
+      <Hsp_hit-to>367</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>238</Hsp_align-len>
+      <Hsp_qseq>FCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGN----KH-SESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSL--LGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVIN--------YIKVKLKYHDALDAFGIHGVGGIIGAVLTAV</Hsp_qseq>
+      <Hsp_hseq>FCCGGVLIAFGALLGKVS--PVQMMVVSLFGVTLYAVEEYII----LNLLHCRDAGGSMVIHTFGGYYGLAISWILYRPNLNKSKHLNGSVYHSDLFAMIGTLFLWLFWPSFNSAIANHGDGQHRAAI-NTYISLAASVVTAVAISSMTEKRGKLDMVHIQNATLAGGVAMGASA---EFMISPYGSLIVGFFCGIISTFGFKFVSPFLEKHLKLQDTCGIHNLHAVPGMLGGFISAI</Hsp_hseq>
+      <Hsp_midline>FC   + I  G++  K+   P  + VV    +    V  ++     +N L   D  G  V+H   G  GL ++ ++ + N    KH + S  H+ +  +IG +F+W+ W  FN   A   D     A  NT IS +A  +  + +  + +K   L  + +    LAG V +  +A    ++ +   +LI G  C I+          +++  LK  D      +H V G++G  ++A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19074</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9UBD6|1.A.11.4.1 RH type C glycoprotein (Tumor-related protein DRC2) - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>19074</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>7.35996e-09</Hsp_evalue>
+      <Hsp_query-from>105</Hsp_query-from>
+      <Hsp_query-to>327</Hsp_query-to>
+      <Hsp_hit-from>130</Hsp_hit-from>
+      <Hsp_hit-to>357</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>239</Hsp_align-len>
+      <Hsp_qseq>FCTIAISILSGSIAEKMKFIPYLLFVVIWTALVYSPVAHWVWGGGWINKLGVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHSESTPHNLI-----ITLIGGIFVWIGWYGFNVGSAF-----------TFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYIKVKLKYHDALDAFGIHGVGGIIGAVLTAV</Hsp_qseq>
+      <Hsp_hseq>FCVASVCVAFGAVLGKVS--PIQLLIMTFFQVTLFAVNEFIL----LNLLKVKDAGGSMTIHTFGAYFGLTVTRILYRRNLEQSKERQNSVYQSDLFAMIGTLFLWMYWPSFNSAISYHGDSQHRAAINTYCSLAACVLTSVAISSALHKKGKLDMVHI-QNATLAGGVAVGTAAEMMLMP----YGALIIGFVCGIISTLGFVYLTPFLESRLHIQDTCGINNLHGIPGIIGGIVGAV</Hsp_hseq>
+      <Hsp_midline>FC  ++ +  G++  K+   P  L ++ +  +    V  ++     +N L V D  G   +H      GL +  ++ + N        N +       +IG +F+W+ W  FN   ++           T+ ++A    T+  IS++    G L + +I +  T   G+ +G  A ++++     Y   +   +  +I  +    +  +++ +L   D      +HG+ GIIG ++ AV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12041</Hit_id>
+  <Hit_def>gnl|TC-DB|Q02094|1.A.11.4.3 Rhesus blood group-associated glycoprotein - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>12041</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>2.44952e-06</Hsp_evalue>
+      <Hsp_query-from>171</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>185</Hsp_hit-from>
+      <Hsp_hit-to>343</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>VSGLVLAIMIGKGNKHSESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYI--FKKTTSLLGLLLGALAGLVVITPAAGYVTY-LSATIMALIGGICCYIVINYI----KVKLKYHDALDAFGIHGVGGIIGAV</Hsp_qseq>
+      <Hsp_hseq>VAGILYRSGLRKGHENEESAYYSDLFAMIGTLFLWMFWPSFNSAIAEPGDK-QCRAIVNTYFSLAACVLTAFAFSSLVEHRGKLNMVHIQNATLAGGVAVGTCADMAIHPFGSMIIGSIAGMVSVLGYKFLTPLFTTKLRIHDTCGVHNLHGLPGVVGGL</Hsp_hseq>
+      <Hsp_midline>V+G++    + KG+++ ES  ++ +  +IG +F+W+ W  FN   A   D     A  NT  S +A  +       +   +   +++ +    LAG V +   A    +   + I+  I G+   +   ++      KL+ HD      +HG+ G++G +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15741</Hit_id>
+  <Hit_def>gnl|TC-DB|Q82X47|1.A.11.4.4 Ammonium transporter family OS=Nitrosomonas europaea GN=Rh50 PE=1 SV=1</Hit_def>
+  <Hit_accession>15741</Hit_accession>
+  <Hit_len>425</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>3.33642e-06</Hsp_evalue>
+      <Hsp_query-from>155</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>331</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>175</Hsp_align-len>
+      <Hsp_qseq>GVLDFAGGTVVHITSGVSGLVLAIMIGKGNKHS---ESTPHNLIITLIGGIFVWIGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKK-TTSLLGLLLGALAGLVVITPAAGYVTYLSATIMALIGGICCYIVINYI----KVKLKYHDALDAFGIHGVGGIIG</Hsp_qseq>
+      <Hsp_hseq>GFQDSAGSIAIHAFGAYFGLGVSIALTTAAQRAQPIESDATSDRFSMLGSMVLWLFWPSFAT-AIVPFEQMPQ-TIVNTLLALCGATLATYFLSALFHKGKASIVDMANAALAGGVAIGSVCNIVGPVGAFVIGLLGGAISVVGFVFIQPMLESKAKTIDTCGVHNLHGLPGLLG</Hsp_hseq>
+      <Hsp_midline>G  D AG   +H      GL ++I +    + +   ES   +   +++G + +W+ W  F   +   F+ +      NT+++     +    L  +F K   S++ +   ALAG V I      V  + A ++ L+GG    +   +I    + K K  D      +HG+ G++G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7566</Hit_id>
+  <Hit_def>gnl|TC-DB|O76082|2.A.1.19.3 Organic cation/carnitine transporter 2 (Solute carrier family 22, member 5) (High-affinity sodium-dependent carnitine cotransporter) - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>7566</Hit_accession>
+  <Hit_len>557</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000586131</Hsp_evalue>
+      <Hsp_query-from>193</Hsp_query-from>
+      <Hsp_query-to>370</Hsp_query-to>
+      <Hsp_hit-from>339</Hsp_hit-from>
+      <Hsp_hit-to>509</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>NLIITLIGGIFVW----IGWYGFNVGSAFTFDNIAMLAFTNTVISASAGAIGWLILEYIFKKTTSLLGLLLG--ALAGLVVITPAAGYVTYLSATIMALIG--GICCYIVINYIKVKLKYHDALD--AFGIHGVGGIIGAVLTAVFQSKKANPDIENGFIYTGDIHIILVQILCVTAVVIFSIVMTFI</Hsp_qseq>
+      <Hsp_hseq>NIRMVTIMSIMLWMTISVGYFGLSLDTPNLHGDIFVNCFLSAMVEVPAYVLAWLLLQYLPRRYSMATALFLGGSVLLFMQLVPPDLYYL----ATVLVMVGKFGVTAAFSMVYVYTAELYPTVVRNMGVGVSSTASRLGSILSPY-------------FVYLGAYDRFLPYILMGSLTILTAILTLFL</Hsp_hseq>
+      <Hsp_midline>N+ +  I  I +W    +G++G ++ +     +I +  F + ++   A  + WL+L+Y+ ++ +    L LG   L  + ++ P   Y+    AT++ ++G  G+     + Y+     Y   +     G+      +G++L+               F+Y G     L  IL  +  ++ +I+  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2428621335</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

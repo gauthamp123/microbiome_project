@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_501185.1 hypothetical protein SAOUHSC_02722 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>128</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_501185.1 hypothetical protein SAOUHSC_02722 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>128</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20212</Hit_id>
+  <Hit_def>gnl|TC-DB|T1YCA9|2.A.129.1.7 Monosaccharide translocase (Flippase type) OS=Staphylococcus aureus subsp. aureus CN1 GN=SAKOR_02415 PE=4 SV=1</Hit_def>
+  <Hit_accession>20212</Hit_accession>
+  <Hit_len>128</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>258.07</Hsp_bit-score>
+      <Hsp_score>658</Hsp_score>
+      <Hsp_evalue>9.58307e-91</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>128</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>MKLTQTHAEILKFIIVGGINTLNYYVVYLLLLKLLHIEYMISHITGFLVAFVISYYLNCYFVYRVKPTWRKFISFPITQIVNVSLQTVLLYVFVSWLNLPAEIAPFAGLIITIPITFILSKWILKDSN</Hsp_qseq>
+      <Hsp_hseq>MKLTQTHAEILKFIIVGGINTLNYYVVYLLLLKLLHIEYMISHITGFLVAFVISYYLNCYFVYRVKPTWRKFISFPITQIVNVSLQTVLLYVFVSWLNLPAEIAPFAGLIITIPITFILSKWILKDSN</Hsp_hseq>
+      <Hsp_midline>MKLTQTHAEILKFIIVGGINTLNYYVVYLLLLKLLHIEYMISHITGFLVAFVISYYLNCYFVYRVKPTWRKFISFPITQIVNVSLQTVLLYVFVSWLNLPAEIAPFAGLIITIPITFILSKWILKDSN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6913</Hit_id>
+  <Hit_def>gnl|TC-DB|O22008|2.A.129.1.1 Bactoprenol-linked glucose translocase OS=Shigella phage SfV GN=gtrA PE=3 SV=1</Hit_def>
+  <Hit_accession>6913</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>8.70779e-08</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>LKFIIVGGINTLNYYVVYLLLLKLLHIEYMISHITGFLVAFVISYYLNCYFVYRVKPTWRKFISFPITQIVNVSLQTVLLYVFVSWLNLPAEIAPFAGLI----ITIPITFILSKWIL</Hsp_qseq>
+      <Hsp_hseq>VKYTSIGVLNTLIHWVVFGVCIYAAHTSQALANFTGFVVAVSFSFFANARFTFKASTTAMRYMLY-------VGFMGI-LSVIVGWAADKCSLPPIVTLITFSAISLVCGFVYSKFIV</Hsp_hseq>
+      <Hsp_midline>+K+  +G +NTL ++VV+ + +   H    +++ TGF+VA   S++ N  F ++   T  +++ +       V    + L V V W      + P   LI    I++   F+ SK+I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20151</Hit_id>
+  <Hit_def>gnl|TC-DB|SHH76803.1|2.A.129.1.8 Putative flippase GtrA (transmembrane translocase of bactoprenol-linked glucose) [Sporobacter termitidis DSM 10068]</Hit_def>
+  <Hit_accession>20151</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>1.39457e-06</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>121</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>LTQTHAEILKFIIVGGINTLNYYVVYLLLLKLLHIEYMISHITGFLVAFVISYYLNCYFVYRVKPTWRKFISFPITQIVNVSLQTVLL-----YVFVSWLNLPAEIAPFAGLIITIPITFILSK</Hsp_qseq>
+      <Hsp_hseq>LKSPRGETLRYVIIGGCTTLVDYFSYQMMIAFLHMSVTASNAVSTALAILFAYITNKLVVFFSRTVGLAGLALELARFLASRLFTMVLEFAGVYLLVNILGQDYRLGKAETIVLVVIVNYVLSK</Hsp_hseq>
+      <Hsp_midline>L     E L+++I+GG  TL  Y  Y +++  LH+    S+     +A + +Y  N   V+  +      ++  + + +   L T++L     Y+ V+ L     +     +++ + + ++LSK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11803</Hit_id>
+  <Hit_def>gnl|TC-DB|P9WMS9|2.A.129.1.2 Arabinogalactan biosynthesis recruiting protein Rv3789 OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) GN=Rv3789 PE=1 SV=1</Hit_def>
+  <Hit_accession>11803</Hit_accession>
+  <Hit_len>121</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>1.79772e-06</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>117</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>LKFIIVGGINTLNYYVVYLLLLKLLHIEYMISHITGFLVAFVISYYLNCYFVYRVKPTWRKFISFPITQIVNVSLQTVLLYVFVSWLNLPAEIAPFAGLI---ITIPITFILSKWIL</Hsp_qseq>
+      <Hsp_hseq>MRFVVTGGLAGIVDFGLYVVLYKVAGLQVDLSKAISFIVGTITAYLINRRWTFQAEPSTARFVAVMLLYGITFAVQVGLNHLCLALLHYRAWAIPVAFVIAQGTATVINFIVQRAVI</Hsp_hseq>
+      <Hsp_midline>++F++ GG+  +  + +Y++L K+  ++  +S    F+V  + +Y +N  + ++ +P+  +F++  +   +  ++Q  L ++ ++ L+  A   P A +I       I FI+ + ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8107</Hit_id>
+  <Hit_def>gnl|TC-DB|OQJ72346.1|2.A.129.1.9 hypothetical protein BMS77_04495 [Leuconostoc pseudomesenteroides]</Hit_def>
+  <Hit_accession>8107</Hit_accession>
+  <Hit_len>136</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>2.26172e-06</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>KFIIVGGINTLNYYVVYLLLLKLLH---IEYMISHITGFLVAFVISYYLNCYFVYRVKPT-WRKFISFPITQIVNVSLQTVLLYVFVSWLNLPAEIAPFAGLIITIPITFILSKW</Hsp_qseq>
+      <Hsp_hseq>RFMVVGVLNTGLGYIIYLGMNHLLHNIRFGYMIAYTASYILSLAFAFVLHRSYVFKDSGNILIAFLRFALVNGMNYGINLILLPFLVEIVKINSDLAQLLITFLTLFVSYFGNKY</Hsp_hseq>
+      <Hsp_midline>+F++VG +NT   Y++YL +  LLH     YMI++   ++++   ++ L+  +V++        F+ F +   +N  +  +LL   V  + + +++A      +T+ +++  +K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21420</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_074970406.1|2.A.129.1.10 GtrA family protein [Paracoccus aminovorans]</Hit_def>
+  <Hit_accession>21420</Hit_accession>
+  <Hit_len>129</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>3.9569e-06</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>KFIIVGGINTLNYYVVYLLLLKLLHIEYMISHITGFLVAFVISYYLNCYFVYR-----VKPTWRKFISFPITQIVNVSLQTVLLYVFVSWLNLPAEIAPFAGLIITIPITFILSK-WILK</Hsp_qseq>
+      <Hsp_hseq>RFALTGGVATLVHLAIAIMLIRL-GVAPLIGNAAAFATAFMVSFWGHHLFTFAGHGVDVQNSLSRFVIVAVLGFIANESSLALLLKFAA---VPAELALLVSTLIAAVLTFFLSRYWAFK</Hsp_hseq>
+      <Hsp_midline>+F + GG+ TL +  + ++L++L  +  +I +   F  AF++S++ +  F +      V+ +  +F+   +   +       LL  F +   +PAE+A     +I   +TF LS+ W  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>86</Statistics_hsp-len>
+      <Statistics_eff-space>338226168</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

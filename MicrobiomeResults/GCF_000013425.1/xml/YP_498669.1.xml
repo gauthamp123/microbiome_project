@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_498669.1 L-lactate permease [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>530</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_498669.1 L-lactate permease [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>530</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9896</Hit_id>
+  <Hit_def>gnl|TC-DB|P33231|2.A.14.1.1 L-LACTATE PERMEASE - Escherichia coli.</Hit_def>
+  <Hit_accession>9896</Hit_accession>
+  <Hit_len>551</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>427.172</Hsp_bit-score>
+      <Hsp_score>1097</Hsp_score>
+      <Hsp_evalue>1.04355e-144</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>523</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>539</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>232</Hsp_identity>
+      <Hsp_positive>332</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>534</Hsp_align-len>
+      <Hsp_qseq>NPFDNVGLSALVAAVPIILFLLCLTVFKMKGIYAALTTLVVTLIVALFVFELPARVSAGAITEGVVAGIFPIGYIVLMAVWLYKVSIKTGQFSIIQDSIASISVDQRIQLLLIGFCFNAFLEGAAGFGVPIAICAVLLIQLGFEPLKAAMLCLIANGAAGAFGAIGLPVSIIDTFNLSGGVTTLDVARYSALTLPILNFIIPFVLVFIVDGMKGIKEILPVILTVSGTYTGLQLLLTIFHGPELADIIPSLATMVVLAFVCRKFKPKNIFR---LEASEHKIQKR----TPKEIVFAWSPFVILTAFVLVWSAPFFKKLFQPGGALESLVIKLPI----------PNTVSDLSPKGIALRLDLIGATGTAILLTVIITILITKLKWKSAGALLVEAIKELWLPILTISAILAIAKVMTYGGLTVAIGQGIAKAGAIFPLFSPVLGWIGVFMTGSVVNNNTLFAPIQATVAQQISTSGSLLVAANTAGGVAAKLISPQSIAIATAAVKKVGEESALLKMTLKYSIIFVAFICVWT</Hsp_qseq>
+      <Hsp_hseq>DPAGNIWLSSLIASLPILFFFFALIKLKLKGYVAASWTVAIALAVALLFYKMPVANALASVVYGFFYGLWPIAWIIIAAVFVYKISVKTGQFDIIRSSILSITPDQRLQMLIVGFCFGAFLEGAAGFGAPVAITAALLVGLGFKPLYAAGLCLIVNTAPVAFGAMGIPILVAGQVT---GIDSFEIGQMVGRQLPFMTIIVLFWIMAIMDGWRGIKETWPAVVVAGGSFAIAQYLSSNFIGPELPDIISSLVSLLCLTLFLKRWQPVRVFRFGDLGASQVDMTLAHTGYTAGQVLRAWTPFLFLTATVTLWSIPPFKALFASGGALYEWVINIPVPYLDKLVARMPPVVSEATAYAAVFKFDWFSATGTAILFAALLSIVWLKMKPSDAISTFGSTLKELALPIYSIGMVLAFAFISNYSGLSSTLALALAHTGHAFTFFSPFLGWLGVFLTGSDTSSNALFAALQATAAQQIGVSDLLLVAANTTGGVTGKMISPQSIAIACAAVGLVGKESDLFRFTVKHSLIFTCIVGVIT</Hsp_hseq>
+      <Hsp_midline>+P  N+ LS+L+A++PI+ F   L   K+KG  AA  T+ + L VAL  +++P   +  ++  G   G++PI +I++ AV++YK+S+KTGQF II+ SI SI+ DQR+Q+L++GFCF AFLEGAAGFG P+AI A LL+ LGF+PL AA LCLI N A  AFGA+G+P+ +        G+ + ++ +     LP +  I+ F ++ I+DG +GIKE  P ++   G++   Q L + F GPEL DII SL +++ L    ++++P  +FR   L AS+  +       T  +++ AW+PF+ LTA V +WS P FK LF  GGAL   VI +P+          P  VS+ +      + D   ATGTAIL   +++I+  K+K   A +     +KEL LPI +I  +LA A +  Y GL+  +   +A  G  F  FSP LGW+GVF+TGS  ++N LFA +QAT AQQI  S  LLVAANT GGV  K+ISPQSIAIA AAV  VG+ES L + T+K+S+IF   + V T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13689</Hit_id>
+  <Hit_def>gnl|TC-DB|Q46839|2.A.14.1.2 PUTATIVE L-LACTATE PERMEASE - Escherichia coli.</Hit_def>
+  <Hit_accession>13689</Hit_accession>
+  <Hit_len>560</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>419.853</Hsp_bit-score>
+      <Hsp_score>1078</Hsp_score>
+      <Hsp_evalue>1.00375e-141</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>530</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>554</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>233</Hsp_identity>
+      <Hsp_positive>334</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>551</Hsp_align-len>
+      <Hsp_qseq>PFDNVGLSALVAAVPIILFLLCLTVFKMKGIYAALTTLVVTLIVALFVFELPARVSAGAITEGVVAGIFPIGYIVLMAVWLYKVSIKTGQFSIIQDSIASISVDQRIQLLLIGFCFNAFLEGAAGFGVPIAICAVLLIQLGFEPLKAAMLCLIANGAAGAFGAIGLPVSIIDTFNLSGGVTTLDVARYSALT---LPILNFIIPFVLVFIVDGMKGIKEILPVILTVSGTYTGLQLLLTIFHGPELADIIPSLATMVVLAFVCRKFKPKN---IFRLEASEHKIQKRTPK------------EIVFAWSPFVILTAFVLVWSAPFFKKLFQPGGALESLVIKLPIPN----------TVSDLSPKGIALRLDLIGATGTAILLTVIITILITKLKWKSAGALLVEAIKELWLPILTISAILAIAKVMTYGGLTVAIGQGIAKAGAIFPLFSPVLGWIGVFMTGSVVNNNTLFAPIQATVAQQISTSGSLLVAANTAGGVAAKLISPQSIAIATAAVKKVGEESALLKMTLKYSIIFVAFICVWTFILTLIF</Hsp_qseq>
+      <Hsp_hseq>PMGGLGLSALVALIPIIFFFVALAVLRLKGHVAGAITLILSILIAIFAFKMPIDMAFAAAGYGFIYGLWPIAWIIVAAVFLYKLTVASGQFDIIRSSVISITDDQRLQVLLIGFSFGALLEGAAGFGAPVAITGALLVGLGFKPLYAAGLCLIANTAPVAFGALGVPILV------AGQVTGIDPFHIGAMAGRQLPFLSVLVPFWLVAMMDGWKGVKETWPAALVAGGSFAVTQFFTSNYIGPELPDITSALVSIVSLALFLKVWRPKNTETAISMGQSAGAMVVNKPSSGGPVPSEYSLGQIIRAWSPFLILTVLVTIWTMKPFKALFAPGGAFYSLVINFQIPHLHQQVLKAAPIVAQPTPMDAVFKFDPLSAGGTAIFIAAIISIFILGVGIKKGIGVFAETLISLKWPILSIGMVLAFAFVTNYSGMSTTLALVLAGTGVMFPFFSPFLGWLGVFLTGSDTSSNALFGSLQSTTAQQINVSDTLLVAANTSGGVTGKMISPQSIAVACAATGMVGRESELFRYTVKHSLIFASVIGIITLLQAYVF</Hsp_hseq>
+      <Hsp_midline>P   +GLSALVA +PII F + L V ++KG  A   TL++++++A+F F++P  ++  A   G + G++PI +I++ AV+LYK+++ +GQF II+ S+ SI+ DQR+Q+LLIGF F A LEGAAGFG P+AI   LL+ LGF+PL AA LCLIAN A  AFGA+G+P+ +      +G VT +D     A+    LP L+ ++PF LV ++DG KG+KE  P  L   G++   Q   + + GPEL DI  +L ++V LA   + ++PKN      +  S   +    P             +I+ AWSPF+ILT  V +W+   FK LF PGGA  SLVI   IP+           V+  +P     + D + A GTAI +  II+I I  +  K    +  E +  L  PIL+I  +LA A V  Y G++  +   +A  G +FP FSP LGW+GVF+TGS  ++N LF  +Q+T AQQI+ S +LLVAANT+GGV  K+ISPQSIA+A AA   VG ES L + T+K+S+IF + I + T +   +F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11307</Hit_id>
+  <Hit_def>gnl|TC-DB|P71067|2.A.14.1.3 L-lactate permease OS=Bacillus subtilis (strain 168) GN=lutP PE=1 SV=2</Hit_def>
+  <Hit_accession>11307</Hit_accession>
+  <Hit_len>563</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>399.053</Hsp_bit-score>
+      <Hsp_score>1024</Hsp_score>
+      <Hsp_evalue>1.44517e-133</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>530</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>558</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>222</Hsp_identity>
+      <Hsp_positive>329</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>549</Hsp_align-len>
+      <Hsp_qseq>NVGLSALVAAVPIILFLLCLTVFKMKGIYAALTTLVVTLIVALFVFELPARVSAGAITEGVVAGIFPIGYIVLMAVWLYKVSIKTGQFSIIQDSIASISVDQRIQLLLIGFCFNAFLEGAAGFGVPIAICAVLLIQLGFEPLKAAMLCLIANGAAGAFGAIGLPVSIIDTFNLSGGVTTLDVARYSALTLPILNFIIPFVLVFIVDGMKGIKEILPVILTVSGTYTGLQLLLTIFHGPELADIIPSLATMVVLAFVCRKFKPKNIFRL-----EASEHKIQKRTPK-------EIVFAWSPFVILTAFVLVWSAPFFKKLF---QPGGAL---------ESLVIKLPIP---NTV--SDLSPKGIALRLDLIGATGTAILLTVIITILITKLKWKSAGALLVEAIKELWLPILTISAILAIAKVMTYGGLTVAIGQGIAKAGAIFPLFSPVLGWIGVFMTGSVVNNNTLFAPIQATVAQQISTSGSLLVAANTAGGVAAKLISPQSIAIATAAVKKVGEESALLKMTLKYSIIFVAFICVWTFILTLIF</Hsp_qseq>
+      <Hsp_hseq>NLLLSALAALVPIIFFFWALAIKRMKGYTAGLATLGIALIIAVLVYRMPAEKALMSATQGAVYGLLPIGWIIVTSVFLYKITVKTGQFDIIRSSVLSITDDRRLQALLIAFSFGAFLEGAAGFGAPVAISAALLVGLGFNPLYAAGICLIANTAPVAFGAIGIPITAVEG---PTGIPAMEISQMVGRQLPFLSVFIPLYLIIIMSGFRKALEIWPAILVSGVSFAVVQYLSSNFLGPELPDVLSALVSMAALAVFLKWWKPKTTFRFAGEQESAASIETARTNPAAPAYRGGQIFKAWSPFLLLTAMISVWGIPSVKSALTGHYEGSAVFLKWLNAVGEKLTFSPGVPFLNNQIVNADGTPIEAVYKLEVLGSAGTAILIAAVLSKFITAISWKDWGTVFKETVQELKLPILTIASVVGFAYVTNSSGMSTTLGMTLALTGSMFTFFSPVLGWLGVFITGSDTSANLLFGNLQKVTALSVGMDPVLSVAANSSGGVTGKMISPQSIAVACAAVGLAGKESDLFRFTIKHSLFLLLLVCIITFLQHHVF</Hsp_hseq>
+      <Hsp_midline>N+ LSAL A VPII F   L + +MKG  A L TL + LI+A+ V+ +PA  +  + T+G V G+ PIG+I++ +V+LYK+++KTGQF II+ S+ SI+ D+R+Q LLI F F AFLEGAAGFG P+AI A LL+ LGF PL AA +CLIAN A  AFGAIG+P++ ++      G+  +++++     LP L+  IP  L+ I+ G +   EI P IL    ++  +Q L + F GPEL D++ +L +M  LA   + +KPK  FR       A+  +  +  P        +I  AWSPF++LTA + VW  P  K        G A+         E L     +P   N +  +D +P     +L+++G+ GTAIL+  +++  IT + WK  G +  E ++EL LPILTI++++  A V    G++  +G  +A  G++F  FSPVLGW+GVF+TGS  + N LF  +Q   A  +     L VAAN++GGV  K+ISPQSIA+A AAV   G+ES L + T+K+S+  +  +C+ TF+   +F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1384</Hit_id>
+  <Hit_def>gnl|TC-DB|AOY58527|2.A.14.2.2 LldP: L-lactate permease [Desulfococcus multivorans]</Hit_def>
+  <Hit_accession>1384</Hit_accession>
+  <Hit_len>569</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.392</Hsp_bit-score>
+      <Hsp_score>420</Hsp_score>
+      <Hsp_evalue>5.60525e-45</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>529</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>551</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>148</Hsp_identity>
+      <Hsp_positive>257</Hsp_positive>
+      <Hsp_gaps>75</Hsp_gaps>
+      <Hsp_align-len>572</Hsp_align-len>
+      <Hsp_qseq>NVGLSALVAAVPIILFLLCLTVFKMKGIYAALTTLVVTLIVALFVFELPARVSAGAITEGVVAGIF---PIGYIVLMAVWLYKVSIKTGQFSIIQDSIASISVDQRIQLLLIGFCFNAFLEGAAGFGVPIAICAVLLIQLGFEPLKAAMLCLIANGAAGAFGAIGLPVSIIDTFNLSGGVTT-----------LDVARY-------SALTLPILNFIIPFVLVFIVDGMKGIKE-------ILPVILTVSGTYTGLQLLLTIFHGPELADIIPSLATMVVLAFVCRK--FKPKNIF--------------RLEASEHKIQKRTPKEIVFAWSPFVILTAFVLVWSAPFFKKLFQPGGALESLVIKLPIPNTVSDLSPKGIALRLDLIGATGTAILLTVIITILITKLKWKSAGALLVEAIKEL----WLPILTISAILAI----AKVMTYGGLTVAIGQGI-AKAGAIFPLFSPVLGWIGVFMTGSVVNNNTLFAPIQATVAQQISTSGSLLVAANTAGGVAAKLISPQSIAIATAAVKKVGEESALLKMTLKYSIIFVAFICVWTFILTLI</Hsp_qseq>
+      <Hsp_hseq>SLGFQSFMAVLPILTAAVLLVGFRWPAKWAMPICYVVAVLIS-FIFW---HVDVVRIVASTIQGLFITADILFIIFGAILLLNTLKHSGAISAIRTGFTKISPDRRVQVVLTAWLFGAFIEGASGFGTPAAIAAPLMVAIGFPALGAVMIGMMIQSTPVTFGAVGTPILI----GVKGGLENPQLTALLAEVGMDFSQYLQLITAASAIFHAIAGTLIPTFMVVMMTRFFGRNKSWTEGLSILPFSIMGGLAFTIPYMLTGIFLGPEFPSLIGALIGMAIMTTAATKGFLVPKDIWDFPPREEWEPGWMSQMEIKLDALTSKKPMNLTLAWIPY-LLVAIILVLTRLGQLPL---GTWLKS--VKFP----WSDILGTGISAAFVPLYLPGAILCFVVLITYFLHKMSWNELSLAIKESSSILLGAGFVLIFTIPMVRVYINSGVNAAGYSSMPLAMAEWVAANVGQVWPFFAPLIGALGAFIAGSNTVSNLMFSLFQHGVAQNLAISGVVVVALQAVGAAAGNMFCIHNVVAASATVGLLGQEG----NTLRRTIIPTLYYCILVGILGLL</Hsp_hseq>
+      <Hsp_midline>++G  + +A +PI+   + L  F+    +A     VV ++++ F+F     V    I    + G+F    I +I+  A+ L      +G  S I+     IS D+R+Q++L  + F AF+EGA+GFG P AI A L++ +GF  L A M+ ++       FGA+G P+ I     + GG+             +D ++Y       SA+   I   +IP  +V ++    G  +       ILP  +     +T   +L  IF GPE   +I +L  M ++     K    PK+I+              ++E     +  + P  +  AW P+ +L A +LV +      L   G  L+S  +K P     SD+   GI+     +   G  +   V+IT  + K+ W      + E+   L    ++ I TI  +            Y  + +A+ + + A  G ++P F+P++G +G F+ GS   +N +F+  Q  VAQ ++ SG ++VA    G  A  +    ++  A+A V  +G+E      TL+ +II   + C+   IL L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14179</Hit_id>
+  <Hit_def>gnl|TC-DB|Q57251|2.A.14.2.1 Putative L-lactate permease - Haemophilus influenzae.</Hit_def>
+  <Hit_accession>14179</Hit_accession>
+  <Hit_len>532</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>134.035</Hsp_bit-score>
+      <Hsp_score>336</Hsp_score>
+      <Hsp_evalue>9.15437e-34</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>530</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>529</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>242</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>538</Hsp_align-len>
+      <Hsp_qseq>LSALVAAVPIILFLLCLTVFKMKGIYAALTTLVVTLI--VALFVFELPARVSAGAITEGVVAGIFPIGYIVLMAVWLYKVSIKTGQFSIIQDSIASISVDQRIQLLLIGFCFNAFLEGAAGFGVPIAICAVLLIQLGFEPLKAAMLCLIANGAAGAFGAIGLPVSI-IDTFNLSGGVTTLDVARYSALTLPILNFIIPFVLVFIVDGMKGI-KEILPVILTVSGTYTGLQLLLTIFHGPELADIIPSLATMVVLAFVCRKFKPKNIFRLEASEHKIQKR-TPKEIVFAWSPFVILTAFVLV---WSAPFFKKLFQPG--------GALESLVIKLPIPNTVSDLSPKGIALRLDLIGATG-TAILLTVIITILITKLKWKSAGALLVEAIKELWLPILTISAILAIAKVMTYGG---LTVAIGQGIAK-AGAIFPLFSPVLGWIGVFMTGSVVNNNTLFAPIQATVAQQISTSGSLLVAANTAGGVAAKLISPQSIAIATAAVKKVGEESALLKMTLKYSIIFVAFICVWTFILTLIF</Hsp_qseq>
+      <Hsp_hseq>LSFILSIFPIVLLIYLMVKRNALPSYVALPW-VATLVMGVHLLHFNTDIVTISANVVSAIIAVQTPIT-VIFGAILFNRFSEISGATNIMRKWLGNINPNPVAQLMIIGWAFAFMIEGASGFGTPAAIAAPILVGLGFHPLKVAMLALIMNSVPVSFGAVGTPTWFGFGALKLSEDM-ILEIGSITAFIHSIAALIIPLLALRILVNWDDIRKNIVFIYISVLGCVVPYFLIAQVNYE------FPSLVGGAIGLFISVWAANRNIGLAKVTNTLDNNAVSAGEVVKALFPTGLLIAFLIVTRIHQLP-FKAMMNDATIWFSTTLGSLGLFEISKGLIFSLKNIFGSNVSSSYKLLYVPALIPFVITVLIAIPFFKISSSNVKQILVSSLQQSKNPFIALIGALVMVNLMLVGGEHSMVKIIGRTFAEISGSNWTIFSSFLGAIGSFFSGSNTVSNLTFGSVQLSTAETTGISVALVLALQSVGGAMGNMVCINNIVAVSSVLNISNQEGTIIKKTIIPMIIYGIIAALGALFLVPLF</Hsp_hseq>
+      <Hsp_midline>LS +++  PI+L +  +        Y AL   V TL+  V L  F       +  +   ++A   PI  ++  A+   + S  +G  +I++  + +I+ +   QL++IG+ F   +EGA+GFG P AI A +L+ LGF PLK AML LI N    +FGA+G P         LS  +  L++   +A    I   IIP + + I+     I K I+ + ++V G      L+  + +        PSL    +  F+      +NI   + +        +  E+V A  P  +L AF++V      P FK +            G+L    I   +  ++ ++    ++    L+        ++TV+I I   K+   +   +LV ++++   P + +   L +  +M  GG   +   IG+  A+ +G+ + +FS  LG IG F +GS   +N  F  +Q + A+    S +L++A  + GG    ++   +I   ++ +    +E  ++K T+   II+     +    L  +F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16883</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8TUV1|2.A.14.1.4 L-lactate permease - Methanopyrus kandleri.</Hit_def>
+  <Hit_accession>16883</Hit_accession>
+  <Hit_len>466</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>2.98523e-06</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>241</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>242</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>235</Hsp_align-len>
+      <Hsp_qseq>LSALVAAVPII-LFLLCLTVFKMKGIYAALTTLVVTLIVALFVFELPARVSAGAITEGVVAGIFPIGYIVLMAVWLYKVSIKTGQFSIIQDSIASISVDQRIQ---LLLIGFCFNAFLEGAAGFGVPIAICAVLLIQLGFEPLKAAMLCLIANGAAGAFGAIGLPVSIIDTFNLSGGVTTLDVARYS---ALTLPILNFIIPFVLVFIVDGMKGIKEILPVILTVSGTYTGLQLL</Hsp_qseq>
+      <Hsp_hseq>LPSLALVVPLISISALIVAALRGWGLFRASSLSLALYLIASTFTPFTVQVPYVRVVDSALKGV-EILAVVLASLTLVEMMREDG---VLEDIVHILKETCQLRGPCLVGLSVVATGAFESVASFGTPATLVGPLLVEAGLSKTTAAAAALVGHAPFGVFAAFGVPILV------TSGVSGIDPKKLSFDVALCIAPSLLVLPYAVAETAD-----LRVSKVLLTTMGIMTTASLL</Hsp_hseq>
+      <Hsp_midline>L +L   VP+I +  L +   +  G++ A +  +   ++A        +V    + +  + G+  I  +VL ++ L ++  + G   +++D +  +    +++   L+ +        E  A FG P  +   LL++ G     AA   L+ +   G F A G+P+ +      + GV+ +D  + S   AL +     ++P+ +    D       +  V+LT  G  T   LL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7087</Hit_id>
+  <Hit_def>gnl|TC-DB|O32105|2.A.8.1.12 Putative amino acid transporter yuiF OS=Bacillus subtilis GN=yuiF PE=4 SV=1</Hit_def>
+  <Hit_accession>7087</Hit_accession>
+  <Hit_len>442</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.53688e-05</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>235</Hsp_hit-from>
+      <Hsp_hit-to>397</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>174</Hsp_align-len>
+      <Hsp_qseq>NVGLSALVAAVPIILFLLCLTVFKMKG-IYAALTTLVVTLIVALFVFELPARVSAGA-ITEGVVAGIFPIGYIVLMAVWLYKVSIKTGQF-SIIQDSIASISVDQ---RIQLLLIGFCFNAFLEGAAGFGVPI--AICAVLLIQLGFEPLKAAMLCLIANGAAGAFGAIGLPVS</Hsp_qseq>
+      <Hsp_hseq>SIGIAVLAIVVSLGVQLYLSQTLGVEGMIMGALAGLIV-----LFVSGVMKRDEADSLITDGMVLMAF-IGFVMLVAAGFSNVLTKTGDVESLVKTSAGFIGHSQSLGALLMLIVGLLITMGI-GSSFATIPVITTIFVPLCMQLGFSPM--ATIAII--GAAAALGDAGSPAS</Hsp_hseq>
+      <Hsp_midline>++G++ L   V + + L       ++G I  AL  L+V     LFV  +  R  A + IT+G+V   F IG+++L+A     V  KTG   S+++ S   I   Q    + +L++G      + G++   +P+   I   L +QLGF P+  A + +I  GAA A G  G P S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>103</Statistics_hsp-len>
+      <Statistics_eff-space>3272597601</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

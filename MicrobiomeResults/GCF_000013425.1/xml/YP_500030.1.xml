@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500030.1 hypothetical protein SAOUHSC_01514 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>278</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500030.1 hypothetical protein SAOUHSC_01514 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>278</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3509</Hit_id>
+  <Hit_def>gnl|TC-DB|D9IWI0|2.A.36.7.9 Sodium/hydrogen exchanger (Fragment) OS=Plasmodium falciparum GN=nhe-1 PE=4 SV=1</Hit_def>
+  <Hit_accession>3509</Hit_accession>
+  <Hit_len>1690</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>2.66813e-05</Hsp_evalue>
+      <Hsp_query-from>67</Hsp_query-from>
+      <Hsp_query-to>271</Hsp_query-to>
+      <Hsp_hit-from>823</Hsp_hit-from>
+      <Hsp_hit-to>1035</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>222</Hsp_align-len>
+      <Hsp_qseq>NVGLQDKINELENKMNLSFDNHELRTVFTDKEIAKYHTYKKVTNTEFIKILLRTFKNENYKE--ECLRAIILEFDNKKTIKENIGDKQWTFSTGEKEIVIKSNDVLQGINTLIKKYNETHI---------YCMNKLEYFSMHFTNNIADSNTVYQSLHQIYLK----TILSLYIDISSTNKIGHEKFYV--NLIEFYNEWNNKKIKFKKKTEKRINKNRNSF</Hsp_qseq>
+      <Hsp_hseq>NNNIQNDDNNKNYKNNKNYKNNKNNNNKVDNNDHEKENNHMYNNTHNITNLSKLYNDEYYNKGKNCENANINGGDNKKNVYENLRDKTNFFND------LTGNEDTSDVYTYLNKHSYNNVSNIRGGYNYYYGNNNKYNNNH--NNKNNNNNIHNNIHNIHNRYRSLNVISRKISIDNSYK-GEMRINVIRNNDNYYSSYDDEDHNYTNINRSLSSKNFDHF</Hsp_hseq>
+      <Hsp_midline>N  +Q+  N    K N ++ N++      D    +        NT  I  L + + +E Y +   C  A I   DNKK + EN+ DK   F+       +  N+    + T + K++  ++         Y  N  +Y + H  NN  ++N ++ ++H I+ +     ++S  I I ++ K G  +  V  N   +Y+ ++++   +        +KN + F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2914</Hit_id>
+  <Hit_def>gnl|TC-DB|CRG96273|1.C.105.2.14 conserved Plasmodium protein, unknown function [Plasmodium gallinaceum]</Hit_def>
+  <Hit_accession>2914</Hit_accession>
+  <Hit_len>1810</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000147506</Hsp_evalue>
+      <Hsp_query-from>74</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>329</Hsp_hit-from>
+      <Hsp_hit-to>536</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>217</Hsp_align-len>
+      <Hsp_qseq>INEL-ENKMNLSFDNHELRTVFTDKEIAKYHTYKKVTNTEFIKILLRTFKNEN---------YKEECLRAIILEFDNKKTIKENIGDKQWTFSTGEKEIVIKSNDVLQGI-NTLIKKYNETHIYCMNKLEYFSMHFTNNIADSN---TVYQSLHQIYLKTILSLYIDISSTNKIG---HEKFYVNLIEFYNEWNNKKIKFKKKTEKRINKNRNSFLK</Hsp_qseq>
+      <Hsp_hseq>INEFNKNYVNNNFNFHELKNESKNNIVKNYIKINKVENSNIEQLINNNISNSNNYVDNKVKRYAQKNLKE--NNYENKLLPKNAFDISYFKYSTLHNS--RKTSDINNNIHNSIIKTKNEENTKFMNEISNTSIIYPSENKCSNISENVSKKEHNIYSNSKYANTYDENINDKVNFTLEEKAYMN-----SSYIKNLEKFKELLFNATKDNLNEYIK</Hsp_hseq>
+      <Hsp_midline>INE  +N +N +F+ HEL+    +  +  Y    KV N+   +++     N N         Y ++ L+     ++NK   K       + +ST       K++D+   I N++IK  NE +   MN++   S+ + +    SN    V +  H IY  +  +   D +  +K+     EK Y+N     + +     KFK+        N N ++K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>97</Statistics_hsp-len>
+      <Statistics_eff-space>1412053581</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

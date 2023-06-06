@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499772.1 hypothetical protein SAOUHSC_01239 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>394</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499772.1 hypothetical protein SAOUHSC_01239 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>394</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7073</Hit_id>
+  <Hit_def>gnl|TC-DB|O31754|9.B.149.2.1 Regulator of sigma-W protease RasP OS=Bacillus subtilis (strain 168) GN=rasP PE=1 SV=1</Hit_def>
+  <Hit_accession>7073</Hit_accession>
+  <Hit_len>422</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>305.834</Hsp_bit-score>
+      <Hsp_score>782</Hsp_score>
+      <Hsp_evalue>4.77353e-101</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>243</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>397</Hsp_align-len>
+      <Hsp_qseq>MCPEFAIGMGPKIFSFRKNETLYTIRLLPVGGYVRMAGDGLEEPPVEPGMNVKIKLNEENEITHIILDDHHKFQQIEAIEVKKCDFKDDLFIEGIT-AYDNERHHFKIARKSFFVENGSLVQIAPRDRQFAHKKPWPKFLTLFAGPLFNFILALVLFIGLAYYQGTPTST--VEQVADKYPAQQAGLQKGDKIVQIGKYKISEFDDVDKALDKVKDNKTTVKFERDGKTKSVELTPKKTEKKLTKVSSETKYVLGFQPASEHTLFKPIVFGFKSFLIGSTYIFTAVVGMLASIFTGGFSFDMLNGPVGIYHNVDSVVKAGIISLIGYTALLSVNLGIMNLIPIPALDGGRILFVIYEAIFRKPVNKKAETTIIAIGAIFMVVIMILVTWNDIRRYFL</Hsp_qseq>
+      <Hsp_hseq>LCREFAIGFGPKIFSFKKNETVYTIRLLPVGGFVRMAGEDPEMIEVKPGYTVGLLFNKEDQVEKVIINQKEKYPDALVIEVETADLEHDMKITGYEQGKEDELSSFTVSETSFFIVDGEEVQIAPYNRQFGSKPVWQRIKAIAAGPIMNFILAYVILVMLGLIQGVPSNEPMLGQLTDNGRAAEAGLKEGDYIQSINGEKMRSWTDIVSAVKENPEKEMDVAVKRDNKTLHISVTPEAVKDENKKTIGR----FGSYAPTEKGVLSAVAYGATS----TVDVTKAILTNLSKLVTGQFKLDMLSGPVGIYDMTDQVAKTGIVNLFQFAAFLSINLGIVNLLPIPALDGGRLLFLFIEAIRGKPINREKEAFVVFIGVAFLMLLMLVVTWNDIQRLFL</Hsp_hseq>
+      <Hsp_midline>+C EFAIG GPKIFSF+KNET+YTIRLLPVGG+VRMAG+  E   V+PG  V +  N+E+++  +I++   K+     IEV+  D + D+ I G     ++E   F ++  SFF+ +G  VQIAP +RQF  K  W +   + AGP+ NFILA V+ + L   QG P++   + Q+ D   A +AGL++GD I  I   K+  + D+  A+ +  + +  V  +RD KT  + +TP+  + +  K         G    +E  +   + +G  S    +  +  A++  L+ + TG F  DML+GPVGIY   D V K GI++L  + A LS+NLGI+NL+PIPALDGGR+LF+  EAI  KP+N++ E  ++ IG  F++++M++VTWNDI+R FL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1210</Hit_id>
+  <Hit_def>gnl|TC-DB|akm78054|9.B.149.2.2 membrane-associated zinc metalloprotease, regulator of sigma E protease [Candidatus Wolfebacteria bacterium GW2011_GWB1_47_1]</Hit_def>
+  <Hit_accession>1210</Hit_accession>
+  <Hit_len>343</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>110.153</Hsp_bit-score>
+      <Hsp_score>274</Hsp_score>
+      <Hsp_evalue>3.35668e-27</Hsp_evalue>
+      <Hsp_query-from>124</Hsp_query-from>
+      <Hsp_query-to>393</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>343</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>136</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>PRDRQFAHKKPWPKFLTLFAGPLFNFI-----LALVLFIGLAYYQGTPTSTVEQVADKYPAQQAGLQKGDKIVQIGKYKISEFDDVDKALDKVK---DNKTTVKFERDGKTKSVELTPKKT----EKKLTKVSSET--KYVLGFQPASEHTLFKPIVFGFKSFLIGSTYIFTAVVGMLASIFTGGFSFDMLNGPVGIYHNVDSVVKAGIISLIGYTALLSVNLGIMNLIPIPALDGGRILFVIYEAIFRKPVNKKAETTIIAIGAIFMVVIMILVTWNDIRRYF</Hsp_qseq>
+      <Hsp_hseq>PHDRIFYNIAPWKRFLILVGGVGVNFLFGWMLLSIVFMIGVK-----PGVFISQVQEGGPASVAGLQKNDRLV--------EFTKSDEFVSYAKIHAGEAITLRVARGDGEIELQMTPRKDPPAGQGPLGVVLGEAMGRQQLGLIAAAKEGFIESID------IVKGT--FKGISSLIGATFVGKGSLEGVAGPIGIVKITVDASEAGFIYVLSLMALISINLAAFNILPFPALDGGRVLFLIIEKIKGSPLPKKFEQYANGIGLLLLLGLILVVSVKDVIRIF</Hsp_hseq>
+      <Hsp_midline>P DR F +  PW +FL L  G   NF+     L++V  IG+      P   + QV +  PA  AGLQK D++V        EF   D+ +   K       T++  R      +++TP+K     +  L  V  E   +  LG   A++    + I       ++  T  F  +  ++ + F G  S + + GP+GI        +AG I ++   AL+S+NL   N++P PALDGGR+LF+I E I   P+ KK E     IG + ++ ++++V+  D+ R F</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000561443</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>EFAIGMGPKIFSFRKNETLYTIRLLPVGGYVRMAG-DGLEE</Hsp_qseq>
+      <Hsp_hseq>EFGLGLPPRAWGKKIGETMYSINWLPFGGYVKIAGEDGDDE</Hsp_hseq>
+      <Hsp_midline>EF +G+ P+ +  +  ET+Y+I  LP GGYV++AG DG +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8781</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AEH1|9.B.149.2.3 Regulator of sigma-E protease RseP OS=Escherichia coli (strain K12) OX=83333 GN=rseP PE=1 SV=1</Hit_def>
+  <Hit_accession>8781</Hit_accession>
+  <Hit_len>450</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.138</Hsp_bit-score>
+      <Hsp_score>248</Hsp_score>
+      <Hsp_evalue>3.77427e-23</Hsp_evalue>
+      <Hsp_query-from>170</Hsp_query-from>
+      <Hsp_query-to>391</Hsp_query-to>
+      <Hsp_hit-from>226</Hsp_hit-from>
+      <Hsp_hit-to>449</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>234</Hsp_align-len>
+      <Hsp_qseq>VEQVADKYPAQQAGLQKGDKIVQIGKYKISEFDDVDKALDKVKDNKTTVKFERDGKTKSVELTPKKT------------EKKLTKVSSETKYVLGFQPASEHTLFKPIVFGFKSFLIGSTYIFTAVVGMLASIFTGGFSFDMLNGPVGIYHNVDSVVKAGIISLIGYTALLSVNLGIMNLIPIPALDGGRILFVIYEAIFRKPVNKKAETTIIAIGAIFMVVIMILVTWNDIRR</Hsp_qseq>
+      <Hsp_hseq>LENVQPNSAASKAGLQAGDRIVKVDGQPLTQWVTFVMLVRDNPGKSLALEIERQGSPLSLTLIPESKPGNGKAIGFVGIEPKVIPLPDEYKVVRQYGP------FNAIVEATDK----TWQLMKLTVSMLGKLITGDVKLNNLSGPISIAKGAGMTAELGVVYYLPFLALISVNLGIINLFPLPVLDGGHLLFLAIEKIKGGPVSERVQDFCYRIGSILLVLLMGLALFNDFSR</Hsp_hseq>
+      <Hsp_midline>+E V     A +AGLQ GD+IV++    ++++      +         ++ ER G   S+ L P+              E K+  +  E K V  + P      F  IV         +  +    V ML  + TG    + L+GP+ I        + G++  + + AL+SVNLGI+NL P+P LDGG +LF+  E I   PV+++ +     IG+I +V++M L  +ND  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2273437908</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

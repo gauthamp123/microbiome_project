@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500541.1 SPP1 family phage portal protein [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>511</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500541.1 SPP1 family phage portal protein [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>511</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21932</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_145463781.1|1.W.7.1.3 phage portal protein [Weissella cibaria]</Hit_def>
+  <Hit_accession>21932</Hit_accession>
+  <Hit_len>515</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>248.054</Hsp_bit-score>
+      <Hsp_score>632</Hsp_score>
+      <Hsp_evalue>4.98343e-76</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>502</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>515</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>172</Hsp_identity>
+      <Hsp_positive>264</Hsp_positive>
+      <Hsp_gaps>59</Hsp_gaps>
+      <Hsp_align-len>523</Hsp_align-len>
+      <Hsp_qseq>FNDEANVVYTYDGTESDLLQN-----VNEVSKYIEHHMDYQRPRLKVLSDYYEGKTKNLVELTRRKEEYMADNRVAHDYASYISDFINGYFLGNPIQYQDD-DKDVLEVIEAFNDLNDVESHNRSLGLDLSIYGKAYELMIRNQDD---ETRLYKSDAMSTFVIYDNTIERNSIAGVRYLRTKPIDKTDEDEVFTVDLFTSHGVYRYLTSR--TNGLKLTPRENGFESHSFERMPITEFSNNERRKGDYEKVITLIDLYDNAESDTANYMSDLNDAMLLIKGN-----------LNLDPVE----------VRKQKEANVLFLEPTVYADSEGRETEGSVDGGYIYKQYDVQGTEAYKDRLNSDIHMFTNTPNMKDDNFSGTQSGEAMKYKLFGLEQRTKTKEGLFTKGLRRRAKLLETILKNTWSIDANKD-----FNTVRYVYNRNLPKSLIEELKAYIDSGGKISQTTLMSLFSFFQ--DPELEVKKIEEDEKES--IKKAQKGIYKDPRDINDDEQDDD</Hsp_qseq>
+      <Hsp_hseq>FNPSANDVFFMNADDYAIMDPAAEGFINQLDRFVNRHKSSQVKRLKALKRYYLADN-DIRYKEPKSDKTAADNRIASDFARYITIFEQSYMLGKPVVYKNAADTTLQEEIDDFSKQNNESYHNVLIKTDLSIYGRAYELLYVDGDENNVQVRLARLNPEQVFVVYDDTVQRNSLFAVRYYRVRYEEGKFRD---FVEVYTNDKVYYYRNDNQEAGGMKFVEET----THEFNGVPVTEYASNEDRTGAYEAVLDTIDAYDLAQSELANTQEDFNNALLMIKGNPFTGSDDNPVIVDDDGKEMPNPNFIGNVVAQMKQARLLIMDDN--PDENGAEP----DAEYLTKTYDSAGTKAYIDRLVGDILRFTFTPDTSDQNFSGVQSGEAMKYKLMAADNRRVTQERLFERGLMRRLRL----AVNVWRIKGNSSVNYDAINDTEILFTPNIPQNVNELIANVKSLYGIVSDETLLELLKQFTGVDADEELKRLEKQKADNQLMFNGQTNDYPNPDQEGVIEDGDE</Hsp_hseq>
+      <Hsp_midline>FN  AN V+  +  +  ++       +N++ +++  H   Q  RLK L  YY     ++     + ++  ADNR+A D+A YI+ F   Y LG P+ Y++  D  + E I+ F+  N+   HN  +  DLSIYG+AYEL+  + D+   + RL + +    FV+YD+T++RNS+  VRY R +  +    D    V+++T+  VY Y        G+K         +H F  +P+TE+++NE R G YE V+  ID YD A+S+ AN   D N+A+L+IKGN           ++ D  E          V + K+A +L ++     D  G E     D  Y+ K YD  GT+AY DRL  DI  FT TP+  D NFSG QSGEAMKYKL   + R  T+E LF +GL RR +L      N W I  N        N    ++  N+P+++ E +       G +S  TL+ L   F   D + E+K++E+ + ++  +   Q   Y +P      E  D+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21726</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_107240636.1|1.W.7.1.2 phage portal protein [Staphylococcus aureus]</Hit_def>
+  <Hit_accession>21726</Hit_accession>
+  <Hit_len>474</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.939</Hsp_bit-score>
+      <Hsp_score>302</Hsp_score>
+      <Hsp_evalue>1.32847e-29</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>504</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>474</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>121</Hsp_identity>
+      <Hsp_positive>213</Hsp_positive>
+      <Hsp_gaps>45</Hsp_gaps>
+      <Hsp_align-len>481</Hsp_align-len>
+      <Hsp_qseq>ESDLLQNVNEVSKYIEHHMDY----QRPRLKVLSDYYEGKTKNLVELTRRKEEYMADNRVAHDYASYISDFINGYFLGNPIQYQDDD-----KDVLEVIEAFNDLNDVESHNRSLGLDLSIYGKAYELMIRNQDDETRLYKSDAMSTFVIYDNTIERNSIAGVRYLRTKPIDKTDEDEVFTVDLFTSHGVYRYLTSRTNGLKLTPRENGFESHSFERMPITEFSNNERRKGDYEKVITLIDLYDNAESDTANYMSDLNDAMLLIKG-NLNLDPVEVRKQKEANVLFLEPTVYADSEGRETEGSVDGGYIYKQYDVQGTEAYKDRLNSDIHMFTNTPNMKDDNFSGTQSGEAMKYKLFGLEQRTKTKEGLFTKGLRRRAKLLETILKNT-WSIDANKDFNTVRYVYNRNLPKSLIEELKAYIDSGGKISQTTLMSLFSFFQDPELEVKKIEEDEKESIKKAQKGIYKDPRDINDDEQDDDTK</Hsp_qseq>
+      <Hsp_hseq>KDDRERMVNLYNRY-KTHIDYVPIFKRRPIEEKEDFETGGNV-------RRLDVSVNNKLNNSFDSEIVDTRVGYLHGIPVTYDLDENAEKNEKLKKFITNFAIRNSVDDEDSEIGKMAAICGYGARLAYIDTDGDIRIKNIDPYNVVFVGDNILEPTY--SLRYFYEKD-DDNGTDYVYAEFYDDTY----YYVFRGEGIDAL-QEIGRYEHLFDYNPLFGVPNNKEMIGDAEKVIHLIDAYDLTMSDASSEISQTRLAYLVLRGMGMSEGMIQETQRSGAFELF--------------DKDMDVKYLTKDVNDTMIENHLDRIEKNIMRFAKSVNFNSDEFNGNVPIIGMKLKLMALENKCMTFERKMTAMLRYQFKVILSALKRKGYNLDDDSYLNLI-FKFTRNIPVNKLEESQVLINLKGQVSERTRLGQSQLVDDVDYE---LDEMEKESLEFNDKLPDIDEGDANDKSQNNQSE</Hsp_hseq>
+      <Hsp_midline>+ D  + VN  ++Y + H+DY    +R  ++   D+  G          R+ +   +N++ + + S I D   GY  G P+ Y  D+     + + + I  F   N V+  +  +G   +I G    L   + D + R+   D  +   + DN +E      +RY   K  D    D V+      ++    Y   R  G+    +E G   H F+  P+    NN+   GD EKVI LID YD   SD ++ +S    A L+++G  ++   ++  ++  A  LF              +  +D  Y+ K  +    E + DR+  +I  F  + N   D F+G      MK KL  LE +  T E   T  LR + K++ + LK   +++D +   N + + + RN+P + +EE +  I+  G++S+ T +       D + E   ++E EKES++   K    D  D ND  Q++ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10937</Hit_id>
+  <Hit_def>gnl|TC-DB|P54309|1.W.7.1.1 Portal protein OS=Bacillus phage SPP1 OX=10724 GN=6 PE=1 SV=1</Hit_def>
+  <Hit_accession>10937</Hit_accession>
+  <Hit_len>503</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>96.2857</Hsp_bit-score>
+      <Hsp_score>238</Hsp_score>
+      <Hsp_evalue>2.99777e-21</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>501</Hsp_query-to>
+      <Hsp_hit-from>66</Hsp_hit-from>
+      <Hsp_hit-to>488</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>183</Hsp_positive>
+      <Hsp_gaps>39</Hsp_gaps>
+      <Hsp_align-len>449</Hsp_align-len>
+      <Hsp_qseq>YYEGKTKNLVELTRRKEEYMADNRVAHDYASYISDFINGYFLGNPIQYQDDDKDVLEVIEAFNDLNDVESHNRSLGLDLSIYGKAYELMIRNQDDETRLYKSDAMSTFVIYDNTIERNSIAGVRYLRTKPI--DKTDEDEVFTVDLFTSH-----GVYRYLTSRTNGLKLTPRENGFESHSFERMPITEFSNNERRKGDYEKVITLIDLYDNAESDTANYMSDLNDAMLLIKGNLNLDPVEVRKQKEANVLFLEPTVYADSEGRETEGSVDGGYIYKQYDVQGTEAYKDRLNSDIHMFTNTPNMKDDNFSGTQSGEAMKYKLFGLEQRTKTKEGLFTKGLRRRAKLLETILKNTWSIDANKD------FNTVRYVYNRNLPKSLIEELKAYIDSGGKISQTTLMSLFSFFQDPELEVKKIEEDEKESIKKAQKGIYKDPRDINDDEQDD</Hsp_qseq>
+      <Hsp_hseq>YYDAAGQQLVDDTK------TNNRTSHAWHKLFVDQKTQYLVGEPVTFTSDNKTLLEYVNELAD-DDFDDILNETVKNMSNKGIEYWHPFVDEEGEFDYVIFPAEEMIVVYKDNTRRDILFALRYYSYKGIMGEETQKAELYT-DTHVYYYEKIDGVYQMDYSYGENNPRPHMTKGGQAIGWGRVPIIPFKNNEEMVSDLKFYKDLIDNYDSITSSTMDSFSDFQQIVYVLKNYDGENP----KEFTANLRYHSVIKVSGDGGVDT--------LRAEIPVDSAAKELERIQDELYKSAQAVDNSPETIGGGATGPALENLYALLDLKANMAERKIRAGLRLFFWFFAEYLRNTGKGDFNPDKELTMTFTRTRIQNDSEIVQSLVQGV-----TGGIMSKETAVARNPFVQDPEEELARIEE-EMNQYAEMQGNLLDDEGGDDDLEEDD</Hsp_hseq>
+      <Hsp_midline>YY+   + LV+ T+       +NR +H +     D    Y +G P+ +  D+K +LE +    D +D +        ++S  G  Y     +++ E       A    V+Y +   R+ +  +RY   K I  ++T + E++T D    +     GVY+   S            G ++  + R+PI  F NNE    D +    LID YD+  S T +  SD    + ++K     +P    K+  AN+ +      +   G +T        +  +  V       +R+  +++      +   +   G  +G A++     L+ +    E     GLR         L+NT   D N D      F   R   +  + +SL++ +     +GG +S+ T ++   F QDPE E+ +IEE E     + Q  +  D    +D E+DD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21988</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_154257794.1|1.W.7.1.4 MULTISPECIES: phage portal protein [unclassified Lactonifactor]</Hit_def>
+  <Hit_accession>21988</Hit_accession>
+  <Hit_len>523</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.62973e-09</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>444</Hsp_query-to>
+      <Hsp_hit-from>66</Hsp_hit-from>
+      <Hsp_hit-to>453</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>154</Hsp_positive>
+      <Hsp_gaps>43</Hsp_gaps>
+      <Hsp_align-len>417</Hsp_align-len>
+      <Hsp_qseq>VNEVSKYIEHHMDYQRPRLKVLSDYYEGKTKNLVELTRRKEEYMADNRVAHDYASYISDFINGYFLGNPIQYQDDDKDVLEVIEAFNDLN------DVESHNRSLGLDLSIYGKAYELMIRNQDDETRLYKS-------DAMSTFVIYDNTIERNSIAGVRYLRTKPIDKTDEDEVFTVDLFTSHGVYRYLTSRTNGLKLTPRENGFESHSFERMPITEFSNNERRKGDYEKVITLIDLYDNAESDTANYMSDLNDA-MLLIKGNLNLDPVEVRKQKEANVLFLEPTVYADSEGRETEGSVDGGYIYKQYDVQGTEAYKDRLNSDIHMFTNTPNMKDDNFSGTQSGEAMKYKLFGLEQRTKTKEGLFTKGLRRRAKLLETILKNTWSIDANKDFNTVRYVYNRNLPKSLIEELKAYI</Hsp_qseq>
+      <Hsp_hseq>VQELGKALVVHWQNRR-EIDYLYHYMNGNQPILYREKQVRPEIK--NNVVENHALEIVRFMMAQSFGEPVQYVSVDKDEAKTQE-IDKLNKMMKSIDKPYYDIQIGEWQSNVGTAYRYNWSNAMANIGLGECPVGIDTPDPRYNFVVYSSEFGSRPLMSV----TQAKDDMNENVYYCS---TPKQVYYIKNSKIIPEKSAPNGYG-------RIMLVEFPNNVRRLSDIEIVITMLDAVNGMQSNRMDGIDQFVQAFMKFVNCEINEDDFLRMCQLGAIKIKSQQGVQADVD-----------MISNELNQEQTQVAKDDLYKNILIIEGMPNREQNTGGDTGQAVYLRNGWDFAEQRAKIDEPVIIKSEKEALKNVLMILRTKQLISSGLKINDIDVKITRNKTDNMLVKAQALI</Hsp_hseq>
+      <Hsp_midline>V E+ K +  H   +R  +  L  Y  G    L    + + E    N V  ++A  I  F+     G P+QY   DKD  +  E  + LN      D   ++  +G   S  G AY     N      L +        D    FV+Y +      +  V    T+  D  +E+  +     T   VY    S+    K  P   G       R+ + EF NN RR  D E VIT++D  +  +S+  + +     A M  +   +N D      Q  A  +  +  V AD +            I  + + + T+  KD L  +I +    PN + +    T     ++      EQR K  E +  K  +   K +  IL+    I +    N +     RN   +++ + +A I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21373</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_070907675.1|1.W.7.2.3 phage portal protein [Flavobacterium spartansii]</Hit_def>
+  <Hit_accession>21373</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>5.77398e-08</Hsp_evalue>
+      <Hsp_query-from>216</Hsp_query-from>
+      <Hsp_query-to>475</Hsp_query-to>
+      <Hsp_hit-from>214</Hsp_hit-from>
+      <Hsp_hit-to>466</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>270</Hsp_align-len>
+      <Hsp_qseq>YRYLTSRTNGL----KLTPRENGFESHSFERMPITEFSNNERRKGDYEKVITLIDLYDNAESDTANYMSDLNDAMLLIKGNLNLDPVEVRKQKEANVLFLEPTVYADSEGRETEGSVDGGYIYKQYDVQGTEAYKDRLNSDIHMFTNTPNMKDDNFSGTQ--SGEAMKYKLFGLEQRTKTKEGLFTKGLRRRAKLLETILKNTWSIDANKDFNTVRY--VYNRNLPKSL--IEELKAYIDSGGKISQTTLMSLFSFFQDPELEVKKIEED</Hsp_qseq>
+      <Hsp_hseq>YHYLNDETGKLAYFDKVIP-------HGFDRIPIVYV---EQEEPEWFIVRELIDRYETTLSKLGGSNDYTAYPLLQIFGEVNSFP-----EKDDSGKVLQFPIKVDDDGKQIHGKAE--FLTADNSAESAKLEFDSVKDLIYSISHTPDLSFNNLKGMGDISGVALKLMFLDAVIKSTMNEGDNRTMIERILNIITSGVVKTTNTNLVKFSEALFYEIVFNSIIPDDVKTATEIITSLKAAGLLSTTTAIKLIDMVENPEDELKLIQEE</Hsp_hseq>
+      <Hsp_midline>Y YL   T  L    K+ P       H F+R+PI      E+ + ++  V  LID Y+   S            +L I G +N  P     +K+ +   L+  +  D +G++  G  +  ++      +  +   D +   I+  ++TP++  +N  G    SG A+K        ++   EG     + R   ++ + +  T + +  K    + Y  V+N  +P  +    E+   + + G +S TT + L    ++PE E+K I+E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3143997724</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

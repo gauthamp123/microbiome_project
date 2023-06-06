@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_500344.1 hypothetical protein SAOUHSC_01838 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>424</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_500344.1 hypothetical protein SAOUHSC_01838 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>424</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1701</Hit_id>
+  <Hit_def>gnl|TC-DB|B2GH49|9.B.160.1.10 Putative S1C family peptidase OS=Kocuria rhizophila (strain ATCC 9341 / DSM 348 / NBRC 103217 / DC2201) GN=KRH_04540 PE=4 SV=1</Hit_def>
+  <Hit_accession>1701</Hit_accession>
+  <Hit_len>394</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.9442</Hsp_bit-score>
+      <Hsp_score>180</Hsp_score>
+      <Hsp_evalue>2.08083e-14</Hsp_evalue>
+      <Hsp_query-from>114</Hsp_query-from>
+      <Hsp_query-to>292</Hsp_query-to>
+      <Hsp_hit-from>206</Hsp_hit-from>
+      <Hsp_hit-to>373</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>GKSSKPSEAGVGSGVIYQINNNSAYIVTNNHVIDGANEIRVQLHNKKQVKAKLVGKDAVTDIAVLKIENTKGIKAIQFANSSKVQTGDSVFAMGNPLGLQFANSVTSGIISASERTIDAETTGGNTKVSVLQTDAAINPGNSGGALVDINGNLVGINSMKIAATQVEGIGFAIPSNEVK</Hsp_qseq>
+      <Hsp_hseq>GTAAKCAQNQTGSGFVAQPGT----VVTNAHVVAGVDQPVVETRDGRAYPARTVQYDAASDLAVLRIPD---LPEAPLSMDGTVSQGEAVSFAGYPLGGPYTLRAAT-VQGQAVAPVQNVTTGETQTRSIIQIAGKVEQGNSGGPLLDADGHVVGVVFAKAVQDQV---GYAIPVDRVR</Hsp_hseq>
+      <Hsp_midline>G ++K ++   GSG + Q       +VTN HV+ G ++  V+  + +   A+ V  DA +D+AVL+I +   +     +    V  G++V   G PLG  +     + +   +   +   TTG     S++Q    +  GNSGG L+D +G++VG+   K    QV   G+AIP + V+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|74</Hit_id>
+  <Hit_def>gnl|TC-DB|A0L9W3|2.A.102.4.10 Uncharacterized protein OS=Magnetococcus sp. (strain MC-1) GN=Mmc1_2255 PE=4 SV=1</Hit_def>
+  <Hit_accession>74</Hit_accession>
+  <Hit_len>671</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>5.2621e-05</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>313</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>210</Hsp_align-len>
+      <Hsp_qseq>KGKSSKPSEAGVGSGVIYQINNNSAYIVTNNHVIDGANEIRVQLHN---KKQVKAKLVGKDAVTDIAVLKIENTKGIKAIQFANSSKVQTGDSVFAMGNPLGLQFANSVTSGIISASERTIDAETTGGNTKVS-VLQTDAAINPGNSGGALVDINGNLVGINSMKIAATQVEGIGFAIPSNEVKVTIEQLVK------HGKIDRPSIGIG</Hsp_qseq>
+      <Hsp_hseq>KGSNLNP----VGSGVLI---SSKGYVATAAHLVNGSVALQVRVATPGGSKDYQARLVKVIPEHNLAVLKLITRDSFPYLTPTDTRSYDPGSPLISWGD--GLQRNVISQSGTVTGAP----VDLTVSNQKYQGLVPINAIYHWSQSGGAVVDRQGTLLGIGVM-FQENNGTLRGFLVPGYLIRAHFRDVMEIAPVGTNGVVPRAGLGGG</Hsp_hseq>
+      <Hsp_midline>KG +  P    VGSGV+    ++  Y+ T  H+++G+  ++V++      K  +A+LV      ++AVLK+        +   ++     G  + + G+  GLQ      SG ++ +      + T  N K   ++  +A  +   SGGA+VD  G L+GI  M          GF +P   ++     +++      +G + R  +G G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2490300607</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

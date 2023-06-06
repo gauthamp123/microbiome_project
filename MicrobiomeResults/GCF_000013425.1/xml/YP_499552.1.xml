@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_499552.1 cytochrome c oxidase subunit III [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>201</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_499552.1 cytochrome c oxidase subunit III [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>201</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21548</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_088327222|3.D.4.5.2 cytochrome aa3 quinol oxidase subunit III [Bacillus subtilis]</Hit_def>
+  <Hit_accession>21548</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.772</Hsp_bit-score>
+      <Hsp_score>543</Hsp_score>
+      <Hsp_evalue>6.86984e-71</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>135</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>190</Hsp_align-len>
+      <Hsp_qseq>IDSRTHEGELNKLGFWIFITAEFALFGTLFATLLTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMIGM</Hsp_qseq>
+      <Hsp_hseq>MEYQSETGRLNILGFWIFLGAEIVLFSTLFATFFVLKNR-TAGGVLPDELFEVNLVMIMTFLLLISSFTCGIAVHEMRRGNLKGVVIWTIITLLLGAGFVGCEINEFVHYVHEGAALSTSAFWSGFFVLLGTHGTHVTIGIFWITGILIQLKKRGLTPQTSSKIFISSLYWHFLDVVWIFIFTGVYLMGL</Hsp_hseq>
+      <Hsp_midline>++ ++  G LN LGFWIF+ AE  LF TLFAT   L++     G +  ELFE+ LV+IMTF LL SS+TCGIA++ MR+   K ++ W IITLLLG  FVG EI EF HY  EG   +  ++WS FF+LLGTHG HV++GI W   +LIQ+++RGL    + K+FI SLYWHFLDVVW+FIFT VY++G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9479</Hit_id>
+  <Hit_def>gnl|TC-DB|P24012|3.D.4.4.1 Cytochrome c oxidase subunit 3 OS=Bacillus subtilis GN=ctaE PE=3 SV=2</Hit_def>
+  <Hit_accession>9479</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.57</Hsp_bit-score>
+      <Hsp_score>462</Hsp_score>
+      <Hsp_evalue>1.43479e-58</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>198</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>THEGELNKLGFWIFITAEFALFGTLFATLLTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASE-GVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMIGMV</Hsp_qseq>
+      <Hsp_hseq>TLEGKNKFLGFWLFLGGETVLFASLFATFLALRNS-NAGDPPTTEMFDVTLVFIATMLLLTSSLTSVYAMYHMKNFSFGKMQLWLGITILLGAGFLGLEIYEFKHYTHEFGFTITSSALGSAFYTLVGTHGAHVAFGLMWISTLMIRNAKRGLNLYTAPKFYVASLYWHFIDVVWVFIFTVVYLMGMV</Hsp_hseq>
+      <Hsp_midline>T EG+   LGFW+F+  E  LF +LFAT L L++  +     TTE+F++ LV I T  LL SS T   A+Y+M+      M  W+ IT+LLG  F+G EIYEF HY  E G   T  +  S+F+ L+GTHG HV+ G++W   L+I+  +RGL+ Y APK ++ SLYWHF+DVVWVFIFT VY++GMV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8708</Hit_id>
+  <Hit_def>gnl|TC-DB|P0ABJ3|3.D.4.5.1 Cytochrome o ubiquinol oxidase subunit 3 OS=Escherichia coli (strain K12) GN=cyoC PE=1 SV=1</Hit_def>
+  <Hit_accession>8708</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.088</Hsp_bit-score>
+      <Hsp_score>427</Hsp_score>
+      <Hsp_evalue>2.57759e-53</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>MSHDTNTIDSRTHE--GELNKLGFWIFITAEFALFGTLFATLLTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMIG</Hsp_qseq>
+      <Hsp_hseq>LTHATAHAHEHGHHDAGGTKIFGFWIYLMSDCILFSILFATYAVLVNG-TAGGPTGKDIFELPFVLVETFLLLFSSITYGMAAIAMYKNNKSQVISWLALTWLFGAGFIGMEIYEFHHLIVNGMGPDRSGFLSAFFALVGTHGLHVTSGLIWMAVLMVQIARRGLTSTNRTRIMCLSLFWHFLDVVWICVFTVVYLMG</Hsp_hseq>
+      <Hsp_midline>++H T       H   G     GFWI++ ++  LF  LFAT   L +G    G    ++FELP VL+ TF LLFSS T G+A   M +  +  ++ W+ +T L G  F+G EIYEF H    G+ P    + S+FF L+GTHG HV+ G++W   L++QI RRGL   N  ++  +SL+WHFLDVVW+ +FT VY++G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19392</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9X809|3.D.4.4.5 Probable cytochrome c oxidase subunit 3 OS=Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145) OX=100226 GN=ctaE PE=3 SV=1</Hit_def>
+  <Hit_accession>19392</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.219</Hsp_bit-score>
+      <Hsp_score>256</Hsp_score>
+      <Hsp_evalue>1.24993e-27</Hsp_evalue>
+      <Hsp_query-from>17</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>183</Hsp_align-len>
+      <Hsp_qseq>LNKLGFWIFITAEFALFGTLFATLLTLQH--GGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYAS-EGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQ-IQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMI</Hsp_qseq>
+      <Hsp_hseq>LTSVGTIIWLSSELMFFAALFAMYFTLRSVTGPDFWSEKADAL-NIPFSATNTTILVLSSLTCQLGVFAAERGDVKKLRMWFIVTFVMGAIFIGGQVFEYTELVKHEGISLSSDPYGSAFYLTTGFHGLHVTGGLIAFLLVLGRTYAARRFTHEQATAAIVVSYYWHFVDVVWIGLFATIYLI</Hsp_hseq>
+      <Hsp_midline>L  +G  I++++E   F  LFA   TL+   G D+  +    L  +P     T  L+ SS TC + ++   +   K +  W I+T ++G +F+G +++E+      EG++ +   Y S+F++  G HG HV+ G++  + +L +    R      A    +VS YWHF+DVVW+ +F  +Y+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|106</Hit_id>
+  <Hit_def>gnl|TC-DB|A0R049|3.D.3.5.5 Cytochrome c oxidase subunit 3 OS=Mycobacterium smegmatis (strain ATCC 700084 / mc(2)155) OX=246196 GN=MSMEG_4260 PE=1 SV=1</Hit_def>
+  <Hit_accession>106</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.293</Hsp_bit-score>
+      <Hsp_score>251</Hsp_score>
+      <Hsp_evalue>6.40924e-27</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>IDSRTHEGELNK-----LGFWIFITAEFALFGTLFATLLTL--QHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMI</Hsp_qseq>
+      <Hsp_hseq>ITSRVHS--LNRPNMVSVGTIVWLSSELMFFAGLFAMYFTARAQAGGAWPPEPTE--LNLALAVPVTLVLIASSFTCQMGVFAAERGDVFGLRRWYVITFLMGLFFVLGQGYEYIHLVEHGTTIPGSAYGSVFYLATGFHGLHVIGGLVAFVLLLARTKMSKFTPAQATAAIVVSYYWHFVDIVWIALFATIYFV</Hsp_hseq>
+      <Hsp_midline>I SR H   LN+     +G  +++++E   F  LFA   T   Q GG +  + T     L L + +T  L+ SS+TC + ++   +     +  W +IT L+GL FV  + YE+ H    G      +Y S F++  G HG HV  G+V  + LL + +        A    +VS YWHF+D+VW+ +F  +Y +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17723</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9AEL8|3.D.4.4.2 Cytochrome c oxidase subunit 3 - Corynebacterium glutamicum (Brevibacterium flavum).</Hit_def>
+  <Hit_accession>17723</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>99.7525</Hsp_bit-score>
+      <Hsp_score>247</Hsp_score>
+      <Hsp_evalue>2.62794e-26</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>LGFWIFITAEFALFGTLFATLLTLQHGGDYAGKM--TTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMI</Hsp_qseq>
+      <Hsp_hseq>VGTIVFLSQELMFFAGLFAMYFVSRANGLANGSWGEQTDHLNVPYALLITVILVSSSVTCQFGVFAAERGDVYGLRKWFLVTIILGSIFVIGQGYEYITLVGHGLTIQSSVYGSAFFITTGFHALHVIAGVMAFVVVLMRIHKSKFTPAQATAAMVVSYYWHFVDVVWIGLFITIYFI</Hsp_hseq>
+      <Hsp_midline>+G  +F++ E   F  LFA     +  G   G     T+   +P  L++T  L+ SS TC   ++   +     +  W ++T++LG +FV  + YE+      G+      Y S+FFI  G H  HV  G++  + +L++I +       A    +VS YWHF+DVVW+ +F  +Y I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15999</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8DHF0|3.D.4.4.4 Cytochrome c oxidase subunit III OS=Thermosynechococcus elongatus (strain BP-1) GN=ctaE PE=3 SV=1</Hit_def>
+  <Hit_accession>15999</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>94.3597</Hsp_bit-score>
+      <Hsp_score>233</Hsp_score>
+      <Hsp_evalue>2.80404e-24</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>191</Hsp_align-len>
+      <Hsp_qseq>IDSRTHEGELNKLGFWIFITAEFALFGTLFATLLTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPK---LFIVSLYWHFLDVVWVFIFTAVYMI</Hsp_qseq>
+      <Hsp_hseq>VDHAHEHPDFRVLGLLVFLISESLMFGGLFAAYLLLRGMHEQWPPEGTEV-ELLVPTINTLILISSSFVIHYGDVAIKKDDVRGMRKWYWITAAMGAVFLGGQVYE---YLTLGYGLRTNVFANCFYVMTGFHGLHVFIGILLILGVIWRSRRPG--HYNAQKHTGVAMAEIYWHFVDVIWIILFTLLYIL</Hsp_hseq>
+      <Hsp_midline>+D      +   LG  +F+ +E  +FG LFA  L L+   +      TE+ EL +  I T  L+ SS+        ++++  + M  W  IT  +G VF+G ++YE   Y + G       + + F+++ G HG HV +GI+  + ++ + +R G   YNA K   + +  +YWHF+DV+W+ +FT +Y++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11780</Hit_id>
+  <Hit_def>gnl|TC-DB|P98005|3.D.4.4.3 Cytochrome c oxidase polypeptide I+III OS=Thermus thermophilus (strain HB8 / ATCC 27634 / DSM 579) GN=caaA PE=1 SV=1</Hit_def>
+  <Hit_accession>11780</Hit_accession>
+  <Hit_len>791</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.5077</Hsp_bit-score>
+      <Hsp_score>223</Hsp_score>
+      <Hsp_evalue>2.72213e-21</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>603</Hsp_hit-from>
+      <Hsp_hit-to>790</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>194</Hsp_align-len>
+      <Hsp_qseq>TNTIDSRTHEGELNK-LGFWIFITAEFALFGTLFATLLTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFV---GFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYM</Hsp_qseq>
+      <Hsp_hseq>SHPVEHHTVTGKSNAWMGMAWFIVSEVGLFAILIAGYLYLRLSG--AATPPEERPALWLALLNTFLLVSSSFTVHFAHHDLRRGRFNPFRFGLLVTIILGVLFFLVQSWEFYQFYHHSSWQEN----LWTAAFFTIVGLHGLHVVIGGFGLILAYLQALRGKITLHNHGTLEAASMYWHLVDAVWLVIVTIFYV</Hsp_hseq>
+      <Hsp_midline>++ ++  T  G+ N  +G   FI +E  LF  L A  L L+  G  A     E   L L L+ TF L+ SS+T   A + +R+ +     F +++T++LG++F     +E Y+F H++S   N     + ++FF ++G HG HV +G    I   +Q  R  +  +N   L   S+YWH +D VW+ I T  Y+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8166</Hit_id>
+  <Hit_def>gnl|TC-DB|P00414|3.D.4.11.1 Cytochrome c oxidase subunit 3 - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>8166</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.1073</Hsp_bit-score>
+      <Hsp_score>196</Hsp_score>
+      <Hsp_evalue>2.07369e-18</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>260</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>KLGFWIFITAEFALFGTLFATLL------TLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVW-AICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMIG</Hsp_qseq>
+      <Hsp_hseq>RYGMILFITSEVFFFAGFFWAFYHSSLAPTPQLGGHWPPTGITPLNPLEVPLLNTSVLLASGVSITWAHHSLMENNRNQMIQALLITILLGLYFT---LLQASEYFESPFTISDGIYGSTFFVATGFHGLHVIIGSTFLTICFIRQLMFHFTSKHHFG-FEAAAWYWHFVDVVWLFLYVSIYWWG</Hsp_hseq>
+      <Hsp_midline>+ G  +FIT+E   F   F          T Q GG +     T L  L + L+ T  LL S  +   A + + +  +  M+  ++IT+LLGL F    + + + Y       + G Y S+FF+  G HG HV +G  +  IC + Q+      K++       + YWHF+DVVW+F++ ++Y  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13489</Hit_id>
+  <Hit_def>gnl|TC-DB|Q3J5F6|3.D.4.6.2 Cytochrome c oxidase, aa3-type, subunit III OS=Rhodobacter sphaeroides (strain ATCC 17023 / 2.4.1 / NCIB 8253 / DSM 158) GN=coxIII PE=3 SV=1</Hit_def>
+  <Hit_accession>13489</Hit_accession>
+  <Hit_len>266</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.411</Hsp_bit-score>
+      <Hsp_score>189</Hsp_score>
+      <Hsp_evalue>2.20061e-17</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>265</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>147</Hsp_align-len>
+      <Hsp_qseq>GKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFW-MIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMIG</Hsp_qseq>
+      <Hsp_hseq>GIITFDPWHLPL--INTLILLCSGCAATWAHHALVHENNRRDVAWGLALAIALGALFTVFQAYEYSH-AAFGFAGNI--YGANFFMATGFHGFHVIVGTIFLLVCLIRVQRGHFTPEKHVGFEAAIWYWHFVDVVWLFLFASIYIWG</Hsp_hseq>
+      <Hsp_midline>G +T + + LPL  I T  LL S      A + +  E  +  + W + + + LG +F  F+ YE++H A+ G    I  Y ++FF+  G HG HV +G ++ +  LI++QR                YWHF+DVVW+F+F ++Y+ G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8167</Hit_id>
+  <Hit_def>gnl|TC-DB|P00415|3.D.4.7.1 CYTOCHROME C OXIDASE POLYPEPTIDE III (EC 1.9.3.1) - Bos taurus (Bovine).</Hit_def>
+  <Hit_accession>8167</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.1662</Hsp_bit-score>
+      <Hsp_score>165</Hsp_score>
+      <Hsp_evalue>4.91761e-14</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>260</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>KLGFWIFITAEFALFGTLFATLL------TLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFV---GFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAI-CLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMIG</Hsp_qseq>
+      <Hsp_hseq>RYGMILFIISEVLFFTGFFWAFYHSSLAPTPELGGCWPPTGIHPLNPLEVPLLNTSVLLASGVSITWAHHSLMEGDRKHMLQALFITITLGVYFTLLQASEYYEAPFTISDGV------YGSTFFVATGFHGLHVIIGSTFLIVCFFRQLKFHFTSNHHFG-FEAAAWYWHFVDVVWLFLYVSIYWWG</Hsp_hseq>
+      <Hsp_midline>+ G  +FI +E   F   F          T + GG +       L  L + L+ T  LL S  +   A + + +  +K M+  + IT+ LG+ F      E YE     S+GV      Y S+FF+  G HG HV +G  + I C   Q++      ++       + YWHF+DVVW+F++ ++Y  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21335</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_068073146.1|9.B.36.14.5 hypothetical protein [Novosphingobium lentum]</Hit_def>
+  <Hit_accession>21335</Hit_accession>
+  <Hit_len>434</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>1.23515e-10</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>257</Hsp_hit-from>
+      <Hsp_hit-to>430</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>175</Hsp_align-len>
+      <Hsp_qseq>GFWIFITAEFALFGTLFATLLTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLF-IVSLYWHFLDVVWVFIFTAVYM</Hsp_qseq>
+      <Hsp_hseq>GFWAFIFADMIVFAVLFTAFSIDRWRDPVAFQAGHAALDATRGLAETVLLLLGSGLVVVALSAARSGAIVRVVPLLGGALATSLAFCGLKALEYRERFAAGQGPDSQLFFSHYFAMTGLHLSHVVLSIL-AVGWIAWRYRRGDASSALLRMFGSAAIFWHMVDLLWVILFATLYL</Hsp_hseq>
+      <Hsp_midline>GFW FI A+  +F  LF      +     A +      +    L  T  LL  S    +A+   R      ++  +   L   L F G +  E+    + G  P    ++S +F + G H  HV L I+ A+  +    RRG       ++F   +++WH +D++WV +F  +Y+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13939</Hit_id>
+  <Hit_def>gnl|TC-DB|Q51666|3.D.4.10.1 NorE protein OS=Paracoccus denitrificans GN=norE PE=3 SV=1</Hit_def>
+  <Hit_accession>13939</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>4.97025e-07</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>WIFITAEFALFG---TLFATLLTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYASEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVSLYWHFLDVVWVFIFTAVYMIG</Hsp_qseq>
+      <Hsp_hseq>WVLIASELLVFAAGITAMAGVRLTDPAGFAAAQAQLHGW---MAALNTAILVTSGFFAARAERACRRGDRRGARVGLALAALGGAGFLAVKAVEYAGDLRAGLGMESHPFFTFYYLLTGFHAAHVLFGI--GVLALVAIRLR------TEEVQAGAAFWHMVDLVWVLLLPPVYLLG</Hsp_hseq>
+      <Hsp_midline>W+ I +E  +F    T  A +      G  A +     +   +  + T  L+ S +    A    R+  ++     + +  L G  F+  +  E+A     G+      +++ +++L G H  HV  GI   +  L+ I+ R        ++   + +WH +D+VWV +   VY++G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8168</Hit_id>
+  <Hit_def>gnl|TC-DB|P00420|3.D.4.8.1 Cytochrome c oxidase subunit 3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) GN=COX3 PE=2 SV=3</Hit_def>
+  <Hit_accession>8168</Hit_accession>
+  <Hit_len>269</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>2.13172e-05</Hsp_evalue>
+      <Hsp_query-from>20</Hsp_query-from>
+      <Hsp_query-to>197</Hsp_query-to>
+      <Hsp_hit-from>89</Hsp_hit-from>
+      <Hsp_hit-to>269</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>194</Hsp_align-len>
+      <Hsp_qseq>LGFWIFITAEFALFGTLFATL--------LTLQHGGDYAGKMTTELFELPLVLIMTFALLFSSYTCGIAIYYMRQEKQKLMMFWMIITLLLGLVFVGFEIYEFAHYA---SEGVNPTIGSYWSSFFILLGTHGCHVSLGIVWAICLLIQIQRRGLDKYNAPKLFIVS-----LYWHFLDVVWVFIFTAVYMIGM</Hsp_qseq>
+      <Hsp_hseq>LGFLMFVLSEVLIFAGLFWAYFHSAMSPDVTLGACWPPVGIEAVQPTELPL--LNTIILLSSGATVTYSHHALIAGNRNKALSGLLITFWLIVIFVTCQYIEYTNAAFTISDGV------YGSVFYAGTGLHFLHMVM-----LAAMLGVNYWRMRNYHLTAGHHVGYETTIIYTHVLDVIWLFLYVVFYWWGV</Hsp_hseq>
+      <Hsp_midline>LGF +F+ +E  +F  LF           +TL       G    +  ELPL  + T  LL S  T   + + +    +   +  ++IT  L ++FV  +  E+ + A   S+GV      Y S F+   G H  H+ +     +  ++ +    +  Y+      V      +Y H LDV+W+F++   Y  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>93</Statistics_hsp-len>
+      <Statistics_eff-space>852432444</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

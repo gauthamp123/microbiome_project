@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>YP_498947.1 hypothetical protein SAOUHSC_00358 [Staphylococcus aureus subsp. aureus NCTC 8325]</BlastOutput_query-def>
+  <BlastOutput_query-len>83</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>YP_498947.1 hypothetical protein SAOUHSC_00358 [Staphylococcus aureus subsp. aureus NCTC 8325]</Iteration_query-def>
+  <Iteration_query-len>83</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5495</Hit_id>
+  <Hit_def>gnl|TC-DB|J8Z3M3|1.E.43.1.9 Uncharacterized protein OS=Bacillus cereus HD73 PE=4 SV=1</Hit_def>
+  <Hit_accession>5495</Hit_accession>
+  <Hit_len>82</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>94.3597</Hsp_bit-score>
+      <Hsp_score>233</Hsp_score>
+      <Hsp_evalue>2.33268e-27</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>83</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>82</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>81</Hsp_align-len>
+      <Hsp_qseq>GFIGMLIVGGLIGWAAGAIMGKDIPGGILGNIIAGIIGSWVGGKLFGQWGPELGSIYILPALIGSIILIAIVTLILRAMRK</Hsp_qseq>
+      <Hsp_hseq>GWIITLIVGAIIGAIASSITGKNFPGGMFGNIIAGLLGASLGGRLFGSFGPSFGGIHVVPALLGAIVLIFIVSFVVKAAKK</Hsp_hseq>
+      <Hsp_midline>G+I  LIVG +IG  A +I GK+ PGG+ GNIIAG++G+ +GG+LFG +GP  G I+++PAL+G+I+LI IV+ +++A +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3007</Hit_id>
+  <Hit_def>gnl|TC-DB|D1CIE6|1.E.43.1.2 Transglycosylase-associated protein OS=Thermobaculum terrenum (strain ATCC BAA-798 / YNP1) GN=Tter_2629 PE=4 SV=1</Hit_def>
+  <Hit_accession>3007</Hit_accession>
+  <Hit_len>86</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>9.99606e-13</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>79</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>82</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>81</Hsp_align-len>
+      <Hsp_qseq>GFIGMLIVGGLIGWAAGAIMGKDIPGGILGNIIAGIIGSWVGG---KLFGQWGPELGSIY-ILPALIGSIILIAIVTLILR</Hsp_qseq>
+      <Hsp_hseq>GIISWIVIGLIAGVLAKWIMPGDDPGGIIVTIIIGIIGAVIGGWIANLFGQEGVTGINLWSILVAVVGSIVLLALYRLVVR</Hsp_hseq>
+      <Hsp_midline>G I  +++G + G  A  IM  D PGGI+  II GIIG+ +GG    LFGQ G    +++ IL A++GSI+L+A+  L++R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14673</Hit_id>
+  <Hit_def>gnl|TC-DB|Q63RX0|1.E.43.1.11 Putative membrane protein OS=Burkholderia pseudomallei (strain K96243) GN=BPSL2550 PE=4 SV=1</Hit_def>
+  <Hit_accession>14673</Hit_accession>
+  <Hit_len>115</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>4.36281e-11</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>80</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>81</Hsp_align-len>
+      <Hsp_qseq>GFIGMLIVGGLIGWAAGAIMGKDIPGGILGNIIAGIIGSWVGGKLFGQWGPELGSIYI---LPALIGSIILIAIVTLILRA</Hsp_qseq>
+      <Hsp_hseq>GLIMWLIIGAIAGWLAGLLV-KGGGFGLLVDIIVGIVGAVIGGWLAGILGIHIGGGFISSVIVAVIGAVILLFVIRLFKRA</Hsp_hseq>
+      <Hsp_midline>G I  LI+G + GW AG ++ K    G+L +II GI+G+ +GG L G  G  +G  +I   + A+IG++IL+ ++ L  RA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1327</Hit_id>
+  <Hit_def>gnl|TC-DB|ALM14093|1.E.43.1.14 transglycosylase-associated protein [Candidatus Peribacter riflensis]</Hit_def>
+  <Hit_accession>1327</Hit_accession>
+  <Hit_len>80</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>5.66372e-11</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>80</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>80</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>IGMLIVGGLIGWAAGAIMGKDIPGGILGNIIAGIIGSWVGGKLFGQWG----PELGSIYILPALIGSIILIAIVTLILRA</Hsp_qseq>
+      <Hsp_hseq>IWFLLIGLIAGWLAGQIMGGG-GYGIIGDIVVGIVGSLIGGLLFRLLGITAYGTLGAIVM--AVIGAIVLIAALRTLKHA</Hsp_hseq>
+      <Hsp_midline>I  L++G + GW AG IMG     GI+G+I+ GI+GS +GG LF   G      LG+I +  A+IG+I+LIA +  +  A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18886</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9RRU6|1.E.43.1.7 Transglycosylase associated protein OS=Deinococcus radiodurans (strain ATCC 13939 / DSM 20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 / VKM B-1422) GN=DR_2389 PE=4 SV=1</Hit_def>
+  <Hit_accession>18886</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>6.92125e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>74</Hsp_query-to>
+      <Hsp_hit-from>57</Hsp_hit-from>
+      <Hsp_hit-to>139</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>MFGFIGMLIVGGLIGWAAGAIMGKDIPGGILGNIIAGIIGSWVGGKLFGQW---------GPELGSIYILPALIGSIILIAIV</Hsp_qseq>
+      <Hsp_hseq>IMGWLITILVGALCGWLASMIMKTDAQQGAVANILIGIVGALLAQFIFGDLLHIGGSYNAGNGFNFLSIVWGVIGSAILIAIL</Hsp_hseq>
+      <Hsp_midline>+ G++  ++VG L GW A  IM  D   G + NI+ GI+G+ +   +FG           G     + I+  +IGS ILIAI+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5439</Hit_id>
+  <Hit_def>gnl|TC-DB|I9U3B8|1.E.43.1.10 Uncharacterized protein OS=Bacteroides vulgatus CL09T03C04 GN=HMPREF1058_02776 PE=4 SV=1</Hit_def>
+  <Hit_accession>5439</Hit_accession>
+  <Hit_len>83</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>5.00631e-07</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>80</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>80</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>FIGMLIVGGLIGWAAGAIMGKDIPGGILG---NIIAGIIGSWVGGKLFGQWGPELGSIY--ILPALIGSIILIAIVTLILRA</Hsp_qseq>
+      <Hsp_hseq>FIWYIIIGIIAGFVAGKLMR----GGGFGFFINLLVGIVGGVLGGWVFSLFGIAATGIIGSLVTSIVGAILLLWIVSLLKRS</Hsp_hseq>
+      <Hsp_midline>FI  +I+G + G+ AG +M     GG  G   N++ GI+G  +GG +F  +G     I   ++ +++G+I+L+ IV+L+ R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20858</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_015111924|1.E.43.1.15 GlsB/YeaQ/YmgE family stress response membrane protein [Nostoc sp. PCC 7107]</Hit_def>
+  <Hit_accession>20858</Hit_accession>
+  <Hit_len>90</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>1.14911e-06</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>77</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>84</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>81</Hsp_align-len>
+      <Hsp_qseq>IGMLIVGGLIGWAAGAIMGKDIPGGILGNIIAGIIGSWVGGKL--------FGQWGPELGSIYILPALIGSIILIAIVTLI</Hsp_qseq>
+      <Hsp_hseq>LAWIILGLIAGAIAKAIYPGHQGGGILGTILLGIIGAFIGGSLGVFFSTGNFVLAAPTLSIPGILVAVLGAIVAVFLWNLL</Hsp_hseq>
+      <Hsp_midline>+  +I+G + G  A AI      GGILG I+ GIIG+++GG L        F    P L    IL A++G+I+ + +  L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12487</Hit_id>
+  <Hit_def>gnl|TC-DB|Q0S1N2|4.A.2.1.13 Phosphotransferase system, fructose-specific OS=Rhodococcus sp. (strain RHA1) GN=RHA1_ro06782 PE=4 SV=1</Hit_def>
+  <Hit_accession>12487</Hit_accession>
+  <Hit_len>700</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>3.6359e-05</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>78</Hsp_query-to>
+      <Hsp_hit-from>429</Hsp_hit-from>
+      <Hsp_hit-to>494</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>GWAAGAI---MGKDIPGGILGNIIAGIIGSWVGGKLFGQWGPELGSIYILPALIGSIILIAIVTLIL</Hsp_qseq>
+      <Hsp_hseq>GFTAGAVAVFVGAGFIGGLVGGLIAGVVALWISRIPVPQWLRGLMPVVIIP-LFATLIVGALMFLVL</Hsp_hseq>
+      <Hsp_midline>G+ AGA+   +G    GG++G +IAG++  W+      QW   L  + I+P L  ++I+ A++ L+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>55</Statistics_hsp-len>
+      <Statistics_eff-space>245337876</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
