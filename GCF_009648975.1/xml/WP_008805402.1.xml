@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008805402.1 MULTISPECIES: ATP-dependent protease ATP-binding subunit ClpX [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>424</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008805402.1 MULTISPECIES: ATP-dependent protease ATP-binding subunit ClpX [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>424</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19079</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9UBP0|1.R.1.1.1 Spastin OS=Homo sapiens OX=9606 GN=SPAST PE=1 SV=1</Hit_def>
+  <Hit_accession>19079</Hit_accession>
+  <Hit_len>616</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>3.16149e-06</Hsp_evalue>
+      <Hsp_query-from>76</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>342</Hsp_hit-from>
+      <Hsp_hit-to>446</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>DYVIGQEQAKKVLAVAVYNHYKRLRNGDTSNGVELGKSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKI</Hsp_qseq>
+      <Hsp_hseq>DDIAGQDLAKQALQEIVILPSLR---PELFTGLRAPARGLLLFGPPGNGKTMLAKAVAAESNATFFNISAASLT-SKYVGEG-----EKLVRALFAVARELQPSIIFIDEVDSL</Hsp_hseq>
+      <Hsp_midline>D + GQ+ AK+ L   V     R    +   G+      +LL GP G+GKT+LA+ +A   +  F    A +LT + YVGE      +KL++      ++ Q  I++IDE+D +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9936</Hit_id>
+  <Hit_def>gnl|TC-DB|P33760|3.A.20.1.5 Peroxisomal ATPase PEX6 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) GN=PEX6 PE=1 SV=1</Hit_def>
+  <Hit_accession>9936</Hit_accession>
+  <Hit_len>1030</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>3.66285e-06</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>765</Hsp_hit-from>
+      <Hsp_hit-to>861</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>103</Hsp_align-len>
+      <Hsp_qseq>KSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRKSDNPSITRDVSGEGVQQALLKL</Hsp_qseq>
+      <Hsp_hseq>RSGILFYGPPGTGKTLMAKAIATNFSLNFFSVKGPELLNM-YIGESEAN-VRRVFQK----AREAKPCVIFFDEIDSVAPKRGNQGDSGGVMDRIVSQLLAEL</Hsp_hseq>
+      <Hsp_midline>+S IL  GP G+GKTL+A+ +A    + F       L    Y+GE   N ++++ QK     ++A+  +++ DEID ++ K  N   +  V    V Q L +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8671</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAI3|3.A.29.1.5 ATP-dependent zinc metalloprotease FtsH OS=Escherichia coli (strain K12) OX=83333 GN=ftsH PE=1 SV=1</Hit_def>
+  <Hit_accession>8671</Hit_accession>
+  <Hit_len>644</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>5.61233e-06</Hsp_evalue>
+      <Hsp_query-from>59</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>136</Hsp_hit-from>
+      <Hsp_hit-to>259</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>RERSALPTPHEIRHHLDDYVIGQEQAKKVLAVAVYNHYKRLRNGDTSNGVELGKSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRK</Hsp_qseq>
+      <Hsp_hseq>KSKARMLTEDQIKTTFAD-VAGCDEAKEEVAELV--EYLREPSRFQKLGGKIPKG-VLMVGPPGTGKTLLAKAIAGEAKVPFFTISGSDFVEM-FVGVGASRVRDMFEQ-----AKKAAPCIIFIDEIDAVGRQ</Hsp_hseq>
+      <Hsp_midline>+ ++ + T  +I+    D V G ++AK+ +A  V   Y R  +     G ++ K  +L++GP G+GKTLLA+ +A    VPF     +   E  +VG     +     Q      +KA   I++IDEID + R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19000</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9SS94|3.A.16.1.5 Cell division control protein 48 homolog C OS=Arabidopsis thaliana OX=3702 GN=CDC48C PE=2 SV=2</Hit_def>
+  <Hit_accession>19000</Hit_accession>
+  <Hit_len>820</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>7.98232e-06</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>195</Hsp_query-to>
+      <Hsp_hit-from>268</Hsp_hit-from>
+      <Hsp_hit-to>344</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>SNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRKSDN</Hsp_qseq>
+      <Hsp_hseq>SGILFHGPPGCGKTKLANAIANEAGVPFYKISATEVI-SGVSGASEEN-IRELFSK----AYRTAPSIVFIDEIDAIGSKREN</Hsp_hseq>
+      <Hsp_midline>S IL  GP G GKT LA  +A    VPF    AT +  +G  G   EN I++L  K      +    IV+IDEID I  K +N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1324</Hit_id>
+  <Hit_def>gnl|TC-DB|ALM13868|3.A.29.1.6 cell division protease FtsH [Candidatus Peribacter riflensis]</Hit_def>
+  <Hit_accession>1324</Hit_accession>
+  <Hit_len>637</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>3.91938e-05</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>273</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>VYICDECVDLCNDIIREEIKEVAPHRERSALPTPHEIRHHLDDYVIGQEQAKKVLAVAVYNHYKRLRNGDTSNGVELGKSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRK</Hsp_qseq>
+      <Hsp_hseq>IFVIGGVIWLFRGIARSQSTALSFGKSRAKVADATQVKTHFAD-VAGCKEAKDDL-VEVVDFLKNPRKY-INLGAKIPKG-VLLVGAPGTGKTLLARAVAGEAGVPFFSMAGSEFVEM-FVGVGASRVRDLFLR-----AKRNAPSIIFIDEIDAVGRQ</Hsp_hseq>
+      <Hsp_midline>+++    + L   I R +   ++  + R+ +    +++ H  D V G ++AK  L V V +  K  R    + G ++ K  +LL+G  G+GKTLLA  +A    VPF     +   E  +VG     +    L+      ++    I++IDEID + R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10965</Hit_id>
+  <Hit_def>gnl|TC-DB|P54813|3.A.29.1.2 ATP-dependent zinc metalloprotease YME1 homolog OS=Caenorhabditis elegans OX=6239 GN=ymel-1 PE=3 SV=2</Hit_def>
+  <Hit_accession>10965</Hit_accession>
+  <Hit_len>723</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>4.07571e-05</Hsp_evalue>
+      <Hsp_query-from>67</Hsp_query-from>
+      <Hsp_query-to>198</Hsp_query-to>
+      <Hsp_hit-from>240</Hsp_hit-from>
+      <Hsp_hit-to>361</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>PHEIRHHLDDYVIGQEQAKKVLAVAVYNHYKRLRNGDTSNGVELGKSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRG-IVYIDEIDKISRKSDNPSI</Hsp_qseq>
+      <Hsp_hseq>PEDVQVTFDD-VRGMDEAK--LEVEEIVDYLKDPEKYSRLGGRLPKG-VLLVGPPGTGKTLLARAIAGEAQVPFFHTAGSEFDEV-LVGQGARRV------RDLFDKAKARAPCIIFIDEIDSVGSKRVSNSI</Hsp_hseq>
+      <Hsp_midline>P +++   DD V G ++AK  L V     Y +     +  G  L K  +LL+GP G+GKTLLA  +A    VPF     +   E   VG+    +      +  +D  KA+   I++IDEID +  K  + SI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10626</Hit_id>
+  <Hit_def>gnl|TC-DB|P46468|3.A.25.2.1 Putative cell division cycle ATPase OS=Plasmodium falciparum (isolate 3D7) GN=PF07_0047 PE=3 SV=2</Hit_def>
+  <Hit_accession>10626</Hit_accession>
+  <Hit_len>1229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>7.90755e-05</Hsp_evalue>
+      <Hsp_query-from>81</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>943</Hsp_hit-from>
+      <Hsp_hit-to>1063</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>134</Hsp_align-len>
+      <Hsp_qseq>QEQAKKVLAVAVYNHYKRLRNGDTSNGVELGKSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRKSDNPSITRDVSGEGVQQALLKL</Hsp_qseq>
+      <Hsp_hseq>KEQLKETILYPL--EYKHLYNKFNSNY----NKGILLYGPPGCGKTLLAKAIANECKANFISVKGPELLTM-WFGESEAN-VRDLFDK----ARAASPCIIFFDEIDSLA-KERNSNTNNDASDRVINQILTEI</Hsp_hseq>
+      <Hsp_midline>+EQ K+ +   +   YK L N   SN        ILL GP G GKTLLA+ +A      F       L    + GE   N ++ L  K     + A   I++ DEID ++ K  N +   D S   + Q L ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12678</Hit_id>
+  <Hit_def>gnl|TC-DB|Q13608|3.A.20.1.1 Peroxisome assembly factor 2 OS=Homo sapiens GN=PEX6 PE=1 SV=2</Hit_def>
+  <Hit_accession>12678</Hit_accession>
+  <Hit_len>980</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000174469</Hsp_evalue>
+      <Hsp_query-from>110</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>735</Hsp_hit-from>
+      <Hsp_hit-to>833</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>LGKSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRKSDNPSITRDVSGEGVQQALLKL</Hsp_qseq>
+      <Hsp_hseq>LRRSGLLLHGPPGTGKTLLAKAVATECSLTFLSVKGPELINM-YVGQSEENVREVFAR-----ARAAAPCIIFFDELDSLAPSRGRSGDSGGVMDRVVSQLLAEL</Hsp_hseq>
+      <Hsp_midline>L +S +LL GP G+GKTLLA+ +A    + F       L    YVG+  EN+ +   +      + A   I++ DE+D ++        +  V    V Q L +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6625</Hit_id>
+  <Hit_def>gnl|TC-DB|NP_001308896.1|1.R.1.1.2 ATPase family AAA domain-containing protein 1 isoform 1 [Homo sapiens]</Hit_def>
+  <Hit_accession>6625</Hit_accession>
+  <Hit_len>361</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000210269</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>ILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISR</Hsp_qseq>
+      <Hsp_hseq>VLLYGPPGCGKTLIAKATAKEAGCRFINLQPSTLTDKWY-GES-----QKLAAAVFSLAIKLQPSIIFIDEIDSFLR</Hsp_hseq>
+      <Hsp_midline>+LL GP G GKTL+A+  A+     F     +TLT+  Y GE      QKL         K Q  I++IDEID   R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4223</Hit_id>
+  <Hit_def>gnl|TC-DB|F2Z6D2|3.A.31.1.3 Cell division protein C OS=Sulfolobus acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 15157 / NCIMB 11770) OX=330779 GN=cdvC PE=1 SV=1</Hit_def>
+  <Hit_accession>4223</Hit_accession>
+  <Hit_len>374</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000215381</Hsp_evalue>
+      <Hsp_query-from>78</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>VIGQEQAKKVLAVAVYNHYKRLRNGDTSNGVELG-KSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKI</Hsp_qseq>
+      <Hsp_hseq>IVGLEDVKEALKEAIVYPTRR------PDLFPLGWPRGILVYGPPGCGKTMIAAAVANEIDSYFIQVDAASVM-SKWLGEAEKNVAKIFNSARELSKKDGKPVIIFIDEIDAL</Hsp_hseq>
+      <Hsp_midline>++G E  K+ L  A+    +R       +   LG    IL+ GP G GKT++A  +A  +D  F   DA ++  + ++GE  +N+ +      +   +  +  I++IDEID +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9555</Hit_id>
+  <Hit_def>gnl|TC-DB|P25694|3.A.16.1.2 Cell division control protein 48 - Saccharomyces cerevisiae (Baker&apos;s yeast).</Hit_def>
+  <Hit_accession>9555</Hit_accession>
+  <Hit_len>835</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.00022276</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>220</Hsp_query-to>
+      <Hsp_hit-from>251</Hsp_hit-from>
+      <Hsp_hit-to>347</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>ILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRKSD--NPSITRDVSGEGVQQALLKLIEGTVA</Hsp_qseq>
+      <Hsp_hseq>VLMYGPPGTGKTLMARAVANETGAFFFLINGPEVM-SKMAGESESN-----LRKAFEEAEKNAPAIIFIDEIDSIAPKRDKTNGEVERRVVSQ-----LLTLMDGMKA</Hsp_hseq>
+      <Hsp_midline>+L+ GP G+GKTL+A  +A      F + +   +  +   GE   N     L+K   + +K    I++IDEID I+ K D  N  + R V  +     LL L++G  A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10950</Hit_id>
+  <Hit_def>gnl|TC-DB|P54609|3.A.16.1.5 Cell division control protein 48 homolog A OS=Arabidopsis thaliana OX=3702 GN=CDC48A PE=1 SV=1</Hit_def>
+  <Hit_accession>10950</Hit_accession>
+  <Hit_len>809</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000291712</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>217</Hsp_query-to>
+      <Hsp_hit-from>244</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>ILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKIS--RKSDNPSITRDVSGEGVQQALLKLIEG</Hsp_qseq>
+      <Hsp_hseq>ILLYGPPGSGKTLIARAVANETGAFFFCINGPEIM-SKLAGESESN-----LRKAFEEAEKNAPSIIFIDEIDSIAPKREKTNGEVERRIVSQ-----LLTLMDG</Hsp_hseq>
+      <Hsp_midline>ILL GP GSGKTL+A  +A      F   +   +  +   GE   N     L+K   + +K    I++IDEID I+  R+  N  + R +  +     LL L++G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10317</Hit_id>
+  <Hit_def>gnl|TC-DB|P39925|3.A.29.1.1 Mitochondrial respiratory chain complexes assembly protein AFG3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=AFG3 PE=1 SV=1</Hit_def>
+  <Hit_accession>10317</Hit_accession>
+  <Hit_len>761</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000500297</Hsp_evalue>
+      <Hsp_query-from>78</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>290</Hsp_hit-from>
+      <Hsp_hit-to>395</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>VIGQEQAKKVLAVAVYNHYKRLRNGDTSNGVELGKSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISRK</Hsp_qseq>
+      <Hsp_hseq>VAGCDEAKQEIMEFV--HFLKNPGKYTKLGAKIPRGAILS-GPPGTGKTLLAKATAGEANVPFLSVSGSEFVEM-FVGVGASRVRDLFTQ-----ARSMAPSIIFIDEIDAIGKE</Hsp_hseq>
+      <Hsp_midline>V G ++AK+ +   V  H+ +     T  G ++ +  IL  GP G+GKTLLA+  A   +VPF     +   E  +VG     +     Q      +     I++IDEID I ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16773</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8RY16|3.A.20.1.2 AAA family ATPase peroxin 6 OS=Arabidopsis thaliana GN=At1g03000 PE=2 SV=1</Hit_def>
+  <Hit_accession>16773</Hit_accession>
+  <Hit_len>941</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.00052288</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>691</Hsp_hit-from>
+      <Hsp_hit-to>763</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>KSNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKIS</Hsp_qseq>
+      <Hsp_hseq>RSGVLLYGPPGTGKTLLAKAVATECSLNFLSVKGPELINM-YIGESEKN-VRDIFEK----ARSARPCVIFFDELDSLA</Hsp_hseq>
+      <Hsp_midline>+S +LL GP G+GKTLLA+ +A    + F       L    Y+GE  +N ++ + +K     + A+  +++ DE+D ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19338</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9WZ49|3.A.29.1.7 ATP-dependent zinc metalloprotease FtsH OS=Thermotoga maritima (strain ATCC 43589 / DSM 3109 / JCM 10099 / NBRC 100826 / MSB8) OX=243274 GN=ftsH PE=1 SV=1</Hit_def>
+  <Hit_accession>19338</Hit_accession>
+  <Hit_len>610</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.00062183</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>197</Hsp_hit-from>
+      <Hsp_hit-to>267</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>ILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKISR</Hsp_qseq>
+      <Hsp_hseq>ILLVGPPGTGKTLLARAVAGEANVPFFHISGSDFVEL-FVGVGAARVRDLFAQ-----AKAHAPCIVFIDEIDAVGR</Hsp_hseq>
+      <Hsp_midline>ILL+GP G+GKTLLA  +A   +VPF     +   E  +VG     +     Q      +     IV+IDEID + R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9652</Hit_id>
+  <Hit_def>gnl|TC-DB|P28737|1.R.1.1.3 Outer mitochondrial transmembrane helix translocase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=MSP1 PE=1 SV=2</Hit_def>
+  <Hit_accession>9652</Hit_accession>
+  <Hit_len>362</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000861591</Hsp_evalue>
+      <Hsp_query-from>113</Hsp_query-from>
+      <Hsp_query-to>205</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>215</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>SNILLIGPTGSGKTLLAETLARLLDVPFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQKAQRGIVYIDEIDKI--SRKSDNPSITRDVSGE</Hsp_qseq>
+      <Hsp_hseq>SGVLLYGPPGCGKTMLAKALAKESGANFISIRMSSIMDKWY-GES-----NKIVDAMFSLANKLQPCIIFIDEIDSFLRERSSTDHEVTATLKAE</Hsp_hseq>
+      <Hsp_midline>S +LL GP G GKT+LA+ LA+     F     +++ +  Y GE       K++        K Q  I++IDEID     R S +  +T  +  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10625</Hit_id>
+  <Hit_def>gnl|TC-DB|P46459|1.F.1.1.1 Vesicle-fusing ATPase - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>10625</Hit_accession>
+  <Hit_len>744</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000865637</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>256</Hsp_hit-from>
+      <Hsp_hit-to>358</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>ILLIGPTGSGKTLLAETLARLLDV--PFTMADATTLTEAGYVGEDVENIIQKLLQKCDYDVQK--AQRG--IVYIDEIDKISRKSDNPSITRDVSGEGVQQALLKL</Hsp_qseq>
+      <Hsp_hseq>ILLYGPPGCGKTLLARQIGKMLNAREPKVVNGPEILNK--YVGESEAN-IRKLFADAEEEQRRLGANSGLHIIIFDEIDAICKQRGSMAGSTGVHDTVVNQLLSKI</Hsp_hseq>
+      <Hsp_midline>ILL GP G GKTLLA  + ++L+   P  +     L +  YVGE   N I+KL    + + ++  A  G  I+  DEID I ++  + + +  V    V Q L K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2490300607</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

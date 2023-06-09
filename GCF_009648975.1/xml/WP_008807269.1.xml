@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008807269.1 MULTISPECIES: LrgB family protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>229</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008807269.1 MULTISPECIES: LrgB family protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>229</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|22011</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_159220376.1|2.A.122.1.8 LrgB family protein [Klebsiella pneumoniae]</Hit_def>
+  <Hit_accession>22011</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>417.157</Hsp_bit-score>
+      <Hsp_score>1071</Hsp_score>
+      <Hsp_evalue>2.05478e-150</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>223</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>215</Hsp_identity>
+      <Hsp_positive>219</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>223</Hsp_align-len>
+      <Hsp_qseq>MSDVMLSVLCLVATLGLYYANKRLYRRFHKLPLMPLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPL</Hsp_qseq>
+      <Hsp_hseq>MSDAVLSILCLVATLVLYYANKKLYRRFHKLPLMPLVFTPILLVLILVVGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGFMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAVL</Hsp_hseq>
+      <Hsp_midline>MSD +LS+LCLVATL LYYANK+LYRRFHKLPLMPLVFTPILLVLILV+GHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARG MLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAA L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10281</Hit_id>
+  <Hit_def>gnl|TC-DB|P39590|2.A.122.1.5 Uncharacterized protein YwbG OS=Bacillus subtilis (strain 168) GN=ywbG PE=3 SV=2</Hit_def>
+  <Hit_accession>10281</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>146.362</Hsp_bit-score>
+      <Hsp_score>368</Hsp_score>
+      <Hsp_evalue>9.433e-44</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>135</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>221</Hsp_align-len>
+      <Hsp_qseq>VMLSVLCLVATLGLYYANKRLYRRFHKLPLMPLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPLV</Hsp_qseq>
+      <Hsp_hseq>MFIGIVSLFLTVLVYLGAKKVYQRFPRVYTSPLLVTPAVLVGLLLLVNVPYESYNLGGGLLTDMLQPATVAFAIPLYKYFPVLKKYAVEIILNVAVGSCIAIISTALIAKWLHLGTGLIDSLVPRSVTTPIAMNVSEMIGGMPAVTAVFVILTALLGTVIGPMVIRYFRIDNEIARGVLLGTSAHGAGTSKAFELSSVSGTISSVSMILAAIMTLCAAPFL</Hsp_hseq>
+      <Hsp_midline>+ + ++ L  T+ +Y   K++Y+RF ++   PL+ TP +LV +L+L ++ Y+SY      L  +L PAT+AFA+P+Y+   V+K++ + +   V     +A+ S+  +A+ L L   +  SL  RSVTTP A+  ++ +GG P + A+FV++T + G  +G M+     I   +A+G   G ++HGAGT++++EL    G ++S+ M+L+ ++ + AAP +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10439</Hit_id>
+  <Hit_def>gnl|TC-DB|P42102|2.A.122.1.7 Uncharacterized protein YxaC OS=Bacillus subtilis (strain 168) GN=yxaC PE=3 SV=4</Hit_def>
+  <Hit_accession>10439</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>143.665</Hsp_bit-score>
+      <Hsp_score>361</Hsp_score>
+      <Hsp_evalue>1.21251e-42</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>227</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>MSDVMLSVLCLVATLGLYYANKRLYRRFHKLPLMPLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPLVRWL</Hsp_qseq>
+      <Hsp_hseq>MQQACIAIIIILLTVAAYLAMVKLYKRFPLPFLIPVLTTTILIVAALMMFHVSYEGYMIGGKWINSLLGPAVVALAYPLYKQWHIIVKHCVPILGGVLVGLCMGMISGLIFAEAFGIDHDLLLSILPKSITTPVAIQIAAGLGGVPSMTVVFVMIAGFSGVILGPLFLKWLRIRSSLGQGIALGSASHALGTSKALEYGELAVSMSSVSMTLCAVLGSFFGPLVVWL</Hsp_hseq>
+      <Hsp_midline>M    ++++ ++ T+  Y A  +LY+RF    L+P++ T IL+V  L++ H+SY+ YM    W+  LLGPA +A A P+Y+   +I +H + +  GV+  + + + S +  A    +  ++  S+  +S+TTP A+  A  LGG P +  +FV+I G  G+ +G +    L IR  + +G   G+ASH  GT+++ E G+    ++S+ M L  V+     PLV WL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2592</Hit_id>
+  <Hit_def>gnl|TC-DB|C6EAH0|2.A.122.1.1 LrgB family protein OS=Escherichia coli (strain B / BL21-DE3) GN=yohK PE=4 SV=1</Hit_def>
+  <Hit_accession>2592</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>130.954</Hsp_bit-score>
+      <Hsp_score>328</Hsp_score>
+      <Hsp_evalue>1.06336e-37</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>LVATLGLYYANKRLYRRFHKLPLM-PLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPLV</Hsp_qseq>
+      <Hsp_hseq>LPLTLIVFFAARKLAARY-KFPLLNPLLVAMVVIIPFLMLTGISYDSYFKGSEVLNDLLQPAVVALAYPLYEQLHQIRARWKSIITICFIGSVVAMVTGTSVALLMGASPEIAASILPKSVTTPIAMAVGGSIGGIPAISAVCVIFVGILGAVFGHTLLNAMRIRTKAARGLAMGTASHALGTARCAELDYQEGAFSSLALVLCGIITSLIAPFL</Hsp_hseq>
+      <Hsp_midline>L  TL +++A ++L  R+ K PL+ PL+   ++++  L+L  ISY SY   +  L  LL PA +A A P+YE +  I+  W S+        VVA+ +   +A  +  S EI  S+  +SVTTP A+A    +GG P + A+ V+  G+ G   G  L   + IR   A+G   G ASH  GTAR  EL  QEG  +SL ++L G++  L AP +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11713</Hit_id>
+  <Hit_def>gnl|TC-DB|P94516|2.A.122.1.6 Antiholin-like protein LrgB OS=Bacillus subtilis (strain 168) GN=lrgB PE=3 SV=1</Hit_def>
+  <Hit_accession>11713</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>9.33942e-32</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>223</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>224</Hsp_align-len>
+      <Hsp_qseq>MSDVMLSVLCLVATLGLYYANKRLYRRFHKLPLM-PLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPL</Hsp_qseq>
+      <Hsp_hseq>MESTMSPYFGIVVSLAAFGIGTFLFKKTKGFFLFTPLFVAMVLGIAFLKIGGFSYADYNNGGEIIKFFLEPATIAFAIPLYKQRDKLKKYWWQIMASIIAGSICSVTIVYLLAKGIHLDSAVMKSMLPQAATTAIALPLSKGIGGISDITAFAVIFNAVIVYALGALFLKVFKVKNPISKGLALGTSGHALGVAVGIEMGEVEAAMASIAVVVVGVVTVLVIPV</Hsp_hseq>
+      <Hsp_midline>M   M     +V +L  +     L+++     L  PL    +L +  L +G  SY  Y      + + L PATIAFA+P+Y+    +K++W  + A ++   + +VT    LA+G+ L   + +S+  ++ TT  AL  +K +GG  D+ A  V+   V   A+G +      ++  ++KG   G + H  G A   E+G+ E  +AS+ +++ GVV VL  P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3367</Hit_id>
+  <Hit_def>gnl|TC-DB|D6SC34|2.A.122.1.2 Putative TIGR00659 family protein OS=Staphylococcus aureus subsp. aureus MN8 GN=HMPREF0769_10611 PE=4 SV=1</Hit_def>
+  <Hit_accession>3367</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>112.849</Hsp_bit-score>
+      <Hsp_score>281</Hsp_score>
+      <Hsp_evalue>1.01312e-30</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>231</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>MSDVMLSVLCLVATLGLYYANKRLYRRFHKLPLMPLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPLVRWLLF</Hsp_qseq>
+      <Hsp_hseq>MNDYVQALLMILLTVVLYYFAKRLQQKYPNPFLNPALIASLGIIFVLLIFGISYNGYMKGGSWINHILNATVVCLAYPLYKNREKIKDNVSIIFASVLTGVMLNFMLVFLTLKAFGYSKDVIVTLLPRSITAAVGIEVSHELGGTDTMTVLFIITTGLIGSILGSMLLRFGRFESSIAKGLTYGNASHAFGTAKALEMDIESGAFSSIGMILTAVISSVLIPVLIILFY</Hsp_hseq>
+      <Hsp_midline>M+D + ++L ++ T+ LYY  KRL +++    L P +   + ++ +L++  ISY  YM    W+  +L    +  A P+Y+N   IK +   + A V+T V++         +    S ++  +L  RS+T    +  +  LGG   +  LF++ TG+ G  +G ML         +AKG  +G ASH  GTA++ E+  + G  +S+ M+L+ V+  +  P++  L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11121</Hit_id>
+  <Hit_def>gnl|TC-DB|P60643|2.A.122.1.3 Antiholin-like protein LrgB OS=Staphylococcus aureus (strain NCTC 8325) GN=lrgB PE=1 SV=1</Hit_def>
+  <Hit_accession>11121</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.834</Hsp_bit-score>
+      <Hsp_score>255</Hsp_score>
+      <Hsp_evalue>7.15393e-27</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>226</Hsp_align-len>
+      <Hsp_qseq>VMLSVLCLVATLGLYYANKRLYRRFHKLPLMPLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPLVRWLLF</Hsp_qseq>
+      <Hsp_hseq>ILLSVIPFFLATILFEKTNRFFL------FAPLFVSMVFGVAFLYLTGIPYKTYKIGGDIIYFFLEPATICFAIPLYKKREVLVKHWHRIIGGIGIGTVVALLIILTFAKLAQFANDVILSMLPQAATTAIALPVSAGIGGIKELTSLAVILNGVIIYALGNKFLKLFRITNPIARGLALGTSGHTLGVAPAKELGPVEESMASIALVLVGVVVVAVVPVFVAIFF</Hsp_hseq>
+      <Hsp_midline>++LSV+       L+    R +         PL  + +  V  L L  I Y++Y      + + L PATI FA+P+Y+   V+ +HW  +  G+    VVA+   +  A+    ++++  S+  ++ TT  AL  +  +GG  +L +L V++ GV   A+G+       I   +A+G   G + H  G A + ELG  E  +AS+ ++L GVVVV   P+   + F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5358</Hit_id>
+  <Hit_def>gnl|TC-DB|I6TRN5|2.A.122.1.4 Putative murein hydrolase export regulator LrgB OS=Streptococcus mutans GS-5 GN=SMUGS5_07680 PE=4 SV=1</Hit_def>
+  <Hit_accession>5358</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.679</Hsp_bit-score>
+      <Hsp_score>252</Hsp_score>
+      <Hsp_evalue>1.88532e-26</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>201</Hsp_align-len>
+      <Hsp_qseq>LYRRFHKLPLMPLVFTPILLVLILVLGHISYQSYMGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPLV</Hsp_qseq>
+      <Hsp_hseq>IFRRFPHPLTTPLLLATIIVIIFLKVTHISYQDYYKGGAYLNTLIVPSTVALGIPLYQTFHLMRHHARSIILGSFLAAVVNTSFTAFVAKVFGMDFFLAISLFPKSVTTAMAVGIVDKMQGITTVTLVVVVATGILTSVLGPTLLKLLKIEDPVAIGLALGGTGHAVGTGTALKYGRISGAMAGLAIGITGLMYVFVSPIV</Hsp_hseq>
+      <Hsp_midline>++RRF      PL+   I++++ L + HISYQ Y     +L  L+ P+T+A  +P+Y+   +++ H  S+  G   A VV  + + ++A+   +   +  SL  +SVTT  A+     + G   +  + VV TG+    +G  L   L I + +A G   G   H  GT  + + G+  G +A L + ++G++ V  +P+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2071</Hit_id>
+  <Hit_def>gnl|TC-DB|B8CB30|2.A.122.2.5 Uncharacterized protein OS=Thalassiosira pseudonana GN=THAPSDRAFT_9352 PE=4 SV=1</Hit_def>
+  <Hit_accession>2071</Hit_accession>
+  <Hit_len>525</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>74.3294</Hsp_bit-score>
+      <Hsp_score>181</Hsp_score>
+      <Hsp_evalue>1.79629e-15</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>352</Hsp_hit-from>
+      <Hsp_hit-to>515</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>LLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGL-MLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTAR-SYELGQQEGVVASLVMMLSGVVVVLAAPLVR</Hsp_qseq>
+      <Hsp_hseq>LLFLLGPAVVALSCQMYGRKKLMRENIPEVGISTLVSSLGGLYGTAAAVRLLNIVNPMIRLSLLSRNITSPLAMAIASILGADVSLAVTIVVLTGLFGANFGASILDAAGIKDSVARGLGIGAAAHGLGTAAFADEKDAFPFAAIAMALTASACTVLVSIPAVK</Hsp_hseq>
+      <Hsp_midline>LL+LLGPA +A +  +Y    +++ +   +    + + +  +  +    R L +++  I+ SL  R++T+P A+A A  LG    L    VV+TG+FG   G  +     I++ +A+G G GAA+HG GTA  + E         ++ +  S   V+++ P V+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1946</Hit_id>
+  <Hit_def>gnl|TC-DB|B5YN56|2.A.122.2.6 Predicted protein (Fragment) OS=Thalassiosira pseudonana GN=THAPS_14106 PE=4 SV=1</Hit_def>
+  <Hit_accession>1946</Hit_accession>
+  <Hit_len>413</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.3218</Hsp_bit-score>
+      <Hsp_score>168</Hsp_score>
+      <Hsp_evalue>7.95576e-14</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>228</Hsp_query-to>
+      <Hsp_hit-from>242</Hsp_hit-from>
+      <Hsp_hit-to>409</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>LLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLML--SDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGV-VASLVMMLSGV--VVVLAAPLVRWLL</Hsp_qseq>
+      <Hsp_hseq>LLFLLGPAVGCLSVAMYSRKKIMAENLAVVVVAMLCSAFGGLFGTAWYVRLLNIGSSKMVRLSLLSRNVTTALAIVITQLLGGDMAIAASVVVLTGIFGATVGRGLLDSFKIDDPVSRGLGMGAAGQGLGVAAM--MPEKEAFPFAAINMVLTAVCATALVSVPSVKEML</Hsp_hseq>
+      <Hsp_midline>LL+LLGPA    +V +Y    ++  +   +   ++ +    +  + W  R L +  S  ++ SL  R+VTT  A+   + LGG   + A  VV+TG+FG  VG  L     I + +++G G GAA  G G A    + ++E    A++ M+L+ V    +++ P V+ +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18030</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9FVQ4|2.A.122.2.1 Plastidal glycolate/glycerate translocator 1, chloroplastic OS=Arabidopsis thaliana GN=PLGG1 PE=2 SV=1</Hit_def>
+  <Hit_accession>18030</Hit_accession>
+  <Hit_len>512</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>5.01354e-11</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>340</Hsp_hit-from>
+      <Hsp_hit-to>504</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>LLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPL-GGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVV--VVLAAPLVR</Hsp_qseq>
+      <Hsp_hseq>LMGFLGSVILSFAFSMFKQRKLVKRHAAEIFTSVIVSTVFSLYSTALVGRLVGLEPSLTVSILPRCITVALALSIVSLFEGTNSSLTAAVVVVTGLIGANFVQVVLDKLRLRDPIARGIATASSAHGLGTAALSAKEPEALPFCAIAYALTGIFGSLLCSVPAVR</Hsp_hseq>
+      <Hsp_midline>L+  LG   ++FA  +++   ++KRH   +   V+ + V ++ S+  + R + L   +  S+  R +T   AL+      G    L A  VV+TG+ G     ++  +L +R+ +A+G    +++HG GTA       +     ++   L+G+   ++ + P VR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15649</Hit_id>
+  <Hit_def>gnl|TC-DB|Q7XBT7|2.A.122.2.3 LrgB-like family protein, expressed OS=Oryza sativa subsp. japonica GN=OSJNBa0056G17.2 PE=2 SV=1</Hit_def>
+  <Hit_accession>15649</Hit_accession>
+  <Hit_len>458</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.58368e-10</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>223</Hsp_query-to>
+      <Hsp_hit-from>274</Hsp_hit-from>
+      <Hsp_hit-to>434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>LLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGG-QPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVVVVLAAPL</Hsp_qseq>
+      <Hsp_hseq>LMGFLGSVIISFAFSMFNQRKLVRRHAAEIFTSIAVASTFSLYSTAILGRVVELEPILTISILPRCITVALALRVVSLFEGVNTSVTAAVVVLTGLIGANFAQAVMDKLRLKDPIARGIGTASSAHGLGTAAVSAKEPEALPFCAIAYALTGVVASLFCSL</Hsp_hseq>
+      <Hsp_midline>L+  LG   I+FA  ++    +++RH   +   +  A   ++ S+  L R + L   +  S+  R +T   AL       G    + A  VV+TG+ G      +  +L +++ +A+G G  +++HG GTA       +     ++   L+GVV  L   L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2160</Hit_id>
+  <Hit_def>gnl|TC-DB|B9EX61|2.A.122.2.2 Uncharacterized protein OS=Oryza sativa subsp. japonica GN=OsJ_01975 PE=4 SV=1</Hit_def>
+  <Hit_accession>2160</Hit_accession>
+  <Hit_len>519</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>3.03421e-10</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>347</Hsp_hit-from>
+      <Hsp_hit-to>511</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>LLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGG-QPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGAGFGAASHGAGTARSYELGQQEGVVASLVMMLSGVV--VVLAAPLVR</Hsp_qseq>
+      <Hsp_hseq>LMGFLGSVIISFAFSMFKQRKLVKRHAAEIFTSIAIASTFSLYSTAILGRVIGLEPSLTISILPRCITVALALSIVSFFEGVNSSLTAAVVVLTGLIGANFVQAAMDKLGLNDPIARGIGTASSAHGLGTAALSAKEPEALPFCAIAYGLTGIFGSLICSVPAVR</Hsp_hseq>
+      <Hsp_midline>L+  LG   I+FA  +++   ++KRH   +   +  A   ++ S+  L R + L   +  S+  R +T   AL+      G    L A  VV+TG+ G         +L + + +A+G G  +++HG GTA       +     ++   L+G+   ++ + P VR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|835</Hit_id>
+  <Hit_def>gnl|TC-DB|A8IZX1|2.A.122.2.4 LrgB-like protein (Fragment) OS=Chlamydomonas reinhardtii GN=TEF24 PE=4 SV=1</Hit_def>
+  <Hit_accession>835</Hit_accession>
+  <Hit_len>455</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>3.8729e-10</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>319</Hsp_hit-from>
+      <Hsp_hit-to>442</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>MGETHWLLWLLGPATIAFAVPVYENVAVIKRHWMSLSAGVVTAVVVAVTSSVWLARGLMLSDEIQRSLAVRSVTTPFALAAAKPLGGQPDLVALFVVITGVFGMAVGDMLFLRLAIREGMAKGA</Hsp_qseq>
+      <Hsp_hseq>MGAGDFLMAFLGCVIVSFGFRIYQQRETMKRHYPEILGATFLSALFSFFSTAFAAKALALNPDLARALIPRSVTVALALPIATQLDAPLSITAAAVLLQGLLGANFGPNLMSAVGIKVGAPAGA</Hsp_hseq>
+      <Hsp_midline>MG   +L+  LG   ++F   +Y+    +KRH+  +      + + +  S+ + A+ L L+ ++ R+L  RSVT   AL  A  L     + A  V++ G+ G   G  L   + I+ G   GA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>95</Statistics_hsp-len>
+      <Statistics_eff-space>1051517698</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

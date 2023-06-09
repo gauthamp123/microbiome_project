@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_227549187.1 hypothetical protein [Klebsiella variicola]</BlastOutput_query-def>
+  <BlastOutput_query-len>500</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_227549187.1 hypothetical protein [Klebsiella variicola]</Iteration_query-def>
+  <Iteration_query-len>500</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2017</Hit_id>
+  <Hit_def>gnl|TC-DB|B7IE18|2.A.66.4.8 Putative lipid II flippase MurJ OS=Thermosipho africanus (strain TCF52B) GN=mviN PE=3 SV=1</Hit_def>
+  <Hit_accession>2017</Hit_accession>
+  <Hit_len>475</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.916</Hsp_bit-score>
+      <Hsp_score>263</Hsp_score>
+      <Hsp_evalue>1.52448e-24</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>488</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>470</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>195</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>474</Hsp_align-len>
+      <Hsp_qseq>SKGLGLFREILMSKYFGTGEINGAYRIAQSGTLVPINFMISDSLNSAFIPLYKKYLLENTDKAETFKWCIFLLFVIMSSFLFIVLYLFSGFWVDVLAPGINESTRLISINLLKIMALCCPFYLCSALMNYVSMAHNDFKPMSMRNPVQNIGMLIGVFIAYYFDKVEFLAWGFTGSYIYFFMWSLVRKDSKKIIMLPAKFEYVEIKGVIGDFWSILKPLLLLPLLLQGNITLERALSSLVSLEAVSSLDYAKFVTETVVFFLSVPVAFAGLSAWVGLDTNIVKRKLEELYTILIVLGFSVSGFLFFYAEDIIKLLFQRGAFNQHSVEVTSNYLRGMCIGLWAQVIGYIFLKALSAQLKNKKVLFSMAIALFGNAIFNLLTYSTYGALGIGLGCSVYGILLLLSSAYFMGIHKILFYPFIKLLLGMMVYYILIYSFFSNSGLTGLVIVDLAFNGLVYLLFFFVWCMIFRDIRNKFV</Hsp_qseq>
+      <Hsp_hseq>SRILGLFRDVLFAKYFGVSYELDAYFIAIMFPFFLRKVFGEGAMSSAFVPLYSEKSGEEKDK---FLSSVINGFSLIILALVILSYFFPELIINLFGAGSSHETKILAKKLLLITSPSIYFIFLWAISYSILNTNNKFFWPALTPSISNITIIIGTFLSTKYGIISPTIGFLIGSILMFF----------SIIKSIIKHKYYFTIKHFPHFLKLFFPTFMTMVVSQINTVVDMNVVSFYDKGSISYLQYASRFYLLPYGLFAVSVSTVVLSKISNDRKNFNYHLNDALKTTLFFTIPSMVG-LIFLSTPIIRFFYEHGAFTSKDTLITSKILIAYTLGLPFYGIYSTISRSYHAIKNTKTPFIAATIVSLSNIILDIIFGLKYGPIGVALATSIAGIIGVLYLLFSVKTFPIKDFLKISLNSLIMLFVIYLTDFTDNE---FWFLIQILIGILVYLIFSSIF---YRDLIRRFL</Hsp_hseq>
+      <Hsp_midline>S+ LGLFR++L +KYFG      AY IA              +++SAF+PLY +   E  DK   F   +   F ++   L I+ Y F    +++   G +  T++++  LL I +    F    A+   +   +N F   ++   + NI ++IG F++  +  +        GS + FF           II    K +Y         F  +  P  +  ++ Q N  ++  + S     ++S L YA           +V V+   LS       N      + L T L     S+ G L F +  II+  ++ GAF      +TS  L    +GL    I     ++  A    K    +  I    N I +++    YG +G+ L  S+ GI+ +L   + +    I  +  I L   +M++ I +  F  N       ++ +    LVYL+F  ++   +RD+  +F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1615</Hit_id>
+  <Hit_def>gnl|TC-DB|B1JXG0|2.A.66.4.7 Protein MurJ homolog OS=Burkholderia cenocepacia (strain MC0-3) GN=Bcenmc03_2574 PE=3 SV=1</Hit_def>
+  <Hit_accession>1615</Hit_accession>
+  <Hit_len>516</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>1.55087e-09</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>415</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>431</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>179</Hsp_positive>
+      <Hsp_gaps>38</Hsp_gaps>
+      <Hsp_align-len>439</Hsp_align-len>
+      <Hsp_qseq>KAIGQILSGNVLSKGLGLFREILMSKYFGTGEINGAYRIAQSGTLVPINFMISDSLNSAFIPLYKKYLLENTDKAETFKWCIFLLFVIMSSFLFI--VLYLFSGFWVD-VLAPGINESTRL--ISINLLKIMALCCPFYLCSALMNYVSMAHNDFKPMSMRNPVQNIGMLIG-VFIAYYFD-KVEFLAWGFTGSYIYFFMWSLVRKDSKKIIMLPA-------KFEYVEIKGVIGDFWSILKPLLLLPLLLQGNITLERALSSLVSLEAVSSLDYAKFVTETVVFFLSVPVAFAGL----SAWVGLDTNIVKRKLEELYTILIVLGFSVSGFLFFYAEDIIKLLFQRGAFNQHSVEVTSNYLRGMCIGLWAQVIGYIFLKALSAQLKNKK--------VLFSMAIALFGNAIFNLLTYSTYGALGIGLGCSVYGILLLL</Hsp_qseq>
+      <Hsp_hseq>RALLTVSGFTLLSRVTGLARETLIARAFGASQYTDAFYVAFRIPNLLRRLSAEGAFSQAFVPILAEF--KNQQGHDATKALVDAMSTVLAWALAVLSVVGIAGASWVVFAVASGLHSDGQAFPLAVTMTRIMFPYIVFISLTTLASGVLNTYKSFSLPAFAPVLLNVAFIAAAVFVAPHLKVPVYALAWAVIVGGVLQFLVQL--PGLKKIDMVPLIGLNPLRALRHPGVKRVLAK----MVPATFAVSVAQLSLIINTNIASRLGQGAVSWINYADRLMEFPTALLGVALGTILLPSLSKAHVDADSHEYSALLDWGLRVTFLLAAPSALALFFFATPLTATLFNYGKFDAHTVTMVARALATYGIGL----VGIILIKILAPGFYAKQDIKTPVKIAIGVLIVTQLSNYVFVPLIGHAGLTLSIGVGACLNSLLLFL</Hsp_hseq>
+      <Hsp_midline>+A+  +    +LS+  GL RE L+++ FG  +   A+ +A     +        + + AF+P+  ++  +N    +  K  +  +  +++  L +  V+ +    WV   +A G++   +   +++ + +IM     F   + L + V   +  F   +    + N+  +   VF+A +    V  LAW      +  F+  L     KKI M+P           +  +K V+      + P      + Q ++ +   ++S +   AVS ++YA  + E     L V +    L     A V  D++     L+    +  +L    +  LFF+A  +   LF  G F+ H+V + +  L    IGL    +G I +K L+     K+         +  + +    N +F  L       L IG+G  +  +LL L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14708</Hit_id>
+  <Hit_def>gnl|TC-DB|Q65ZW3|2.A.66.4.2 Virulence factor mviN protein - Borrelia garinii.</Hit_def>
+  <Hit_accession>14708</Hit_accession>
+  <Hit_len>506</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>2.33561e-07</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>475</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>487</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>206</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>501</Hsp_align-len>
+      <Hsp_qseq>ILSGNVLSKGLGLFREILMSKYFGTGEINGAYRIAQSGTLVPINF---MISDSLNSAFIPLYKKYLLENTDKAETFKWCIFLLFVIMSSFLFIVLYLFSGFWVDVLAPGINES----TRLISINLLKIMALCCPFYLCSALMNYVSMAHNDFKPMSMRNPVQNIGMLIGVFIAY-----YFDKVEFLAWGFTGSYIYFFMWSLVRKDSKKIIMLPAK----FEYVEIKGVIGDFWSILKPLLLLPLLLQGNITLERALSSLVSLEAVSSLDYA--KFVTETVVFFLSVP-VAFAGLSAWVGLDTNI-VKRKLEELYTILIVLGFSVSGFLFFYAEDIIKLLFQRGAFNQHSVEVTSNYLRGMCIGLWAQVIGYIFLKALSAQLKNKKVLFSMAIALFG--NAIFNLLTYSTYGALGIGLG-------CSVYGILLLLSSAYFMGIHKILFYPFIKLLLGMMVYYILIYSFFS----NSGLTGLVIVDLAFNGLVYLLFFFV</Hsp_qseq>
+      <Hsp_hseq>VMISTFFSRIMGFIKVKIFSYYFGANLDADIFNYVFN---IPNNLRKILSEGAMTSAFLPEFTCEKNKSHEKAVSFFRTVITFNVIAIGLIVLVMIIFAKPIMYFLSYYRGENLIFASSVFSYLVLYILLISLSSIFISVLNSYKIFFIPSFSPIMF-----SFGIILSIFLFYGRFGIYSAVIGVIFGGFLQFLIPFVNCLMIGFVFKPTFYFREKVFLNFLSRWVRMIFGFSISIITQQISF------------ALASTLDIGSVSILSNAIVYYQLPIGIFYISIATVIFPKMAEYAVLGNNIKLNTLLVDGIKILLLIFIPVSFLMFIWSDYILNLLLMGGKFSIYDTQKTAGVLKCFLLGLLFYSM-FSFFQKYYFSIRDAKTPFYLSV-LFSILDILLSVFGIKHYGLNALALAQSISFMICVIVFYFIILKSGVKIDLIEILFV-LLKSIITLFPLY-LIYFFFEKFQWNVGFSFKNLYFLITAGIVSILTLFI</Hsp_hseq>
+      <Hsp_midline>++     S+ +G  +  + S YFG       +    +   +P N    +   ++ SAF+P +     ++ +KA +F   +    VI    + +V+ +F+   +  L+    E+    + + S  +L I+ +       S L +Y       F P+       + G+++ +F+ Y     Y   +  +  GF    I F    ++    K       K    F    ++ + G   SI+   +              AL+S + + +VS L  A   +     +F++S+  V F  ++ +  L  NI +   L +   IL+++   VS  +F +++ I+ LL   G F+ +  + T+  L+   +GL    + + F +     +++ K  F +++ LF   + + ++     YG   + L        C +    ++L S   + + +ILF   +K ++ +   Y LIY FF     N G +   +  L   G+V +L  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|753</Hit_id>
+  <Hit_def>gnl|TC-DB|A7ZNK3|2.A.66.4.6 Putative membrane protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) GN=EcE24377A_2322 PE=4 SV=1</Hit_def>
+  <Hit_accession>753</Hit_accession>
+  <Hit_len>413</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>4.65879e-07</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>412</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>399</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>153</Hsp_positive>
+      <Hsp_gaps>36</Hsp_gaps>
+      <Hsp_align-len>383</Hsp_align-len>
+      <Hsp_qseq>SGTLVP--INFMISDSLNSAFIPLY--KKYLLENTDKAETFKWCIFLLFVIMSSFLFIVLYLFSGFWVDVLAPGINESTRLISINLLKIMALCCPFYLCSALMNYVSMAHNDFKPMSMRNPVQNIGMLIGVFIAYYFDKVEFLAWGFTGSYIYFFMWSLVRKDSKKIIMLPAKFEYVEIKGVIGDFWSILKPLLLLPLLLQGNITLERALSSLVSLEAVSSLDYAKFVTE-----TVVFFLSVPVAFAGLSAWVGL-DTNIVKRKLEELYTILIVLGFSVSGFLFFYAEDIIKLLFQRGAFNQHSVEVTSNYLRGMCIGLWAQVIGYIFLKALSAQLKNK---KVLFSMAIALFGNAI-FNLLTYSTYGALGIGLGCSVYGIL</Hsp_qseq>
+      <Hsp_hseq>AGMTIPSVILSVLVSSLTNVLVPLFVSSKSVLKDL-------WAQIYLFSIGSAFIVIPLISFSPLWLGCVFSGFDVKTLSLTQHIITVQFIVIPFSIASAIFTAFFNANSKF--ISAEAIPAICSLIIFPFIFPAITSYGVLA--VTYIYAIKILMTFVMQIMKIGGPIKLSFNDIDIKGA----FSRIKYLILGSVYYKSGPVIDR---HILSYSVAGSLSLFVLVQQLLSMANLIFTKTIIIPDITMMNKVAVQDNKIFKHWLMTRVFILFAFGLVLYFFAFILGEQIINLFLKIFNFQKFDVHI----IWMLTMALFGGFIGDSIATLVSSSFYSKGDTKTPSFLSIVTFTIFIPLKFISYHYAGVYGLAFASSIYSLI</Hsp_hseq>
+      <Hsp_midline>+G  +P  I  ++  SL +  +PL+   K +L++        W    LF I S+F+ I L  FS  W+  +  G +  T  ++ +++ +  +  PF + SA+      A++ F  +S         ++I  FI         LA   T  Y    + + V +  K    +   F  ++IKG     +S +K L+L  +  +    ++R    ++S     SL     V +      ++F  ++ +    +   V + D  I K  L     IL   G  +  F F   E II L  +   F +  V +    +  + + L+   IG      +S+   +K   K    ++I  F   I    ++Y   G  G+    S+Y ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2978</Hit_id>
+  <Hit_def>gnl|TC-DB|D0WY71|2.A.66.4.5 MviN protein OS=Vibrio alginolyticus 40B GN=mviN PE=4 SV=1</Hit_def>
+  <Hit_accession>2978</Hit_accession>
+  <Hit_len>520</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>3.54791e-05</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>484</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>516</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>75</Hsp_gaps>
+      <Hsp_align-len>531</Hsp_align-len>
+      <Hsp_qseq>GQILSG-NVLSKGLGLFREILMSKYFGTGEINGAYRIAQSGTLVPINFMISDSLNSAFIP-LYKKYLLENTDKA-ETFKWCIFLLFVIMSSFLF-------IVLYLFS-GFWVDVLAPG-INESTRLISINLLKIMALCCPFY----LCSALMNYVS-MAHNDFKPM-------------SMRNPVQNIGMLIGVFIAYYFDKVEFLAWGFTGSYIYFFMWSLVRKDSKKIIMLPAKFEYVEIKGVIGDFWSILKPLLLLPLLLQGNITLERALSSLVSLEAVSSLDYAKFVTETVVFFLSVPVAFAGLSAW----VGLDTNIVKRKLEELYTILIVLGFSVSGFLFFYAEDIIKLLFQRGAFNQHSVEVTSNYLRGMCIGLWAQVIGYIFLKALSAQLKNKKVLFSMAIALFGNAIFNLLTYSTYGALGIGLGCSVYGIL--------LLLSSAYFMGIHKILFYPFIKLLLGMMVYYILI----------YSFFSNSGLTGLVIVDLAFNGLVYLLFFFVWCMIFRDIR</Hsp_qseq>
+      <Hsp_hseq>GMIVSAMTFISRVLGLVRDVVVANLMGAGASADVFFFANKIPNFLRRLFAEGAFSQAFVPVLTESHAQGDMDKTRELIARAAGTLGVIVSIVTILGVLGSGVVTALFGFGWFLDWMHGGPAAEKFELASV-MLKITFPYLWFITFVALSGAILNTLGKFAVSSFTPVFLNVMIILAAWFISPQMPQPEIGLAIGVFLG---GLVQFLF------QIPFLI--------KAGVMVKPKWGWRD-PGVV-KIRTLMIPALFGVSVSQINLLFDTFIASFLQTGSISWLYYSDRLLEFPLGLFGIAIATVILPALSRKHVDAQNEGFAQTMDWGVRMVILLGLPAMLGLMVLAKPMLMVLFMRGEFSPQDVHQASLSLFAYASGLLNFMLIKVLAPGYYSRQDTKTPVKYGIIAMVTNMVFNAIFAYFYGYVGLAIATALSAFVNMALLYRGLHIAEVYQITKRTVFFIIRLAIAGAAMVAAILWQLEDMSVWLGWSFAHRSAVLGMLI---GLGAVVYLVVLFLTGARLKDLK</Hsp_hseq>
+      <Hsp_midline>G I+S    +S+ LGL R+++++   G G     +  A              + + AF+P L + +   + DK  E        L VI+S           +V  LF  G+++D +  G   E   L S+ +LKI      F     L  A++N +   A + F P+             S + P   IG+ IGVF+      V+FL        I F +        K  +M+  K+ + +  GV+    +++ P L    + Q N+  +  ++S +   ++S L Y+  + E  +    + +A   L A     V        + ++    ++I+LG      L   A+ ++ +LF RG F+   V   S  L     GL   ++  +      ++   K  +    IA+  N +FN +    YG +G+ +  ++   +        L ++  Y +    + F   + +    MV  IL           +SF   S + G++I       +VYL+  F+     +D++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21359</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_069472603.1|2.A.66.2.27 flippase [Candidatus Marithrix sp. Canyon 246]</Hit_def>
+  <Hit_accession>21359</Hit_accession>
+  <Hit_len>416</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000167649</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>250</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>249</Hsp_align-len>
+      <Hsp_qseq>QILSGNVLSKGLGLFREILMSKYFGTGEINGAYRIAQSGTLVPINFMISDSLNSAFIPLYKKYLLENTDKAETFKWCIFLLFVIMSSFLFIVLYLFSGFWVDVLAPGINESTRLISINLLKIMALCCPFYLCSALMNYVSMAHNDFKPMSMRNPVQN-IGMLIGVFIAYYFDKVEFLAWGFTGSYIY---FFMWSLVRKDSKKIIMLPAKFEYVEIKGVIGDFWSILKPLLLLPLLLQGNITLERALSS</Hsp_qseq>
+      <Hsp_hseq>KVLSGNIVAQGIGFLTIILISRDLGP-EQYGIFSLLLS--IFTIAVQVSDFGVST---SYVKYVSENLVKAKDIFVTVVLSKVILSFLITTVLFFTSDF-ISLYFFEIS-----IYSQLIQLIAFSIFFHAFFGVIVSHFQAIQNFKVFAWLNIVHHTLKLLSVVLIAVLFENEKHLEY-FILSYSYAVALLLFLILLTNIKCLTQIKIFNFYYFIEIYKLGFWVFLSSLATIVIMRLDIIMLQKMSTS</Hsp_hseq>
+      <Hsp_midline>++LSGN++++G+G    IL+S+  G  E  G + +  S  +  I   +SD   S     Y KY+ EN  KA+     + L  VI+S  +  VL+  S F + +    I+     I   L++++A    F+    ++     A  +FK  +  N V + + +L  V IA  F+  + L + F  SY Y     ++ ++  + K +  +     Y  I+     FW  L  L  + ++    I L++  +S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3059440328</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

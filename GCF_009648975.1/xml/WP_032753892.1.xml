@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_032753892.1 MULTISPECIES: pyridoxal phosphatase [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>272</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_032753892.1 MULTISPECIES: pyridoxal phosphatase [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>272</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2274</Hit_id>
+  <Hit_def>gnl|TC-DB|C0E9K7|2.A.85.4.3 HAD hydrolase, family IIB OS=Clostridium methylpentosum DSM 5476 GN=CLOSTMETH_00506 PE=4 SV=1</Hit_def>
+  <Hit_accession>2274</Hit_accession>
+  <Hit_len>450</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>2.33149e-09</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>263</Hsp_query-to>
+      <Hsp_hit-from>174</Hsp_hit-from>
+      <Hsp_hit-to>430</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>51</Hsp_gaps>
+      <Hsp_align-len>281</Hsp_align-len>
+      <Hsp_qseq>LDGTLLTSKKTILPASLEALARAREAGYQVIVVTGRHHVAIHPFYQALALDTPAICCNGTYLYDYHAKEVLTADPMPVAQAVSLTAMLAEQQIHGLAY--VDDA-------MLYEQPTGHVIRT-----RNW-AQALPEDQRPVFRQVDSLAQAVREVNAVWKFALTDEDIPRLQRFAREVGETLGLECEWSWHDQ------------VDIARAGNSKGKRLAQWVASQGLSMQDVVAFGDNYNDLSMLEAAGTGVAMGNAVDEVKARARVVIGDNESTSI</Hsp_qseq>
+      <Hsp_hseq>LGGTLTGASGKLSNYTEVKLNRLLEQGAQIVIATAQSSATVAPLLADVNLRLPIITMNGATLYDPQQKTYLNCKPMSTQVAREILNVFAQKNLNCFVHTIVNDVLHVYYSDLLNAAEEGYYHRTKLLPLRNYICSALPDERDVVYLMA----------------------IDRLEVIQQLYGALCALSCANQIHPSYYPDDAFEGYYILEISSAEASKAEAVRD--LKQHLLIDRVVSFGDDATDLGLAQLADLSFAVQGAIGPLQKKADFLIGGPESDTV</Hsp_hseq>
+      <Hsp_midline>L GTL  +   +   +   L R  E G Q+++ T +    + P    + L  P I  NG  LYD   K  L   PM    A  +  + A++ ++   +  V+D        +L     G+  RT     RN+   ALP+++  V+                         I RL+   +  G    L C    H              ++I+ A  SK + +      Q L +  VV+FGD+  DL + + A    A+  A+  ++ +A  +IG  ES ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7455</Hit_id>
+  <Hit_def>gnl|TC-DB|O66938|3.A.3.2.24 Cation transporting ATPase (E1-E2 family) OS=Aquifex aeolicus GN=ctrA1 PE=3 SV=1</Hit_def>
+  <Hit_accession>7455</Hit_accession>
+  <Hit_len>835</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.00070198</Hsp_evalue>
+      <Hsp_query-from>193</Hsp_query-from>
+      <Hsp_query-to>267</Hsp_query-to>
+      <Hsp_hit-from>549</Hsp_hit-from>
+      <Hsp_hit-to>620</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>75</Hsp_align-len>
+      <Hsp_qseq>IARAGNSKGKRLAQWVASQGLSMQDVVAFGDNYNDLSMLEAAGTGVAMGNAVDEVKARARVVIGDNESTSIAEFI</Hsp_qseq>
+      <Hsp_hseq>IARALPEDKYRVVKVLQEKG---EIVAVTGDGVNDVPALKVADIGVAMGSGTEAAKSVAKMVITDNNLKVIVEAV</Hsp_hseq>
+      <Hsp_midline>IARA      R+ + +  +G   + V   GD  ND+  L+ A  GVAMG+  +  K+ A++VI DN    I E +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1377072224</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

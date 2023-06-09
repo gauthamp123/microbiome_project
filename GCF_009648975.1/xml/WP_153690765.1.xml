@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_153690765.1 ATP-binding protein [Klebsiella variicola]</BlastOutput_query-def>
+  <BlastOutput_query-len>564</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_153690765.1 ATP-binding protein [Klebsiella variicola]</Iteration_query-def>
+  <Iteration_query-len>564</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16720</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8R8L8|3.A.1.140.2 Predicted ATPase involved in cell division OS=Caldanaerobacter subterraneus subsp. tengcongensis (strain DSM 15242 / JCM 11007 / NBRC 100824 / MB4) GN=FtsE PE=4 SV=1</Hit_def>
+  <Hit_accession>16720</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>7.44309e-06</Hsp_evalue>
+      <Hsp_query-from>233</Hsp_query-from>
+      <Hsp_query-to>321</Hsp_query-to>
+      <Hsp_hit-from>134</Hsp_hit-from>
+      <Hsp_hit-to>215</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>YPIELAGTGLLQTLQIFAYIVYFKPKLLLLDEPDSHLHPDNQYILTDSLSLISESDKSETQVILSTHSKHIIDSLYGEANFIWMKDGNV</Hsp_qseq>
+      <Hsp_hseq>YPQQLSG-GEQQRVALARAIVN-EPSILIADEPTGNLDPDTSW---EIVKLMAEINKRGTTVVMATHAKDIVDAM--KKRVIALEKGNI</Hsp_hseq>
+      <Hsp_midline>YP +L+G G  Q + +   IV  +P +L+ DEP  +L PD  +   + + L++E +K  T V+++TH+K I+D++  +   I ++ GN+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5748</Hit_id>
+  <Hit_def>gnl|TC-DB|KAF2077445|3.A.1.207.10 hypothetical protein CYY_001218 [Polysphondylium violaceum]</Hit_def>
+  <Hit_accession>5748</Hit_accession>
+  <Hit_len>445</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>3.89017e-05</Hsp_evalue>
+      <Hsp_query-from>175</Hsp_query-from>
+      <Hsp_query-to>372</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>309</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>205</Hsp_align-len>
+      <Hsp_qseq>ANLYLRNVIYYLNKDNRLVNLNSMLQVVFPDIEI-EVDFKEDKDTYLTVNFKENVSGK--NYPIELAGTGLLQTLQIFAYIVYFKPKLLLLDEPDSHLHPDNQYILTDSLSLISESDKSET-QVILSTHSKHIIDSLYGEANFIWMKDGNVQN-QGMNL-DKISMFLDL-GALNDLDRVTEGVVENIFLTEDRDKKYFKALLQHN</Hsp_qseq>
+      <Hsp_hseq>AFLRLKNIGFVFQTFNLLSSLTALENVEMPMILLGELSASERRERAISLLTKVGMKDRLDHFPSQLSG-GEQQRVTI-ARAIANNPDILLLDEPTGDLDTVNTSII---MKLLTDLNKNENITLVMVTHDVGL--KMYSD-RIIWMRDGKIQRIETVPLKSKEDQFQKLYKEVDSIQRNQKNGVHSVFVSSNSDENENQVMNNNN</Hsp_hseq>
+      <Hsp_midline>A L L+N+ +     N L +L ++  V  P I + E+   E ++  +++  K  +  +  ++P +L+G G  Q + I A  +   P +LLLDEP   L   N  I+   + L+++ +K+E   +++ TH   +   +Y +   IWM+DG +Q  + + L  K   F  L   ++ + R  +  V ++F++ + D+   + +  +N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2351</Hit_id>
+  <Hit_def>gnl|TC-DB|C1C6A0|3.A.1.140.6 Cell division ATP-binding protein FtsE OS=Streptococcus pneumoniae (strain 70585) GN=ftsE PE=4 SV=1</Hit_def>
+  <Hit_accession>2351</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>7.87321e-05</Hsp_evalue>
+      <Hsp_query-from>231</Hsp_query-from>
+      <Hsp_query-to>307</Hsp_query-to>
+      <Hsp_hit-from>134</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>KNYPIELAGTGLLQTLQIFAYIVYFKPKLLLLDEPDSHLHPDNQYILTDSLSLISESDKSETQVILSTHSKHIIDSL</Hsp_qseq>
+      <Hsp_hseq>RSFPNELSG-GEQQRIAIARAIVN-NPKVLIADEPTGNLDPDNSW---EIMNLLERINLQGTTILMATHNSQIVNTL</Hsp_hseq>
+      <Hsp_midline>+++P EL+G G  Q + I   IV   PK+L+ DEP  +L PDN +   + ++L+   +   T ++++TH+  I+++L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3804</Hit_id>
+  <Hit_def>gnl|TC-DB|E6TQK7|3.A.1.115.4 ABC transporter related protein OS=Evansella cellulosilytica (strain ATCC 21833 / DSM 2522 / FERM P-1141 / JCM 9156 / N-4) OX=649639 GN=Bcell_2258 PE=4 SV=1</Hit_def>
+  <Hit_accession>3804</Hit_accession>
+  <Hit_len>300</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000833762</Hsp_evalue>
+      <Hsp_query-from>231</Hsp_query-from>
+      <Hsp_query-to>331</Hsp_query-to>
+      <Hsp_hit-from>124</Hsp_hit-from>
+      <Hsp_hit-to>217</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>KNYPIELAGTGLLQTLQIFAYIVYFKPKLLLLDEPDSHLHPDNQYILTDSLSLISESDKSETQVILSTHSKHIIDSLYGEANFIWMKDGNVQNQGMNLDKI</Hsp_qseq>
+      <Hsp_hseq>ENKKIEELSKGNQQKIQFMAAVLH-KPELLILDEPFSGLDPVNSDMLK---AAVLDLQNAGTTIVFSSHQMRNVEELC--EDLIMLKKGKAVLQG-NLREI</Hsp_hseq>
+      <Hsp_midline>+N  IE    G  Q +Q  A +++ KP+LL+LDEP S L P N  +L    + + +   + T ++ S+H    ++ L    + I +K G    QG NL +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13230</Hit_id>
+  <Hit_def>gnl|TC-DB|Q2FVF0|3.A.1.5.43 Peptide ABC transporter, ATP-binding protein, putative OS=Staphylococcus aureus (strain NCTC 8325) GN=SAOUHSC_02764 PE=4 SV=1</Hit_def>
+  <Hit_accession>13230</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000998017</Hsp_evalue>
+      <Hsp_query-from>207</Hsp_query-from>
+      <Hsp_query-to>325</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>EIEVDFKEDKDTYLTVNFKENVSGKNYPIELAGTGLLQTLQIFAYIVYFKPKLLLLDEPDSHLHPDNQYILTDSLSLISESDKSETQVILSTHSKHIIDSLYGEANFIWMKDGNVQNQG</Hsp_qseq>
+      <Hsp_hseq>EIEKTLIEYMD-YLSLKDPKRIL-KSYPYMLSG-GMLQRLMI-ALALALKPKLIIADEPTTALDTITQYDVLE--AFIDIKKHFDCAMIFISHDLTVINKIADRV--VVMKNGQLIEQG</Hsp_hseq>
+      <Hsp_midline>EIE    E  D YL++   + +  K+YP  L+G G+LQ L I A  +  KPKL++ DEP + L    QY + +  + I      +  +I  +H   +I+ +      + MK+G +  QG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>103</Statistics_hsp-len>
+      <Statistics_eff-space>3533179143</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

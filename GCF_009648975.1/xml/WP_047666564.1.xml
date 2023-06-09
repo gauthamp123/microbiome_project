@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_047666564.1 MULTISPECIES: EAL domain-containing protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>551</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_047666564.1 MULTISPECIES: EAL domain-containing protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>551</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5486</Hit_id>
+  <Hit_def>gnl|TC-DB|J7ZT93|9.B.34.1.5 Diguanylate cyclase (GGDEF) domain-containing protein OS=Bacillus cereus HuA2-4 GN=IG7_01488 PE=4 SV=1</Hit_def>
+  <Hit_accession>5486</Hit_accession>
+  <Hit_len>906</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>273.863</Hsp_bit-score>
+      <Hsp_score>699</Hsp_score>
+      <Hsp_evalue>6.33304e-82</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>542</Hsp_query-to>
+      <Hsp_hit-from>371</Hsp_hit-from>
+      <Hsp_hit-to>894</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>170</Hsp_identity>
+      <Hsp_positive>277</Hsp_positive>
+      <Hsp_gaps>24</Hsp_gaps>
+      <Hsp_align-len>534</Hsp_align-len>
+      <Hsp_qseq>IYMLSTDGMVISWNEGARRAKGYLSDEIIG--CYFGLFYSEAEQLSGVPAKNLEIALRSGQFEGEG---WRYRKDGSR---FWAHVMIDTIRDEQNTLLGFAKITRDISEQKAINDRIAWMARYDALTGLPNRVEFFERVEKLI--TGNDARRFAIFTIDLDKFKEINDLQGHLIGDQLLQRVAGAVLKTLQKEEMVARFGGDEFVAVKPFADEGEVDAFAARLWHCFSGKQTFAATEVVLSASIGISVYPEDGTDINTVLSNSDLAMYRAKSSLDHKICWYEREMDDKTRQRNMMAADIRRGIHAGEFSLHYQAIRNIKDRRITGYEALLRWQHPQLGPIPPDVFIPIAEESGAIVPLGYWVLEQVCNESLE----KGLNRKVSVNISPVQLRHRSFIEKVREILMRTAYPVSLLEFEVTETAFIINKQLAFSVLHHLQKMGISIALDDFGTGYSSLSMLRDFHFDVIKLDRSFMLDVESNPQVRSFVRAIISLGNSINTPLIAEGVETAGQLQILEEEGCDEMQGFLFGEPV</Hsp_qseq>
+      <Hsp_hseq>ILTINSNDTVLNINQAGSMLLGKNSDELIGKEC-FSIFLDEDRS-------ELEAALQEGKRCSSASLQLRVKNNNEKDIHFW-YVTIVPIMIEGQTFGSYVMV-KDITRMKQQQDEINYLAFHDTVTGIGNRIFFQQELEKSIGRAQKTQDEFGLLYIDLNRFKTINDTLGHSIGDSVLKEVAKRFRTCLSPAIPLARIGGDEFAIIVHNHTEQQLLDLCETLFRITEEPFVVNQHSFYLSLSIGIAVYPFGGINTTTLLQHADIAMYSAKEKGNNAVCMYDETLSKKITRRLRLEQDLPKALENNELFLLYQPQVDSKTGMVIGAEALIRWQHPELGLISPFEFIPIAEETSQIISIGKWTLQEACRQLKEWHSAGYVNLKMGINLSAIEFEQKDFVQAIISTIEEVGVPASSIDLELTERIAMVDEKETLAKLKALKSYGVHLSIDDFGTGYSSLAYLPLYPIDTLKIPREFVNRIGNSTDGNEIIHTIISLAHTLNMKVIAEGVETKEQLTVLQRNACYLIQGYYYSKPV</Hsp_hseq>
+      <Hsp_midline>I  ++++  V++ N+      G  SDE+IG  C F +F  E           LE AL+ G+         R + +  +   FW +V I  I  E  T   +  + +DI+  K   D I ++A +D +TG+ NR+ F + +EK I         F +  IDL++FK IND  GH IGD +L+ VA      L     +AR GGDEF  +     E ++      L+               LS SIGI+VYP  G +  T+L ++D+AMY AK   ++ +C Y+  +  K  +R  +  D+ + +   E  L YQ   + K   + G EAL+RWQHP+LG I P  FIPIAEE+  I+ +G W L++ C +  E      +N K+ +N+S ++   + F++ +   +     P S ++ E+TE   +++++   + L  L+  G+ +++DDFGTGYSSL+ L  +  D +K+ R F+  + ++      +  IISL +++N  +IAEGVET  QL +L+   C  +QG+ + +PV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21838</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_128121392.1|9.B.34.1.8 EAL domain-containing protein [Pseudomonas zhaodongensis]</Hit_def>
+  <Hit_accession>21838</Hit_accession>
+  <Hit_len>878</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>268.47</Hsp_bit-score>
+      <Hsp_score>685</Hsp_score>
+      <Hsp_evalue>4.10969e-80</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>545</Hsp_query-to>
+      <Hsp_hit-from>334</Hsp_hit-from>
+      <Hsp_hit-to>867</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>176</Hsp_identity>
+      <Hsp_positive>283</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>541</Hsp_align-len>
+      <Hsp_qseq>MLSTDGM--VISWNEGARRAKGYLSDEIIGCYFGLFYSEAEQLSGVPAKNLEIAL-----RSGQFEGEGWRYRKDGSRFWAHVMIDTIRDEQNTLLGFAKITRDISEQKAINDRIAWMARYDALTGLPNRVEFFERVEKLI--TGNDARRFAIFTIDLDKFKEINDLQGHLIGDQLLQRVAGAVLKTLQKEEMVARFGGDEFVAVKPFADEG------EVDAFAARLWHCFSGKQTFAATEVVLSASIGISVYPEDGTDINTVLSNSDLAMYRAKSSLDHKICWYEREMDDKTRQRNMMAADIRRGIHAGEFSLHYQAIRNIKDRRITGYEALLRWQHPQLGPIPPDVFIPIAEESGAIVPLGYWVLEQVCNE--SLEKGLNRK---VSVNISPVQLRHRSFIEKVREILMRTAYPVSLLEFEVTETAFIINKQLAFSVLHHLQKMGISIALDDFGTGYSSLSMLRDFHFDVIKLDRSFMLDVESNPQVRSFVRAIISLGNSINTPLIAEGVETAGQLQILEEEGCDEMQGFLFGEPVDIK</Hsp_qseq>
+      <Hsp_hseq>MIITDAKNRILRVNQAFTEISGYSADEAIGQDTRLL------ASGRHSPDFYLAMWRSIQQTGAWQGEIWNRRKTGEVYPEWLSISTVLDAQGAVSNYVAAFTDITERKQAEERIHNLAFYDPLSGLPNRRLLLDRLKQALAATVRSQQYGALMFIDLDNFKNINDLHGHQAGDQLLCIVAERLSGEVRGVNTVARLGGDEFVVMLEDLDANAEYAAAQAEQIGERILSALGQPYRLGSLLVHSSASIGVVLLNSNDGDAEELMKRADMSMYEAKQAGRNALRFFDPRMQQAVQERLRLEDEIRRGLTAGEFVIHFQP-QIERHRGLVGAEVLVRWQHPQRGLLTPFHFIGPAERAGLIEALDFVVLTQACEQLATWAKQPSRAALTLAVNLSASLLYQADFVDRVLALLKRTGANPRLLKLEITESLLLDDMEEAVVRMRTLKQHGIRFSIDDFGTGYSSMAYLQRLPLDQLKIDQSFVRQLVEDASSQTIIRATCALASGLKLEVIAEGVETEEQRTLLIANGCDMFQGYLFSRPVPLE</Hsp_hseq>
+      <Hsp_midline>M+ TD    ++  N+      GY +DE IG    L        SG  + +  +A+     ++G ++GE W  RK G  +   + I T+ D Q  +  +     DI+E+K   +RI  +A YD L+GLPNR    +R+++ +  T    +  A+  IDLD FK INDL GH  GDQLL  VA  +   ++    VAR GGDEFV +    D        + +    R+           +  V  SASIG+ +   +  D   ++  +D++MY AK +  + + +++  M    ++R  +  +IRRG+ AGEF +H+Q  +  + R + G E L+RWQHPQ G + P  FI  AE +G I  L + VL Q C +  +  K  +R    ++VN+S   L    F+++V  +L RT     LL+ E+TE+  + + + A   +  L++ GI  ++DDFGTGYSS++ L+    D +K+D+SF+  +  +   ++ +RA  +L + +   +IAEGVET  Q  +L   GCD  QG+LF  PV ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3997</Hit_id>
+  <Hit_def>gnl|TC-DB|EHB50236.1|9.B.34.1.9 diguanylate cyclase/phosphodiesterase [Mycolicibacterium rhodesiae JS60]</Hit_def>
+  <Hit_accession>3997</Hit_accession>
+  <Hit_len>806</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>208.379</Hsp_bit-score>
+      <Hsp_score>529</Hsp_score>
+      <Hsp_evalue>1.2913e-58</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>542</Hsp_query-to>
+      <Hsp_hit-from>318</Hsp_hit-from>
+      <Hsp_hit-to>762</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>222</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>449</Hsp_align-len>
+      <Hsp_qseq>ISEQKAINDRIAWMARYDALTGLPNRVEFFERVEKLIT--GNDARRFAIFTIDLDKFKEINDLQGHLIGDQLLQRVAGAVLKTLQKEEMVARFGGDEFVAVKPFADEGEVD---AFAARLWHCFSGKQTFAATEVVLSASIGISVYPEDGTDINT--VLSNSDLAMYRAKSSLDHKICWYEREM------DDKT------------RQRNMMAADIRRGIHAGEFSLHYQAIRNIKDRRITGYEALLRWQHPQLGPIPPDVFIPIAEESGAIVPLGYWVLEQVCNESLE---KGLNRKVSVNISPVQLRHRSFIEKVREILMRTAYPVSLLEFEVTETAFIINKQLAFSVLHHLQKMGISIALDDFGTGYSSLSMLRDFHFDVIKLDRSFMLDVESNPQVRSFVRAIISLGNSINTPLIAEGVETAGQLQILEEEGCDEMQGFLFGEPV</Hsp_qseq>
+      <Hsp_hseq>MAENRVLLATVAEQALRDPLTGVGNRIVFRDRLNHAMEMRQRDGISVGVLAMDLDDFKVVNDTLGHPVGDELLSMVAERIVACVRAGDTVARLGGDEFSVLI----EGRVDHSQLVAHRVVEAFDKPFVVDGQELLIRPSVGLAVADADEPDLTAEDLLKRADIAMYSAKRSRSGGVHPFNSEMLLAESPDSELFVSGPFPVARSGASTIRLLGELRQAIDQFELTLVYQPKFDLNTAVIVGVEALVRWPHPKRGLLPPDEFLPLVRRYGLMGSITDLVVNQALDDVLRWRAEGLTVPIAINMFAPSMADLRLPGKFAKSLADRKIDPSHLTVEITEDLFLDNMDRTKTVLNQLQENGIRIAIDDFGSGYSALSYMRDLTVDEVKLDRHFIAPIPADRRAAAVVRAVVSLADELGLTTVAEGIENAVTADWLREHGCHVGQGYYFSPPL</Hsp_hseq>
+      <Hsp_midline>++E + +   +A  A  D LTG+ NR+ F +R+   +     D     +  +DLD FK +ND  GH +GD+LL  VA  ++  ++  + VAR GGDEF  +     EG VD     A R+   F         E+++  S+G++V   D  D+    +L  +D+AMY AK S    +  +  EM      D +                  +  ++R+ I   E +L YQ   ++    I G EAL+RW HP+ G +PPD F+P+    G +  +   V+ Q  ++ L    +GL   +++N+    +       K  + L       S L  E+TE  F+ N     +VL+ LQ+ GI IA+DDFG+GYS+LS +RD   D +KLDR F+  + ++ +  + VRA++SL + +    +AEG+E A     L E GC   QG+ F  P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11459</Hit_id>
+  <Hit_def>gnl|TC-DB|P76330|9.B.34.1.4 Probable diguanylate cyclase YedQ OS=Escherichia coli (strain K12) GN=yedQ PE=2 SV=2</Hit_def>
+  <Hit_accession>11459</Hit_accession>
+  <Hit_len>564</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.2781</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>1.96057e-19</Hsp_evalue>
+      <Hsp_query-from>112</Hsp_query-from>
+      <Hsp_query-to>286</Hsp_query-to>
+      <Hsp_hit-from>374</Hsp_hit-from>
+      <Hsp_hit-to>553</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>180</Hsp_align-len>
+      <Hsp_qseq>LLGFAKITRDISEQKAINDRIAWMARYDALTGLPNRVEFFERVEKL--ITGNDARRFAIFTIDLDKFKEINDLQGHLIGDQLLQRVAGAVLKTLQKEEMVARFGGDEFVAVKPFADEGEVDAFAARLWHCFSGKQTFAA--TEVVLSASIGISVYPEDGT-DINTVLSNSDLAMYRAKSS</Hsp_qseq>
+      <Hsp_hseq>LISWYVIRRMVSNMYVLQSSLQWQAWHDTLTRLYNRGALFEKARPLAKLCQTHQHPFSVIQVDLDHFKAINDRFGHQAGDRVLSHAAGLISSSLRAQDVAGRVGGEEFCVILPGASLTEAAEVAERIRLKLNEKEMLIAKSTTIRISASLGVSSSEETGDYDFEQLQSLADRRLYLAKQA</Hsp_hseq>
+      <Hsp_midline>L+ +  I R +S    +   + W A +D LT L NR   FE+   L  +       F++  +DLD FK IND  GH  GD++L   AG +  +L+ +++  R GG+EF  + P A   E    A R+    + K+   A  T + +SAS+G+S   E G  D   + S +D  +Y AK +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3256</Hit_id>
+  <Hit_def>gnl|TC-DB|D4ZZR3|9.B.34.1.3 Putative diguanylate cyclase OS=Arthrospira platensis (strain NIES-39 / IAM M-135) GN=NIES39_A07490 PE=4 SV=1</Hit_def>
+  <Hit_accession>3256</Hit_accession>
+  <Hit_len>396</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.7297</Hsp_bit-score>
+      <Hsp_score>208</Hsp_score>
+      <Hsp_evalue>1.12663e-17</Hsp_evalue>
+      <Hsp_query-from>129</Hsp_query-from>
+      <Hsp_query-to>292</Hsp_query-to>
+      <Hsp_hit-from>226</Hsp_hit-from>
+      <Hsp_hit-to>394</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>NDRIAWMARYDALTGLPNRVEFFERVEKLITGNDARRF--AIFTIDLDKFKEINDLQGHLIGDQLLQRVAGAVLKTLQKEEMVARFGGDEFVAVKPFADEGEVDAFAARLWHCFSG---KQTFAATEVVLSASIGISVYPEDGTDINTVLSNSDLAMYRAKSSLDHKIC</Hsp_qseq>
+      <Hsp_hseq>NKKLEQLSTIDELTGLLNRRFLNSRLEQEIAYHQQMGFPLSIMLIDIDHFKKINDQFGHLAGDYVLQKVAKLTNQLLRVNDLAFRYGGEEFMVLLPRSEILQALDMAERLRVSISQLYFNHPDIPSDFQITASFGLSELTKDLRCLDDLLKQADLALYQAKSQGRNQVC</Hsp_hseq>
+      <Hsp_midline>N ++  ++  D LTGL NR     R+E+ I  +    F  +I  ID+D FK+IND  GHL GD +LQ+VA    + L+  ++  R+GG+EF+ + P ++  +    A RL    S          ++  ++AS G+S   +D   ++ +L  +DLA+Y+AKS   +++C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14963</Hit_id>
+  <Hit_def>gnl|TC-DB|Q6N8W3|9.B.34.1.6 Putative diguanylate cyclase (GGDEF) OS=Rhodopseudomonas palustris (strain ATCC BAA-98 / CGA009) OX=258594 GN=RPA1790 PE=4 SV=1</Hit_def>
+  <Hit_accession>14963</Hit_accession>
+  <Hit_len>272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.2478</Hsp_bit-score>
+      <Hsp_score>173</Hsp_score>
+      <Hsp_evalue>9.37516e-14</Hsp_evalue>
+      <Hsp_query-from>116</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>AKITRDISEQKAINDRIAWMARYDALTGLPNRVEFFERVE-KLITGNDARRFAIFTI-DLDKFKEINDLQGHLIGDQLLQRVAGAVLK--TLQKEEMVARFGGDEFVAVKPFADEGEVDAFAARLWHCFSGKQTFAATEVVLSASIGISVYPEDGTDINTVLSNSDLAMYRAK</Hsp_qseq>
+      <Hsp_hseq>ARLMRQLTSTRA---ELMRMSRTDPLTGLLNRRGFDEAAATQLAQANFAGQPVVAMMCDLDRFKAINDHYGHNIGDRVLAEI-GDILRDFAAPRGMLIARHGGEEFAGLMVGVSDEQANDYALELCRLCATAVACDGRLVAVTMSFGLAAY--RGGELSALMRRADLALYRAK</Hsp_hseq>
+      <Hsp_midline>A++ R ++  +A    +  M+R D LTGL NR  F E    +L   N A +  +  + DLD+FK IND  GH IGD++L  + G +L+     +  ++AR GG+EF  +     + + + +A  L    +         V ++ S G++ Y   G +++ ++  +DLA+YRAK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8680</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAP1|9.B.34.1.2 Probable diguanylate cyclase AdrA OS=Escherichia coli (strain K12) GN=adrA PE=1 SV=1</Hit_def>
+  <Hit_accession>8680</Hit_accession>
+  <Hit_len>371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>4.16481e-11</Hsp_evalue>
+      <Hsp_query-from>131</Hsp_query-from>
+      <Hsp_query-to>286</Hsp_query-to>
+      <Hsp_hit-from>205</Hsp_hit-from>
+      <Hsp_hit-to>362</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>RIAWMARYDALTGLPNRV--EFFERVEKLITGNDARRFAIFTIDLDKFKEINDLQGHLIGDQLLQRVAGAVLKTLQKEEMVARFGGDEFVAVKPFADEGEVDAFAARLWHCFSGKQTFAATEVVLSASIGISVYPEDGTDINTVLSNSDLAMYRAKSS</Hsp_qseq>
+      <Hsp_hseq>RLQVMSTRDGMTGVYNRRHWETMLRNEFDNCRRHNRDATLLIIDIDHFKSINDTWGHDVGDEAIVALTRQLQITLRGSDVIGRFGGDEFAVIMSGTPAESAITAMLRVHEGLNTLRLPNTPQVTLRISVGVAPLNPQMSHYREWLKSADLALYKAKKA</Hsp_hseq>
+      <Hsp_midline>R+  M+  D +TG+ NR   E   R E        R   +  ID+D FK IND  GH +GD+ +  +   +  TL+  +++ RFGGDEF  +              R+    +  +     +V L  S+G++      +     L ++DLA+Y+AK +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12991</Hit_id>
+  <Hit_def>gnl|TC-DB|Q1J0W6|9.B.34.1.1 Diguanylate cyclase OS=Deinococcus geothermalis (strain DSM 11300) GN=Dgeo_0566 PE=4 SV=1</Hit_def>
+  <Hit_accession>12991</Hit_accession>
+  <Hit_len>349</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>1.94361e-07</Hsp_evalue>
+      <Hsp_query-from>135</Hsp_query-from>
+      <Hsp_query-to>291</Hsp_query-to>
+      <Hsp_hit-from>193</Hsp_hit-from>
+      <Hsp_hit-to>345</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>MARYDALTGLPNRVEFFERVEKLITGNDARRFAIFTIDLDKFKEINDLQGHLIGDQLLQRVAGAVLKTLQKEEMVARFGGDEFVAVKPFADEGEVDAFAARLWHCFSGKQTFAATEVVLSASIGISVYPEDGTDINTVLSNSDLAMYRAKSSLDHKI</Hsp_qseq>
+      <Hsp_hseq>IAYLDALTNLHNRRQFDEDLPAF--GIEEGTFLLL-LDLDRFKALNDSCGHPFGDRVLRELAVLLQQGVRGTDRVYRLGGEEFAVLLRQTSPTGAARVAERLRSQVREQLGTRVGRPDLTITISAGLTP-CTADPDTTVRTADHLLYEAKRSGRNRI</Hsp_hseq>
+      <Hsp_midline>+A  DALT L NR +F E +     G +   F +  +DLD+FK +ND  GH  GD++L+ +A  + + ++  + V R GG+EF  +            A RL      +         L+ +I   + P    D +T +  +D  +Y AK S  ++I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>103</Statistics_hsp-len>
+      <Statistics_eff-space>3433545024</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_023297462.1 MULTISPECIES: ABC transporter substrate-binding protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>355</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_023297462.1 MULTISPECIES: ABC transporter substrate-binding protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>355</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7673</Hit_id>
+  <Hit_def>gnl|TC-DB|O85763|3.A.1.17.2 PUTATIVE SULFONATE BINDING PROTEIN PRECURSOR - Pseudomonas putida.</Hit_def>
+  <Hit_accession>7673</Hit_accession>
+  <Hit_len>321</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>8.54399e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>MMKAFFSRTLLALVAV---IGLAANAQAETLRTIRIGVPDQSAGSQPFIEGPVGMAFIRHQLEEVFKPQGVEVQWQFFKGAGPAVNEALANRQLDFVYLGDLAAIIGKANGLPTRLLL---GSRGSESWLAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVDA--VW</Hsp_qseq>
+      <Hsp_hseq>MRTVFLRRGLVALFAAAVSFGAITQAQAESLRI----------GYQKY--GTLVLLKAKGTLEKRLAEQGVQVQWTEFPG-GPQLLEGLNVGSIDFGVTGETPPVFAQAAGADLLYVAYEPPAPHSEAIL-VPKGSPIQSVKELKGKKVALNKGSNVHYLLVRALEDAGLKYSDIQPVYLPPSDARAAFERGSVDAWVIW</Hsp_hseq>
+      <Hsp_midline>M   F  R L+AL A     G    AQAE+LR           G Q +  G + +   +  LE+    QGV+VQW  F G GP + E L    +DF   G+   +  +A G     +     +  SE+ L V K S I+++ +LKGK+VA+ +G+       RAL+ AGL    +Q + L  +  +AA   G VDA  +W</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11419</Hit_id>
+  <Hit_def>gnl|TC-DB|P75853|3.A.1.17.10 Putative aliphatic sulfonates-binding protein OS=Escherichia coli (strain K12) GN=ssuA PE=1 SV=2</Hit_def>
+  <Hit_accession>11419</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.1586</Hsp_bit-score>
+      <Hsp_score>152</Hsp_score>
+      <Hsp_evalue>3.16525e-11</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>68</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>228</Hsp_align-len>
+      <Hsp_qseq>LALVAVIGLAANAQAETLRTIRIGVPDQSAGSQPFIEGPVGMAFIR-HQLEEVFKPQGVEVQWQFFKGAGPAVNEALANRQLDFVYLGDLAAIIGKANGLPTRLLLG---SRGSESWLAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVD--AVWGGVSLLALRGDKIDVVVKSGDSGRQNTTQAGFLGTQTFIE</Hsp_qseq>
+      <Hsp_hseq>LLSVSTFAVAAESSPEALR---IG----------YQKGSIGMVLAKSHQLLEKRYPES-KISWVEFP-AGPQMLEALNVGSIDLGSTGDIPPIFAQAAGADL-VYVGVEPPKPKAEVILVAENSPIKTVADLKGHKVAFQKGSSSHNLLLRALRQAGLKFTDIQPTYLTPADARAAFQQGNVDAWAIWDPYYSAALLQGGVRVLKDGTD---LNQTGSFYLAARPYAE</Hsp_hseq>
+      <Hsp_midline>L  V+   +AA +  E LR   IG          + +G +GM   + HQL E   P+  ++ W  F  AGP + EAL    +D    GD+  I  +A G    + +G    +     + V + S IKT+ADLKG +VA  +G++      RAL+ AGL    +Q   L     +AA   G VD  A+W      AL    + V+    D    N T + +L  + + E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13197</Hit_id>
+  <Hit_def>gnl|TC-DB|Q2BM68|3.A.1.17.4 ABC taurine transporter, periplasmic ligand binding protein OS=Neptuniibacter caesariensis GN=MED92_13206 PE=4 SV=1</Hit_def>
+  <Hit_accession>13197</Hit_accession>
+  <Hit_len>335</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.003</Hsp_bit-score>
+      <Hsp_score>149</Hsp_score>
+      <Hsp_evalue>8.32903e-11</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>217</Hsp_align-len>
+      <Hsp_qseq>MKAFFSRTLLALVAVIGLAANAQAETLRTIRIGVPDQSAGSQPFIEGPVGMAFIRHQLEEVFKPQGVEVQWQFFKGAGPAVNEALANRQLDFVYLGD--LAAIIGKANGLPTRLLLGSRGSESWLAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVDAVWGGVSLLALRGDKIDVVVKSGDSGR</Hsp_qseq>
+      <Hsp_hseq>MKSRFNKTAGAVISGLLFSATAMAETV----------TIGYQGMMN-PWKHVIAEKQLEAA---TGIDIEWRRFD-SGAKVITAMASGDVDIATAGSSPIAAAISRGVDIELVWILENINEAEALVVKGSSNIKSPQDLKGKTLGVPFVSTTHFHTLFALEQFGLSEKDVKVLNMQPNAISAAWSRGDIDAAFIWDPVLGKIKEDGKVLISSGELSR</Hsp_hseq>
+      <Hsp_midline>MK+ F++T  A+++ +  +A A AET+          + G Q  +  P        QLE      G++++W+ F  +G  V  A+A+  +D    G   +AA I +   +    +L +      L V  +S IK+  DLKGK + V   +        AL+  GL+E+ ++V+N+  NA  AA + G +DA +    +L    +   V++ SG+  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16657</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8NR41|3.A.1.17.12 ABC-type transporter, periplasmic component OS=Corynebacterium glutamicum (strain ATCC 13032 / DSM 20300 / JCM 1318 / LMG 3730 / NCIMB 10025) GN=Cgl1223 PE=4 SV=1</Hit_def>
+  <Hit_accession>16657</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>4.42722e-10</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>FSRTLLALVAVIGLAANAQAE-----------TLRTIRIGVPDQSAGSQPFIEGPVGMAFIRHQLEEVFKPQGVEVQWQFFKGAGPAVNEALANRQLDFVYLGDLAAIIGKANGLPTRLLLGSRGSESWLAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVD--AVW</Hsp_qseq>
+      <Hsp_hseq>FKKIALVLAFGLGLASCSSASGDPATNADGSIDLSKVTLNIGDQIAGTEQVLQAS-------GELDDV----PYKIEWSSFT-SGPPQIEALNAGQIDFAITGNTPPIIGGPTNTKVVSAYNNDALGDVILVAPDSSITSVADLAGKKVAVARGSSAHGHLIQQLEKAGVSVDDVEINLLQPSDAKAAFQNGQVDAWAVW</Hsp_hseq>
+      <Hsp_midline>F +  L L   +GLA+ + A             L  + + + DQ AG++  ++          +L++V      +++W  F  +GP   EAL   Q+DF   G+   IIG            +      + V   S I ++ADL GK+VAV RG++      + L+ AG++   +++  L  +  KAA   G+VD  AVW</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|433</Hit_id>
+  <Hit_def>gnl|TC-DB|A4QDI5|3.A.1.17.12 Uncharacterized protein OS=Corynebacterium glutamicum (strain R) GN=cgR_1301 PE=4 SV=1</Hit_def>
+  <Hit_accession>433</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>4.42722e-10</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>FSRTLLALVAVIGLAANAQAE-----------TLRTIRIGVPDQSAGSQPFIEGPVGMAFIRHQLEEVFKPQGVEVQWQFFKGAGPAVNEALANRQLDFVYLGDLAAIIGKANGLPTRLLLGSRGSESWLAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVD--AVW</Hsp_qseq>
+      <Hsp_hseq>FKKIALVLAFGLGLASCSSASGDPATNADGSIDLSKVTLNIGDQIAGTEQVLQAS-------GELDDV----PYKIEWSSFT-SGPPQIEALNAGQIDFAITGNTPPIIGGPTNTKVVSAYNNDALGDVILVAPDSSITSVADLAGKKVAVARGSSAHGHLIQQLEKAGVSVDDVEINLLQPSDAKAAFQNGQVDAWAVW</Hsp_hseq>
+      <Hsp_midline>F +  L L   +GLA+ + A             L  + + + DQ AG++  ++          +L++V      +++W  F  +GP   EAL   Q+DF   G+   IIG            +      + V   S I ++ADL GK+VAV RG++      + L+ AG++   +++  L  +  KAA   G+VD  AVW</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13717</Hit_id>
+  <Hit_def>gnl|TC-DB|Q47537|3.A.1.17.1 Taurine-binding periplasmic protein precursor (Sulfate starvation- induced protein 1) (SSI1) - Escherichia coli.</Hit_def>
+  <Hit_accession>13717</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>1.47933e-07</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>330</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>47</Hsp_gaps>
+      <Hsp_align-len>341</Hsp_align-len>
+      <Hsp_qseq>TLLALVAVIGLAANAQAETLRTIRIGVPDQSAGSQPFIEGPVGMAFIRHQLEEVF-KPQGVEVQWQFFKGAGPAVNEALANRQLDFVYLGDLAAIIGKANGLPTRL-LLGSRGSESWLAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVDA--VWG-GVSLLALRGDKIDVVVKSGDSGRQNTTQAGFLGTQTFIETWPQATQQIVNVLVKNAAEISDP--ANRDAWSAEMAQQSQIPKALFLEALQPQDL-------NFTTSPRIDPFLTGSFSSSVEQA-----KSGRLIRSAFDVKQWVDGQFVE</Hsp_qseq>
+      <Hsp_hseq>TLLAALAFIAFQAQA-------VNVTVAYQTSAE------PAKVA----QADNTFAKESGATVDWRKFD-SGASIVRALASGDVQIGNLGSSPLAVAASQQVPIEVFLLASKLGNSEALVVKKT-ISKPEDLIGKRIAVPFISTTHYSLLAALKHWGIKPGQVEIVNLQPPAIIAAWQRGDIDGAYVWAPAVNALEKDGKVLTDSEQVGQWGA--PTLDVWVVRKDFAEKHP----EVVKAFAKSAIDAQQPYIANPDVW---LKQPENISKLARLSGVPEGDVPGLVKGNTYLTPQQQTAELTGPVNKAIIDTAQFLKEQGKVPAVANDYSQYVTSRFVQ</Hsp_hseq>
+      <Hsp_midline>TLLA +A I   A A       + + V  Q++        P  +A    Q +  F K  G  V W+ F  +G ++  ALA+  +    LG     +  +  +P  + LL S+   S   V K + I    DL GKR+AV   +    +   AL+  G+    ++++NL   A  AA   G +D   VW   V+ L   G  +    + G  G    T   ++  + F E  P    ++V    K+A +   P  AN D W   + Q   I K   L  +   D+        + T  +    LTG  + ++        + G++   A D  Q+V  +FV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10550</Hit_id>
+  <Hit_def>gnl|TC-DB|P44658|3.A.1.17.3 Putative thiamine biosynthesis protein HI0357 - Haemophilus influenzae.</Hit_def>
+  <Hit_accession>10550</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>8.15927e-07</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>193</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>PVGMAFIRHQLEEVFKPQGVEVQWQFFKGAGPAVNEALANRQ---LDFVYLGDLAAIIGKANGLPTRLLLGSRGSE--SWLAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVDAVWG</Hsp_qseq>
+      <Hsp_hseq>PDHAAIIVAQQKGFFEKNNLEVE--IIEPADPALPPKLAAAEKVDLAVSYQPQLYQQV--AEGLPL-VRVGSLISNPLNSVVVLKKSNLKSLADLKGKKVGYSVSGFEDGLLDTMLHSIGLSNKDVELVNVNWSL-SPSLLTGQVDAVIG</Hsp_hseq>
+      <Hsp_midline>P   A I  Q +  F+   +EV+    + A PA+   LA  +   L   Y   L   +  A GLP  + +GS  S   + + V K S +K+LADLKGK+V       +    D  L + GL+ + ++++N++W+    +L  G+VDAV G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17885</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9CLH1|3.A.1.17.6 Putative uncharacterized protein OS=Pasteurella multocida GN=PM1263 PE=4 SV=1</Hit_def>
+  <Hit_accession>17885</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>1.45666e-06</Hsp_evalue>
+      <Hsp_query-from>124</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>LAVTKASGIKTLADLKGKRVAVYRGTADQLAFDRALQTAGLNERSLQVINLDWNAGKAALAAGRVDAVWGGVSLLALRGDKID</Hsp_qseq>
+      <Hsp_hseq>LIVLEKSAIKSLADLKGKKIGYSVSGFEDSLLKAMLGSANLTDKDIEMVNVNWSL-SPSLISGQVDAVIGGFRNFELNQMKLE</Hsp_hseq>
+      <Hsp_midline>L V + S IK+LADLKGK++       +       L +A L ++ ++++N++W+    +L +G+VDAV GG     L   K++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1985447680</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

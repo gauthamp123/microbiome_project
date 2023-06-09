@@ -1,0 +1,1061 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008806868.1 MULTISPECIES: 4Fe-4S dicluster domain-containing protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>161</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008806868.1 MULTISPECIES: 4Fe-4S dicluster domain-containing protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>161</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9433</Hit_id>
+  <Hit_def>gnl|TC-DB|P23481|3.D.1.9.1 Hydrogenase-4 component A OS=Escherichia coli (strain K12) GN=hyfA PE=1 SV=1</Hit_def>
+  <Hit_accession>9433</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.857</Hsp_bit-score>
+      <Hsp_score>294</Hsp_score>
+      <Hsp_evalue>7.2393e-34</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>159</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>43</Hsp_gaps>
+      <Hsp_align-len>194</Hsp_align-len>
+      <Hsp_qseq>MNQFLIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVT---VVNEQAQ--------------------------------ALKCDLCHHRAEGPACVAACPTQALRVMVPAELEALCAQKRQRLA</Hsp_qseq>
+      <Hsp_hseq>MNRFVVAEPLWCTGCNTCLAACSDVHK----TQGLQQH---PRLALAKTSTITAPVVCHHCEEAPCLQVCPVNAISQRDDAIQLNESLCIGCKLCAVVCPFGAISASGSRPVNAHAQYVFQAEGSLKDGEENAPTQHALLRWEPGVQTVAVKCDLCDFLPEGPACVRACPNQALRLITGDSLQRQMKEK-QRLA</Hsp_hseq>
+      <Hsp_midline>MN+F++A    C GC TC  AC+  H+       L  +   PR+ + K+  I+    C  CE+APC  VCP  AI + +D   +++  CIGCK C V CP+GA++ +    VN  AQ                                A+KCDLC    EGPACV ACP QALR++    L+    +K QRLA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8675</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAK3|3.D.1.9.2 Formate hydrogenlyase subunit 2 OS=Shigella flexneri GN=hycB PE=3 SV=1</Hit_def>
+  <Hit_accession>8675</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.087</Hsp_bit-score>
+      <Hsp_score>292</Hsp_score>
+      <Hsp_evalue>1.37152e-33</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>156</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>39</Hsp_gaps>
+      <Hsp_align-len>188</Hsp_align-len>
+      <Hsp_qseq>MNQFLIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVT--------------------------------VVNEQAQALKCDLCHHRAEGPACVAACPTQALRVMVPAELEALCAQKRQ</Hsp_qseq>
+      <Hsp_hseq>MNRFVIADSTLCIGCHTCEAACSETHRQH----GLQS---MPRLRVMLNEKESAPQLCHHCEDAPCAVVCPVNAITRVDGAVQLNESLCVSCKLCGIACPFGAIEFSGSRPLDIPANANTPKAPPAPPAPARVSTLLDWVPGIRAIAVKCDLCSFDEQGPACVRMCPTKALHLVDNTDIARVSKRKRE</Hsp_hseq>
+      <Hsp_midline>MN+F+IA++  CIGC TCE AC+  H+Q      L +    PR+RV+ +   S    C  CEDAPCA VCP  AI R +    +++  C+ CK C +ACP+GA+  +                                V   +A A+KCDLC    +GPACV  CPT+AL ++   ++  +  +KR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8538</Hit_id>
+  <Hit_def>gnl|TC-DB|P0A1I1|5.A.3.5.1 Thiosulfate reductase electron transport protein phsB - Salmonella typhimurium.</Hit_def>
+  <Hit_accession>8538</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.0561</Hsp_bit-score>
+      <Hsp_score>240</Hsp_score>
+      <Hsp_evalue>6.2738e-26</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>NQF-LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDIST-----ATACRQCEDAPCASVCPQGAIQRD-NDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQ-AQALKCDLCHH----RAEGPACVAACPTQALR</Hsp_qseq>
+      <Hsp_hseq>NQYVMLHDEKRCIGCQACTVACKVLNDVPEGFSRVQVQIRAPE----QASNALTHFQFVRVSCQHCENAPCVSVCPTGASYRDENGIVQVDKSRCIGCDYCVAACPF---HVRYLNPQTGVADKCNFCADTRLAAGQSPACVSVCPTDALK</Hsp_hseq>
+      <Hsp_midline>NQ+ ++ + +RCIGC+ C VAC V +   +  + +     AP     ++ +  T       +C+ CE+APC SVCP GA  RD N +  VD+ RCIGC  C+ ACP+    V  +N Q   A KC+ C        + PACV+ CPT AL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8672</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAJ1|5.A.3.3.1 Probable anaerobic dimethyl sulfoxide reductase chain ynfG - Escherichia coli.</Hit_def>
+  <Hit_accession>8672</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.4261</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>4.32575e-22</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>NAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDIST--------------ATACRQCEDAPCASVCPQGAIQRDNDVWWV-DQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHR-AEG--PACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>DSSRCTGCKTCELAC-------KDFKDLGPEVSFRRIYEYAGGDWQEDNGVWHQNVFAYYLSISCNHCDDPACTKVCPSGAMHKREDGFVVVDEDVCIGCRYCHMACPYGAPQYNA--EKGHMTKCDGCYSRVAEGKQPICVESCPLRAL</Hsp_hseq>
+      <Hsp_midline>++ RC GC+TCE+AC       +D   L       RI     GD                 + +C  C+D  C  VCP GA+ +  D + V D+  CIGC+ C +ACPYGA       E+    KCD C+ R AEG  P CV +CP +AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9291</Hit_id>
+  <Hit_def>gnl|TC-DB|P18776|5.A.3.3.2 Anaerobic dimethyl sulfoxide reductase chain B (DMSO reductase iron- sulfur subunit) - Escherichia coli.</Hit_def>
+  <Hit_accession>9291</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.6557</Hsp_bit-score>
+      <Hsp_score>213</Hsp_score>
+      <Hsp_evalue>8.53973e-22</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>NAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDIST--------------ATACRQCEDAPCASVCPQGAIQRDNDVWWV-DQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHR-AEG--PACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>DSSRCTGCKTCELAC-------KDYKDLTPEVSFRRIYEYAGGDWQEDNGVWHQNVFAYYLSISCNHCEDPACTKVCPSGAMHKREDGFVVVDEDVCIGCRYCHMACPYGAPQYN--ETKGHMTKCDGCYDRVAEGKKPICVESCPLRAL</Hsp_hseq>
+      <Hsp_midline>++ RC GC+TCE+AC       +D   L+      RI     GD                 + +C  CED  C  VCP GA+ +  D + V D+  CIGC+ C +ACPYGA        +    KCD C+ R AEG  P CV +CP +AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18190</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9HR73|5.A.3.3.3 Molybdopterin oxidoreductase - Halobacterium salinarium (Halobacterium halobium).</Hit_def>
+  <Hit_accession>18190</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.4261</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>1.25849e-21</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>NQFLIANAQRCIGCRTCEVACAVAH-----QQAQDVAALSTNHF-APRIRVVKSGDISTA------TACRQCEDAPCASVCPQGAIQ-RDNDVWWVDQRRCIGCKSCMVACPYGAMTVT-------------VVNEQAQAL--KCDLCHHRAE---GPACVAACPTQA</Hsp_qseq>
+      <Hsp_hseq>NYGLVIDQERCIGCQSCSLTCKQENNVPMGQFWNRVLTQGGDHVDTPSGDYPEGGDGGTLEMTYQPTACQHCENAPCVKVCPVNATYTRDDGIVEIDYDKCMGCRYCMAACPYNARVFNWDEPEHRPEDGTGDVAERPQGVVEKCTFCSHRVEDGLDPACVVNCPADA</Hsp_hseq>
+      <Hsp_midline>N  L+ + +RCIGC++C + C   +     Q    V     +H   P     + GD  T       TAC+ CE+APC  VCP  A   RD+ +  +D  +C+GC+ CM ACPY A                  V E+ Q +  KC  C HR E    PACV  CP  A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15629</Hit_id>
+  <Hit_def>gnl|TC-DB|Q7WMZ5|5.A.3.10.1 Tetrathionate reductase subunit B - Bordetella bronchiseptica (Alcaligenes bronchisepticus).</Hit_def>
+  <Hit_accession>15629</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.0409</Hsp_bit-score>
+      <Hsp_score>214</Hsp_score>
+      <Hsp_evalue>1.61995e-21</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATA---CRQCEDAPCASVCP-QGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAEG---PACVAAC</Hsp_qseq>
+      <Hsp_hseq>MVVDLRKCIGCQACTVSCSM--ENLPPIGQFRTTVLQYEVLPDDGGPCSMVMLPRLCNHCDNPPCVPVCPVQATFQREDGIVLVDNERCVGCGYCVQACPYDARFIN--HETQTADKCTFCEHRLEAGLLPACVESC</Hsp_hseq>
+      <Hsp_midline>++ + ++CIGC+ C V+C++  +    +    T      +     G  S       C  C++ PC  VCP Q   QR++ +  VD  RC+GC  C+ ACPY A  +   +E   A KC  C HR E    PACV +C</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>1.09148e-05</Hsp_evalue>
+      <Hsp_query-from>84</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>61</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>VDQRRCIGCKSCMVAC------PYGAMTVTVVNEQ---------AQALKCDLCHHRAEGPACVAACPTQA</Hsp_qseq>
+      <Hsp_hseq>VDLRKCIGCQACTVSCSMENLPPIGQFRTTVLQYEVLPDDGGPCSMVMLPRLCNH-CDNPPCVPVCPVQA</Hsp_hseq>
+      <Hsp_midline>VD R+CIGC++C V+C      P G    TV+  +         +  +   LC+H  + P CV  CP QA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14443</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5P036|5.A.3.11.1 Molybdenum enzyme, medium subunit,related to phenylacetyl-CoA: acceptor oxidoreductase - Azoarcus sp. (strain EbN1).</Hit_def>
+  <Hit_accession>14443</Hit_accession>
+  <Hit_len>200</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.5741</Hsp_bit-score>
+      <Hsp_score>205</Hsp_score>
+      <Hsp_evalue>1.16595e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>36</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTA------TACRQCEDAPCASVCPQGA-IQRDNDVWWVDQRRCIGCKSCMVACPYGAMTV-------------------TVVNEQAQALKCDLCHHRAEG---PACVAACPTQA</Hsp_qseq>
+      <Hsp_hseq>MVIDLKRCIACYGCQLACKAENGTPPGV-------FFARLLKHEEGQFPTVRQLFLPVLCNHCEDPPCVEVCPTGASFKCDDGIVDIDPDKCVGCRTCMMACPYGNRYFNDKPQHYFPQGSTPFEEKRTARHQTDVVMKCNFCRDRVKAGKQPACVANCPTVA</Hsp_hseq>
+      <Hsp_midline>++ + +RCI C  C++AC   +     V       F  R+   + G   T         C  CED PC  VCP GA  + D+ +  +D  +C+GC++CM+ACPYG                       T  ++    +KC+ C  R +    PACVA CPT A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8676</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAK7|5.A.3.5.3 Protein NrfC OS=Escherichia coli (strain K12) OX=83333 GN=nrfC PE=3 SV=1</Hit_def>
+  <Hit_accession>8676</Hit_accession>
+  <Hit_len>223</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.9593</Hsp_bit-score>
+      <Hsp_score>206</Hsp_score>
+      <Hsp_evalue>1.308e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRD--NDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCH----HRAEGPACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>MVHDESLCIGCTACMDACREVNKVPEGVSRLTIIRSEPQGEFPDVKYRFFRKSCQHCDHAPCVDVCPTGASFRDAASGIVDVNPDLCVGCQYCIAACPYRVRFIHPVTKTAD--KCDFCRKTNLQAGKLPACVEACPTKAL</Hsp_hseq>
+      <Hsp_midline>++ +   CIGC  C  AC   ++  + V+ L+     P+             +C+ C+ APC  VCP GA  RD  + +  V+   C+GC+ C+ ACPY    +  V + A   KCD C        + PACV ACPT+AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9746</Hit_id>
+  <Hit_def>gnl|TC-DB|P31076|5.A.3.5.2 Polysulfide reductase chain B (Sulfur reductase chain B) - Wolinella succinogenes.</Hit_def>
+  <Hit_accession>9746</Hit_accession>
+  <Hit_len>191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.8037</Hsp_bit-score>
+      <Hsp_score>203</Hsp_score>
+      <Hsp_evalue>1.90525e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDIST---ATACRQCEDAPCASVCPQGAIQRDND-VWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHH----RAEGPACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>MIHDENLCIGCQACNIACRSENKIPDSVYRLQVWVQGPK--KLPDGTLSFNYHRQSCVQCENTPCVSVCPTKASYVNEDGIVSVNVDLCVGCLYCIAACPYQARYVDPVTKAPD--KCNFCKDTRLARGEEPACVTVCPTDAL</Hsp_hseq>
+      <Hsp_midline>+I +   CIGC+ C +AC   ++    V  L      P+   +  G +S      +C QCE+ PC SVCP  A   + D +  V+   C+GC  C+ ACPY A  V  V +     KC+ C      R E PACV  CPT AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3175</Hit_id>
+  <Hit_def>gnl|TC-DB|D3RSP1|5.B.12.1.3 DsrO OS=Allochromatium vinosum (strain ATCC 17899 / DSM 180 / NBRC 103801 / NCIMB 10441 / D) OX=572477 GN=dsrO PE=4 SV=1</Hit_def>
+  <Hit_accession>3175</Hit_accession>
+  <Hit_len>268</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.4034</Hsp_bit-score>
+      <Hsp_score>176</Hsp_score>
+      <Hsp_evalue>5.566e-16</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>158</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVAC----AVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATA------CRQCEDAPCASVCPQGA-IQRDNDVWWVDQRRCIGCKSCMVACPYGAMT----------VTVVNEQAQALKCDLCHHR----AEGPACVAACPTQALRVMVPAELEALCAQKRQRL</Hsp_qseq>
+      <Hsp_hseq>LIDTAKCADGCSACVDACDRENGLDLQEPHGSESKWEHQKSVWIRKVKLQDNQTGRITQLPLMCQHCEHPPCVDVCPTGASFKRADGIVMVDRHLCIGCRYCMMACPYKARSFIHQPTTGQLTAVPRGKGCVESCNLCVHRRDNGEESTACVDACAQEGHGAIVFGDLKDPDSAISQRL</Hsp_hseq>
+      <Hsp_midline>LI  A+   GC  C  AC     +  Q+     +   +  +  IR VK  D  T         C+ CE  PC  VCP GA  +R + +  VD+  CIGC+ CM+ACPY A +            V   +     C+LC HR     E  ACV AC  +    +V  +L+   +   QRL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8673</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAJ3|5.A.3.2.1 Formate dehydrogenase, nitrate-inducible, iron-sulfur subunit - Escherichia coli.</Hit_def>
+  <Hit_accession>8673</Hit_accession>
+  <Hit_len>294</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.4034</Hsp_bit-score>
+      <Hsp_score>176</Hsp_score>
+      <Hsp_evalue>7.24112e-16</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>158</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>IANAQRCIGCRTCEVACA--------VAH-----QQAQDVAALS--TNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGA--IQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHR---AEGPACVAACPTQALRVMVPAELEALCAQKRQRL</Hsp_qseq>
+      <Hsp_hseq>LIDVSTCIGCKACQVACSEWNDIRDEVGHCVGVYDNPADLSAKSWTVMRFSETEQNGKLEWLIRKDGCMHCEDPGCLKACPSAGAIIQYANGIVDFQSENCIGCGYCIAGCPFNIPRLN--KEDNRVYKCTLCVDRVSVGQEPACVKTCPTGAIHFGTKKEMLELAEQRVAKL</Hsp_hseq>
+      <Hsp_midline>+ +   CIGC+ C+VAC+        V H         D++A S     F+   +  K   +     C  CED  C   CP     IQ  N +       CIGC  C+  CP+    +    E  +  KC LC  R    + PACV  CPT A+      E+  L  Q+  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7463</Hit_id>
+  <Hit_def>gnl|TC-DB|O67279|5.A.3.11.2 DMSO reductase chain B - Aquifex aeolicus.</Hit_def>
+  <Hit_accession>7463</Hit_accession>
+  <Hit_len>254</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.633</Hsp_bit-score>
+      <Hsp_score>174</Hsp_score>
+      <Hsp_evalue>9.08948e-16</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>138</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQA--------QDVAALSTNHFAPRIRVVKSGDISTAT------ACRQCEDAPCASVCPQGA-IQRDND-VWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRA---------EGPACVAACPTQA</Hsp_qseq>
+      <Hsp_hseq>LVIDLNTCVGCHACATNCKEWNTQAAFGPLSDYDPYGREASGVWYNRIFTYETGEFPETQVFHLPKSCLHCQDAPCVPVCPTGASYKREQDGIVLVNYDDCIGCKLCSWACPYGCREFDEADKVMK--KCTLCIDRIYDETLPPEHRQPACVLTCPARA</Hsp_hseq>
+      <Hsp_midline>L+ +   C+GC  C   C   + QA              ++  +  RI   ++G+           +C  C+DAPC  VCP GA  +R+ D +  V+   CIGCK C  ACPYG       ++  +  KC LC  R            PACV  CP +A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1379</Hit_id>
+  <Hit_def>gnl|TC-DB|AOY57586|5.B.13.1.2 HmcB: HMC redox complex, transmembrane protein [Desulfococcus multivorans]</Hit_def>
+  <Hit_accession>1379</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>3.15901e-15</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>39</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>CIGCRTCEVAC----------------AVAHQQAQDVAALST--NHFAPRIRVVKSGDISTATACRQCEDAPCASVC--------PQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNE-QAQALKCDLCHHR-AEG--PACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>CVGCRRCEEACNKVNDLPAPDVSFRDESVLNQERRTTAKAYTVVNKYADPDR--PGGVTFRKLQCNHCKEPACASACFVKAFKKTPEGAVVYDASV-------CVGCRYCMVACPFNIPAYEYEKVLDPRVMKCTMCHPRILEGKIPGCVEVCPVEAL</Hsp_hseq>
+      <Hsp_midline>C+GCR CE AC                +V +Q+ +  A   T  N +A   R    G       C  C++  CAS C        P+GA+  D  V       C+GC+ CMVACP+             + +KC +CH R  EG  P CV  CP +AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8674</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAJ8|3.D.7.2.5 Hydrogenase-2 operon protein HybA OS=Escherichia coli (strain K12) OX=83333 GN=hybA PE=3 SV=1</Hit_def>
+  <Hit_accession>8674</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>1.64663e-14</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>220</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCPQGAIQRDNDVWWV--DQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAEG-------PACVAACPTQALRVMVPAELEALCAQKRQRLAL</Hsp_qseq>
+      <Hsp_hseq>CMHCVDPNCVSVCPVSALKKDPKTGIVHYDKDVCTGCRYCMVACPYNVPKYDYNNPFGALHKCELCNQKGVERLDKGGLPGCVEVCPAGA---VIFGTREELMAEAKKRLAL</Hsp_hseq>
+      <Hsp_midline>C  C D  C SVCP  A+++D     V  D+  C GC+ CMVACPY        N      KC+LC+ +          P CV  CP  A   ++    E L A+ ++RLAL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1012</Hit_id>
+  <Hit_def>gnl|TC-DB|AAS95017|5.B.13.1.1 hmc operon protein 2 [Desulfovibrio vulgaris str. Hildenborough]</Hit_def>
+  <Hit_accession>1012</Hit_accession>
+  <Hit_len>370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.855</Hsp_bit-score>
+      <Hsp_score>159</Hsp_score>
+      <Hsp_evalue>2.37754e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>42</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATA---------------CRQCEDAPCASVC--------PQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQAL-----KCDLCHHR-AEG--PACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>VLHDTTRCIGCRKCEQACNEVNKLPAPKAKFDDLTVLEKTRRTDADSWTVVNRYNAAGLDHPVFRKQQCNHCLEPACASACFVKAFTKNPDGSVTYDGSL-------CVGCRYCMVACPFNVPAF----QYAEAFDPLIQKCTMCHPRLAEGKLPGCVEICPKEAL</Hsp_hseq>
+      <Hsp_midline>++ +  RCIGCR CE AC   ++     A         + R   +   +                   C  C +  CAS C        P G++  D  +       C+GC+ CMVACP+         + A+A      KC +CH R AEG  P CV  CP +AL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17332</Hit_id>
+  <Hit_def>gnl|TC-DB|Q93PD1|5.A.3.9.1 Anaerobic ethylbenzene dehydrogenase subunit B - Azoarcus sp. EB1.</Hit_def>
+  <Hit_accession>17332</Hit_accession>
+  <Hit_len>352</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.5438</Hsp_bit-score>
+      <Hsp_score>153</Hsp_score>
+      <Hsp_evalue>1.47015e-12</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>135</Hsp_query-to>
+      <Hsp_hit-from>148</Hsp_hit-from>
+      <Hsp_hit-to>231</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>ATACRQCEDAPCASVCPQGAIQR--DNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAE---GPACVAACP</Hsp_qseq>
+      <Hsp_hseq>ARMCNHCTNPACLAACPTGAIYKREDNGIVLVDQERCKGHRHCVEACPYKAIYFNPVSQTSE--KCILCYPRIEKGIANACNRQCP</Hsp_hseq>
+      <Hsp_midline>A  C  C +  C + CP GAI +  DN +  VDQ RC G + C+ ACPY A+    V++ ++  KC LC+ R E     AC   CP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1395</Hit_id>
+  <Hit_def>gnl|TC-DB|AOY60338|5.B.12.1.2 DsrO: predicted redox complex linked to DsrAB, iron-sulfur binding subunit [Desulfococcus multivorans]</Hit_def>
+  <Hit_accession>1395</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.6178</Hsp_bit-score>
+      <Hsp_score>148</Hsp_score>
+      <Hsp_evalue>4.65087e-12</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>133</Hsp_query-to>
+      <Hsp_hit-from>128</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCPQGA-IQRDNDVWWVDQRRCIGCKSCMVACPYGAMT---------VTVVNE------QAQALKCDLCHHR-AEG--PACVAA</Hsp_qseq>
+      <Hsp_hseq>CNHCENPPCVRACPTKATFQREDGLVLMDFHRCIGCRFCMAACPFGARSFNFRDPRPFIPEINKKFPTRSKGVVEKCNFCAERLAEGKMPACVEA</Hsp_hseq>
+      <Hsp_midline>C  CE+ PC   CP  A  QR++ +  +D  RCIGC+ CM ACP+GA +         +  +N+      +    KC+ C  R AEG  PACV A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11104</Hit_id>
+  <Hit_def>gnl|TC-DB|P60069|5.A.3.8.2 Chlorate reductase beta subunit (Chlorate reductase iron-sulfur subunit) - Ideonella dechloratans.</Hit_def>
+  <Hit_accession>11104</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.46066e-10</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>134</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCPQGAIQR--DNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHR---AEGPACVAAC</Hsp_qseq>
+      <Hsp_hseq>CNHCSNPACLAACPTKAIYKRPEDGIVVVDQTRCRGYRYCVKACPYGKMYFNL--QKGKSEKCIGCYPRVEKGEAPACVKQC</Hsp_hseq>
+      <Hsp_midline>C  C +  C + CP  AI +  ++ +  VDQ RC G + C+ ACPYG M   +  ++ ++ KC  C+ R    E PACV  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20147</Hit_id>
+  <Hit_def>gnl|TC-DB|SFW35650|5.B.12.1.1 putative sulfite reductase-associated electron transfer protein DsrO [Desulfovibrio desulfuricans]</Hit_def>
+  <Hit_accession>20147</Hit_accession>
+  <Hit_len>260</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>3.85746e-10</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>133</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>217</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCP-QGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQ-----------------AQALKCDLCHHR---AEGPACVAA</Hsp_qseq>
+      <Hsp_hseq>CNHCTNPPCVRVCPTQATYKMDDGIVAMDYHRCIGCRFCMAGCPYGARSFNFKDPRKFLADPVPNPEYPTRMIGVVEKCTFCAERLAVGQMPACVEA</Hsp_hseq>
+      <Hsp_midline>C  C + PC  VCP Q   + D+ +  +D  RCIGC+ CM  CPYGA +    + +                     KC  C  R    + PACV A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18898</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9S1G9|5.A.3.8.1 Selenate reductase beta subunit (EC 1.97.1.9) (Selenate reductase iron-sulfur subunit) - Thauera selenatis.</Hit_def>
+  <Hit_accession>18898</Hit_accession>
+  <Hit_len>327</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>5.02841e-10</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>134</Hsp_query-to>
+      <Hsp_hit-from>133</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCPQGAIQR--DNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHR---AEGPACVAAC</Hsp_qseq>
+      <Hsp_hseq>CNHCSNPACLAACPTKAIYKREEDGLVVVDQSRCKGYRYCVKACPYGKMYFNL--QKGTSEKCIGCYPRVEKGEAPACVKQC</Hsp_hseq>
+      <Hsp_midline>C  C +  C + CP  AI +  ++ +  VDQ RC G + C+ ACPYG M   +  ++  + KC  C+ R    E PACV  C</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11573</Hit_id>
+  <Hit_def>gnl|TC-DB|P80564|5.A.3.7.1 Pyrogallol hydroxytransferase small subunit (EC 1.97.1.2) (Transhydroxylase beta subunit) - Pelobacter acidigallici.</Hit_def>
+  <Hit_accession>11573</Hit_accession>
+  <Hit_len>274</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>2.73535e-09</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>FLIANAQRCIGCRTCEVACAVAHQQAQ---DVAALSTNHFAPRIRVVKSG-----DIS-TATACRQCEDAPCASVCPQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHH</Hsp_qseq>
+      <Hsp_hseq>YMVIDVAKCQDCNNCFMGCMDEHELNEWPGYTASMQRGHRWMNIERRERGTYPRNDINYRPTPCMHCENAPCVAKGNGAVYQREDGIVLIDPEKAKGKKELLDTCPYGVMYWN--EEENVAQKCTMCAH</Hsp_hseq>
+      <Hsp_midline>+++ +  +C  C  C + C   H+  +     A++   H    I   + G     DI+   T C  CE+APC +       QR++ +  +D  +  G K  +  CPYG M      E+  A KC +C H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16871</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8TSX9|3.D.6.1.3 Na+-transporting NADH:ubiquinone oxidoreductase, subunit 6 (Predicted alternative beta subunit) OS=Methanosarcina acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 / C2A) GN=nqr6 PE=4 SV=1</Hit_def>
+  <Hit_accession>16871</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>3.17716e-08</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>141</Hsp_query-to>
+      <Hsp_hit-from>142</Hsp_hit-from>
+      <Hsp_hit-to>263</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>CIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAI----------------QRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAEGPACVAACPTQALRV</Hsp_qseq>
+      <Hsp_hseq>CLGLGTCVQAC--------QFGALSMGE--------DGFPVVNKALCTSCGN--CIAACPNGVLTFARDSEKVHVLCRSHDKGKDVKAVCEVGCIGCKKCEKECPAGAIRVTEFLAEIDQEKCTAC------GACVAICPQKAIEL</Hsp_hseq>
+      <Hsp_midline>C+G  TC  AC           ALS               +     C  C +  C + CP G +                 +  DV  V +  CIGCK C   CP GA+ VT    +    KC  C       ACVA CP +A+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13758</Hit_id>
+  <Hit_def>gnl|TC-DB|Q48941|3.D.8.1.2 MOLYBDENUM-CONTAINING FORMYLMETHANOFURAN DEHYDROGENASE I SUBUNIT F (EC 1.2.99.5) (POLYFERREDOXIN) - Methanosarcina barkeri.</Hit_def>
+  <Hit_accession>13758</Hit_accession>
+  <Hit_len>346</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>6.01258e-07</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>18</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRDNDVWWVDQR--------------RCIGCKSCMVACPYGAMTVTVVNEQAQALK--------CDLCHHRAEGPACVAACPTQALRVMVPAE</Hsp_qseq>
+      <Hsp_hseq>LIYSPEKCIGCGTCVQACPKGNLAIGAVGAITRGLVDADFLEMKERE-----ACLVC--GICAKACPTGALEMKQEGKTITDKSYLFRAMKPTSVNESCVHCGLCEDICPQGCIEVTRDISADGKLKLVGKTNIDTECCVHCG---WCAAVCPVNAISVEKPFE</Hsp_hseq>
+      <Hsp_midline>LI + ++CIGC TC  AC   +     V A++          +K  +     AC  C    CA  CP GA++   +   +  +               C+ C  C   CP G + VT        LK         + C H      C A CP  A+ V  P E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>1.10606e-06</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>QRCIGCRTCEVACAV-AHQQAQDVAALSTNHFAPRIRVVKSGDISTATA-CRQCEDAPCASVCPQGAIQRDNDVWW-----------VDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALK---CDLCHHRAEGPACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>EACLVCGICAKACPTGALEMKQEGKTITDKSYL--FRAMKPTSVNESCVHCGLCED-----ICPQGCIEVTRDISADGKLKLVGKTNIDTECCVHCGWCAAVCPVNAISVEKPFEGHWARDEDVCQTCH------TCVEVCPANAI</Hsp_hseq>
+      <Hsp_midline>+ C+ C  C  AC   A +  Q+   ++   +    R +K   ++ +   C  CED     +CPQG I+   D+             +D   C+ C  C   CP  A++V    E   A     C  CH       CV  CP  A+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>2.75694e-06</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>147</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>147</Hsp_align-len>
+      <Hsp_qseq>QRCIGCRTCEVACAVAH-QQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRDNDV---WWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQ-ALKCDLCHHRAEG----PACVAACPTQALRVMVPAEL</Hsp_qseq>
+      <Hsp_hseq>ESCVHCGLCEDICPQGCIEVTRDISADG------KLKLVGKTNIDTE-CCVHC--GWCAAVCPVNAISVEKPFEGHWARDEDVCQTCHTCVEVCPANA----IFNKKAKPGERVEKITHRPDACIYCGACAVACPVDAIDVRKTAIL</Hsp_hseq>
+      <Hsp_midline>+ C+ C  CE  C     +  +D++A        ++++V   +I T   C  C    CA+VCP  AI  +      W  D+  C  C +C+  CP  A    + N++A+   + +   HR +      AC  ACP  A+ V   A L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9032</Hit_id>
+  <Hit_def>gnl|TC-DB|P11349|5.A.3.1.1 Respiratory nitrate reductase 1 beta chain (EC 1.7.99.4) - Escherichia coli.</Hit_def>
+  <Hit_accession>9032</Hit_accession>
+  <Hit_len>512</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>1.23351e-06</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>184</Hsp_hit-from>
+      <Hsp_hit-to>252</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCPQGAIQR--DNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAE</Hsp_qseq>
+      <Hsp_hseq>CEHCLNPACVATCPSGAIYKREEDGIVLIDQDKCRGWRMCITGCPYKKIYFNWKSGKSE--KCIFCYPRIE</Hsp_hseq>
+      <Hsp_midline>C  C +  C + CP GAI +  ++ +  +DQ +C G + C+  CPY  +     + +++  KC  C+ R E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8678</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AAL3|3.D.11.1.1 Ferredoxin-type protein NapG OS=Escherichia coli (strain K12) OX=83333 GN=napG PE=1 SV=1</Hit_def>
+  <Hit_accession>8678</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>1.56226e-06</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>100</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>ANAQRCIGCRTCEVACAVAHQQAQDVAA---LSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRDND---------VWWVDQRRCIG-----CKSCMVACP</Hsp_qseq>
+      <Hsp_hseq>AFASACVRCGQCVQACPYDTLKLATLASGLSAGTPYFVAR-------DIP----CEMCEDIPCAKVCPSGALDREIESIDDARMGLAVLVDQENCLNFQGLRCDVCYRECP</Hsp_hseq>
+      <Hsp_midline>A A  C+ C  C  AC     +   +A+     T +F  R       DI     C  CED PCA VCP GA+ R+ +            VDQ  C+      C  C   CP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16110</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8EXV0|3.D.1.9.3 Putative uncharacterized protein OS=Leptospira interrogans serogroup Icterohaemorrhagiae serovar Lai (strain 56601) GN=LB_107 PE=4 SV=1</Hit_def>
+  <Hit_accession>16110</Hit_accession>
+  <Hit_len>99</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>2.32053e-06</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>104</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>55</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCPQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAM</Hsp_qseq>
+      <Hsp_hseq>CRNCKYTYCAAVCPVEAFREGTDCLYIEPSVCIDCNKCRPECPVEAI</Hsp_hseq>
+      <Hsp_midline>CR C+   CA+VCP  A +   D  +++   CI C  C   CP  A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9305</Hit_id>
+  <Hit_def>gnl|TC-DB|P19318|5.A.3.1.2 Respiratory nitrate reductase 2 beta chain (EC 1.7.99.4) - Escherichia coli.</Hit_def>
+  <Hit_accession>9305</Hit_accession>
+  <Hit_len>514</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>3.07247e-06</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>126</Hsp_query-to>
+      <Hsp_hit-from>183</Hsp_hit-from>
+      <Hsp_hit-to>251</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>CRQCEDAPCASVCPQGAIQR--DNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAE</Hsp_qseq>
+      <Hsp_hseq>CEHCLNPSCVATCPSGAIYKREEDGIVLIDQDKCRGWRLCISGCPYKKIYFNWKSGKSE--KCIFCYPRIE</Hsp_hseq>
+      <Hsp_midline>C  C +  C + CP GAI +  ++ +  +DQ +C G + C+  CPY  +     + +++  KC  C+ R E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14241</Hit_id>
+  <Hit_def>gnl|TC-DB|Q59575|3.D.8.1.1 TUNGSTEN-CONTAINING FORMYLMETHANOFURAN DEHYDROGENASE ISOENZYME II SUBUNIT F (EC 1.2.99.5) (POLYFERREDOXIN) - Methanobacterium thermoautotrophicum (strain Marburg / DSM 2133).</Hit_def>
+  <Hit_accession>14241</Hit_accession>
+  <Hit_len>349</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>6.8843e-06</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>154</Hsp_hit-from>
+      <Hsp_hit-to>291</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>CIGCRTCEVACAV-AHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCE-DA--PCASVCPQGA----IQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAEGPACVAACPTQALRVMVP</Hsp_qseq>
+      <Hsp_hseq>CIYCGMCEEMCPVDAIEIEHQIPSSSSPTVATDINVDEDKCVHCGICKRICPVDAIMQVCRICPYGEYEIKVPEVTGTSYIDPELCVNCGWCQEICPVDAATVTKPFEGELIIDQDTCQ---ACETCVMACPCNVLSFPKP</Hsp_hseq>
+      <Hsp_midline>CI C  CE  C V A +    + + S+   A  I V +   +      R C  DA      +CP G     +       ++D   C+ C  C   CP  A TVT   E    +  D C        CV ACP   L    P</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>5.75384e-05</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>LIANAQRCIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRDNDV----------WWVDQRRCIGCKSCMVACPYGAMTV--TVVNEQAQALKCDL------CHHRAEGPACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>ILIDENKCVLCGMCSSICPFQALDLQ-IDGTSIKELAEYPKILKSAEIDDET-CIQCK--ACETACPQDAITITRELPERKDLITGEIEIDKDTCIYCGMCEEMCPVDAIEIEHQIPSSSSPTVATDINVDEDKCVHCG---ICKRICPVDAI</Hsp_hseq>
+      <Hsp_midline>++ +  +C+ C  C   C       Q +   S    A   +++KS +I   T C QC+   C + CPQ AI    ++            +D+  CI C  C   CP  A+ +   + +  +  +  D+      C H      C   CP  A+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21</Hit_id>
+  <Hit_def>gnl|TC-DB|7ZC6_B|3.D.6.1.5 Chain B, RnfB</Hit_def>
+  <Hit_accession>21</Hit_accession>
+  <Hit_len>274</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000129589</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>148</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>CASVCPQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAEG--------------PACVAACPTQALRVM</Hsp_qseq>
+      <Hsp_hseq>CVQVCAFDAIHVENGIAVVDEEACTGCGACVSICPKSVIELTPMSKKVRI----SCNSHDKGIEVKNACSVGCLSCGLCVRNCPSEAITMV</Hsp_hseq>
+      <Hsp_midline>C  VC   AI  +N +  VD+  C GC +C+  CP   + +T ++++ +      C+   +G                CV  CP++A+ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11487</Hit_id>
+  <Hit_def>gnl|TC-DB|P77223|3.D.6.1.4 Electron transport complex subunit RsxB OS=Escherichia coli (strain K12) GN=rsxB PE=1 SV=1</Hit_def>
+  <Hit_accession>11487</Hit_accession>
+  <Hit_len>192</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.000623566</Hsp_evalue>
+      <Hsp_query-from>84</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>112</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>27</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>VDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAEGPACVAACPTQALRVMVPAE</Hsp_qseq>
+      <Hsp_hseq>IDENNCIGCTKCIQACPVDA--IVGATRAMHTVMSDLC---TGCNLCVDPCPTHCISLQPVAE</Hsp_hseq>
+      <Hsp_midline>+D+  CIGC  C+ ACP  A  +         +  DLC        CV  CPT  + +   AE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2518</Hit_id>
+  <Hit_def>gnl|TC-DB|C4N8U5|3.D.6.1.2 RnfB OS=Acetobacterium woodii GN=rnfB PE=4 SV=1</Hit_def>
+  <Hit_accession>2518</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00063546</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>139</Hsp_query-to>
+      <Hsp_hit-from>148</Hsp_hit-from>
+      <Hsp_hit-to>218</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>75</Hsp_align-len>
+      <Hsp_qseq>CASVCPQGAIQRDND-VWWVDQRRCIGCKSCMVACPYGAMTVTVVNEQAQALKCDLCHHRAEGPACVAACPTQAL</Hsp_qseq>
+      <Hsp_hseq>CKAVCPFDAIVIGEDGLPKVDPEKCTSCGKCVEACPKSIMTL-VPEAQEVIVK---CHNFDKGKIARLSCTTACI</Hsp_hseq>
+      <Hsp_midline>C +VCP  AI    D +  VD  +C  C  C+ ACP   MT+ V   Q   +K   CH+  +G     +C T  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00085903</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>217</Hsp_hit-from>
+      <Hsp_hit-to>324</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>CIGCRTCEVACAVAHQQAQDVAALSTNHFAPRIRVVKSGDISTATACRQCEDAPCASVCPQGAIQRD----NDVWWVDQRRCIGCKSCMVACPYGAMTVTV-----VNEQAQALKCDLCHHRAEGPA</Hsp_qseq>
+      <Hsp_hseq>CIACGACVKACRFD--------AITVENNCAKIDYDK---------CRQCYE--CVDKCPMNCISGDVEYGKSTAYIIEENCIACGLCAKNCPVNAITGEIKKPPYVIDHDMCIGCGICFDKCRKSA</Hsp_hseq>
+      <Hsp_midline>CI C  C  AC           A++  +   +I   K         CRQC +  C   CP   I  D        ++ +  CI C  C   CP  A+T  +     V +    + C +C  +    A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11145</Hit_id>
+  <Hit_def>gnl|TC-DB|P61221|3.A.1.31.4 ATP-binding cassette sub-family E member 1 OS=Homo sapiens OX=9606 GN=ABCE1 PE=1 SV=1</Hit_def>
+  <Hit_accession>11145</Hit_accession>
+  <Hit_len>599</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>0.00098559</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>106</Hsp_query-to>
+      <Hsp_hit-from>38</Hsp_hit-from>
+      <Hsp_hit-to>72</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>CASVCPQGAIQRDNDVWWVDQRRCIGCKSCMVACPYGAMTV</Hsp_qseq>
+      <Hsp_hseq>CIEVTPQSKIA------WISETLCIGCGICIKKCPFGALSI</Hsp_hseq>
+      <Hsp_midline>C  V PQ  I       W+ +  CIGC  C+  CP+GA+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>90</Statistics_hsp-len>
+      <Statistics_eff-space>565267352</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

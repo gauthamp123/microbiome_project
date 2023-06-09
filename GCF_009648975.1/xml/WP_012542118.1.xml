@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_012542118.1 MULTISPECIES: Na/Pi cotransporter family protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>550</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_012542118.1 MULTISPECIES: Na/Pi cotransporter family protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>550</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8806</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AF43|2.A.58.2.1 Uncharacterized protein yjbB - Escherichia coli.</Hit_def>
+  <Hit_accession>8806</Hit_accession>
+  <Hit_len>543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>288.886</Hsp_bit-score>
+      <Hsp_score>738</Hsp_score>
+      <Hsp_evalue>7.11478e-91</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>535</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>533</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>167</Hsp_identity>
+      <Hsp_positive>298</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>531</Hsp_align-len>
+      <Hsp_qseq>LIHLAGAIALLLWGSHMISTALQRGFGTPLRNWMGRHLTNRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQLMSFNMEIAIPLLLLAGFVVFKLRDHSSFESVGCALIGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLN--AGSAVARRLPVGNLMVRLSGCALALLLLPLLMAIARKSGLNTPQLVVWFHTAFSVALALLFIGLNVPMARFLERLFPEEERVGDPGMPMYLDDAGLEVAYIGLSNSVRESLRAADMLTIMLDRLLMLFVTQEKQAADDIRQLEQSVDLLSAAVRAYLADIGQDGLNDADADRAQEILMFIINVEHAGDILSSNLTQLATRRARRGEHFNDFELHHIRLLHAELLTSLNLGIAAFLREDLSAAHQLVQRKETIRQLEASASREHFKKLREDKNAWAESGDIFQRVLRDYRRVHHHIAAVAYPVIDR</Hsp_qseq>
+      <Hsp_hseq>LLHLLSAVALLVWGTHIVRTGVMRVFGARLRTVLSRSVEKKPLAFCAGIGVTALVQSSNATTMLVTSFVAQDLVALAPALVIVLGADVGTALMARILTFDLSWLSPLLIFIGVIFFLGRKQSRAGQLGRVGIGLGLILLALELIVQAVTPITQANGVQVIFASLTGDILLDALIGAMFAIISYSSLAAVLLTATLTAAGIISFPVALCLVIGANLGSGLLAMLNNSAANAAARRVALGSLLFKLVGSLIILPFVHLLAETMGKLSLPKAELVIYFHVFYNLVRCLVMLPFVDPMARFCKTIIRDEPELDTQLRPKHLDVSALDTPTLALANAARETLRIGDAMEQMMEGLNKVMHGEPRQ-EKELRKLADDINVLYTAIKLYLARMPKEELAEEESRRWAEIIEMSLNLEQASDIVERMGSEIADKSLAARRAFSLDGLKELDALYEQLLSNLKLAMSVFFSGDVTSARRLRRSKHRFRILNRRYSHAHVDRLHQQNVQSIETSSLHLGLLGDMQRLNSLFCSVAYSVLEQ</Hsp_hseq>
+      <Hsp_midline>L+HL  A+ALL+WG+H++ T + R FG  LR  + R +  +  A  +GIG+T ++QSS A +M+ TSF A   ++LAPAL ++LGA++G+ L+ ++++F++    PLL+  G + F  R  S    +G   IGLGL+LLAL L+   +  I        +   L GDI +  L+ A+  ++ +SS+A +LL A+L   G ++   AL LV+GAN+G  L  +LN  A +A ARR+ +G+L+ +L G  + L  + LL     K  L   +LV++FH  +++   L+ +    PMARF + +  +E  +     P +LD + L+   + L+N+ RE+LR  D +  M++ L  +   + +Q   ++R+L   +++L  A++ YLA + ++ L + ++ R  EI+   +N+E A DI+    +++A +       F+   L  +  L+ +LL++L L ++ F   D+++A +L + K   R L    S  H  +L +      E+  +   +L D +R++    +VAY V+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19917</Hit_id>
+  <Hit_def>gnl|TC-DB|RLG13389|2.A.58.2.7 Na/Pi cotransporter family protein [Candidatus Nanohaloarchaeota archaeon]</Hit_def>
+  <Hit_accession>19917</Hit_accession>
+  <Hit_len>535</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>149.828</Hsp_bit-score>
+      <Hsp_score>377</Hsp_score>
+      <Hsp_evalue>3.78976e-39</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>536</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>534</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>120</Hsp_identity>
+      <Hsp_positive>240</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>535</Hsp_align-len>
+      <Hsp_qseq>TLLIHLAGAIALLLWGSHMISTALQRGFGTPLRNWMGRHLTNRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQLMSFNM-EIAIPLLLLAGFVVFKLRDHSSFESVGCALIGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLNAGSAV--ARRLPVGNLMVRLSGCALALLLLPLLMAIARKSGLNTPQLVVWFHTAFSVALALLFIGLNVPMARFLERLFPEEERVGDPGMPMYLDDAGLEVAYIGLSNSVRESLRAADMLTIMLDRLLMLFVTQEKQAADDIRQLEQSVDLLSAAVRAYLADIGQDGLNDADADRAQEILMFIINVEHAGDILSSNLTQLATRRARRGEHFNDFELHHIRLLHAELLTSLNLGIAAFLREDLSAAHQLVQRKETIRQLEASASREHFKKLREDKNAWAESGDIFQRVLRDYRRVHHHIAAVAYPVIDRL</Hsp_qseq>
+      <Hsp_hseq>TVLFGLFGGLGLFLYSLSLLSGGMQKAAGNRIKNLLKKFTDTPLKGAFVGCTVTGIIQSSSITTVVVISLINSGIMTLKQSAGIIFGANVGTTVTAQLVAFPIGKFALPIIAIGALVYFMKPKNDSY--AGQILLGFGLLFLGMDIMKDGVAPLKESEYFISILADFAKTPLLGILASAIFTGLIQSSSATTAIIIAMAQEDVIGLSAAIPLIMGANIGTCITALLASYGATKSAKRAAILHVLFNIAGVLLFLPFINLFTHVSSLTATDVPRQIANAHTIFNVTSTTVFLFFIPVFIVLTKKIIPGKEIIIDSGV-KFLDNNYLRIPSVALDCVEKEAMRMAKISFDMLKDSENVLLDNKKDLIKRVYRHEDVVDNLLQAIGTYSIKLSQSPLTKQDARRLSAINHNITDFERIAD-HAINLVESAKEIKDENVSFTKKAHEELSIMFDNSILIYQTAIWTVRTRDAKKVKKVKMLENIIDKNEKDFEHNHIVRLKR-KICNPAAGIIFTDILHNLERIGDH----SMNVVDRV</Hsp_hseq>
+      <Hsp_midline>T+L  L G + L L+   ++S  +Q+  G  ++N + +           G  +TGI+QSS+  +++  S   +G ++L  +  ++ GAN+G+T+  QL++F + + A+P++ +   V F    + S+   G  L+G GL+ L + ++   +  ++ +  F +++        + +L +A+ T L  SS A   +I ++A    +  S A+ L++GANIG  +  +L +  A   A+R  + +++  ++G  L L  + L   ++  +  + P+ +   HT F+V    +F+          +++ P +E + D G+  +LD+  L +  + L    +E++R A +   ML     + +  +K     + + E  VD L  A+  Y   + Q  L   DA R   I   I + E   D  + NL + A         F       + ++    +      I      D     ++   +  I + E      H  +L+  K     +G IF  +L +  R+  H    +  V+DR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12520</Hit_id>
+  <Hit_def>gnl|TC-DB|Q0W3W9|2.A.58.2.6 Putative Na(+)/phosphate symporter OS=Methanocella arvoryzae (strain DSM 22066 / NBRC 105507 / MRE50) GN=RCIX1703 PE=4 SV=1</Hit_def>
+  <Hit_accession>12520</Hit_accession>
+  <Hit_len>558</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>141.739</Hsp_bit-score>
+      <Hsp_score>356</Hsp_score>
+      <Hsp_evalue>3.30158e-36</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>515</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>508</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>231</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>514</Hsp_align-len>
+      <Hsp_qseq>LIHLAGAIALLLWGSHMISTALQRGFGTPLRNWMGRHLTNRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQLMSFNMEIAIPLLLLAGFVVFKLRDHSSFESVGCALIGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIG-GALPPVLNAGSAV-ARRLPVGNLMVRLSGCALALLLLPLLMAIARKSGLNTPQLVVWFHTAFSVALALLFIGLNVPMARFLERLFPEEE---RVGDPGMPMYLDDAGLEVAYIGLSNSVRESLRAADMLTIMLDRLLMLFVTQEKQAADDIRQLEQSVDLLSAAVRAYLADIGQDGLNDADADRAQEILMFIINVEHAGDILSSNLTQLATRRARRGEHFNDFELHHIRLLHAELLTSLNLGIAAFLREDLSAAHQLVQRKETIRQLEASASREHFKKLREDKNAWAESGDIFQRVL</Hsp_qseq>
+      <Hsp_hseq>LFAIIPGLILFLYGIEHFSGEILKVAGERFRSLLGKLTSTPLRGALLGAGVTAIVQSSTATTVIVIGLVNAGTISFEQSLGVIIGANVGATITAQLVAFKLTVFAPVFILIGFLLSIAGRNYKF--LGRPIFYFGLVFYSLTLISSAVEPLKSDPGLLALLSSF-NDPVIALAAGILFTVLLQSSSVTIGLAVILAGSGLISLDQAIPLMLGANIGTTATGLIVSYGMSLHSKRAAVAHLLCSLLGVAIFIPFLGQFTALVLATSGDAGMQVANAHLIFNVIRAAIFLAAIRPFKALVEWLVPGNEPEILFRTEHLPDRVPDDTVE----AFDLIVKELKHSTDLIITLFDESMRTLETPKSGDIQKIEKLESLSDYLDERIERAILEISQRDMGAKEAGQTVLLVRISSAIENLGD-AGEDVGSLAKSIDEKGLTLSPESREELMTVYRTLRANLEIIRDSLPAITPAAAEQMKQNDAAMREQINASYRKHMHRLYTQK---AYAGTMIVEVL</Hsp_hseq>
+      <Hsp_midline>L  +   + L L+G    S  + +  G   R+ +G+  +      L G G+T I+QSSTA +++      AGT+S   +L V++GAN+G+T+  QL++F + +  P+ +L GF++     +  F  +G  +   GL+  +L L+   ++ ++  P   A++     D  IAL    L T+L  SS   I L   LAG+G ++   A+ L+LGANIG  A   +++ G ++ ++R  V +L+  L G A+ +  L    A+   +  +    V   H  F+V  A +F+    P    +E L P  E         +P  + D  +E         V+E   + D++  + D  +    T +      I +LE   D L   +   + +I Q  +   +A +   ++     +E+ GD    ++  LA     +G   +      +  ++  L  +L +   +      +AA Q+ Q    +R+   ++ R+H  +L   K   A +G +   VL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6417</Hit_id>
+  <Hit_def>gnl|TC-DB|M7AKZ4|2.A.58.2.2 Sodium-dependent phosphate transporter OS=Fusobacterium nucleatum CC53 GN=H848_01230 PE=4 SV=1</Hit_def>
+  <Hit_accession>6417</Hit_accession>
+  <Hit_len>539</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.161</Hsp_bit-score>
+      <Hsp_score>287</Hsp_score>
+      <Hsp_evalue>2.92632e-27</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>525</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>529</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>246</Hsp_positive>
+      <Hsp_gaps>53</Hsp_gaps>
+      <Hsp_align-len>549</Hsp_align-len>
+      <Hsp_qseq>LLIHLAGAIALLLWGSHMISTALQRGFGTPLRNWMGRHLTNRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQLMSFNM-EIAIPLLLLAGFVVFKLRDHSSFESVGCALIGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDIFIALL----VAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLNAGSAV--ARRLPVGNLMVRLSGC-------ALALLLLPLLMAIARKSGLNTPQLVVWFHTAFSVALALL---FIGLNVPMARFLERLFPEEE-RVGD-PGMPMYLDDAGLEVAYIGLSNSV----------RESLRAADMLTIMLDRLLMLFVTQEKQAADDIRQLEQSVDLLSAAVRAYLADIGQDGLNDADADRAQEILMFIINVEHAGDILSSNLTQLATRRARRGEHFNDFELHHIRLLHAELLTSLNLGIAAFLREDLSAAHQLVQRKETIRQLEASASREHFKKLREDKNAWAESGDIFQRVLRDYRRVHHHI</Hsp_qseq>
+      <Hsp_hseq>IILQLIGGLGLFLYGMEHMSTSMQKIAGSKLKKILASLTNNRIFGILVGIIITALVQSSSVSTVMTIGFVNASLLTLKQALGVILGANIGTTITGWLLALNIGKYGLPIVGLASILFMFMKKEKARTNLS-AIIGVGLIFFGLQLMSQALSPLKDMPEFIEMFKMFKVDSYFGLLKVAATGAIITALIQSSAATIGITIALATQGLIDYQAAVALVLGENVGTTITALLASLGAKPNAKRAAYAHTLINLIGVIWVTSIFRIYLHFLNLFVDPVNHMG----AAIAAAHTIFNISNVIILTPFVSLLDKFLLFVVKDTGEDEVRVTKLASLKMTLPGVIIEQTKIEVNSMVTMIEDVFLKLEESLKEKDKIAKYNDSII---EAEDKLDLYEKEIYDSNFSLLSKSLSNKL--IEDTRMNLLACDEYETIGDYQNRIANRLYMLYENSIELDETRAKM-----TFKLHS---LAVELFNDISRAVKTEEKELYPIG---MKKYQALKTYYKEVKREHFSR-SEDIPARLNTG--YLDIINYYKRIADHI</Hsp_hseq>
+      <Hsp_midline>+++ L G + L L+G   +ST++Q+  G+ L+  +     NR   +L GI IT ++QSS+  ++M   F  A  L+L  AL V+LGANIG+T+   L++ N+ +  +P++ LA  +   ++   +  ++  A+IG+GL+   L L+   L  ++  P F  + +  + D +  LL      A++T L  SS A I +  +LA  G +    A+ LVLG N+G  +  +L +  A   A+R    + ++ L G         + L  L L +      G      +   HT F+++  ++   F+ L      F+ +   E+E RV     + M L    +E   I +++ V           ESL+  D +    D ++     ++K    +    + +  LLS ++   L  I    +N    D  + I  +   + +   +L  N  +L   RA+       F+LH    L  EL   ++  +    +E        +++ + ++       REHF +  ED  A   +G  +  ++  Y+R+  HI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10940</Hit_id>
+  <Hit_def>gnl|TC-DB|P54463|2.A.58.2.5 Uncharacterized protein YqeW OS=Bacillus subtilis (strain 168) OX=224308 GN=yqeW PE=4 SV=2</Hit_def>
+  <Hit_accession>10940</Hit_accession>
+  <Hit_len>307</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>110.923</Hsp_bit-score>
+      <Hsp_score>276</Hsp_score>
+      <Hsp_evalue>4.74429e-27</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>307</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>304</Hsp_align-len>
+      <Hsp_qseq>LLIHLAGAIALLLWGSHMISTALQRGFGTPLRNWMGRHLTNRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQLMSFNMEIAIPLLLLAGFVVFKLRDHSSFESVGCALIGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLNA--GSAVARRLPVGNLMVRLSGCALALLLLPLLMAIARKSGLNTPQLVVWFHTAFSVALALLFIGLNVPMARFLERLFP</Hsp_qseq>
+      <Hsp_hseq>ILISFTALILFFLAGMNMLRKGLISMAYSKIEERLLLFTDHPLKAFLISIVFTGILQSSSAFMVIVIGFVSAGVLSFKRTIPMILGTNVGSTFTTEFIAIKMDIVIWVLLIGGLLFF-LTGRYPLKQLGTSFLGLGIIFFCISGFSHLAGPLTKLKTGADVLYHVNDSNWSALLIGMVLTAIIHSSSVCIGILMSFMNEGIIGLTQAMSVVLGSNIGTCITAVMAAVSGGYAAKQTAYAHVVFNVLGVALVLPFLTAATGFVEQLSPDPAQKIAHFSLLFNVVTALLFLPLTNLFYRLIHLLIP</Hsp_hseq>
+      <Hsp_midline>+LI     I   L G +M+   L     + +   +     +   A L  I  TGILQSS+A  ++   F +AG LS    + ++LG N+GST   + ++  M+I I +LL+ G + F L      + +G + +GLG++   +         +        V+  +    + ALL+  +LT + HSS   I ++ S    G +  + A+ +VLG+NIG  +  V+ A  G   A++    +++  + G AL L  L        +   +  Q +  F   F+V  ALLF+ L     R +  L P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|875</Hit_id>
+  <Hit_def>gnl|TC-DB|A8LPG6|2.A.58.2.4 Na+/Pi-cotransporter OS=Dinoroseobacter shibae (strain DFL 12) GN=Dshi_0543 PE=4 SV=1</Hit_def>
+  <Hit_accession>875</Hit_accession>
+  <Hit_len>616</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>107.457</Hsp_bit-score>
+      <Hsp_score>267</Hsp_score>
+      <Hsp_evalue>1.39609e-24</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>324</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>351</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>335</Hsp_align-len>
+      <Hsp_qseq>LAGAIALLLWGSHMISTALQRGFGTPLRNWMGRHLTNRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTL---VVQLMSFNMEI---AIPLLLLAGFVVFKLRDHSSFESVGCALIGLGLMLLALHLL----GGTLQDIEVTPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLNAGSA--VARRLPVGNLMVRLSGCALALLLL-PLLMAIARKSGL-------NTPQLVVWFHTAFSVALALLFIGLNVPMARFLERLFPEEERVGDPGMPMYLDDA</Hsp_qseq>
+      <Hsp_hseq>IAAGVAIFLFGMLMLEDGFKSFGGGTLERLLERTTDSVPRALSFGIVATTLLQSSSLVSIVTISFLSAGLITLVGGVGIIFGANIGTTTGAWLVAGLGLKVDIAAYAMPMIAISIVLVF--QKSKVARGIGYALGGLGFLFLGIHYMKEGFDAFKDEIDLT---RFALSGLLG-LAVYSLIGTAATVVMQSSHATMVLILTALAAGQISYDNALALAIGANIGTTITAMIGAIGANYQGKRLALAHLIFNLVTAGVALVLIDPLRQSVDWISDLVGIAATDFTMKLAV-FHTIFNVLGVVLMLPFLSRLIAFLERRIVEP--VPDISLPRYLNEA</Hsp_hseq>
+      <Hsp_midline>+A  +A+ L+G  M+    +   G  L   + R   +   AL  GI  T +LQSS+ VS++  SF +AG ++L   + ++ GANIG+T    +V  +   ++I   A+P++ ++  +VF  +       +G AL GLG + L +H +         +I++T      + GL G + +  L+    T++  SS A ++LI +    G ++   AL L +GANIG  +  ++ A  A    +RL + +L+  L    +AL+L+ PL  ++   S L        T +L V FHT F+V   +L +     +  FLER   E   V D  +P YL++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1685</Hit_id>
+  <Hit_def>gnl|TC-DB|B2A3B7|2.A.58.2.3 Na/Pi-cotransporter family protein/PhoU family protein OS=Natranaerobius thermophilus (strain ATCC BAA-1301 / DSM 18059 / JW/NM-WN-LF) GN=Nther_1464 PE=4 SV=1</Hit_def>
+  <Hit_accession>1685</Hit_accession>
+  <Hit_len>302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>3.67644e-09</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>292</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>286</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>247</Hsp_align-len>
+      <Hsp_qseq>GIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQLMSFNME-IAIPLLL--LAGFVV---FKLRDHSSFESVGCALIGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALP-PVLNAGSAVARRLPVGNLMVRLSGCALALL-LLPLLMAIARKSGLNTPQLVVWFHTAFSVALALLFI</Hsp_qseq>
+      <Hsp_hseq>GIFLTALTQSSSAVGVIVLVLLDKRVVTFKQTGFFLAGSNIGTTISGQIFTLPIEKLIIPMFIISLVGFLLGYRFWIMQKVSKFLFALSIIFTGLQIISSVTLYYRDSLVTVFEYFSSIFQ--------AFLIGIILTAISQSSSLIIGILIVLSGKHIIAPAYATAAVMGLNVGTSTTLMIASLGLSKHGKLGAVFQVVYNSICALLVFGFFPCFLQIVELISRTPHQFVANSHTFFNLVAGILLV</Hsp_hseq>
+      <Hsp_midline>GI +T + QSS+AV ++         ++       + G+NIG+T+  Q+ +  +E + IP+ +  L GF++   F +    S      ++I  GL +++   L      + V   F ++ Q        A L+  +LT +  SS  +I ++  L+G   + P+ A   V+G N+G +    + + G +   +L     +V  S CAL +    P  + I         Q V   HT F++   +L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20143</Hit_id>
+  <Hit_def>gnl|TC-DB|SFO07861.1|2.A.58.1.8 solute carrier family 34 (sodium-dependent phosphate cotransporter) [Algoriphagus ornithinivorans]</Hit_def>
+  <Hit_accession>20143</Hit_accession>
+  <Hit_len>350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.373</Hsp_bit-score>
+      <Hsp_score>124</Hsp_score>
+      <Hsp_evalue>2.58317e-07</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>202</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQLMSFNMEI---AIPLLLLAGFVVFKLRDHSSFESVGCALIGLGLMLLALHLLGGTLQDIEV-TPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLA</Hsp_qseq>
+      <Hsp_hseq>NPFVSLFIGLLMTALIQSSSTVTASIVAVVAAGNLSLEQAVPMVMGANIGTTLTSTLVSFSYVMKKKEFKRALSAGII------HDIFN------IFTVLILLPLELYFGILSKLAVYVAQFFSDNDNLSGPVFYNRVFTRPLTQWVSDTINIPFLTTILA</Hsp_hseq>
+      <Hsp_midline>N + +L  G+ +T ++QSS+ V+    +  AAG LSL  A+ +++GANIG+TL   L+SF+  +        L AG +      H  F       I   L+LL L L  G L  + V    F +    L G +F   +    LT     ++ +  L   LA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16536</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8N130|2.A.58.1.3 Type IIc Na+/Pi cotransporter (Hypothetical protein FLJ38680) - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>16536</Hit_accession>
+  <Hit_len>599</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>5.71e-05</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>102</Hsp_query-to>
+      <Hsp_hit-from>355</Hsp_hit-from>
+      <Hsp_hit-to>430</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>SHMISTALQRGFGTPLRNWMGRHLTNRWTALLSGIGITGILQSSTAVSMMATSFTAAGTLSLAPALAVMLGANIGSTLVVQL</Hsp_qseq>
+      <Hsp_hseq>AQVVRTVINADFPFPL-GWLGGYL-----AVLAGAGLTFALQSSSVFTAAVVPLMGVGVISLDRAYPLLLGSNIGTTTTALL</Hsp_hseq>
+      <Hsp_midline>+ ++ T +   F  PL  W+G +L     A+L+G G+T  LQSS+  +         G +SL  A  ++LG+NIG+T    L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3571</Hit_id>
+  <Hit_def>gnl|TC-DB|E1AW23|2.A.58.1.7 NaPi-IIb cotransporter protein OS=Tachysurus fulvidraco PE=2 SV=2</Hit_def>
+  <Hit_accession>3571</Hit_accession>
+  <Hit_len>621</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000229765</Hsp_evalue>
+      <Hsp_query-from>138</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>312</Hsp_hit-from>
+      <Hsp_hit-to>494</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>185</Hsp_align-len>
+      <Hsp_qseq>IGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDI------------------FIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLNA----GSAVARRLPVG--NLMVRLSGCAL--ALLLLPLLMAIARKSGLNTPQLVVWFHTAFSVALALLFIGLNV</Hsp_qseq>
+      <Hsp_hseq>LAVGLILLAGSLLVLCICLILIVKLLNSMLRGQVASIIKKIINTDFPFPFRWVTGYLAIMVGAVMTFIVQSSSVFTSAITPLVGLGVISIERAYPLSLGSNIGTTSTAILAALASPGETLTNSLQIAPVHLFFNISGIVLWYVLPFMRVPIRMAKSLGHVTAQ-YRWF-AVFYVLLCFFFIPLLV</Hsp_hseq>
+      <Hsp_midline>+ +GL+LLA  LL   +  I +  + +++++G    I                  ++A++V A++T +  SS      I  L G G ++   A  L LG+NIG     +L A    G  +   L +   +L   +SG  L   L  + + + +A+  G  T Q   WF   F V L   FI L V</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000691958</Hsp_evalue>
+      <Hsp_query-from>137</Hsp_query-from>
+      <Hsp_query-to>280</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>LIGLGLMLLALHLLGGTLQDIEV-TPVFHAVMQGLQGDIF----------IALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLNAGSAVA-----RRLPVGNLMVRLSGCALALLLLPLLMAIARKSGLNTPQLVVWFH</Hsp_qseq>
+      <Hsp_hseq>LVSVVKLVLLLGLLYSFVCSLDVLSSAFQLVGGKAAGDIFQENQVLSNPLAGLVIGVLVTLLVQSSSTSSSIVVSMVSSGLLQVSTAVPIIMGTNIGTSVTNTVVAMTQAGDRNKFRRAFAGATVHDFFNWLSVLVLLPLEVATSYLYRL-TELIVSSFH</Hsp_hseq>
+      <Hsp_midline>L+ +  ++L L LL   +  ++V +  F  V     GDIF            L++  L+TLL  SS     ++ S+  +G L  STA+ +++G NIG ++   + A +        RR   G  +         L+LLPL +A +    L T  +V  FH</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5028</Hit_id>
+  <Hit_def>gnl|TC-DB|H2EJJ3|2.A.58.1.6 Type IIb Na-dependent phosphate cotransporter OS=Sus scrofa GN=Npt2B PE=2 SV=1</Hit_def>
+  <Hit_accession>5028</Hit_accession>
+  <Hit_len>671</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000537873</Hsp_evalue>
+      <Hsp_query-from>135</Hsp_query-from>
+      <Hsp_query-to>280</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>CALIGLGLMLLALHLLGGTLQDIEV-TPVFHAVMQGLQGDIFIA----------LLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIG----GALPPVLNAGSA-VARRLPVGNLMVRLSGCALALLLLPLLMAIARKSGLNTPQLVVWFH</Hsp_qseq>
+      <Hsp_hseq>CVFQGIGKFILILVFLYFFVCSLDVLSSAFHLVGGKVAGKFFTSNSIMSNPMSGMVIGVLVTVLIQSSSTSTSIVVSMVASSLLTVRSAIPIIMGANIGTSITNTLVALLQAGDRNEFRRAFAGATVHDFFNWLSVLVLLPLEAATGYLERL-TSTVVESFH</Hsp_hseq>
+      <Hsp_midline>C   G+G  +L L  L   +  ++V +  FH V   + G  F +          +++  L+T+L  SS     ++ S+  +  LT  +A+ +++GANIG      L  +L AG     RR   G  +         L+LLPL  A      L T  +V  FH</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7710</Hit_id>
+  <Hit_def>gnl|TC-DB|O87918|2.A.58.1.2 SODIUM DEPENDENT PHOSPHATE PUMP (NPTA PROTEIN) - Vibrio cholerae.</Hit_def>
+  <Hit_accession>7710</Hit_accession>
+  <Hit_len>382</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00097016</Hsp_evalue>
+      <Hsp_query-from>128</Hsp_query-from>
+      <Hsp_query-to>264</Hsp_query-to>
+      <Hsp_hit-from>202</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>137</Hsp_align-len>
+      <Hsp_qseq>SSFESVGCALIGLGLMLLALHLLGGTLQDIEVTPVFHAVMQGLQGDIFIALLVAALLTLLCHSSVAMILLIASLAGTGTLTPSTALVLVLGANIGGALPPVLNAGSAVARRLPVGNLMVRLSGCALALLLLPLLMAI</Hsp_qseq>
+      <Hsp_hseq>NTFGGVALIVLGIATIFVAITVMGKLMKSLMVGRAREILQNAIGRGPLHGIASGTVVTVLVQSSSTTTSLMVPLVGSGVLKVREIYPFTLGANIGTCITALL-AATAVSGEFAVFALQIALVHLSFNLMATVLIYGI</Hsp_hseq>
+      <Hsp_midline>++F  V   ++G+  + +A+ ++G  ++ + V      +   +       +    ++T+L  SS     L+  L G+G L         LGANIG  +  +L A +AV+    V  L + L   +  L+   L+  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>103</Statistics_hsp-len>
+      <Statistics_eff-space>3425880861</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

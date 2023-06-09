@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_072122197.1 MULTISPECIES: ethanolamine utilization protein EutJ [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>279</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_072122197.1 MULTISPECIES: ethanolamine utilization protein EutJ [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>279</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1263</Hit_id>
+  <Hit_def>gnl|TC-DB|AKM80379.1|3.A.11.1.5 Cell division protein FtsA [Candidatus Saccharibacteria bacterium GW2011_GWC2_44_17]</Hit_def>
+  <Hit_accession>1263</Hit_accession>
+  <Hit_len>350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>9.87435e-06</Hsp_evalue>
+      <Hsp_query-from>110</Hsp_query-from>
+      <Hsp_query-to>192</Hsp_query-to>
+      <Hsp_hit-from>150</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>SINVLESAGLEISHVLDEPTAVADLLQLDNAG-----VVDIGGGTTGIAIVKQGRVTYSADEATGGHHISLTLAGNRGIGLEEAEQYK</Hsp_qseq>
+      <Hsp_hseq>TIAACEAAGLTVNMVEPAINAVARVLKLTEEGHLPTVIVDIGAANTDIAVL-DGSVRVTGGIATGGNTFTLDIAKKLSVTLENAHQLK</Hsp_hseq>
+      <Hsp_midline>+I   E+AGL ++ V     AVA +L+L   G     +VDIG   T IA++  G V  +   ATGG+  +L +A    + LE A Q K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12004</Hit_id>
+  <Hit_def>gnl|TC-DB|Q01465|9.B.157.1.1 Rod shape-determining protein MreB OS=Bacillus subtilis (strain 168) GN=mreB PE=3 SV=3</Hit_def>
+  <Hit_accession>12004</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.71498e-05</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>38</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>LGIDLGTCDVVSMV-----VDRDGQPVAVCLDWADVV-----------------------RDGIVWDFFGAVTLVRRHL--ATLEQQLGCRFTHAATSFPPG---TDPRISINVLESAGLEISHVLDEPTAVA-----DLLQLDNAGVVDIGGGTTGIAIVKQGRVTYSADEATGG</Hsp_qseq>
+      <Hsp_hseq>LGIDLGTANTLVFVKGKGIVVREPSVVALQTDTKSIVAVGNDAKNMIGRTPGNVVALRPMKDGVIADYETTATMMKYYINQAIKNKGMFARKPYVMVCVPSGITAVEERAVIDATRQAGARDAYPIEEPFAAAIGANLPVWEPTGSMVVDIGGGTTEVAIISLGGIVTSQSIRVAG</Hsp_hseq>
+      <Hsp_midline>LGIDLGT + +  V     V R+   VA+  D   +V                       +DG++ D+    T+++ ++  A   + +  R  +     P G    + R  I+    AG   ++ ++EP A A      + +   + VVDIGGGTT +AI+  G +  S      G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8638</Hit_id>
+  <Hit_def>gnl|TC-DB|P0A9X4|9.B.157.1.3 Rod shape-determining protein MreB OS=Escherichia coli (strain K12) GN=mreB PE=1 SV=1</Hit_def>
+  <Hit_accession>8638</Hit_accession>
+  <Hit_len>347</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>3.119e-05</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>201</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>GIDLGTCDVVSMVVDRDGQPVAVCLDWADV----------------VRDGIVWDFFGAVTLVRRHLATLEQQLGCRFT-HAATSFPPGT---DPRISINVLESAGLEISHVLDEPTAVA-----DLLQLDNAGVVDIGGGTTGIAIVKQGRVTYSADEATGGHHISLTLAG----NRGIGLEEAEQYKRRH-AGEIWP</Hsp_qseq>
+      <Hsp_hseq>GIVLNEPSVVAIRQDRAGSPKSVAAVGHDAKQMLGRTPGNIAAIRPMKDGVIADFFVTEKMLQHFIKQVHSNSFMRPSPRVLVCVPVGATQVERRAIRESAQGAGAREVFLIEEPMAAAIGAGLPVSEATGSMVVDIGGGTTEVAVISLNGVVYSSSVRIGGDRFDEAIINYVRRNYGSLIGEATAERIKHEIGSAYP</Hsp_hseq>
+      <Hsp_midline>GI L    VV++  DR G P +V     D                 ++DG++ DFF    +++  +  +      R +       P G    + R      + AG     +++EP A A      + +   + VVDIGGGTT +A++    V YS+    GG      +      N G  + EA   + +H  G  +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18335</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9K8H5|9.B.157.1.2 Cell-shape determining protein OS=Bacillus halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 / C-125) GN=mreB PE=4 SV=1</Hit_def>
+  <Hit_accession>18335</Hit_accession>
+  <Hit_len>346</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>7.39708e-05</Hsp_evalue>
+      <Hsp_query-from>64</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>VRDGIVWDFFGAVTLVRRHL--ATLEQQLGCRFTHAATSFPPG---TDPRISINVLESAGLEISHVLDEPTAVA---DLLQLDNAG--VVDIGGGTTGIAIVKQGRVTYSADEATGG</Hsp_qseq>
+      <Hsp_hseq>MKDGVIADFETTATMLKYFIRQAQKNRSIFTRKPAVMVCVPSGITAVEKRAVEDATKQAGAKYAYTLEEPFAAAIGADLPVWEPTGSMVVDIGGGTTEVAIISLGGIVTSQSIRVAG</Hsp_hseq>
+      <Hsp_midline>++DG++ DF    T+++  +  A   + +  R        P G    + R   +  + AG + ++ L+EP A A   DL   +  G  VVDIGGGTT +AI+  G +  S      G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8449</Hit_id>
+  <Hit_def>gnl|TC-DB|P08107|1.A.33.1.3 Heat shock 70 kDa protein 1 (HSP70.1) (HSP70-1/HSP70-2) - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>8449</Hit_accession>
+  <Hit_len>641</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.00039691</Hsp_evalue>
+      <Hsp_query-from>117</Hsp_query-from>
+      <Hsp_query-to>199</Hsp_query-to>
+      <Hsp_hit-from>165</Hsp_hit-from>
+      <Hsp_hit-to>253</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>AGLEISHVLDEPTAVADLLQLDNAG-------VVDIGGGTTGIAIVKQGRVTYSADEATGGHHISLTLAGNRGIGLEEAEQYKRRHAGEI</Hsp_qseq>
+      <Hsp_hseq>AGLNVLRIINEPTAAAIAYGLDRTGKGERNVLIFDLGGGTFDVSILTIDDGIFEVKATAGDTHLGGEDFDNRLVN-HFVEEFKRKHKKDI</Hsp_hseq>
+      <Hsp_midline>AGL +  +++EPTA A    LD  G       + D+GGGT  ++I+      +      G  H+      NR +     E++KR+H  +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>97</Statistics_hsp-len>
+      <Statistics_eff-space>1419854982</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

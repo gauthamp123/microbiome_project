@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008807761.1 MULTISPECIES: septation protein A [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>179</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008807761.1 MULTISPECIES: septation protein A [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>179</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8607</Hit_id>
+  <Hit_def>gnl|TC-DB|P0A710|9.B.357.1.1 Probable intracellular septation protein A OS=Escherichia coli (strain K12) OX=83333 GN=yciB PE=1 SV=1</Hit_def>
+  <Hit_accession>8607</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>343.969</Hsp_bit-score>
+      <Hsp_score>881</Hsp_score>
+      <Hsp_evalue>4.3723e-123</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>167</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>MKQFLDFLPLVVFFAFYKLYDIYAATTALIVATAIVLIYSWVRYRKVEKMALITFVLVAVFGGLTLFFHNDEFIKWKVTVIYALFAGALLFSQWVMKKPLIQRMLGKELALPQQVWSRLNLAWAVFFILCGLANIYIAFWLPQNIWVNFKVFGLTALTLVFTLLSGIYIYRHMPQDD</Hsp_qseq>
+      <Hsp_hseq>MKQFLDFLPLVVFFAFYKIYDIYAATAALIVATAIVLIYSWVRFRKVEKMALITFVLVVVFGGLTLFFHNDEFIKWKVTVIYALFAGALLVSQWVMKKPLIQRMLGKELTLPQPVWSKLNLAWAVFFILCGLANIYIAFWLPQNIWVNFKVFGLTALTLIFTLLSGIYIYRHMPQED</Hsp_hseq>
+      <Hsp_midline>MKQFLDFLPLVVFFAFYK+YDIYAAT ALIVATAIVLIYSWVR+RKVEKMALITFVLV VFGGLTLFFHNDEFIKWKVTVIYALFAGALL SQWVMKKPLIQRMLGKEL LPQ VWS+LNLAWAVFFILCGLANIYIAFWLPQNIWVNFKVFGLTALTL+FTLLSGIYIYRHMPQ+D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21401</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_072930762.1|9.B.357.1.4 septation protein A [Nissabacter archeti]</Hit_def>
+  <Hit_accession>21401</Hit_accession>
+  <Hit_len>185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>302.368</Hsp_bit-score>
+      <Hsp_score>773</Hsp_score>
+      <Hsp_evalue>1.56666e-106</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>159</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>MKQFLDFLPLVVFFAFYKLYDIYAATTALIVATAIVLIYSWVRYRKVEKMALITFVLVAVFGGLTLFFHNDEFIKWKVTVIYALFAGALLFSQWVMKKPLIQRMLGKELALPQQVWSRLNLAWAVFFILCGLANIYIAFWLPQNIWVNFKVFGLTALTLVFTLLSGIYIYRHMPQDDHH</Hsp_qseq>
+      <Hsp_hseq>MKQFLDFLPLVVFFVVYKLYDIYAASGALIAATALALVFTWVKYRKVEKMTLITFAMVAVFGTLTLVFHDDLFIKWKVTVIYGLFALALLISQWVLRKPLIQRMLGKELTLPDSVWNRLNSAWALFFLLCGLANIYVAFWLPQSVWVNFKVFGLTALTLVFTLLSGLYIYRHMPDDQKH</Hsp_hseq>
+      <Hsp_midline>MKQFLDFLPLVVFF  YKLYDIYAA+ ALI ATA+ L+++WV+YRKVEKM LITF +VAVFG LTL FH+D FIKWKVTVIY LFA ALL SQWV++KPLIQRMLGKEL LP  VW+RLN AWA+FF+LCGLANIY+AFWLPQ++WVNFKVFGLTALTLVFTLLSG+YIYRHMP D  H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20811</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_012416759.1|9.B.357.1.2 septation protein A [Bordetella avium]</Hit_def>
+  <Hit_accession>20811</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.088</Hsp_bit-score>
+      <Hsp_score>427</Hsp_score>
+      <Hsp_evalue>6.7308e-54</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>184</Hsp_align-len>
+      <Hsp_qseq>MKQFL-DFLPLVVFFAFYKLYDIYAATTALIVATAIVLIYSWVRYRKVEKMALITFVLVAVFGGLTLFFHNDEFIKWKVTVIYALFAGALLFSQWVMKKPLIQRMLGKELALPQQVWSRLNLAWAVFFILCGLANIYIAF--WLPQNIWVNFKVFGLTALTLVFTLLSGIYIYRHM--PQDDHH</Hsp_qseq>
+      <Hsp_hseq>MKKFLFDLFPLILFFAAYRFADIYAATAVAITASIAQLIWLKLTGKAIEGMHWINMSVIVIFGGATLWLHSDVFIKWKPTVLYWMFGGALLASRYLLRRNLIRRLLDKQISLTDALWDKLNLSWALFFTLAGGANLYVAFSGYFTESQWVNFKVFGLMGLLIAFVIVQSLWLGRHMQEPGKDKH</Hsp_hseq>
+      <Hsp_midline>MK+FL D  PL++FFA Y+  DIYAAT   I A+   LI+  +  + +E M  I   ++ +FGG TL+ H+D FIKWK TV+Y +F GALL S++++++ LI+R+L K+++L   +W +LNL+WA+FF L G AN+Y+AF  +  ++ WVNFKVFGL  L + F ++  +++ RHM  P  D H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21977</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_150583089.1|9.B.357.1.3 septation protein A [Pseudomonas fluorescens]</Hit_def>
+  <Hit_accession>21977</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>163.696</Hsp_bit-score>
+      <Hsp_score>413</Hsp_score>
+      <Hsp_evalue>1.27949e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>177</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>119</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>191</Hsp_align-len>
+      <Hsp_qseq>MKQFLDFLPLVVFFAFYKLYD--------------IYAATTALIVATAIVLIYSWVRYRKVEKMALITFVLVAVFGGLTLFFHNDEFIKWKVTVIYALFAGALLFSQWVMKKPLIQRMLGKELALPQQVWSRLNLAWAVFFILCGLANIYIAFWLPQNIWVNFKVFGLTALTLVFTLLSGIYIYRHMPQDD</Hsp_qseq>
+      <Hsp_hseq>MKQFIDFIPLLLFFIVFKIDPRVVDIAGHQVSVGGIYSATAMLIVSSLVVYGALYFKQRKLEKSQWLTLIACLVFGSLTLAFHSETFLKWKAPVVNWLFALAFLGSHFIGDQLLIKRIMGHALTLPDPVWARLNIAWIAFFLFCGAANLFVAFTF-QEYWVDFKVFGSLGLTLLFLIAQGIYLSRHMHDAD</Hsp_hseq>
+      <Hsp_midline>MKQF+DF+PL++FF  +K+                IY+AT  LIV++ +V    + + RK+EK   +T +   VFG LTL FH++ F+KWK  V+  LFA A L S ++  + LI+R++G  L LP  VW+RLN+AW  FF+ CG AN+++AF   Q  WV+FKVFG   LTL+F +  GIY+ RHM   D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>92</Statistics_hsp-len>
+      <Statistics_eff-space>688671642</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

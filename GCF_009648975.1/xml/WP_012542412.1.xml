@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_012542412.1 MULTISPECIES: diguanylate phosphodiesterase [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>403</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_012542412.1 MULTISPECIES: diguanylate phosphodiesterase [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>403</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21838</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_128121392.1|9.B.34.1.8 EAL domain-containing protein [Pseudomonas zhaodongensis]</Hit_def>
+  <Hit_accession>21838</Hit_accession>
+  <Hit_len>878</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>76.2554</Hsp_bit-score>
+      <Hsp_score>186</Hsp_score>
+      <Hsp_evalue>6.63631e-15</Hsp_evalue>
+      <Hsp_query-from>239</Hsp_query-from>
+      <Hsp_query-to>387</Hsp_query-to>
+      <Hsp_hit-from>714</Hsp_hit-from>
+      <Hsp_hit-to>861</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>LSINLLPMTLVKAPNAVAFLLDEISRNDLIPEQIIVEFTEREVISRMADFTDAVRKLKGAGINLAIDHFGAGFAGLSLLAQYQPDRIKIDHELIRNIHQDGPRQSIVQAIIKCCTSLEIAVSAVGVERAEEWMWLESAGISQFQGNLFA</Hsp_qseq>
+      <Hsp_hseq>LAVNLSASLLYQA-DFVDRVLALLKRTGANPRLLKLEITESLLLDDMEEAVVRMRTLKQHGIRFSIDDFGTGYSSMAYLQRLPLDQLKIDQSFVRQLVEDASSQTIIRATCALASGLKLEVIAEGVETEEQRTLLIANGCDMFQGYLFS</Hsp_hseq>
+      <Hsp_midline>L++NL    L +A + V  +L  + R    P  + +E TE  ++  M +    +R LK  GI  +ID FG G++ ++ L +   D++KID   +R + +D   Q+I++A     + L++ V A GVE  E+   L + G   FQG LF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3997</Hit_id>
+  <Hit_def>gnl|TC-DB|EHB50236.1|9.B.34.1.9 diguanylate cyclase/phosphodiesterase [Mycolicibacterium rhodesiae JS60]</Hit_def>
+  <Hit_accession>3997</Hit_accession>
+  <Hit_len>806</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.3958</Hsp_bit-score>
+      <Hsp_score>163</Hsp_score>
+      <Hsp_evalue>4.45535e-12</Hsp_evalue>
+      <Hsp_query-from>173</Hsp_query-from>
+      <Hsp_query-to>387</Hsp_query-to>
+      <Hsp_hit-from>539</Hsp_hit-from>
+      <Hsp_hit-to>759</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>224</Hsp_align-len>
+      <Hsp_qseq>SFAFQPIVDPFACEIISWEALLRTPD---GQSPGAYFAGLAGDDIYLADLHSKRVALSLAGKLGLRNKALSINLL------PMTLVKAPNAVAFLLDEISRNDLIPEQIIVEFTEREVISRMADFTDAVRKLKGAGINLAIDHFGAGFAGLSLLAQYQPDRIKIDHELIRNIHQDGPRQSIVQAIIKCCTSLEIAVSAVGVERAEEWMWLESAGISQFQGNLFA</Hsp_qseq>
+      <Hsp_hseq>TLVYQPKFDLNTAVIVGVEALVRWPHPKRGLLPPDEFLPLVRRYGLMGSITDLVVNQALDDVLRWRAEGLTVPIAINMFAPSMADLRLPGKFA---KSLADRKIDPSHLTVEITEDLFLDNMDRTKTVLNQLQENGIRIAIDDFGSGYSALSYMRDLTVDEVKLDRHFIAPIPADRRAAAVVRAVVSLADELGLTTVAEGIENAVTADWLREHGCHVGQGYYFS</Hsp_hseq>
+      <Hsp_midline>+  +QP  D     I+  EAL+R P    G  P   F  L      +  +    V  +L   L  R + L++ +        M  ++ P   A     ++   + P  + VE TE   +  M      + +L+  GI +AID FG+G++ LS +     D +K+D   I  I  D    ++V+A++     L +   A G+E A    WL   G    QG  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5486</Hit_id>
+  <Hit_def>gnl|TC-DB|J7ZT93|9.B.34.1.5 Diguanylate cyclase (GGDEF) domain-containing protein OS=Bacillus cereus HuA2-4 GN=IG7_01488 PE=4 SV=1</Hit_def>
+  <Hit_accession>5486</Hit_accession>
+  <Hit_len>906</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>1.72705e-09</Hsp_evalue>
+      <Hsp_query-from>233</Hsp_query-from>
+      <Hsp_query-to>387</Hsp_query-to>
+      <Hsp_hit-from>738</Hsp_hit-from>
+      <Hsp_hit-to>891</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>GLRNKALSINLLPMTLVKAPNAVAFLLDEISRNDLIPEQIIVEFTEREVISRMADFTDAVRKLKGAGINLAIDHFGAGFAGLSLLAQYQPDRIKIDHELIRNIHQDGPRQSIVQAIIKCCTSLEIAVSAVGVERAEEWMWLESAGISQFQGNLFA</Hsp_qseq>
+      <Hsp_hseq>GYVNLKMGINLSAIEF-EQKDFVQAIISTIEEVGVPASSIDLELTERIAMVDEKETLAKLKALKSYGVHLSIDDFGTGYSSLAYLPLYPIDTLKIPREFVNRIGNSTDGNEIIHTIISLAHTLNMKVIAEGVETKEQLTVLQRNACYLIQGYYYS</Hsp_hseq>
+      <Hsp_midline>G  N  + INL  +   +  + V  ++  I    +    I +E TER  +    +    ++ LK  G++L+ID FG G++ L+ L  Y  D +KI  E +  I        I+  II    +L + V A GVE  E+   L+       QG  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2343032946</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

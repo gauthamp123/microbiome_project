@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_032730065.1 MULTISPECIES: HD domain-containing protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>402</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_032730065.1 MULTISPECIES: HD domain-containing protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>402</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|352</Hit_id>
+  <Hit_def>gnl|TC-DB|A3QE50|8.A.85.3.2 Metal dependent phosphohydrolase OS=Shewanella loihica (strain ATCC BAA-1088 / PV-4) GN=Shew_1882 PE=4 SV=1</Hit_def>
+  <Hit_accession>352</Hit_accession>
+  <Hit_len>428</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>96.6709</Hsp_bit-score>
+      <Hsp_score>239</Hsp_score>
+      <Hsp_evalue>5.44221e-22</Hsp_evalue>
+      <Hsp_query-from>209</Hsp_query-from>
+      <Hsp_query-to>364</Hsp_query-to>
+      <Hsp_hit-from>205</Hsp_hit-from>
+      <Hsp_hit-to>375</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>IAKIVDTYSSFTATHSIMVGEIARQLARWMQ--------LPEPICQQIQIAGYLHDIGKISIPLSILEKEGELDEDELNQVREHSYMTGEILSD---------YSELGDIINWASNHHEKLDGSGYPLHLEKDHLTLADRIISIADIFTALTEDRPYRKGMAWQEALQIMEAD</Hsp_qseq>
+      <Hsp_hseq>LAKLAEYRDNETGAHLIRMQHYAKMLATQRQTDIDAPAELTDDFIQEITLSSILHDIGKVGIADAILLKPGRLTEEEFEQIKAHPVIGAQVLASLLSYAPECPYIKMGRDI--AGGHHEWWDGSGYPAGLQGEAIPLSARIVALVDVYDALTSPRCYKRPFSHQEALELIHQD</Hsp_hseq>
+      <Hsp_midline>+AK+ +   + T  H I +   A+ LA   Q        L +   Q+I ++  LHDIGK+ I  +IL K G L E+E  Q++ H  +  ++L+          Y ++G  I  A  HHE  DGSGYP  L+ + + L+ RI+++ D++ ALT  R Y++  + QEAL+++  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21810</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_120737461.1|8.A.85.3.3 HD domain-containing protein [Butyrivibrio sp. CB08]</Hit_def>
+  <Hit_accession>21810</Hit_accession>
+  <Hit_len>799</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.3445</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>1.5047e-17</Hsp_evalue>
+      <Hsp_query-from>209</Hsp_query-from>
+      <Hsp_query-to>395</Hsp_query-to>
+      <Hsp_hit-from>258</Hsp_hit-from>
+      <Hsp_hit-to>455</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>IAKIVDTYSSFTATHSIMVGEIARQLARWMQLPEPICQQIQIAGYLHDIGKISIPLSILEKEGELDEDELNQVREHSYMTGEILSDYSELGDIINWASNHHEKLDGSGYPLHLEKDHLTLADRIISIADIFTALTE----DRPYRKGMAWQE-------ALQIMEADVINGALDSDVFLVLRHHAETLHAIILQTLEH</Hsp_qseq>
+      <Hsp_hseq>LANGVDLGDDYGHGHSVRVAEYAKEISRLAGFDDRKCDEVYYCALLHDVGKIGIPDEIIKKDTDLTPEEFEIFKTHTTVGSDILSGASDFPLLALASKYHHERYDGKGYPEGLVGDNIPEIARIIAVADAYDSMTSRHHLQDPLPQSTVREEIAKEIGSAFDPVFGEIMISLIDHDTEYLMREKDFAENAQIVEDLTH</Hsp_hseq>
+      <Hsp_midline>+A  VD    +   HS+ V E A++++R     +  C ++     LHD+GKI IP  I++K+ +L  +E    + H+ +  +ILS  S+   +   +  HHE+ DG GYP  L  D++    RII++AD + ++T       P  +    +E       A   +  +++   +D D   ++R      +A I++ L H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2319</Hit_id>
+  <Hit_def>gnl|TC-DB|C0QCR7|8.A.85.3.1 Two component protein (Transcriptional response regulator/sensory box) OS=Desulfobacterium autotrophicum (strain ATCC 43914 / DSM 3382 / HRM2) GN=HRM2_20440 PE=4 SV=1</Hit_def>
+  <Hit_accession>2319</Hit_accession>
+  <Hit_len>571</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.8037</Hsp_bit-score>
+      <Hsp_score>203</Hsp_score>
+      <Hsp_evalue>3.79823e-17</Hsp_evalue>
+      <Hsp_query-from>209</Hsp_query-from>
+      <Hsp_query-to>362</Hsp_query-to>
+      <Hsp_hit-from>354</Hsp_hit-from>
+      <Hsp_hit-to>522</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>IAKIVDTYSSFTATHSIMVGEIARQLARWMQ--------LPEPICQQIQIAGYLHDIGKISIPLSILEKEGELDEDELNQVREHSYMTGEILS---------DYSELGDIINWASNHHEKLDGSGYPLHLEKDHLTLADRIISIADIFTALTEDRPYRKGMAWQEALQIME</Hsp_qseq>
+      <Hsp_hseq>LAKLTEYRDHETGNHLERIQKYARLLAEELSKKPDFQNDISPKYVEDITLSSILHDIGKVGIPDSILLKPGRLTSDEFEIIKQHCRYGGDALKTVETKIDGESFLTLGREI--AYFHHEKWDGTGYPSGKKNLQIPLSARIISVCDVYDALTSKRIYKEAYSHDTAVQIIQ</Hsp_hseq>
+      <Hsp_midline>+AK+ +     T  H   + + AR LA  +         +     + I ++  LHDIGK+ IP SIL K G L  DE   +++H    G+ L           +  LG  I  A  HHEK DG+GYP   +   + L+ RIIS+ D++ ALT  R Y++  +   A+QI++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>100</Statistics_hsp-len>
+      <Statistics_eff-space>2335300164</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

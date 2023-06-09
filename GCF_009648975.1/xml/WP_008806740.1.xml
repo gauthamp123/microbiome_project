@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008806740.1 MULTISPECIES: tRNA uridine-5-carboxymethylaminomethyl(34) synthesis GTPase MnmE [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>454</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008806740.1 MULTISPECIES: tRNA uridine-5-carboxymethylaminomethyl(34) synthesis GTPase MnmE [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>454</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20509</Hit_id>
+  <Hit_def>gnl|TC-DB|V6F2B2|9.A.8.1.7 Ferrous iron transport protein B OS=Magnetospirillum gryphiswaldense MSR-1 v2 GN=FeoB1 PE=3 SV=1</Hit_def>
+  <Hit_accession>20509</Hit_accession>
+  <Hit_len>704</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>4.51807e-05</Hsp_evalue>
+      <Hsp_query-from>213</Hsp_query-from>
+      <Hsp_query-to>420</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>209</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>213</Hsp_align-len>
+      <Hsp_qseq>LREGMKVVIAGRPNAGKSSLLNALAGREAAIVTDIAGTTRDVLREHIHIDGMPLHIIDTAGLRDASDE--VERIGIERAWQEIEQADRVLFMVDG--TTTSAVDPAEIWPDFIERLPAKLPITVVRNKADVTGEALGLSEVNGHSLIRLSARTGEGVEVLRNHLKQSMGFDTSMEGGFLARRRHLQ-ALEEAANHLQQGKAQLLGAWAGELLA</Hsp_qseq>
+      <Hsp_hseq>MKSPVTVALVGNPNAGSTSLFNALTGAQSAVANYQRVTTSLNVREITH-GGVSLRIVDVPGIFSTSSQSPEEKVGCD--YIHGEEPDIIVNVLDAGHLDRSLFLTTQLIETGLPRITVLNMMDEVR-RAGIRIDTALLASALGSPVVETCALKKEGIDALLDAVAAMASATPAAAPLRLHYDSHLEAAIERVQQHLSKLHPQELSPVRSRWLA</Hsp_hseq>
+      <Hsp_midline>++  + V + G PNAG +SL NAL G ++A+      TT   +RE  H  G+ L I+D  G+   S +   E++G +  +   E+ D ++ ++D      S     ++    + R+     +  VR +A +  +   L+   G  ++   A   EG++ L + +        +     L    HL+ A+E    HL +   Q L       LA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7012</Hit_id>
+  <Hit_def>gnl|TC-DB|O29993|9.A.8.1.8 Iron (II) transporter (FeoB-1) OS=Archaeoglobus fulgidus GN=AF_0246 PE=4 SV=1</Hit_def>
+  <Hit_accession>7012</Hit_accession>
+  <Hit_len>639</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>7.62747e-05</Hsp_evalue>
+      <Hsp_query-from>218</Hsp_query-from>
+      <Hsp_query-to>377</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>KVVIAGRPNAGKSSLLNALAGREAAIVTDIAGTTRDVLREHIHIDGMPLHIIDTAGLRDASDEVERIGIER-AWQEIEQADRVLFMVDGTTTSAVDPAEIWPDFIERLPAKLPITVVRNKADVTGEALG-------LSEVNGHSLIRLSARTGEGVEVLRNHLKQSMG</Hsp_qseq>
+      <Hsp_hseq>KVALVGNPNVGKSALFYALTGKYATI-SNYPGTTVDIAVAKLG----DLEIIDTPGMHSL---VPVTGEEEVARKLLEEADLVVHVVD-----AKNIRRALPFTLQLIEAGFNTILVLNLVD-EAEKFGIFINEKLLEERLGIPVLKTVATEKRGVGRLKDEIRKRIG</Hsp_hseq>
+      <Hsp_midline>KV + G PN GKS+L  AL G+ A I ++  GTT D+    +      L IIDT G+      V   G E  A + +E+AD V+ +VD     A +     P  ++ + A     +V N  D   E  G       L E  G  +++  A    GV  L++ +++ +G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6967</Hit_id>
+  <Hit_def>gnl|TC-DB|O25396|9.A.8.1.2 IRON(II) TRANSPORT PROTEIN (FEOB) - Helicobacter pylori (Campylobacter pylori).</Hit_def>
+  <Hit_accession>6967</Hit_accession>
+  <Hit_len>642</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000923538</Hsp_evalue>
+      <Hsp_query-from>219</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>VVIAGRPNAGKSSLLNALAGREAAIVTDIAGTTRDVLREHIHIDGMPLHIIDTAGLRDASDEVERIGIERAWQEIEQADRVLFMVDGT</Hsp_qseq>
+      <Hsp_hseq>IALVGQPNVGKSSLINALSNAHLK-VGNFAGVTVDKMEVGLIHKEHQITIIDLPGTYALNDFTTEEKVTKDFLEKGQYDLILNVVDST</Hsp_hseq>
+      <Hsp_midline>+ + G+PN GKSSL+NAL+      V + AG T D +   +      + IID  G    +D      + + + E  Q D +L +VD T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2721597877</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

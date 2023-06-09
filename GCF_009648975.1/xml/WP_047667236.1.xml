@@ -1,0 +1,817 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_047667236.1 MULTISPECIES: PTS transporter subunit EIIC [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>499</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_047667236.1 MULTISPECIES: PTS transporter subunit EIIC [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>499</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14171</Hit_id>
+  <Hit_def>gnl|TC-DB|Q57071|4.A.1.1.13 PTS system glucose-specific EIICBA component OS=Staphylococcus carnosus (strain TM300) GN=ptsG PE=1 SV=1</Hit_def>
+  <Hit_accession>14171</Hit_accession>
+  <Hit_len>675</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>453.366</Hsp_bit-score>
+      <Hsp_score>1165</Hsp_score>
+      <Hsp_evalue>9.66756e-154</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>493</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>496</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>236</Hsp_identity>
+      <Hsp_positive>328</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>505</Hsp_align-len>
+      <Hsp_qseq>KSLSKLSMIGRALMLPISLLPAAGLLLAFGDKFH-------MP------------LMMNAGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVLGITPEMASQGGK-YAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDITVTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTM</Hsp_qseq>
+      <Hsp_hseq>KFFGQLQRIGKALMLPVAILPAAGLLLALGNAFQGDALQSLMPFIKAEGFQNVAKMMEGAGGIIFDNLAIIFALGVAIGLASGDGVAAIAAFVGFIVLNKTMGMFLGVTPEKAADAATGFANVLGIPTLQTGVFGGIIIGALAAWCYNKFYNISLPSYLGFFAGKRFVPIMMATCSFILAFPMAIIWPSIQGGLNAFSEGLLASNTGLAVFLFGFIKRLLIPFGLHHIFHAPFWFEFGSYKNAAGQIIHGDQRIFIEQIRDNVP-------LTAGKFMQGEFPVMMFGLPAAALAIYQTAKKENKKVVAGLMLSGALTSFLTGITEPLEFSFLFVAPLLFFIHAVLDGLSFLILYLLDLHLGYTFSGGFIDFFLLGILPN----KTQWWLVIPVGLVYAAIYYIIFRFLIVKFNFKTPGREDKEVKSSNVAASELPFKVLDAMGGKANIKHLDACITRLRVEVNDKAKVDVQELKDLGASGVLEVGNN-MQAIFGPKSDQIKHDM</Hsp_hseq>
+      <Hsp_midline>K   +L  IG+ALMLP+++LPAAGLLLA G+ F        MP            +M  AGGIIFDNL ++FA+G A+GLAS  G+AA++A V   + N T+   LG+TPE A+     +A V+GIPTLQ GVFGG+I G LA+WCYN+F+ + LP +LGFF+GKRFV I  A  SFIL   +  +W  IQ G+++ S  +   N   + F+FG ++R LIP GLHHI++  FW+ FG Y   AGQ+IHGDQ I+ + + + V          AGKFMQGEFP+M+F LPAA LA+Y  A  +NKK+ AG++ S ALT FLTGITEP+EF+F+FVAP+L+  +A++ GLS++ +YLL  H+  +FS G ID+   GILP+    +T +   + VG+    IYY  FRF+I +F+ KTPGR D  V + +   +EL  ++++ +GG  NI  + ACITRLR+EV ++  VD   L  +GA GV+ VG+N +Q IFG ++  I   M</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13990</Hit_id>
+  <Hit_def>gnl|TC-DB|Q53922|4.A.1.1.14 PTS system glucoside-specific EIICBA component OS=Staphylococcus carnosus (strain TM300) GN=glcB PE=1 SV=2</Hit_def>
+  <Hit_accession>13990</Hit_accession>
+  <Hit_len>692</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>450.669</Hsp_bit-score>
+      <Hsp_score>1158</Hsp_score>
+      <Hsp_evalue>1.81634e-152</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>493</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>512</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>228</Hsp_identity>
+      <Hsp_positive>336</Hsp_positive>
+      <Hsp_gaps>43</Hsp_gaps>
+      <Hsp_align-len>517</Hsp_align-len>
+      <Hsp_qseq>KSLSKLSMIGRALMLPISLLPAAGLLLAFGDKFH-------------------MPLMMNAGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVLGITPE-------------MASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDITVTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTM</Hsp_qseq>
+      <Hsp_hseq>KFFGQLQRIGKALMLPVAILPAAGILLTFGNAMHNEQILHFAPWMQHHYIQLISQIMEASGQVIFDNLPLLFAMGTALGLAGGDGVAGIAALVGYLIMSATMGKIAGITIDDIFSYADGAKTLGQSAKDPAHALVLGIPTLQTGVFGGIIIGALAAWCYNKFYNIQLPQFLGFFAGKRFVPIITSLVAIVTGIVLSFVWPPVQDGLNNLSNFLLGKNLALTTFIFGIIERSLIPFGLHHIFYAPFWFEFGHYVNESGNLVRGDQRIWMAQYQDGVPF-------TAGAFTTGKYPFMMFGLPAAAFAIYRQAKPERRKVVGGLMLSAALTSFLTGITEPLEFSFLFVAPILYVAHVILAGTSFLIMHLLHVQIGMTFSGGFIDYILYGL---LSWDRSNALLVIPVGIAYALIYYFLFTFLIKKLNLKTPGREDKEVESKDVSVSELPFEVLEAMGNKDNIKHLDACITRLRVEVRDKGLVDVEKLKQLGASGVLEVGNN-MQAIFGPKSDQIKHDM</Hsp_hseq>
+      <Hsp_midline>K   +L  IG+ALMLP+++LPAAG+LL FG+  H                     +M  +G +IFDNLP+LFA+G+A+GLA   G+A ++A V   I + T+  + GIT +              +++   +A+V+GIPTLQ GVFGG+I G LA+WCYN+F+ +QLP+FLGFF+GKRFV I T+ ++ + G++L +VW  +Q G+++LS  + G N A +TFIFG++ER+LIP GLHHI+Y  FW+ FG Y  ++G ++ GDQ IW    ++GV          AG F  G++P M+F LPAA  A+Y +A  + +K+  G++ SAALT FLTGITEP+EF+F+FVAPILY+ + I+AG S++ M+LLH  I  +FS G IDYI +G+   L+  +++ L  + VG+   LIYYF F F+I++ ++KTPGR D  V + D + +EL  E++  +G   NI  + ACITRLR+EV ++  VD + L  +GA GV+ VG+N +Q IFG ++  I   M</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9330</Hit_id>
+  <Hit_def>gnl|TC-DB|P20166|4.A.1.1.9 PTS system, glucose-specific IICBA component (EIICBA-Glc) (Glucose- permease IICBA component) (Phosphotransferase enzyme II, CBA component) (EC 2.7.1.69) (EII-Glc/EIII-Glc) - Bacillus subtilis.</Hit_def>
+  <Hit_accession>9330</Hit_accession>
+  <Hit_len>699</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>438.343</Hsp_bit-score>
+      <Hsp_score>1126</Hsp_score>
+      <Hsp_evalue>1.43005e-147</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>514</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>237</Hsp_identity>
+      <Hsp_positive>334</Hsp_positive>
+      <Hsp_gaps>46</Hsp_gaps>
+      <Hsp_align-len>518</Hsp_align-len>
+      <Hsp_qseq>LSMIGRALMLPISLLPAAGLLLAFGDKFHMP-------------------LMMNAGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVL---GITPEMASQGGK--------YAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDIT--VTADDKTD--AELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>LQKIGRALMLPVAILPAAGILLAIGNAMQNKDMIQVLHFLSNDNVQLVAGVMESAGQIVFDNLPLLFAVGVAIGLANGDGVAGIAAIIGYLVMNVSMSAVLLANGTIPSDSVERAKFFTENHPAYVNMLGIPTLATGVFGGIIVGVLAALLFNRFYTIELPQYLGFFAGKRFVPIVTSISALILGLIMLVIWPPIQHGLNAFSTGLVEANPTLAAFIFGVIERSLIPFGLHHIFYSPFWYEFFSYKSAAGEIIRGDQRIFMAQIKDGVQ-------LTAGTFMTGKYPFMMFGLPAAALAIYHEAKPQNKKLVAGIMGSAALTSFLTGITEPLEFSFLFVAPVLFAIHCLFAGLSFMVMQLLNVKIGMTFSGGLIDYFLFGILPN----RTAWWLVIPVGLGLAVIYYFGFRFAIRKFNLKTPGREDAAEETAAPGKTGEAGDLPYEILQAMGDQENIKHLDACITRLRVTVNDQKKVDKDRLKQLGASGVLEVGNN-IQAIFGPRSDGLKTQMQDII</Hsp_hseq>
+      <Hsp_midline>L  IGRALMLP+++LPAAG+LLA G+                        +M +AG I+FDNLP+LFA+G A+GLA+  G+A ++A +   + N+++S VL   G  P  + +  K        Y  ++GIPTL  GVFGG+I G+LA+  +NRF+ ++LP++LGFF+GKRFV I T+  + ILGL++  +W  IQ G+++ S  +   N   + FIFG++ER+LIP GLHHI+Y  FWY F  Y + AG++I GDQ I+   +++GV+         AG FM G++P M+F LPAA LA+YHEA  +NKK+ AGI+ SAALT FLTGITEP+EF+F+FVAP+L+  + + AGLS+M M LL+  I  +FS GLIDY  FGILP+    +T +   + VG+ + +IYYF FRF IR+F++KTPGR D      A  KT    +L  EI+  +G  +NI  + ACITRLR+ V ++  VDKD L  +GA GV+ VG+N IQ IFG R+  +   M  +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10306</Hit_id>
+  <Hit_def>gnl|TC-DB|P39816|4.A.1.1.6 Putative PTS system IIABC component ybfS (EC 2.7.1.69) - Bacillus subtilis.</Hit_def>
+  <Hit_accession>10306</Hit_accession>
+  <Hit_len>631</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>368.622</Hsp_bit-score>
+      <Hsp_score>945</Hsp_score>
+      <Hsp_evalue>2.64957e-121</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>486</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>461</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>207</Hsp_identity>
+      <Hsp_positive>307</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>491</Hsp_align-len>
+      <Hsp_qseq>FIKSLSKLSMIGRALMLPISLLPAAGLLLAFGDK--FHMPLMMNAGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTV---LGITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQA-GQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYI-SFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR-TDITVTADDKTDA---ELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARA</Hsp_qseq>
+      <Hsp_hseq>FKKAFQILQQLGRALMTPVAVLPAAGLLLRFGDKDLLNIPIIKDAGGVVFDNLPLIFAVGVAIGLAGGEGVAGLAAVIGYLILTVTLDNMGKLLGLQPPY--EGAEHL-------IDMGVFGGIIIGLLAAYLYKRFSSIELHPVLGFFSGKRFVPIITSVSSLVIGVIFSFVWPLIQNGINAASSLIA--DSTVGLFFYATIYRLLIPFGLHHIFYTPFYFMMGEYTDPSTGNTVTGDLT----------RFFAGDP--TAGRFMMGDFPYMIFCLPAVALAIIHTARPEKKKMISGVMISAALTSMLTGITEPVEFSFLFVAPVLYLINSILAGVIFVVCDLFHVRHGYTFSGGGIDYVLNYGL--STNGWV-----VIPVGIVFAFIYYYLFRFAILKWNLKTPGRETDEDGQNEEKAPVAKDQLAFHVLQALGGQQNIANLDACITRLRVTVHQPSQVCKDELKRLGAVGVLEV-NNNFQAIFGTKS</Hsp_hseq>
+      <Hsp_midline>F K+   L  +GRALM P+++LPAAGLLL FGDK   ++P++ +AGG++FDNLP++FA+G A+GLA   G+A L+A +   I  +T+  +   LG+ P    +G ++        + MGVFGG+I G+LA++ Y RF +++L   LGFFSGKRFV I T+  S ++G++  +VW  IQ GI++ S ++   +     F +  + R LIP GLHHI+Y  F++  G+YT  + G  + GD T          + F+ D    AG+FM G+FP M+F LPA  LA+ H A  + KK+ +G++ SAALT  LTGITEPVEF+F+FVAP+LY+ N+I+AG+ ++   L H     +FS G IDY+ ++G+  S NG+       + VG+    IYY+ FRF I ++++KTPGR TD     ++K      +LA  ++  LGG QNI ++ ACITRLR+ V +   V KD L  +GA GV+ V +N  Q IFG ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11274</Hit_id>
+  <Hit_def>gnl|TC-DB|P69786|4.A.1.1.1 PTS system glucose-specific EIICB component - Escherichia coli.</Hit_def>
+  <Hit_accession>11274</Hit_accession>
+  <Hit_len>477</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>345.125</Hsp_bit-score>
+      <Hsp_score>884</Hsp_score>
+      <Hsp_evalue>3.89747e-114</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>474</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>197</Hsp_identity>
+      <Hsp_positive>287</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>498</Hsp_align-len>
+      <Hsp_qseq>FIKSLSKLSMIGRALMLPISLLPAAGLLLAFGDKFHMPL-------MMNAGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVLGITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDITVTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>FKNAFANLQKVGKSLMLPVSVLPIAGILLGVGSANFSWLPAVVSHVMAEAGGSVFANMPLIFAIGVALGFTNNDGVSALAAVVAYGIMVKTMAVVAPLVLHLPAEE-----IASKHLADTGVLGGIISGAIAAYMFNRFYRIKLPEYLGFFAGKRFVPIISGLAAIFTGVVLSFIWPPIGSAIQTFSQWAAYQNPVVAFGIYGFIERCLVPFGLHHIWNVPFQMQIGEYTNAAGQVFHGDIP----------RYMAGD--PTAGK-LSGGFLFKMYGLPAAAIAIWHSAKPENRAKVGGIMISAALTSFLTGITEPIEFSFMFVAPILYIIHAILAGLAFPICILLGMRDGTSFSHGLIDFI------VLSGNSSKLWLFPIVGIGYAIVYYTIFRVLIKALDLKTPGREDATEDAKATGTSEMAPALVAAFGGKENITNLDACITRLRVSVADVSKVDQAGLKKLGAAGVVVAG-SGVQAIFGTKSDNLKTEMDEYI</Hsp_hseq>
+      <Hsp_midline>F  + + L  +G++LMLP+S+LP AG+LL  G      L       M  AGG +F N+P++FAIG A+G  +  G++AL+A V+  I   T++ V  +   + ++      +        GV GG+I G +A++ +NRF+ ++LPE+LGFF+GKRFV I +   +   G++L ++W  I + I + S      N   +  I+G +ER L+P GLHHIW   F    G+YT  AGQV HGD            +  + D    AGK + G F   ++ LPAA +A++H A  +N+    GI+ SAALT FLTGITEP+EF+F+FVAPILYI +AI+AGL++    LL      SFS GLID+I       L+G  +      IVG+   ++YY  FR +I+  D+KTPGR D T  A     +E+A  +V   GG +NI ++ ACITRLR+ VA+   VD+ GL  +GA GVV  G +G+Q IFG ++  +   M   I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7296</Hit_id>
+  <Hit_def>gnl|TC-DB|O51590|4.A.1.1.18 Pts system, iibc components OS=Borrelia burgdorferi (strain ATCC 35210 / B31 / CIP 102532 / DSM 4680) GN=BB_0645 PE=4 SV=1</Hit_def>
+  <Hit_accession>7296</Hit_accession>
+  <Hit_len>514</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>335.109</Hsp_bit-score>
+      <Hsp_score>858</Hsp_score>
+      <Hsp_evalue>9.36128e-110</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>483</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>498</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>192</Hsp_identity>
+      <Hsp_positive>290</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>505</Hsp_align-len>
+      <Hsp_qseq>IKSLSKLSMIGRALMLPISLLPAAGLLLAFGDKFHMP-------------------LMMNAGGIIFDNLPMLFAIGSAVGLA-SESGIAALSAAVSVFITNITISTVLGITPEMAS-QGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYS-FGDYTTQAGQVIHGDQTIWF-KMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRT------DITVTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFG</Hsp_qseq>
+      <Hsp_hseq>LKGFEQAQKFGRSFMLPIAILPAAGLLLGIGGSLSNPETVRTYSFLNIFFLQSVFKIMSASGSIIFSNLAPIFSIGIAVGLAKSDKGTSGIAAFIGYLVMNATIGVLIDVSGRAESFSSGAVGFVLGIKTLETGVFGGVVVGILTYYLHSRFNKVDLPKVLGFFSGSRFVPIIVSFSSIFLAVIMFLVWPFVQSGINKVGGLVDSTGYIG-TLIYGIFLRMLGPFGLHHIFYLPFWTTGLGGSVIIDGKLIEGTQNIFFAELAAQGTDRF----FIGTSRFMSGRFITMMFGLPGAALALYYTAKREERTKVFGLLMSSALTSFLTGITEPLEFSFLFVAPILYVVHATFDGFAFMLAHILQITIGQTFSGGFVDFILFGILQ--GNSRTNWLLVPVIGIVWFFLYYFTFIFLINKFDFKTPGRTQDLNSEDSPSSKSSEFEENYATKVIIGLGGASNIVELDCCATRLRITVRDVLKVSEKILKKTGSKGVIIKG-NGVQVVYG</Hsp_hseq>
+      <Hsp_midline>+K   +    GR+ MLPI++LPAAGLLL  G     P                   +M  +G IIF NL  +F+IG AVGLA S+ G + ++A +   + N TI  ++ ++    S   G    V+GI TL+ GVFGG++ GIL  + ++RF+ + LP+ LGFFSG RFV I  +F S  L +++  VW  +Q+GI+ +  +V+       T I+G+  R L P GLHHI+Y  FW +  G      G++I G Q I+F ++  +G   F    +    +FM G F  M+F LP A LA+Y+ A  + +    G+L S+ALT FLTGITEP+EF+F+FVAPILY+ +A   G ++M  ++L   I ++FS G +D+I FGIL      +T++L   ++G+    +YYFTF F+I +FD KTPGRT      D   +   + +   AT+++  LGG+ NI  +  C TRLR+ V +   V +  L   G++GV+  G NG+Q+++G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18228</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9HXN4|4.A.1.1.15 N-Acetyl-D-Glucosamine phosphotransferase system transporter OS=Pseudomonas aeruginosa (strain ATCC 15692 / PAO1 / 1C / PRS 101 / LMG 12228) GN=PA3761 PE=4 SV=1</Hit_def>
+  <Hit_accession>18228</Hit_accession>
+  <Hit_len>570</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>325.094</Hsp_bit-score>
+      <Hsp_score>832</Hsp_score>
+      <Hsp_evalue>3.5556e-105</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>490</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>453</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>196</Hsp_identity>
+      <Hsp_positive>279</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>486</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAFGDK--FHMPLMMNAGGIIFDNLPMLFAIGSAVGLASES-GIAALSAAVSVFITNITISTVLGITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTT-QAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR-TDITVTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNG-IQIIFGARAQFIA</Hsp_qseq>
+      <Hsp_hseq>IESLQRLGRALMLPIAILPIAGLLLRLGDVDLLDIPLVHDAGKAIFANLALIFAIGIAVGFARDNNGTAGLAGAIG-YLVMISVLKVID------------------PGIDMGVLSGIISGLVAGALYNRFKDVKLPEYLAFFGGRRFVPIATGISAVCLGLLFGVIWPPLQQGINGLGQLML-ESGSFGAFAFGVLNRLLIVTGLHHILNNLVWFVFGSFTDPETGRVVTGDLARYFAGDPKG------------GQFMAGMFPVMMFGLPAACLAMYRNARPERRKLIGGLLLSMALTAFLTGVTEPVEFAFMFLAPLLYLLHALLTGLSMALTDLLDIRLGFTFSGGAID-LALGWGRSTHGWMLWPLGLLYAG-----IYYLVFDFCIRRFNLKTPGREDDASSESGDNAEAERAPAFIRALGGAANLEVVDACTTRLRLRLVDRNKASDAQLKALGAMAVVRPGKAGSLQVVVGPQADSIA</Hsp_hseq>
+      <Hsp_midline>+  L  +GRALMLPI++LP AGLLL  GD     +PL+ +AG  IF NL ++FAIG AVG A ++ G A L+ A+  ++  I++  V+                   P + MGV  G+I G++A   YNRF  ++LPE+L FF G+RFV IAT   +  LGLL   +W  +Q GI+ L  ++  ++ +   F FG++ R LI  GLHHI     W+ FG +T  + G+V+ GD   +F    +G            G+FM G FP+M+F LPAACLAMY  A  + +K+  G+L S ALT FLTG+TEPVEF F+F+AP+LY+ +A++ GLS     LL   +  +FS G ID ++ G   S +G+    L  +  G     IYY  F F IRRF++KTPGR  D +  + D  +AE A   +  LGG+ N++ V AC TRLRL + +R+      L  +GA  VV  G  G +Q++ G +A  IA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8506</Hit_id>
+  <Hit_def>gnl|TC-DB|P09323|4.A.1.1.2 PTS SYSTEM, N-ACETYLGLUCOSAMINE-SPECIFIC IIABC COMPONENT (EIIABC-NAG) (N-ACETYLGLUCOSAMINE-PERMEASE IIABC COMPONENT) (PHOSPHOTRANSFERASE ENZYME II, ABC COMPONENT) (EC 2.7.1.69) (EII-NAG) - Escherichia coli.</Hit_def>
+  <Hit_accession>8506</Hit_accession>
+  <Hit_len>648</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>323.939</Hsp_bit-score>
+      <Hsp_score>829</Hsp_score>
+      <Hsp_evalue>7.97438e-104</Hsp_evalue>
+      <Hsp_query-from>17</Hsp_query-from>
+      <Hsp_query-to>499</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>468</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>193</Hsp_identity>
+      <Hsp_positive>273</Hsp_positive>
+      <Hsp_gaps>46</Hsp_gaps>
+      <Hsp_align-len>494</Hsp_align-len>
+      <Hsp_qseq>IGRALMLPISLLPAAGLLLAFG--DKFHMPLMMNAGGIIFDNLPMLFAIGSAVGLASES-GIAALSAAVSVFITNITISTVLGITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTD-----ITVTADDKTD---AELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMIGK</Hsp_qseq>
+      <Hsp_hseq>LGRALQLPIAVLPVAALLLRFGQPDLLNVAFIAQAGGAIFDNLALIFAIGVASSWSKDSAGAAALAGAVGYFVLT-------------------KAMVTINPEINMGVLAGIITGLVGGAAYNRWSDIKLPDFLSFFGGKRFVPIATGFFCLVLAAIFGYVWPPVQHAIHAGGEWIVSAG-ALGSGIFGFINRLLIPTGLHQVLNTIAWFQIGEFTNAAGTVFHGDIN----------RFYAGDG--TAGMFMSGFFPIMMFGLPGAALAMYFAAPKERRPMVGGMLLSVAVTAFLTGVTEPLEFLFMFLAPLLYLLHALLTGISLFVATLLGIHAGFSFSAGAIDYALMYNLPAAS---QNVWMLLVMGVIFFAIYFVVFSLVIRMFNLKTPGREDKEDEIVTEEANSNTEEGLTQLATNYIAAVGGTDNLKAIDACITRLRLTVADSARVNDTMCKRLGASGVVKLNKQTIQVIVGAKAESIGDAMKKVVAR</Hsp_hseq>
+      <Hsp_midline>+GRAL LPI++LP A LLL FG  D  ++  +  AGG IFDNL ++FAIG A   + +S G AAL+ AV  F+                      AMV   P + MGV  G+I G++    YNR+  ++LP+FL FF GKRFV IAT F   +L  +  YVW  +Q  I +    +     A  + IFG + R LIP GLH +     W+  G++T  AG V HGD            + ++ D    AG FM G FP+M+F LP A LAMY  A  + + +  G+L S A+T FLTG+TEP+EF F+F+AP+LY+ +A++ G+S     LL  H   SFSAG IDY     LP+ +    +    +++GV    IY+  F  VIR F++KTPGR D     +T  A+  T+    +LAT  +  +GG+ N+ ++ ACITRLRL VA+   V+      +GA GVV +    IQ+I GA+A+ I   M  ++ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7135</Hit_id>
+  <Hit_def>gnl|TC-DB|O34521|4.A.1.1.7 Phosphotransferase system (PTS) N-acetylglucosamine-specific enzyme IICB component (YflF) - Bacillus subtilis.</Hit_def>
+  <Hit_accession>7135</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>315.849</Hsp_bit-score>
+      <Hsp_score>808</Hsp_score>
+      <Hsp_evalue>4.4792e-103</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>188</Hsp_identity>
+      <Hsp_positive>275</Hsp_positive>
+      <Hsp_gaps>51</Hsp_gaps>
+      <Hsp_align-len>494</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAFG--DKFHMPLMMNAGGIIFDNLPMLFAIGSAVGLASES-GIAALSAAVSVFITNITISTVLGITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYI-SFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR--TDITVTADDKTDAELATEI-VNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>LSFLQKLGKSFMLPIAVLPAVGIILALGREDVFNIPFVYQAGTAVFDHLPLIFAIGIAIGISKDSNGAAGLSGAISYLMLDAATKTI-------------------DKTNNMAVFGGIIAGLIAGYTYNRFKDTKLPEYLGFFSGRRLVPILTAIITIILAGIFGVVWPPIQSCINSFGEWMLGLGGIGAG-IFGLFNRLLIPLGLHHVLNNIFWFQFGEYNGVTGDL---------------ARFFAKDP--TAGTYMTGFFPIMMFGLPAACLAMVVTAKPSKRKATAGMMIGFALTAFITGITEPIEFAFMFLSPLLYAVHAVLTGLSLFIVNWLGIRSGFSFSAGAIDYVLSYGIAEKP-------LLLLLVGICYAAVYFIVFYVLIKALNLKTPGREDDDVDEVLDENTVQDVNENIMLKGLGGKENLQTIDHCATRLRLTVKDTALVDEALLKKAGAKGVVKSGGQSVQVIIGPNVEFAAEELRAAV</Hsp_hseq>
+      <Hsp_midline>LS L  +G++ MLPI++LPA G++LA G  D F++P +  AG  +FD+LP++FAIG A+G++ +S G A LS A+S  + +    T+                     T  M VFGG+I G++A + YNRF   +LPE+LGFFSG+R V I TA ++ IL  +   VW  IQ+ I+S    + G     +  IFGL  R LIPLGLHH+    FW+ FG+Y    G +                + F+ D    AG +M G FP+M+F LPAACLAM   A    +K  AG++   ALT F+TGITEP+EF F+F++P+LY  +A++ GLS   +  L      SFSAG IDY+ S+GI           L  ++VG+    +Y+  F  +I+  ++KTPGR   D+    D+ T  ++   I +  LGG +N+ ++  C TRLRL V +   VD+  L   GA+GVV  G   +Q+I G   +F A+ +   +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18908</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9S2H4|4.A.1.1.20 Putative PTS transmembrane component OS=Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145) GN=SCO2907 PE=4 SV=1</Hit_def>
+  <Hit_accession>18908</Hit_accession>
+  <Hit_len>416</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.151</Hsp_bit-score>
+      <Hsp_score>666</Hsp_score>
+      <Hsp_evalue>2.37379e-82</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>408</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>404</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>154</Hsp_identity>
+      <Hsp_positive>229</Hsp_positive>
+      <Hsp_gaps>41</Hsp_gaps>
+      <Hsp_align-len>417</Hsp_align-len>
+      <Hsp_qseq>SGFIKSLSKLSMIGRALMLPISLLPAAGLLLAFG------------DKFHMPLMMNAGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVLGITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGY-QTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR</Hsp_qseq>
+      <Hsp_hseq>SGLFQGLQK---VGRSLQLPIAVLPAAGIMVRLGQDDIFGKDGLGWDKV-AAVFNNAGGALTGSLPILFCIGVAIGFAKKADGSTALAAVVGFLVYSKVLEAFPVTEAVVQDGADVAATYNDP----GVLGGIIMGLLAAVLWQRYHRKKLVDWLGFFNGRRLVPIIMAFVGIVVGVFFGLVWEPIGDGISNFGEWMTGLGSGGAA-LFGGVNRALIPVGMHQFVNTVAWFQLGDFTNSAGDVVHGDIT----------RFLAGDP--SAGIFQAGFFPIMMFGLPAAALAMAHTARPERRKAVLGMMISLAATSFVTGVTEPIEFSFMFIAPVLYVLHAVLTAISMAITWGLGVHAGFNFSAGFIDY-------ALNWHLATKPWLIIPIGLVFAAIYYVTFRFAIVKFNLKTPGR</Hsp_hseq>
+      <Hsp_midline>SG  + L K   +GR+L LPI++LPAAG+++  G            DK    +  NAGG +  +LP+LF IG A+G A ++  +   AAV  F+    +     +T  +   G   A     P    GV GG+I G+LA+  + R+H  +L ++LGFF+G+R V I  AF+  ++G+    VW+ I  GI +    + G     +  +FG V RALIP+G+H       W+  GD+T  AG V+HGD T          +  + D   +AG F  G FP+M+F LPAA LAM H A  + +K   G++ S A T F+TG+TEP+EF+F+F+AP+LY+ +A++  +S    + L  H   +FSAG IDY       +LN +  T     + +G+    IYY TFRF I +F++KTPGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9317</Hit_id>
+  <Hit_def>gnl|TC-DB|P19642|4.A.1.1.3 PTS system, maltose and glucose-specific IIABC component (Maltose and glucose-permease IIABC component) (Phosphotransferase enzyme II, ABC component) (EC 2.7.1.69) - Escherichia coli.</Hit_def>
+  <Hit_accession>9317</Hit_accession>
+  <Hit_len>530</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>262.307</Hsp_bit-score>
+      <Hsp_score>669</Hsp_score>
+      <Hsp_evalue>1.86177e-81</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>525</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>168</Hsp_identity>
+      <Hsp_positive>266</Hsp_positive>
+      <Hsp_gaps>50</Hsp_gaps>
+      <Hsp_align-len>532</Hsp_align-len>
+      <Hsp_qseq>MSLWSGFIKSLSKLSMIGRALMLPISLLPAAGLLLAFGDKFH-------MPLMMNA------------GGIIFDNLPMLFAIGSAVGLASES-GIAALSAAVSVFITNITIST------VLGITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQA-GQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFM-QGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDITVTADDKTDAEL-------ATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>VTLWEFF-------QQLGKTFMLPVALLSFCGIMLGIGSSLSSHDVITLIPVLGNPVLQAIFTWMSKIGSFAFSFLPVMFCIAIPLGLARENKGVAAFAGFIGYAVMNLAVNFWLTNKGILPTTDAAVLKANNIQSILGIQSIDTGILGAVIAGIIVWMLHERFHNIRLPDALAFFGGTRFVPIISSLVMGLVGLVIPLVWPIFAMGISGLGHMINSAGDFGP-MLFGTGERLLLPFGLHHILVALIRFTDAGGTQEVCGQTVSGALTIFQAQLSCPTTHGFSES---ATRFLSQGKMPAFLGGLPGAALAMYHCARPENRHKIKGLLISGLIACVVGGTTEPLEFLFLFVAPVLYVIHALLTGLGFTVMSVLGVTIGNT-DGNIIDFVVFGI---LHGLSTKWYMVPVVAAIWFVVYYVIFRFAITRFNLKTPGRDSEVASSIEKAVAGAPGKSGYNVPAILEALGGADNIVSLDNCITRLRLSVKDMSLVNVQALKDNRAIGVVQLNQHNLQVVIGPQVQSVKDEMAGLM</Hsp_hseq>
+      <Hsp_midline>++LW  F         +G+  MLP++LL   G++L  G           +P++ N             G   F  LP++F I   +GLA E+ G+AA +  +   + N+ ++       +L  T     +      ++GI ++  G+ G +I GI+    + RFH ++LP+ L FF G RFV I ++ +  ++GL++P VW     GI  L  ++N         +FG  ER L+P GLHHI      ++    T +  GQ + G  TI+   L        S+S   A +F+ QG+ P  L  LP A LAMYH A  +N+    G+L S  + C + G TEP+EF F+FVAP+LY+ +A++ GL +  M +L   I  +    +ID++ FGI   L+G  T +    +V     ++YY  FRF I RF++KTPGR     ++ +K  A            I+  LGG+ NI S+  CITRLRL V +   V+   L    A GVV +  + +Q++ G + Q +   M+G++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16196</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8GBT6|4.A.1.1.5 PtsC2 protein - Streptomyces olivaceoviridis (Streptomyces corchorusii).</Hit_def>
+  <Hit_accession>16196</Hit_accession>
+  <Hit_len>403</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>255.758</Hsp_bit-score>
+      <Hsp_score>652</Hsp_score>
+      <Hsp_evalue>1.96281e-80</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>408</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>388</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>230</Hsp_positive>
+      <Hsp_gaps>48</Hsp_gaps>
+      <Hsp_align-len>417</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAFG--DKFHMP-----------LMMNAGGIIFDNLPMLFAIGSAVGLASES-GIAALSAAVSVFITNITISTVLGIT-PEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQV---IHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLID-YISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR</Hsp_qseq>
+      <Hsp_hseq>MAVLQRIGRSLMLPVAVLPAAALLVRLGNADMLGRPEFPAFVTKIAGFMAAGGNAILDNMALLFAVGIAIGFAKKSDGSTALAAVVGYLVFKNVLATFTDKNLPQVAKAVDGKVVMVDAP-VDAKVLGGVVMGLVVALLYQRFYRTKLPDWAGFFGGRRLVPILSAFAGLVIGIVFGYIWPVLGTGLHNFGEWLVGSG-AVGAGIFGVANRALIPIGMHHLLNSFPWFQAGEYEGKSGDIARFLAGDPT--------------------AGQFMTGFFPIMMFALPAACLAIVHCARPERRKVVGGMMFSLALTSFVTGVTEPIEFTFMFIAPVLYAIHAVLTGVSMALTWALGMKDGFGFSAGAVDFFLNLGIASNPWG-------LALVGVCFAALYYVVFRFAITKFNLPTPGR</Hsp_hseq>
+      <Hsp_midline>++ L  IGR+LMLP+++LPAA LL+  G  D    P            M   G  I DN+ +LFA+G A+G A +S G  AL+A V   +    ++T      P++A       ++V  P +   V GG++ G++ +  Y RF+  +LP++ GFF G+R V I +AF   ++G++  Y+W  +  G+ +    + G   A    IFG+  RALIP+G+HH+     W+  G+Y  ++G +   + GD T                    AG+FM G FP+M+FALPAACLA+ H A  + +K+  G++FS ALT F+TG+TEP+EFTF+F+AP+LY  +A++ G+S    + L       FSAG +D +++ GI  +  G         +VGV    +YY  FRF I +F++ TPGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16197</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8GBT7|4.A.1.1.5 PtsC1 protein - Streptomyces olivaceoviridis (Streptomyces corchorusii).</Hit_def>
+  <Hit_accession>16197</Hit_accession>
+  <Hit_len>463</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>249.98</Hsp_bit-score>
+      <Hsp_score>637</Hsp_score>
+      <Hsp_evalue>1.72971e-77</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>408</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>161</Hsp_identity>
+      <Hsp_positive>228</Hsp_positive>
+      <Hsp_gaps>51</Hsp_gaps>
+      <Hsp_align-len>430</Hsp_align-len>
+      <Hsp_qseq>WSGFIKSLSKLSMIGRALMLPISLLPAAGLLLAFG--DKFHMP---------LMMNAGGIIFDN---LPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVLGITPEMASQGGKYAMVVGIPTLQ----------MGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLN-GYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR</Hsp_qseq>
+      <Hsp_hseq>WNTLFQGLQKM---GRSLQLPIAVLPAAGILNRLGQPDVFGADGLGWTNVSKVMAGAGGALLDGSLGLPLLFCVGVAIGMAKKSDGSTALAAVAGFLVYYN---VLRQFPEDCPAGAKVVSGVGCQAADGTTSAFTYQNPGVFGGIVIGLLAAYFWQRFHRTRLVDWLGFFNGRRLVPIIMAFVAIAFAALCLWVWPPIGDALEGFSDWMSGLG-AWGAGVFGIANRALLVVGLHQFLNVPIWFQFGTFTRPDGTVAHGD----INMFLAGDPS--------AGQFTSGFFPIMMFALPAAALAITHCARRERRKEVGGLMLSVALTSFVTGITEPIEYSFLFIAPALYAVHAVLTGVSMAVTWGLGVHDGFSFSAGLIDYV-------INWNLATRPWLIIPIGLCFAAVYYAIFRFAITRFDLKTPGR</Hsp_hseq>
+      <Hsp_midline>W+   + L K+   GR+L LPI++LPAAG+L   G  D F            +M  AGG + D    LP+LF +G A+G+A +S  +   AAV+ F+       VL   PE    G K    VG                GVFGG++ G+LA++ + RFH  +L ++LGFF+G+R V I  AF++     L  +VW  I   ++  S  ++G   A    +FG+  RAL+ +GLH       W+ FG +T   G V HGD      M   G  S        AG+F  G FP+M+FALPAA LA+ H A  + +K   G++ S ALT F+TGITEP+E++F+F+AP LY  +A++ G+S    + L  H   SFSAGLIDY+       +N    T     + +G+    +YY  FRF I RFD+KTPGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14671</Hit_id>
+  <Hit_def>gnl|TC-DB|Q63GK8|4.A.1.1.17 Protein-N(Pi)-phosphohistidine-sugar phosphotransferase (Enzyme II of the phosphotransferase system) (PTS system glucose-specific IIBC component) OS=Bacillus cereus (strain ZK / E33L) GN=ptsG PE=4 SV=1</Hit_def>
+  <Hit_accession>14671</Hit_accession>
+  <Hit_len>545</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>236.884</Hsp_bit-score>
+      <Hsp_score>603</Hsp_score>
+      <Hsp_evalue>1.31456e-71</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>498</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>544</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>160</Hsp_identity>
+      <Hsp_positive>265</Hsp_positive>
+      <Hsp_gaps>59</Hsp_gaps>
+      <Hsp_align-len>546</Hsp_align-len>
+      <Hsp_qseq>IKSLSKLSMIGRALMLPISLLPAAGLLLAFGDKFHMP------------LMMNAGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVLGITPEMASQGGK---------------YAMVVGIPTLQMGVFGGLICGILASWCYNRFHAM-QLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAA---STFIFGLVERALIPLGLHHIWYPSFWYSF--GDYT----TQAGQVIHGDQTIWF-------KMLEEGVKSFSSDSYQNA--GKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDITVTADDKT--------DAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDG-LNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMIG</Hsp_qseq>
+      <Hsp_hseq>ITSFDFWQKFGKALLVVVAVMPAAGLMISIGKLIGMSAGDINAVHTIARVMEDIGWAIITNLHILFAVAIGGSWAKDRAGGAFAALLAFVLTNRITGAIFGVNAEMLADSKAKVSSVLAGDLIVKDYFTSVLGAPALNMGVFVGIITGFLGATLYNKYYNYNKLPQALAFFNGKRFVPFVVIVWSTVTAIVLSLLWPFIQSGLNEFGRWIAASKDSAPIVAPFVYGTLERLLLPFGLHHMLTIPMNYTELGGTYTMLTGSKVGQVVAGQDPLWLAWITDLNNLLANGDTKAYNDLLNNVVPARFKAGQVIGSTAALMGIAFAMFRNVDKEKRAKYKPMFLSAALAVFLTGVTEPIEFMFMFIAPVLYVVYAITTGLAFALADLINLRV---HAFGFIELITRTPMMVNAGLTRDLINFVIVSLVFFGLNFTLFNFLIKKFNLPTPGRAGNYIDNEDEASEGTGNVQDGSLATKVIDLLGGKENIADVDACMTRLRVTVKDLDVVAPEAQWKQNGALGLI-VKDKGVQAVYGPKADVLKSDIQDMLG</Hsp_hseq>
+      <Hsp_midline>I S       G+AL++ ++++PAAGL+++ G    M             +M + G  I  NL +LFA+      A +    A +A ++  +TN     + G+  EM +                   +  V+G P L MGVF G+I G L +  YN+++   +LP+ L FF+GKRFV       S +  ++L  +W  IQ+G++     +     +A   + F++G +ER L+P GLHH+      Y+   G YT    ++ GQV+ G   +W         +L  G     +D   N    +F  G+      AL     AM+     + +     +  SAAL  FLTG+TEP+EF F+F+AP+LY+  AI  GL++    L++  +    + G I+ I+   +    G     +N VIV +    + +  F F+I++F++ TPGR    +  +D+         D  LAT++++LLGG +NI  V AC+TRLR+ V + D V  +      GA G++ V D G+Q ++G +A  +   +  M+G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10962</Hit_id>
+  <Hit_def>gnl|TC-DB|P54715|4.A.1.1.8 PTS system, arbutin-like IICB component (Phosphotransferase enzyme II, CB component) (EC 2.7.1.69) - Bacillus subtilis.</Hit_def>
+  <Hit_accession>10962</Hit_accession>
+  <Hit_len>527</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>233.417</Hsp_bit-score>
+      <Hsp_score>594</Hsp_score>
+      <Hsp_evalue>1.79174e-70</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>483</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>511</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>75</Hsp_gaps>
+      <Hsp_align-len>529</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAFGDKFHMPLMMN------------------AGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFIT-NITISTVLGI---------TPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLS--MVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPL----MLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR---------------------TDITVTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGL-NGIGARGVVFVGDNGIQIIFG</Hsp_qseq>
+      <Hsp_hseq>MQKIQRFGSAMFVPVLLFAFAGIIVGISTLFKNKTLMGPLADPDGFWYQCWYIIEQGGWTVFNQMPLLFAIGIPVALAKKAQARACLEALTVYLTFNYFVSAILTVWGGAFGVDMNQEVGGTSG-LTMIAGIKTLDTNIIGAIFISSIVVFLHNRYFDKKLPDFLGIFQGSTYIVMISFFIMIPIALAVSYIWPMVQSGIGSLQSFLVASG---AVGVWIYTFLERILIPTGLHHFIYTPFIY--GPAVAEGGIV-----TYWAQHLGE----YSQSAKPLKELFPQGGFALHGNSKIFGIPGIALAFYVTAKKEKKKLVAGLLIPVTLTAIVAGITEPIEFTFLFISPFLFAVHAVLAATMSTVMYM--AGVVGNMGGGLIEAVTLNWIPLFGSHGMTYVYQILIGLSFTAIYFFVFRFLILKFNIATPGREKDEQQETKLYSKKEYRERKNKDETASAAETAD-DTAFLYIEALGGKDNITEVTNCATRLRVSVKDETKVEPDSVFRALGAHGVVRNG-KAFQVIIG</Hsp_hseq>
+      <Hsp_midline>+ K+   G A+ +P+ L   AG+++     F    +M                    G  +F+ +P+LFAIG  V LA ++   A   A++V++T N  +S +L +           E+    G   M+ GI TL   + G +    +  + +NR+   +LP+FLG F G  ++ + + F+   + L + Y+W  +Q+GI SL   +V +G   A   +I+  +ER LIP GLHH  Y  F Y  G    + G V     T W + L E    +S  +      F QG F L     +F +P   LA Y  A  + KK+ AG+L    LT  + GITEP+EFTF+F++P L+  +A++A      MY+  A +  +   GLI+ ++   +P    +   ++  +++G+    IY+F FRF+I +F++ TPGR                      D T +A +  D + A   +  LGG  NI  V  C TRLR+ V +   V+ D +   +GA GVV  G    Q+I G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16041</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8DS05|4.A.1.1.11 Putative PTS system, glucose-specific IIABC component - Streptococcus mutans.</Hit_def>
+  <Hit_accession>16041</Hit_accession>
+  <Hit_len>729</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>229.565</Hsp_bit-score>
+      <Hsp_score>584</Hsp_score>
+      <Hsp_evalue>2.57569e-67</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>552</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>161</Hsp_identity>
+      <Hsp_positive>264</Hsp_positive>
+      <Hsp_gaps>64</Hsp_gaps>
+      <Hsp_align-len>540</Hsp_align-len>
+      <Hsp_qseq>GRALMLPISLLPAAGLLLAFGDKFHM-----PLMMNAGGII-------FDNLPMLFAIGSAVGLASESGIAALSAAVSVFITNITISTVLGITPEMASQ---------GGK------YAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQ-LPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAA---STFIFGLVERALIPLGLHHIWYPSFWYSF--GDYTT----QAGQVIHGDQTIWFKMLEE-----GVKSFSSDSYQ----NAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDITVTADDKTDAELA-------------TEIVNLLGGSQNIDSVGACITRLRLEVAERDAV-DKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>GKCLMVVIAVMPAAGLMVSIGNSLALIDPKSTLLVTVANIIAQIGWGVINNLHILFAVAIGGSWAKERAGGAFAAALAFILINLITGNFYGISLEMIADKTSYVHNIFGGKMHVADYFINVLGQPALNMGVFVGIISGFVGATAYNKYYNFRKLPDVLSFFNGKRFVPFVVIVRSTIVALILSVFWPIVQSGINGFGMWIASSQHTAPFLAPFLYGTLERLLLPFGLHHMLTIPMNYTQLGGTYVVLTGAQAGKHVLGQDPLWLAWVQDLIHLKGAGHMSQYHHLLTSVTPARFKVGQMIGSSGILMGLTLAMYRNVDPDKKEKYKGMFLSAAVAVFLTGVTEPLEYMFMFAALPLYLVYAVVQGLAFASADLIHLRV---HSFGNIEFLTRTPMAIKAGLAMDIVNFIVVSVVFGVAMYFITNFMIKKFNLATSGRNGNYDTGDDASDETASNSNAGTANANSQIVKIINLLGGKENISDVDACMTRLRITVTDVAKVGDEAAWKKAGAMGLIVKG-NGVQAVYGPKADVLKSDIQDLL</Hsp_hseq>
+      <Hsp_midline>G+ LM+ I+++PAAGL+++ G+   +      L++    II        +NL +LFA+      A E    A +AA++  + N+      GI+ EM +          GGK      +  V+G P L MGVF G+I G + +  YN+++  + LP+ L FF+GKRFV       S I+ L+L   W  +Q+GI+   M +      A   + F++G +ER L+P GLHH+      Y+   G Y      QAG+ + G   +W   +++     G    S   +        +F  G+       L    LAMY       K+   G+  SAA+  FLTG+TEP+E+ F+F A  LY+  A++ GL++ +  L+H  +    S G I++++   +    G     +N ++V V  G+  YF   F+I++F++ T GR     T DD +D   +              +I+NLLGG +NI  V AC+TRLR+ V +   V D+      GA G++  G NG+Q ++G +A  +   +  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2667</Hit_id>
+  <Hit_def>gnl|TC-DB|C7NB69|4.A.1.1.16 PTS system alpha-glucoside-specific EIICB component OS=Leptotrichia buccalis (strain ATCC 14201 / DSM 1135 / JCM 12969 / NCTC 10249) GN=Lebu_1527 PE=4 SV=1</Hit_def>
+  <Hit_accession>2667</Hit_accession>
+  <Hit_len>529</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>214.927</Hsp_bit-score>
+      <Hsp_score>546</Hsp_score>
+      <Hsp_evalue>1.8219e-63</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>499</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>528</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>148</Hsp_identity>
+      <Hsp_positive>240</Hsp_positive>
+      <Hsp_gaps>68</Hsp_gaps>
+      <Hsp_align-len>542</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAFGDKFHMPLMMN------------------AGGIIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFIT-NITISTVLGI------TPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPL----MLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDIT-----------------------VTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKD-GLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMIGK</Hsp_qseq>
+      <Hsp_hseq>MKKVQRFGGAMMAPVLLFAFTGIVVGLSSVFTNTEVMGKIAEEGTVWYNFWYVISEGGWTVFRQMPILFAIGLPISLATKTNARACMETFALYTTFNYFVAAILKVFYGIDAAKQVADKVTGYSAIGGVPTLDTNLFGGILIAALVVYLHNKYFDKKLPDFLGVFQGSVFVYIVGFVVMIPCAFLTVLIWPKFQMGISALQGFMKASG-IFGVWIYTFLERILIPTGLHHFVYTPFVFG-------PAAVPDGIQVYWV----QHIKEFAQSTQSLKSLFPQGGFALHGNSKIFGAPGIALAMYATAKSDKKKAVAALLIPIIFTAVISGITEPLEFTFLFIAPVLFAVHACLAATMAATMYAF--GVVGNMGGGLLDFFFLNWIPMFKNHSGTVIAQIVIGLIFTAIYFVVFRFLILKMDLKTPGREDEDEEMKLYSKADYRAKHGEGDAKGGVSSAEDEYAQKGAIILEALGGKENIEELNNCATRLRVSVKDASKLLPDAAFKAAGAHGVVRKG-TAIQVIIGLSVPQVRERIEEMMKK</Hsp_hseq>
+      <Hsp_midline>+ K+   G A+M P+ L    G+++     F    +M                    G  +F  +P+LFAIG  + LA+++   A     +++ T N  ++ +L +        ++A +   Y+ + G+PTL   +FGG++   L  + +N++   +LP+FLG F G  FV I    +      L   +W   Q GI +L   +         +I+  +ER LIP GLHH  Y  F +           V  G Q  W     + +K F+  +      F QG F L     +F  P   LAMY  A +  KK  A +L     T  ++GITEP+EFTF+F+AP+L+  +A +A     TMY     +  +   GL+D+     +P    +    +  +++G+    IY+  FRF+I + D+KTPGR D                         V++ +   A+    I+  LGG +NI+ +  C TRLR+ V +   +  D      GA GVV  G   IQ+I G     + + +  M+ K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17730</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9AGA7|4.A.1.1.10 PTS system alpha-glucoside-specific EIICB component [Includes: Alpha- glucoside permease IIC component (PTS system alpha-glucoside-specific EIIC component); Alpha-glucoside-specific phosphotransferase enzyme IIB component (EC 2.7.1.69)</Hit_def>
+  <Hit_accession>17730</Hit_accession>
+  <Hit_len>540</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>212.616</Hsp_bit-score>
+      <Hsp_score>540</Hsp_score>
+      <Hsp_evalue>1.70056e-62</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>524</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>159</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>70</Hsp_gaps>
+      <Hsp_align-len>540</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAFGDKFHMPLMMN-------------------AGGIIFDNLPMLFAIGSAVGLASES-GIAALSAAVSVFITNITISTVLGIT---------PEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYV-WQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPL----MLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLID-YISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTDITV---------TADDKTDAELATE--------IVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGL-NGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>LSQIQRFGGAMFTPVLLFPFAGIVVGIAIMLRNPMFVGEALTAPDSLFAQIVHIIEEGGWTVFRNMPLIFAVGLPIGLAKQAQGRACLAVLVSFLTWNYFINA-MGMTWGHFFGVDFSAEPTAGSGLTMIAGIKTLDTSIIGAIVISGLVTALHNRYFDKPLPVFLGIFQGSSFVVIV-AFLAMIPCAWLTLLGWPKVQLGIESLQAFLRSAG-ALGVWVYIFLERILIPTGLHHFVYGPF--IFGPAVVEGGL-----QVYW----AEHLQAFSQSTEPLKTLFPEGGFALHGNSKVFGSVGIALALYFTAAPENRVKVAGLLIPATLTAMLVGITEPLEFTFLFISPLLFAVHAVLAATMATVMYI--CGVVGNFGGGLLDQFLPQNWIPMFHHHASMMFIQIGIGLCFTALYFVVFRTLILRLNLKTPGREESEIKLYSKADYQAARGKTTAAAAPETRLGQAAGFLQALGGADNIESINNCATRLRIALVDMAKTQSDDVFKALGAHGVVRRG-NGIQVIVGLHVPQVRDQLENLM</Hsp_hseq>
+      <Hsp_midline>LS++   G A+  P+ L P AG+++        P+ +                     G  +F N+P++FA+G  +GLA ++ G A L+  VS    N  I+  +G+T             + G    M+ GI TL   + G ++   L +  +NR+    LP FLG F G  FV I  AFL+ I    L  + W  +Q GI+SL   +     A   +++  +ER LIP GLHH  Y  F   FG    + G      Q  W     E +++FS  +      F +G F L     +F      LA+Y  A  +N+   AG+L  A LT  L GITEP+EFTF+F++P+L+  +A++A      MY+    +  +F  GL+D ++    +P  + + +     + +G+    +Y+  FR +I R ++KTPGR +  +          A  KT A  A E         +  LGG+ NI+S+  C TRLR+ + +      D +   +GA GVV  G NGIQ+I G     +   +  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6766</Hit_id>
+  <Hit_def>gnl|TC-DB|O06900|4.A.1.1.4 PTS system, alpha-glucoside-specific IIBC component (Phosphotransferase enzyme II, BC component) (EC 2.7.1.69) - Fusobacterium mortiferum.</Hit_def>
+  <Hit_accession>6766</Hit_accession>
+  <Hit_len>526</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>205.297</Hsp_bit-score>
+      <Hsp_score>521</Hsp_score>
+      <Hsp_evalue>7.05257e-60</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>523</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>159</Hsp_identity>
+      <Hsp_positive>241</Hsp_positive>
+      <Hsp_gaps>73</Hsp_gaps>
+      <Hsp_align-len>541</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAF-----------------GDKFHMPLMMNAGG-IIFDNLPMLFAIGSAVGLASESGIAALSAAVSVFIT-NITISTVL---------GITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLS--MVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPL----MLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRTD------ITVTADDKTD-------------AELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKD-GLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>LKHFQRLGGALFAPVLLFPFAGLVVALTIILKNPDFVGELANTNGTFYKMITVIEEGGWTVFRQLPLIFAIGLPIGLAKKAHPRACLAVLATYLTYNYFISAILTFWGPSFGVDFTQNVGGVSG-LTTIAGIKTLDTSIVGAIVISGITIYIHNKFFDTKLPDFLGTFQGTTLVSAIAFVVMIPCAYITCLVWPKIQMGISSLQALMVTSG---TFGVWLYTFLERILIPTGLHHFIYGPFIFGPAVVDT-------GIQVAW----AENLLNFANSTQPLKELFPQGGFALHGNSKIFGCIGIALAMYKTARPEKKKIVSGLLIPAALTAALVGITEPLEFTFLFIAPFLFVVHAVLAATMAAVMY---AFGVVKYGSGIIEIAALNWLPLMKNHSGVMFTQLAIGVVFIGIHYLVFKFLIEKYNVKTSGREDEEEETKLYTKADWKAKNGEGKETNSSDLYSGKAKAFLEAFGGKDNIEQVNNCATRLRISVKDEKKVGPDIQFKAAGAHGVVRNG-KAFQVIVGLSVPQVRESFENLM</Hsp_hseq>
+      <Hsp_midline>L     +G AL  P+ L P AGL++A                  G  + M  ++  GG  +F  LP++FAIG  +GLA ++   A  A ++ ++T N  IS +L           T  +    G    + GI TL   + G ++   +  + +N+F   +LP+FLG F G   V+     +      +   VW  IQ GI SL   MV +G       +++  +ER LIP GLHH  Y  F +      T       G Q  W     E + +F++ +      F QG F L     +F      LAMY  A  + KKI +G+L  AALT  L GITEP+EFTF+F+AP L++ +A++A      MY   A     + +G+I+  +   LP +  +       + +GV    I+Y  F+F+I +++VKT GR D      +   AD K               +  A   +   GG  NI+ V  C TRLR+ V +   V  D      GA GVV  G    Q+I G     + ++   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1435</Hit_id>
+  <Hit_def>gnl|TC-DB|ART98514|4.A.1.1.19 PTS alpha-glucoside transporter subunit IICB [Lactobacillus gasseri]</Hit_def>
+  <Hit_accession>1435</Hit_accession>
+  <Hit_len>628</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.496</Hsp_bit-score>
+      <Hsp_score>467</Hsp_score>
+      <Hsp_evalue>1.99977e-51</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>499</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>537</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>151</Hsp_identity>
+      <Hsp_positive>236</Hsp_positive>
+      <Hsp_gaps>69</Hsp_gaps>
+      <Hsp_align-len>547</Hsp_align-len>
+      <Hsp_qseq>LSKLSMIGRALMLPISLLPAAGLLLAFGDKFHMPLM-----------------MNAGG-IIFDNLPMLFAIGSAVGLASES-GIAALSAAVSVFITNITISTVLG-------------ITPEMASQGGKYAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQLPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAASTFIFGLVERALIPLGLHHIWYPSFWYSFGDYTTQAGQVIHGDQTIWFKMLEEGVKSFSSDSYQNAGKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGR----TDITV-------------------TADDKTDAEL--ATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDG-LNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMIGK</Hsp_qseq>
+      <Hsp_hseq>MQKLQRFGAAMFVPVLLFSFAGIVVALGSLFNNATIFGSLANPTTGWYKVWDTISAGGWTVFNQECLLFVVGLPIGLANKSRGRAAMEALITYLTFNYFVGAMLSHWGAFFGVPNFNKIQITANATNGGLTEIAGIKTLDTNIVFSLIIAGIVVYLHNHYFDKKLPEWLGTFQGSTYVYFLGFFVMIPVAFLTCLIWPKVQLGINSMQHFIVSSG-FVGIWIYSFLNRVLIPTGLHHLVYIPFQFG-------PAVVAGGLQPYWLKHLTEYAASTKPLSQIASVEGFQLYGNEKVFLVPFICWAFYATAKKNKKKQTSALLIPAALTSVFAGITEPIDFTYLFAAPVLWIVYSVMAATMNTVMWCF--GLRGLMSDGAIGIASMNWLPLWANHWHIYVMQFIVGIVFGLLTYFIFKIMIEKFNYVTPGREADDEDVKLINKKEYKEKMAQQKAAQQATGVDASDPYIARAQAYLELLGGPNNIEELSSCATRLRVTVKDPDKLGSDAQFRANKAVNVVHHG-KAIQVIVGLDVAQVLERMQTLIEK</Hsp_hseq>
+      <Hsp_midline>+ KL   G A+ +P+ L   AG+++A G  F+   +                 ++AGG  +F+   +LF +G  +GLA++S G AA+ A ++    N  +  +L              I     +  G    + GI TL   +   LI   +  + +N +   +LPE+LG F G  +V     F+   +  L   +W  +Q GI+S+   +         +I+  + R LIP GLHH+ Y  F +           V  G Q  W K L E   S    S   + +  Q      +F +P  C A Y  A    KK  + +L  AALT    GITEP++FT++F AP+L+I  ++MA      M+     +    S G I   S   LP    +   ++   IVG+  GL+ YF F+ +I +F+  TPGR     D+ +                   T  D +D  +  A   + LLGG  NI+ + +C TRLR+ V + D +  D       A  VV  G   IQ+I G     + + M  +I K</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000459547</Hsp_evalue>
+      <Hsp_query-from>413</Hsp_query-from>
+      <Hsp_query-to>493</Hsp_query-to>
+      <Hsp_hit-from>544</Hsp_hit-from>
+      <Hsp_hit-to>624</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>82</Hsp_align-len>
+      <Hsp_qseq>VTADDKTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDG-LNGIGARGVVFVGDNGIQIIFGARAQFIAQTM</Hsp_qseq>
+      <Hsp_hseq>VSQEQDPEVEQAIGFIDLLGGRDNIKKLISCSTRIRVEVYDLSKVADDAHFKDLGAHEVT-RRDNEIDIVIGLNADSIVDKM</Hsp_hseq>
+      <Hsp_midline>V+ +   + E A   ++LLGG  NI  + +C TR+R+EV +   V  D     +GA  V    DN I I+ G  A  I   M</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13765</Hit_id>
+  <Hit_def>gnl|TC-DB|Q48WG5|4.A.1.1.12 PTS system, glucose-specific IIABC component - Streptococcus pyogenes serotype M1.</Hit_def>
+  <Hit_accession>13765</Hit_accession>
+  <Hit_len>631</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>179.104</Hsp_bit-score>
+      <Hsp_score>453</Hsp_score>
+      <Hsp_evalue>1.87452e-49</Hsp_evalue>
+      <Hsp_query-from>108</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>38</Hsp_hit-from>
+      <Hsp_hit-to>454</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>199</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>421</Hsp_align-len>
+      <Hsp_qseq>YAMVVGIPTLQMGVFGGLICGILASWCYNRFHAMQ-LPEFLGFFSGKRFVAIATAFLSFILGLLLPYVWQHIQAGIDSLSMVVNGDNQAA---STFIFGLVERALIPLGLHHIWYPSFWYSF--GDYTTQ----AGQVIHGDQTIWFKMLEEGVKSFSSDSYQNA--------GKFMQGEFPLMLFALPAACLAMYHEAHTKNKKIAAGILFSAALTCFLTGITEPVEFTFIFVAPILYIFNAIMAGLSYMTMYLLHAHIAKSFSAGLIDYISFGILPSLNGYQTHFLNAVIVGVPMGLIYYFTFRFVIRRFDVKTPGRT---DITVTADDKTDA---------ELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVD-KDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>FTSVLESPALNTGVFVGIIAGFVGATAYNKYYNYRKLPEVLTFFNGKRFVPFVVILRSIFVALILVVVWPVIQSGINSFGMWIASSQDSAPILAPFLYGTLERLLLPFGLHHMLTIPMNYTALGGTYEVMTGAAAGTKVFGQDPLWLAWVTDLVHLKGSDASAYSHLMDSVTPARFKVGQMIGATGTLMGVALAMYRNVDADKKHTYKMMFISAAAAVFLTGVTEPLEYLFMFAAMPLYIVYALVQGASFAMADLVNLRV---HSFGNIELLTRTPMALKAGLGMDVINFVWVSVLFAVIMYFIADMMIKKMHLATAGRLGNYDADILGDRNTQTRPTQVADSNSQVVQIVNLLGGAGNIDDVDACMTRLRVTVKDPAKVGAEDDWKKAGAIGLIQKG-NGVQAVYGPKADILKSDIQDLL</Hsp_hseq>
+      <Hsp_midline>+  V+  P L  GVF G+I G + +  YN+++  + LPE L FF+GKRFV       S  + L+L  VW  IQ+GI+S  M +     +A   + F++G +ER L+P GLHH+      Y+   G Y       AG  + G   +W   + + V    SD+   +         +F  G+       L    LAMY       K     +  SAA   FLTG+TEP+E+ F+F A  LYI  A++ G S+    L++  +    S G I+ ++   +    G     +N V V V   +I YF    +I++  + T GR    D  +  D  T               +IVNLLGG+ NID V AC+TRLR+ V +   V  +D     GA G++  G NG+Q ++G +A  +   +  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16198</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8GBT8|4.A.1.1.5 PtsB protein - Streptomyces olivaceoviridis (Streptomyces corchorusii).</Hit_def>
+  <Hit_accession>16198</Hit_accession>
+  <Hit_len>95</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.19848e-10</Hsp_evalue>
+      <Hsp_query-from>421</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>95</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>AELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>ASKAEKIVAGLGGIENIEEVEGCITRLRTEVVDASKVDEAALKAAGAHGVVKMG-SAIQVVIGTDADPIAAEIEDMM</Hsp_hseq>
+      <Hsp_midline>A  A +IV  LGG +NI+ V  CITRLR EV +   VD+  L   GA GVV +G + IQ++ G  A  IA  +  M+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18909</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9S2H6|4.A.1.1.20 Uncharacterized protein OS=Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145) GN=SCO2905 PE=4 SV=1</Hit_def>
+  <Hit_accession>18909</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.71465e-09</Hsp_evalue>
+      <Hsp_query-from>421</Hsp_query-from>
+      <Hsp_query-to>497</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>77</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>AELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGARAQFIAQTMSGMI</Hsp_qseq>
+      <Hsp_hseq>ASKAEKIVAGLGGIDNIDEIEGCITRLRTEVNDPALVNEAALKAAGAHGVVKMG-TAIQVVIGTDADPIAAEIEDMM</Hsp_hseq>
+      <Hsp_midline>A  A +IV  LGG  NID +  CITRLR EV +   V++  L   GA GVV +G   IQ++ G  A  IA  +  M+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11495</Hit_id>
+  <Hit_def>gnl|TC-DB|P77272|4.A.1.2.7 acid porter, MurP (YfeV) - Escherichia coli.</Hit_def>
+  <Hit_accession>11495</Hit_accession>
+  <Hit_len>474</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8322</Hsp_bit-score>
+      <Hsp_score>120</Hsp_score>
+      <Hsp_evalue>9.00984e-07</Hsp_evalue>
+      <Hsp_query-from>421</Hsp_query-from>
+      <Hsp_query-to>499</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>85</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>46</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>AELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFG-ARAQFIAQTMSGMIGK</Hsp_qseq>
+      <Hsp_hseq>SELLNTILTRVGGPGNIASCGNCMTRLRLGVHDSSLVDPNIKTLEGVKGVILTSDQ-VQVVFGPGKAHRAAKAMSELLGE</Hsp_hseq>
+      <Hsp_midline>+EL   I+  +GG  NI S G C+TRLRL V +   VD +     G +GV+   D  +Q++FG  +A   A+ MS ++G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9163</Hit_id>
+  <Hit_def>gnl|TC-DB|P15400|4.A.1.2.10 Negative regulatory protein of sacY - Bacillus subtilis.</Hit_def>
+  <Hit_accession>9163</Hit_accession>
+  <Hit_len>459</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000406574</Hsp_evalue>
+      <Hsp_query-from>422</Hsp_query-from>
+      <Hsp_query-to>484</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>66</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>ELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFGA</Hsp_qseq>
+      <Hsp_hseq>EIAKELLLLAGGKNNIISISHCTTRLRFDVKDETKIDIHAIENLQGVQGTFFRYGLFQIIFGA</Hsp_hseq>
+      <Hsp_midline>E+A E++ L GG  NI S+  C TRLR +V +   +D   +  +      F      QIIFGA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8339</Hit_id>
+  <Hit_def>gnl|TC-DB|P05306|4.A.1.2.9 PTS system, sucrose-specific IIBC component (EIIBC-Scr) (Sucrose- permease IIBC component) (Phosphotransferase enzyme II, BC component) (EC 2.7.1.69) (EII-Scr) - Bacillus subtilis.</Hit_def>
+  <Hit_accession>8339</Hit_accession>
+  <Hit_len>461</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000538049</Hsp_evalue>
+      <Hsp_query-from>422</Hsp_query-from>
+      <Hsp_query-to>483</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>66</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>ELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGIGARGVVFVGDNGIQIIFG</Hsp_qseq>
+      <Hsp_hseq>ETAKRLIELLGGKENIISAAHCATRLRLVMKDESKIDQAQVEELDGVKGAFSSSGQYQIIFG</Hsp_hseq>
+      <Hsp_midline>E A  ++ LLGG +NI S   C TRLRL + +   +D+  +  +      F      QIIFG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9492</Hit_id>
+  <Hit_def>gnl|TC-DB|P24241|4.A.1.2.3 PTS SYSTEM, ARBUTIN-, CELLOBIOSE-, AND SALICIN-SPECIFIC IIABC COMPONENT (EIIABC-ASC) (ARBUTIN-, CELLOBIOSE-, AND SALICIN-PERMEASE IIABC COMPONENT) (PHOSPHOTRANSFERASE ENZYME II, ABC COMPONENT) (EC 2.7.1.69) (EII-ASC) - Escherichia co</Hit_def>
+  <Hit_accession>9492</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000726852</Hsp_evalue>
+      <Hsp_query-from>418</Hsp_query-from>
+      <Hsp_query-to>483</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>68</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>KTDAELATEIVNLLGGSQNIDSVGACITRLRLEVAERDAVDKDGLNGI-GARGVVFVGDNGIQIIFG</Hsp_qseq>
+      <Hsp_hseq>KNYAALARSVIAALGGVDNISAVTHCMTRLRFVIKDDALIDSPTLKTIPGVLGVV-RSDNQCQVIIG</Hsp_hseq>
+      <Hsp_midline>K  A LA  ++  LGG  NI +V  C+TRLR  + +   +D   L  I G  GVV   DN  Q+I G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>3051753292</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

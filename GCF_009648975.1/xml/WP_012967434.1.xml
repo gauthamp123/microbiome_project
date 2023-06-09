@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_012967434.1 MULTISPECIES: HAMP domain-containing histidine kinase [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>473</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_012967434.1 MULTISPECIES: HAMP domain-containing histidine kinase [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>473</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6460</Hit_id>
+  <Hit_def>gnl|TC-DB|MAS05117.1|9.B.34.1.7 hybrid sensor histidine kinase/response regulator [Ahrensia sp.]</Hit_def>
+  <Hit_accession>6460</Hit_accession>
+  <Hit_len>802</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.449</Hsp_bit-score>
+      <Hsp_score>254</Hsp_score>
+      <Hsp_evalue>4.08899e-23</Hsp_evalue>
+      <Hsp_query-from>250</Hsp_query-from>
+      <Hsp_query-to>470</Hsp_query-to>
+      <Hsp_hit-from>321</Hsp_hit-from>
+      <Hsp_hit-to>543</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>224</Hsp_align-len>
+      <Hsp_qseq>RHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQEIVEILDSSSRNLQKLIEQLLDYNRKQADS-PVAREAVDLVDLVENVVAA--HSLPARAKLMHTELTLQARRCLAEPALLISVMDNLYSNAVHYGAESGNIRIHSYRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSLVDAPAGQVCFRITLPS</Hsp_qseq>
+      <Hsp_hseq>KDDFISTVSHELRTPLTSIRGALGLMSSGASGEVGPKMSNLIKIAHKNSERLVALVNDILDIERITTGRLPFTFGLHDLGEMVHAGVDASRNYMPEKNVTLVVEDNFHGEKILTDPERFHQVLMNLLSNAIKFSPDSGQVRIAIGRRQDEIVVSVSDNGVGIPESFHERIFGKFERADNALSKSVNGTGLGLSIAKAIVERLNGRIWFETSGAGSV-FHVALPA</Hsp_hseq>
+      <Hsp_midline>+  F+  +SHEL+TPL S+R    L++   +G + P+   +++I   +S  L  L+  +LD  R      P      DL ++V   V A  + +P +   +  E      + L +P     V+ NL SNA+ +  +SG +RI   R  +++ + V+++G  IP +    IF  F +  +    +V G+GLGLSIA+  V ++ G +    + AG V F + LP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21302</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_064329934.1|9.B.238.3.2 HAMP domain-containing histidine kinase [Shinella sp. HZN7]</Hit_def>
+  <Hit_accession>21302</Hit_accession>
+  <Hit_len>511</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.2781</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>1.03191e-19</Hsp_evalue>
+      <Hsp_query-from>250</Hsp_query-from>
+      <Hsp_query-to>454</Hsp_query-to>
+      <Hsp_hit-from>262</Hsp_hit-from>
+      <Hsp_hit-to>471</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>66</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>210</Hsp_align-len>
+      <Hsp_qseq>RHQFLRHLSHELKTPLASMREGTELLADRVAGPLT-PEQQEIVEILDSSSRNLQKLIEQLLDYNRKQADS-PVAREAVDLVDLVENVVAAHSLPARAK--LMHTELTLQARRCLAEPALLISVMDNLYSNAVHYGAESGNIRIHS-YRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSL</Hsp_qseq>
+      <Hsp_hseq>KSRFLASMSHELRTPLNAILGFSEVMSTEVLGPLNNPVYKEYTSDIHRSGQHLLNLINEILDLSRIEAGKYDLSEDSVHLVDIAEDCIGMVQLRARAKNIAISEQVEGDMPAVWADEKALRQVILNLLSNAVKFTPQGGEIFVKAGWTAGGGQYISIKDNGPGIPEEEIPVVLSAFGQGSIAIKSAEQGTGLGLPIVQAILAKHNGEFIL</Hsp_hseq>
+      <Hsp_midline>+ +FL  +SHEL+TPL ++   +E+++  V GPL  P  +E    +  S ++L  LI ++LD +R +A    ++ ++V LVD+ E+ +    L ARAK   +  ++        A+   L  V+ NL SNAV +  + G I + + +  G    I + ++G  IP  E  ++   F QGS   K A +G+GLGL I +  + +  GE  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17326</Hit_id>
+  <Hit_def>gnl|TC-DB|Q93N33|2.A.21.9.2 Proline sensor PrlS - Aeromonas hydrophila.</Hit_def>
+  <Hit_accession>17326</Hit_accession>
+  <Hit_len>1156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>1.82656e-16</Hsp_evalue>
+      <Hsp_query-from>190</Hsp_query-from>
+      <Hsp_query-to>468</Hsp_query-to>
+      <Hsp_hit-from>736</Hsp_hit-from>
+      <Hsp_hit-to>1010</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>VLLFTRMIIGPVKGIERMINQLGAGKSLDDAALFTGPRELRSVGKRIIWLSERLAWLESQRHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQ----EIVEILDSSSRNLQKLIEQLLDYNRKQADSPVAREA-VDLVDLVENVVAAHSLPARAKLMHTELTLQARRCLAEPALLISVMDNLYSNAVHYGAESGNIRIHSYRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSLVDAPAGQVCFRITL</Hsp_qseq>
+      <Hsp_hseq>VMTFTD--ITPFRAAERVLRE--ANEHLEARVA----ERTHELNRQLLLVNQQVERANHSKSRFLAAVSHDLTQPLNAAKLFTSSLLEMLPGVQGAEQRAEQVRIARHIDDALGATEDLITDLLDISRLEAGKFKAKKLDFALREVFDNLKAEFGVLAQAGDIQFSVVESKLAVYSDVRLLRRVLQNFLTNAFRYNP-GGRVLLGCRRLGDKVRIEVWDNGPGIPLDKQEAIFDEFSRLDHSRTAREQGLGLGLAIARGISLVLGHPLSLRSWPQAGSVFSITL</Hsp_hseq>
+      <Hsp_midline>V+ FT   I P +  ER++ +  A + L+             + ++++ +++++      + +FL  +SH+L  PL + +  T  L + + G    EQ+     I   +D +    + LI  LLD +R +A    A++    L ++ +N+ A   + A+A  +   +        ++  LL  V+ N  +NA  Y    G + +   R G++VRI+V ++G  IP  ++  IF+ F +  H R    +G GLGL+IAR     +   LSL   P     F ITL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4967</Hit_id>
+  <Hit_def>gnl|TC-DB|GIM07801.1|3.E.1.5.3 hypothetical protein Vretimale_11876 [Volvox reticuliferus]</Hit_def>
+  <Hit_accession>4967</Hit_accession>
+  <Hit_len>2205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>2.66554e-15</Hsp_evalue>
+      <Hsp_query-from>248</Hsp_query-from>
+      <Hsp_query-to>469</Hsp_query-to>
+      <Hsp_hit-from>339</Hsp_hit-from>
+      <Hsp_hit-to>563</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>SQRHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQEIVEILDSSSRNLQKLIEQLLDYNR-KQADSPVAREAVDLVDLVENVVAAHSLPARAKLMHTELT-LQARRCLAEPALLISVMDNLYSNAV---HYGAESGNIRIHSYRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSLVDAPAGQVCFRITLP</Hsp_qseq>
+      <Hsp_hseq>TRKDQFMSLMSHELRTPLNGIIQLSDALVRGAGGEMNAKGQHFVKTIKNSSNHLLNIINDILDVAALKEGKLTIKHELCSLAKAVEHVVDIVTPLARKDVVIQRFVDPRTPFIIADFSRVIQILYNLAGNALKFTHHGHVS--VRVAPTADGSAVTLQVADTGIGIATDRINSIWGAFEQVDMSVTRKYGGTGLGLSIVKQLVEAHEGQIEVQSAEGQGTTFTVTLP</Hsp_hseq>
+      <Hsp_midline>+++ QF+  +SHEL+TPL  + + ++ L     G +  + Q  V+ + +SS +L  +I  +LD    K+    +  E   L   VE+VV   +  AR  ++       +    +A+ + +I ++ NL  NA+   H+G  S  +R+     G  V + VA++G  I     N I+  F Q          G+GLGLSI +  V   +G++ +  A      F +TLP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7922</Hit_id>
+  <Hit_def>gnl|TC-DB|OHA58142.1|9.B.259.2.2 hypothetical protein A2607_01510 [Candidatus Vogelbacteria bacterium RIFOXYD1_FULL_42_15]</Hit_def>
+  <Hit_accession>7922</Hit_accession>
+  <Hit_len>718</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>76.6406</Hsp_bit-score>
+      <Hsp_score>187</Hsp_score>
+      <Hsp_evalue>7.54377e-15</Hsp_evalue>
+      <Hsp_query-from>227</Hsp_query-from>
+      <Hsp_query-to>452</Hsp_query-to>
+      <Hsp_hit-from>465</Hsp_hit-from>
+      <Hsp_hit-to>696</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>233</Hsp_align-len>
+      <Hsp_qseq>RELRSVGKRIIWLSERLAWLESQRHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQEIVEILDSSSRNLQKLIEQLLDYNR-KQADSPVAREAVDLVDLVENVV--AAHSLPARAKLMHTELTLQARRCLAEPALLISVMDNLYSNAVHYGAESGNIRIHSYRHGE----QVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGEL</Hsp_qseq>
+      <Hsp_hseq>KDLANTNTELEFANEKLKELDKQKTEFVSIASHQLRSPLTAIKGYSSMLLEGSFGKLSAKSREAVQIVFESSQKLVGVIEDFLNITRIELGKMKYEMSVLDMSKMVESTINELKPSISRRGLTISFSAEGGPFNILGDPSKLNQVFLNVIDNAIKY-TEKGDIAVSISRRQEGGKNLIRFESKDIGVGIDADNLPKLFEKFIRADGAGKTNISGTGLGLFVAKQIVEAHNGKI</Hsp_hseq>
+      <Hsp_midline>++L +    + + +E+L  L+ Q+ +F+   SH+L++PL +++  + +L +   G L+ + +E V+I+  SS+ L  +IE  L+  R +          +D+  +VE+ +     S+  R   +           L +P+ L  V  N+  NA+ Y  E G+I +   R  E     +R +  + G  I A     +FE F +     K  + G+GLGL +A+  V    G++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20890</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_018128393.1|9.B.238.3.1 hybrid sensor histidine kinase/response regulator [Balneola vulgaris]</Hit_def>
+  <Hit_accession>20890</Hit_accession>
+  <Hit_len>568</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.0182</Hsp_bit-score>
+      <Hsp_score>175</Hsp_score>
+      <Hsp_evalue>1.8638e-13</Hsp_evalue>
+      <Hsp_query-from>247</Hsp_query-from>
+      <Hsp_query-to>469</Hsp_query-to>
+      <Hsp_hit-from>193</Hsp_hit-from>
+      <Hsp_hit-to>420</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>237</Hsp_align-len>
+      <Hsp_qseq>ESQRHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQEIVEILDSSSRNLQKLIEQLLDY----NRK----QADSPVAREAVDLVDLVENVVAAHSLPARAKLMHTELTLQARRCLAEPALLISVMDNLYSNAVHYGAESGNIRIHSYRHGEQ-----VRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSLVDAPAGQ-VCFRITLP</Hsp_qseq>
+      <Hsp_hseq>DDTKSQFLATISHEMRTPLNGIVGITELLEET---NLSDEQRELVTNLAYSSNMLNSLIGDVLDYTLLEDRKLVLQNNEIHIQKELKNLVDMFKPKIDSKNKRIELKFEYDSEIPEI--VIGDVTRLRQILVNLVNNAVKFTNE-GYIHIKTRFIAEEEDIQRVRFTIEDSGIGISEQDKALLFTKFFRAKTNDK--VEGTGLGLAICRGLIDLMNGAI-YVDSKLGEGSTFTIEIP</Hsp_hseq>
+      <Hsp_midline>+  + QFL  +SHE++TPL  +   TELL +     L+ EQ+E+V  L  SS  L  LI  +LDY    +RK      +  + +E  +LVD+ +  + + +     K  +     +    + +   L  ++ NL +NAV +  E G I I +    E+     VR  + +SG  I   +K ++F  F++     K  V+G+GLGL+I R  +  M G +  VD+  G+   F I +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18210</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9HV74|2.A.21.9.1 Probable two-component sensor (CbrA) - Pseudomonas aeruginosa.</Hit_def>
+  <Hit_accession>18210</Hit_accession>
+  <Hit_len>983</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.5438</Hsp_bit-score>
+      <Hsp_score>153</Hsp_score>
+      <Hsp_evalue>1.18233e-10</Hsp_evalue>
+      <Hsp_query-from>240</Hsp_query-from>
+      <Hsp_query-to>472</Hsp_query-to>
+      <Hsp_hit-from>751</Hsp_hit-from>
+      <Hsp_hit-to>977</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>239</Hsp_align-len>
+      <Hsp_qseq>SERLAWLESQRHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQEIVEILDSSSRNLQKLIEQLLDYNRKQADSPVAREAVDLVDLVENVVAAHSLPARA-KLMHTELTLQARRCLAEPALLISVMDNLYSNAVHYGAESGNIRIHSYRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSLVDAPA-----GQVCFRITLPSAP</Hsp_qseq>
+      <Hsp_hseq>SERLASIG----RLAAGVAHEIGNPITGIACLAQNLREEREGD--GELTEISEQILDQTKRVSRIVQSLMSFAHSGSHLQ-ALEPVCLSEVAQEAIGLLSLNRRSVEVEFFNLCDPAHWVEGDSQRLAQVLINLLSNARDASPPGGAIRVRSEASEHTVDLVVEDEGSGIPKAIMDQLFEPFFT----TKDPGKGTGLGLALVYSIVEEHYGQIT-IESPTDHQREGGTRFRVTLPRHP</Hsp_hseq>
+      <Hsp_midline>SERLA +     +    ++HE+  P+  +    + L +   G    E  EI E +   ++ + ++++ L+ +    +    A E V L ++ +  +   SL  R+ ++    L   A     +   L  V+ NL SNA       G IR+ S      V + V + G  IP A  + +FEPF+      K   KG+GLGL++    V +  G+++ +++P      G   FR+TLP  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11867</Hit_id>
+  <Hit_def>gnl|TC-DB|PJA07603.1|9.B.259.2.3 hypothetical protein COX69_04265 [Candidatus Falkowbacteria bacterium CG_4_10_14_0_2_um_filter_48_10]</Hit_def>
+  <Hit_accession>11867</Hit_accession>
+  <Hit_len>810</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.003</Hsp_bit-score>
+      <Hsp_score>149</Hsp_score>
+      <Hsp_evalue>3.35732e-10</Hsp_evalue>
+      <Hsp_query-from>213</Hsp_query-from>
+      <Hsp_query-to>469</Hsp_query-to>
+      <Hsp_hit-from>517</Hsp_hit-from>
+      <Hsp_hit-to>783</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>119</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>279</Hsp_align-len>
+      <Hsp_qseq>AGKSLDDAALFTGPRELRS-----VGKRIIWLSERLAWLE---SQRHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQEIVEILDSSSRNLQKLIEQLLDY-------NRKQADSPVAREAVDLVDLVENVVAAHSLPARAKLMHTELTLQ-----ARRCLAEPALLISVMDNLYSNAVHYGAESGNIRIH-SYRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSLVDAPAGQ-VCFRITLP</Hsp_qseq>
+      <Hsp_hseq>AGIAVENGRLYRQVRELNENLYGQVEEKTRDIKEKSRHLEELLNMKNDFLRVVNHQLNTPLSVMKGYYSLMEEGTFPP--------AKALPFVKAGMERISATVADFWQAYELEGEKMAMEP---GAVDIAGLIEKLLPEKKQLKLAQDRQLSIVFQKPAGAAPKAWCDEKKITHVISNLLDNAVFY-TRAGQITVSLAVLKKGWLKISVRDTGAGITAEDRPKMFQKFSRGRRATDFKPDGSGLGLFIAKKIVESNGGEISFQSRGANQGTTFSFTLP</Hsp_hseq>
+      <Hsp_midline>AG ++++  L+   REL       V ++   + E+   LE   + ++ FLR ++H+L TPL+ M+    L+ +    P         + L      ++++   + D+         K A  P    AVD+  L+E ++        A+     +  Q     A +   +   +  V+ NL  NAV Y   +G I +  +      ++I V ++G  I A ++  +F+ F +G         GSGLGL IA+  V    GE+S     A Q   F  TLP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|22020</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_161837784|9.B.238.3.3 HAMP domain-containing histidine kinase [Anaerocolumna sedimenticola]</Hit_def>
+  <Hit_accession>22020</Hit_accession>
+  <Hit_len>768</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>2.30346e-09</Hsp_evalue>
+      <Hsp_query-from>247</Hsp_query-from>
+      <Hsp_query-to>454</Hsp_query-to>
+      <Hsp_hit-from>547</Hsp_hit-from>
+      <Hsp_hit-to>753</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>217</Hsp_align-len>
+      <Hsp_qseq>ESQRHQFLRHLSHELKTPLASMREGTELLADRVAGPLTPEQQEIVEILDSSSRNLQKLIEQLLDYNRKQADSPVAREA-VDLVDLVENVVAAHSLPARAKLMHTELTLQARRCLAEPALLIS--------VMDNLYSNAVHYGAESGNIRIHSYRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSL</Hsp_qseq>
+      <Hsp_hseq>QKMKTDLITNVSHDLKTPLTAIITYVNLLKER--NITEEERASYIETLDKKSLRLKSLIEDLFEISKASSNNVVLNLVDMDLVSLIKQV----QFELSEKIEQSE--VEFRFLLPEEKVILKLDSDKTFRIFENLMLNITKYAMPHTRAYIEIQSSGKEVTVTLKNISASELDFNSQDITERFVRGDKSRN--TEGSGLGLAIVKNFVEVQGGKFKI</Hsp_hseq>
+      <Hsp_midline>+  +   + ++SH+LKTPL ++     LL +R       E+   +E LD  S  L+ LIE L + ++  +++ V     +DLV L++ V          K+  +E  ++ R  L E  +++         + +NL  N   Y        I     G++V + + N            I E F +G   R    +GSGLGL+I ++ V    G+  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|21467</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_080066145.1|9.B.14.1.18 GHKL domain-containing protein [[Clostridium] hungatei]</Hit_def>
+  <Hit_accession>21467</Hit_accession>
+  <Hit_len>445</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.000647389</Hsp_evalue>
+      <Hsp_query-from>364</Hsp_query-from>
+      <Hsp_query-to>454</Hsp_query-to>
+      <Hsp_hit-from>335</Hsp_hit-from>
+      <Hsp_hit-to>422</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>LLISVMDNLYSNAVHYGAESGNIRIHSYRHGEQVRIDVANSGEPIPAAEKNMIFEPFYQGSHQRKGAVKGSGLGLSIARDCVRQMQGELSL</Hsp_qseq>
+      <Hsp_hseq>IISNIIENAFEAMSSFERENKYVLLKTYIHGDKYFIPISNNGPAILESEKTRIFNAGYS---TKDNPSKTRGFGLSIVKNEVARCNGDIRI</Hsp_hseq>
+      <Hsp_midline>++ ++++N +     +  E+  + + +Y HG++  I ++N+G  I  +EK  IF   Y     +    K  G GLSI ++ V +  G++ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2851890356</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

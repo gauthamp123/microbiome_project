@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008804300.1 MULTISPECIES: septum site-determining protein MinD [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>270</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008804300.1 MULTISPECIES: septum site-determining protein MinD [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>270</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17329</Hit_id>
+  <Hit_def>gnl|TC-DB|Q93NW3|8.A.3.2.2 CpsD - Streptococcus pneumoniae.</Hit_def>
+  <Hit_accession>17329</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.8398</Hsp_bit-score>
+      <Hsp_score>133</Hsp_score>
+      <Hsp_evalue>2.34121e-09</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>152</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>RIIVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLIMGC--ERRVVYDFVNVIQGDATLNQALIKDKRTENLYILPASQTRDKDA--LTREGVDKVLEELKKMDFDFIVCD-SPAGIETGALMALYFADEAIITTNPEVSSVRD</Hsp_qseq>
+      <Hsp_hseq>KVFSITSVKMGEGKSTTSTNIAWTFARAGYKTLLIDGDI--RN-SVMLGVFKARDKITGLTEFLSGTTDLSQGLC-DTNIENLFVIQAGSVSPNPTALLQSKNFSTMLETLRKY-FDYIIVDTAPVGVVIDAAIITRKCDASILVTEAGEINRRD</Hsp_hseq>
+      <Hsp_midline>++  +TS K G GK+T+S  IA   A+ G KT++ID DI  RN  +++G    R  +      + G   L+Q L  D   ENL+++ A          L  +    +LE L+K  FD+I+ D +P G+   A +     D +I+ T     + RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10313</Hit_id>
+  <Hit_def>gnl|TC-DB|P39851|8.A.3.2.1 CAPB protein - Staphylococcus aureus.</Hit_def>
+  <Hit_accession>10313</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.2098</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>4.356e-06</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>44</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>159</Hsp_align-len>
+      <Hsp_qseq>IVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLIMGCERRVVYDFVNVIQGDATLNQALIKDKRTENLYILPASQT--RDKDALTREGVDKVLEELKKMDFDFIVCDS-PAGIETGALMALYFADEAIITTNPEVSSVRDSDRILGIL</Hsp_qseq>
+      <Hsp_hseq>LLITSEKSASGKSILSANIAVTYAQAGYKTLIIDGDMRKPTQHYIFDLPNN--SGLSNLIINKTTYSDS-IKETRVENLNVLTAGPTPPNPSELIASSKFATIFNELLN-HYDFIVIDTPPINTVTDAQVYARIVKNCVLVIDAEKNNKSEVKKAKGLL</Hsp_hseq>
+      <Hsp_midline>+++TS K   GK+  SA IA   AQ G KT++ID D+       I            N+I    T + + IK+ R ENL +L A  T     + +       +  EL    +DFIV D+ P    T A +        ++  + E ++  +  +  G+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|71</Hit_id>
+  <Hit_def>gnl|TC-DB|A0L4L0|3.A.1.132.3 Putative uncharacterized protein - Magnetococcus sp. (strain MC-1).</Hit_def>
+  <Hit_accession>71</Hit_accession>
+  <Hit_len>339</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>1.60244e-05</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>52</Hsp_query-to>
+      <Hsp_hit-from>91</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>50</Hsp_align-len>
+      <Hsp_qseq>RIIVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLIMGC</Hsp_qseq>
+      <Hsp_hseq>RIILVASGKGGVGKSTVAVNLAVGLNLLGHKVGLMDADIYGPSVPTMLGC</Hsp_hseq>
+      <Hsp_midline>RII+V SGKGGVGK+T +  +A GL   G K  ++D DI   ++  ++GC</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17281</Hit_id>
+  <Hit_def>gnl|TC-DB|Q93E02|8.A.3.2.3 EpsD - Streptococcus thermophilus.</Hit_def>
+  <Hit_accession>17281</Hit_accession>
+  <Hit_len>232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>4.78678e-05</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>RIIVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLIMGCERRVVY-DFVNVIQGDATLNQALIKDKRTENLYILPASQTRDKDALTREGVDKVLEELKKMDFDFIVCDS-PAGIETGALMALYFADEAIITT</Hsp_qseq>
+      <Hsp_hseq>KVIAISSVEAGEEKSTTSVNLAISFASVGLRTLLIDAD--TRNSVLSGTFKSNEPYKGLSNFLSGNADLNETICQTDISGLDVIASGPVAPNPTSLLQNDNFRHLMEVARSRYDYVIIDTPPIGLVIDAVIIAHQADASLLVT</Hsp_hseq>
+      <Hsp_midline>++I ++S + G  K+T+S  +A   A  G +T++ID D   RN  L    +    Y    N + G+A LN+ + +   +    I       +  +L +    + L E+ +  +D+++ D+ P G+   A++  + AD +++ T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18462</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9L715|3.A.7.18.1 CpaE OS=Caulobacter crescentus GN=cpaE PE=4 SV=1</Hit_def>
+  <Hit_accession>18462</Hit_accession>
+  <Hit_len>517</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000147614</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>258</Hsp_hit-from>
+      <Hsp_hit-to>501</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>258</Hsp_align-len>
+      <Hsp_qseq>RIIVVTSGKGGVGKTTSSAAIATGLAQKGKK-TVVIDFDI--GLRNLDLIMGCERRVVYDFVNVIQGDATL-NQALIKDKRTENLYILPASQTRDKDALTREGVDKVLEELKKMD--FDFIVCDSPAGIETGALMALYFADEAIITTNPEVSSVRDSDRILGILASKSRRAENGEEPIKEHLLLTRYN-PGRVNKGDMLSMEDVLEILRINLVGVIPEDQSVL-RASNQGEPVILDAASDAGKAYADTVERLLGEERP</Hsp_qseq>
+      <Hsp_hseq>RQIAFVGAKGGVGASTLAHNFAWSMAEKMQSATVLVDLDLAFGTAGLDFNQDPLQGVLDALSQPDRLDPVLMDRMMVRCADRLSLFAAPASLDDDYEF----GADAFEEVTQKIRGAAPFVVLDLPHVWNAWSRRVLIGSDDLVVVATPDLASLRNAKNIIDLV--KGSRPNDA----PPRLVLNQVGVPGRPE----IPVKDFGEALGVQPSLVLPFDPKPYGQAANNGQMLAEVAPKSKAAEGLEHLARLISRRDP</Hsp_hseq>
+      <Hsp_midline>R I     KGGVG +T +   A  +A+K +  TV++D D+  G   LD      + V+       + D  L ++ +++     +L+  PAS   D +     G D   E  +K+     F+V D P      +   L  +D+ ++   P+++S+R++  I+ ++  K  R  +        L+L +   PGR      + ++D  E L +    V+P D     +A+N G+ +   A         + + RL+    P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14217</Hit_id>
+  <Hit_def>gnl|TC-DB|Q58542|3.A.19.1.3 Putative arsenical pump-driving ATPase OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) GN=MJ1142 PE=1 SV=1</Hit_def>
+  <Hit_accession>14217</Hit_accession>
+  <Hit_len>349</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.000165044</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>124</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>VVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLI---MGCERRVV--YDFVNVIQGDATLNQALIKDKR----TENLYILPASQTRDKDALTREGVDK------VLEELKKMDFDFIVCD-SPAG</Hsp_qseq>
+      <Hsp_hseq>IMFGGKGGVGKTTMSAATGVYLAEKGLKVVIVSTDPAHSLRDIFEQEFGHEPTKVKGYDNLYVVEIDPQKAMEEYKEKLKAQIEENPFLGEMLEDQLEMAALSPGTDESAAFDVFLKYMDSNEFDVVIFDTAPTG</Hsp_hseq>
+      <Hsp_midline>++  GKGGVGKTT SAA    LA+KG K V++  D      D+     G E   V  YD + V++ D        K+K      EN ++    + + + A    G D+       L+ +   +FD ++ D +P G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9932</Hit_id>
+  <Hit_def>gnl|TC-DB|P33698|8.A.3.1.1 SUCCINOGLYCAN BIOSYNTHESIS TRANSPORT PROTEIN EXOP - Rhizobium meliloti (Sinorhizobium meliloti).</Hit_def>
+  <Hit_accession>9932</Hit_accession>
+  <Hit_len>786</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>0.000386963</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>575</Hsp_hit-from>
+      <Hsp_hit-to>697</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>ARIIVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLIMGCERRVVYDFVNVIQGDATLNQALIKDKRTENLYILPAS----QTRDKDALTREGVDKVLEELKKMDFDFIVCDSPA</Hsp_qseq>
+      <Hsp_hseq>SRVIAIASALPDEGKSIIAANFAALLAASGKRTLLIDADIRKPGLTQMITPAPRT--GLVETLIGEASWPAGIKVDQRTK-LAILPAGGASHQRHQSNELLASPAMANLIENARNAFDYVVVDLAA</Hsp_hseq>
+      <Hsp_midline>+R+I + S     GK+  +A  A  LA  GK+T++ID DI    L  ++    R     V  + G+A+    +  D+RT+ L ILPA     Q    + L        L E  +  FD++V D  A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|498</Hit_id>
+  <Hit_def>gnl|TC-DB|A5FN22|8.A.3.3.4 Wzc OS=Flavobacterium johnsoniae (strain ATCC 17061 / DSM 2064 / UW101) GN=wzc PE=4 SV=1</Hit_def>
+  <Hit_accession>498</Hit_accession>
+  <Hit_len>815</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.000517805</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>137</Hsp_query-to>
+      <Hsp_hit-from>600</Hsp_hit-from>
+      <Hsp_hit-to>735</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>66</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>139</Hsp_align-len>
+      <Hsp_qseq>ARIIVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLIMGCERRVVYDFVNVIQGDATLNQALIKDKRTENLYILPAS--QTRDKDALTREGVDKVLEELKKMDFDFIVCDS-PAGIETGALMALYFAD</Hsp_qseq>
+      <Hsp_hseq>SKTLMITSSISGEGKTFCSINIATVFALSEKKTVIVGLDLRKPRL-ADEFCLTNHQLGVVNYLIKQNTLEE-ITNSTQISNLDVILSGPIPPNPSELILGDAMGELINELKQ-KYDYIILDTPPVGLVSDALELIQYTD</Hsp_hseq>
+      <Hsp_midline>++ +++TS   G GKT  S  IAT  A   KKTV++  D+    L     C        VN +    TL + +    +  NL ++ +        + +  + + +++ ELK+  +D+I+ D+ P G+ + AL  + + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5695</Hit_id>
+  <Hit_def>gnl|TC-DB|K9YXY1|8.A.3.1.2 Capsular exopolysaccharide biosynthesis protein OS=Dactylococcopsis salina PCC 8305 GN=Dacsa_3240 PE=4 SV=1</Hit_def>
+  <Hit_accession>5695</Hit_accession>
+  <Hit_len>746</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000676584</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>533</Hsp_hit-from>
+      <Hsp_hit-to>693</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>RIIVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGLRNLDLIMGCERRVVYDFVNVIQGDATLNQALIKDKRTENLYILPASQTRDKDALTREGVDKVLEELKKMDFDFIVCDS-PAGIETGALMALYFADEAIITTNPEVSSVRDSDRILGILASKSR</Hsp_qseq>
+      <Hsp_hseq>KVIVLTSSIPSEGKSTISANLGMALAELGNKVLIIDGD--LRRPSQHQVWEEPNAVGLSNVLVEDKEINSVVRELMPNLDVLTAGAPPPNSTALLDSQRMKDVLNQC-SLDYDYVLVDTPPLAVAADAVILGRLGQGVLLVVRPSVVAGGNLDSTREILQNSGQ</Hsp_hseq>
+      <Hsp_midline>++IV+TS     GK+T SA +   LA+ G K ++ID D  LR        E        NV+  D  +N  + +     ++    A        L  + +  VL +   +D+D+++ D+ P  +   A++        ++   P V +  + D    IL +  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|640</Hit_id>
+  <Hit_def>gnl|TC-DB|A6TP82|2.A.59.1.5 Arsenite-activated ATPase ArsA OS=Alkaliphilus metalliredigens (strain QYMF) GN=Amet_1830 PE=4 SV=1</Hit_def>
+  <Hit_accession>640</Hit_accession>
+  <Hit_len>295</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000837205</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>40</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>40</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>32</Hsp_align-len>
+      <Hsp_qseq>SGKGGVGKTTSSAAIATGLAQKGKKTVVIDFD</Hsp_qseq>
+      <Hsp_hseq>SGKGGVGKTSMASTTAVHYAEKGKKTLIVTTD</Hsp_hseq>
+      <Hsp_midline>SGKGGVGKT+ ++  A   A+KGKKT+++  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|637</Hit_id>
+  <Hit_def>gnl|TC-DB|A6TLY5|2.A.59.1.6 Arsenite-activated ATPase ArsA OS=Alkaliphilus metalliredigens (strain QYMF) GN=Amet_0986 PE=4 SV=1</Hit_def>
+  <Hit_accession>637</Hit_accession>
+  <Hit_len>295</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000837205</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>40</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>40</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>32</Hsp_align-len>
+      <Hsp_qseq>SGKGGVGKTTSSAAIATGLAQKGKKTVVIDFD</Hsp_qseq>
+      <Hsp_hseq>SGKGGVGKTSMASTTAVHYAEKGKKTLIVTTD</Hsp_hseq>
+      <Hsp_midline>SGKGGVGKT+ ++  A   A+KGKKT+++  D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>96</Statistics_hsp-len>
+      <Statistics_eff-space>1361423676</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

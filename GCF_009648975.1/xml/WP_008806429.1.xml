@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008806429.1 MULTISPECIES: hemolysin III family protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>219</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008806429.1 MULTISPECIES: hemolysin III family protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>219</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11236</Hit_id>
+  <Hit_def>gnl|TC-DB|P67153|1.C.113.1.10 UPF0073 inner membrane protein YqfA OS=Escherichia coli (strain K12) GN=yqfA PE=1 SV=1</Hit_def>
+  <Hit_accession>11236</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>410.609</Hsp_bit-score>
+      <Hsp_score>1054</Hsp_score>
+      <Hsp_evalue>3.87349e-148</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>219</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>219</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>201</Hsp_identity>
+      <Hsp_positive>213</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>219</Hsp_align-len>
+      <Hsp_qseq>MVRKPLITQGYSLAEEVANSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAIPHQRAKQWLKKFDHCAIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVCKRIPYNHAIWHGFVLGGSVCHFLAIYLYVGQS</Hsp_qseq>
+      <Hsp_hseq>MVQKPLIKQGYSLAEEIANSVSHGIGLVFGIVGLVLLLVQAVDLNASATAITSYSLYGGSMILLFLASTLYHAIPHQRAKMWLKKFDHCAIYLLIAGTYTPFLLVGLDSPLARGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLAMGWLSLVVIYEMAVKLAAGSVTLLAVGGVVYSLGVIFYVCKRIPYNHAIWHGFVLGGSVCHFLAIYLYIGQA</Hsp_hseq>
+      <Hsp_midline>MV+KPLI QGYSLAEE+ANS+SHGIGLVFGIVGLVLLLVQAVD NASATAITSYSLYGGSMI+LFLASTLYHAIPHQRAK WLKKFDHCAIYLLIAGTYTPFLLVGL+SPLA+GLMIVIWSLALLGILFKLTIAHRFKILSLVTYL MGWLSL+V+Y++AVKLA G VTLLAVGGVVYSLGVIFYVCKRIPYNHAIWHGFVLGGSVCHFLAIYLY+GQ+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10928</Hit_id>
+  <Hit_def>gnl|TC-DB|P54176|1.C.113.1.1 HEMOLYSIN III (HLY-III) - Bacillus cereus.</Hit_def>
+  <Hit_accession>10928</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>195.667</Hsp_bit-score>
+      <Hsp_score>496</Hsp_score>
+      <Hsp_evalue>2.84532e-63</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>137</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>EEVANSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAIPHQRAKQWLKKFDHCAIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVCKRIPYNHAIWHGFVLGGSVCHFLAIYLYV</Hsp_qseq>
+      <Hsp_hseq>EEIANAITHGIGAILSIPALIILIIHA-SKHGTASAVVAFTVYGVSMFLLYLFSTLLHSIHHPKVEKLFTILDHSAIYLLIAGTYTPFLLITLRGPLGWTLLAIIWTLAIGGIIFKIFFVRRFIKASTLCYIIMGWLIIVAIKPLYENLTGHGFSLLLAGGILYSVGAIFFLWEKLPFNHAIWHLFVLGGSAMMFFCVLFYV</Hsp_hseq>
+      <Hsp_midline>EE+AN+I+HGIG +  I  L++L++ A   + +A+A+ ++++YG SM +L+L STL H+I H + ++     DH AIYLLIAGTYTPFLL+ L  PL   L+ +IW+LA+ GI+FK+    RF   S + Y+ MGWL ++ +  L   L   G +LL  GG++YS+G IF++ +++P+NHAIWH FVLGGS   F  +  YV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|453</Hit_id>
+  <Hit_def>gnl|TC-DB|A4VGV1|1.C.113.1.3 Channel protein, hemolysin III family OS=Pseudomonas stutzeri (strain A1501) GN=PST_0496 PE=4 SV=1</Hit_def>
+  <Hit_accession>453</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>150.599</Hsp_bit-score>
+      <Hsp_score>379</Hsp_score>
+      <Hsp_evalue>8.56665e-46</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>121</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>NSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAIPHQRAKQWLKKFDHCAIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVC-KRIPYNHAIWHGFVLGGSVCHFLAIYLYV</Hsp_qseq>
+      <Hsp_hseq>NAWTHLVGAALACLGAIWLLVLAA-LDGSPVKIVSVAIYGLSLILLYSISTLYHSL-RGRAKVVMRKLDHLSIYLLIAGSYTPFCLVTLAGTWGWTLFGIVWGLAVIGMLQEIKPRSEARVLSLVIYAVMGWIVLVAVKPLFAALGGAGFSWLLAGGICYTVGIVFFVFDDRFRHWHGIWHIFVMVGSLLHFIAILFYV</Hsp_hseq>
+      <Hsp_midline>N+ +H +G     +G + LLV A   + S   I S ++YG S+I+L+  STLYH++   RAK  ++K DH +IYLLIAG+YTPF LV L       L  ++W LA++G+L ++      ++LSLV Y  MGW+ L+ V  L   L   G + L  GG+ Y++G++F+V   R  + H IWH FV+ GS+ HF+AI  YV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20654</Hit_id>
+  <Hit_def>gnl|TC-DB|W5SJL7|1.C.113.1.2 Conserved membrane protein (Hemolysin III-like protein) OS=Borrelia miyamotoi FR64b GN=BOM_0758 PE=4 SV=1</Hit_def>
+  <Hit_accession>20654</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.013</Hsp_bit-score>
+      <Hsp_score>297</Hsp_score>
+      <Hsp_evalue>3.06888e-33</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>208</Hsp_align-len>
+      <Hsp_qseq>EVANSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAIPHQ-RAKQWLKKFDHCAIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFY-VCKRIP-----YNHAIWHGFVLGGSVCHFLAIYLYV</Hsp_qseq>
+      <Hsp_hseq>ELFSSISHLFGIILSIIGTTILITISTTSKKYFHAVL-FLIYGSSMILLYTMSTLYHIFPKKSKIKELFRKFDHISIFTLIAGTYTPPSLILLPNFYGKIILSTVWALAIFGIIFKSIYVNSPGWINGCTFILMGWIIIFGIKFIYNSIPIQGFLWLTIGGILYTLGAIVYSISKKFSPIANMRMHDFFHILILIASFSHFWFMLKYI</Hsp_hseq>
+      <Hsp_midline>E+ +SISH  G++  I+G  +L+  +  +     A+  + +YG SMI+L+  STLYH  P + + K+  +KFDH +I+ LIAGTYTP  L+ L +   K ++  +W+LA+ GI+FK    +    ++  T++ MGW+ +  +  +   + + G   L +GG++Y+LG I Y + K+         H  +H  +L  S  HF  +  Y+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14472</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5SI73|1.C.113.1.4 Putative hemolysin OS=Thermus thermophilus (strain HB8 / ATCC 27634 / DSM 579) GN=TTHA1501 PE=4 SV=1</Hit_def>
+  <Hit_accession>14472</Hit_accession>
+  <Hit_len>205</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.857</Hsp_bit-score>
+      <Hsp_score>294</Hsp_score>
+      <Hsp_evalue>4.65949e-33</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>207</Hsp_align-len>
+      <Hsp_qseq>LAEEVANSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAIPHQ-RAKQWLKKFDHCAIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVCKR-IPYN-----HAIWHGFVLGGSVCHFLAI</Hsp_qseq>
+      <Hsp_hseq>MVREPFNALSHALGVPLALLGGLLLLLLA-----PREAWPALLAFGLTMALMFGASALYHTLKAEDRLLAWLRRLDHAAIFLFIAGSYTPFLAEGLEGGDKALALALVWGLALLGVGFRLLYLKAPRWLYTLAYLALGWLSLFFLPRLHLPLPT--LALMALSGLSYTLGAWVYGTKRPDPWPGRVGFHGVWHVLVLLGSLFMYLAV</Hsp_hseq>
+      <Hsp_midline>+  E  N++SH +G+   ++G +LLL+ A        A  +   +G +M ++F AS LYH +  + R   WL++ DH AI+L IAG+YTPFL  GL        + ++W LALLG+ F+L      + L  + YL +GWLSL  + +L + L    + L+A+ G+ Y+LG   Y  KR  P+      H +WH  VL GS+  +LA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12741</Hit_id>
+  <Hit_def>gnl|TC-DB|Q15546|1.C.113.2.1 MONOCYTE TO MACROPHAGE DIFFERENTIATION PROTEIN - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>12741</Hit_accession>
+  <Hit_len>238</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.686</Hsp_bit-score>
+      <Hsp_score>265</Hsp_score>
+      <Hsp_evalue>2.05889e-28</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>219</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>230</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>213</Hsp_align-len>
+      <Hsp_qseq>EEVANSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAIPHQRAKQWLKKFDHC-------AIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVCKR-IPYNHAIWHGFVLGGSVCHFLAIYLYVGQS</Hsp_qseq>
+      <Hsp_hseq>EHAANCYTHAFLIVPAIVGSALLHRLSDDCWEKITAW----IYGMGLCALFIVSTVFHIVSWK--KSHLRTVEHCFHMCDRMVIYFFIAASYAPWLNLRELGPLASHMRWFIWLMAAGGTIYVFLYHEKYKVVELFFYLTMGFSPALVVTSMN---NTDGLQELACGGLIYCLGVVFFKSDGIIPFAHAIWHLFVATAAAVHYYAIWKYLYRS</Hsp_hseq>
+      <Hsp_midline>E  AN  +H   +V  IVG  LL   + D     TA     +YG  +  LF+ ST++H +  +  K  L+  +HC        IY  IA +Y P+L +    PLA  +   IW +A  G ++      ++K++ L  YLTMG+   +VV  +       G+  LA GG++Y LGV+F+     IP+ HAIWH FV   +  H+ AI+ Y+ +S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1599</Hit_id>
+  <Hit_def>gnl|TC-DB|B0XDW7|1.C.113.2.2 Monocyte to macrophage differentiation factor 2 OS=Culex quinquefasciatus GN=CpipJ_CPIJ017298 PE=4 SV=1</Hit_def>
+  <Hit_accession>1599</Hit_accession>
+  <Hit_len>363</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.219</Hsp_bit-score>
+      <Hsp_score>256</Hsp_score>
+      <Hsp_evalue>3.75294e-26</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>219</Hsp_query-to>
+      <Hsp_hit-from>153</Hsp_hit-from>
+      <Hsp_hit-to>360</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>EEVANSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAI----PHQRAKQWLKKFDHCAIYLLIAGTYTPFLLVG--LNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVCKRI-PYNHAIWHGFVLGGSVCHFLAI--YLYVGQS</Hsp_qseq>
+      <Hsp_hseq>EHIANVLTHGFWVLPSAYGGVNLFLRSYTSAQLLAAI----IYGVALSMLFFVSTFFHCVFYCNRNRPLKDVLHRCDRAMIYIFIAGSYYPWLSLGHTTHPQIVSVIKWCVWVLAIMGIIYQQMFHERFKSLETFFYLVIGLGPSLVIIFWGHEFT--GMAELKIGGLLYIVGIVFFKCDGVFPFAHAIWHLFVVFAAAVHYFAILNHLYPVES</Hsp_hseq>
+      <Hsp_midline>E +AN ++HG  ++    G V L +++  +     AI    +YG ++ MLF  ST +H +     ++  K  L + D   IY+ IAG+Y P+L +G   +  +   +   +W LA++GI+++     RFK L    YL +G    +V+     +    G+  L +GG++Y +G++F+ C  + P+ HAIWH FV+  +  H+ AI  +LY  +S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16398</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8IY49|1.C.113.2.3 Monocyte to macrophage differentiation factor 2 OS=Homo sapiens GN=MMD2 PE=1 SV=2</Hit_def>
+  <Hit_accession>16398</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.5077</Hsp_bit-score>
+      <Hsp_score>223</Hsp_score>
+      <Hsp_evalue>5.07256e-22</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>258</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>232</Hsp_align-len>
+      <Hsp_qseq>EEVANSISHGIGLVFGIVGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAIPHQRA-----KQWLKKFDHCAIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKL------------------------TIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVCK-RIPYNHAIWHGFVLGGSVCHFLAIYLYV</Hsp_qseq>
+      <Hsp_hseq>EHAANCATHAFWIIPSILGSSNLYFLSDDDWETISAW----IYGLGLCGLFVVSTVFHTISWKKSHLRMVEHCLHMFDRMVIYFFIAASYAPWLNLRELGPWASHMRWLVWIMASVGTIYVFFFHERTGSCVQFLRGEACPKAGTACLPARYKLVELLCYVVMGFFPALVILSMP---NTEGIWELVTGGVFYCLGMVFFKSDGRIPFAHAIWHLFVAFGAGTHYYAIWRYL</Hsp_hseq>
+      <Hsp_midline>E  AN  +H   ++  I+G   L   + D   + +A     +YG  +  LF+ ST++H I  +++     +  L  FD   IY  IA +Y P+L +    P A  +  ++W +A +G ++                           +  R+K++ L+ Y+ MG+   +V+  +       G+  L  GGV Y LG++F+    RIP+ HAIWH FV  G+  H+ AI+ Y+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6310</Hit_id>
+  <Hit_def>gnl|TC-DB|M2WR23|1.C.113.1.5 Hemolysin III-like protein isoform 1 OS=Galdieria sulphuraria GN=Gasu_60990 PE=4 SV=1</Hit_def>
+  <Hit_accession>6310</Hit_accession>
+  <Hit_len>407</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.0409</Hsp_bit-score>
+      <Hsp_score>214</Hsp_score>
+      <Hsp_evalue>4.12407e-20</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>186</Hsp_query-to>
+      <Hsp_hit-from>183</Hsp_hit-from>
+      <Hsp_hit-to>386</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>66</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>204</Hsp_align-len>
+      <Hsp_qseq>LITQGYSLAEEVANSISHGIGLVFGI-VGLVLLL----VQAVDTNASATAITSYSLYGGSMIML-----------FLASTLYHAIPH-QRAKQWLKKFDHCAIYLLIAGTYTPFL---LVGLNSPLAKGLMIVIWSLALLGILFKLTIAHR---FKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYV</Hsp_qseq>
+      <Hsp_hseq>LLDDGNRLRDEVLNSVTHGVGFLSSIFAGSSLVLRAQNLQRLERLGIYIYVLSLCLMCVNVVFLNHLAYNLLFDRFASSTLYHSFFRLTNTKQIFRTLDHCSIFILIAGTYTPFVQRFLWYQRMTLGLFILSVIWCLALLGIVLSSGFLEQDTFTRKLRIVLAVVMGWLVLGTSKILREEMPDSCFLLVLMGGIFYTIGIPFYV</Hsp_hseq>
+      <Hsp_midline>L+  G  L +EV NS++HG+G +  I  G  L+L    +Q ++       + S  L   +++ L           F +STLYH+       KQ  +  DHC+I++LIAGTYTPF+   L      L   ++ VIW LALLGI+       +    + L +V  + MGWL L     L  ++      L+ +GG+ Y++G+ FYV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5040</Hit_id>
+  <Hit_def>gnl|TC-DB|H2HWQ5|1.C.113.1.6 Putative membrane protein OS=Corynebacterium diphtheriae (strain HC04) GN=CDHC04_1807 PE=4 SV=1</Hit_def>
+  <Hit_accession>5040</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>2.00787e-14</Hsp_evalue>
+      <Hsp_query-from>57</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>92</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>YGGSMIMLFLASTLYHAIPHQ--RAKQWLKKFDHCAIYLLIAGTYTPFLLVGLNSPLAKGLMIVIWSLALLGILFKLTIAHRFKILSLVTYLTMGWLSLIVVYQLAVKLAVGGVTLLAVGGVVYSLGVIFYVCK------RIPYNHAIWHGFVLGGSVCHFLAIYLYV</Hsp_qseq>
+      <Hsp_hseq>YAIGVVALFGVSAAYHRGRWKTPEAVAWWRRADHATIAVFIASTYTPLCLIAL--PQSLWVLYLAWAGAAGALILSMVWITHPRWLAASIYIALGWLITPLIPALWRAEGPAVVWLLFIGGIVYSAGAIVYAMRWPGRNATIMGYHEIFHAATIVAAIIHLVAIWMVV</Hsp_hseq>
+      <Hsp_midline>Y   ++ LF  S  YH    +   A  W ++ DH  I + IA TYTP  L+ L  P +  ++ + W+ A   ++  +      + L+   Y+ +GWL   ++  L        V LL +GG+VYS G I Y  +       I   H I+H   +  ++ H +AI++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5601</Hit_id>
+  <Hit_def>gnl|TC-DB|K4E118|1.C.113.1.8 Uncharacterized protein OS=Trypanosoma cruzi GN=TCSYLVIO_004718 PE=4 SV=1</Hit_def>
+  <Hit_accession>5601</Hit_accession>
+  <Hit_len>340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.521</Hsp_bit-score>
+      <Hsp_score>114</Hsp_score>
+      <Hsp_evalue>6.60887e-07</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>145</Hsp_hit-from>
+      <Hsp_hit-to>323</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>YSLYGGSMIMLFLASTLYHAI-PHQRAK--QWLKKFDHCAIYLLIAGTYTPFLLVGLN-SPLAKGLMIVIWSL----ALLGILFKLTIAHRF---KILSLVTYLTMGWLSLIVVYQL-----AVKLAVGGVTLLAVGGV---VYSLGV--IFYVCKRIPY--NHAIWHGFVLGGSVCHF</Hsp_qseq>
+      <Hsp_hseq>FAAYSFGCLMCMLCSTVFHTLLPHKSRKVYSWAHSLDYFGITFLVVGSFLPFCYFSFACEPFWRWTYLSMISFFGVFGVLGPFFKEWTQQQYARSKILFYVCMVGSGLFPIVHIYLLLPGNVSSSFVEGLLLMMALYGVGVFVYAFQIPEFFFPGKFDIYLSSHQIWHVFVLAAAFVHF</Hsp_hseq>
+      <Hsp_midline>++ Y    +M  L ST++H + PH+  K   W    D+  I  L+ G++ PF        P  +   + + S      +LG  FK     ++   KIL  V  +  G   ++ +Y L     +     G + ++A+ GV   VY+  +   F+  K   Y  +H IWH FVL  +  HF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15860</Hit_id>
+  <Hit_def>gnl|TC-DB|Q86V24|1.C.113.1.11 Adiponectin receptor protein 2 OS=Homo sapiens OX=9606 GN=ADIPOR2 PE=1 SV=1</Hit_def>
+  <Hit_accession>15860</Hit_accession>
+  <Hit_len>386</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.00046237</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>140</Hsp_hit-from>
+      <Hsp_hit-to>363</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>YSLAEEVANSISHGIGLVFGI-VGLVLLLVQAVDTNASATAITSYSLYGGSMIMLFLASTLYHAI--PHQRAKQWLKKFDHCAIYLLIAGTYTPFLLVGL--NSPLAKGLMIVIWSLALLGIL---FKLTIAHRFKILSLVTYLTMGWLSLI-----VVYQLAVKLA-VGGVTLLAVGGVVYSLGVIFYVCKRIP------------YNHAIWHGFVLGGSVCHF</Hsp_qseq>
+      <Hsp_hseq>FRIHTETGNIWTHLLGCVFFLCLGIFYMFRPNISFVAPLQEKVVFGLFFLGAILCLSFSWLFHTVYCHSEGVSRLFSKLDYSGIALLIMGSFVPWLYYSFYCNPQPCFIYLIVICVLGIAAIIVSQWDMFATPQYRGVRAGVFLGLGLSGIIPTLHYVISEGFLKAATIGQIGWLMLMASLYITGAALYAA-RIPERFFPGKCDIWFHSHQLFHIFVVAGAFVHF</Hsp_hseq>
+      <Hsp_midline>+ +  E  N  +H +G VF + +G+  +    +   A       + L+    I+    S L+H +    +   +   K D+  I LLI G++ P+L      N       +IVI  L +  I+   + +    +++ +    +L +G   +I     V+ +  +K A +G +  L +   +Y  G   Y   RIP            ++H ++H FV+ G+  HF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>94</Statistics_hsp-len>
+      <Statistics_eff-space>983752500</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

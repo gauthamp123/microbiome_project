@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_046881457.1 MULTISPECIES: type I glyceraldehyde-3-phosphate dehydrogenase [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>336</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_046881457.1 MULTISPECIES: type I glyceraldehyde-3-phosphate dehydrogenase [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>336</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1788</Hit_id>
+  <Hit_def>gnl|TC-DB|B3ET62|3.A.23.6.1 Glyceraldehyde-3-phosphate dehydrogenase OS=Amoebophilus asiaticus (strain 5a2) GN=Aasi_1069 PE=3 SV=1</Hit_def>
+  <Hit_accession>1788</Hit_accession>
+  <Hit_len>331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>322.783</Hsp_bit-score>
+      <Hsp_score>826</Hsp_score>
+      <Hsp_evalue>7.88904e-110</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>327</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>325</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>170</Hsp_identity>
+      <Hsp_positive>228</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>326</Hsp_align-len>
+      <Hsp_qseq>VKVGINGFGRIGRNVLRAALDNPDIQIVAINDLTDSKTLAHLLKYDSLLGKLDAEVTAGEGGLVVDGKPITVFSERNPASIPWRQREVDIVIEATGLFTDREKAAVHIHSGGAKRVIISAPGKNDDLTIVMGVNESLYSPDKHYVISNGSCTTNGLAPAAQVLHQHFGIKHGLMNTTHAYTNSQALHDQPEKDLRGARAAALSIVPYSSGAAKALGKVIPELDGRLTGYSLRVPVPVVSIVDLTVTLERDVTVEEVNNAFREAAATGPLKGILGYSDEPLVSSDYQGDPRSSIIDGLSTLVIGGNMVKILAWYDNEWGFSNRLVDL</Hsp_qseq>
+      <Hsp_hseq>IRVAINGFGRIGRLSLRALLQKSNIEVIAINDLTDASTLAHLFKYDSNYGRFAGHVTADANHLLVNSKRITVLAEPDPTKLPWEKLQIDVVLEATGRFLDKASNEQHITSG-AKRVVISAPASNDIPTIVLGVNENILSTAGP-IISNASCTTNCLAPVAYVLDKYFGIEKGYINTIHAYTADQRLQDAPHKDLRRARAAAKSIIPTTTGAAKSIGTVLPQLQGKLDGIAMRVPVADGSILDLTAILRQPVTKKMINTAMKQ-AADGAMQGILEYTEDPIVSVDVIGNPHSCIFDAQLTYT-QGNLVKVVGWYDNEGGYAHRIADL</Hsp_hseq>
+      <Hsp_midline>++V INGFGRIGR  LRA L   +I+++AINDLTD+ TLAHL KYDS  G+    VTA    L+V+ K ITV +E +P  +PW + ++D+V+EATG F D+     HI SG AKRV+ISAP  ND  TIV+GVNE++ S     +ISN SCTTN LAP A VL ++FGI+ G +NT HAYT  Q L D P KDLR ARAAA SI+P ++GAAK++G V+P+L G+L G ++RVPV   SI+DLT  L + VT + +N A ++ AA G ++GIL Y+++P+VS D  G+P S I D   T    GN+VK++ WYDNE G+++R+ DL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>99</Statistics_hsp-len>
+      <Statistics_eff-space>1838090235</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008804043.1 MULTISPECIES: YIP1 family protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>195</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008804043.1 MULTISPECIES: YIP1 family protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>195</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5454</Hit_id>
+  <Hit_def>gnl|TC-DB|J2MRK2|9.B.29.3.1 Uncharacterized protein OS=Pseudomonas fluorescens Q2-87 GN=PflQ2_2774 PE=4 SV=1</Hit_def>
+  <Hit_accession>5454</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>162.155</Hsp_bit-score>
+      <Hsp_score>409</Hsp_score>
+      <Hsp_evalue>1.06212e-50</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>188</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>182</Hsp_align-len>
+      <Hsp_qseq>LFAHPNREMSVIKSENETISHHYTHHVLLMAAVPVVCAFIGTTQLGWNFGDGTVIKLSMLTGLALAVLFYAVMLAGVAIMGRVIWWMARQYPQQPSLKRCMVFAGYVATPLFLSGIVALYPLVWLCALIGTIALFYTGYLLYLGIPTFLSINREEGLSFASSTLAIGVLVLEVLLAITVVLW</Hsp_qseq>
+      <Hsp_hseq>LFTHPEFAWKDIREQEQEHPRHYLAHLLLLALIPAVCLFIGITWTGWSLAENETVRLSSASALQLCVLLYLTIVVGVALMGLFIRWMSRAFETRPTLNQCIGFAAYTATPYFLAGIFGLYPSRWLAVAVLAIASAYSTFLLFVGLPKFMGLKKEQGLLYSASVWGVGLLVLVTILVEMILLW</Hsp_hseq>
+      <Hsp_midline>LF HP      I+ + +    HY  H+LL+A +P VC FIG T  GW+  +   ++LS  + L L VL Y  ++ GVA+MG  I WM+R +  +P+L +C+ FA Y ATP FL+GI  LYP  WL   +  IA  Y+ +LL++G+P F+ + +E+GL +++S   +G+LVL  +L   ++LW</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4521</Hit_id>
+  <Hit_def>gnl|TC-DB|F9ZP17|9.B.29.3.2 Putative uncharacterized protein OS=Acidithiobacillus caldus (strain SM-1) GN=Atc_1363 PE=4 SV=1</Hit_def>
+  <Hit_accession>4521</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.5438</Hsp_bit-score>
+      <Hsp_score>153</Hsp_score>
+      <Hsp_evalue>1.01265e-12</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>LFAHPNREMSVIKSENETISHHYTHHVLLMAAVPVVCAFIGTTQLGWNFGDGTVIKLSMLTGLAL----AVLFYAVMLAGVAIMGRVIWWMARQYPQQPSLKRCMVFAGYVATPLFLSGIVALYPLVWLCALIGTIALFYTGYLLYLGIPTFLSINREEGLSFASSTLAIGVLVLEVLLAI</Hsp_qseq>
+      <Hsp_hseq>MFTNPRELWAQIAGEATSINSLYLGWVVWLAAVPAVAGLLGS--LWWVGRMSGMLKPYMLMGTGILVTSAILSYVTGIALVVLLSWIIKALSPSFQCSADLVQATKTVAYAIAPIWIAGVLLIIPPLGAIAIL--LAAIYAVYLLYLALPQTLQCPADKSIAFTAVIVVIALVINFILRMI</Hsp_hseq>
+      <Hsp_midline>+F +P    + I  E  +I+  Y   V+ +AAVP V   +G+  L W      ++K  ML G  +    A+L Y   +A V ++  +I  ++  +     L +      Y   P++++G++ + P +   A++  +A  Y  YLLYL +P  L    ++ ++F +  + I +++  +L  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4640</Hit_id>
+  <Hit_def>gnl|TC-DB|G2II29|9.B.29.3.4 Putative uncharacterized protein OS=Sphingobium sp. SYK-6 GN=SLG_22770 PE=4 SV=1</Hit_def>
+  <Hit_accession>4640</Hit_accession>
+  <Hit_len>386</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.929</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>2.64982e-12</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>189</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>PNREMSVIKSENETISHHYTHHVLLMAAVPVVCAFIGTTQLGWNFGDGTVIKLSMLTGLALAVLFYAVMLAGVAIMGRVIWWMARQYPQQPSLKRCMVFAGYVATPLFLSGIVALYPLVWLCALIGTIALFYTGYLLYLGIPTFLSINREEGLSFASSTLAIGVLVLEVLLAITVVLWG</Hsp_qseq>
+      <Hsp_hseq>PRDEWPVIARETTPSGEVFTRYAVPLAAIGPVASFLGGQIFGYG-AFGISFRPSIMGSLSIAVGGYILSLVGIFVLSFIANKLAASFGGESSSRNAFKLVVYSMTASWLAGIFSLVPSLSLLGIVG----LYSFYLFYVGAAPMMKVPGEKALTYTIVTVICAILLYFVTAAIVGAIGG</Hsp_hseq>
+      <Hsp_midline>P  E  VI  E       +T + + +AA+  V +F+G    G+    G   + S++  L++AV  Y + L G+ ++  +   +A  +  + S +       Y  T  +L+GI +L P + L  ++G     Y+ YL Y+G    + +  E+ L++   T+   +L+  V  AI   + G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14446</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5P2M7|9.B.29.3.3 Putative uncharacterized protein OS=Aromatoleum aromaticum (strain EbN1) GN=AZOSEA23120 PE=4 SV=1</Hit_def>
+  <Hit_accession>14446</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.23728e-10</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>183</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>186</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>156</Hsp_align-len>
+      <Hsp_qseq>YTHHVLLMAAVPVVCAFIGTTQLGWNFGDGTVIKLSMLTGLALAVLFYAVMLAGVAIMGRVIWWMARQYPQQPSLKRCMVFAGYVATPLFLSGIVALYPLVWLCALIGTIALFYTGYLLYLGI-PTFLSINREEGLSFASSTLAIGVLVLEVLLAI</Hsp_qseq>
+      <Hsp_hseq>FTTFVLPMSLIPPVMLLYALLVMPGGVFPELVPAITIGEALAAAVAFFLAELAMVALMASIIQQMGDVVDVTPTYQEAFLLAAVAPTPLWISALALFVPITWFNALVVAIAWVASAALIYHGVYPLFRLEDKSKARVMGTFVLMAGIIAWIALLVV</Hsp_hseq>
+      <Hsp_midline>+T  VL M+ +P V        +        V  +++   LA AV F+   LA VA+M  +I  M       P+ +   + A    TPL++S +    P+ W  AL+  IA   +  L+Y G+ P F   ++ +     +  L  G++    LL +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>93</Statistics_hsp-len>
+      <Statistics_eff-space>805075086</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
