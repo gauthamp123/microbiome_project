@@ -9,6 +9,6 @@ root = tree.getroot()
 
 print(root)
 
-for item in root.findall('Hit'):
+for item in tree.findall('./Hit'):
     print(item)
     print(item.find('Hit_def'))
