@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008804585.1 MULTISPECIES: anti-virulence regulator CigR family protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>172</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008804585.1 MULTISPECIES: anti-virulence regulator CigR family protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>172</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16345</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8IIJ7|2.A.1.91.1 Uncharacterized protein OS=Plasmodium falciparum (isolate 3D7) OX=36329 GN=PF3D7_1117000 PE=4 SV=2</Hit_def>
+  <Hit_accession>16345</Hit_accession>
+  <Hit_len>1283</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.31337e-06</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>99</Hsp_query-to>
+      <Hsp_hit-from>793</Hsp_hit-from>
+      <Hsp_hit-to>862</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>NGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKNYGKPDHVDSDISFSRARSLAVNY</Hsp_qseq>
+      <Hsp_hseq>NNNENNNNNENNNNNENNNNNENNNNNENNNNNENNNNNNHHNHNHNHNQNNHHNQNINYPNPQNERINY</Hsp_hseq>
+      <Hsp_midline>N N N   N  N+ N  N+ N  NN +  N       + + H +  N+ + +H + +I++   ++  +NY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1508</Hit_id>
+  <Hit_def>gnl|TC-DB|AYA49873.1|9.B.387.1.2 hypothetical protein [Macaca arctoides gammaherpesvirus 1]</Hit_def>
+  <Hit_accession>1508</Hit_accession>
+  <Hit_len>561</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>9.72617e-06</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>69</Hsp_query-to>
+      <Hsp_hit-from>356</Hsp_hit-from>
+      <Hsp_hit-to>401</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>PAYANPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSAD</Hsp_qseq>
+      <Hsp_hseq>PIQATDGGGDGEGGGNSGDGGDGGN-GEGGGDGNHSNPYVSQGPNSD</Hsp_hseq>
+      <Hsp_midline>P  A  G G+G GGGN G+ G+ GN G  G +G+H N   ++G ++D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16271</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8I3M7|2.A.55.2.25 Divalent metal transporter, putative OS=Plasmodium falciparum (isolate 3D7) OX=36329 GN=PF3D7_0523800 PE=4 SV=1</Hit_def>
+  <Hit_accession>16271</Hit_accession>
+  <Hit_len>684</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>1.0083e-05</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>95</Hsp_query-to>
+      <Hsp_hit-from>157</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>NPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKNYGKPDHVDSDISFSRARSL</Hsp_qseq>
+      <Hsp_hseq>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSNNVDNRKRNKNEECYDESYCISDNLDEITSYRNKLSL</Hsp_hseq>
+      <Hsp_midline>N  N N N   N+ N+ N+ N+ N+ NN ++ N   N+ ++ +E    ++Y   D++D   S+    SL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|17417</Hit_id>
+  <Hit_def>gnl|TC-DB|Q95QW4|2.A.4.2.4 Cation diffusion facilitator family protein 1 OS=Caenorhabditis elegans GN=cdf-1 PE=1 SV=1</Hit_def>
+  <Hit_accession>17417</Hit_accession>
+  <Hit_len>561</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>2.4008e-05</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>96</Hsp_query-to>
+      <Hsp_hit-from>214</Hsp_hit-from>
+      <Hsp_hit-to>309</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>47</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>LKTALAAVISLAVMAAPAYANPGNGNGNGGGNHGNS--GNHGNSGNH---GNNGDHGNKGQN-KGQSADEHGNRKNYGKPDHVDSDISFSRARSLA</Hsp_qseq>
+      <Hsp_hseq>LQVLVIGFIGLLINLFGMFNLSGHGHSHGGGSHGHSHGGSHGHSHNNKKTKKNDGHGHSHANGHGHSHDGKSDCNGEEEPDHTRLNGKFRSASAMA</Hsp_hseq>
+      <Hsp_midline>L+  +   I L +     +   G+G+ +GGG+HG+S  G+HG+S N+     N  HG+   N  G S D   +     +PDH   +  F  A ++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|22237</Hit_id>
+  <Hit_def>gnl|TC-DB|XP_003899609.2|8.A.94.1.4 complement C1q tumor necrosis factor-related protein 3 isoform X5 [Papio anubis]</Hit_def>
+  <Hit_accession>22237</Hit_accession>
+  <Hit_len>357</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>3.88203e-05</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>99</Hsp_query-to>
+      <Hsp_hit-from>163</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>YANPGNGNGNGG--GNHGNSGNHGNSGNHGNNGDHGNKGQ--NKGQSADEHGNRKNYGKPDHVDSDISFSRARSLAVNY</Hsp_qseq>
+      <Hsp_hseq>YQGPPGPPGPPGIPGNHGNNGNNGATGHEGAKGEKGDKGDLGPRGERG-QHGPKGEKGYPG-IPPELQIAFMASLATHF</Hsp_hseq>
+      <Hsp_midline>Y  P    G  G  GNHGN+GN+G +G+ G  G+ G+KG    +G+   +HG +   G P  +  ++  +   SLA ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15665</Hit_id>
+  <Hit_def>gnl|TC-DB|Q7YUD6|2.A.20.2.5 Phosphate transporter - Plasmodium falciparum.</Hit_def>
+  <Hit_accession>15665</Hit_accession>
+  <Hit_len>669</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>8.24398e-05</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>106</Hsp_query-to>
+      <Hsp_hit-from>397</Hsp_hit-from>
+      <Hsp_hit-to>476</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>80</Hsp_align-len>
+      <Hsp_qseq>NPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKNYGKPDHVDSDISFSRARSLAVNYGLVGYQA</Hsp_qseq>
+      <Hsp_hseq>NNNNSNKNNNSNKNNNSNKNNNSNKNNNSNNGNSNEGNGKGGDPKNMENVIIENFDPQTEIVFSSLQIISAILGVVAQSA</Hsp_hseq>
+      <Hsp_midline>N  N N N   N  N+ N  N+ N  NN ++GN  +  G+  D         +     ++I FS  + ++   G+V   A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7804</Hit_id>
+  <Hit_def>gnl|TC-DB|O96245|2.A.123.1.17 MtN3-like protein OS=Plasmodium falciparum (isolate 3D7) GN=PFB0760w PE=4 SV=1</Hit_def>
+  <Hit_accession>7804</Hit_accession>
+  <Hit_len>686</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>8.27673e-05</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>78</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>98</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>53</Hsp_align-len>
+      <Hsp_qseq>ANPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKNYG</Hsp_qseq>
+      <Hsp_hseq>SNKSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNTSG</Hsp_hseq>
+      <Hsp_midline>+N  N N N   N+ N+ N+ N+ N+ NN ++ N   N   + + + N    G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000370078</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>94</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>50</Hsp_align-len>
+      <Hsp_qseq>NPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKN</Hsp_qseq>
+      <Hsp_hseq>NSNKSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</Hsp_hseq>
+      <Hsp_midline>N    N N   N+ N+ N+ N+ N+ NN ++ N   N   + + + N  N</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.00049901</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>NGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKN</Hsp_qseq>
+      <Hsp_hseq>NNNSNKSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</Hsp_hseq>
+      <Hsp_midline>N N N   N+ N+ N+ N+ N+ NN ++ N   N   + + + N  N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20440</Hit_id>
+  <Hit_def>gnl|TC-DB|UEK54337.1|2.A.1.91.2 MFS domain-containing protein P115 [Plasmodium yoelii]</Hit_def>
+  <Hit_accession>20440</Hit_accession>
+  <Hit_len>784</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000279626</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>99</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>19</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>NPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKNYGKPDHVDSDISFSRARSLAVNY</Hsp_qseq>
+      <Hsp_hseq>NGGNGENDENGENGENDENGENDENGQNGENGQNGEN-----DENGQNGQNGQNNKISNHSIYLYSNVLTLIY</Hsp_hseq>
+      <Hsp_midline>N GNG  +  G +G +  +G +  +G NG++G  G+N     DE+G     G+ + + +   +  +  L + Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14036</Hit_id>
+  <Hit_def>gnl|TC-DB|Q54F44|5.B.1.1.12 Superoxide-generating NADPH oxidase heavy chain subunit C OS=Dictyostelium discoideum OX=44689 GN=noxC PE=2 SV=1</Hit_def>
+  <Hit_accession>14036</Hit_accession>
+  <Hit_len>1142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.000291093</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>88</Hsp_query-to>
+      <Hsp_hit-from>234</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>NPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEH-----GNRKNYGKPDHVDSDIS</Hsp_qseq>
+      <Hsp_hseq>NNNNNNNNNNNNNINNCNNNNINNDNNNNNNNDNDNNNINTVDNHDDDIINNSNNFNKNEYPSSNIS</Hsp_hseq>
+      <Hsp_midline>N  N N N   N+ N+ N+ N  N  NN ++ +   N   + D H      N  N+ K ++  S+IS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16363</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8ILA3|1.A.1.26.3 Uncharacterized protein OS=Plasmodium falciparum (isolate 3D7) OX=36329 GN=PF3D7_1436100 PE=4 SV=2</Hit_def>
+  <Hit_accession>16363</Hit_accession>
+  <Hit_len>1949</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000406402</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>77</Hsp_query-to>
+      <Hsp_hit-from>252</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>56</Hsp_align-len>
+      <Hsp_qseq>ANPGNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADE----HGNRKNY</Hsp_qseq>
+      <Hsp_hseq>SNNNNKNNNSNNNNNNNNNNNNNNNNNNNNNNNNSNSVNVKKIDEKENSHVNQNNY</Hsp_hseq>
+      <Hsp_midline>+N  N N N   N+ N+ N+ N+ N+ NN ++ N      +  DE    H N+ NY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18057</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9GTN7|3.A.1.201.40 Serine protease/ABC transporter B family protein tagA OS=Dictyostelium discoideum OX=44689 GN=tagA PE=1 SV=2</Hit_def>
+  <Hit_accession>18057</Hit_accession>
+  <Hit_len>1752</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.2762</Hsp_bit-score>
+      <Hsp_score>90</Hsp_score>
+      <Hsp_evalue>0.000544719</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>120</Hsp_query-to>
+      <Hsp_hit-from>961</Hsp_hit-from>
+      <Hsp_hit-to>1054</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GNGNGNGGGNHGNSGNHGNSGNHGNNGDHGNKGQNKGQSADEHGNRKNYGKPDHVDSDISFSRARSLAVNYG--LVGYQALPPGIAKNVARGKP</Hsp_qseq>
+      <Hsp_hseq>GNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSNGKQSNIELNSVGGGDDGTPNGDDQQQQNNSPQYDEDGRLISGQEVEISIFEVISLGKP</Hsp_hseq>
+      <Hsp_midline>GN N N   N+ N+ N+ N+ N+ NN ++ N   + G+ ++   N    G     + D    +  S   +    L+  Q +   I + ++ GKP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>91</Statistics_hsp-len>
+      <Statistics_eff-space>643029759</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

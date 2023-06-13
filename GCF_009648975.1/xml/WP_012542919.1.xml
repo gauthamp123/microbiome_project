@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_012542919.1 MULTISPECIES: phosphoserine phosphatase [Enterobacteriaceae]</BlastOutput_query-def>
+  <BlastOutput_query-len>323</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_012542919.1 MULTISPECIES: phosphoserine phosphatase [Enterobacteriaceae]</Iteration_query-def>
+  <Iteration_query-len>323</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14238</Hit_id>
+  <Hit_def>gnl|TC-DB|Q59385|3.A.3.5.5 PROBABLE COPPER-TRANSPORTING ATPASE (EC 3.6.3.4) - Escherichia coli.</Hit_def>
+  <Hit_accession>14238</Hit_accession>
+  <Hit_len>834</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>1.92768e-05</Hsp_evalue>
+      <Hsp_query-from>72</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>544</Hsp_hit-from>
+      <Hsp_hit-to>760</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>245</Hsp_align-len>
+      <Hsp_qseq>VEDYQVIRLAGSLTPRATRLAHEAGLDVAPLGKIPHLRTPGLLVMDMDSTAIQIECIDEIAKLAGTGELVSEVTERAMRGELDFTASLRQR---VATLKDADATILLQVRDALPLMPGLAQLVLKLETLGWKVAIASGGFTFFAEYLRDKLHLDAVFANELEIRDGKLTGNVLGDIVDAKYKANTLRKLAEKYEIPTAQTVAIGDGANDLPMIKAAGLGIAYHAKPKVN-EQAEVTIRHADLMGV</Hsp_qseq>
+      <Hsp_hseq>VDEAQALRLAAALEQGSSHPLARAILDKAGDMQLPQVNG----FRTLRGLGVSGEA-EGHALLLGNQALLNEQQVGTKAIEAEITAQASQGATPVLLAVDGKAVALLAVRD--PLRSDSVAALQRLHKAGYRLVMLTGDNPTTANAIAKEAGIDEVIAGVLP--DGK---------------AEAIKHLQSEGR----QVAMVGDGINDAPALAQADVGIAMGGGSDVAIETAAITLMRHSLMGV</Hsp_hseq>
+      <Hsp_midline>V++ Q +RLA +L   ++     A LD A   ++P +         +    +  E  +  A L G   L++E        E + TA   Q    V    D  A  LL VRD  PL       + +L   G+++ + +G     A  +  +  +D V A  L   DGK               A  ++ L  +      Q   +GDG ND P +  A +GIA      V  E A +T+    LMGV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7013</Hit_id>
+  <Hit_def>gnl|TC-DB|O30085|3.A.3.5.10 Copper-transporting ATPase, P-type (COPB) - Archaeoglobus fulgidus.</Hit_def>
+  <Hit_accession>7013</Hit_accession>
+  <Hit_len>690</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.4394</Hsp_bit-score>
+      <Hsp_score>106</Hsp_score>
+      <Hsp_evalue>2.43785e-05</Hsp_evalue>
+      <Hsp_query-from>163</Hsp_query-from>
+      <Hsp_query-to>316</Hsp_query-to>
+      <Hsp_hit-from>497</Hsp_hit-from>
+      <Hsp_hit-to>627</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>70</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>155</Hsp_align-len>
+      <Hsp_qseq>VATLKDADATILLQVRDALPLMPGLAQLVLKLETLGWKVAIASGGFTFFAEYLRDKLHLDAVFANELEIRDGKLTGNVLGDIVDAKYKANTLRKLAEKYEIPTAQTVAIGDGANDLPMIKAAGLGIAYHAKPKVN-EQAEVTIRHADLMGVFCIL</Hsp_qseq>
+      <Hsp_hseq>VFILKNGEVSGVIALADRI--RPESREAISKLKAIGIKCMMLTGDNRFVAKWVAEELGLDDYFAEVLPHE-----------------KAEKVKEVQQKYV-----TAMVGDGVNDAPALAQADVGIAIGAGTDVAVETADIVLVRNDPRDVAAIV</Hsp_hseq>
+      <Hsp_midline>V  LK+ + + ++ + D +   P   + + KL+ +G K  + +G   F A+++ ++L LD  FA  L                    KA  ++++ +KY      T  +GDG ND P +  A +GIA  A   V  E A++ +   D   V  I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3002</Hit_id>
+  <Hit_def>gnl|TC-DB|D1CA99|3.A.3.5.38 Copper-translocating P-type ATPase OS=Sphaerobacter thermophilus (strain DSM 20745 / S 6022) GN=Sthe_3342 PE=3 SV=1</Hit_def>
+  <Hit_accession>3002</Hit_accession>
+  <Hit_len>785</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.000239065</Hsp_evalue>
+      <Hsp_query-from>153</Hsp_query-from>
+      <Hsp_query-to>316</Hsp_query-to>
+      <Hsp_hit-from>539</Hsp_hit-from>
+      <Hsp_hit-to>691</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>174</Hsp_align-len>
+      <Hsp_qseq>LDFTASLRQRVATLKDADATILLQVRD-----ALPL----MPGLAQLVLKLETLGWKVAIASGGFTFFAEYLRDKLHLDAVFANELEIRDGKLTGNVLGDIVDAKYKANTLRKLAEKYEIPTAQTVAIGDGANDLPMIKAAGLGIAYHAKPKVN-EQAEVTIRHADLMGVFCIL</Hsp_qseq>
+      <Hsp_hseq>LEVPDALAERVRPWQERGAAVLHVVRDGRVVGALALEDEVRPESREAVEALHARGIRVVMITGDARPVAEAVGAELGVDEVFAEVLP-----------------EDKANAVATLQQRGE----RVAMVGDGVNDAPALARADVGIAIGAGTDVAIESAGVILASNDPRGVVSVM</Hsp_hseq>
+      <Hsp_midline>L+   +L +RV   ++  A +L  VRD     AL L     P   + V  L   G +V + +G     AE +  +L +D VFA  L                  + KAN +  L ++ E    +   +GDG ND P +  A +GIA  A   V  E A V +   D  GV  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7386</Hit_id>
+  <Hit_def>gnl|TC-DB|O59868|3.A.3.2.34 Calcium-transporting ATPase 1 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) GN=pmr1 PE=1 SV=1</Hit_def>
+  <Hit_accession>7386</Hit_accession>
+  <Hit_len>899</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.000996667</Hsp_evalue>
+      <Hsp_query-from>139</Hsp_query-from>
+      <Hsp_query-to>289</Hsp_query-to>
+      <Hsp_hit-from>477</Hsp_hit-from>
+      <Hsp_hit-to>643</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>ELVSEVTERAMRGELDFTASLRQRVATLKDADATILL-----QVRDALPLMPGLAQLVLKLETLGWKVAIASGGFTFFAEYLRDKLHLDAVFANELEIRDGKLTGNVLGD-------------IVDAKYKANTLRKLAEKYEIPTAQTVAIGDGANDLPMIKAAGLGIA</Hsp_qseq>
+      <Hsp_hseq>ELTAEMKENIQRNEFEMAASGLRIIAVASGINTNKLVFHGLFGIND--PPRPQVRESVQYLMTGGVRVIMITGDSVVTAISIARSLGMAIPSNDEEAIRNYALTGAQLDDLDSSSLRDAVSRVVVFARTTPQHKMKIVEALQSLGDVVAMTGDGVNDAPALKLADIGIA</Hsp_hseq>
+      <Hsp_midline>EL +E+ E   R E +  AS  + +A     +   L+      + D  P  P + + V  L T G +V + +G     A  +   L +     +E  IR+  LTG  L D             +V A+       K+ E  +         GDG ND P +K A +GIA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>98</Statistics_hsp-len>
+      <Statistics_eff-space>1750168800</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_038421459.1 MULTISPECIES: CopC domain-containing protein YobA [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>124</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_038421459.1 MULTISPECIES: CopC domain-containing protein YobA [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>124</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13819</Hit_id>
+  <Hit_def>gnl|TC-DB|Q4KDN3|9.B.62.1.5 Copper resistance protein CopC OS=Pseudomonas fluorescens (strain Pf-5 / ATCC BAA-477) GN=copC PE=4 SV=2</Hit_def>
+  <Hit_accession>13819</Hit_accession>
+  <Hit_len>122</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>1.39819e-22</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>MLTAAGAFAHAHLQQQIPAAGAQLTAPPQTLTLSFSEGIEPAFSGVTVTGPQQHAVAAGKLTRSADNPAQVTLPLAETLSPGEYTVAWHVVSVDGHKTKGQYTFSV</Hsp_qseq>
+      <Hsp_hseq>LLAASSVFAHAHLKSSTPAAQGSVSAPSE-LRLVFTEGVEAAFTQVKLSKDGAPVEVKSVATEGADKKTLVVTPAATPLRAGEYKVEWHAVSVDTHKSEGSYSFKV</Hsp_hseq>
+      <Hsp_midline>+L A+  FAHAHL+   PAA   ++AP + L L F+EG+E AF+ V ++            T  AD    V  P A  L  GEY V WH VSVD HK++G Y+F V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4400</Hit_id>
+  <Hit_def>gnl|TC-DB|F8B006|9.B.62.2.2 Copper resistance protein CopC OS=Frankia symbiont subsp. Datisca glomerata GN=FsymDg_4454 PE=4 SV=1</Hit_def>
+  <Hit_accession>4400</Hit_accession>
+  <Hit_len>736</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.6178</Hsp_bit-score>
+      <Hsp_score>148</Hsp_score>
+      <Hsp_evalue>2.86343e-12</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>178</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>ALRLSVAFAGML-----TAAGAFAHAHLQQQIPAAGAQLTAPPQTLTLSFSEGIEPAFSGVTVTGPQQHAVAAGKLTRSADNPAQVTLPLAETLSPGEYTVAWHVVSVDGHKTKGQYTFSV</Hsp_qseq>
+      <Hsp_hseq>ARRVGFLLAAMLVAVVGTAVPASAHAVLEGSDPAGGSSQPAAPSRVTLTFSESVTVNAGSITVISASGQRVDDG-AARHGQAGNEAVVGIRSGLDNGTYVVSWHVVSADSHPVSGGFFFGV</Hsp_hseq>
+      <Hsp_midline>A R+    A ML     TA  A AHA L+   PA G+   A P  +TL+FSE +      +TV       V  G   R      +  + +   L  G Y V+WHVVS D H   G + F V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13476</Hit_id>
+  <Hit_def>gnl|TC-DB|Q3INA7|9.B.62.2.4 CopCD domain protein OS=Natronomonas pharaonis (strain ATCC 35678 / DSM 2160) GN=NP_4610A PE=4 SV=1</Hit_def>
+  <Hit_accession>13476</Hit_accession>
+  <Hit_len>659</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.8474</Hsp_bit-score>
+      <Hsp_score>146</Hsp_score>
+      <Hsp_evalue>5.26267e-12</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>64</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>ALRLSVAFAGMLTAAGAFAHAHLQQQIPAAGAQLTAPPQTLTLSFS-EGIEPAFSGVTVTGPQQHAVAAGKLTRSADNPAQVTLPL-AETLSPGEYTVAWHVVSVDGHKTKGQYTFSV</Hsp_qseq>
+      <Hsp_hseq>ALVVVLLVALSVVAGPVSAHANLDSSTPANGAQVESVPEAVELSFTGDGIQSA--EVAVIGPDDEDI-SGAVSVDGTDRQQVTVPIDTAGDASGMYVVEWEVLADDGHTTSGSFFFTV</Hsp_hseq>
+      <Hsp_midline>AL + +  A  + A    AHA+L    PA GAQ+ + P+ + LSF+ +GI+ A   V V GP    + +G ++    +  QVT+P+     + G Y V W V++ DGH T G + F+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13258</Hit_id>
+  <Hit_def>gnl|TC-DB|Q2J5C0|9.B.62.2.1 Copper resistance protein CopC OS=Frankia sp. (strain CcI3) GN=Francci3_4174 PE=4 SV=1</Hit_def>
+  <Hit_accession>13258</Hit_accession>
+  <Hit_len>559</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.36726e-09</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>RALRLSVAFAGMLTAAGAF--------AHAHLQQQIPAAGAQLTAPPQTLTLSFSEGIEPAFSGVTVTGPQQHAVAAGKLTRSADNPAQVTLPLAETLSPGEYTVAWHVVSVDGHKTKGQYTFSV</Hsp_qseq>
+      <Hsp_hseq>RILVVAVTFLVMATTSIGFGLGVPPASAHALLTGSDPVDGAALDVAPTRVTLDYSESVRVSRDSIRVLDSAGRRVDDGR-AGSGPKASQATVALRPGLPNGTYVASWRVISADSHPVSGALAFGV</Hsp_hseq>
+      <Hsp_midline>R L ++V F  M T +  F        AHA L    P  GA L   P  +TL +SE +  +   + V       V  G+   S    +Q T+ L   L  G Y  +W V+S D H   G   F V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3696</Hit_id>
+  <Hit_def>gnl|TC-DB|E3IZF5|9.B.62.2.3 Copper resistance protein CopC OS=Frankia sp. (strain EuI1c) GN=FraEuI1c_4734 PE=4 SV=1</Hit_def>
+  <Hit_accession>3696</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>1.97797e-09</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>22</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>LAGRALRLSVAFAGMLTAAGAFAHAHLQQQIPAAGAQLTAPPQTLTLSFSEGIEPAFSGVTVTGPQQHAVAAGKLTRSADNPAQVTLPLAETLSPGEYTVAWHVVSVDGHKTKGQYTFS</Hsp_qseq>
+      <Hsp_hseq>LAGLGLALVALVAA---AAPASAHTRLLSSSPADGSTVPTAPDQIRLTFAQHLL-GLGAVAVEGPGGSNAGVGDAVLDG---AIVTQRLAEHRPAGVYRLSYRIVSADGHPVSGQVTFT</Hsp_hseq>
+      <Hsp_midline>LAG  L L    A    AA A AH  L    PA G+ +   P  + L+F++ +      V V GP       G         A VT  LAE    G Y +++ +VS DGH   GQ TF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>86</Statistics_hsp-len>
+      <Statistics_eff-space>306014152</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

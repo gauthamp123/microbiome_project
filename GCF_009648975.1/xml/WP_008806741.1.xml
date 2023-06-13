@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008806741.1 MULTISPECIES: membrane protein insertase YidC [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>548</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008806741.1 MULTISPECIES: membrane protein insertase YidC [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>548</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9561</Hit_id>
+  <Hit_def>gnl|TC-DB|P25714|2.A.9.3.1 60 KDA INNER-MEMBRANE PROTEIN - Escherichia coli.</Hit_def>
+  <Hit_accession>9561</Hit_accession>
+  <Hit_len>548</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>972.23</Hsp_bit-score>
+      <Hsp_score>2512</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>548</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>548</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>474</Hsp_identity>
+      <Hsp_positive>509</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>549</Hsp_align-len>
+      <Hsp_qseq>MDSQRNLLIIALLFVSFMIWQAWEQDKNPQPQ-QQTTQTTTTAAGSAADQGVPASGQGKLITVKTDVLELTINTNGGDIEQALLLAYPKTLKSTEPFQLLETTPQFVYQAQSGLTGRDGPDNPANGPRPLYSVDKEAFVLADGQDEIVIPLTYTDKAGNVFTKTFTLKRGGYAVNVGYSVQNASEKPLEVSTFGQLKQTAALPTSRDTQTGGLSTMHTFRGAAFSTSDTKYEKYKFDTILDNENLNVSTKNGWVAMLQQYFTTAWVPQNNGTNNFYTANLGNGIVAIGYKSQPVLVQPGQTDKLQSVLWVGPAIQDKMAAVAPHLDLTVDYGWLWFISQPLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTDPMQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLIYRGLEKRGLHSREKKKS</Hsp_qseq>
+      <Hsp_hseq>MDSQRNLLVIALLFVSFMIWQAWEQDKNPQPQAQQTTQTTTTAAGSAADQGVPASGQGKLISVKTDVLDLTINTRGGDVEQALLPAYPKELNSTQPFQLLETSPQFIYQAQSGLTGRDGPDNPANGPRPLYNVEKDAYVLAEGQNELQVPMTYTDAAGNTFTKTFVLKRGDYAVNVNYNVQNAGEKPLEISSFGQLKQSITLPPHLDTGSSNFA-LHTFRGAAYSTPDEKYEKYKFDTIADNENLNISSKGGWVAMLQQYFATAWIPHNDGTNNFYTANLGNGIAAIGYKSQPVLVQPGQTGAMNSTLWVGPEIQDKMAAVAPHLDLTVDYGWLWFISQPLFKLLKWIHSFVGNWGFSIIIITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRISQEMMALYKAEKVNPLGGCFPLLIQMPIFLALYYMLMGSVELRQAPFALWIHDLSAQDPYYILPILMGVTMFFIQKMSPTTVTDPMQQKIMTFMPVIFTVFFLWFPSGLVLYYIVSNLVTIIQQQLIYRGLEKRGLHSREKKKS</Hsp_hseq>
+      <Hsp_midline>MDSQRNLL+IALLFVSFMIWQAWEQDKNPQPQ QQTTQTTTTAAGSAADQGVPASGQGKLI+VKTDVL+LTINT GGD+EQALL AYPK L ST+PFQLLET+PQF+YQAQSGLTGRDGPDNPANGPRPLY+V+K+A+VLA+GQ+E+ +P+TYTD AGN FTKTF LKRG YAVNV Y+VQNA EKPLE+S+FGQLKQ+  LP   DT +   + +HTFRGAA+ST D KYEKYKFDTI DNENLN+S+K GWVAMLQQYF TAW+P N+GTNNFYTANLGNGI AIGYKSQPVLVQPGQT  + S LWVGP IQDKMAAVAPHLDLTVDYGWLWFISQPLFKLLK+IHSF+GNWGFSII+ITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQR SQEMMALYKAEKVNPLGGCFPL+IQMPIFLALYYML  SVELR APF LWIHDLSAQDPYYILPI+MG TMFFIQKMSPTTVTDPMQQKIMTFMPVIFTVFFLWFPSGLV+YYIVSNLVTIIQQQLIYRGLEKRGLHSREKKKS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5070</Hit_id>
+  <Hit_def>gnl|TC-DB|H3KBD2|2.A.9.3.7 Membrane protein insertase YidC OS=Sutterella parvirubra YIT 11816 GN=yidC PE=3 SV=1</Hit_def>
+  <Hit_accession>5070</Hit_accession>
+  <Hit_len>562</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>356.681</Hsp_bit-score>
+      <Hsp_score>914</Hsp_score>
+      <Hsp_evalue>7.62109e-117</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>528</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>546</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>205</Hsp_identity>
+      <Hsp_positive>318</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>563</Hsp_align-len>
+      <Hsp_qseq>DSQRNLLIIALLFVSFMIWQAWEQDKNPQP------QQQTTQTT------------TTAAGSAADQGVPASGQGKLITVKTDVLELTINTNGGDIEQALLLAYPKTLKSTEP-----------------FQLLETTPQFVYQAQSGLTGRDGPDNPANGPRPLYSVDKEAFVLADGQDEIVIPLTYTDKAGNVFTKTFTLKRGGYAVNVGYSVQNASEKPLEVSTFGQLKQTAALPTSRDTQTGGLSTMHTFRGAAFSTSDTKYEKYKFDTILDNE-NLNVSTKNGWVAMLQQYFTTAWVPQNNGTNNFYTANLGNGIVAIGYKSQPVLVQPGQTDKLQSVLWVGPAIQDKMAAVAPHLDLTVDYGWLWFISQPLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTDPMQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQ</Hsp_qseq>
+      <Hsp_hseq>DFQRTLLWVILGASLFMLWDNYQVYTGGQSVFHSSTHEQTAETTPAEVPSTGTVAAVNATQSAAEKAV------KPVEVTTDRMKVTFDLEGARIVRSEMLMMPRQPDWTEVGLAGLVLGRKPAEDLGNLVLFETTPTRTYVAQTGLVGGDYPNH-----RTEYRLVSQAVDMKDA-DKLDIVFE-ADKGGLKVTKTFSFTRGNYGVEVKTDIENVGQTPATPSIYYQITRDGGKPE------GESSMYSTFTGAAVYSNEEKFQKIDYADIADKSATYQGETDNGWVAMIQHHFVSAWVPEQGEKRENYANAVDKNLYSIGTLVKLPTVEPGKTISDKAELYAGPQAQERLEQIAPGLELVVDYGWLTFLAKPIYWLLSFLHGIVGNWGWAIVLLTCIVKAILYPISAAGYRSMARMKEVTPRMKAIQEKYKDDKQRLNQAMMELYQREKINPVGGCLPIFLQIPVFLALYWVLQGSVELRGSEWILWVHDLAMPDPWFVLPALMAATMFLQIFLNPKP-TDPVQARMMYIMPVVFSVMFFVFASGLVLYWLTNNVLSIAQQ</Hsp_hseq>
+      <Hsp_midline>D QR LL + L    FM+W  ++     Q        +QT +TT              A  SAA++ V      K + V TD +++T +  G  I ++ +L  P+    TE                    L ETTP   Y AQ+GL G D P++     R  Y +  +A  + D  D++ I     DK G   TKTF+  RG Y V V   ++N  + P   S + Q+ +    P       G  S   TF GAA  +++ K++K  +  I D        T NGWVAM+Q +F +AWVP+       Y   +   + +IG   +   V+PG+T   ++ L+ GP  Q+++  +AP L+L VDYGWL F+++P++ LL F+H  +GNWG++I+++T IV+ I+YP++ A Y SMA+M+ + P+++A++E+  DDKQR +Q MM LY+ EK+NP+GGC P+ +Q+P+FLALY++L  SVELR + +ILW+HDL+  DP+++LP +M ATMF    ++P   TDP+Q ++M  MPV+F+V F  F SGLV+Y++ +N+++I QQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2800</Hit_id>
+  <Hit_def>gnl|TC-DB|CAD7783208.1|2.A.9.3.10 Membrane protein insertase YidC [Candidatus Methanoperedenaceae archaeon GB50]</Hit_def>
+  <Hit_accession>2800</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>250.751</Hsp_bit-score>
+      <Hsp_score>639</Hsp_score>
+      <Hsp_evalue>1.935e-76</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>536</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>533</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>160</Hsp_identity>
+      <Hsp_positive>269</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>517</Hsp_align-len>
+      <Hsp_qseq>QPQQQTTQTTTTAAGSAADQGVPASGQGKLITVKTDVLELTINTNGGDIEQALLLAYPKTLKSTEPFQ-LLETTPQFVYQAQSGLTGRDGPDNPANGPRPLYSVDKEAFVLADGQDEIVIPLTYTDKA-GNVFTKTFTLKRGGYAVNVGYSVQNASEKPLEVSTFGQLKQTAALPTSRDTQTGGLSTMHTFRGAAFSTSDTKYEKYKFDTILDNENLNVSTKNGWVAMLQQYFTTAWVPQNNGTNNFYTANLGNGIVAIGYKSQPVLVQPGQTDKLQSVLWVGPAIQDKMAAVAPHLDLTVDYGWLWFISQPLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHAPFI--------LWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTDPMQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLIYRGLE</Hsp_qseq>
+      <Hsp_hseq>QKQEDKSEEKNIVLPSSLEKSYKVKNLGREITVSTPLYQTIFYESGAVIKSFILKKYRQNVAPDSPLQEIIEAKPPYLPLSIDFLQHKDFLKDVK------FQADKHTMNLTS--QDTPQSLTFTAEVNGIIIKKTFVFYPDSYEIDFDLSLINRTQRPFQ----DNLAISLANKWPKRERYGFYGGIVLING---QFEEIKWKKIK-SQVVKSGNIQ------WAGLSDKYFATIIVNKDAPKASFIVNKQKEHLVA-NLLIPPVEVEPQKEKTASFLLYFGPKELERLKKLDFHLDKAVDFGFFDIIAKPLLYILRWFYKYVHNYGIAIILLTVVIKVLFWPLTHTSYKSMQEMQKLQPHINRLREKYKDDKERLNKELMNIYKTYKVNPLGGCLPIILQIPVFFALYKALLYAIELRHANFITYLPFTDKIWLADLSAKDPYYITPILMGISMVIQQKMTPSAM-GPGQSKFMLLMPVFFTFLFLNFPSGLVIYWLVNNLLSIVQQFYINRKMQ</Hsp_hseq>
+      <Hsp_midline>Q Q+  ++       S+ ++       G+ ITV T + +     +G  I+  +L  Y + +    P Q ++E  P ++  +   L  +D   +        +  DK    L     +    LT+T +  G +  KTF      Y ++   S+ N +++P +      L  + A    +  + G    +    G      + K++K K   ++ + N+       W  +  +YF T  V ++    +F        +VA      PV V+P +      +L+ GP   +++  +  HLD  VD+G+   I++PL  +L++ + ++ N+G +II++T +++ + +PLT   Y SM +M+ LQP I  +RE+  DDK+R ++E+M +YK  KVNPLGGC P+I+Q+P+F ALY  L  ++ELRHA FI        +W+ DLSA+DPYYI PI+MG +M   QKM+P+ +  P Q K M  MPV FT  FL FPSGLV+Y++V+NL++I+QQ  I R ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12849</Hit_id>
+  <Hit_def>gnl|TC-DB|Q1CVG1|2.A.9.3.4 Membrane protein insertase YidC OS=Myxococcus xanthus (strain DK 1622) GN=yidC PE=3 SV=1</Hit_def>
+  <Hit_accession>12849</Hit_accession>
+  <Hit_len>603</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>188.348</Hsp_bit-score>
+      <Hsp_score>477</Hsp_score>
+      <Hsp_evalue>1.51114e-52</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>537</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>583</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>165</Hsp_identity>
+      <Hsp_positive>269</Hsp_positive>
+      <Hsp_gaps>79</Hsp_gaps>
+      <Hsp_align-len>594</Hsp_align-len>
+      <Hsp_qseq>DSQRNLLI-IALLFVSFMIWQAWEQDKNPQPQQQTTQTTTTAAGSAADQGVPASGQ------------------GKLITVKTDVLELTINTNGGDIEQALLLAYPKTLKSTEPFQLLETTPQFVYQAQSGLTGRDGPDNPANG-PRPLYSVDKEAFVLADGQDEIVIPLTYT---DKAGNVFTKTFTLKRG-------------GYAVNVGYSVQNASEKPLEVSTFGQLKQTAALPTSRDTQTGGLSTMHTFRGAAFSTSDTKYEKYKFDTILDNENLNVSTKNGWVAMLQQYFTTAWVPQNN---GTNNFYTANLGNGIVAIGYKSQPVLVQPGQTDKLQSVLWVGPAIQDKMAAVA----------------PHLDLTVDYGWLWFISQPLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHAPFI--LWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTDPMQQKIMT-FMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLIYRGLEK</Hsp_qseq>
+      <Hsp_hseq>DSQKRLLAALALSFAATAVYTFFFAPTPPPPGSEIPDAGVVAT-APADAGTPPAVQPPEGGTGTGATAEAPPPPARKVELQRDEATYAFSSEGAGLTAAVL----KGAKMREQQELTVT------QGFQKLFGKEIPPAPQMDLARPTPGQPLPLAVSITGASPLPADLNYTLDEGAPGNADGVTFTGRRGPWEVVKTVKWPMDGFELSYTLQVRNTSGQPQSGEL--QVHHNRAIDPNFEHAPSFFGGVGNLSRSACWVGDKLQKMSPGDDHPDAEDTRGQIQ--FFGIDQQYFLSALYPLEGPRAGSCSFEATPTLRKVTA----SFPITAAPGETVTLRFGGYFGPKDTDLLAQVPGASLRAATGQTDATFHPPLAETVDFGIWAVICKVLLWVMKFFYGVTGNWGVAIILLTVVVKLVLLPLTYRSMVSMEEVKKLQPRMEEIRKKHADNREQQNLEIMKLYQEAKVNPLGGCLPLLIQMPVWIALFTALRNSFDIYGEPFIGPIW-RDLTYKDPTYLLPLALGVSMVITQKMQP-QMMDATQAKIMTWFLPIIFTLTLLQYPAGLSLYIFTNNILSIAQQYGLRKWLDR</Hsp_hseq>
+      <Hsp_midline>DSQ+ LL  +AL F +  ++  +     P P  +       A  + AD G P + Q                   + + ++ D      ++ G  +  A+L    K  K  E  +L  T      Q    L G++ P  P     RP         V   G   +   L YT      GN    TFT +RG             G+ ++    V+N S +P       Q+    A+  + +        +     +A    D   +    D   D E+     +  +  + QQYF +A  P      G+ +F        + A    S P+   PG+T  L+   + GP   D +A V                 P L  TVD+G    I + L  ++KF +   GNWG +II++T +V+ ++ PLT     SM +++ LQP+++ +R++  D++++Q+ E+M LY+  KVNPLGGC PL+IQMP+++AL+  L  S ++   PFI  +W  DL+ +DP Y+LP+ +G +M   QKM P  + D  Q KIMT F+P+IFT+  L +P+GL +Y   +N+++I QQ  + + L++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20343</Hit_id>
+  <Hit_def>gnl|TC-DB|TSA50101.1|2.A.9.3.11 membrane protein insertase YidC [archaeon]</Hit_def>
+  <Hit_accession>20343</Hit_accession>
+  <Hit_len>558</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>155.606</Hsp_bit-score>
+      <Hsp_score>392</Hsp_score>
+      <Hsp_evalue>4.50915e-41</Hsp_evalue>
+      <Hsp_query-from>339</Hsp_query-from>
+      <Hsp_query-to>531</Hsp_query-to>
+      <Hsp_hit-from>327</Hsp_hit-from>
+      <Hsp_hit-to>523</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>126</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>PLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRH-APFILWIHDLSAQDPYYILPIIMGATMFFIQK-MSPTTVTDPM-QQKIMTFM-PVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLI</Hsp_qseq>
+      <Hsp_hseq>PVIQFLNFLYRHTGNYAWAIILFTILTRVILFPLMRKQYHSMAKMQKLQPKLKRIQERFKDDRQLLQRKMMQLYKQEEVNPMGGCLPMFVQLPILILLWKAILYSAEQIHLSPGFLWVPDLSLRDPYFILVGITTLLMILQQRMMTPMTASNTSGSQKYMGYIFPIFMAVFLYSFPAGLWLYYLLTTLSQVGQQYFV</Hsp_hseq>
+      <Hsp_midline>P+ + L F++   GN+ ++II+ T + R I++PL + QY SMAKM+ LQPK++ ++ER  DD+Q   ++MM LYK E+VNP+GGC P+ +Q+PI + L+  +  S E  H +P  LW+ DLS +DPY+IL  I    M   Q+ M+P T ++    QK M ++ P+   VF   FP+GL +YY+++ L  + QQ  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12013</Hit_id>
+  <Hit_def>gnl|TC-DB|Q01625|2.A.9.3.2 Stage III sporulation protein J precursor - Bacillus subtilis.</Hit_def>
+  <Hit_accession>12013</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>140.584</Hsp_bit-score>
+      <Hsp_score>353</Hsp_score>
+      <Hsp_evalue>4.06922e-38</Hsp_evalue>
+      <Hsp_query-from>312</Hsp_query-from>
+      <Hsp_query-to>531</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>242</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>AIQDKMAAVAPHLDLTVDYGWLWFISQPLFKLLKFIHSFLG-NWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDD----KQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFIQK--MSPTTVTDPMQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLI</Hsp_qseq>
+      <Hsp_hseq>SVKEPITADSPHF-------WDKYVVYPLSELITYVAKLTGDNYGLSIILVTILIRLLILPLMIKQLRSSKAMQALQPEMQKLKEKYSSKDQKTQQKLQQETMALFQKHGVNPLAGCFPILIQMPILIGFYHAIMRTQAISEHSF-LWF-DLGEKDPYYILPIVAGVATFVQQKLMMAGNAQQNPQMAMMLWIMPIMIIVFAINFPAALSLYWVVGNLFMIAQTFLI</Hsp_hseq>
+      <Hsp_midline>++++ + A +PH        W  ++  PL +L+ ++    G N+G SII++T ++R ++ PL   Q  S   M+ LQP++Q ++E+        +Q+  QE MAL++   VNPL GCFP++IQMPI +  Y+ +  +  +    F LW  DL  +DPYYILPI+ G   F  QK  M+     +P    ++  MP++  VF + FP+ L +Y++V NL  I Q  LI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18819</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9RCA5|2.A.9.3.5 Membrane protein insertase YidC 1 OS=Bacillus halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 / C-125) GN=yidC1 PE=3 SV=1</Hit_def>
+  <Hit_accession>18819</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.117</Hsp_bit-score>
+      <Hsp_score>344</Hsp_score>
+      <Hsp_evalue>6.76097e-37</Hsp_evalue>
+      <Hsp_query-from>334</Hsp_query-from>
+      <Hsp_query-to>531</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>203</Hsp_align-len>
+      <Hsp_qseq>WFISQPLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQ----EMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTDPMQQKIMTF-MPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLI</Hsp_qseq>
+      <Hsp_hseq>YFVYPLSWLMIYFANAFNGSFGLAIIVVTLLIRLLILPLMIKQLKSTRAMQALQPEMQALREKYSAKDQRTQQKLQQETMALFQKHGVNPLAGCFPVLIQMPILLAFYHAIMRTREIGDEHFLWFV--LNQPDP-ILLPIIAGITTFLQQKM--MMVTDNPQMKVLLYVMPVMILVFAMFLPSSLALYWVIGNLFMILQTYFI</Hsp_hseq>
+      <Hsp_midline>+F+    + ++ F ++F G++G +IIV+T ++R ++ PL   Q  S   M+ LQP++QA+RE+     QR  Q    E MAL++   VNPL GCFP++IQMPI LA Y+ +  + E+    F+ ++  L+  DP  +LPII G T F  QKM    VTD  Q K++ + MPV+  VF ++ PS L +Y+++ NL  I+Q   I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18345</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9KDP2|2.A.9.3.6 Membrane protein insertase YidC 2 OS=Bacillus halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / JCM 9153 / C-125) GN=yidC2 PE=1 SV=1</Hit_def>
+  <Hit_accession>18345</Hit_accession>
+  <Hit_len>280</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.479</Hsp_bit-score>
+      <Hsp_score>306</Hsp_score>
+      <Hsp_evalue>2.23732e-31</Hsp_evalue>
+      <Hsp_query-from>332</Hsp_query-from>
+      <Hsp_query-to>531</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>258</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>226</Hsp_align-len>
+      <Hsp_qseq>WLWFISQPLFKLLKFIHSFL-GNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDD-------KQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFF-----------IQKMSPTTVTDP------MQQKIMTF-MPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLI</Hsp_qseq>
+      <Hsp_hseq>WNHFFVYPMSWLITTVANLLNGSYGLSIIIVTILIRLALLPLTLKQQKSMRAMQVIRPEMEAIQKKYKEKGSKDPKVQQEMQKELLGLYQKHGVNPMAGCLPLFIQLPILMAFYFAIMRTEEIRYHTF-LWF-DLG--QPDYILPFVAGITTYFQFKMTMSHQQQMQKTNPSDSDNPMANMMQMQMKVMLYVMPVMIIIAGLSLPSALSLYWVIGNIFMIIQTYFI</Hsp_hseq>
+      <Hsp_midline>W  F   P+  L+  + + L G++G SII++T ++R  + PLT  Q  SM  M++++P+++A++++  +        +Q   +E++ LY+   VNP+ GC PL IQ+PI +A Y+ +  + E+R+  F LW  DL    P YILP + G T +F           +QK +P+   +P      MQ K+M + MPV+  +  L  PS L +Y+++ N+  IIQ   I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16510</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8LBP4|2.A.9.2.1 2.A.9.2.1 Inner membrane protein ALBINO3, chloroplastic</Hit_def>
+  <Hit_accession>16510</Hit_accession>
+  <Hit_len>462</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>111.694</Hsp_bit-score>
+      <Hsp_score>278</Hsp_score>
+      <Hsp_evalue>2.25571e-26</Hsp_evalue>
+      <Hsp_query-from>331</Hsp_query-from>
+      <Hsp_query-to>528</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>349</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>118</Hsp_positive>
+      <Hsp_gaps>41</Hsp_gaps>
+      <Hsp_align-len>239</Hsp_align-len>
+      <Hsp_qseq>GWLWFISQPLFKLLKFIHSFLGN------WGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLS---------------------ASVELRHA--------PFILWIHDLSAQD--PYYILPIIMGATMFF-IQKMSPTTVTDPMQQK---IMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQ</Hsp_qseq>
+      <Hsp_hseq>GWFGFISDAMELVLKILKDGLSAVHVPYAYGFAIILLTIIVKAATYPLTKQQVESTLAMQNLQPKIKAIQQRYAGNQERIQLETSRLYKQAGVNPLAGCLPTLATIPVWIGLYQALSNVANEGLFTEGFFWIPSLGGPTSIAARQSGSGISWLFPFVDGHPPLGWYDTVAYLVLPVLLIASQYVSMEIMKPPQTDDPAQKNTLLVFKFLPLMIGYFALSVPSGLSIYWLTNNVLSTAQQ</Hsp_hseq>
+      <Hsp_midline>GW  FIS  +  +LK +   L        +GF+II++T IV+   YPLTK Q  S   M+ LQPKI+A+++R   +++R   E   LYK   VNPL GC P +  +P+++ LY  LS                      S+  R +        PF+     L   D   Y +LP+++ A+ +  ++ M P    DP Q+    +  F+P++   F L  PSGL +Y++ +N+++  QQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7913</Hit_id>
+  <Hit_def>gnl|TC-DB|OGY67190.1|2.A.9.3.8 hypothetical protein A3I24_03695 [Candidatus Harrisonbacteria bacterium RIFCSPLOWO2_02_FULL_41_13b]</Hit_def>
+  <Hit_accession>7913</Hit_accession>
+  <Hit_len>237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>105.531</Hsp_bit-score>
+      <Hsp_score>262</Hsp_score>
+      <Hsp_evalue>8.42549e-26</Hsp_evalue>
+      <Hsp_query-from>335</Hsp_query-from>
+      <Hsp_query-to>542</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>232</Hsp_align-len>
+      <Hsp_qseq>FISQPLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALY---------------YMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTDPMQQ--------KIMTFMPVIFTVFFLW-FPSGLVVYYIVSNLVTIIQQQLIYRGLEKRGLHS</Hsp_qseq>
+      <Hsp_hseq>FLFNPLFNALIFLYNLVGDIGVAIILLTIAVRLIFYPLFYKSFKNQTIMNRLQPEIQKIQHDHKNDKEKQAQALMGLYRQHKVNPFSGFLLIFIQLPVLIALYRVFLSDFSPESLSGLYNFVAKPEIFNG-MLLGLIDLKTKS---IFMVVLSAIAQYFQGKLSLSKRDPQQEESSAAKIGRQMVYIGPALTVIVLFSLPSAIALYWLVGTIFSIIQQLIINRKLKNKNQES</Hsp_hseq>
+      <Hsp_midline>F+  PLF  L F+++ +G+ G +II++T  VR I YPL    + +   M  LQP+IQ ++    +DK++Q+Q +M LY+  KVNP  G   + IQ+P+ +ALY               Y   A  E+ +   +L + DL  +    I  +++ A   + Q     +  DP Q+        + M ++    TV  L+  PS + +Y++V  + +IIQQ +I R L+ +   S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10946</Hit_id>
+  <Hit_def>gnl|TC-DB|P54544|2.A.9.3.3 Membrane protein oxaA 2 OS=Bacillus subtilis GN=oxaA2 PE=3 SV=1</Hit_def>
+  <Hit_accession>10946</Hit_accession>
+  <Hit_len>275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.1301</Hsp_bit-score>
+      <Hsp_score>235</Hsp_score>
+      <Hsp_evalue>7.57796e-22</Hsp_evalue>
+      <Hsp_query-from>335</Hsp_query-from>
+      <Hsp_query-to>527</Hsp_query-to>
+      <Hsp_hit-from>43</Hsp_hit-from>
+      <Hsp_hit-to>253</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>216</Hsp_align-len>
+      <Hsp_qseq>FISQPLFKLLKFIHS-FLGNWGFSIIVITFIVRGIMYPLT----KAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQ-----EMMALYKAEKVNPLG-GCFPLIIQMPIFLALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFI-----QKMS------PTTVTDPMQQKIMTFM-PVIFTVFFLWFPSGLVVYYIVSNLVTIIQ</Hsp_qseq>
+      <Hsp_hseq>YLIEPFSALLKGVAGLFHGEYGLSIILVTIIVRIVVLPLFVNQFKKQRIFQEKMAVIKPQVDSIQVKLKKTKDPEKQKELQMEMMKLYQEHNINPLAMGCLPMLIQSPIMIGLYYAIRSTPEIASHSF-LWF-SLGQSD---ILMSLSAGIMYFVQAYIAQKLSAKYSAVPQNPAAQQSAKLMVFIFPVMMTIFSLNVPAALPLYWFTSGLFLTVQ</Hsp_hseq>
+      <Hsp_midline>++ +P   LLK +   F G +G SII++T IVR ++ PL     K Q     KM +++P++ +++ +L   K  + Q     EMM LY+   +NPL  GC P++IQ PI + LYY + ++ E+    F LW   L   D   IL  +    M+F+     QK+S      P         K+M F+ PV+ T+F L  P+ L +Y+  S L   +Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18036</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9FYL3|2.A.9.2.2 2.A.9.2.2 ALBINO3-like protein 1, chloroplastic</Hit_def>
+  <Hit_accession>18036</Hit_accession>
+  <Hit_len>499</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>2.04826e-20</Hsp_evalue>
+      <Hsp_query-from>353</Hsp_query-from>
+      <Hsp_query-to>528</Hsp_query-to>
+      <Hsp_hit-from>123</Hsp_hit-from>
+      <Hsp_hit-to>333</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>211</Hsp_align-len>
+      <Hsp_qseq>NWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVE----------------------LRHAPFILWIHDLSAQDP---------YYILPIIMGATMFF-IQKMSPTTVTDP---MQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQ</Hsp_qseq>
+      <Hsp_hseq>SYGFAIILLTVLVKAATFPLTKKQVESAMAMKSLTPQIKAIQERYAGDQEKIQLETARLYKLAGINPLAGCLPTLATIPVWIGLYRALSNVADEGLLTEGFFWIPSLAGPTTVAARQNGSGISWLFPFIEGHPPLGWPDTLAYLVLPLLLVFSQYLSIQIMQSSQSNDPAMKSSQAVTKLLPLMIGYFALSVPSGLSLYWLTNNILSTAQQ</Hsp_hseq>
+      <Hsp_midline>++GF+II++T +V+   +PLTK Q  S   M+ L P+I+A++ER   D+++   E   LYK   +NPL GC P +  +P+++ LY  LS   +                       ++   I W+       P         Y +LP+++  + +  IQ M  +   DP     Q +   +P++   F L  PSGL +Y++ +N+++  QQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13362</Hit_id>
+  <Hit_def>gnl|TC-DB|Q31MS2|3.A.5.4.1 Inner membrane protein-like OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=Synpcc7942_1617 PE=3 SV=1</Hit_def>
+  <Hit_accession>13362</Hit_accession>
+  <Hit_len>392</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.0258</Hsp_bit-score>
+      <Hsp_score>188</Hsp_score>
+      <Hsp_evalue>3.55656e-15</Hsp_evalue>
+      <Hsp_query-from>328</Hsp_query-from>
+      <Hsp_query-to>443</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>120</Hsp_align-len>
+      <Hsp_qseq>VDYGWLWFISQPLFKLLKFIHSFLGNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMR----MLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSAS</Hsp_qseq>
+      <Hsp_hseq>MDFGIGFLSSNVMLPILDFFYGLVPSYGLAIIALTLVIRIALYPLSAGAIRNARRMRIANPVMQKRQQEIRERYANDPSKLQEETAKLFK-EFGNPLAGCFPLLLQMPLLFALFATLRGS</Hsp_hseq>
+      <Hsp_midline>+D+G  +  S  +  +L F +  + ++G +II +T ++R  +YPL+     +  +MR    ++Q + Q +RER  +D  +  +E   L+K E  NPL GCFPL++QMP+  AL+  L  S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12732</Hit_id>
+  <Hit_def>gnl|TC-DB|Q15070|2.A.9.1.2 Mitochondrial inner membrane protein OXA1L OS=Homo sapiens GN=OXA1L PE=1 SV=3</Hit_def>
+  <Hit_accession>12732</Hit_accession>
+  <Hit_len>435</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.0182</Hsp_bit-score>
+      <Hsp_score>175</Hsp_score>
+      <Hsp_evalue>1.83273e-13</Hsp_evalue>
+      <Hsp_query-from>343</Hsp_query-from>
+      <Hsp_query-to>527</Hsp_query-to>
+      <Hsp_hit-from>128</Hsp_hit-from>
+      <Hsp_hit-to>329</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>204</Hsp_align-len>
+      <Hsp_qseq>LLKFIHSFLG-NWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQR-------QSQEMMALYKAEKVNPLGGCFPLII---QMPIFL----ALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTD----PMQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQ</Hsp_qseq>
+      <Hsp_hseq>LLEFMHVDLGLPWWGAIAACTVFARCLIFPLIVTGQREAARIHNHLPEIQKFSSRIREAKLAGDHIEYYKASSEMALY--QKKHGIKLYKPLILPVTQAPIFISFFIALREMANLPVPSLQTGGLWWFQDLTVSDPIYILPLAVTATMWAVLELGAETGVQSSDLQWMRNVIRMMPLITLPITMHFPTAVFMYWLSSNLFSLVQ</Hsp_hseq>
+      <Hsp_midline>LL+F+H  LG  W  +I   T   R +++PL        A++    P+IQ    R+ + K         ++   MALY  +K + +    PLI+   Q PIF+    AL  M +  V       + W  DL+  DP YILP+ + ATM+ + ++   T          + ++  MP+I     + FP+ + +Y++ SNL +++Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10322</Hit_id>
+  <Hit_def>gnl|TC-DB|P39952|2.A.9.1.1 CYTOCHROME OXIDASE BIOGENESIS PROTEIN OXA1, MITOCHONDRIAL PRECURSOR - Saccharomyces cerevisiae (Baker&apos;s yeast).</Hit_def>
+  <Hit_accession>10322</Hit_accession>
+  <Hit_len>402</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.003</Hsp_bit-score>
+      <Hsp_score>149</Hsp_score>
+      <Hsp_evalue>2.59164e-10</Hsp_evalue>
+      <Hsp_query-from>332</Hsp_query-from>
+      <Hsp_query-to>531</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>316</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>213</Hsp_align-len>
+      <Hsp_qseq>WLWFISQPLFKLLKFIHSFLG-NWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLG----GCFPLIIQMPI----FLALYYMLSASVELRHAPFILWIHDLSAQDPYYILPIIMGATMFFIQKMSPTT----VTDPMQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLI</Hsp_qseq>
+      <Hsp_hseq>WYW-PSDIIQHVLEAVHVYSGLPWWGTIAATTILIRCLMFPLYVKSSDTVARNSHIKPELDALNNKLMSTTDLQQGQLVAMQRKKLLSSHGIKNRWLAAPMLQIPIALGFFNALRHMANYPVDGFANQGVAWFTDLTQADPYLGLQVITAAVFISFTRLGGETGAQQFSSPM-KRLFTILPIISIPATMNLSSAVVLYFAFNGAFSVLQTMIL</Hsp_hseq>
+      <Hsp_midline>W W  S  +  +L+ +H + G  W  +I   T ++R +M+PL      ++A+   ++P++ A+  +L      Q  +++A+ + + ++  G         ++Q+PI    F AL +M +  V+      + W  DL+  DPY  L +I  A      ++   T     + PM +++ T +P+I     +   S +V+Y+  +   +++Q  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7937</Hit_id>
+  <Hit_def>gnl|TC-DB|OIO18680.1|2.A.9.3.9 hypothetical protein AUJ37_04930 [Candidatus Magasanikbacteria bacterium CG1_02_41_34]</Hit_def>
+  <Hit_accession>7937</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>4.04884e-08</Hsp_evalue>
+      <Hsp_query-from>332</Hsp_query-from>
+      <Hsp_query-to>437</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>113</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>WLWFISQPLFKLLKFIHSFL--GNWGFSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALY</Hsp_qseq>
+      <Hsp_hseq>WTTYLYEPVFNFLIWIYNNWAHGNMGWAVVYLTIALRVLILPLTIIGERNTAKNEEVEAEILKLAKEFHYDKVQQKQEIRKRLKQRRVQPWAKALSLAIQALVFILLY</Hsp_hseq>
+      <Hsp_midline>W  ++ +P+F  L +I++    GN G++++ +T  +R ++ PLT     + AK   ++ +I  + +    DK +Q QE+    K  +V P      L IQ  +F+ LY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16576</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8N8Q8|2.A.9.1.3 Mitochondrial inner membrane protein COX18 OS=Homo sapiens GN=COX18 PE=2 SV=1</Hit_def>
+  <Hit_accession>16576</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>5.78846e-08</Hsp_evalue>
+      <Hsp_query-from>342</Hsp_query-from>
+      <Hsp_query-to>531</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>296</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>48</Hsp_gaps>
+      <Hsp_align-len>233</Hsp_align-len>
+      <Hsp_qseq>KLLKFIHSFLG-NWGFSIIVITFIVRG-IMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEM-------------------MALYKAEKVNPLGGCFPLIIQMPIFLALYYML-SASVELRHAPF-----------ILWIHDLSAQDPYYILPIIMGATMFFI------QKMS----PTTVTDPMQQKIMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLI</Hsp_qseq>
+      <Hsp_hseq>EVLLGVHAATGLPWWGSILLSTVALRGAVTLPLAAYQHYILAKVENLQPEIKTIARHLNQEVAVRANQLGWSKRDARLTYLKNMRRLISELYVRDNCHPFKATVLVWIQLPMWIFMSFALRNLSTGAAHSEGFSVQEQLATGGILWFPDLTAPDSTWILPISVGVINLLIVEICALQKIGMSRFQTYITYFVRAMSVLMIPIAATV-----PSSIVLYWLCSSFVGLSQNLLL</Hsp_hseq>
+      <Hsp_midline>++L  +H+  G  W  SI++ T  +RG +  PL   Q+  +AK+  LQP+I+ +   L  +   ++ ++                     LY  +  +P      + IQ+P+++ + + L + S    H+             ILW  DL+A D  +ILPI +G     I      QK+      T +T  ++   +  +P+  TV     PS +V+Y++ S+ V + Q  L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10498</Hit_id>
+  <Hit_def>gnl|TC-DB|P43042|3.A.5.3.1 Membrane protein insertase YidC OS=Mycoplasma capricolum subsp. capricolum (strain California kid / ATCC 27343 / NCTC 10154) OX=340047 GN=yidC PE=3 SV=1</Hit_def>
+  <Hit_accession>10498</Hit_accession>
+  <Hit_len>388</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>7.05762e-08</Hsp_evalue>
+      <Hsp_query-from>356</Hsp_query-from>
+      <Hsp_query-to>538</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>367</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>211</Hsp_align-len>
+      <Hsp_qseq>FSIIVITFIVRGIMYPLTKAQYTSMAKMRMLQPKIQAMRERLGD-----DKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVELRHA---PFIL----WIHDLSAQDPYYI------LPI----IMGATMFFIQKMSPTTVTDPMQQK------IMTFMPVIFTVFFLWFPSGLVVYYIVSNLVTIIQQQLIYRGLEKR</Hsp_qseq>
+      <Hsp_hseq>FAIFLTTLLIKGITLSFGWKSQINQEKMQDIQLKVADIQAKYKDKKDMQSKQKQQLEIQALYKKENMSQFSALAGSFAPLPFLFAIYAIVRSTRALKIASVGPIALIEGPW-QQITAGNYIYIIILAIYLPLQAVSMLLPTLLQMKKQKSITLTEAQKKSRKKQLIMQVVMMFVFIIIIVSVATGVCIYWIFSSILQIIQTYAFYLYNEKK</Hsp_hseq>
+      <Hsp_midline>F+I + T +++GI          +  KM+ +Q K+  ++ +  D      KQ+Q  E+ ALYK E ++           +P   A+Y ++ ++  L+ A   P  L    W   ++A +  YI      LP+    ++  T+  ++K    T+T+  ++       +   M  +F +  +   +G+ +Y+I S+++ IIQ    Y   EK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7738</Hit_id>
+  <Hit_def>gnl|TC-DB|O94587|2.A.9.1.4 Mitochondrial inner membrane protein cox18 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) GN=cox18 PE=3 SV=1</Hit_def>
+  <Hit_accession>7738</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>4.09233e-06</Hsp_evalue>
+      <Hsp_query-from>347</Hsp_query-from>
+      <Hsp_query-to>527</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>193</Hsp_align-len>
+      <Hsp_qseq>IHSFLGNWGFSIIVITFIVRG-IMYPLTKAQYTSMAKMRMLQPKIQAMRERLGDDKQRQSQEMMALYKAEKVNPLGGCFPLIIQMPIFLALYYMLSASVEL----RHAPFILWIHDLSAQDPYYILPIIMGATMFFIQKMSPTTVTDPMQQKIMTFMPV--IFTVFFLWF-----PSGLVVYYIVSNLVTIIQ</Hsp_qseq>
+      <Hsp_hseq>VHSYMP-WCYEIPAMAIFLRSTITLPIAIASLKTARRFVQVQPLIKEAKKRCRTNTDFRTVRKK-LYKRFNCHPLMIYALPITQLPLFAFASYQLRQAVDVCPESMSTEGMLWFTDLTLPDPHGVLPAVLAVT--YLTNMS--ILKRPSDSRLLKIFNTAGIMSAFFVSFMAFKTSTALSLYWTTSAIYSLVQ</Hsp_hseq>
+      <Hsp_midline>+HS++  W + I  +   +R  I  P+  A   +  +   +QP I+  ++R   +   ++     LYK    +PL      I Q+P+F    Y L  +V++         +LW  DL+  DP+ +LP ++  T  ++  MS   +  P   +++       I + FF+ F      + L +Y+  S + +++Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>103</Statistics_hsp-len>
+      <Statistics_eff-space>3410552535</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

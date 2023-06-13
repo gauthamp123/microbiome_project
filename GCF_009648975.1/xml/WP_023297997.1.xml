@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_023297997.1 MULTISPECIES: DUF3302 domain-containing protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>114</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_023297997.1 MULTISPECIES: DUF3302 domain-containing protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>114</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8754</Hit_id>
+  <Hit_def>gnl|TC-DB|P0ADK5|9.B.32.1.2 Inner membrane protein yiaW OS=Escherichia coli O157:H7 GN=yiaW PE=3 SV=1</Hit_def>
+  <Hit_accession>8754</Hit_accession>
+  <Hit_len>107</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>158.303</Hsp_bit-score>
+      <Hsp_score>399</Hsp_score>
+      <Hsp_evalue>8.5694e-52</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>109</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>106</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>MLLNYFALFVLILVFLILFYGVIIIHDIPYHIAQKRQHPHQDAIHVAGWISLFTLHAIWPFLWIWATLYRPDRGWGMASQTEDSLQREELEQRIALLEAALKNSQQASA</Hsp_qseq>
+      <Hsp_hseq>MFLDYFALGVLIFVFLVIFYGIIILHDIPYLIAKKRNHPHADAIHVAGWVSLFTLHVIWPFLWIWATLYRPERGWGMQSHDSSVMQ---LQQRIAGLEKQLADIKSSSA</Hsp_hseq>
+      <Hsp_midline>M L+YFAL VLI VFL++FYG+II+HDIPY IA+KR HPH DAIHVAGW+SLFTLH IWPFLWIWATLYRP+RGWGM S     +Q   L+QRIA LE  L + + +SA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4242</Hit_id>
+  <Hit_def>gnl|TC-DB|F4DGW5|9.B.32.1.4 ATPase involved in DNA repair OS=Aeromonas veronii (strain B565) GN=B565_2678 PE=4 SV=1</Hit_def>
+  <Hit_accession>4242</Hit_accession>
+  <Hit_len>112</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.132</Hsp_bit-score>
+      <Hsp_score>370</Hsp_score>
+      <Hsp_evalue>2.61758e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>108</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>MLLNYFALFVLILVFLILFYGVIIIHDIPYHIAQKRQHPHQDAIHVAGWISLFTLHAIWPFLWIWATLYRPDRGWGMASQTE-DSLQREELEQRIALLEAALKNSQQA</Hsp_qseq>
+      <Hsp_hseq>MALDYFALGLLVFVGLVIFYGVIVIHDIPYEIAKHRNHPHQDAIHVAGWVSLFTLHVLWPFLWIWATIYRPDRGWGFSQRLQKDEEELAALKQELADLKSRINTIEQS</Hsp_hseq>
+      <Hsp_midline>M L+YFAL +L+ V L++FYGVI+IHDIPY IA+ R HPHQDAIHVAGW+SLFTLH +WPFLWIWAT+YRPDRGWG + + + D  +   L+Q +A L++ +   +Q+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|9814</Hit_id>
+  <Hit_def>gnl|TC-DB|P32108|9.B.32.1.1 Uncharacterized protein yibI OS=Escherichia coli (strain K12) GN=yibI PE=4 SV=1</Hit_def>
+  <Hit_accession>9814</Hit_accession>
+  <Hit_len>120</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.976</Hsp_bit-score>
+      <Hsp_score>367</Hsp_score>
+      <Hsp_evalue>9.58524e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>101</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>106</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>68</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>MLLNYFALFVLILVFLILFYGVIIIHDIPYHIAQKRQHPHQDAIHVAGWISLFTLHAIWPFLWIWATLYRPDRGWGMASQTEDSLQREE-----LEQRIALLEAAL</Hsp_qseq>
+      <Hsp_hseq>MFLNYFALGVLIFVFLVIFYGIIAIHDIPYLIAKKRNHPHADAIHTAGWVSLFTLHVIWPFLWIWATLYQPERGWGMQSHVASQEKATDPEIAALSDRISRLEHQL</Hsp_hseq>
+      <Hsp_midline>M LNYFAL VLI VFL++FYG+I IHDIPY IA+KR HPH DAIH AGW+SLFTLH IWPFLWIWATLY+P+RGWGM S      +  +     L  RI+ LE  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2128</Hit_id>
+  <Hit_def>gnl|TC-DB|B8K566|9.B.32.1.3 GTPase OS=Vibrio parahaemolyticus 16 GN=VPMS16_3045 PE=4 SV=1</Hit_def>
+  <Hit_accession>2128</Hit_accession>
+  <Hit_len>129</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.117</Hsp_bit-score>
+      <Hsp_score>344</Hsp_score>
+      <Hsp_evalue>3.99017e-43</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>121</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>MLLNYFALFVLILVFLILFYGVIIIHDIPYHIAQKRQHPHQDAIHVAGWISLFTLHAIWPFLWIWATLYRPDRGWGM----ASQTE-----DSL--QREELEQRIALLEAALKNSQQASAGNNE</Hsp_qseq>
+      <Hsp_hseq>MFLDYFALGLLVFVALVIFYGIIVIHDIPYEIAKDREHPHQDAIHYAGWVSLFTLHALWPFLWIWATLWRKERGWGFQKLEAEQHDIHHRVDALIDQVNQLQKEVAELKT---ESKQTTAPSNQ</Hsp_hseq>
+      <Hsp_midline>M L+YFAL +L+ V L++FYG+I+IHDIPY IA+ R+HPHQDAIH AGW+SLFTLHA+WPFLWIWATL+R +RGWG     A Q +     D+L  Q  +L++ +A L+     S+Q +A +N+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12433</Hit_id>
+  <Hit_def>gnl|TC-DB|Q0K0R7|9.B.32.1.6 Hypothetical membrane spanning protein OS=Cupriavidus necator (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) GN=h16_B1622 PE=4 SV=1</Hit_def>
+  <Hit_accession>12433</Hit_accession>
+  <Hit_len>136</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.447</Hsp_bit-score>
+      <Hsp_score>119</Hsp_score>
+      <Hsp_evalue>3.82708e-09</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>66</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>82</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>63</Hsp_align-len>
+      <Hsp_qseq>NYFALFVLILVFLILFYGVIIIHDIPYHIAQKRQHPHQDAIHVAGWISLFTLHAIWPFLWIWA</Hsp_qseq>
+      <Hsp_hseq>NAISWVVMIFVPLAAIYLFWMLHIWPDKVAHRKQHPQREAIHALCLLSLFFGGLLWPMAWLWA</Hsp_hseq>
+      <Hsp_midline>N  +  V+I V L   Y   ++H  P  +A ++QHP ++AIH    +SLF    +WP  W+WA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2183</Hit_id>
+  <Hit_def>gnl|TC-DB|B9QYG9|9.B.32.1.5 Putative uncharacterized protein OS=Labrenzia alexandrii DFL-11 GN=SADFL11_5099 PE=4 SV=1</Hit_def>
+  <Hit_accession>2183</Hit_accession>
+  <Hit_len>80</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>1.75659e-05</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>66</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>63</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>61</Hsp_align-len>
+      <Hsp_qseq>FALFVLILVFLILFYGVIIIHDIPYHIAQKRQHPHQDAIHVAGWISLFTLHAIWPFLWIWA</Hsp_qseq>
+      <Hsp_hseq>FALIVLLVLLATLIGGWLFLAVWPGKIAKRRGHRRAEAVTMCGYWGALTLGLLMPIAFIWA</Hsp_hseq>
+      <Hsp_midline>FAL VL+++   L  G + +   P  IA++R H   +A+ + G+    TL  + P  +IWA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>83</Statistics_hsp-len>
+      <Statistics_eff-space>251770313</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

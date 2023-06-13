@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008806955.1 MULTISPECIES: lipid IV(A) 4-amino-4-deoxy-L-arabinosyltransferase [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>551</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008806955.1 MULTISPECIES: lipid IV(A) 4-amino-4-deoxy-L-arabinosyltransferase [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>551</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4849</Hit_id>
+  <Hit_def>gnl|TC-DB|G8LJX5|9.B.142.2.2 Undecaprenyl phosphate-alpha-4-amino-4-deoxy-L-arabinose arabinosyl transferase OS=Enterobacter cloacae EcWSU1 GN=arnT PE=3 SV=1</Hit_def>
+  <Hit_accession>4849</Hit_accession>
+  <Hit_len>551</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>834.713</Hsp_bit-score>
+      <Hsp_score>2155</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>551</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>551</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>386</Hsp_identity>
+      <Hsp_positive>458</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>551</Hsp_align-len>
+      <Hsp_qseq>MKSIRYGVSLIALFALYYLLPLNFRLLWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYALLGVACGMGVMTKGFLALAVPVVGVLPWVIARKRWREVLTYGWLAVIVCTLVVLPWGLAIAQREPDFWRYFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLPWLALLPGALKRGWLERDEARGALYLLGWVAMPFLFFSIAKGKLPTYILPCFAPLSILMARYALEAAKTGAKALRINGMINLGVGLLGLIAVLVVSPWGVMHKPVWTKIELYKCLLAAIAFAVWALMGWLAMKNPGRRWSLAALCPLGLALLVGFAIPDRVIDSKQPQFLVDIVSESLQPSRYVLTNNVGIAGGLAWELKRSDIIMFDKQGELKYGLDWPDAQGSFVSQAGFADWLATHRQQGPVSLVLLMDKGESMVDLPLPKPDNAYELGRVVFLQYLPQ</Hsp_qseq>
+      <Hsp_hseq>MKAARYGLALLALFIVYYLIPIDIRLLWQPDETRYAEISREMLASGDWIVPHFLGLRYFEKPIAGYWINSIGQLLFGHTNFAVRAGAIFSTGLTALLVIWMAWRLWRDKRVAIFSGLIFLTLFLVYGIGTYAVLDPIITLWLVAAMCSFWLASQAETVAGKAGGYVLLGLACGMGVMTKGFLALAVPVIGVLPWVIAQKRWKEVLIFGWLAIVSCVLIVLPWALAIAHREPDFWRYFFWVEHIQRFAQSDAQHKAPFWYYLPFLLAGSLPWLALLPGAFRQGWRERDNTGGGFYLLGWVVMPLLFFSIAKGKLPTYILPCFAPLAILMARYACIAADKGARALRINGGINLAFGVIGVVAALVVSPWGVAKHPVWTSVELYKVFCAVLAFLVWAAVGWFTVRQSAQRWWLAALCPAGVALLIGFAIPNLVVDSKQPQSLVDTIRDPLQSSRFVLANNVGVASGLAWELKRNDIILFGQSGELSYGLAYPDVKDRFVEKDNFAQWLATHRQQGGVSLVILLSKHDDIKRAHLPEPDSLYIQGRLAWLQYLPQ</Hsp_hseq>
+      <Hsp_midline>MK+ RYG++L+ALF +YYL+P++ RLLWQPDETRYAEISREMLA+GDW+VPHFLGLRYFEKPIAGYWINSIGQ LFGH NF VR G++F+  +TALLV W+AWR++RDK+VA+ S +IFLT  LVY IGTYAVLDP+ITLWL  AMCSFW A+QA++ +GK  GY LLG+ACGMGVMTKGFLALAVPV+GVLPWVIA+KRW+EVL +GWLA++ C L+VLPW LAIA REPDFWRYFFWVEHIQRFA+ DAQHKAPFWYY+PFL+AGSLPWLALLPGA ++GW ERD   G  YLLGWV MP LFFSIAKGKLPTYILPCFAPL+ILMARYA  AA  GA+ALRING INL  G++G++A LVVSPWGV   PVWT +ELYK   A +AF VWA +GW  ++   +RW LAALCP G+ALL+GFAIP+ V+DSKQPQ LVD + + LQ SR+VL NNVG+A GLAWELKR+DII+F + GEL YGL +PD +  FV +  FA WLATHRQQG VSLV+L+ K + +    LP+PD+ Y  GR+ +LQYLPQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11471</Hit_id>
+  <Hit_def>gnl|TC-DB|p76473|9.B.142.2.9 Undecaprenyl phosphate-alpha-4-amino-4-deoxy-L-arabinose arabinosyl transferase OS=Escherichia coli (strain K12) GN=arnT PE=1 SV=1</Hit_def>
+  <Hit_accession>11471</Hit_accession>
+  <Hit_len>550</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>749.199</Hsp_bit-score>
+      <Hsp_score>1933</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>551</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>550</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>353</Hsp_identity>
+      <Hsp_positive>421</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>551</Hsp_align-len>
+      <Hsp_qseq>MKSIRYGVSLIALFALYYLLPLNFRLLWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYALLGVACGMGVMTKGFLALAVPVVGVLPWVIARKRWREVLTYGWLAVIVCTLVVLPWGLAIAQREPDFWRYFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLPWLALLPGALKRGWLERDEARGALYLLGWVAMPFLFFSIAKGKLPTYILPCFAPLSILMARYALEAAKTGAKALRINGMINLGVGLLGLIAVLVVSPWGVMHKPVWTKIELYKCLLAAIAFAVWALMGWLAMKNPGRRWSLAALCPLGLALLVGFAIPDRVIDSKQPQFLVDIVSESLQPSRYVLTNNVGIAGGLAWELKRSDIIMFDKQGELKYGLDWPDAQGSFVSQAGFADWLATHRQQGPVSLVLLMDKGESMVDLPLPKPDNAYELGRVVFLQYLPQ</Hsp_qseq>
+      <Hsp_hseq>MKSVRYLIGLFAFIACYYLLPISTRLLWQPDETRYAEISREMLASGDWIVPHLLGLRYFEKPIAGYWINSIGQWLFGANNFGVRAGVIFATLLTAALVTWFTLRLWRDKRLALLATVIYLSLFIVYAIGTYAVLDPFIAFWLVAGMCSFWLAMQAQTWKGKSAGFLLLGITCGMGVMTKGFLALAVPVLSVLPWVATQKRWKDLFIYGWLAVISCVLTVLPWGLAIAQREPNFWHYFFWVEHIQRFALDDAQHRAPFWYYVPVIIAGSLPWLGLLPGALYTGWKNRKHS-ATVYLLSWTIMPLLFFSVAKGKLPTYILSCFASLAMLMAHYALLAAKNNPLALRINGWINIAFGVTGIIATFVVSPWGPMNTPVWQTFESYKVFCAWSIFSLWAFFGWYTLTNVEKTWPFAALCPLGLALLVGFSIPDRVMEGKHPQFFVEMTQESLQPSRYILTDSVGVAAGLAWSLQRDDIIMYRQTGELKYGLNYPDAKGRFVSGDEFANWLNQHRQEGIITLVLSVDRDEDINSLAIPPADAIDRQERLVLIQYRPK</Hsp_hseq>
+      <Hsp_midline>MKS+RY + L A  A YYLLP++ RLLWQPDETRYAEISREMLA+GDW+VPH LGLRYFEKPIAGYWINSIGQWLFG NNFGVR G +FA  +TA LV W   R++RDK++A+L+ VI+L+  +VYAIGTYAVLDP I  WL   MCSFW A QAQ+  GK  G+ LLG+ CGMGVMTKGFLALAVPV+ VLPWV  +KRW+++  YGWLAVI C L VLPWGLAIAQREP+FW YFFWVEHIQRFA  DAQH+APFWYY+P +IAGSLPWL LLPGAL  GW  R  +   +YLL W  MP LFFS+AKGKLPTYIL CFA L++LMA YAL AAK    ALRING IN+  G+ G+IA  VVSPWG M+ PVW   E YK   A   F++WA  GW  + N  + W  AALCPLGLALLVGF+IPDRV++ K PQF V++  ESLQPSRY+LT++VG+A GLAW L+R DIIM+ + GELKYGL++PDA+G FVS   FA+WL  HRQ+G ++LVL +D+ E +  L +P  D      R+V +QY P+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20483</Hit_id>
+  <Hit_def>gnl|TC-DB|V5BTU4|9.B.142.2.8 Polymyxin resistance protein ArnT, undecaprenyl phosphate-alpha-L-Ara4N transferase OS=Burkholderia cenocepacia KC-01 GN=P355_5004 PE=4 SV=1</Hit_def>
+  <Hit_accession>20483</Hit_accession>
+  <Hit_len>558</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>170.244</Hsp_bit-score>
+      <Hsp_score>430</Hsp_score>
+      <Hsp_evalue>2.84504e-46</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>331</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>343</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>331</Hsp_align-len>
+      <Hsp_qseq>VSLIALFALYYLLPLNFRLLWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYA-LLGVACGMGVMTKGFLALAVP-VVGVLPWVIAR--KRWREVLTYGWLAVIVCTLVVLPWGLAIAQREPDFWRYFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLPWLALLPGALKRGWLERDEARG---ALYLLGWVAMPFLFFSIAKGKLPTYILPCFAPLSILMARY</Hsp_qseq>
+      <Hsp_hseq>VLLLVALAIVWFAPLGLRHLIPSDEGRYAEMAREMFVTGDWITPRYNGYKYFEKPPLQTWLNALTFAWFGIGEWQARLYTAVASFAGVLLVGYTGARLFNPLS-GFLAAVVLASAPYWNLMGHFNALDMGLAFWMALSLCSLLLAQRPGLRPAAVRGWMWACWAAMAFAVLSKGLVGLILPGAVLVLYTLIARDWALWKRLYLVSGLVIFFA--IVTPWFVLVQQRNPEFFDFFFIVQQFRRYLTPEQNRPGPLYYFVPVLLVGFLPWLSVAWQSIRHALRMPRQPNGFSPMLVLLIWSAFIFLFFSASHSKLISYVLPVAPALALIIGAY</Hsp_hseq>
+      <Hsp_midline>V L+   A+ +  PL  R L   DE RYAE++REM  TGDW+ P + G +YFEKP    W+N++    FG   +  R  +  A     LLV +   R+F       L+ V+  +A     +G +  LD  +  W+AL++CS   A +   R   + G+      A    V++KG + L +P  V VL  +IAR    W+ +     L +     +V PW + + QR P+F+ +FF V+  +R+   +     P +Y++P L+ G LPWL++   +++       +  G    L LL W A  FLFFS +  KL +Y+LP    L++++  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2617</Hit_id>
+  <Hit_def>gnl|TC-DB|C6NTX4|9.B.142.2.1 Glycosyl transferase family 39 OS=Acidithiobacillus caldus ATCC 51756 GN=ACA_1809 PE=4 SV=1</Hit_def>
+  <Hit_accession>2617</Hit_accession>
+  <Hit_len>546</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.887</Hsp_bit-score>
+      <Hsp_score>346</Hsp_score>
+      <Hsp_evalue>6.33743e-35</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>334</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>343</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>342</Hsp_align-len>
+      <Hsp_qseq>IRYGVSLIALFALYYLLPLNFRLLWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSF-WGAAQAQSRSGKILGYALLGVACGMGVMTKGFLALAVPVVGVLPWVIARKR----WREVLTYGWLAVIVCTLVVLPWGLAIAQREPDFW-RYFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLPWLALLPGAL-----KRGWLERDEARGALYLLGWVAMPFLFFSIAKGKLPTYILPCFAPLSILMARYALE</Hsp_qseq>
+      <Hsp_hseq>VTYSIIIFLVSFLYFSWATGNTSLWDIDEPIYAQSLKEMIAHHDLVVPTFNGHILPDKPILNYWLMWCGTKVFGWNSLGLRVGSAFVGALLILLL-WIYVSRLYNPTIALLAASITATLLHSTVIFRSATPDPLLILTVSAALIFFITGYVERDKNHYRFLLFSYAAMA--LATLDKGPIGFLLPGLIIVLFLLIQRNLQFLWNEGRLY--IGIPLFLIIVLPWYVAVGIETHWAWDQVFLLQQNIGRFDSSMQGHRGPWFYYVLSIFLGMLPWSIFLPQTLVLAIRKRYFLDGEFHVQNLFLVIWAAVWSVFFSLSATKLPNYVWEVYPPLAILLAVYFVQ</Hsp_hseq>
+      <Hsp_midline>+ Y + +  +  LY+        LW  DE  YA+  +EM+A  D VVP F G    +KPI  YW+   G  +FG N+ G+R GS F   +  LL+ W+      +  +A+L+  I  T +    I   A  DP++ L ++ A+  F  G  +      + L ++   +A  +  + KG +   +P + ++ +++ ++     W E   Y  + + +  ++VLPW +A+       W + F   ++I RF      H+ P++YY+  +  G LPW   LP  L     KR +L+ +     L+L+ W A+  +FFS++  KLP Y+   + PL+IL+A Y ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5134</Hit_id>
+  <Hit_def>gnl|TC-DB|H8KSM2|9.B.142.2.6 PMT family glycosyltransferase, 4-amino-4-deoxy-L-arabinose transferase OS=Solitalea canadensis (strain ATCC 29591 / DSM 3403 / NBRC 15130 / NCIMB 12057 / USAM 9D) GN=Solca_3569 PE=4 SV=1</Hit_def>
+  <Hit_accession>5134</Hit_accession>
+  <Hit_len>528</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.627</Hsp_bit-score>
+      <Hsp_score>296</Hsp_score>
+      <Hsp_evalue>1.90633e-28</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>343</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>351</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>346</Hsp_align-len>
+      <Hsp_qseq>RYGVSLIALFALY-YLLPLNFRLLWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYALLGVACGMGVMTKGFLALAVPVVGVLPWVIARKRWREVLTYG----WLAVIVCTLVVLPWGLAIAQREPDFWRYFFWVEH-IQRFAEKDAQHKAPFWYYIPFLIAGSLPWLALLPGALKRGWLERDEARGALYLLGWVAMPFL-FFSIAKGKLPTYILPCFAPLSILMARYALEAAKTGAKAL</Hsp_qseq>
+      <Hsp_hseq>RYVLPLVVLIAAACYFFNLGKPPIYILDEAKNAQCAREMFERGDYIVPTFNGELRTDKPVLHYYFMIAAYKMFGVSEFSARFFSAVFGVLTVISLFWFT-RRFLGSRVALFATLVWLASININLEFHFAVPDPYLIFFISTALFAVYTFLETGKKGWLWIFYALL----GLGTLTKGPIAIALPGLIVLLYLLCQWRISIKTLFGEMQPFIGLLIILLIAAPWYLAVHNATDGAWTRGFFLEHNFDRFSAIKEGHGGFWGLTVVFVLLGLLPFAVFCIQAFFKTY--EQIKHPFIQFSTVVAIVFIVFFTISKTKLPNYTMPSYPFYAVLIGNYLVVLTDTTRRSL</Hsp_hseq>
+      <Hsp_midline>RY + L+ L A   Y   L    ++  DE + A+ +REM   GD++VP F G    +KP+  Y+       +FG + F  RF S     +T + + W   R F   +VA+ + +++L ++ +     +AV DP +  +++ A+ + +   +   +    + YALL    G+G +TKG +A+A+P + VL +++ + R      +G    ++ +++  L+  PW LA+       W   F++EH   RF+     H   +   + F++ G LP+      A  + +         +     VA+ F+ FF+I+K KLP Y +P +   ++L+  Y +    T  ++L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20883</Hit_id>
+  <Hit_def>gnl|TC-DB|WP_017314285.1|9.B.142.2.13 glycosyl transferase [Mastigocladopsis repens]</Hit_def>
+  <Hit_accession>20883</Hit_accession>
+  <Hit_len>537</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>1.69849e-17</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>28</Hsp_hit-from>
+      <Hsp_hit-to>354</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>343</Hsp_align-len>
+      <Hsp_qseq>LIALFALYYLLPLNFRLL----WQPDETRYAEISREM----LATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLD-PMITLWLALAMCSFWGAAQAQSRSGKILGYAL-LGVACGMGVMTKGFLALAVPVVGV--LPWVIAR--KRWREVLTYGWLAVIVCTLVVLPW-GLAIAQREPDFWRYFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLPWLALLPGALKRGWLERDEARGALYLLGWVAMPFLFFSIAKGKLPTYILPCFAPLSILMARYALEAAK</Hsp_qseq>
+      <Hsp_hseq>IVLLLAAVLLFTINLGELPLRDW--DEGTVAQVAREIWRAPAGSMRWLYPTLGGEPYYNKPPLIHLLIAWAYSFWGVHEWTTRLPGAMLTAISVPLLYYIGREIFHQRWAAIYSALVYLTMLPVVRHGRLAMLDGAAVSFFMVMILCLL--------RSRRNLRYCLGVGICFGLICLTKGILGLLLGAIALVFLFWDTPRLFMSW-----YMWTGILIGIVPVAFWYGAQWVHYGYIFTKIGMMDQSLSRVWNSVESNSGPVWYYLLEILKYTWPWLIFLPSSLRFTWENRNLSWAKLVLV-WCGVYLISISLMGTKLPWYVFPIYPGIALACGAKLAEIEK</Hsp_hseq>
+      <Hsp_midline>++ L A   L  +N   L    W  DE   A+++RE+      +  W+ P   G  Y+ KP   + + +     +G + +  R        ++  L+ ++   +F  +  A+ S +++LT + V   G  A+LD   ++ ++ + +C          RS + L Y L +G+  G+  +TKG L L +  + +  L W   R    W     Y W  +++  + V  W G         F +     + + R       +  P WYY+  ++  + PWL  LP +L+  W  R+ +   L L+ W  +  +  S+   KLP Y+ P +  +++       E  K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4553</Hit_id>
+  <Hit_def>gnl|TC-DB|G0LCP3|9.B.142.2.3 Glycosyltransferase, family GT83 OS=Zobellia galactanivorans (strain DSM 12802 / CIP 106680 / NCIMB 13871 / Dsij) GN=zobellia_2926 PE=4 SV=1</Hit_def>
+  <Hit_accession>4553</Hit_accession>
+  <Hit_len>551</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.36333e-12</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>343</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>357</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>153</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>357</Hsp_align-len>
+      <Hsp_qseq>LIALFALYYLLPLNFRLLWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYALLGVACGMGVMTKGFLALAVPVVGVLPWVIARKRWREVLTY------GWLAVIVCTLV--------VLPWGLAIAQREPDFWRYFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLPW---LALLPGALKRGWLERDEARGALY---LLGWVAMPFLFFSIAKGKLPTY---ILPCFAPLSILMARYALEAAKTGAKAL</Hsp_qseq>
+      <Hsp_hseq>LLVLIVLVYVAGM-FVTLFEPDSAQFAVMAMRMVQENDFLNLIKGGSQYLDKPHLHFWLSAFSFKLFGFYEWAYRLPAILVTLLGAYSCFGLGTLLY-NRDTGRLAALIFMTAQTIVLSVIDVRTDAALTAFTILAIWQFTSYIEKGSLASICIG----AVAAGLAFSSKGQIALFVIGSALICHLAYTHKWQRVLSYKVLVGLGFFAMAIAPMLYAYYHQFDMHPEKVIRGTTGHSGIRFIFLEQSLERSGGAMGKTSSDYFFFFHTFLWVFIPWTIPAVVAVGSRVKALFKLRFAYHPQYEFMTLGTIAIFFLVASFSQFKLPHYLNIVIPLFA---VLTASYIIDLVKVDNKKI</Hsp_hseq>
+      <Hsp_midline>L+ L  L Y+  + F  L++PD  ++A ++  M+   D++     G +Y +KP   +W+++    LFG   +  R  ++    + A     L   ++ ++    L+ +IF+TA  +         D  +T +  LA+  F    +  S +   +G     VA G+   +KG +AL V    ++  +    +W+ VL+Y      G+ A+ +  ++        + P  +          R+ F  + ++R      +  + ++++    +   +PW     +  G+  +   +   A    Y    LG +A+ FL  S ++ KLP Y   ++P FA   +L A Y ++  K   K +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7854</Hit_id>
+  <Hit_def>gnl|TC-DB|OGD09777.1|9.B.142.2.18 hypothetical protein A2397_01785 [Candidatus Amesbacteria bacterium RIFOXYB1_FULL_44_23]</Hit_def>
+  <Hit_accession>7854</Hit_accession>
+  <Hit_len>459</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.299</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>8.33985e-08</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>VSLIALFALYYLLPLNFRL----LWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYAL</Hsp_qseq>
+      <Hsp_hseq>VFIIPIFLLFFSIPLFYKLGASSLTSFDEAWYAAISKNIINSGNLLNLKFNNQPFVDHPPAGFWLTAISQKIFGVDEFGSRAASA-VIGLATLALIFRIGQKLSSPSVGLASAITLLSSPWFLSRARSGNLDIFLTFFF---LTSFYLAILASENKKYLLPLSL</Hsp_hseq>
+      <Hsp_midline>V +I +F L++ +PL ++L    L   DE  YA IS+ ++ +G+ +   F    + + P AG+W+ +I Q +FG + FG R  S   I +  L + +   +      V + S +  L++    +      LD  +T +    + SF+ A  A      +L  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|20011</Hit_id>
+  <Hit_def>gnl|TC-DB|S0F067|9.B.142.4.9 Uncharacterized protein OS=Chthonomonas calidirosea (strain DSM 23976 / ICMP 18418 / T49) GN=CCALI_02808 PE=4 SV=1</Hit_def>
+  <Hit_accession>20011</Hit_accession>
+  <Hit_len>566</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>2.6708e-06</Hsp_evalue>
+      <Hsp_query-from>84</Hsp_query-from>
+      <Hsp_query-to>359</Hsp_query-to>
+      <Hsp_hit-from>128</Hsp_hit-from>
+      <Hsp_hit-to>405</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>292</Hsp_align-len>
+      <Hsp_qseq>RFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYALLGVACGMGVMTK--GFLALAVPVVGVLPWVIARKRWREVLTYGWLAVIVCTLVVLPWGLAIAQREPDFWR----------YFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLPWLALLPGALKRGW----LERDEARGALYLLGWVAMPFLFFSIAKGKLPTYILPCFAPLSILMARYALEAAKTGAKALRINGMINLGVGLLGLI</Hsp_qseq>
+      <Hsp_hseq>RLVTVLMGTLTIPVVFALGRRLY-GARIGWWAGLFYAVAPLAVVYGHFLAVDVPANLFVALAL--LWSARLIESDSAR--DGLLAGIWVGLAAATKYTAGVVIVAPLIA-LCWAKSPHRLRTAVLVG-LGVLLAFFVGCPGPLV---NWNVFWNGLPGYPGSGVYYELFVHSRQGHGLLFVHTGPGWWYHLII---SFPWGLGLPLYAAALWGVGVAGRRRTIGDRLLLLFTALYFLIIGFSAVRFARYTLPLFIPLAVLTARGLEEVHGNRARERLRQGLLTV-VALLTLL</Hsp_hseq>
+      <Hsp_midline>R  +V   T+T  +V  L  R++   ++   + + +  A L    G +  +D    L++ALA+   W A   +S S +     L G+  G+   TK    + +  P++  L W  +  R R  +  G L V++   V  P  L        FW           Y+    H ++       H  P W+Y   +   S PW   LP      W      R    G   LL + A+ FL    +  +   Y LP F PL++L AR   E     A+     G++ + V LL L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5018</Hit_id>
+  <Hit_def>gnl|TC-DB|H2CB90|9.B.142.8.1 Glycosyl transferase family 39 OS=Leptonema illini DSM 21528 GN=Lepil_0526 PE=4 SV=1</Hit_def>
+  <Hit_accession>5018</Hit_accession>
+  <Hit_len>554</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.83509e-05</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>273</Hsp_query-to>
+      <Hsp_hit-from>31</Hsp_hit-from>
+      <Hsp_hit-to>292</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>266</Hsp_align-len>
+      <Hsp_qseq>LLWQPDETRYAEISREMLATGDWVVPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYALLGVACGMGVMTKGFL------ALAVPVVGVLPW----VIARKRWREVLTY----GWLAVIVCTLVVLPWGLAIAQ--REPDFWRYFFWVEHIQRFAEKDAQHKAPFWYYIPFLIAGSLP--WLA</Hsp_qseq>
+      <Hsp_hseq>LLRQGDEVMHIATVRESLDAGSILMPQLTQQPNSYKPPLLFWMGMLGESLFGRSLLADRSVVALLGAGTAVFLFLIARLHALSLARSLLTTAAFLVSLAAFKFGRLLMMDLPMAFFLTAVAYSFVRHWRIQKGMAFM---ALAGFLTGIAFLYKGPLFHVYAALLFLSQAGMRLWSPGALNNTPRMREMLLSFLKDGIVFSLASFIVPLIWVVALAANGHTGTLW-FFFVVENAGKFAADNQPMMRIFGGWLLYLLPFTLPVLWIA</Hsp_hseq>
+      <Hsp_midline>LL Q DE  +    RE L  G  ++P         KP   +W+  +G+ LFG +    R         TA+ +  +A         ++L+   FL ++  +  G   ++D  +  +L     SF    + Q     +   AL G   G+  + KG L       L +   G+  W    +    R RE+L      G +  +   +V L W +A+A        W +FF VE+  +FA  +      F  ++ +L+  +LP  W+A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7895</Hit_id>
+  <Hit_def>gnl|TC-DB|OGM73954.1|9.B.142.5.2 hypothetical protein A2191_00290 [Candidatus Woesebacteria bacterium RIFOXYA1_FULL_38_9]</Hit_def>
+  <Hit_accession>7895</Hit_accession>
+  <Hit_len>796</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.000428448</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>213</Hsp_query-to>
+      <Hsp_hit-from>407</Hsp_hit-from>
+      <Hsp_hit-to>608</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>222</Hsp_align-len>
+      <Hsp_qseq>MKSIRYGVSLIALFALYYLL--PLNFRLLWQPDETRYAEISREML-----ATGDWV-VPHFLGLRYFEKPIAGYWINSIGQWLFGHNNFGVRFGSVFAITMTALLVAWLAWRVFRDKKVAVLSPVIFLTAMLVYAIGTYAVLDPMITLWLALAMCSFWGAAQAQSRSGKILGYALLGVACGMGVMTKGFLALAVPVVGVLPWVIARKR-WREVLTYGWLAVI</Hsp_qseq>
+      <Hsp_hseq>MRWILFSVLVFALFSRVFWLNEPKNEYF----DEVYHAFTAREMLHGKVAAWGWWSQAPERFAYEWTHPPLAKLGM-VVGMMVFGENALGWRMPGAILGFVSVMLVYLIAKTIFKDEWVGILAAAVFSLEGLVLVMSRIGMND---IYFLTFMLASFYFLLKKK--------YFWSAFCLGLAGASKWSVVWFVPIVFVVQVGLRRKLVWNNV----WFLIV</Hsp_hseq>
+      <Hsp_midline>M+ I + V + ALF+  + L  P N       DE  +A  +REML     A G W   P      +   P+A   +  +G  +FG N  G R        ++ +LV  +A  +F+D+ V +L+  +F    LV  +    + D     +L   + SF+   + +        Y       G+   +K  +   VP+V V+   + RK  W  V    W  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>103</Statistics_hsp-len>
+      <Statistics_eff-space>3433545024</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

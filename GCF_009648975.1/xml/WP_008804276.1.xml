@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008804276.1 MULTISPECIES: membrane integrity lipid transport subunit YebS [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>427</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008804276.1 MULTISPECIES: membrane integrity lipid transport subunit YebS [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>427</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8740</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AD03|9.A.69.1.2 Inner membrane protein YebS OS=Escherichia coli (strain K12) GN=yebS PE=1 SV=1</Hit_def>
+  <Hit_accession>8740</Hit_accession>
+  <Hit_len>427</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>669.078</Hsp_bit-score>
+      <Hsp_score>1725</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>427</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>427</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>321</Hsp_identity>
+      <Hsp_positive>366</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>427</Hsp_align-len>
+      <Hsp_qseq>MPIKTPTIKPAKKLVVHAVSTPLPYAHYQRCTQCDMLFRLPVLKRNQSAWCPRCNAKVRDGRDWSLTRLGSMAVAMLLLMPFAWSEPLLRLHLLGVRIDANVLQGIWQMTAQGDPLTAAMVLFCAVVAPVLLVVSISYLWLGNVLGMNLRPVLLMLGKLKEWVMLDIYLVGIGVASIKVQDYAFLQPGIGLVAFISLTLLSILTLIHMNVEELWERFYPERPATRADNNLQVCTGCHYTGYRDARGRCRRCHSPLHHRRPQSLQRSWAALIASLIFLLPANLLPISIIYVNGARQDDTILSGIISLASSNIAIAGVVFIASILVPFTKVIVLFTLLVSIQFKCEQGLRTRILLLRLITWIGRWSMLDLFVISLTMSLINRDQLLAFTMGPAAVYFGGAVILTILAVEWLDSRLLWDAHESGIARFAD</Hsp_qseq>
+      <Hsp_hseq>MALNTPQITPTKKITVRAIGEELPRGDYQRCPQCDMLFSLPEINSHQSAYCPRCQAKIRDGRDWSLTRLAAMAFTMLLLMPFAWGEPLLHIWLLGIRIDANVMQGIWQMTKQGDAITGSMVFFCVIGAPLILVTSIAYLWFGNRLGMNLRPVLLMLERLKEWVMLDIYLVGIGVASIKVQDYAHIQAGVGLFSFVALVILTTVTLSHLNVEELWERFYPQRPATRRDEKLRVCLGCHFTGYPDQRGRCPRCHIPLRLRRRHSLQKCWAALLASIVLLLPANLLPISIIYLNGGRQEDTILSGIMSLASSNIAVAGIVFIASILVPFTKVIVMFTLLLSIHFKCQQGLRTRILLLRMVTWIGRWSMLDLFVISLTMSLINRDQILAFTMGPAAFYFGAAVILTILAVEWLDSRLLWDAHESGNARFDD</Hsp_hseq>
+      <Hsp_midline>M + TP I P KK+ V A+   LP   YQRC QCDMLF LP +  +QSA+CPRC AK+RDGRDWSLTRL +MA  MLLLMPFAW EPLL + LLG+RIDANV+QGIWQMT QGD +T +MV FC + AP++LV SI+YLW GN LGMNLRPVLLML +LKEWVMLDIYLVGIGVASIKVQDYA +Q G+GL +F++L +L+ +TL H+NVEELWERFYP+RPATR D  L+VC GCH+TGY D RGRC RCH PL  RR  SLQ+ WAAL+AS++ LLPANLLPISIIY+NG RQ+DTILSGI+SLASSNIA+AG+VFIASILVPFTKVIV+FTLL+SI FKC+QGLRTRILLLR++TWIGRWSMLDLFVISLTMSLINRDQ+LAFTMGPAA YFG AVILTILAVEWLDSRLLWDAHESG ARF D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8831</Hit_id>
+  <Hit_def>gnl|TC-DB|P0AFL9|9.A.69.1.1 Paraquat-inducible protein A OS=Escherichia coli (strain K12) GN=pqiA PE=2 SV=1</Hit_def>
+  <Hit_accession>8831</Hit_accession>
+  <Hit_len>417</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.458</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.94725e-44</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>416</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>407</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>110</Hsp_identity>
+      <Hsp_positive>194</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>396</Hsp_align-len>
+      <Hsp_qseq>CTQCDMLFRLPVLKRNQSAWCPRCNAKVRDGRDWSLTRLGSMAVAMLLLMPFAWSEPLLRLHLLGVRIDANVLQGIWQMTAQGDPLTAAMVLFCAVVAPVLLVVSISYLWLGNVLGMNLRPVLL-MLGKLKEWVMLDIYLVGIGVASIKVQDYAFLQPGIGLVAFISLTLLSILTLIHMNVEELWERFYP--------ERPATRADNNLQVCTGCHYTGYRDARGRCRRCHSPLHHRRPQSLQRSWAALIASLIFLLPANLLPISIIYVNGARQDDTILSGIISL-ASSNIAIAGVVFIASILVPFTKVIVLFTLLVSIQFKCEQGLRTRILLLRLITWIGRWSMLDLFVISLTMSLINRDQLLAFTMGPAAVYFGGAVILTILAVEWLDSRLLWD</Hsp_qseq>
+      <Hsp_hseq>CSQCDMLVALPRLEHGQKAACPRCGTTLTVAWDAPRQRPTAYALAALFMLLLSNLFPFVNMNVAGVTSEITLLEIPGVLFSEDYASLGTFFLLFVQLVPAFCLITILLLVNRAELPVRLKEQLARVLFQLKTWGMAEIFLAGVLVSFVKLMAYGSIGVGSSFLPWCLFCVLQLRAFQCVDRRWLWDDIAPMPELRQPLKPGVTGIRQGLRSCSCCTAILPAD-EPVCPRCSTKGYVRRRNSLQWTLALLVTSIMLYLPANILPIMVTDLLGSKMPSTILAGVILLWSEGSYPVAAVIFLASIMVPTLKMIAIAWLCWDAKGHGKRDSERMHLIYEVVEFVGRWSMIDVFVIAVLSALVRMGGLMSIYPAMGALMFALVVIMTMFSAMTFDPRLSWD</Hsp_hseq>
+      <Hsp_midline>C+QCDML  LP L+  Q A CPRC   +    D    R  + A+A L ++  +   P + +++ GV  +  +L+    + ++         L    + P   +++I  L     L + L+  L  +L +LK W M +I+L G+ V+ +K+  Y  +  G   + +    +L +     ++   LW+   P        +   T     L+ C+ C      D    C RC +  + RR  SLQ + A L+ S++  LPAN+LPI +  + G++   TIL+G+I L +  +  +A V+F+ASI+VP  K+I +  L    +   ++      L+  ++ ++GRWSM+D+FVI++  +L+    L++      A+ F   VI+T+ +    D RL WD</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>1.66569e-09</Hsp_evalue>
+      <Hsp_query-from>51</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>238</Hsp_hit-from>
+      <Hsp_hit-to>408</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>175</Hsp_align-len>
+      <Hsp_qseq>CPRCNAKV----RDGRDWSLTRLGSMAVAMLLLMPFAWSEPLLRLHLLGVRIDANVLQGIWQMTAQGDPLTAAMVLFCAVVAPVLLVVSISYL-WLGNVLGMNLRPVLLMLGKLKE----WVMLDIYLVGIGVASIKVQDYAFLQPGIGLVAFISLTLLSILTLIHMNVEELWER</Hsp_qseq>
+      <Hsp_hseq>CPRCSTKGYVRRRNSLQWTLALL---VTSIMLYLP-ANILPIMVTDLLGSKMPSTILAGVILLWSEGSYPVAAVIFLASIMVPTLKMIAIAWLCWDAKGHGKRDSERMHLIYEVVEFVGRWSMIDVFVIAVLSALVRMGGLMSIYPAMGALMFALVVIMTMFSAMTFDPRLSWDR</Hsp_hseq>
+      <Hsp_midline>CPRC+ K     R+   W+L  L     +++L +P A   P++   LLG ++ + +L G+  + ++G    AA++   +++ P L +++I++L W     G      + ++ ++ E    W M+D++++ +  A +++     + P +G + F  + ++++ + +  +    W+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2513430334</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

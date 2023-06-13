@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008805766.1 MULTISPECIES: ATP-dependent RNA helicase RhlE [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>451</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008805766.1 MULTISPECIES: ATP-dependent RNA helicase RhlE [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>451</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6692</Hit_id>
+  <Hit_def>gnl|TC-DB|O00571|1.I.1.1.3 ATP-dependent RNA helicase DDX3X OS=Homo sapiens GN=DDX3X PE=1 SV=3</Hit_def>
+  <Hit_accession>6692</Hit_accession>
+  <Hit_len>662</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>271.937</Hsp_bit-score>
+      <Hsp_score>694</Hsp_score>
+      <Hsp_evalue>2.14766e-84</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>413</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>641</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>178</Hsp_identity>
+      <Hsp_positive>242</Hsp_positive>
+      <Hsp_gaps>51</Hsp_gaps>
+      <Hsp_align-len>462</Hsp_align-len>
+      <Hsp_qseq>SFDSLGLNPDILRAVAEQGYVEPTPIQQQAIPAVMQGRDLMASAQTGTGKTAGFTLPLLQRLID----------KEPHAKGRR---PVRALILTPTRELAAQVGENVRDYSKYLNIRSLVVFGGVSINPQMMKLRGGVDILVATPGRLLDLEHQNAVSLDSVEILVLDEADRMLDMGFIHDIRRVLAK--LPAR--RQNLLFSATFSDEIKGLAEKLLHNPLEVEVARRNTASEQITQHVHFVDKNRKRELLSQLIGE-GNWQQVLVFTRTKHGANHLAEQLNKDGIRSAAIHGNKSQGARTRALADFKSGGIRVLVATDIAARGLDIEELPHVVNYELPNVPEDYVHRIGRTGRAAATGEALSLVCVDEHKLLRDIERLL---KKEIPR---------------------------IAIAGYEPDPSIKAEPIQNGR--QQRGGGRGQGQGRGGQGQGRSG</Hsp_qseq>
+      <Hsp_hseq>SFSDVEMGEIIMGNIELTRYTRPTPVQKHAIPIIKEKRDLMACAQTGSGKTAAFLLPILSQIYSDGPGEALRAMKENGRYGRRKQYPI-SLVLAPTRELAVQIYEEARKFSYRSRVRPCVVYGGADIGQQIRDLERGCHLLVATPGRLVDMMERGKIGLDFCKYLVLDEADRMLDMGFEPQIRRIVEQDTMPPKGVRHTMMFSATFPKEIQMLARDFLDEYIFLAVGRVGSTSENITQKVVWVEESDKRSFLLDLLNATGKDSLTLVFVETKKGADSLEDFLYHEGYACTSIHGDRSQRDREEALHQFRSGKSPILVATAVAARGLDISNVKHVINFDLPSDIEEYVHRIGRTGRVGNLGLATSFFNERNINITKDLLDLLVEAKQEVPSWLENMAYEHHYKGSSRGRSKSSRFSGGFGARDYRQSSGASSSSFSSSRASSSRSGGGGHGSSRGFGGGGYGG</Hsp_hseq>
+      <Hsp_midline>SF  + +   I+  +    Y  PTP+Q+ AIP + + RDLMA AQTG+GKTA F LP+L ++            KE    GRR   P+ +L+L PTRELA Q+ E  R +S    +R  VV+GG  I  Q+  L  G  +LVATPGRL+D+  +  + LD  + LVLDEADRMLDMGF   IRR++ +  +P +  R  ++FSATF  EI+ LA   L   + + V R  + SE ITQ V +V+++ KR  L  L+   G     LVF  TK GA+ L + L  +G    +IHG++SQ  R  AL  F+SG   +LVAT +AARGLDI  + HV+N++LP+  E+YVHRIGRTGR    G A S        + +D+  LL   K+E+P                                 Y       +    + R    R GG G G  RG  G G  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10221</Hit_id>
+  <Hit_def>gnl|TC-DB|P38919|3.A.18.1.1 Eukaryotic initiation factor 4A-III - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>10221</Hit_accession>
+  <Hit_len>411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>240.35</Hsp_bit-score>
+      <Hsp_score>612</Hsp_score>
+      <Hsp_evalue>5.5267e-75</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>368</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>400</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>215</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>368</Hsp_align-len>
+      <Hsp_qseq>SFDSLGLNPDILRAVAEQGYVEPTPIQQQAIPAVMQGRDLMASAQTGTGKTAGFTLPLLQRLIDKEPHAKGRRPVRALILTPTRELAAQVGENVRDYSKYLNIRSLVVFGGVSINPQMMKLRGGVDILVATPGRLLDLEHQNAVSLDSVEILVLDEADRMLDMGFIHDIRRVLAKLPARRQNLLFSATFSDEIKGLAEKLLHNPLEVEVARRNTASEQITQHVHFVDKNR-KRELLSQLIGEGNWQQVLVFTRTKHGANHLAEQLNKDGIRSAAIHGNKSQGARTRALADFKSGGIRVLVATDIAARGLDIEELPHVVNYELPNVPEDYVHRIGRTGRAAATGEALSLVCVDEHKLLRDIERLLKKEI</Hsp_qseq>
+      <Hsp_hseq>TFDTMGLREDLLRGIYAYGFEKPSAIQQRAIKQIIKGRDVIAQSQSGTGKTATFSISVLQCLDIQV------RETQALILAPTRELAVQIQKGLLALGDYMNVQCHACIGGTNVGEDIRKLDYGQHVVAGTPGRVFDMIRRRSLRTRAIKMLVLDEADEMLNKGFKEQIYDVYRYLPPATQVVLISATLPHEILEMTNKFMTDPIRILVKRDELTLEGIKQFFVAVEREEWKFDTLCDLYDTLTITQAVIFCNTKRKVDWLTEKMREANFTVSSMHGDMPQKERESIMKEFRSGASRVLISTDVWARGLDVPQVSLIINYDLPNNRELYIHRIGRSGRYGRKGVAINFVKNDDIRILRDIEQYYSTQI</Hsp_hseq>
+      <Hsp_midline>+FD++GL  D+LR +   G+ +P+ IQQ+AI  +++GRD++A +Q+GTGKTA F++ +LQ L  +       R  +ALIL PTRELA Q+ + +     Y+N++     GG ++   + KL  G  ++  TPGR+ D+  + ++   ++++LVLDEAD ML+ GF   I  V   LP   Q +L SAT   EI  +  K + +P+ + V R     E I Q    V++   K + L  L       Q ++F  TK   + L E++ +     +++HG+  Q  R   + +F+SG  RVL++TD+ ARGLD+ ++  ++NY+LPN  E Y+HRIGR+GR    G A++ V  D+ ++LRDIE+    +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12276</Hit_id>
+  <Hit_def>gnl|TC-DB|Q07478|3.A.22.1.1 ATP-dependent RNA helicase SUB2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) GN=SUB2 PE=1 SV=1</Hit_def>
+  <Hit_accession>12276</Hit_accession>
+  <Hit_len>446</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>197.208</Hsp_bit-score>
+      <Hsp_score>500</Hsp_score>
+      <Hsp_evalue>4.2133e-58</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>378</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>440</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>120</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>383</Hsp_align-len>
+      <Hsp_qseq>FDSLGLNPDILRAVAEQGYVEPTPIQQQAIPAVMQGRDLMASAQTGTGKTAGFTLPLLQRLIDKEPHAKGRRPVRALILTPTRELAAQVGENVRDYSKYL-NIRSLVVFGGVSINPQMMKLRG---GVDILVATPGRLLDLEHQNAVSLDSVEILVLDEADRMLD-MGFIHDIRRVLAKLPARRQNLLFSATFSDEIKGLAEKLLHNPLEVEVA-RRNTASEQITQHVHFVDKNRKRELLSQLIGEGNWQQVLVFTRTKHGANHLAEQLNKDGIRSAAIHGNKSQGARTRALADFKSGGIRVLVATDIAARGLDIEELPHVVNYELPNVPEDYVHRIGRTGRAAATGEALSLV-CVDEHKLLRDIERLLKKEIPRIAIAGYEP</Hsp_qseq>
+      <Hsp_hseq>FKDFLLKPELSRAIIDCGFEHPSEVQQHTIPQSIHGTDVLCQAKSGLGKTAVFVLSTLQQL-DPVPGE-----VAVVVICNARELAYQIRNEYLRFSKYMPDVKTAVFYGGTPISKDAELLKNKDTAPHIVVATPGRLKALVREKYIDLSHVKNFVIDECDKVLEELDMRRDVQEIFRATPRDKQVMMFSATLSQEIRPICRRFLQNPLEIFVDDEAKLTLHGLQQYYIKLEEREKNRKLAQLLDDLEFNQVIIFVKSTTRANELTKLLNASNFPAITVHGHMKQEERIARYKAFKDFEKRICVSTDVFGRGIDIERINLAINYDLTNEADQYLHRVGRAGRFGTKGLAISFVSSKEDEEVLAKIQERFDVKIAEFPEEGIDP</Hsp_hseq>
+      <Hsp_midline>F    L P++ RA+ + G+  P+ +QQ  IP  + G D++  A++G GKTA F L  LQ+L D  P       V  +++   RELA Q+      +SKY+ ++++ V +GG  I+     L+       I+VATPGRL  L  +  + L  V+  V+DE D++L+ +    D++ +    P  +Q ++FSAT S EI+ +  + L NPLE+ V          + Q+   +++  K   L+QL+ +  + QV++F ++   AN L + LN     +  +HG+  Q  R      FK    R+ V+TD+  RG+DIE +   +NY+L N  + Y+HR+GR GR    G A+S V   ++ ++L  I+     +I      G +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|12686</Hit_id>
+  <Hit_def>gnl|TC-DB|Q13838|3.A.18.1.1 Spliceosome RNA helicase BAT1 - Homo sapiens (Human).</Hit_def>
+  <Hit_accession>12686</Hit_accession>
+  <Hit_len>428</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>189.504</Hsp_bit-score>
+      <Hsp_score>480</Hsp_score>
+      <Hsp_evalue>2.27855e-55</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>361</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>404</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>195</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>359</Hsp_align-len>
+      <Hsp_qseq>LNPDILRAVAEQGYVEPTPIQQQAIPAVMQGRDLMASAQTGTGKTAGFTLPLLQRLIDKEPHAKGRRPVRALILTPTRELAAQVGENVRDYSKYL-NIRSLVVFGGVSINPQMMKLRGGVD-ILVATPGRLLDLEHQNAVSLDSVEILVLDEADRMLD-MGFIHDIRRVLAKLPARRQNLLFSATFSDEIKGLAEKLLHNPLEVEVARRNTAS-EQITQHVHFVDKNRKRELLSQLIGEGNWQQVLVFTRTKHGANHLAEQLNKDGIRSAAIHGNKSQGARTRALADFKSGGIRVLVATDIAARGLDIEELPHVVNYELPNVPEDYVHRIGRTGRAAATGEALSLVC-VDEHKLLRDIE</Hsp_qseq>
+      <Hsp_hseq>LKPELLRAIVDCGFEHPSEVQHECIPQAILGMDVLCQAKSGMGKTAVFVLATLQQL---EP-VTGQ--VSVLVMCHTRELAFQISKEYERFSKYMPNVKVAVFFGGLSIKKDEEVLKKNCPHIVVGTPGRILALARNKSLNLKHIKHFILDECDKMLEQLDMRRDVQEIFRMTPHEKQVMMFSATLSKEIRPVCRKFMQDPMEIFVDDETKLTLHGLQQYYVKLKDNEKNRKLFDLLDVLEFNQVVIFVKSVQRCIALAQLLVEQNFPAIAIHRGMPQEERLSRYQQFKDFQRRILVATNLFGRGMDIERVNIAFNYDMPEDSDTYLHRVARAGRFGTKGLAITFVSDENDAKILNDVQ</Hsp_hseq>
+      <Hsp_midline>L P++LRA+ + G+  P+ +Q + IP  + G D++  A++G GKTA F L  LQ+L   EP   G+  V  L++  TRELA Q+ +    +SKY+ N++  V FGG+SI      L+     I+V TPGR+L L    +++L  ++  +LDE D+ML+ +    D++ +    P  +Q ++FSAT S EI+ +  K + +P+E+ V      +   + Q+   +  N K   L  L+    + QV++F ++      LA+ L +    + AIH    Q  R      FK    R+LVAT++  RG+DIE +    NY++P   + Y+HR+ R GR    G A++ V   ++ K+L D++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18690</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9NUU7|1.I.1.1.3 ATP-dependent RNA helicase DDX19A OS=Homo sapiens GN=DDX19A PE=1 SV=1</Hit_def>
+  <Hit_accession>18690</Hit_accession>
+  <Hit_len>478</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.94</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>1.05427e-48</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>371</Hsp_query-to>
+      <Hsp_hit-from>92</Hsp_hit-from>
+      <Hsp_hit-to>465</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>197</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>382</Hsp_align-len>
+      <Hsp_qseq>SFDSLGLNPDILRAVAEQGYVEPTPIQQQAIPAVMQG--RDLMASAQTGTGKTAGFTLPLLQRLIDKEPHAKGRRPVRALILTPTRELAAQVGENVRDYSKYLNIRSLVVFGGVSINPQMMKLRGGVDILVATPGRLLD-LEHQNAVSLDSVEILVLDEADRML-DMGFIHDIRRVLAKLPARRQNLLFSATFSDEIKGLAEKLLHNPLEVEVARRNTASEQITQH-VHFVDKNRKRELLSQLIGEGNWQQVLVFTRTKHGANHLAEQLNKDGIRSAAIHGNKSQGARTRALADFKSGGIRVLVATDIAARGLDIEELPHVVNYELP------NVPEDYVHRIGRTGRAAATGEALSLV-CVDEHKLLRDIERLLKKEIPRI</Hsp_qseq>
+      <Hsp_hseq>SFEELRLKPQLLQGVYAMGFNRPSKIQENALPMMLAEPPQNLIAQSQSGTGKTAAFVLAMLSRV---EP---SDRYPQCLCLSPTYELALQTGKVIEQMGKFYPELKLAY--AVRGNKLERGQKISEQIVIGTPGTVLDWCSKLKFIDPKKIKVFVLDEADVMIATQGHQDQSIRIQRMLPRNCQMLLFSATFEDSVWKFAQKVVPDPNVIKLKREEETLDTIKQYYVLCSSRDEKFQALCNLYGAITIAQAMIFCHTRKTASWLAAELSKEGHQVALLSGEMMVEQRAAVIERFREGKEKVLVTTNVCARGIDVEQVSVVINFDLPVDKDGNPDNETYLHRIGRTGRFGKRGLAVNMVDSKHSMNILNRIQEHFNKKIERL</Hsp_hseq>
+      <Hsp_midline>SF+ L L P +L+ V   G+  P+ IQ+ A+P ++    ++L+A +Q+GTGKTA F L +L R+   EP     R  + L L+PT ELA Q G+ +    K+     L     V  N      +    I++ TPG +LD       +    +++ VLDEAD M+   G      R+   LP   Q LLFSATF D +   A+K++ +P  +++ R     + I Q+ V    ++ K + L  L G     Q ++F  T+  A+ LA +L+K+G + A + G      R   +  F+ G  +VLV T++ ARG+D+E++  V+N++LP         E Y+HRIGRTGR    G A+++V       +L  I+    K+I R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|19151</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9UMR2|1.I.1.1.3 ATP-dependent RNA helicase DDX19B OS=Homo sapiens GN=DDX19B PE=1 SV=1</Hit_def>
+  <Hit_accession>19151</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.014</Hsp_bit-score>
+      <Hsp_score>432</Hsp_score>
+      <Hsp_evalue>5.56979e-48</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>371</Hsp_query-to>
+      <Hsp_hit-from>93</Hsp_hit-from>
+      <Hsp_hit-to>466</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>122</Hsp_identity>
+      <Hsp_positive>197</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>382</Hsp_align-len>
+      <Hsp_qseq>SFDSLGLNPDILRAVAEQGYVEPTPIQQQAIPAVMQG--RDLMASAQTGTGKTAGFTLPLLQRLIDKEPHAKGRRPVRALILTPTRELAAQVGENVRDYSKYLNIRSLVVFGGVSINPQMMKLRGGVDILVATPGRLLD-LEHQNAVSLDSVEILVLDEADRML-DMGFIHDIRRVLAKLPARRQNLLFSATFSDEIKGLAEKLLHNPLEVEVARRNTASEQITQH-VHFVDKNRKRELLSQLIGEGNWQQVLVFTRTKHGANHLAEQLNKDGIRSAAIHGNKSQGARTRALADFKSGGIRVLVATDIAARGLDIEELPHVVNYELP------NVPEDYVHRIGRTGRAAATGEALSLV-CVDEHKLLRDIERLLKKEIPRI</Hsp_qseq>
+      <Hsp_hseq>SFEELRLKPQLLQGVYAMGFNRPSKIQENALPLMLAEPPQNLIAQSQSGTGKTAAFVLAMLSQV---EP---ANKYPQCLCLSPTYELALQTGKVIEQMGKFYPELKLAY--AVRGNKLERGQKISEQIVIGTPGTVLDWCSKLKFIDPKKIKVFVLDEADVMIATQGHQDQSIRIQRMLPRNCQMLLFSATFEDSVWKFAQKVVPDPNVIKLKREEETLDTIKQYYVLCSSRDEKFQALCNLYGAITIAQAMIFCHTRKTASWLAAELSKEGHQVALLSGEMMVEQRAAVIERFREGKEKVLVTTNVCARGIDVEQVSVVINFDLPVDKDGNPDNETYLHRIGRTGRFGKRGLAVNMVDSKHSMNILNRIQEHFNKKIERL</Hsp_hseq>
+      <Hsp_midline>SF+ L L P +L+ V   G+  P+ IQ+ A+P ++    ++L+A +Q+GTGKTA F L +L ++   EP     +  + L L+PT ELA Q G+ +    K+     L     V  N      +    I++ TPG +LD       +    +++ VLDEAD M+   G      R+   LP   Q LLFSATF D +   A+K++ +P  +++ R     + I Q+ V    ++ K + L  L G     Q ++F  T+  A+ LA +L+K+G + A + G      R   +  F+ G  +VLV T++ ARG+D+E++  V+N++LP         E Y+HRIGRTGR    G A+++V       +L  I+    K+I R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14310</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5EAK4|2.A.16.2.2 ATP-dependent DNA helicase tlh1 - Schizosaccharomyces pombe (Fission yeast).</Hit_def>
+  <Hit_accession>14310</Hit_accession>
+  <Hit_len>2100</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.6026</Hsp_bit-score>
+      <Hsp_score>122</Hsp_score>
+      <Hsp_evalue>6.56081e-07</Hsp_evalue>
+      <Hsp_query-from>34</Hsp_query-from>
+      <Hsp_query-to>338</Hsp_query-to>
+      <Hsp_hit-from>1383</Hsp_hit-from>
+      <Hsp_hit-to>1695</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>325</Hsp_align-len>
+      <Hsp_qseq>AVMQGRDLMASAQTGTGKTAGFTLPLLQRLIDKEPHAKGR-RPVRALILTPTRELAAQVGENVRDYSKYLNIRSLVVFGG--VSINPQMMKLRGGV-DILVATPGRLLDLE----HQNAVSLDSVEILVLDEADRMLDMGFIHDIRRVLAKLPARRQNL-LFSATFSDEIKGLAEKLLHNPLEVEVARRNTASEQITQHVHFVDKNR----KRELLSQL-IGEGNWQQVLVFTRTKHGANHLAEQLNKDGIRS----AAIHGNKSQGARTRALADFKS--GGIRVLVATDIAARGLDIEELPHVVNYELPNVPEDYVHRIGRTGR</Hsp_qseq>
+      <Hsp_hseq>SLLNRMNLITVLPTGGGKSLSFLIPAL---IEKKRQTPGKVMNMVTLVLVPMMSLR-------QDMMLRVNEKGLLVCSGNWTAFKDVRLTLETQLPDLFILTYESALTNSGLRFFESLATLGRLARVVIDEAHLLLTSGAWRTALSRASRLSGLYAPLHLLSATFPRQLEMVARQTFCTNFYV-LRETSTARENIFYFLHPYDNTEFLLDLRTLMKRTKVFEGDGRAI-IFCRTKKDVEYIHRRLHQSDLFAHTHVTIYTGDVSDEERQMNFDAFRNANGKTRIMIATKAFGLGINYMGVRLVVHYGLPASSMDYVQETGRAGR</Hsp_hseq>
+      <Hsp_midline>+++   +L+    TG GK+  F +P L   I+K+    G+   +  L+L P   L        +D    +N + L+V  G   +     + L   + D+ + T    L        ++  +L  +  +V+DEA  +L  G         ++L      L L SATF  +++ +A +       V +   +TA E I   +H  D        R L+ +  + EG+ + + +F RTK    ++  +L++  + +        G+ S   R      F++  G  R+++AT     G++   +  VV+Y LP    DYV   GR GR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2698468150</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

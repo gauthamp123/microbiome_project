@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_032740862.1 MULTISPECIES: hypothetical protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>206</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_032740862.1 MULTISPECIES: hypothetical protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>206</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4539</Hit_id>
+  <Hit_def>gnl|TC-DB|G0GRM4|9.B.2.4.1 Putative transport protein OS=Klebsiella pneumoniae KCTC 2242 GN=KPN2242_17885 PE=4 SV=1</Hit_def>
+  <Hit_accession>4539</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>391.734</Hsp_bit-score>
+      <Hsp_score>1005</Hsp_score>
+      <Hsp_evalue>4.23698e-141</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>206</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>198</Hsp_identity>
+      <Hsp_positive>199</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>206</Hsp_align-len>
+      <Hsp_qseq>MSLLRSLLFFLGAAVAAALAVLCLWVDIRVFGNDIPEVSLTEVVQESVLAVIVLVHFLLARKYTRLRYSNILIGGFFLAMLIRELDGLFDLLSHGSWVWFALLATVGSLLAPLRHLRQTLSQLAEYTRTPYYGMMISGLLAILVFSRLFGMHGLWYAVLDENYARVVKNTVEEGSESFGYMLCLTATLGYACYFRGLARQTLSPQR</Hsp_qseq>
+      <Hsp_hseq>MSLLRSLLFFFGAAVAAALAVLCLWVDIRVFGNDIPEVSLTEVVQESVLAVIVLVHLLLARKYAHLRYSNILIGGFFLAMLIRELDGLFDLLSHGSWVWFALLATAGSLLLPLRHLRQTLSQLAEYTRTPYYGMMISGLLAILVFSRLFGMHGLWYAVLEENYARVVKNTVEEGSESFGYMLCLTATLGYACYFRGLARQALSPQR</Hsp_hseq>
+      <Hsp_midline>MSLLRSLLFF GAAVAAALAVLCLWVDIRVFGNDIPEVSLTEVVQESVLAVIVLVH LLARKY  LRYSNILIGGFFLAMLIRELDGLFDLLSHGSWVWFALLAT GSLL PLRHLRQTLSQLAEYTRTPYYGMMISGLLAILVFSRLFGMHGLWYAVL+ENYARVVKNTVEEGSESFGYMLCLTATLGYACYFRGLARQ LSPQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1904</Hit_id>
+  <Hit_def>gnl|TC-DB|B5FEK7|9.B.2.4.2 Membrane protein, putative OS=Vibrio fischeri (strain MJ11) GN=VFMJ11_1553 PE=4 SV=1</Hit_def>
+  <Hit_accession>1904</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.161</Hsp_bit-score>
+      <Hsp_score>287</Hsp_score>
+      <Hsp_evalue>4.71549e-32</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>194</Hsp_align-len>
+      <Hsp_qseq>FFLGAAVAAALAVLCLWVDIRVFGNDIPEVSLTEVVQESVLAVIVLVHFLLARKYTRLRYSNILIGGFFLAMLIRELDGLFD-LLSHGSWVWFALLATVGSLLAPLRHLRQTLSQLAEYTRTPYYGMMISGLLAILVFSRLFGMHGLWYAVLDENYARVVKNTVEEGSESFGYMLCLTATLGYA-CYFRGLARQ</Hsp_qseq>
+      <Hsp_hseq>FFL--LVLVSLPVLVIRYDVLVLQNTISEQSATEYVEQLLLLASVLSFAYIGWDNAAYRRASFLIAAFFSCMLIREFDAFFDHLVYHGFWAVPAIIVALIAIGYALTDRNNVLLGLSKMMKQSYFPVLCLGLAILLVFSRLFGMGDMWHQVMGDGYLRVVKNMVEEGSELLGYTVIFYASINYVFSYIRIPKRQ</Hsp_hseq>
+      <Hsp_midline>FFL   V  +L VL +  D+ V  N I E S TE V++ +L   VL    +       R ++ LI  FF  MLIRE D  FD L+ HG W   A++  + ++   L      L  L++  +  Y+ ++  GL  +LVFSRLFGM  +W+ V+ + Y RVVKN VEEGSE  GY +   A++ Y   Y R   RQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5610</Hit_id>
+  <Hit_def>gnl|TC-DB|K4IJR8|9.B.2.4.3 Uncharacterized protein OS=Psychroflexus torquis (strain ATCC 700755 / ACAM 623) GN=P700755_002603 PE=4 SV=1</Hit_def>
+  <Hit_accession>5610</Hit_accession>
+  <Hit_len>221</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>1.9555e-10</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>173</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>80</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>AVAAALAVLCLWVDIRVFGNDIPEVSLTEVVQESVLAVIVLVHFLLARKYTRLRYSNILIGGFFLAMLIRELDGLFDL-LSHGSWVWFALLATVGSLLAPLRHLRQTLSQLAEYTRTPYYGMMISGLLAILVFSRLFGMHGLWYAVLDENYARVVKNTVEEGSE</Hsp_qseq>
+      <Hsp_hseq>AYAGLMFIMALVIQFDFAEGEVKEDSLIEITQEILLFVSSILLIVFSSKAKGYKIFHLTLAGFLGVHFVREFDFWLNVQLFDKAWQVLALIILVLIIVMVIRNWKKFIFEFVAISKTYGFAFFFSGLIILHVFSRLYGRKLMWIDLLRDTHDKYV---IEDNGE</Hsp_hseq>
+      <Hsp_midline>A A  + ++ L +       ++ E SL E+ QE +L V  ++  + + K    +  ++ + GF     +RE D   ++ L   +W   AL+  V  ++  +R+ ++ + +    ++T  +    SGL+ + VFSRL+G   +W  +L + + + V   +E+  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>93</Statistics_hsp-len>
+      <Statistics_eff-space>891896909</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

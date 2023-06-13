@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008806590.1 MULTISPECIES: DUF805 domain-containing protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>122</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008806590.1 MULTISPECIES: DUF805 domain-containing protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>122</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11209</Hit_id>
+  <Hit_def>gnl|TC-DB|P64591|9.B.124.1.2 Inner membrane protein yhaH OS=Escherichia coli O157:H7 GN=yhaH PE=3 SV=1</Hit_def>
+  <Hit_accession>11209</Hit_accession>
+  <Hit_len>121</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>225.713</Hsp_bit-score>
+      <Hsp_score>574</Hsp_score>
+      <Hsp_evalue>3.86143e-78</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>118</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>MDWYLKALKNYIGFGGRARRKEYWMFILVNLILTGVLSIIDKMLGWQRAGGEGILTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLLLLLIPVIGWLVILIFNCQRGTEGNNRFGPDPK</Hsp_qseq>
+      <Hsp_hseq>MDWYLKVLKNYVGFRGRARRKEYWMFILVNIIFTFVLGLLDKMLGWQRAGGEGILTTIYGILVFLPWWAVQFRRLHDTDRSAWWALLFLIPFIGWLIIIVFNCQAGTPGENRFGPDPK</Hsp_hseq>
+      <Hsp_midline>MDWYLK LKNY+GF GRARRKEYWMFILVN+I T VL ++DKMLGWQRAGGEGILTTIYG+LVFLPWWAVQFRRLHDTDRSAWW LL LIP IGWL+I++FNCQ GT G NRFGPDPK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11210</Hit_id>
+  <Hit_def>gnl|TC-DB|P64592|9.B.124.1.1 Inner membrane protein yhaI OS=Escherichia coli (strain K12) GN=yhaI PE=1 SV=1</Hit_def>
+  <Hit_accession>11210</Hit_accession>
+  <Hit_len>118</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.502</Hsp_bit-score>
+      <Hsp_score>345</Hsp_score>
+      <Hsp_evalue>2.74633e-43</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>MDWYLKALKNYIGFGGRARRKEYWMFILVNLILTGVLSIIDKMLGWQRAGGEGILTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLLLLLIPVIGWLVILIFNCQRGTEGNNRFGPDPK</Hsp_qseq>
+      <Hsp_hseq>MQWYLSVLKNYVGFSGRARRKEYWMFTLINAIVGAIINVIQLILGLELP----YLSMLYLLATFLPVLALAIRRLHDTDRSGAWALLFFVPFIGWLVLLVFFCTEGTSGSNRYGNDPK</Hsp_hseq>
+      <Hsp_midline>M WYL  LKNY+GF GRARRKEYWMF L+N I+  ++++I  +LG +       L+ +Y +  FLP  A+  RRLHDTDRS  W LL  +P IGWLV+L+F C  GT G+NR+G DPK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4976</Hit_id>
+  <Hit_def>gnl|TC-DB|H0KI06|9.B.124.1.3 Aminopeptidase C OS=Aggregatibacter actinomycetemcomitans RhAA1 GN=RHAA1_10601 PE=4 SV=1</Hit_def>
+  <Hit_accession>4976</Hit_accession>
+  <Hit_len>128</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.946</Hsp_bit-score>
+      <Hsp_score>315</Hsp_score>
+      <Hsp_evalue>1.34927e-38</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>MDWYLKALKNYIGFGGRARRKEYWMFILVNLILTGVLSIIDKMLGWQRAGGEGILTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLLLLLIPVIGWLVILIFNCQRGTEGNNRFGPDPK</Hsp_qseq>
+      <Hsp_hseq>MNWYLHVLKNYATFSGRARRKEYWMFVLFNFIATFVCMLIDAVIQMP------IFQFVYGFGVIIPYIAVTVRRLHDTDRSGWWILISFIPLVGSIVLLVFMCFDSQSGTNRFGDNPK</Hsp_hseq>
+      <Hsp_midline>M+WYL  LKNY  F GRARRKEYWMF+L N I T V  +ID ++         I   +YG  V +P+ AV  RRLHDTDRS WW+L+  IP++G +V+L+F C     G NRFG +PK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4874</Hit_id>
+  <Hit_def>gnl|TC-DB|G8UJK3|9.B.124.1.7 Putative membrane protein OS=Tannerella forsythia (strain ATCC 43037 / JCM 10827 / FDC 338) GN=BFO_0277 PE=4 SV=1</Hit_def>
+  <Hit_accession>4874</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>93.9745</Hsp_bit-score>
+      <Hsp_score>232</Hsp_score>
+      <Hsp_evalue>3.44149e-24</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>MDWYLKALKNYIGFGGRARRKEYWMFILVNLILTGVLSIIDKML------GWQRAGGEGI----LTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLLLLLIPVIGWLVILIFNCQRGTEGNNRFGPDP</Hsp_qseq>
+      <Hsp_hseq>MKWFIKAFRQYADFSGRASRQEFWMFVLFNLLFAMAWALVAGLLTGLLGDSFDHDSDRLIFMYKLIAIYYAVTTVPAMAVGVRRLHDTGRSGWWMLVSLVPIAGGIWLILLMCLDGSAGDNRYGSPP</Hsp_hseq>
+      <Hsp_midline>M W++KA + Y  F GRA R+E+WMF+L NL+     +++  +L       +       I    L  IY  +  +P  AV  RRLHDT RS WW+L+ L+P+ G + +++  C  G+ G+NR+G  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5299</Hit_id>
+  <Hit_def>gnl|TC-DB|I3TME4|9.B.124.1.5 Inner membrane protein yhaH OS=Tistrella mobilis (strain KA081020-065) GN=yhaH PE=4 SV=1</Hit_def>
+  <Hit_accession>5299</Hit_accession>
+  <Hit_len>191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.3521</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>1.59318e-23</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>YIGFGGRARRKEYWMFILVNLILTGVL-SIIDKMLGWQRAG-GEGILTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLLLLLIPVIGWLVILI-FNCQRGTEGNNRFGPDPKPFSY</Hsp_qseq>
+      <Hsp_hseq>YFSFRGRTTRKPYWLYLILPVFVISILLTLLDVGLGTYNAETGGGLFSGLFSLAAIWPSLAIGARRCHDRGRSGWFQLIMLIPLIGWIWLLVEIGFLRGTEGPNRFGPDPLHTGY</Hsp_hseq>
+      <Hsp_midline>Y  F GR  RK YW+++++ + +  +L +++D  LG   A  G G+ + ++ +    P  A+  RR HD  RS W+ L++LIP+IGW+ +L+     RGTEG NRFGPDP    Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3000</Hit_id>
+  <Hit_def>gnl|TC-DB|D1BTK6|9.B.124.1.6 Uncharacterized protein OS=Xylanimonas cellulosilytica (strain DSM 15894 / CECT 5975 / LMG 20990 / XIL07) GN=Xcel_1966 PE=4 SV=1</Hit_def>
+  <Hit_accession>3000</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.5741</Hsp_bit-score>
+      <Hsp_score>205</Hsp_score>
+      <Hsp_evalue>8.75527e-22</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>123</Hsp_align-len>
+      <Hsp_qseq>KNYIGFGGRARRKEYWMFILVNLILTGVLSIIDKMLG-----WQRAG--------GEGILTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLLLLLIPVIGWLVILIFNCQRGTEGNNRFGPDPK</Hsp_qseq>
+      <Hsp_hseq>RNYATFRGRARRSEFWWWM-------GFTAVVNALLGGSGFRFGRLGLPELAVGDGYGVLAALFALATLVPTLAVTWRRLHDTNRSGGWFFIQLVPVVGSLILLVLLIIDGTPGPNRFGWDPR</Hsp_hseq>
+      <Hsp_midline>+NY  F GRARR E+W ++       G  ++++ +LG     + R G        G G+L  ++ +   +P  AV +RRLHDT+RS  W  + L+PV+G L++L+     GT G NRFG DP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|5073</Hit_id>
+  <Hit_def>gnl|TC-DB|H3MNZ0|9.B.124.1.8 Uncharacterized protein OS=Klebsiella oxytoca 10-5246 GN=HMPREF9690_02983 PE=4 SV=1</Hit_def>
+  <Hit_accession>5073</Hit_accession>
+  <Hit_len>191</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.929</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>9.16768e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>134</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>MDWYLKALKNYIGFGGRARRKEYWMFILVNLILTGVLSIIDKMLGWQRAGGEGILTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLL----LLLIPVIG--------------WL------------VILIFNCQRGTEGNNRFG</Hsp_qseq>
+      <Hsp_hseq>LESYGDCFRKYATFRGRSARKEYVVFTVANFVLSAVLGLIP------------IVGGLFGLIIIIPGIAVAVRRLHDLNKSGWWLLSPYAVLLVGFIGIIATVDNGEAAVWVWITAAGGMAALALSIWLLF--ARGTDGVNRYG</Hsp_hseq>
+      <Hsp_midline>++ Y    + Y  F GR+ RKEY +F + N +L+ VL +I             I+  ++G+++ +P  AV  RRLHD ++S WWLL    +LL+  IG              W+            + L+F   RGT+G NR+G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4634</Hit_id>
+  <Hit_def>gnl|TC-DB|G2GUD4|9.B.124.1.4 Putative uncharacterized protein OS=Streptococcus salivarius M18 GN=SSALIVM18_08621 PE=4 SV=1</Hit_def>
+  <Hit_accession>4634</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.2914</Hsp_bit-score>
+      <Hsp_score>116</Hsp_score>
+      <Hsp_evalue>1.18459e-08</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>104</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>YLKALKNYIGFGGRARRKEYWMFILVNLILTGVL-SIIDKMLGWQRAGGE--------GILTTIYGVLVFLPWWAVQFRRLHDTDRSAWWLLLLLIPVIGWLVILIFNCQ</Hsp_qseq>
+      <Hsp_hseq>YKKFWKGYVDFKGRSSRSDYWLAVLANTIVTIILFSILIVVIVFDSPDSHYHVILNLLYLLVMTYFFASFIPSIALQVRRLRDAGFHWALIFLRFASFIGDIVLLVLCCQ</Hsp_hseq>
+      <Hsp_midline>Y K  K Y+ F GR+ R +YW+ +L N I+T +L SI+  ++ +               +L   Y    F+P  A+Q RRL D       + L     IG +V+L+  CQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2694</Hit_id>
+  <Hit_def>gnl|TC-DB|C7T8Y9|9.B.124.1.9 Uncharacterized protein OS=Lactobacillus rhamnosus (strain ATCC 53103 / GG) GN=LRHM_0187 PE=4 SV=1</Hit_def>
+  <Hit_accession>2694</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.000277414</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>90</Hsp_query-to>
+      <Hsp_hit-from>21</Hsp_hit-from>
+      <Hsp_hit-to>108</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>FGGRARRKEYWMFILVNLILTGVLSIIDKMLG------WQRAGGE---GILTTIYGVLVFL--PWWAVQFRRLHDTDRSAWWLLLLLI</Hsp_qseq>
+      <Hsp_hseq>FKGVSSRSQYWWVFLGQFLLGIVIGLVSVSLGATFSAKTQSFGSSMIRSLLTTLVAVPMYLSYPQLSLTLRRFRDAKVNPWWYLVLVI</Hsp_hseq>
+      <Hsp_midline>F G + R +YW   L   +L  V+ ++   LG       Q  G      +LTT+  V ++L  P  ++  RR  D   + WW L+L+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2038</Hit_id>
+  <Hit_def>gnl|TC-DB|B7MI53|9.B.124.2.2 Uncharacterized protein OS=Escherichia coli O45:K1 (strain S88 / ExPEC) GN=yiiR PE=4 SV=1</Hit_def>
+  <Hit_accession>2038</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.000787305</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>38</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>FGGRARRKEYWMFILVNLILTGVLSIIDKMLGWQRAGGEGILT--TIYGVLVFLPW--WAVQFRRLHDTDRSAWWLLLLLIP-------------VIGW----------LVILIFNCQR--GTEGNNRFGPDPKPFSY</Hsp_qseq>
+      <Hsp_hseq>FKGRIGRRDFWIWI--GLWFAGMLVLFS-------LAGKNLLDIQTAAFCLVCLLWPTAAVTVKRLHDRGRSGAWAFLMIVAWMLLAGNWAILPGVWQWAVGRFVPTLILVMMLIDLGAFVGTQGENKYGKDTQDVKY</Hsp_hseq>
+      <Hsp_midline>F GR  R+++W++I   L   G+L +           G+ +L   T    LV L W   AV  +RLHD  RS  W  L+++              V  W          LV+++ +     GT+G N++G D +   Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>85</Statistics_hsp-len>
+      <Statistics_eff-space>298807449</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

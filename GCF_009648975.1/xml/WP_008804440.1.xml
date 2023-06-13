@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008804440.1 MULTISPECIES: gluconate:proton symporter [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>477</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008804440.1 MULTISPECIES: gluconate:proton symporter [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>477</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3409</Hit_id>
+  <Hit_def>gnl|TC-DB|D7AXM6|2.A.11.2.3 Citrate transporter OS=Nocardiopsis dassonvillei (strain ATCC 23218 / DSM 43111 / IMRU 509 / JCM 7437 / NCTC 10488) GN=Ndas_2511 PE=4 SV=1</Hit_def>
+  <Hit_accession>3409</Hit_accession>
+  <Hit_len>447</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.67757e-08</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>475</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>447</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>180</Hsp_positive>
+      <Hsp_gaps>66</Hsp_gaps>
+      <Hsp_align-len>465</Hsp_align-len>
+      <Hsp_qseq>ALAILSLIGVDIVLA---------VISSIIIAMIMTSTGLPEMGTM---LAKSTGSFIATVGLIIMLGAGVGEVATRTGAAVELVKFVVHRIGLSSQTRVKFGIVVSSILICGSLGTMAGGNAIIVAVIIPVAAAVRLTPPTVAALMMTAGSVG----LFTGPFTPSTVTI---------LSLGGLSYPDYLLYVGLPMSAVTLLAGWIMAGRIQKMTEGKLRYDVDLSEKPKDDLSAAQQRRRKLSALAFAATIIVMAVVGVVIKAGFSFAIIVMLLV----ALMTGLVGGLRPTQILQALYHGCGRLVWMFILYWLYNPILELMDGLHAYQGLLEYTQPLLEGISPA--WLCFSIFA-----------FNIIGHVPGAAVAQMTFTHKIFGPMLMAAGVPPQGTTAVLL--ASSQVDWFGPFPSSDMFGQMGLAQSTHLKYMLYNGWAIVVANIILFALLFQI</Hsp_qseq>
+      <Hsp_hseq>AILLAMAVGVGLMLTRRLPTAFALVLLSVAIALIAGAPLVGEEGSVTGTVVQQGAPRLAATMIAILLGSWLGTLMSEAGIASTLVRKIVE-FGGERPSLVAVGVFVVAIL-CGSITGSAPAAMLAGVVGIPAMIAVGVTPTVAAGTVLVGIAAGLPLELINWQFLSDAIGVPVSTVQHFQLRLFPIALAGGLAYILIEMRRRGARHTW--AVRVPAGAGGSGSGGAG-TRPPSRRQRAAERRRRRGDAPWYA---LVTPLVPIVLALGLHVPIVPSLLAGVVFALLTAVPWREMSSTALRTLYRAFDVAAPPIVLFIAIGMLLAAVN----LPGAVSALTPVVTAISPSSPWLFVLVFAVLVPLALYRGPMNIFG--LGAGVAGVLISGGIYPAPAVLGLMASYGQVLGVSDPTSTQTVWSAQY--------AGVRPERSMLSTLPYTWVIAVAGLVLTVFLYLV</Hsp_hseq>
+      <Hsp_midline>A+ +   +GV ++L          V+ S+ IA+I  +  + E G++   + +     +A   + I+LG+ +G + +  G A  LV+ +V   G    + V  G+ V +IL CGS+   A    +   V IP   AV +TP   A  ++   + G    L    F    + +         L L  ++    L Y+ + M        W  A R+     G        +  P     AA++RRR+  A  +A   +V  +V +V+  G    I+  LL     AL+T +      +  L+ LY          +L+     +L  ++      G +    P++  ISP+  WL   +FA            NI G   GA VA +  +  I+    +   +   G    +    S+Q  W   +         G+     +   L   W I VA ++L   L+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6485</Hit_id>
+  <Hit_def>gnl|TC-DB|MBI80045|2.A.56.1.16 C4-dicarboxylate ABC transporter permease [Gammaproteobacteria bacterium]</Hit_def>
+  <Hit_accession>6485</Hit_accession>
+  <Hit_len>433</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>8.31975e-08</Hsp_evalue>
+      <Hsp_query-from>44</Hsp_query-from>
+      <Hsp_query-to>430</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>421</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>91</Hsp_gaps>
+      <Hsp_align-len>449</Hsp_align-len>
+      <Hsp_qseq>ELGLLGFTPLVALAILSLIGVDIVLAVISSIIIAMIMT---STGLPEMGTMLAKSTGSFI-ATVGLIIMLGAGVGEVATRTGAAVELVKFVVHRIGLSSQTRVKFGIVVSSILICGSLGTMAGGNAIIVA----VIIPVAAAVRLTPPTVAALMMTAGSVG---------LFTGPFTPSTVTILSLGGLSYPDYLLYV-------------------GLPMSA-----------------VTLLAGWIMAGRIQKMTEGKLRYDVDLSEKPKDDLSAAQQRRRKLSALAFAATIIVMAVVGVVIKAGFSFAIIVMLLVALMTGLVGGLRPTQILQALYHGCGRLVWMFILYWLYNPILELMDGLHAYQGLLEYTQPLLE------GISPAWLCFSIFAFNIIGHVP---GAAVAQMTFTHKIFGPMLMAAGVPPQGTTAVLLASSQVDW</Hsp_qseq>
+      <Hsp_hseq>DLILIGIIGIVFLFFLILIGVPIAFAMAFTGIIGLGIIEGPSATLAHIGLIPWEHGRDFIFVAIPLFILMG----QIFYHAGLASDLYQSLSKLVG-----QVPGGVAIASVLACGGFGAITGSSIATVATMGSIIMPEMKKFKYNPQLATGVLAASGTLGILIPPSLIFIFYGVMTETSISKLFIAGI-LPGFITVIMFTLIIFVRCIINPMLGPKGPKSSAKEKLYAIKNLIPLFGLFILIIGGIYIGAFTPTEAAGVGCLIVSLMALNKKNLSI------KIFLSATKATVLISSMIFLIIIGGY----IVAKFIAI-TGIT-ELLISFIIDSNLNRIGFLIFLIILYILLGSMLDVF-------GMIVLTVPFLMPIISQLGIDPIWFGVFIVIMAEVGLITPPIGANVFVMKKVAKDIPMSTIFLGVIPFFVGELIIIAILIIW</Hsp_hseq>
+      <Hsp_midline>+L L+G   +V L  L LIGV I  A+  + II + +    S  L  +G +  +    FI   + L I++G    ++    G A +L + +   +G     +V  G+ ++S+L CG  G + G +   VA    +I+P     +  P     ++  +G++G         +F G  T ++++ L + G+  P ++  +                   G   SA                 + ++ G  +         G     V L    K +LS       K+   A  AT+++ +++ ++I  G+    IV   +A+ TG+   L  + I+ +  +  G L+++ ILY L   +L++        G++  T P L       GI P W    I     +G +    GA V  M    K      +  GV P     +++ +  + W</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|15756</Hit_id>
+  <Hit_def>gnl|TC-DB|Q838P8|2.A.35.2.5 Membrane protein, putative - Enterococcus faecalis (Streptococcus faecalis).</Hit_def>
+  <Hit_accession>15756</Hit_accession>
+  <Hit_len>451</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>1.99558e-07</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>290</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>129</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>308</Hsp_align-len>
+      <Hsp_qseq>VITGLLLLLFVLIALWCHG-----RPGSELGLLGFTPLVALAILSLIGVDIVLAVISSIIIAMIMTSTGLPEMGTMLAKSTGSFIA-TVGLIIMLGAGVGEVATRTGAAVELVKFVVHRIGLSSQTRVKFGIVVSSILICGSLGTMAGGNAIIVAVIIPVA-AAVRLTPPTVAALMMTAGSVGLFTGPFTPSTVTILSLGGLSY--------PDYLLYVGLPMSAVTLLAGWIMAGRIQKMTEGKLRYDVDLSEKPKDDLSAAQQRRRKLSALAFAATIIVMAVV-GVVIKAGFSFAIIVMLLVALMT</Hsp_qseq>
+      <Hsp_hseq>LIFAFLVSIFVPVAAFADEIGDVVAPTGIMALVVIIPLIVVLVLLFMKVDMIIAGLIGGVLAMLIGGIGLEEANKQMLEAIPMMLGITVPIINSAVAMAVFKAGSYSAALTLAK-----RGTKGKVEYVSAFIVILLAAATYMSGIGGGSAMVIA---PLAFAAVGVVPELIAA-MSLAAAVSFTTSPASLESSIVSKLGDISVGSYVSTMRPYWLFFVALAI----VLAFW-----------GTKHRNVGFKESADDEFD--KKSNGELFKITLPAIFLLFAVIFGPIVNDLIGFAFFTPLVYMILT</Hsp_hseq>
+      <Hsp_midline>+I   L+ +FV +A +         P   + L+   PL+ + +L  + VD+++A +   ++AM++   GL E    + ++    +  TV +I    A     A    AA+ L K      G   +       +V  +     +  + GG+A+++A   P+A AAV + P  +AA M  A +V   T P +  +  +  LG +S         P +L +V L +    +LA W           G    +V   E   D+    ++   +L  +   A  ++ AV+ G ++     FA    L+  ++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|7087</Hit_id>
+  <Hit_def>gnl|TC-DB|O32105|2.A.8.1.12 Putative amino acid transporter yuiF OS=Bacillus subtilis GN=yuiF PE=4 SV=1</Hit_def>
+  <Hit_accession>7087</Hit_accession>
+  <Hit_len>442</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>9.92128e-06</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>240</Hsp_query-to>
+      <Hsp_hit-from>249</Hsp_hit-from>
+      <Hsp_hit-to>439</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>VALAILSLIGVD-IVLAVISSIIIAMIMTSTGLPEMGTMLAKSTGSFIATVGLIIMLGAGVGEVATRTGAAVELVKFVVHRIGLSSQTRVKFGIVVSSILICGSLGTMAGGNAIIVAVIIPVAAAVRLTPPTVAALMMTAGSVGLFTGPFTPSTV---TILSLGGLSY-------PDYLLYVGLPMSAVTLLAGWIMA</Hsp_qseq>
+      <Hsp_hseq>VQLYLSQTLGVEGMIMGALAGLIVLFVSGVMKRDEADSLITDGM-VLMAFIGFVMLVAAGFSNVLTKTGDVESLVKTSAGFIG-HSQSLGALLMLIVGLLITMGIGSSFATIPVITTIFVPLCMQLGFSPMATIAIIGAAAALGDAGSPASDSTLGPTSGLSADGQHHHIWDTCVPTFIFY-NIPL----VIFGWIAA</Hsp_hseq>
+      <Hsp_midline>V L +   +GV+ +++  ++ +I+  +       E  +++       +A +G ++++ AG   V T+TG    LVK     IG  SQ+     +++  +LI   +G+      +I  + +P+   +  +P    A++  A ++G    P + ST+   + LS  G  +       P ++ Y  +P+    ++ GWI A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16084</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8EG39|2.A.8.1.6 Permease, GntP family - Shewanella oneidensis.</Hit_def>
+  <Hit_accession>16084</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>1.3302e-05</Hsp_evalue>
+      <Hsp_query-from>58</Hsp_query-from>
+      <Hsp_query-to>242</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>30</Hsp_gaps>
+      <Hsp_align-len>205</Hsp_align-len>
+      <Hsp_qseq>ILSLIGVDIVLAVISS----------IIIAMIMT-STGLP--EMGTMLAKSTGSFIATVGLIIMLGAGVGEVATRTGAAVELVKFVVHRIG--LSSQTRVKFGIVVSSILICGSLGTMAGGNAIIVAVIIPVAAAVRLTPPTVAALMMTAGSVGLF-TGPFTPSTV-TILSLGGLSYPDYL---LYVGLPMSAVTLLAGWIMAGR</Hsp_qseq>
+      <Hsp_hseq>VLILIGVIAFIVIATSKFKLHPFLTLILAAFIAAFAYGLPSGDIAKTITTGFGNILGYIGLVIVLGTIIGIILEKSGAAITMADVVIKVLGKRFPTLTMSIIGYIVSIPVFCDS--------GFVILNSLKQSMANRMQVSSVS--MSVALATGLYATHTFVPPTPGPIAAAGNLGLESNLGLVIGVGLFVAAVASFAGMLWANR</Hsp_hseq>
+      <Hsp_midline>+L LIGV   + + +S          I+ A I   + GLP  ++   +    G+ +  +GL+I+LG  +G +  ++GAA+ +   V+  +G    + T    G +VS  + C S          ++   +  + A R+   +V+  M  A + GL+ T  F P T   I + G L     L   + VGL ++AV   AG + A R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|658</Hit_id>
+  <Hit_def>gnl|TC-DB|A6VL35|2.A.47.5.3 Anion transporter OS=Actinobacillus succinogenes (strain ATCC 55618 / 130Z) GN=Asuc_0304 PE=4 SV=1</Hit_def>
+  <Hit_accession>658</Hit_accession>
+  <Hit_len>425</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.000119896</Hsp_evalue>
+      <Hsp_query-from>53</Hsp_query-from>
+      <Hsp_query-to>239</Hsp_query-to>
+      <Hsp_hit-from>237</Hsp_hit-from>
+      <Hsp_hit-to>415</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>191</Hsp_align-len>
+      <Hsp_qseq>LVALAILSLIGVDIVLAVISSIIIAMIMTSTGLPEMGTMLAKSTGSFIATVGLIIMLGAGVGEVATR---TGAAVELVKFVVHRIGLSSQTRVK-FGIVVSSILICGSLGTMAGGNAIIVAVIIPVAAAVRLTPPTVAALMMTAGSVGLFTGPFTPSTVTILSLGGLSYPDYLLYVGLPMSAVTLLAGWIM</Hsp_qseq>
+      <Hsp_hseq>LLAMVFEDFIGIKLYLSACVGALILVIMR----------VITEKQAYQAIDSQVVFLFAGTLALANALQTTGAGAQIAHTILGWLGAQPNSYLLLFTILVLSCVLTNFMSNTATA-ALLAPIGLSIAHSLGADPKAVLMAVVVGSSCAFATPIATPANTMILSVGHYRFADY-AKAGVPLIVVTIAAAMIL</Hsp_hseq>
+      <Hsp_midline>L+A+     IG+ + L+     +I +IM           +     ++ A    ++ L AG   +A     TGA  ++   ++  +G    + +  F I+V S ++   +   A   A++  + + +A ++   P  V   ++   S    T   TP+   ILS+G   + DY    G+P+  VT+ A  I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|16739</Hit_id>
+  <Hit_def>gnl|TC-DB|Q8RFA1|2.A.8.1.13 Propionate permease - Fusobacterium nucleatum (subsp. nucleatum).</Hit_def>
+  <Hit_accession>16739</Hit_accession>
+  <Hit_len>447</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.5134</Hsp_bit-score>
+      <Hsp_score>101</Hsp_score>
+      <Hsp_evalue>0.000162979</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>235</Hsp_query-to>
+      <Hsp_hit-from>268</Hsp_hit-from>
+      <Hsp_hit-to>434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>175</Hsp_align-len>
+      <Hsp_qseq>IVLAVISSIIIAMIMTSTGLPE-MGTMLAKSTGSFIATVGLIIMLGAGVGEVATRTGAAVELVKFVVHRIGLSSQTRVKFGIVVSSILICGSLGTMAGGNAIIVA----VIIPVAAAVRLTPPTVAALMMTAGSVGLFTGPFTPSTVTILSLGGLSYPDYLLYVGLPMSAVTLLA</Hsp_qseq>
+      <Hsp_hseq>LIISLATSIIVAFTFNYKKMENPLNTLTKGVNGSFLAVMNTASEVGYGNVIAGL---AAFAIVKSAL--LGFSSNPLISEAVSVSSL--AGITGSASGGLSIALGALGEVYLKEAQALGISPEVLHRISAIACG-GLDTLPHNGAVVTLLGVTGLTHKESYIDIGMCTAIIPTLA</Hsp_hseq>
+      <Hsp_midline>+++++ +SII+A       +   + T+     GSF+A +     +G G         AA  +VK  +  +G SS   +   + VSS+   G  G+ +GG +I +     V +  A A+ ++P  +  +   A   GL T P   + VT+L + GL++ +  + +G+  + +  LA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|13480</Hit_id>
+  <Hit_def>gnl|TC-DB|Q3IVI4|2.A.56.1.4 TRAP-T family transporter, large inner membrane subunit DctM - Rhodobacter sphaeroides (strain ATCC 17023 / 2.4.1 / NCIB 8253 / DSM 158).</Hit_def>
+  <Hit_accession>13480</Hit_accession>
+  <Hit_len>446</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.00049647</Hsp_evalue>
+      <Hsp_query-from>55</Hsp_query-from>
+      <Hsp_query-to>246</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>205</Hsp_align-len>
+      <Hsp_qseq>ALAILSLIGVDIVLAVISSIIIAMIMTSTGLPEMGTMLAKSTGSF-IATVGLIIMLGAGVGEVATRTGAAVELVKFVVHRIGLSSQTRVKFGIVVSSILICGSLGTMAGG----NAIIVAVIIPVAAAVRLTPPTVAALMMTAGSVGLFTGPFTPSTVTILSLGGLSYPDYLLYVGLPMSAVTL--------LAGWIMAGRIQKM</Hsp_qseq>
+      <Hsp_hseq>AFFALMLLGAPITVALGVSALAAMVYLGDNPIKMVQMAWSSVGSFPLMALPSFILAGA----LMEAAGLSRRLIAVAESLAGPFTG-----GLSAATIMACLFFGAISGSGPATTAAVGMLMIPAMSRQGYGPGYAASVTAAAGGLGIIIPPSIPMVIFGISAMGLAPPPEAIAAHGPFQSVSISKLFIAGFVPGVIMAGGLLVM</Hsp_hseq>
+      <Hsp_midline>A   L L+G  I +A+  S + AM+       +M  M   S GSF +  +   I+ GA    +    G +  L+       G  +      G+  ++I+ C   G ++G      A +  ++IP  +     P   A++   AG +G+   P  P  +  +S  GL+ P   +    P  +V++        + G IMAG +  M</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2882638500</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

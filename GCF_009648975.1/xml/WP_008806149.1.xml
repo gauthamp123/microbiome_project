@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_008806149.1 MULTISPECIES: DedA family protein [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>142</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_008806149.1 MULTISPECIES: DedA family protein [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>142</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3591</Hit_id>
+  <Hit_def>gnl|TC-DB|E1P8P0|9.B.27.3.1 Conserved inner membrane protein OS=Escherichia coli OR:K5:H- (strain ABU 83972) GN=yqaA PE=4 SV=1</Hit_def>
+  <Hit_accession>3591</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>262.692</Hsp_bit-score>
+      <Hsp_score>670</Hsp_score>
+      <Hsp_evalue>4.03091e-92</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>134</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>MSDALSLTSLFASSFLSATLLPGNSEVVLVAMLLAGVSHPWWLVLIATIGNSLGGVTNVILGRLFPLRKTSRWQERAAGWLKRYGAVTLLLSWAPVVGDLLCLLAGWMRISWGPVLFFLCLGKALRYIVIAAATLQGMTWWH</Hsp_qseq>
+      <Hsp_hseq>MSEALSLFSLFASSFLSATLLPGNSEVVLVAMLLSGVSHPWVLVLTATMGNSLGGLTNVILGRFFPLRKTSRWQEKATGWLKRYGAVTLLLSWMPVVGDLLCLLAGWMRISWGPVIFFLCLGKALRYVAVAAATVQGMMWWH</Hsp_hseq>
+      <Hsp_midline>MS+ALSL SLFASSFLSATLLPGNSEVVLVAMLL+GVSHPW LVL AT+GNSLGG+TNVILGR FPLRKTSRWQE+A GWLKRYGAVTLLLSW PVVGDLLCLLAGWMRISWGPV+FFLCLGKALRY+ +AAAT+QGM WWH</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3820</Hit_id>
+  <Hit_def>gnl|TC-DB|E7A740|9.B.27.3.2 Predicted membrane protein OS=Haemophilus influenzae F3031 GN=HIBPF_18400 PE=4 SV=1</Hit_def>
+  <Hit_accession>3820</Hit_accession>
+  <Hit_len>157</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>109.383</Hsp_bit-score>
+      <Hsp_score>272</Hsp_score>
+      <Hsp_evalue>2.10828e-31</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>130</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>133</Hsp_align-len>
+      <Hsp_qseq>SLTSLFASSFLSATLLPGNSEVVLVAMLLAGV-------SHPWWLVLIATIGNSLGGVTNVILGRLFPLRKTSRWQER-AAGWLKRYGAVTLLLSWAPVVGDLLCLLAGWMRISWGPVLFFLCLGKALRYIVI</Hsp_qseq>
+      <Hsp_hseq>SLCFMFISAFLSATVLPGNSEVIFVALAVPKLMLGSLFNADILALILIATAGNSLGSLTTYGIGRWMPKFDPKNYRTLWAINQLRRYGAIALLLSWLPVVGDLFCAIAGWLRLNFVTSSLFIFLGKMVRYVAL</Hsp_hseq>
+      <Hsp_midline>SL  +F S+FLSAT+LPGNSEV+ VA+ +  +       +    L+LIAT GNSLG +T   +GR  P      ++   A   L+RYGA+ LLLSW PVVGDL C +AGW+R+++     F+ LGK +RY+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|1609</Hit_id>
+  <Hit_def>gnl|TC-DB|B1J6T5|9.B.27.3.3 Putative uncharacterized protein OS=Pseudomonas putida (strain W619) GN=PputW619_1852 PE=4 SV=1</Hit_def>
+  <Hit_accession>1609</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.293</Hsp_bit-score>
+      <Hsp_score>251</Hsp_score>
+      <Hsp_evalue>2.2317e-28</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>LSLTSLFASSFLSATLLPGNSEVVLVAMLLAGVSHPWWLVLIATIGNSLGGVTNVILGRLFPLRKTSRW-------QERAAGWLKRYGAVTLLLSWAPVVGDLLCLLAGWMRISWGPVLFFLCLGKALRYIVIAAATLQGMTWWH</Hsp_qseq>
+      <Hsp_hseq>LSLWALFLSAFGAATLLPLQSEAVLVGLLLRQPDAWLTLLLVATLGNVLGSVVNWLLGRAIEHLRDKRWFPFSARQLERAQQRYQRWGQWSLLLSWMPVIGDPLTLIAGIMREPFWRFVLLVTLAKGGRYIVVAVITL---GWFH</Hsp_hseq>
+      <Hsp_midline>LSL +LF S+F +ATLLP  SE VLV +LL        L+L+AT+GN LG V N +LGR     +  RW        ERA    +R+G  +LLLSW PV+GD L L+AG MR  +   +  + L K  RYIV+A  TL    W+H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3859</Hit_id>
+  <Hit_def>gnl|TC-DB|E8N6D2|9.B.27.1.5 Hypothetical membrane protein OS=Anaerolinea thermophila (strain DSM 14523 / JCM 11388 / NBRC 100420 / UNI-1) GN=ANT_19700 PE=4 SV=1</Hit_def>
+  <Hit_accession>3859</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.6102</Hsp_bit-score>
+      <Hsp_score>135</Hsp_score>
+      <Hsp_evalue>7.71736e-11</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>131</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>135</Hsp_align-len>
+      <Hsp_qseq>ALSLTSLFASSFLS-ATLL---PGNSEVVLVAMLLAGVSHPWWLVLIATIGNSLGGVTNVILG-RLFPLRKTSRWQERAAGWLKRYGAVT-LLLSWAP-VVGDLLCLLAGWMRISWGPVLFFLCLGKALRYIVIA</Hsp_qseq>
+      <Hsp_hseq>ALGYPGLFLVSLLTNATLILPVPG----VLFTSLMGAVFHPFWVALVAGTGSALGELSGYLAGISGRGVVERSELHDRLVYWMRRYGVWTVLVLAFVPNPIFDVAGIIAGMLKMPVWRFLLFCWIGKVLKMLMFA</Hsp_hseq>
+      <Hsp_midline>AL    LF  S L+ ATL+   PG    VL   L+  V HP+W+ L+A  G++LG ++  + G     + + S   +R   W++RYG  T L+L++ P  + D+  ++AG +++     L F  +GK L+ ++ A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>88</Statistics_hsp-len>
+      <Statistics_eff-space>432391932</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

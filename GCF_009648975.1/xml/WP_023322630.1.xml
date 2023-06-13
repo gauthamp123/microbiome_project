@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/Users/amedrano/db/tcdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>WP_023322630.1 MULTISPECIES: PTS sugar transporter subunit IIA [Klebsiella]</BlastOutput_query-def>
+  <BlastOutput_query-len>145</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>WP_023322630.1 MULTISPECIES: PTS sugar transporter subunit IIA [Klebsiella]</Iteration_query-def>
+  <Iteration_query-len>145</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2035</Hit_id>
+  <Hit_def>gnl|TC-DB|B7LDS1|4.A.7.1.2 Putative PTS system, specific IIA component OS=Escherichia coli (strain 55989 / EAEC) GN=vpeA PE=4 SV=1</Hit_def>
+  <Hit_accession>2035</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.946</Hsp_bit-score>
+      <Hsp_score>315</Hsp_score>
+      <Hsp_evalue>5.56502e-38</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>MIRDWLTPDKINVINSIDNWKNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>MLKNLLNTEVVQVVEQAKDWREAVAISCRPLIENGSIEPRYVDAIYRSHDTIGPYYVVGPGIAMPHARPEEGANKLSLALTLIPSGVNFDADENDPVKLLIVLAATDSTSHIEAISQLAKLFDNEKDIQAILMAKTTQDILSVI</Hsp_hseq>
+      <Hsp_midline>M+++ L  + + V+    +W+ AV +S  PL+  G +   Y++AI +SH+ +GPYY++ PG+AMPHARPE+GA +  L+L  I  G++F + ENDPV ++I+L A     HI  I +LA+LF +++ ++ +L A   + I +VI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11285</Hit_id>
+  <Hit_def>gnl|TC-DB|P69824|4.A.2.1.24 Mannitol-specific cryptic phosphotransferase enzyme IIA component OS=Escherichia coli (strain K12) GN=cmtB PE=1 SV=1</Hit_def>
+  <Hit_accession>11285</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>112.079</Hsp_bit-score>
+      <Hsp_score>279</Hsp_score>
+      <Hsp_evalue>1.55485e-32</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>IRDWLTPDKINVINSIDNWKNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>LSDYFPESSISVIHSAKDWQEAIDFSMVSLLDKNYISENYIQAIKDSTINNGPYYILAPGVAMPHARPECGALKTGMSLTLLEQGVYFPGND-EPIKLLIGLSAADADSHIGAIQALSELLCEEEILEQLLTASSEKQLADII</Hsp_hseq>
+      <Hsp_midline>+ D+     I+VI+S  +W+ A+  S   LL + Y++E+YI+AI  S    GPYY+LAPG+AMPHARPE GAL+ G+SL  +++G+ F   + +P+ ++I L A   + HI  I  L+EL  +++ LE+LL A   K +  +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|11283</Hit_id>
+  <Hit_def>gnl|TC-DB|P69820|4.A.7.1.1 Ascorbate-specific phosphotransferase enzyme IIA component - Escherichia coli.</Hit_def>
+  <Hit_accession>11283</Hit_accession>
+  <Hit_len>154</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>100.138</Hsp_bit-score>
+      <Hsp_score>248</Hsp_score>
+      <Hsp_evalue>8.92542e-28</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>IRDWLTPDK-INVINSIDNWKNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITM-IGELAELFSDQQKLERLLKADDIKAIQAVID</Hsp_qseq>
+      <Hsp_hseq>LRDSLAENKSIRLQAEAETWQEAVKIGVDLLVAADVVEPRYYQAILDGVEQFGPYFVIAPGLAMPHGRPEEGVKKTGFSLVTLKKPLEFNHDDNDPVDILITMAAVDANTHQEVGIMQIVNLFEDEENFDRLRACRTEQEVLDLID</Hsp_hseq>
+      <Hsp_midline>+RD L  +K I +    + W+ AV++  + L+A   +   Y +AIL   E+ GPY+++APGLAMPH RPE+G  + G SL+ +K+ + F   +NDPV ++I + A   N H  + I ++  LF D++  +RL      + +  +ID</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|10262</Hit_id>
+  <Hit_def>gnl|TC-DB|P39363|4.A.5.1.3 Putative phosphotransferase IIA component sgcA OS=Escherichia coli (strain K12) GN=sgcA PE=3 SV=1</Hit_def>
+  <Hit_accession>10262</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>98.2117</Hsp_bit-score>
+      <Hsp_score>243</Hsp_score>
+      <Hsp_evalue>3.76016e-27</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>NWKNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>DWRQAVEIATRPLVAYGAAQPCYVNGIIENTLNWGPYYLIAPGIALPHARPEQGANYNQVSITTLRTPVAFGNEECDPVWLLLCVSATDANAHILTIQRISQFIDSPQRLTAVGNASTDDALFALV</Hsp_hseq>
+      <Hsp_midline>+W+ AV ++  PL+A G     Y+  I+++    GPYYL+APG+A+PHARPEQGA  N +S+  ++  ++FG+ E DPV++++ + A   N HI  I  +++     Q+L  +  A    A+ A++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|4057</Hit_id>
+  <Hit_def>gnl|TC-DB|ESQ71096.1|4.A.7.1.6 PTS ascorbate transporter subunit IIA [Pasteurella multocida subsp. multocida P1062]</Hit_def>
+  <Hit_accession>4057</Hit_accession>
+  <Hit_len>155</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.9669</Hsp_bit-score>
+      <Hsp_score>219</Hsp_score>
+      <Hsp_evalue>2.07735e-23</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>DKINVINSIDNWKNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQ-----KLERLLKADDIKAIQAVID</Hsp_qseq>
+      <Hsp_hseq>NSIKLHQTAKNWEEAIKLGTDMLIASGAVEPRYHDTIIKCVKELGPYIIIAPHLAMPHARPEDGVNRTAFALVTLDTPIYFDG-EDEPVDVLLTLAGSDANQHMQGLMEITQVLDDPDSDTGINLDKIRRCQTAEDVYAVID</Hsp_hseq>
+      <Hsp_midline>+ I +  +  NW+ A++L  + L+A G +   Y + I+K  +ELGPY ++AP LAMPHARPE G  R   +L+ +   I F   E++PV V++ L     N+H+  + E+ ++  D        L+++ +    + + AVID</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|2276</Hit_id>
+  <Hit_def>gnl|TC-DB|C0H3V2|4.A.2.1.5 Mannitol-specific phosphotransferase enzyme IIA component OS=Bacillus subtilis (strain 168) OX=224308 GN=mtlF PE=1 SV=1</Hit_def>
+  <Hit_accession>2276</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.3882</Hsp_bit-score>
+      <Hsp_score>150</Hsp_score>
+      <Hsp_evalue>2.89251e-13</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>LTPDKINVINSIDNWKNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPE--QGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVID</Hsp_qseq>
+      <Hsp_hseq>LAKENIKLNQTVSSKEEAIKLAGQTLIDNGYVTEDYISKMFEREETSSTF--MGNFIAIPHGTEEAKSEVLHSGISIIQIPEGVEYG--EGNTAKVVFGIAGKN-NEHLDILSNIAIICSEEENIERLISAKSEEDLIAIFN</Hsp_hseq>
+      <Hsp_midline>L  + I +  ++ + + A++L+ + L+  GY+ E YI  + +  E    +  +   +A+PH   E     L +G+S++ I EG+ +G  E +   V+  +  ++ NEH+ ++  +A + S+++ +ERL+ A   + + A+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|8175</Hit_id>
+  <Hit_def>gnl|TC-DB|P00550|4.A.2.1.2 PTS SYSTEM, MANNITOL-SPECIFIC IIABC COMPONENT (EIIABC-MTL) (MANNITOL- PERMEASE IIABC COMPONENT) (PHOSPHOTRANSFERASE ENZYME II, ABC COMPONENT) (EC 2.7.1.69) (EII-MTL) - Escherichia coli.</Hit_def>
+  <Hit_accession>8175</Hit_accession>
+  <Hit_len>637</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.6994</Hsp_bit-score>
+      <Hsp_score>156</Hsp_score>
+      <Hsp_evalue>4.57609e-13</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>140</Hsp_query-to>
+      <Hsp_hit-from>511</Hsp_hit-from>
+      <Hsp_hit-to>629</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>122</Hsp_align-len>
+      <Hsp_qseq>KNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPE--QGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQKLERLLKADDIKAI</Hsp_qseq>
+      <Hsp_hseq>EEAIRFAGEQLVKGGYVEPEYVQAML-DREKLTPTYL-GESIAVPHGTVEAKDRVLKTGVVFCQYPEGVRFGEEEDDIARLVIGIAARN-NEHIQVITSLTNALDDESVIERLAHTTSVDEV</Hsp_hseq>
+      <Hsp_midline>+ A+R + E L+  GY+   Y++A+L   E+L P YL    +A+PH   E     L+ G+      EG+ FG  E+D   ++I + AR+ NEHI +I  L     D+  +ERL     +  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|18366</Hit_id>
+  <Hit_def>gnl|TC-DB|Q9KKQ7|4.A.2.1.12 PTS system mannitol-specific EIICBA component OS=Vibrio cholerae GN=mtlA PE=3 SV=1</Hit_def>
+  <Hit_accession>18366</Hit_accession>
+  <Hit_len>649</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.7582</Hsp_bit-score>
+      <Hsp_score>125</Hsp_score>
+      <Hsp_evalue>6.48058e-09</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>506</Hsp_hit-from>
+      <Hsp_hit-to>643</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>LTPDKINVINSIDNWKNAVRLSAEPLLAQGYMAEHYIEAILKSHEELGPYYLLAPGLAMPHAR--PEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>LQKENIHLGLNAKNKEEAIRFAGNKLVELGYVHPEYVDAMFEREKLVSTY--LGESIAVPHGTVDAKDRVIKTGIVICQYPQGVAFSEDSGDVAKLVIGIAAKN-DEHIQVITTITNALDDPNAIDKLTSTKDVSDVLSIL</Hsp_hseq>
+      <Hsp_midline>L  + I++  +  N + A+R +   L+  GY+   Y++A+ +  + +  Y  L   +A+PH     +   ++ G+ +    +G++F     D   ++I + A++ +EHI +I  +     D   +++L    D+  + +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|6425</Hit_id>
+  <Hit_def>gnl|TC-DB|M7QAG8|4.A.2.1.19 PTS system tagatose-specific IIA-TPr component OS=Klebsiella pneumoniae ATCC BAA-2146 GN=G000_19885 PE=4 SV=1</Hit_def>
+  <Hit_accession>6425</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.9062</Hsp_bit-score>
+      <Hsp_score>115</Hsp_score>
+      <Hsp_evalue>1.07248e-07</Hsp_evalue>
+      <Hsp_query-from>35</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>GYMAEHYIEAILKSHEELGPYYLLAPGLAMPHARPEQ--GALRNGLSLLHIKEGISFGSTENDPVYVIIMLCARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>GHTRADYLQGMREREGQISTY--LGNGIAIPHGTPHSRDAVLKTGVKVLACPQGVDWG--EEQTAYLIVGIAAQD-NEHLDILRQLTHALGDDRVPEALTRADTPQAVLEIL</Hsp_hseq>
+      <Hsp_midline>G+    Y++ + +   ++  Y  L  G+A+PH  P      L+ G+ +L   +G+ +G  E    Y+I+ + A+  NEH+ ++ +L     D +  E L +AD  +A+  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|14538</Hit_id>
+  <Hit_def>gnl|TC-DB|Q5V5X4|4.A.2.1.26 Sugar hosphotransferase system IIA component OS=Haloarcula marismortui (strain ATCC 43049 / DSM 3752 / JCM 8966 / VKM B-1809) GN=ptsA PE=4 SV=1</Hit_def>
+  <Hit_accession>14538</Hit_accession>
+  <Hit_len>158</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>2.26733e-06</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>153</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>IEAILKSHEELGPYYLLAPGLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLCA--RSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>LEALLERESETTTG--VGMGIGIPHAKTD-AVSRPSLAFARSQEGVDFGSMDGEPATLVFMILVPEAGGEEHLNILSSLSRALMHDDVRDRLHAAADEATVQDVL</Hsp_hseq>
+      <Hsp_midline>+EA+L+   E      +  G+ +PHA+ +    R  L+    +EG+ FGS + +P  ++ M+      G EH+ ++  L+         +RL  A D   +Q V+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3079</Hit_id>
+  <Hit_def>gnl|TC-DB|D2RXA7|4.A.2.1.14 Putative PTS IIA-like nitrogen-regulatory protein PtsN OS=Haloterrigena turkmenica (strain ATCC 51198 / DSM 5511 / NCIMB 13204 / VKM B-1734) GN=Htur_2758 PE=4 SV=1</Hit_def>
+  <Hit_accession>3079</Hit_accession>
+  <Hit_len>156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>39.6614</Hsp_bit-score>
+      <Hsp_score>91</Hsp_score>
+      <Hsp_evalue>0.000104938</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>EHYIEAILKSHEELGPYYLLAPGLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLC--ARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>EAALEALLAREEETTTG--VGMGIGIPHAKTDAVA-EPTIVFARSSAGIDFDAMDDQPATLLFLLLVPAEGGEEHLELLSSLSRALMHDDVRERLHEADSKAAIEETI</Hsp_hseq>
+      <Hsp_midline>E  +EA+L   EE      +  G+ +PHA+ +  A    +       GI F + ++ P  ++ +L   A  G EH+ ++  L+         ERL +AD   AI+  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gnl|BL_ORD_ID|3213</Hit_id>
+  <Hit_def>gnl|TC-DB|D4GYE4|4.A.2.1.15 Sugar hosphotransferase system IIA component OS=Haloferax volcanii (strain ATCC 29605 / DSM 3757 / JCM 8879 / NBRC 14742 / NCIMB 2012 / VKM B-1768 / DS2) GN=fruA2 PE=4 SV=1</Hit_def>
+  <Hit_accession>3213</Hit_accession>
+  <Hit_len>154</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.000194643</Hsp_evalue>
+      <Hsp_query-from>61</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>65</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>45</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>GLAMPHARPEQGALRNGLSLLHIKEGISFGSTENDPVYVIIMLC--ARSGNEHITMIGELAELFSDQQKLERLLKADDIKAIQAVI</Hsp_qseq>
+      <Hsp_hseq>GIGIPHAKTD-AVSKPTVAFARSAEGIDFDAMDDKPAKLLFMILVPAAGGEDHLQILSALSRSLMHEDVREKLLEAESKQTVQDVL</Hsp_hseq>
+      <Hsp_midline>G+ +PHA+ +    +  ++     EGI F + ++ P  ++ M+   A  G +H+ ++  L+     +   E+LL+A+  + +Q V+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>22873</Statistics_db-num>
+      <Statistics_db-len>10020082</Statistics_db-len>
+      <Statistics_hsp-len>89</Statistics_hsp-len>
+      <Statistics_eff-space>447125560</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
