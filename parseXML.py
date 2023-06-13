@@ -8,19 +8,21 @@ df = pd.read_table(tsv_file)
 file_to_find = df['#Query_id']
 
 dictionary = {}
-for row in df.itertuples(index=False):
-    query_id = row._0
-    values = row._asdict()
-    del values['_0']
+
+# for row in df.itertuples(index=False):
+#     query_id = row._0
+#     values = row._asdict()
+#     del values['_0']
     
-    # Add the values to the dictionary
-    if query_id not in dictionary:
-        dictionary[query_id] = {}
+#     # Add the values to the dictionary
+#     if query_id not in dictionary:
+#         dictionary[query_id] = {}
     
-    dictionary[query_id].update(values)
+#     dictionary[query_id].update(values)
 
 sequences = {}
-for key in dictionary:
+for row in df.itertuples(index=False):
+    key = row._0
     xmlfile = xml_format + key + '.xml'
     tree = ET.parse(xmlfile)
     root = tree.getroot()
@@ -29,8 +31,7 @@ for key in dictionary:
     for item in root.findall('./BlastOutput_iterations/Iteration/Iteration_hits/Hit'):
         hit_info = item.find('Hit_def').text.split('|')
         #print(hit_info[3].split(' ')[0])
-
-        if hit_info[2] == dictionary[key]['Hit_xid'] and hit_info[3].split(' ')[0] == dictionary[key]['Hit_tcid']:
+        if hit_info[2] == row.Hit_xid and hit_info[3].split(' ')[0] == row.Hit_tcid:
             j = item.findall('Hit_hsps/Hsp')
             for h_item in j:
                 query_seq = h_item.find('Hsp_qseq').text
