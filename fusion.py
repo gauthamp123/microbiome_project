@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 
-df = pd.read_table('results.tsv')
+df = pd.read_table('GCF_009648975.1/results.tsv')
 
 geneFusions = {}
 test_fus =  [{'query': 'A', 'qcov': 69.6, 'sstart': 295, 'send': 713, 'scov': 58.2}, {'query': 'B', 'qcov': 65.4, 'sstart': 405, 'send': 709, 'scov': 42.3}, {'query': 'C', 'qcov': 41.4, 'sstart': 481, 'send': 717, 'scov': 32.9}]
@@ -31,8 +31,8 @@ def genDict(dict, input_df):
 # outputs list of dictionary (each dictionary is a fusion candidate)
 def isFusion(sortedArr):
 
-    print("-------")
-    print("Input is " + str(sortedArr))
+    # print("-------")
+    # print("Input is " + str(sortedArr))
 
     # output list
     fus_list = []
@@ -41,16 +41,16 @@ def isFusion(sortedArr):
     # iteratate through each fusion candidate 
     for i in range(len(sortedArr)):
         if sortedArr[i]['scov'] > MAX_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov too long")
+            # print("i rejected, candidate scov too long")
             continue
         elif sortedArr[i]['scov'] < MIN_SUBJECT_COV_THRESHOLD:
-            print("i rejected, candidate scov was too small")
+            # print("i rejected, candidate scov was too small")
             continue
         elif sortedArr[i]['qcov'] < MIN_QUERY_COV_THRESHOLD:
-            print("i rejected, candidate qcov was too small")
+            # print("i rejected, candidate qcov was too small")
             continue
         else:
-            print("Accepting i protein: " + sortedArr[i]["query"])
+            # print("Accepting i protein: " + sortedArr[i]["query"])
             fus_list.append(sortedArr[i])
     tot_length = 0
     overlap_length = 0
@@ -63,22 +63,22 @@ def isFusion(sortedArr):
     tot_length -= overlap_length
     
     if len(fus_list) == 0:
-        print("No candidates identified")
+        # print("No candidates identified")
         return []
     elif len(fus_list) < 2:
-        print("Insufficient Candidates identified")
-        print(fus_list)
+        # print("Insufficient Candidates identified")
+        # print(fus_list)
         return []
     elif (tot_length/fus_list[0]['hit_length'])*100 < MIN_FUSION_COVERAGE:
-        print("Didn't meet MIN_THRESHOLD")
-        print("total length: " + str(tot_length))
-        print("hit length: " + str(fus_list[0]['hit_length']))
-        print("-------")
+        # print("Didn't meet MIN_THRESHOLD")
+        # print("total length: " + str(tot_length))
+        # print("hit length: " + str(fus_list[0]['hit_length']))
+        # print("-------")
         return []
     else:
-        print("output is: " + str(fus_list))
-        print("total length: " + str(tot_length))
-        print("hit length: " + str(fus_list[0]['hit_length']))
+        # print("output is: " + str(fus_list))
+        # print("total length: " + str(tot_length))
+        # print("hit length: " + str(fus_list[0]['hit_length']))
         return fus_list
 
 
@@ -96,8 +96,8 @@ for id in geneFusions:
     # x = input()
     num_in+=1
     if len(isFusion(sortedGeneArr)) != 0:
-        print("SUCCESS")
+        # print("SUCCESS")
         num_out+=1
     #y = input()
-print("-------")
-print(str(num_out) + " fusions found out of " + str(num_in))
+# print("-------")
+# print(str(num_out) + " fusions found out of " + str(num_in))

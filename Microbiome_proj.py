@@ -4,11 +4,15 @@ import csv
 import numpy as np
 import os
 import re
-from fusion_distribution import isFusion,geneFusions
-from fusion_dist_dir import isFusion,genDict
+# from fusion_distribution import isFusion,geneFusions
+# from fusion_dist_dir import isFusion,genDict
+from fusion import isFusion, geneFusions, genDict
+from parseXML import parse
 from pprint import pprint
+
+GENOME = 'GCF_009648975.1'  # we can make this a command line argument
 # construct df with all data from results.tsv
-df = pd.read_table('data/results.tsv')
+df = pd.read_table(GENOME + '/results.tsv')
 # print columns of df for dev use in constructing filtered_df later
 
 
@@ -25,6 +29,22 @@ filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_s
 Output_df= df[['Hit_tcid','Hit_xid','#Query_id','Match_length','e-value','%_identity','Query_Length','Hit_Length','Q_start',
 'Q_end','S_start','S_end','Query_Coverage','Hit_Coverage','Query_n_TMS','Hit_n_TMS','TM_Overlap_Score','Family_Abrv'
 ,'Predicted_Substrate','Query_Pfam','Subject_Pfam']]
+
+def adjustOverlapScore():
+    overlap_dict = parse(GENOME + '/hmmtop.db', GENOME + '/xml/' ,GENOME + '/results.tsv', 8)
+    score_dict = {}
+    score_dict['TM_Overlap_Score'] = []
+    for k in overlap_dict:
+        score_dict['TM_Overlap_Score'].append(overlap_dict[k]['alignedTMS'])
+    
+    score_df = pd.DataFrame(score_dict)
+    df['TM_Overlap_Score'] = score_df['TM_Overlap_Score']
+
+
+
+
+adjustOverlapScore()
+
 
 green = {}
 yellow = {}
@@ -297,6 +317,7 @@ def write_singlecomp(Output_dict,Output_df_row):
 
 geneFusions={}
 genDict(geneFusions, df)
+
 for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
     if os.path.exists(filename):
         os.remove(filename)
