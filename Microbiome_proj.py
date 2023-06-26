@@ -11,6 +11,8 @@ from parseXML import parse
 from pprint import pprint
 
 GENOME = 'GCF_009648975.1'  # we can make this a command line argument
+TMS_THRESH_GREEN = 0.8
+TMS_THRESH_YELLOW = 0.5
 # construct df with all data from results.tsv
 df = pd.read_table(GENOME + '/results.tsv')
 # print columns of df for dev use in constructing filtered_df later
@@ -33,18 +35,21 @@ Output_df= df[['Hit_tcid','Hit_xid','#Query_id','Match_length','e-value','%_iden
 def adjustOverlapScore():
     overlap_dict = parse(GENOME + '/hmmtop.db', GENOME + '/xml/' ,GENOME + '/results.tsv', 8)
     score_dict = {}
-    score_dict['TM_Overlap_Score'] = []
+    score_dict = {}
     for k in overlap_dict:
-        score_dict['TM_Overlap_Score'].append(overlap_dict[k]['alignedTMS'])
+        score_dict[k] = overlap_dict[k]['alignedTMS']
     
-    score_df = pd.DataFrame(score_dict)
-    df['TM_Overlap_Score'] = score_df['TM_Overlap_Score']
-
-
+    for index, row in df.iterrows():
+        if row['#Query_id'] in score_dict:
+            df.at[index, 'TM_Overlap_Score'] = score_dict[row['#Query_id']]
+        else:
+            df.at[index, 'TM_Overlap_Score'] = 0
+            
+    
 
 
 adjustOverlapScore()
-
+df.to_csv('adj.csv', index=False)
 
 green = {}
 yellow = {}
@@ -104,6 +109,13 @@ def pfamDoms(row):
     common_doms = [*set(doms)]
     return common_doms
 
+def overlap_percent(row):
+    q_tmss = int(row.get(key='Query_n_TMS'))
+    t_tmss = int(row.get(key='Hit_n_TMS'))
+
+    overlap_percent = int(row.get(key='TM_Overlap_Score')) / min(q_tmss, t_tmss)
+    return overlap_percent
+
 
 parseTCDBcontent()
 
@@ -130,10 +142,10 @@ def categorizeSingleComp(row):
     row_to_write = row.tolist()
     row_to_write.append(False)
     # check evalue
-    if eVal(row) <= 1e-10 and len(pfamDoms(row)) != 0:
+    if eVal(row) <= 1e-10 and len(pfamDoms(row)) != 0 and overlap_percent(row) >= TMS_THRESH_GREEN:
         green[row.get(key='#Query_id')] = row_to_write
         return ('Green', row_to_write)
-    elif eVal(row) < 1e-3 and qCoverage(row) >= 90 and hCoverage(row) >= 90:
+    elif eVal(row) < 1e-3 and qCoverage(row) >= 90 and hCoverage(row) >= 90 and overlap_percent(row) >= TMS_THRESH_YELLOW:
         yellow[row.get(key='#Query_id')] = row_to_write
         return ('Yellow', row_to_write)
     else:

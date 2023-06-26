@@ -283,6 +283,7 @@ def overlapDict(mmseqsDict, hmmtopDict, minRes):
         qTMSWithin = realRMScoords(qTMS, qalnStartPos, qalnEndPos)
         tTMSWithin = realRMScoords(tTMS, talnStartPos, talnEndPos)
         
+        
         overlaps = overlapScore(qTMSWithin, tTMSWithin, qaln, taln)
         targetAndOverlap = {}
         targetAndOverlap['target'] = tAccession

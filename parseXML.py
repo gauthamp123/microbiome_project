@@ -15,13 +15,14 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
     query_data = data['queries']
     target_data = {}
     for key in data['tcdb']:
-        key_elems = key.split('|')
-        new_key = key_elems[3] + '-' + key_elems[2]
 
+        key_elems = key.split('|')
+        new_key = key_elems[3] + '-' + key_elems[2].split('.')[0]
+        
         target_data[new_key] = data['tcdb'][key]
 
 
-
+    
     xml_format = xml_dir
     tsv_file = results_file
     df = pd.read_table(tsv_file)
@@ -41,24 +42,28 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
         tree = ET.parse(xmlfile)
         root = tree.getroot()
 
+        if key == 'WP_000242758.1':
+            print('here')
+
         # ['gnl', 'TC-DB', 'P60778', '2.A.1.7.14 Protein tsgA OS=Escherichia coli (strain K12) GN=tsgA PE=1 SV=1']
         # goes through each branch of the xml file that contains 'hit'
         for item in root.findall('./BlastOutput_iterations/Iteration/Iteration_hits/Hit'):
             hit_info = item.find('Hit_def').text.split('|')
-            # looks for the specific target accession that correlates to the results.tsv data
-            if hit_info[2] == row.Hit_xid and hit_info[3].split(' ')[0] == row.Hit_tcid:
+            # looks for the specific target accession that correlates to the results.tsv data trunkating the .1 at end of hit_xid
+            if hit_info[2].split('.')[0] == row.Hit_xid and hit_info[3].split(' ')[0] == row.Hit_tcid: # fails here
                 j = item.findall('Hit_hsps/Hsp')
                 # if it exists, then look to see if there is alignment sequences in xml
                 for h_item in j:
                     query_seq = h_item.find('Hsp_qseq').text
                     subject_seq = h_item.find('Hsp_hseq').text
                     target_id = row.Hit_tcid + '-' + row.Hit_xid
+
                     # only include in mmseqs if the target accession and query exists in results.tsv
-                    if key in query_data and target_id in target_data:
+                    if key in query_data and target_id in target_data: # issue here not in target_data
                         mmseqsDict[key] = {'qaln': query_seq, 'taln': subject_seq, 'target': target_id,
                                         'qstart': row.Q_start, 'qend': row.Q_end, 'tstart': row.S_start, 'tend': row.S_end}
                     
-                    
+
                     # puts the overlaps in the format needed by overlapDict
                     qtms = {}
                     if key in query_data:
@@ -75,6 +80,8 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
 
         # there are some keys in df that are not in query or target data what to do about those?
 
+    if 'WP_012541690.1' in mmseqsDict:
+        print('yes')
     overlap_dict = overlapDict(mmseqsDict, hmmTopDict, minRes)
     return overlap_dict
 
