@@ -42,8 +42,6 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
         tree = ET.parse(xmlfile)
         root = tree.getroot()
 
-        if key == 'WP_000242758.1':
-            print('here')
 
         # ['gnl', 'TC-DB', 'P60778', '2.A.1.7.14 Protein tsgA OS=Escherichia coli (strain K12) GN=tsgA PE=1 SV=1']
         # goes through each branch of the xml file that contains 'hit'
@@ -80,8 +78,6 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
 
         # there are some keys in df that are not in query or target data what to do about those?
 
-    if 'WP_012541690.1' in mmseqsDict:
-        print('yes')
     overlap_dict = overlapDict(mmseqsDict, hmmTopDict, minRes)
     return overlap_dict
 
