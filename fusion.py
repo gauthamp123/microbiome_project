@@ -18,7 +18,7 @@ MIN_FUSION_COVERAGE = 50
 # generates a dictionary from the dataframe
 def genDict(dict, input_df):
     for index, row in input_df.iterrows():
-        new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"], "hit_length": row["Hit_Length"]}
+        new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"], "hit_length": row["Hit_Length"], "tms": row['Query_n_TMS']}
         tcid = row["Hit_tcid"] + "-" + row["Hit_xid"]
         if tcid in dict:
             dict.get(tcid).append(new_entry)

@@ -132,19 +132,51 @@ def overlap_percent(row):
     return overlap_percent
 
 
-def assign_if_fusion(fusions):
-    return
+def assign_if_fusion(fusions, tcdb_tms):
+    # need to check that the combined tms count from all fusions meets threshold if ritvik can add to output
+    tot_cov = 0
+    tot_tmoverlap = 0
+    for i in range(0, len(fusions)):
+        tot_cov = fusions[0]['send'] - fusions[0]['sstart']
+        for i in range(1, len(fusions)):
+            start = 0
+            end = fusions[i]['send'] 
+            if fusions[i]['sstart'] < fusions[i-1]['send']:
+                start = fusions[i-1]['send']
+            else:
+                start = fusions[i]['sstart']
+            
+            if fusions[i]['sstart'] <= fusions[i-1]['sstart'] and fusions[i]['send'] <= fusions[i-1]['send']:
+                return 'yellow'
+
+            tot_cov += end - start
+    
+    if tcdb_tms == 0:
+        tot_tmoverlap = 1
+    else:
+        tot_tmoverlap = float(tot_tmoverlap / tcdb_tms)
+
+    tot_cov = float(tot_cov / fusions[0]['hit_length']) * 100
+        
+
+    if tot_cov >= S_COV_THRESH and tot_tmoverlap >= TMS_THRESH_GREEN:
+        return 'green'
+    elif tot_cov >= LOW_COV:
+        return 'yellow'
+    else:
+        return 'red'
+    
 
 
-def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, max_tms):
-    # automatic green if e-val is 0 or extremely good with okay coverage
-    if (eval == 0.0 or eval <= EXCELLENT_EVAL) and (qcov > LOW_COV and scov > LOW_COV):
+def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
+    # automatic green if e-val is 0 or extremely good with okay coverage and matching pfam
+    if (eval == 0.0 or eval <= EXCELLENT_EVAL) and (qcov > LOW_COV and scov > LOW_COV) and len(pfam_doms) > 0:
         return 'green'
     # if coverage is less than a very low number it is impossible for it to be a good hit
     if qcov <= AUTO_RED or scov <= AUTO_RED:
         return 'red'
     # if there are less than 3 tms, there is a possiblity of mischaracterizing tms regions
-    if max_tms > 3:
+    if tcdb_tms > 3:
         # if cov is too low it is automatically red
         if qcov < LOW_COV or scov < LOW_COV:
             return 'red'
@@ -160,27 +192,39 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, max_tms):
         # okay e value, common doms, has good coverage or there is a high tms overlap means good hit
         if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
             return 'green'
+        # great e-val no matching pfam domains but has goood coverage or good tmoverlap its a good hit
+        if eval <= E_VAL_GREEN and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_GREEN):
+            return 'green'
+        # if there is a fusion found we need to do further analysis
+        if len(fusions) > 0:
+            return 'fusion found'
         # ok e-val, no common doms, has good coverage or there is a good tms overlap means yellow hit
         if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
             return 'yellow'
-        # okay e val, and com dom tms overlap too low but the coverage is not too terrible > 50% its a yellow hit
-        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov > LOW_COV or scov > LOW_COV):
+        # okay e val, and com dom tms overlap is good and the coverage is not too terrible > 50% its a yellow hit
+        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov > LOW_COV or scov > LOW_COV) and tmoverlap >= TMS_THRESH_YELLOW:
             return 'yellow'
         # if low e-val, has low coverage and there are low tms overlap
         if eval <= E_VAL_YELLOW and (qcov < LOW_COV or scov < LOW_COV) and tmoverlap < TMS_THRESH_YELLOW:
             return 'red'
     else: # considering possibility of mischaracterization of tms
         # is a fusion candidate, has great e value and has good cov is good hit
-        if fusions and eval <= E_VAL_GREEN and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and len(pfam_doms) > 0:
-            return 'green' 
-        # has ok e value, common doms match, good cov is good hit
-        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH):
+        if eval <= E_VAL_GREEN and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and len(pfam_doms) > 0:
             return 'green'
         # good e value, common doms match, good cov is good hit
         if eval <= E_VAL_GREEN and len(pfam_doms) > 0 and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH):
             return 'green'
+        # has ok e value, common doms match, good cov is good hit
+        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov >= LOW_COV and scov >= LOW_COV):
+            return 'green'
+        # great e-val no matching pfam domains but has goood coverage or good tmoverlap its a good hit
+        if eval <= E_VAL_GREEN and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_GREEN):
+            return 'green'
+        # if there is a fusion found we need to do further analysis
+        if len(fusions) > 0:
+            return 'fusion found'
         # is fusion, ok e value and good coverage but not good tms overlap
-        if fusions and eval <= E_VAL_YELLOW and qcov >= Q_COV_THRESH and scov >= S_COV_THRESH:
+        if eval <= E_VAL_YELLOW and qcov >= Q_COV_THRESH and scov >= S_COV_THRESH:
             return 'yellow'
         # great e val, and com dom but not good coverage is yellow hit
         if eval <= E_VAL_GREEN and len(pfam_doms) > 0:
@@ -193,6 +237,13 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, max_tms):
             return 'yellow'
         
     return 'red'
+
+def final_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
+    decision = make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms)
+    if decision == 'fusion found':
+        return assign_if_fusion(fusions, tcdb_tms)
+    else:
+        return decision
 
 parseTCDBcontent()
 
@@ -208,7 +259,6 @@ def isSingleComp(row):
     
 def categorizeSingleComp(row):
     # check if it is a fusion
-    fusions_found = False
     row_to_write = row.tolist()
     sortedGeneArr = []
     fusions = ''
@@ -217,27 +267,24 @@ def categorizeSingleComp(row):
         sortedGeneArr = sorted(fusion_results, key=lambda x: x['sstart'])
         if(len(isFusion(sortedGeneArr))!=0):
             sortedGeneArr = isFusion(sortedGeneArr)
-            fusions_found = True
             for k in range(0, len(sortedGeneArr)):
                 fusions += sortedGeneArr[k]['query'] + ' '
                 
             row_to_write.append(fusions)
         else:
-            fusions_found = False
             row_to_write.append(fusions)
     else:
-        fusions_found = False
         row_to_write.append(fusions)
     
-    if row['#Query_id'] == 'WP_014400925.1':
+    if row['#Query_id'] == 'WP_013242732.1':
         print('start debugging')
 
-    max_tms = max(row['Query_n_TMS'], row['Hit_n_TMS'])
+    tcdb_tms = row['Hit_n_TMS']
 
-    if make_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), fusions_found, overlap_percent(row), max_tms) == 'green':
+    if final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'green':
         green[row.get(key='#Query_id')] = row_to_write
         return ('Green', row_to_write)
-    elif make_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), fusions_found, overlap_percent(row), max_tms) == 'yellow':
+    elif final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'yellow':
         yellow[row.get(key='#Query_id')] = row_to_write
         return ('Yellow', row_to_write)
     else:
