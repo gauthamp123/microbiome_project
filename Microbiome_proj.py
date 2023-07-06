@@ -10,7 +10,7 @@ from fusion import isFusion, geneFusions, genDict
 from parseXML import parse
 from pprint import pprint
 
-GENOME = 'GCF_001865765.1'  # we can make this a command line argument
+GENOME = 'MicrobiomeResults/GCF_000013425.1'  # we can make this a command line argument
 TMS_THRESH_GREEN = 0.8
 TMS_THRESH_YELLOW = 0.5
 EXCELLENT_EVAL = 1e-30
@@ -122,6 +122,30 @@ def pfamDoms(row):
     common_doms = [*set(doms)]
     return common_doms
 
+def tm_overlap_decision(row):
+    q_tmss = int(row.get(key='Query_n_TMS'))
+    t_tmss = int(row.get(key='Hit_n_TMS'))
+    # if there are no tms regions in the tcdb protein tms regions are irrelevant in decision making
+    if t_tmss == 0:
+        return False
+    # calculates the percent overlap of tms regions relative to tcdb proteins
+    def tmoverlap_percent(row):
+        overlap_percent = int(row.get(key='TM_Overlap_Score')) / t_tmss
+        return overlap_percent
+
+    # if there are under 3 tmss then theres a possibility of there being mishits
+    if t_tmss > 3:
+        # if there is great overlap return true
+        if tmoverlap_percent(row) >= TMS_THRESH_GREEN:
+            return True
+    else:
+        # could potentially have a fusion candid so should be placed into yellow
+        if q_tmss >= 1 and t_tmss >= 1:
+            return True
+    
+    return False
+        
+    
 def overlap_percent(row):
     q_tmss = int(row.get(key='Query_n_TMS'))
     t_tmss = int(row.get(key='Hit_n_TMS'))
@@ -198,8 +222,8 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
         # if there is a fusion found we need to do further analysis
         if len(fusions) > 0:
             return 'fusion found'
-        # ok e-val, no common doms, has good coverage or there is a good tms overlap means yellow hit
-        if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
+        # ok e-val, no common doms, has good coverage and there is a ok tms overlap means yellow hit
+        if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and tmoverlap >= TMS_THRESH_YELLOW):
             return 'yellow'
         # okay e val, and com dom tms overlap is good and the coverage is not too terrible > 50% its a yellow hit
         if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov > LOW_COV or scov > LOW_COV) and tmoverlap >= TMS_THRESH_YELLOW:
@@ -250,7 +274,6 @@ parseTCDBcontent()
 # This function will check the tcdbSystems dictionary for the tcid given 
 def isSingleComp(row):
     tcid = row["Hit_tcid"]
-    hit_id = row['Hit_xid']
     tc_arr = tcdbSystems.get(tcid)
     if(len(tc_arr) == 1):
         return True
@@ -276,8 +299,6 @@ def categorizeSingleComp(row):
     else:
         row_to_write.append(fusions)
     
-    if row['#Query_id'] == 'WP_013242732.1':
-        print('start debugging')
 
     tcdb_tms = row['Hit_n_TMS']
 
@@ -305,6 +326,8 @@ with open('hmmtop.out') as f:
         hmmtop_df.loc[len(hmmtop_df)] = new_row
     hmmtop_df['Hit_n_TMS'] = hmmtop_df['Hit_n_TMS'].astype(int)
 
+# returns empty list when there are no membrane proteins found. 
+# otherwise returns list of membrane protein accessions.
 def FindMembraneProtein(row,df):
     if isSingleComp(row): ##get rid of single comp system first
         return ([])
@@ -350,6 +373,7 @@ def isMultiComp(row,df,input):
     tcid = row["Hit_tcid"]
     Fusion_Add=[]
     Fusion_results= geneFusions[row["Hit_tcid"] + "-" + row["Hit_xid"]]
+    sortedGeneArr = []
     if(len(Fusion_results) !=1):
         sortedGeneArr = sorted(Fusion_results, key=lambda x: x['sstart'])
         Fusion_Add=[x["query"] for x in isFusion(sortedGeneArr)]             
@@ -359,11 +383,13 @@ def isMultiComp(row,df,input):
     tc_missing_arr= list(set(tc_all_arr) - set(tc_filter_arr))
 
     fusions = ''
+    id = row['#Query_id']
+    tcdb_tms = row['Hit_n_TMS']
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
         #print(tc_arr)
         #print("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
        
-        if(eVal(row) <= E_VAL_GREEN and len(pfamDoms(row)) != 0 and overlap_percent(row) >= TMS_THRESH_GREEN and qCoverage(row) >= Q_COV_THRESH and hCoverage(row) >= S_COV_THRESH):
+        if(eVal(row) <= E_VAL_GREEN and qCoverage(row) >= Q_COV_THRESH and hCoverage(row) >= S_COV_THRESH and len(pfamDoms(row)) != 0 and tm_overlap_decision(row) == True):
             return({"color":"Green",
                     "Found_proteins":tc_filter_arr,
                     "All_proteins":tc_arr,
@@ -386,11 +412,11 @@ def isMultiComp(row,df,input):
 
 
     return({"color":"Red",
-                    "Found_proteins":tc_filter_arr,
-                    "All_proteins":tc_arr,
-                    'Missing_proteins':tc_missing_arr,
-                    "Fusion_results":Fusion_Add,
-                    "isFusion":len(Fusion_Add)>0})
+            "Found_proteins":tc_filter_arr,
+            "All_proteins":tc_arr,
+            'Missing_proteins':tc_missing_arr,
+            "Fusion_results":Fusion_Add,
+            "isFusion":len(Fusion_Add)>0})
    
 
 
@@ -438,7 +464,7 @@ def Write_multicomp(Output_dict,Output_df_row):
 
         _Intermediate["Hit_tcid"]=Output_df_row["Hit_tcid"]
         _Intermediate["Hit_xid"]=hit_xid
-        Missing_infor = hmmtop_df.loc[(hmmtop_df['Hit_xid'] ==  hit_xid)]
+        Missing_infor = hmmtop_df.loc[(hmmtop_df['Hit_xid'] ==  hit_xid)]   # issue here
 
         _Intermediate["Match_length"]=Missing_infor["Match_length"].iloc[0] if not Missing_infor.empty else "NA"
         _Intermediate["Hit_n_TMS"]=Missing_infor["Hit_n_TMS"].iloc[0] if not Missing_infor.empty else "NA"
@@ -448,7 +474,7 @@ def Write_multicomp(Output_dict,Output_df_row):
         
         
 
-def write_singlecomp(Output_dict,Output_df_row):
+def write_singlecomp(output_dict,Output_df_row):
     color = output_dict[0]
     dictionary = output_dict[1]
     Intermediate = Output_df_row.copy()
@@ -473,11 +499,12 @@ for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
     if os.path.exists(filename):
         os.remove(filename)
 for index, row in df.iterrows():
-
     single = isSingleComp(row)
 
+    # if row['Hit_tcid'] == '1.C.3.4.2':
+    #     print('here')
     if(not single):
-        Output_dict= isMultiComp(row, df, 0.5)
+        Output_dict = isMultiComp(row, df, 0.5)
         Write_multicomp(Output_dict,Output_df.loc[[index],Output_df.columns])
     else:
         output_dict = categorizeSingleComp(row)
