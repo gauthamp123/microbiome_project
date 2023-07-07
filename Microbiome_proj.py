@@ -61,6 +61,17 @@ Output_df= df[['Hit_tcid','Hit_xid','#Query_id','Match_length','e-value','%_iden
 'Q_end','S_start','S_end','Query_Coverage','Hit_Coverage','Query_n_TMS','Hit_n_TMS','TM_Overlap_Score','Family_Abrv'
 ,'Predicted_Substrate','Query_Pfam','Subject_Pfam']]
 
+multi_df = df[['Hit_xid', '#Query_id', 'Hit_tcid', 'Match_length', 'e-value', '%_identity', 'Query_Length', 'Hit_Length', 'Q_start',
+               'Q_end', 'S_start', 'S_end', 'Query_Coverage', 'Hit_Coverage', 'Query_n_TMS', 'Hit_n_TMS', 'TM_Overlap_Score', 'Family_Abrv',
+               'Predicted_Substrate', 'Query_Pfam', 'Subject_Pfam']]
+
+for index, row in multi_df.iterrows():
+    multi_df.at[index, 'Hit_xid'] = row['Hit_tcid'] + '-' + row['Hit_xid']
+
+multi_df = multi_df.groupby('Hit_xid').first()
+
+multi_dict = multi_df.to_dict('index')
+
 df.to_csv('adj.csv', index=False)
 
 green = {}
@@ -362,9 +373,67 @@ def FindMembraneProtein(row,df):
     ##print(find_df)
     ##print(unfind_df)
     ##print(Final_return["Hit_xid"].tolist())
-    return(Final_return["Hit_xid"].tolist())  
+    return((Final_return['Hit_tcid'] + '-' + Final_return["Hit_xid"]).tolist())  
+
+    # return Final_return.to_dict()
     ##final_df = pd.concat([df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
 
+def multicomp_decision(tcdb_proteins, genome_missing_proteins, membrane_proteins):
+    tcid = tcdb_proteins[0].split('-')[0]
+    # max_protein = {'Protein': 0}
+    # temp_key = 'Protein'
+    # for protein in tcdb_proteins:
+    #     curr_row = pd.DataFrame([multi_dict[protein]])
+    #     ttms = int(row.get(key='Hit_n_TMS'))
+    #     if ttms > max_protein[temp_key]:
+    #         max_protein = {protein: ttms}
+    #         temp_key = protein
+        
+
+    # check to see how many missing comps and what is missing
+    num_membrane_proteins = len(membrane_proteins)
+    if num_membrane_proteins == 0:
+        return 'No membrane proteins'
+    
+    membrane_accessions = []
+    for i in range(0, num_membrane_proteins):
+        if '-' in membrane_proteins[i]:
+            accession = membrane_proteins[i].split('-')[1]
+            membrane_accessions.append(accession)
+        else:
+            accession = membrane_proteins[i]
+            membrane_accessions.append(accession)
+
+    # for i in range(0, membrane_accessions):
+    #     if membrane_accessions[i] in genome_missing_proteins:
+    #         num_membrane_proteins -= 1
+    genome_membrane_accessions = []
+    for protein in membrane_accessions:
+        if protein not in genome_missing_proteins:
+            genome_membrane_accessions.append(protein)
+
+    num_membrane_proteins = len(genome_membrane_accessions)            
+
+    if num_membrane_proteins == 0:
+        return 'red'
+    
+    for protein in genome_membrane_accessions:
+        key = tcid + '-' + protein
+        curr_row = pd.DataFrame([multi_dict[key]])
+        if tm_overlap_decision(curr_row) == True:
+            return 'yellow'
+    
+    return 'red'
+
+    # protein_tmoverlap_dict = {}
+    # # collect the tms overlap score for all the proteins 
+    # # PRECONDITION: all proteins here are in the genome
+    # for protein in membrane_proteins:
+    #     curr_row = pd.DataFrame([multi_dict[protein]])
+    #     protein_tmoverlap_dict[protein] = {'overlap_percent': overlap_percent(curr_row)}
+
+
+    # return 'red'
 
 def isMultiComp(row,df,input):
     if isSingleComp(row):
@@ -384,6 +453,8 @@ def isMultiComp(row,df,input):
 
     fusions = ''
     id = row['#Query_id']
+    if id == 'YP_500900.1':
+        print('here')
     tcdb_tms = row['Hit_n_TMS']
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
         #print(tc_arr)
@@ -398,17 +469,18 @@ def isMultiComp(row,df,input):
                     "isFusion":len(Fusion_Add)>0})
 
     MembraneProteins= FindMembraneProtein(row, df)
+    decision = multicomp_decision(tc_arr, tc_missing_arr, MembraneProteins)
     # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
     if(input*len(tc_all_arr)<=len(tc_filter_arr)) or len(set(MembraneProteins) & set(tc_filter_arr))>0:
         ##given some proteins can be found while containing the membrane proteins 
-       if(eVal(row) <= float("1e-3") and  len(Fusion_Add)!=0 ):
-            #print("Yellow")
-            return({"color":"Yellow",
-                    "Found_proteins":tc_filter_arr,
-                    "All_proteins":tc_arr,
-                    'Missing_proteins':tc_missing_arr,
-                    "Fusion_results":Fusion_Add,
-                    "isFusion":len(Fusion_Add)>0})
+       if final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'green' or final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'yellow':
+            if decision == 'yellow' or decision == 'No membrane proteins':
+                return({"color":"Yellow",
+                        "Found_proteins":tc_filter_arr,
+                        "All_proteins":tc_arr,
+                        'Missing_proteins':tc_missing_arr,
+                        "Fusion_results":Fusion_Add,
+                        "isFusion":len(Fusion_Add)>0})
 
 
     return({"color":"Red",
