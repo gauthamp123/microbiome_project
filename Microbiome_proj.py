@@ -1,16 +1,25 @@
 # Take the results.tsv file and parse it
+import argparse
 import pandas as pd
 import csv
 import numpy as np
 import os
 import re
+import pickle as pic
 # from fusion_distribution import isFusion,geneFusions
 # from fusion_dist_dir import isFusion,genDict
 from fusion import isFusion, geneFusions, genDict
 from parseXML import parse
 from pprint import pprint
 
-GENOME = 'GCF_001865765.1'  # we can make this a command line argument
+parser = argparse.ArgumentParser(description='genome.')
+parser.add_argument('--genome', type=str, default='GCF_009648975.1', help='Genome ID')
+args = parser.parse_args()
+if not os.path.exists(args.genome):
+    print(f"Genome folder not found: {args.genome}")
+    exit()
+
+GENOME = args.genome  # we can make this a command line argument
 TMS_THRESH_GREEN = 0.8
 TMS_THRESH_YELLOW = 0.5
 EXCELLENT_EVAL = 1e-30
@@ -20,8 +29,8 @@ Q_COV_THRESH = 80
 S_COV_THRESH = 80
 LOW_COV = 50
 AUTO_RED = 20
-
-
+Membraneprotein_threshold=3
+Hit_TMS_Diff= 2
 # construct df with all data from results.tsv
 df = pd.read_table(GENOME + '/results.tsv')
 # print columns of df for dev use in constructing filtered_df later
@@ -132,19 +141,51 @@ def overlap_percent(row):
     return overlap_percent
 
 
-def assign_if_fusion(fusions):
-    return
+def assign_if_fusion(fusions, tcdb_tms):
+    # need to check that the combined tms count from all fusions meets threshold if ritvik can add to output
+    tot_cov = 0
+    tot_tmoverlap = 0
+    for i in range(0, len(fusions)):
+        tot_cov = fusions[0]['send'] - fusions[0]['sstart']
+        for i in range(1, len(fusions)):
+            start = 0
+            end = fusions[i]['send'] 
+            if fusions[i]['sstart'] < fusions[i-1]['send']:
+                start = fusions[i-1]['send']
+            else:
+                start = fusions[i]['sstart']
+            
+            if fusions[i]['sstart'] <= fusions[i-1]['sstart'] and fusions[i]['send'] <= fusions[i-1]['send']:
+                return 'yellow'
+
+            tot_cov += end - start
+    
+    if tcdb_tms == 0:
+        tot_tmoverlap = 1
+    else:
+        tot_tmoverlap = float(tot_tmoverlap / tcdb_tms)
+
+    tot_cov = float(tot_cov / fusions[0]['hit_length']) * 100
+        
+
+    if tot_cov >= S_COV_THRESH and tot_tmoverlap >= TMS_THRESH_GREEN:
+        return 'green'
+    elif tot_cov >= LOW_COV:
+        return 'yellow'
+    else:
+        return 'red'
+    
 
 
-def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, max_tms):
-    # automatic green if e-val is 0 or extremely good with okay coverage
-    if (eval == 0.0 or eval <= EXCELLENT_EVAL) and (qcov > LOW_COV and scov > LOW_COV):
+def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
+    # automatic green if e-val is 0 or extremely good with okay coverage and matching pfam
+    if (eval == 0.0 or eval <= EXCELLENT_EVAL) and (qcov > LOW_COV and scov > LOW_COV) and len(pfam_doms) > 0:
         return 'green'
     # if coverage is less than a very low number it is impossible for it to be a good hit
     if qcov <= AUTO_RED or scov <= AUTO_RED:
         return 'red'
     # if there are less than 3 tms, there is a possiblity of mischaracterizing tms regions
-    if max_tms > 3:
+    if tcdb_tms > 3:
         # if cov is too low it is automatically red
         if qcov < LOW_COV or scov < LOW_COV:
             return 'red'
@@ -160,27 +201,39 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, max_tms):
         # okay e value, common doms, has good coverage or there is a high tms overlap means good hit
         if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
             return 'green'
+        # great e-val no matching pfam domains but has goood coverage or good tmoverlap its a good hit
+        if eval <= E_VAL_GREEN and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_GREEN):
+            return 'green'
+        # if there is a fusion found we need to do further analysis
+        if len(fusions) > 0:
+            return 'fusion found'
         # ok e-val, no common doms, has good coverage or there is a good tms overlap means yellow hit
         if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
             return 'yellow'
-        # okay e val, and com dom tms overlap too low but the coverage is not too terrible > 50% its a yellow hit
-        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov > LOW_COV or scov > LOW_COV):
+        # okay e val, and com dom tms overlap is good and the coverage is not too terrible > 50% its a yellow hit
+        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov > LOW_COV or scov > LOW_COV) and tmoverlap >= TMS_THRESH_YELLOW:
             return 'yellow'
         # if low e-val, has low coverage and there are low tms overlap
         if eval <= E_VAL_YELLOW and (qcov < LOW_COV or scov < LOW_COV) and tmoverlap < TMS_THRESH_YELLOW:
             return 'red'
     else: # considering possibility of mischaracterization of tms
         # is a fusion candidate, has great e value and has good cov is good hit
-        if fusions and eval <= E_VAL_GREEN and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and len(pfam_doms) > 0:
-            return 'green' 
-        # has ok e value, common doms match, good cov is good hit
-        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH):
+        if eval <= E_VAL_GREEN and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and len(pfam_doms) > 0:
             return 'green'
         # good e value, common doms match, good cov is good hit
         if eval <= E_VAL_GREEN and len(pfam_doms) > 0 and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH):
             return 'green'
+        # has ok e value, common doms match, good cov is good hit
+        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov >= LOW_COV and scov >= LOW_COV):
+            return 'green'
+        # great e-val no matching pfam domains but has goood coverage or good tmoverlap its a good hit
+        if eval <= E_VAL_GREEN and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_GREEN):
+            return 'green'
+        # if there is a fusion found we need to do further analysis
+        if len(fusions) > 0:
+            return 'fusion found'
         # is fusion, ok e value and good coverage but not good tms overlap
-        if fusions and eval <= E_VAL_YELLOW and qcov >= Q_COV_THRESH and scov >= S_COV_THRESH:
+        if eval <= E_VAL_YELLOW and qcov >= Q_COV_THRESH and scov >= S_COV_THRESH:
             return 'yellow'
         # great e val, and com dom but not good coverage is yellow hit
         if eval <= E_VAL_GREEN and len(pfam_doms) > 0:
@@ -193,6 +246,13 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, max_tms):
             return 'yellow'
         
     return 'red'
+
+def final_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
+    decision = make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms)
+    if decision == 'fusion found':
+        return assign_if_fusion(fusions, tcdb_tms)
+    else:
+        return decision
 
 parseTCDBcontent()
 
@@ -208,7 +268,6 @@ def isSingleComp(row):
     
 def categorizeSingleComp(row):
     # check if it is a fusion
-    fusions_found = False
     row_to_write = row.tolist()
     sortedGeneArr = []
     fusions = ''
@@ -217,27 +276,24 @@ def categorizeSingleComp(row):
         sortedGeneArr = sorted(fusion_results, key=lambda x: x['sstart'])
         if(len(isFusion(sortedGeneArr))!=0):
             sortedGeneArr = isFusion(sortedGeneArr)
-            fusions_found = True
             for k in range(0, len(sortedGeneArr)):
                 fusions += sortedGeneArr[k]['query'] + ' '
                 
             row_to_write.append(fusions)
         else:
-            fusions_found = False
             row_to_write.append(fusions)
     else:
-        fusions_found = False
         row_to_write.append(fusions)
     
-    if row['#Query_id'] == 'WP_014400925.1':
+    if row['#Query_id'] == 'WP_013242732.1':
         print('start debugging')
 
-    max_tms = max(row['Query_n_TMS'], row['Hit_n_TMS'])
+    tcdb_tms = row['Hit_n_TMS']
 
-    if make_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), fusions_found, overlap_percent(row), max_tms) == 'green':
+    if final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'green':
         green[row.get(key='#Query_id')] = row_to_write
         return ('Green', row_to_write)
-    elif make_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), fusions_found, overlap_percent(row), max_tms) == 'yellow':
+    elif final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'yellow':
         yellow[row.get(key='#Query_id')] = row_to_write
         return ('Yellow', row_to_write)
     else:
@@ -246,7 +302,17 @@ def categorizeSingleComp(row):
     
 
     
-with open('hmmtop.out') as f:
+##with open('hmmtop.out') as f:
+hmmtop_path=GENOME+ "/hmmtop.out"
+hmmtop_path_db= GENOME + "/hmmtop.db" 
+##Test db file
+with open(hmmtop_path_db, "rb") as file:
+        
+        db_data = pic.load(file)
+        print(type(db_data))
+        csv_file_path = "hmmtop_test_db.csv"  
+        pd.DataFrame.from_dict(db_data).to_csv(csv_file_path, index=False)
+with open(hmmtop_path) as f:
     lines = f.readlines()
     hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
     ##Create a dataframe that include above columns 
@@ -259,6 +325,7 @@ with open('hmmtop.out') as f:
     hmmtop_df['Hit_n_TMS'] = hmmtop_df['Hit_n_TMS'].astype(int)
 
 def FindMembraneProtein(row,df):
+
     if isSingleComp(row): ##get rid of single comp system first
         return ([])
     tcid = row["Hit_tcid"]
@@ -281,13 +348,13 @@ def FindMembraneProtein(row,df):
         if str(find_df['Hit_n_TMS'].unique()[0]) == str(unfind_df['Hit_n_TMS'].unique()[0]):
            
             return (tc_all_arr)
-    Found_arr_gblast = find_df[(find_df['Hit_n_TMS'] >= 3) & (abs(find_df['Hit_n_TMS'] - find_df['Query_n_TMS']) <= 2)]["Hit_xid"].tolist()
+    Found_arr_gblast = find_df[(find_df['Hit_n_TMS'] >= Membraneprotein_threshold) & (abs(find_df['Hit_n_TMS'] - find_df['Query_n_TMS']) <= Hit_TMS_Diff)]["Hit_xid"].tolist()
     ##If there are proteins that has Hit TMS >=3 and difference with its query TMS <=2, we say it's membrane proteins
     tcdb_arr= Found_arr_gblast +tc_Notfind_arr##This arr contains the possible output proteins 
     if len(tcdb_arr)==0:
         return([])
     tcdb_df = pd.concat([hmmtop_df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}'") for arr in tcdb_arr])
-    Final_return = tcdb_df[(tcdb_df['Hit_n_TMS']>= 3)]  
+    Final_return = tcdb_df[(tcdb_df['Hit_n_TMS']>= Membraneprotein_threshold)]  
     ##print(tc_all_arr)
     ##print(find_df)
     ##print(unfind_df)
@@ -312,7 +379,8 @@ def isMultiComp(row,df,input):
     tc_missing_arr= list(set(tc_all_arr) - set(tc_filter_arr))
 
     fusions = ''
-    if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
+    MembraneProteins= FindMembraneProtein(row, df)
+    if(set(tc_all_arr)==set(tc_filter_arr) and len(set(MembraneProteins))> 0):##If all the proteins in that system can be found, then green
         #print(tc_arr)
         #print("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
        
@@ -324,11 +392,11 @@ def isMultiComp(row,df,input):
                     "Fusion_results":Fusion_Add,
                     "isFusion":len(Fusion_Add)>0})
 
-    MembraneProteins= FindMembraneProtein(row, df)
+    
     # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
     if(input*len(tc_all_arr)<=len(tc_filter_arr)) or len(set(MembraneProteins) & set(tc_filter_arr))>0:
         ##given some proteins can be found while containing the membrane proteins 
-       if(eVal(row) <= float("1e-3") and  len(Fusion_Add)!=0 ):
+       if(eVal(row) <= E_VAL_YELLOW and  len(Fusion_Add)!=0 ):
             #print("Yellow")
             return({"color":"Yellow",
                     "Found_proteins":tc_filter_arr,
