@@ -38,7 +38,7 @@ if os.path.exists(TCDB_seqs):
 os.mkdir(TCDB_seqs)
 data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
 hit_tcid_array = data['Hit_tcid'].unique()
-command_1=[f"extractFamily.pl -i {tcid} -o tcdb_seqs" for tcid in hit_tcid_array]
+command_1=[f"extractTCDB.pl -i {tcid} -o {args.genome}/tcdb_seqs -f fasta" for tcid in hit_tcid_array]
 joined_commands = ';'.join(command_1)
 
 execute_command(joined_commands)

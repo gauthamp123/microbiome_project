@@ -6,6 +6,7 @@ import numpy as np
 import os
 import re
 import pickle as pic
+import subprocess
 # from fusion_distribution import isFusion,geneFusions
 # from fusion_dist_dir import isFusion,genDict
 from fusion import isFusion, geneFusions, genDict
@@ -304,14 +305,42 @@ def categorizeSingleComp(row):
     
 ##with open('hmmtop.out') as f:
 hmmtop_path=GENOME+ "/hmmtop.out"
-hmmtop_path_db= GENOME + "/hmmtop.db" 
 ##Test db file
+'''
 with open(hmmtop_path_db, "rb") as file:
         
         db_data = pic.load(file)
         print(type(db_data))
         csv_file_path = "hmmtop_test_db.csv"  
         pd.DataFrame.from_dict(db_data).to_csv(csv_file_path, index=False)
+'''
+def execute_command(command):
+    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    while True:
+        output = process.stdout.readline()
+        if output == '' and process.poll() is not None:
+            break
+        if output:
+            print(output.strip())
+    process.wait()
+    if process.returncode == 0:
+        print(f"command'{command}'success")
+    else:
+        print(f"command'{command}'fail")
+        
+if not os.path.exists(hmmtop_path):
+  TCDB_seqs =args.genome + "/tcdb_seqs"
+  if os.path.exists(TCDB_seqs):
+      os.system(f"rm -r {TCDB_seqs}")
+  os.mkdir(TCDB_seqs)
+  data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
+  hit_tcid_array = data['Hit_tcid'].unique()
+  command_1=[f"extractTCDB.pl -i {tcid} -o {args.genome}/tcdb_seqs -f fasta" for tcid in hit_tcid_array]
+  joined_commands = ';'.join(command_1)
+  execute_command(joined_commands)
+  command2=f"cd {args.genome};rm -f all.faa;cat tcdb_seqs/*faa >> all.faa &&hmmtop -if=all.faa -of=hmmtop.out -sf=FAS -pi=spred -is=pseudo"
+  execute_command(command2)
+  
 with open(hmmtop_path) as f:
     lines = f.readlines()
     hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
