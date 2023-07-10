@@ -13,6 +13,7 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
 
     # Extracts all query data and target data from hmmtop file
     query_data = data['queries']
+  
     target_data = {}
     for key in data['tcdb']:
 
@@ -75,7 +76,7 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
                         ttms['tms'] = list(target_data[target_id].values())
                         if target_id not in hmmTopDict:
                             hmmTopDict[target_id] = ttms
-
+                    #print(target_data)
         # there are some keys in df that are not in query or target data what to do about those?
 
     overlap_dict = overlapDict(mmseqsDict, hmmTopDict, minRes)

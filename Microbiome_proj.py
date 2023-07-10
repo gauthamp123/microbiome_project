@@ -1,16 +1,30 @@
 # Take the results.tsv file and parse it
+import argparse
 import pandas as pd
 import csv
 import numpy as np
 import os
 import re
+import pickle as pic
+import subprocess
 # from fusion_distribution import isFusion,geneFusions
 # from fusion_dist_dir import isFusion,genDict
 from fusion import isFusion, geneFusions, genDict
 from parseXML import parse
 from pprint import pprint
 
+<<<<<<< HEAD
 GENOME = 'MicrobiomeResults/GCF_000013425.1'  # we can make this a command line argument
+=======
+parser = argparse.ArgumentParser(description='genome.')
+parser.add_argument('--genome', type=str, default='GCF_009648975.1', help='Genome ID')
+args = parser.parse_args()
+if not os.path.exists(args.genome):
+    print(f"Genome folder not found: {args.genome}")
+    exit()
+
+GENOME = args.genome  # we can make this a command line argument
+>>>>>>> origin/Clark_new
 TMS_THRESH_GREEN = 0.8
 TMS_THRESH_YELLOW = 0.5
 EXCELLENT_EVAL = 1e-30
@@ -20,8 +34,8 @@ Q_COV_THRESH = 80
 S_COV_THRESH = 80
 LOW_COV = 50
 AUTO_RED = 20
-
-
+Membraneprotein_threshold=3
+Hit_TMS_Diff= 2
 # construct df with all data from results.tsv
 df = pd.read_table(GENOME + '/results.tsv')
 # print columns of df for dev use in constructing filtered_df later
@@ -233,8 +247,13 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
         # if there is a fusion found we need to do further analysis
         if len(fusions) > 0:
             return 'fusion found'
+<<<<<<< HEAD
         # ok e-val, no common doms, has good coverage and there is a ok tms overlap means yellow hit
         if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and tmoverlap >= TMS_THRESH_YELLOW):
+=======
+        # ok e-val, no common doms, has good coverage or there is a good tms overlap means yellow hit
+        if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
+>>>>>>> origin/Clark_new
             return 'yellow'
         # okay e val, and com dom tms overlap is good and the coverage is not too terrible > 50% its a yellow hit
         if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov > LOW_COV or scov > LOW_COV) and tmoverlap >= TMS_THRESH_YELLOW:
@@ -310,6 +329,11 @@ def categorizeSingleComp(row):
     else:
         row_to_write.append(fusions)
     
+<<<<<<< HEAD
+=======
+    if row['#Query_id'] == 'WP_013242732.1':
+        print('start debugging')
+>>>>>>> origin/Clark_new
 
     tcdb_tms = row['Hit_n_TMS']
 
@@ -325,7 +349,45 @@ def categorizeSingleComp(row):
     
 
     
-with open('hmmtop.out') as f:
+##with open('hmmtop.out') as f:
+hmmtop_path=GENOME+ "/hmmtop.out"
+##Test db file
+'''
+with open(hmmtop_path_db, "rb") as file:
+        
+        db_data = pic.load(file)
+        print(type(db_data))
+        csv_file_path = "hmmtop_test_db.csv"  
+        pd.DataFrame.from_dict(db_data).to_csv(csv_file_path, index=False)
+'''
+def execute_command(command):
+    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    while True:
+        output = process.stdout.readline()
+        if output == '' and process.poll() is not None:
+            break
+        if output:
+            print(output.strip())
+    process.wait()
+    if process.returncode == 0:
+        print(f"command'{command}'success")
+    else:
+        print(f"command'{command}'fail")
+        
+if not os.path.exists(hmmtop_path):
+  TCDB_seqs =args.genome + "/tcdb_seqs"
+  if os.path.exists(TCDB_seqs):
+      os.system(f"rm -r {TCDB_seqs}")
+  os.mkdir(TCDB_seqs)
+  data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
+  hit_tcid_array = data['Hit_tcid'].unique()
+  command_1=[f"extractTCDB.pl -i {tcid} -o {args.genome}/tcdb_seqs -f fasta" for tcid in hit_tcid_array]
+  joined_commands = ';'.join(command_1)
+  execute_command(joined_commands)
+  command2=f"cd {args.genome};rm -f all.faa;cat tcdb_seqs/*faa >> all.faa &&hmmtop -if=all.faa -of=hmmtop.out -sf=FAS -pi=spred -is=pseudo"
+  execute_command(command2)
+  
+with open(hmmtop_path) as f:
     lines = f.readlines()
     hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
     ##Create a dataframe that include above columns 
@@ -340,6 +402,7 @@ with open('hmmtop.out') as f:
 # returns empty list when there are no membrane proteins found. 
 # otherwise returns list of membrane protein accessions.
 def FindMembraneProtein(row,df):
+
     if isSingleComp(row): ##get rid of single comp system first
         return ([])
     tcid = row["Hit_tcid"]
@@ -362,13 +425,13 @@ def FindMembraneProtein(row,df):
         if str(find_df['Hit_n_TMS'].unique()[0]) == str(unfind_df['Hit_n_TMS'].unique()[0]):
            
             return (tc_all_arr)
-    Found_arr_gblast = find_df[(find_df['Hit_n_TMS'] >= 3) & (abs(find_df['Hit_n_TMS'] - find_df['Query_n_TMS']) <= 2)]["Hit_xid"].tolist()
+    Found_arr_gblast = find_df[(find_df['Hit_n_TMS'] >= Membraneprotein_threshold) & (abs(find_df['Hit_n_TMS'] - find_df['Query_n_TMS']) <= Hit_TMS_Diff)]["Hit_xid"].tolist()
     ##If there are proteins that has Hit TMS >=3 and difference with its query TMS <=2, we say it's membrane proteins
     tcdb_arr= Found_arr_gblast +tc_Notfind_arr##This arr contains the possible output proteins 
     if len(tcdb_arr)==0:
         return([])
     tcdb_df = pd.concat([hmmtop_df.query(f"Hit_xid=='{arr}' and Hit_tcid=='{tcid}'") for arr in tcdb_arr])
-    Final_return = tcdb_df[(tcdb_df['Hit_n_TMS']>= 3)]  
+    Final_return = tcdb_df[(tcdb_df['Hit_n_TMS']>= Membraneprotein_threshold)]  
     ##print(tc_all_arr)
     ##print(find_df)
     ##print(unfind_df)
@@ -479,12 +542,18 @@ def isMultiComp(row,df,input):
     tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
     tc_missing_arr= list(set(tc_all_arr) - set(tc_filter_arr))
 
+<<<<<<< HEAD
     fusions = '' 
     id = row['#Query_id']
     if id == 'YP_499905.1':
         print('here')
     tcdb_tms = row['Hit_n_TMS']
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
+=======
+    fusions = ''
+    MembraneProteins= FindMembraneProtein(row, df)
+    if(set(tc_all_arr)==set(tc_filter_arr) and len(set(MembraneProteins))> 0):##If all the proteins in that system can be found, then green
+>>>>>>> origin/Clark_new
         #print(tc_arr)
         #print("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
        
@@ -496,6 +565,7 @@ def isMultiComp(row,df,input):
                     "Fusion_results":Fusion_Add,
                     "isFusion":len(Fusion_Add)>0})
 
+<<<<<<< HEAD
     MembraneProteins= FindMembraneProtein(row, df)
     count_mem = 0
     if len(MembraneProteins) > 0 or not isEmpty(MembraneProteins):
@@ -509,9 +579,13 @@ def isMultiComp(row,df,input):
                 count_mem += 1
     # temp = isEmpty(MembraneProteins)
     decision = multicomp_decision(tc_arr, tc_missing_arr, MembraneProteins, tc_filter_arr)
+=======
+    
+>>>>>>> origin/Clark_new
     # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
     if (len(MembraneProteins) > 0 and input <= float(count_mem / len(MembraneProteins))) or (len(set(tc_filter_arr))>0 and isEmpty(MembraneProteins)):
         ##given some proteins can be found while containing the membrane proteins 
+<<<<<<< HEAD
        if final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'green' or final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'yellow':
             if decision == 'yellow' or decision == 'No membrane proteins':
                 return({"color":"Yellow",
@@ -520,6 +594,16 @@ def isMultiComp(row,df,input):
                         'Missing_proteins':tc_missing_arr,
                         "Fusion_results":Fusion_Add,
                         "isFusion":len(Fusion_Add)>0})
+=======
+       if(eVal(row) <= E_VAL_YELLOW and  len(Fusion_Add)!=0 ):
+            #print("Yellow")
+            return({"color":"Yellow",
+                    "Found_proteins":tc_filter_arr,
+                    "All_proteins":tc_arr,
+                    'Missing_proteins':tc_missing_arr,
+                    "Fusion_results":Fusion_Add,
+                    "isFusion":len(Fusion_Add)>0})
+>>>>>>> origin/Clark_new
 
 
     return({"color":"Red",
