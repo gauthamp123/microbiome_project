@@ -373,44 +373,72 @@ def FindMembraneProtein(row,df):
     ##print(find_df)
     ##print(unfind_df)
     ##print(Final_return["Hit_xid"].tolist())
-    return((Final_return['Hit_tcid'] + '-' + Final_return["Hit_xid"]).tolist())  
+    # return((Final_return['Hit_tcid'] + '-' + Final_return["Hit_xid"]).tolist())  
 
-    # return Final_return.to_dict()
+    return Final_return.to_dict()
     ##final_df = pd.concat([df.query(f"Hit_xid=='{arr}'") for arr in tc_filter_arr])
 
-def multicomp_decision(tcdb_proteins, genome_missing_proteins, membrane_proteins):
-    tcid = tcdb_proteins[0].split('-')[0]
-    # max_protein = {'Protein': 0}
-    # temp_key = 'Protein'
-    # for protein in tcdb_proteins:
-    #     curr_row = pd.DataFrame([multi_dict[protein]])
-    #     ttms = int(row.get(key='Hit_n_TMS'))
-    #     if ttms > max_protein[temp_key]:
-    #         max_protein = {protein: ttms}
-    #         temp_key = protein
-        
+def isEmpty(dict):
+    if type(dict) is list:
+        return len(dict) == 0
+    count = 0
+    for key in dict:
+        if not bool(dict[key]):
+            count += 1
+    
+    return count == 4
 
-    # check to see how many missing comps and what is missing
-    num_membrane_proteins = len(membrane_proteins)
-    if num_membrane_proteins == 0:
+def multicomp_decision(tcdb_proteins, genome_missing_proteins, mem_dict, tc_filter_arr):
+
+    max_tms = 0
+    tcid = tcdb_proteins[0].split('-')[0]
+    if isEmpty(mem_dict) or len(mem_dict) == 0:
         return 'No membrane proteins'
     
-    membrane_accessions = []
-    for i in range(0, num_membrane_proteins):
-        if '-' in membrane_proteins[i]:
-            accession = membrane_proteins[i].split('-')[1]
-            membrane_accessions.append(accession)
-        else:
-            accession = membrane_proteins[i]
-            membrane_accessions.append(accession)
+    membrane_protein_tms = {}
+
+    membrane_proteins = []
+    if type(mem_dict) is list:
+        membrane_proteins = mem_dict
+    else:
+        membrane_proteins_accessions = list(mem_dict["Hit_xid"].values())
+        membrane_proteins_tcids = list(mem_dict["Hit_tcid"].values())
+        membrane_tmss = list(mem_dict["Hit_n_TMS"].values())
+
+        for i in range(0, len(membrane_proteins_accessions)):
+            protein = membrane_proteins_tcids[i] + '-' + membrane_proteins_accessions[i]
+            membrane_proteins.append(protein)
+            membrane_protein_tms[protein] = membrane_tmss[i]
+        
+        # sorts the dictionary based on ascending tms values
+        membrane_protein_tms = {k: membrane_protein_tms[k] for k in sorted(membrane_protein_tms, key=membrane_protein_tms.get, reverse=True)}
+        for key in membrane_protein_tms:
+            max_tms = membrane_protein_tms[key]
+            break
+
+    if max_tms <= 2:
+        return 'red'
+    # membrane_accessions = []
+    # num_membrane_proteins = len(membrane_proteins)
+    # for protein in genome_missing_proteins:
+    #     key = tcid + '-' + protein
+    #     if key in membrane_protein_tms:
+    #         membrane_protein_tms.pop(key)
+    #         num_membrane_proteins -= 1
+
+    # for i in range(0, num_membrane_proteins):
+    #     if '-' in membrane_proteins[i]:
+    #         accession = membrane_proteins[i].split('-')[1]
+    #         membrane_accessions.append(accession)
+    #         membrane_protein_tms.pop(membrane_proteins[i])
+    #     else:
+    #         accession = membrane_proteins[i]
+    #         membrane_accessions.append(accession)
 
     # for i in range(0, membrane_accessions):
     #     if membrane_accessions[i] in genome_missing_proteins:
     #         num_membrane_proteins -= 1
-    genome_membrane_accessions = []
-    for protein in membrane_accessions:
-        if protein not in genome_missing_proteins:
-            genome_membrane_accessions.append(protein)
+    genome_membrane_accessions = tc_filter_arr
 
     num_membrane_proteins = len(genome_membrane_accessions)            
 
@@ -419,10 +447,10 @@ def multicomp_decision(tcdb_proteins, genome_missing_proteins, membrane_proteins
     
     for protein in genome_membrane_accessions:
         key = tcid + '-' + protein
-        curr_row = pd.DataFrame([multi_dict[key]])
-        if tm_overlap_decision(curr_row) == True:
-            return 'yellow'
-    
+        if key in membrane_protein_tms:
+            if max_tms - membrane_protein_tms[key] < 2:
+                return 'yellow'
+        
     return 'red'
 
     # protein_tmoverlap_dict = {}
@@ -451,9 +479,9 @@ def isMultiComp(row,df,input):
     tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
     tc_missing_arr= list(set(tc_all_arr) - set(tc_filter_arr))
 
-    fusions = ''
+    fusions = '' 
     id = row['#Query_id']
-    if id == 'YP_500900.1':
+    if id == 'YP_499905.1':
         print('here')
     tcdb_tms = row['Hit_n_TMS']
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
@@ -469,9 +497,20 @@ def isMultiComp(row,df,input):
                     "isFusion":len(Fusion_Add)>0})
 
     MembraneProteins= FindMembraneProtein(row, df)
-    decision = multicomp_decision(tc_arr, tc_missing_arr, MembraneProteins)
+    count_mem = 0
+    if len(MembraneProteins) > 0 or not isEmpty(MembraneProteins):
+        if type(MembraneProteins) is not list:
+            mem_proteins = list(MembraneProteins['Hit_xid'].values())
+        else:
+            mem_proteins = MembraneProteins
+
+        for p in mem_proteins:
+            if p in tc_filter_arr:
+                count_mem += 1
+    # temp = isEmpty(MembraneProteins)
+    decision = multicomp_decision(tc_arr, tc_missing_arr, MembraneProteins, tc_filter_arr)
     # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
-    if(input*len(tc_all_arr)<=len(tc_filter_arr)) or len(set(MembraneProteins) & set(tc_filter_arr))>0:
+    if (len(MembraneProteins) > 0 and input <= float(count_mem / len(MembraneProteins))) or (len(set(tc_filter_arr))>0 and isEmpty(MembraneProteins)):
         ##given some proteins can be found while containing the membrane proteins 
        if final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'green' or final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'yellow':
             if decision == 'yellow' or decision == 'No membrane proteins':
