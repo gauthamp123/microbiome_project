@@ -1,6 +1,7 @@
 # Take the results.tsv file and parse it
 import argparse
 import pandas as pd
+pd.options.mode.chained_assignment = None  # default='warn'
 import csv
 import numpy as np
 import os
@@ -480,7 +481,7 @@ def Write_multicomp(Output_dict,Output_df_row):
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
         Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
-
+    
     for hit_xid in Output_dict['Missing_proteins']:
         _Intermediate=Output_df_row.copy()
         _Intermediate=_Intermediate.applymap(lambda x: 'NA')
@@ -517,11 +518,14 @@ def write_singlecomp(Output_dict,Output_df_row):
 
 
 geneFusions={}
+Missing_protein_list=[]
 genDict(geneFusions, df)
 
 for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
     if os.path.exists(filename):
         os.remove(filename)
+        
+
 for index, row in df.iterrows():
 
     single = isSingleComp(row)
@@ -534,6 +538,19 @@ for index, row in df.iterrows():
         write_singlecomp(output_dict, Output_df.loc[[index],Output_df.columns])
 
 
-    
+for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
+    if os.path.exists(filename):
+        df = pd.read_csv(filename, sep='\t')
+        df = df.fillna('NA')
+        NA_count = df.eq('NA').sum(axis=1).rename('NA_count')
+        df['na_sort'] = NA_count
+        df = df.sort_values(by=['Hit_tcid','na_sort']).drop(columns=['na_sort'])
+        mask = (df['#Query_id'] == 'NA') & (df['e-value'] == 'NA')
+        df_temp = df.loc[mask] 
+        df_temp.drop_duplicates(subset=['Hit_tcid',	'Hit_xid'], keep='first', inplace=True) 
+        df.loc[mask] = df_temp
+        df.dropna(inplace=True)
+        df.to_csv(filename, sep='\t', index=False)
+        
 
     #print(Output_dict)
