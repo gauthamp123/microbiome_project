@@ -13,9 +13,7 @@ from fusion import isFusion, geneFusions, genDict
 from parseXML import parse
 from pprint import pprint
 
-<<<<<<< HEAD
-GENOME = 'MicrobiomeResults/GCF_000013425.1'  # we can make this a command line argument
-=======
+# GENOME = 'MicrobiomeResults/GCF_000013425.1'  # we can make this a command line argument
 parser = argparse.ArgumentParser(description='genome.')
 parser.add_argument('--genome', type=str, default='GCF_009648975.1', help='Genome ID')
 args = parser.parse_args()
@@ -24,7 +22,6 @@ if not os.path.exists(args.genome):
     exit()
 
 GENOME = args.genome  # we can make this a command line argument
->>>>>>> origin/Clark_new
 TMS_THRESH_GREEN = 0.8
 TMS_THRESH_YELLOW = 0.5
 EXCELLENT_EVAL = 1e-30
@@ -247,13 +244,8 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
         # if there is a fusion found we need to do further analysis
         if len(fusions) > 0:
             return 'fusion found'
-<<<<<<< HEAD
-        # ok e-val, no common doms, has good coverage and there is a ok tms overlap means yellow hit
-        if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and tmoverlap >= TMS_THRESH_YELLOW):
-=======
         # ok e-val, no common doms, has good coverage or there is a good tms overlap means yellow hit
         if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
->>>>>>> origin/Clark_new
             return 'yellow'
         # okay e val, and com dom tms overlap is good and the coverage is not too terrible > 50% its a yellow hit
         if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov > LOW_COV or scov > LOW_COV) and tmoverlap >= TMS_THRESH_YELLOW:
@@ -329,11 +321,8 @@ def categorizeSingleComp(row):
     else:
         row_to_write.append(fusions)
     
-<<<<<<< HEAD
-=======
     if row['#Query_id'] == 'WP_013242732.1':
         print('start debugging')
->>>>>>> origin/Clark_new
 
     tcdb_tms = row['Hit_n_TMS']
 
@@ -375,18 +364,18 @@ def execute_command(command):
         print(f"command'{command}'fail")
         
 if not os.path.exists(hmmtop_path):
-  TCDB_seqs =args.genome + "/tcdb_seqs"
-  if os.path.exists(TCDB_seqs):
-      os.system(f"rm -r {TCDB_seqs}")
-  os.mkdir(TCDB_seqs)
-  data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
-  hit_tcid_array = data['Hit_tcid'].unique()
-  command_1=[f"extractTCDB.pl -i {tcid} -o {args.genome}/tcdb_seqs -f fasta" for tcid in hit_tcid_array]
-  joined_commands = ';'.join(command_1)
-  execute_command(joined_commands)
-  command2=f"cd {args.genome};rm -f all.faa;cat tcdb_seqs/*faa >> all.faa &&hmmtop -if=all.faa -of=hmmtop.out -sf=FAS -pi=spred -is=pseudo"
-  execute_command(command2)
-  
+    TCDB_seqs =args.genome + "/tcdb_seqs"
+    if os.path.exists(TCDB_seqs):
+        os.system(f"rm -r {TCDB_seqs}")
+    os.mkdir(TCDB_seqs)
+    data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
+    hit_tcid_array = data['Hit_tcid'].unique()
+    command_1=[f"extractTCDB.pl -i {tcid} -o {args.genome}/tcdb_seqs -f fasta" for tcid in hit_tcid_array]
+    joined_commands = ';'.join(command_1)
+    execute_command(joined_commands)
+    command2=f"cd {args.genome};rm -f all.faa;cat tcdb_seqs/*faa >> all.faa &&hmmtop -if=all.faa -of=hmmtop.out -sf=FAS -pi=spred -is=pseudo"
+    execute_command(command2)
+
 with open(hmmtop_path) as f:
     lines = f.readlines()
     hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
@@ -451,8 +440,7 @@ def isEmpty(dict):
     
     return count == 4
 
-def multicomp_decision(tcdb_proteins, genome_missing_proteins, mem_dict, tc_filter_arr):
-
+def multicomp_decision(tcdb_proteins, protein_type, mem_dict, tc_filter_arr):
     max_tms = 0
     tcid = tcdb_proteins[0].split('-')[0]
     if isEmpty(mem_dict) or len(mem_dict) == 0:
@@ -478,9 +466,10 @@ def multicomp_decision(tcdb_proteins, genome_missing_proteins, mem_dict, tc_filt
         for key in membrane_protein_tms:
             max_tms = membrane_protein_tms[key]
             break
-
-    if max_tms <= 2:
-        return 'red'
+    
+    # if beta barrell and most proteins are in the system should be yellow->green
+    if protein_type == 'B' and abs(len(tcdb_proteins) - len(tc_filter_arr)) <= 2:
+        return 'yellow->green'
     # membrane_accessions = []
     # num_membrane_proteins = len(membrane_proteins)
     # for protein in genome_missing_proteins:
@@ -542,18 +531,13 @@ def isMultiComp(row,df,input):
     tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
     tc_missing_arr= list(set(tc_all_arr) - set(tc_filter_arr))
 
-<<<<<<< HEAD
     fusions = '' 
     id = row['#Query_id']
-    if id == 'YP_499905.1':
+    protein_type = row['Hit_tcid'].split('.')[1]
+    if id == 'WP_100781695.1':
         print('here')
     tcdb_tms = row['Hit_n_TMS']
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
-=======
-    fusions = ''
-    MembraneProteins= FindMembraneProtein(row, df)
-    if(set(tc_all_arr)==set(tc_filter_arr) and len(set(MembraneProteins))> 0):##If all the proteins in that system can be found, then green
->>>>>>> origin/Clark_new
         #print(tc_arr)
         #print("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
        
@@ -563,29 +547,28 @@ def isMultiComp(row,df,input):
                     "All_proteins":tc_arr,
                     'Missing_proteins':tc_missing_arr,
                     "Fusion_results":Fusion_Add,
-                    "isFusion":len(Fusion_Add)>0})
+                    "isFusion":len(Fusion_Add)>0,
+                    "Initial_decision": 'green'})
 
-<<<<<<< HEAD
     MembraneProteins= FindMembraneProtein(row, df)
     count_mem = 0
+    total_tcmem = 0
     if len(MembraneProteins) > 0 or not isEmpty(MembraneProteins):
         if type(MembraneProteins) is not list:
             mem_proteins = list(MembraneProteins['Hit_xid'].values())
+            total_tcmem = len(mem_proteins)
         else:
             mem_proteins = MembraneProteins
+            total_tcmem = len(MembraneProteins)
 
         for p in mem_proteins:
             if p in tc_filter_arr:
                 count_mem += 1
     # temp = isEmpty(MembraneProteins)
-    decision = multicomp_decision(tc_arr, tc_missing_arr, MembraneProteins, tc_filter_arr)
-=======
-    
->>>>>>> origin/Clark_new
+    decision = multicomp_decision(tc_arr, protein_type, MembraneProteins, tc_filter_arr)
     # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
-    if (len(MembraneProteins) > 0 and input <= float(count_mem / len(MembraneProteins))) or (len(set(tc_filter_arr))>0 and isEmpty(MembraneProteins)):
+    if (total_tcmem > 0 and input <= float(count_mem / total_tcmem)) or (len(set(tc_filter_arr))>0 and isEmpty(MembraneProteins)):
         ##given some proteins can be found while containing the membrane proteins 
-<<<<<<< HEAD
        if final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'green' or final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'yellow':
             if decision == 'yellow' or decision == 'No membrane proteins':
                 return({"color":"Yellow",
@@ -593,17 +576,16 @@ def isMultiComp(row,df,input):
                         "All_proteins":tc_arr,
                         'Missing_proteins':tc_missing_arr,
                         "Fusion_results":Fusion_Add,
-                        "isFusion":len(Fusion_Add)>0})
-=======
-       if(eVal(row) <= E_VAL_YELLOW and  len(Fusion_Add)!=0 ):
-            #print("Yellow")
-            return({"color":"Yellow",
-                    "Found_proteins":tc_filter_arr,
-                    "All_proteins":tc_arr,
-                    'Missing_proteins':tc_missing_arr,
-                    "Fusion_results":Fusion_Add,
-                    "isFusion":len(Fusion_Add)>0})
->>>>>>> origin/Clark_new
+                        "isFusion":len(Fusion_Add)>0, 
+                        'Initial_decision': 'Yellow'})
+            elif decision == 'yellow->green':
+                return({"color":"Green",
+                        "Found_proteins":tc_filter_arr,
+                        "All_proteins":tc_arr,
+                        'Missing_proteins':tc_missing_arr,
+                        "Fusion_results":Fusion_Add,
+                        "isFusion":len(Fusion_Add)>0,
+                        'Initial_decision': 'Yellow'})
 
 
     return({"color":"Red",
@@ -611,7 +593,8 @@ def isMultiComp(row,df,input):
             "All_proteins":tc_arr,
             'Missing_proteins':tc_missing_arr,
             "Fusion_results":Fusion_Add,
-            "isFusion":len(Fusion_Add)>0})
+            "isFusion":len(Fusion_Add)>0,
+            'Initial_decision': 'Red'})
    
 
 
@@ -641,11 +624,18 @@ GREEN (Best hits)
    a) One protein has very low coverage (e.g. ~10%), there are no common domains AND there are no other proteins in the genome matching the same protein in TCDB.
 '''
 def Write_multicomp(Output_dict,Output_df_row): 
+    # if len(Output_dict['Missing_proteins']) != 0:
+    #     print('here')
     fusions = ''
     for fusion in Output_dict['Fusion_results']:
         fusions += fusion + ' '
-    Intermediate=Output_df_row.copy()
+    Intermediate = Output_df_row.copy()
     Intermediate['isFusion'] = fusions
+    if len(Output_dict['Missing_proteins']) == 0:
+        Intermediate['Missing_components'] = 'NA'
+    else:
+        Intermediate['Missing_components'] = str(Output_dict['Missing_proteins'])
+    Intermediate['Initial_decision'] = Output_dict['Initial_decision']
     filename=f"{Output_dict['color']}.tsv"
     filemode='a' if os.path.exists(filename) else 'w' 
     #print(Intermediate)
@@ -653,16 +643,15 @@ def Write_multicomp(Output_dict,Output_df_row):
         Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
 
     for hit_xid in Output_dict['Missing_proteins']:
-        _Intermediate=Output_df_row.copy()
-        _Intermediate=_Intermediate.applymap(lambda x: 'NA')
-        #print(_Intermediate)
+        _Intermediate = Output_df_row.copy()
+        _Intermediate = _Intermediate.applymap(lambda x: 'NA')
 
-        _Intermediate["Hit_tcid"]=Output_df_row["Hit_tcid"]
-        _Intermediate["Hit_xid"]=hit_xid
-        Missing_infor = hmmtop_df.loc[(hmmtop_df['Hit_xid'] ==  hit_xid)]   # issue here
+        _Intermediate["Hit_tcid"] = Output_df_row["Hit_tcid"]
+        _Intermediate["Hit_xid"] = hit_xid
+        Missing_infor = hmmtop_df.loc[hmmtop_df['Hit_xid'] == hit_xid]
 
-        _Intermediate["Match_length"]=Missing_infor["Match_length"].iloc[0] if not Missing_infor.empty else "NA"
-        _Intermediate["Hit_n_TMS"]=Missing_infor["Hit_n_TMS"].iloc[0] if not Missing_infor.empty else "NA"
+        _Intermediate["Match_length"] = Missing_infor["Match_length"].iloc[0] if not Missing_infor.empty else "NA"
+        _Intermediate["Hit_n_TMS"] = Missing_infor["Hit_n_TMS"].iloc[0] if not Missing_infor.empty else "NA"
         with open(filename, mode="a", encoding='utf-8') as f:
             _Intermediate.to_csv(f, sep='\t', header=False, index=False)
     
@@ -676,6 +665,7 @@ def write_singlecomp(output_dict,Output_df_row):
     Intermediate['isFusion'] = dictionary[len(dictionary) - 1]
     missing_proteins = "NA"
     Intermediate['Missing_components']= missing_proteins
+    Intermediate['Initial_decision'] = 'NA'
     filename=f"{color}.tsv"
 
     filemode='a' if os.path.exists(filename) else 'w' 
@@ -689,6 +679,24 @@ def write_singlecomp(output_dict,Output_df_row):
 
 geneFusions={}
 genDict(geneFusions, df)
+
+def remove_duplicates(input_file, output_file):
+    seen = set()  # Track seen rows
+    with open(input_file, 'r', newline='') as input_file, \
+         open(output_file, 'w', newline='') as output_file:
+        reader = csv.reader(input_file, delimiter='\t')
+        writer = csv.writer(output_file, delimiter='\t')
+        
+        for index, row in enumerate(reader):
+            if index == 0:  # Write the first row
+                writer.writerow(row)
+                continue
+            
+            row_tuple = tuple(row)  # Convert row to a hashable tuple
+            
+            if row_tuple not in seen:
+                seen.add(row_tuple)
+                writer.writerow(row)
 
 for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
     if os.path.exists(filename):
@@ -705,7 +713,8 @@ for index, row in df.iterrows():
         output_dict = categorizeSingleComp(row)
         write_singlecomp(output_dict, Output_df.loc[[index],Output_df.columns])
 
+input_files = ['Green.tsv', 'Red.tsv', 'Yellow.tsv']
+output_files = ['Green_adj.tsv', 'Red_adj.tsv', 'Yellow_adj.tsv']
 
-    
-
-    #print(Output_dict)
+for i in range(len(input_files)):
+    remove_duplicates(input_files[i], output_files[i])
