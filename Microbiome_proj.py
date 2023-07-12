@@ -9,13 +9,13 @@ import pickle as pic
 import subprocess
 # from fusion_distribution import isFusion,geneFusions
 # from fusion_dist_dir import isFusion,genDict
-from fusion import isFusion, geneFusions, genDict
+from fusion import isFusion, geneFusions, genDict, setGenome
 from parseXML import parse
 from pprint import pprint
 
 # GENOME = 'MicrobiomeResults/GCF_000013425.1'  # we can make this a command line argument
 parser = argparse.ArgumentParser(description='genome.')
-parser.add_argument('--genome', type=str, default='GCF_009648975.1', help='Genome ID')
+parser.add_argument('--genome', type=str, default='MicrobiomeResults/GCF_000013425.1', help='Genome ID')
 args = parser.parse_args()
 if not os.path.exists(args.genome):
     print(f"Genome folder not found: {args.genome}")
@@ -33,8 +33,10 @@ LOW_COV = 50
 AUTO_RED = 20
 Membraneprotein_threshold=3
 Hit_TMS_Diff= 2
+
 # construct df with all data from results.tsv
 df = pd.read_table(GENOME + '/results.tsv')
+setGenome(GENOME)
 # print columns of df for dev use in constructing filtered_df later
 
 
@@ -370,7 +372,14 @@ if not os.path.exists(hmmtop_path):
     os.mkdir(TCDB_seqs)
     data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
     hit_tcid_array = data['Hit_tcid'].unique()
-    command_1=[f"extractTCDB.pl -i {tcid} -o {args.genome}/tcdb_seqs -f fasta" for tcid in hit_tcid_array]
+    try:
+        with open('/Users/gautham/Documents/GitHub/microbiome_project/tcdb_seqs.faa', 'w') as f:
+            for tcid in hit_tcid_array:
+                f.write(tcid + '\n')
+            f.close()
+    except Exception as e:
+        print("An error occurred:", str(e))
+    command_1=[f"extractTCDB.pl -i {'tcdb_seqs.faa'} -o {args.genome}/tcdb_seqs -f fasta"]
     joined_commands = ';'.join(command_1)
     execute_command(joined_commands)
     command2=f"cd {args.genome};rm -f all.faa;cat tcdb_seqs/*faa >> all.faa &&hmmtop -if=all.faa -of=hmmtop.out -sf=FAS -pi=spred -is=pseudo"
@@ -468,7 +477,7 @@ def multicomp_decision(tcdb_proteins, protein_type, mem_dict, tc_filter_arr):
             break
     
     # if beta barrell and most proteins are in the system should be yellow->green
-    if protein_type == 'B' and abs(len(tcdb_proteins) - len(tc_filter_arr)) <= 2:
+    if protein_type == '1.B' and abs(len(tcdb_proteins) - len(tc_filter_arr)) <= 2:
         return 'yellow->green'
     # membrane_accessions = []
     # num_membrane_proteins = len(membrane_proteins)
@@ -533,8 +542,8 @@ def isMultiComp(row,df,input):
 
     fusions = '' 
     id = row['#Query_id']
-    protein_type = row['Hit_tcid'].split('.')[1]
-    if id == 'WP_100781695.1':
+    protein_type = row['Hit_tcid'].split('.')[0] + '.' + row['Hit_tcid'].split('.')[1]
+    if id == 'WP_039102598.1':
         print('here')
     tcdb_tms = row['Hit_n_TMS']
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green

@@ -2,7 +2,10 @@ import pandas as pd
 import numpy as np
 import os
 
-df = pd.read_table('GCF_009648975.1/results.tsv')
+GENOME = ''
+def setGenome(genome):
+    GENOME = genome
+
 
 geneFusions = {}
 test_fus =  [{'query': 'A', 'qcov': 69.6, 'sstart': 295, 'send': 713, 'scov': 58.2}, {'query': 'B', 'qcov': 65.4, 'sstart': 405, 'send': 709, 'scov': 42.3}, {'query': 'C', 'qcov': 41.4, 'sstart': 481, 'send': 717, 'scov': 32.9}]
@@ -16,8 +19,9 @@ MAX_SUBJECT_COV_THRESHOLD = 90
 MIN_FUSION_COVERAGE = 50
 
 # generates a dictionary from the dataframe
-def genDict(dict, input_df):
-    for index, row in input_df.iterrows():
+def genDict(dict):
+    df = pd.read_table(GENOME + 'results.tsv')
+    for index, row in df.iterrows():
         new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"], "hit_length": row["Hit_Length"], "tms": row['Query_n_TMS']}
         tcid = row["Hit_tcid"] + "-" + row["Hit_xid"]
         if tcid in dict:
@@ -81,23 +85,23 @@ def isFusion(sortedArr):
         # print("hit length: " + str(fus_list[0]['hit_length']))
         return fus_list
 
+def main():
+    genDict(geneFusions)
 
-genDict(geneFusions, df)
 
-
-#sorts the genomeFusions dictionary by the genome start index
-num_out = 0
-num_in = 0
-for id in geneFusions:
-    if(len(geneFusions[id]) == 1):
-        continue
-    sortedGeneArr = sorted(geneFusions[id], key=lambda x: x['sstart'])
-    # print(sortedGeneArr)
-    # x = input()
-    num_in+=1
-    if len(isFusion(sortedGeneArr)) != 0:
-        # print("SUCCESS")
-        num_out+=1
+    #sorts the genomeFusions dictionary by the genome start index
+    num_out = 0
+    num_in = 0
+    for id in geneFusions:
+        if(len(geneFusions[id]) == 1):
+            continue
+        sortedGeneArr = sorted(geneFusions[id], key=lambda x: x['sstart'])
+        # print(sortedGeneArr)
+        # x = input()
+        num_in+=1
+        if len(isFusion(sortedGeneArr)) != 0:
+            # print("SUCCESS")
+            num_out+=1
     #y = input()
 # print("-------")
 # print(str(num_out) + " fusions found out of " + str(num_in))

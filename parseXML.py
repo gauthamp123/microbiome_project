@@ -82,8 +82,9 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
     overlap_dict = overlapDict(mmseqsDict, hmmTopDict, minRes)
     return overlap_dict
 
-hmmtop_file, xml_dir, results_file, minRes = "GCF_009648975.1/hmmtop.db", "GCF_009648975.1/xml/", 'GCF_009648975.1/results.tsv', 8
-parse(hmmtop_file, xml_dir, results_file, minRes)
+def main():
+    hmmtop_file, xml_dir, results_file, minRes = "GCF_009648975.1/hmmtop.db", "GCF_009648975.1/xml/", 'GCF_009648975.1/results.tsv', 8
+    parse(hmmtop_file, xml_dir, results_file, minRes)
 
 '''
 #For Testing
