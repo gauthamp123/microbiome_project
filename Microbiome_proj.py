@@ -40,6 +40,9 @@ df = pd.read_table(GENOME + '/results.tsv')
 setGenome(GENOME)
 # print columns of df for dev use in constructing filtered_df later
 
+if not os.path.exists(GENOME + '/analysis/'):
+    os.mkdir(GENOME + '/analysis')
+
 
 # create empty dfs for tagging with green, yellow, and red labels
 green_df = df.copy()
@@ -356,20 +359,20 @@ def execute_command(command):
         print(f"command'{command}'fail")
         
 if not os.path.exists(hmmtop_path):
-    TCDB_seqs =args.genome + "/tcdb_seqs"
+    TCDB_seqs = GENOME + "analysis/tcdb_seqs"
     if os.path.exists(TCDB_seqs):
         os.system(f"rm -r {TCDB_seqs}")
     os.mkdir(TCDB_seqs)
     data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
     hit_tcid_array = data['Hit_tcid'].unique()
     try:
-        with open('/Users/gautham/Documents/GitHub/microbiome_project/tcdb_seqs.faa', 'w') as f:
+        with open(GENOME + '/analysis/tcdb_seqs.txt', 'w') as f:
             for tcid in hit_tcid_array:
                 f.write(tcid + '\n')
             f.close()
     except Exception as e:
         print("An error occurred:", str(e))
-    command_1=[f"extractTCDB.pl -i {'tcdb_seqs.faa'} -o {args.genome}/tcdb_seqs -f fasta"]
+    command_1=[f"extractTCDB.pl -i {'tcdb_seqs.txt'} -o {args.genome}/analysis/tcdb_seqs -f fasta"]
     joined_commands = ';'.join(command_1)
     execute_command(joined_commands)
     command2=f"cd {args.genome};rm -f all.faa;cat tcdb_seqs/*faa >> all.faa &&hmmtop -if=all.faa -of=hmmtop.out -sf=FAS -pi=spred -is=pseudo"
@@ -469,6 +472,15 @@ def multicomp_decision(tcdb_proteins, protein_type, mem_dict, tc_filter_arr):
     # if beta barrell and most proteins are in the system should be yellow->green
     if protein_type == '1.B' and abs(len(tcdb_proteins) - len(tc_filter_arr)) <= 2:
         return 'yellow->green'
+    all_mems_found = True
+    for protein in membrane_proteins:
+        accession = protein.split('-')[1]
+        if accession not in tc_filter_arr:
+            all_mems_found = False
+            break
+    if all_mems_found == True:
+        return 'yellow->green'
+    
     # membrane_accessions = []
     # num_membrane_proteins = len(membrane_proteins)
     # for protein in genome_missing_proteins:
@@ -636,6 +648,7 @@ def Write_multicomp(Output_dict,Output_df_row):
         Intermediate['Missing_components'] = str(Output_dict['Missing_proteins'])
     Intermediate['Initial_decision'] = Output_dict['Initial_decision']
     filename=f"{Output_dict['color']}.tsv"
+    filename = GENOME + 'analysis/' + filename
     filemode='a' if os.path.exists(filename) else 'w' 
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
@@ -666,6 +679,7 @@ def write_singlecomp(output_dict,Output_df_row):
     Intermediate['Missing_components']= missing_proteins
     Intermediate['Initial_decision'] = 'NA'
     filename=f"{color}.tsv"
+    filename = GENOME + 'analysis/' + filename
 
     filemode='a' if os.path.exists(filename) else 'w' 
     #print(Intermediate)
@@ -678,7 +692,7 @@ def write_singlecomp(output_dict,Output_df_row):
 
 geneFusions={}
 Missing_protein_list=[]
-genDict(geneFusions, df)
+genDict(geneFusions, GENOME)
 
 def remove_duplicates(input_file, output_file):
     seen = set()  # Track seen rows
@@ -686,19 +700,19 @@ def remove_duplicates(input_file, output_file):
          open(output_file, 'w', newline='') as output_file:
         reader = csv.reader(input_file, delimiter='\t')
         writer = csv.writer(output_file, delimiter='\t')
-        
+
         for index, row in enumerate(reader):
             if index == 0:  # Write the first row
                 writer.writerow(row)
                 continue
-            
+
             row_tuple = tuple(row)  # Convert row to a hashable tuple
-            
+
             if row_tuple not in seen:
                 seen.add(row_tuple)
                 writer.writerow(row)
 
-for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
+for filename in [GENOME + "Green.tsv",GENOME + "Red.tsv",GENOME + "Yellow.tsv"]:
     if os.path.exists(filename):
         os.remove(filename)
         
@@ -718,7 +732,12 @@ for index, row in df.iterrows():
 input_files = ['Green.tsv', 'Red.tsv', 'Yellow.tsv']
 output_files = ['Green_adj.tsv', 'Red_adj.tsv', 'Yellow_adj.tsv']
 
-for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
+for i in range(len(input_files)):
+    in_file = GENOME + '/analysis/' + input_files[i]
+    out = GENOME + '/analysis/' + output_files[i]
+    remove_duplicates(in_file, out)
+'''
+for filename in [GENOME + "Green.tsv",GENOME + "Red.tsv",GENOME + "Yellow.tsv"]: 
     if os.path.exists(filename):
         df = pd.read_csv(filename, sep='\t')
         df = df.fillna('NA')
@@ -727,10 +746,11 @@ for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
         df = df.sort_values(by=['Hit_tcid','na_sort']).drop(columns=['na_sort'])
         mask = (df['#Query_id'] == 'NA') & (df['e-value'] == 'NA')
         df_temp = df.loc[mask] 
-        df_temp.drop_duplicates(subset=['Hit_tcid',	'Hit_xid'], keep='first', inplace=True) 
+        df_temp.drop_duplicates(subset=['Hit_tcid','Hit_xid'], keep='first', inplace=True) 
         df.loc[mask] = df_temp
         df.dropna(inplace=True)
         df.to_csv(filename, sep='\t', index=False)
+'''   
         
 
     #print(Output_dict)

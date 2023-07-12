@@ -19,8 +19,8 @@ MAX_SUBJECT_COV_THRESHOLD = 90
 MIN_FUSION_COVERAGE = 50
 
 # generates a dictionary from the dataframe
-def genDict(dict):
-    df = pd.read_table(GENOME + 'results.tsv')
+def genDict(dict, genome):
+    df = pd.read_table(genome + 'results.tsv')
     for index, row in df.iterrows():
         new_entry = {"query": row["#Query_id"], "qcov": row["Query_Coverage"], "sstart": row["S_start"], "send": row["S_end"], "scov": row["Hit_Coverage"], "hit_length": row["Hit_Length"], "tms": row['Query_n_TMS']}
         tcid = row["Hit_tcid"] + "-" + row["Hit_xid"]
@@ -86,7 +86,7 @@ def isFusion(sortedArr):
         return fus_list
 
 def main():
-    genDict(geneFusions)
+    genDict(geneFusions, GENOME)
 
 
     #sorts the genomeFusions dictionary by the genome start index
