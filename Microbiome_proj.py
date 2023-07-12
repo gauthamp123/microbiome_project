@@ -1,6 +1,7 @@
 # Take the results.tsv file and parse it
 import argparse
 import pandas as pd
+pd.options.mode.chained_assignment = None  # default='warn'
 import csv
 import numpy as np
 import os
@@ -73,17 +74,6 @@ adjustOverlapScore()
 Output_df= df[['Hit_tcid','Hit_xid','#Query_id','Match_length','e-value','%_identity','Query_Length','Hit_Length','Q_start',
 'Q_end','S_start','S_end','Query_Coverage','Hit_Coverage','Query_n_TMS','Hit_n_TMS','TM_Overlap_Score','Family_Abrv'
 ,'Predicted_Substrate','Query_Pfam','Subject_Pfam']]
-
-multi_df = df[['Hit_xid', '#Query_id', 'Hit_tcid', 'Match_length', 'e-value', '%_identity', 'Query_Length', 'Hit_Length', 'Q_start',
-               'Q_end', 'S_start', 'S_end', 'Query_Coverage', 'Hit_Coverage', 'Query_n_TMS', 'Hit_n_TMS', 'TM_Overlap_Score', 'Family_Abrv',
-               'Predicted_Substrate', 'Query_Pfam', 'Subject_Pfam']]
-
-for index, row in multi_df.iterrows():
-    multi_df.at[index, 'Hit_xid'] = row['Hit_tcid'] + '-' + row['Hit_xid']
-
-multi_df = multi_df.groupby('Hit_xid').first()
-
-multi_dict = multi_df.to_dict('index')
 
 df.to_csv('adj.csv', index=False)
 
@@ -650,7 +640,7 @@ def Write_multicomp(Output_dict,Output_df_row):
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
         Intermediate.to_csv(f, sep='\t', header=filemode=='w', index=False)
-
+    
     for hit_xid in Output_dict['Missing_proteins']:
         _Intermediate = Output_df_row.copy()
         _Intermediate = _Intermediate.applymap(lambda x: 'NA')
@@ -687,6 +677,7 @@ def write_singlecomp(output_dict,Output_df_row):
 
 
 geneFusions={}
+Missing_protein_list=[]
 genDict(geneFusions, df)
 
 def remove_duplicates(input_file, output_file):
@@ -710,6 +701,8 @@ def remove_duplicates(input_file, output_file):
 for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
     if os.path.exists(filename):
         os.remove(filename)
+        
+
 for index, row in df.iterrows():
     single = isSingleComp(row)
 
@@ -725,5 +718,19 @@ for index, row in df.iterrows():
 input_files = ['Green.tsv', 'Red.tsv', 'Yellow.tsv']
 output_files = ['Green_adj.tsv', 'Red_adj.tsv', 'Yellow_adj.tsv']
 
-for i in range(len(input_files)):
-    remove_duplicates(input_files[i], output_files[i])
+for filename in ["Green.tsv","Red.tsv","Yellow.tsv"]:
+    if os.path.exists(filename):
+        df = pd.read_csv(filename, sep='\t')
+        df = df.fillna('NA')
+        NA_count = df.eq('NA').sum(axis=1).rename('NA_count')
+        df['na_sort'] = NA_count
+        df = df.sort_values(by=['Hit_tcid','na_sort']).drop(columns=['na_sort'])
+        mask = (df['#Query_id'] == 'NA') & (df['e-value'] == 'NA')
+        df_temp = df.loc[mask] 
+        df_temp.drop_duplicates(subset=['Hit_tcid',	'Hit_xid'], keep='first', inplace=True) 
+        df.loc[mask] = df_temp
+        df.dropna(inplace=True)
+        df.to_csv(filename, sep='\t', index=False)
+        
+
+    #print(Output_dict)
