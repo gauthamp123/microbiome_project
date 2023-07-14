@@ -85,6 +85,34 @@ def isFusion(sortedArr):
         # print("hit length: " + str(fus_list[0]['hit_length']))
         return fus_list
 
+def check_overlap(dict1, dict2):
+    return (dict1['start'] <= dict2['end'] and dict1['end'] >= dict2['start']) or (dict1['end'] >= dict2['start'] and dict1['start'] <= dict2['end'])
+
+def fusion_TMS_count(fus_list):
+
+    net_TMS = 0
+
+    # construct "fusion groups"
+    fusion_groups = []
+    sorted_fus_list = sorted(fus_list, key=lambda d: d['sstart'])
+    for fus in sorted_fus_list:
+        overlap_fus = None
+        for fus_group in fusion_groups:
+            if any(check_overlap(fus, d) for d in fus_group):
+                overlap_fus = fus
+                break
+            if overlap_fus:
+                overlap_fus.append(fus)
+            else:
+                fusion_groups.append([fus])
+    
+    # iterate over "fusion groups" and return highest tms count
+    for fus_group in fusion_groups:
+        sorted_fus_group = sorted(fus_group, keps=lambda d: d['tms'])
+        net_TMS += sorted_fus_group[0]["tms"]
+    
+    return net_TMS
+
 def main():
     genDict(geneFusions, GENOME)
 
