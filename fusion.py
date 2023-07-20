@@ -81,7 +81,7 @@ def isFusion(sortedArr):
         return []
     else:
         # print("output is: " + str(fus_list))
-        # print("total length: " + str(tot_length))
+        # print("total length: " + str(tot_length))c
         # print("hit length: " + str(fus_list[0]['hit_length']))
         return fus_list
 
@@ -102,7 +102,7 @@ def fusion_TMS_count(fus_list):
                 overlap_fus = fus
                 break
             if overlap_fus:
-                overlap_fus.append(fus)
+                fusion_groups.append(overlap_fus)
             else:
                 fusion_groups.append([fus])
     
