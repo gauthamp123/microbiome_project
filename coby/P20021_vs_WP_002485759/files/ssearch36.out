@@ -1,0 +1,112 @@
+# ssearch36 -z 11 -k 1000 -s BL50 -E 1e-100 -W 0 -m 0 3.A.3.6.1-P20021.faa WP_002485759.faa
+SSEARCH performs a Smith-Waterman search
+ version 36.3.8h Aug, 2019
+Please cite:
+ T. F. Smith and M. S. Waterman, (1981) J. Mol. Biol. 147:195-197; 
+ W.R. Pearson (1991) Genomics 11:635-650
+
+Query: 3.A.3.6.1-P20021.faa
+  1>>>3.A.3.6.1-P20021  - 727 aa
+Library: WP_002485759.faa
+      802 residues in     1 sequences
+
+Statistics: (shuffled [1000]) MLE statistics: Lambda= 0.1074;  K=0.003323
+ statistics sampled from 1 (1) to 1000 sequences
+Algorithm: Smith-Waterman (SSE2, Michael Farrar 2006) (7.2 Nov 2010)
+Parameters: BL50 matrix (15:-5), open/ext: -10/-2
+ Scan time:  0.080
+
+The best scores are:                                      s-w bits E(1)
+WP_002485759.1 heavy metal translocating P-type AT ( 802) 3828 601.4 5.2e-176
+
+>>WP_002485759.1 heavy metal translocating P-type ATPase  (802 aa)
+ s-w opt: 3828  Z-score: 3192.4  bits: 601.4 E(1): 5.2e-176
+Smith-Waterman score: 3828; 80.6% identity (96.4% similar) in 723 aa overlap (4-726:80-802)
+
+            10        20        30        40        50        60   
+3.A.3. QKVKLMEEEMNVYRVQGFTCANCAGKFEKNVKKIPGVQDAKVNFGASKIDVYGNASVEEL
+       :  . .... :.:::.::.:::::::::.::::::::.:::::::::::.:::.:..:::
+WP_002 QAPQEVKKDKNIYRVEGFSCANCAGKFERNVKKIPGVEDAKVNFGASKISVYGEATIEEL
+      80        90       100       110       120       130         
+
+            70        80        90       100       110       120   
+3.A.3. EKAGAFENLKVSPEKLANQTIQRVKDDTKAHKEEKTPFYKKHSTLLFATLLIAFGYLSHF
+       :::::::::::. :: . :. :..... . .::::.::::::::::..::::.::::: :
+WP_002 EKAGAFENLKVASEKPVRQATQEINQEKEDEKEEKVPFYKKHSTLLYSTLLIVFGYLSVF
+     140       150       160       170       180       190         
+
+           130       140       150       160       170       180   
+3.A.3. VNGEDNLVTSMLFVGSIVIGGYSLFKVGFQNLIRFDFDMKTLMTVAVIGATIIGKWAEAS
+       :::..:.::..:::.:..::: ::::::::::.::.:::::::::::::..:::.:::.:
+WP_002 VNGDENIVTTLLFVASMLIGGLSLFKVGFQNLLRFEFDMKTLMTVAVIGGAIIGEWAEVS
+     200       210       220       230       240       250         
+
+           190       200       210       220       230       240   
+3.A.3. IVVILFAISEALERFSMDRSRQSIRSLMDIAPKEALVRRNGQEIIIHVDDIAVGDIMIVK
+       .:::::::::::::::::..:::::::::::::::::::.:::...::::::::::::::
+WP_002 VVVILFAISEALERFSMDKARQSIRSLMDIAPKEALVRRKGQEMMVHVDDIAVGDIMIVK
+     260       270       280       290       300       310         
+
+           250       260       270       280       290       300   
+3.A.3. PGEKIAMDGIIVNGLSAVNQAAITGESVPVSKAVDDEVFAGTLNEEGLIEVKITKYVEDT
+       ::.::::::..:.: ::::::::::::::: :::::::::::::::::.::.::: ::::
+WP_002 PGQKIAMDGMVVSGYSAVNQAAITGESVPVEKAVDDEVFAGTLNEEGLLEVEITKLVEDT
+     320       330       340       350       360       370         
+
+           310       320       330       340       350       360   
+3.A.3. TITKIIHLVEEAQGERAPAQAFVDKFAKYYTPIIMVIAALVAVVPPLFFGGSWDTWVYQG
+       ::.:::::::::::::::.::::.:::::::::::.::::::::::::::.::.::::::
+WP_002 TISKIIHLVEEAQGERAPSQAFVEKFAKYYTPIIMIIAALVAVVPPLFFGASWETWVYQG
+     380       390       400       410       420       430         
+
+           370       380       390       400       410       420   
+3.A.3. LAVLVVGCPCALVISTPISIVSAIGNAAKKGVLVKGGVYLEKLGAIKTVAFDKTGTLTKG
+       :::::::::::::::::::::::::::::::::.:::::::..::.:..:::::::::::
+WP_002 LAVLVVGCPCALVISTPISIVSAIGNAAKKGVLIKGGVYLEEMGALKAIAFDKTGTLTKG
+     440       450       460       470       480       490         
+
+           430       440       450       460       470       480   
+3.A.3. VPVVTDFEVLNDQVEEKELFSIITALEYRSQHPLASAIMKKAEQDNIPYSNVQVEEFTSI
+       :::::::.::: ::.:.:..::::::::::::::::::::.::. :: ::.: ...:.::
+WP_002 VPVVTDFNVLNKQVDENEMLSIITALEYRSQHPLASAIMKRAEEANISYSDVVIDDFSSI
+     500       510       520       530       540       550         
+
+           490       500       510       520       530       540   
+3.A.3. TGRGIKGIVNGTTYYIGSPKLFKELNVSDFSLGFENNVKILQNQGKTAMIIGTEKTILGV
+       ::.:::: :.:::::::::::::::. :.:. ..:..:  :::::::::..::.: ::..
+WP_002 TGKGIKGTVDGTTYYIGSPKLFKELSNSSFDKNLEKKVATLQNQGKTAMVVGTDKEILAI
+     560       570       580       590       600       610         
+
+           550       560       570       580       590       600   
+3.A.3. IAVADEVRETSKNVIQKLHQLGIKQTIMLTGDNQGTANAIGTHVGVSDIQSELMPQDKLD
+       :::::::::.::.:::::::::::.::::::::.:::::::.::::...:.:::::::::
+WP_002 IAVADEVRESSKEVIQKLHQLGIKNTIMLTGDNKGTANAIGSHVGVKEVQAELMPQDKLD
+     620       630       640       650       660       670         
+
+           610       620       630       640       650       660   
+3.A.3. YIKKMQSEYDNVAMIGDGVNDAPALAASTVGIAMGGAGTDTAIETADIALMGDDLSKLPF
+       :::...:::.::::::::::::::::::::::::::::::::.::::.::::::: ::::
+WP_002 YIKQLKSEYNNVAMIGDGVNDAPALAASTVGIAMGGAGTDTALETADVALMGDDLRKLPF
+     680       690       700       710       720       730         
+
+           670       680       690       700       710       720   
+3.A.3. AVRLSRKTLNIIKANITFAIGIKIIALLLVIPGWLTLWIAILSDMGATILVALNSLRLMR
+       .:.::::.::::::::::::.::.::::::::::::::::::::::::.:::::::::::
+WP_002 TVKLSRKALNIIKANITFAIAIKFIALLLVIPGWLTLWIAILSDMGATLLVALNSLRLMR
+     740       750       760       770       780       790         
+
+          
+3.A.3. VKD
+       :::
+WP_002 VKD
+     800  
+
+
+
+727 residues in 1 query   sequences
+802 residues in 1 library sequences
+ Tcomplib [36.3.8h Aug, 2019] (4 proc in memory [0G])
+ start: Tue Aug  1 14:49:37 2023 done: Tue Aug  1 14:49:37 2023
+ Total Scan time:  0.080 Total Display time:  0.010
+
+Function used was SSEARCH [36.3.8h Aug, 2019]

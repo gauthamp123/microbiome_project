@@ -3,17 +3,22 @@ import xml
 import pandas as pd
 import pickle as pic
 from mmseqs_hmmtop import overlapDict
-
+import json
 
 
 def parse(hmmtop_file, xml_dir, results_file, minRes):
     with open(hmmtop_file, "rb") as file:
         # Deserialize the data using pickle.load()
         data = pic.load(file)
+    print('From hmmtop:')
+    print(data['queries']['WP_002485759.1'])
 
     # Extracts all query data and target data from hmmtop file
     query_data = data['queries']
-  
+    
+    with open('genome_tms.txt', 'w') as f:
+        json.dump(data, f, indent=4)
+
     target_data = {}
     for key in data['tcdb']:
 
@@ -78,7 +83,8 @@ def parse(hmmtop_file, xml_dir, results_file, minRes):
                             hmmTopDict[target_id] = ttms
                     #print(target_data)
         # there are some keys in df that are not in query or target data what to do about those?
-
+    print(hmmTopDict['WP_002485759.1'])
+    print(mmseqsDict['WP_002485759.1'])
     overlap_dict = overlapDict(mmseqsDict, hmmTopDict, minRes)
     return overlap_dict
 

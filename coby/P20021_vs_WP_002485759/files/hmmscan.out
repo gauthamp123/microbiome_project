@@ -1,0 +1,20 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+E1-E2_ATPase         PF00122.23   181 3.A.3.6.1-P20021     -            727     1e-54  184.9   3.6   1   1   8.9e-58   5.8e-54  182.5   2.5     3   181   214   393   212   393 0.96 E1-E2 ATPase
+Hydrolase            PF00702.29   210 3.A.3.6.1-P20021     -            727   1.6e-44  152.8   0.5   1   1   4.6e-48     3e-44  151.9   0.5     1   208   409   630   409   632 0.93 haloacid dehalogenase-like hydrolase
+HMA                  PF00403.29    62 3.A.3.6.1-P20021     -            727   6.6e-11   42.6   0.1   1   1     1e-14   6.6e-11   42.6   0.1     1    54    15    65    15    68 0.92 Heavy-metal-associated domain
+E1-E2_ATPase         PF00122.23   181 WP_002485759.1       -            802   4.5e-53  179.6   2.6   1   1   9.1e-57   4.5e-53  179.6   2.6     3   181   290   469   288   469 0.96 E1-E2 ATPase
+Hydrolase            PF00702.29   210 WP_002485759.1       -            802   4.2e-46  158.0   1.4   1   1   1.7e-49   8.3e-46  157.1   1.4     2   208   486   706   485   708 0.95 haloacid dehalogenase-like hydrolase
+HMA                  PF00403.29    62 WP_002485759.1       -            802   5.5e-22   78.1   9.4   1   2   2.4e-14   1.2e-10   41.8   0.1     1    54    13    63    13    66 0.92 Heavy-metal-associated domain
+HMA                  PF00403.29    62 WP_002485759.1       -            802   5.5e-22   78.1   9.4   2   2   4.7e-14   2.3e-10   40.8   0.0     2    54    92   141    91   144 0.92 Heavy-metal-associated domain
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      P20021_vs_WP_002485759/seqs/topHits.faa
+# Target file:     /usr/local/DB/domainDBs/xfamDB/Pfam.hmm
+# Option settings: hmmscan -o /dev/null --domtblout P20021_vs_WP_002485759/files/hmmscan.out --noali --cut_ga --cpu 4 /usr/local/DB/domainDBs/xfamDB/Pfam.hmm P20021_vs_WP_002485759/seqs/topHits.faa 
+# Current dir:     /Users/gautham/microbiome_project/coby
+# Date:            Tue Aug  1 14:49:49 2023
+# [ok]

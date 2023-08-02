@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import argparse
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
@@ -9,19 +11,11 @@ import pickle as pic
 import subprocess
 # from fusion_distribution import isFusion,geneFusions
 # from fusion_dist_dir import isFusion,genDict
-from fusion import isFusion, geneFusions, genDict, setGenome
+from fusion import isFusion, geneFusions, genDict, setGenome, check_overlap, fusion_TMS_count
 from parseXML import parse
 from pprint import pprint
 
-# GENOME = 'MicrobiomeResults/GCF_000013425.1'  # we can make this a command line argument
-parser = argparse.ArgumentParser(description='genome.')
-parser.add_argument('--genome', type=str, default='MicrobiomeResults/GCF_000013425.1', help='Genome ID')
-args = parser.parse_args()
-if not os.path.exists(args.genome):
-    print(f"Genome folder not found: {args.genome}")
-    exit()
-
-GENOME = args.genome  # we can make this a command line argument
+GENOME = ''
 TMS_THRESH_GREEN = 0.8
 TMS_THRESH_YELLOW = 0.5
 EXCELLENT_EVAL = 1e-30
@@ -35,66 +29,47 @@ Membraneprotein_threshold=3
 Hit_TMS_Diff= 2
 MIN_PROTEINS = 0.5
 
-# construct df with all data from results.tsv
-df = pd.read_table(GENOME + '/results.tsv')
-setGenome(GENOME)
-# print columns of df for dev use in constructing filtered_df later
+tcdbSystems = {}
+green = {}
+yellow = {}
+red = {}
+hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
+geneFusions={}
+df = None
+id_dict = {}
+tcid_assignments = {}
 
-if not os.path.exists(GENOME + '/analysis/'):
-    os.mkdir(GENOME + '/analysis')
+def create_id_dict(df):
+    if df == None:
+        return {}
+    id_df = df[['Hit_tcid', 'Hit_xid', '#Query_id','Match_length','e-value','%_identity','Query_Length','Hit_Length','Q_start',
+     'Q_end','S_start','S_end','Query_Coverage','Hit_Coverage','Query_n_TMS','Hit_n_TMS','TM_Overlap_Score','Family_Abrv'
+     ,'Predicted_Substrate','Query_Pfam','Subject_Pfam']]
+    
+    id_dict = {}
+    for index, row in id_df.iterrows():
+        if row['Hit_tcid'] in id_dict:
+            id_dict[row['Hit_tcid']].append(row)
+        else:
+            id_dict[row['Hit_tcid']] = [row]
+    return id_dict
 
-print(GENOME)
-# create empty dfs for tagging with green, yellow, and red labels
-green_df = df.copy()
-green_df = green_df.iloc[0:0]
-yellow_df = green_df.copy()
-red_df = green_df.copy()
 
-# construct filtered_df with only relevant data points for each protein matche
-filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_start', 'S_end', 
-'Query_Coverage', 'Hit_Coverage', 'Query_Pfam']]
-
-
-
-def adjustOverlapScore():
+def adjustOverlapScore(df):
+    print(GENOME)
     overlap_dict = parse(GENOME + '/hmmtop.db', GENOME + '/xml/' ,GENOME + '/results.tsv', 8)
-    score_dict = {}
     score_dict = {}
     for k in overlap_dict:
         score_dict[k] = overlap_dict[k]['alignedTMS']
-    
     for index, row in df.iterrows():
         if row['#Query_id'] in score_dict:
             df.at[index, 'TM_Overlap_Score'] = score_dict[row['#Query_id']]
         else:
             df.at[index, 'TM_Overlap_Score'] = 0
-            
-    
-
-
-adjustOverlapScore()
-
-Output_df= df[['Hit_tcid','Hit_xid','#Query_id','Match_length','e-value','%_identity','Query_Length','Hit_Length','Q_start',
-'Q_end','S_start','S_end','Query_Coverage','Hit_Coverage','Query_n_TMS','Hit_n_TMS','TM_Overlap_Score','Family_Abrv'
-,'Predicted_Substrate','Query_Pfam','Subject_Pfam']]
-
-df.to_csv('adj.csv', index=False)
-
-green = {}
-yellow = {}
-red = {}
-# To distinguish between single and multiple component systems. 
-# Example content:
-#  1.A.1.1.1 =>  ["1.A.1.1.1-P0A334"],
-#  3.A.1.1.1 =>  ["3.A.1.1.1-P02916", ""3.A.1.1.1-XXXXX", "3.A.1.1.1-YYYYYY", "3.A.1.1.1-ZZZZZZZZZ"],
-#  ....
-tcdbSystems = {}
-
-input = open("tcdb.faa")
-tcdbSystems = {}
+    print('finished')
 
 #This function will fill the dictionary tcdbSystems with data.
-def parseTCDBcontent():
+def parseTCDBcontent(input):
     for line in input:
         if(">" in line):
             first = line.split("-")[0][1:]
@@ -168,7 +143,7 @@ def overlap_percent(row):
     t_tmss = int(row.get(key='Hit_n_TMS'))
     if q_tmss == 0 or t_tmss == 0:
         return 0
-
+    
     overlap_percent = int(row.get(key='TM_Overlap_Score')) / max(q_tmss, t_tmss)
     return overlap_percent
 
@@ -176,9 +151,21 @@ def overlap_percent(row):
 def assign_if_fusion(fusions, tcdb_tms):
     # need to check that the combined tms count from all fusions meets threshold if ritvik can add to output
     tot_cov = 0
-    tot_tmoverlap = 0
-    for i in range(0, len(fusions)):
-        tot_cov = fusions[0]['send'] - fusions[0]['sstart']
+    # print(fusions)
+    if len(fusions) == 0:
+        return 'red'
+    tot_cov = int(fusions[0]['send']) - int(fusions[0]['sstart'])
+    for i in range(1, len(fusions)):
+        # caluculate overlap
+        overlap = 0
+        if fusions[i]['sstart'] < fusions[i-1]['send']:
+            overlap = fusions[i-1]['send'] - fusions[i]['sstart']
+        tot_cov += fusions[i]['send'] - fusions[i]['sstart'] - overlap
+        if fusions[i]['send'] < fusions[i-1]['send']:
+            return 'red'
+        if fusions[i]['sstart'] == fusions[i-1]['sstart']:
+            return 'red'
+        '''
         for i in range(1, len(fusions)):
             start = 0
             end = fusions[i]['send'] 
@@ -191,35 +178,46 @@ def assign_if_fusion(fusions, tcdb_tms):
                 return 'yellow'
 
             tot_cov += end - start
-    
+        '''
     if tcdb_tms == 0:
-        tot_tmoverlap = 1
+        overlap_percent_fus = 1
     else:
-        tot_tmoverlap = float(tot_tmoverlap / tcdb_tms)
-
-    tot_cov = float(tot_cov / fusions[0]['hit_length']) * 100
+        net_overlap = fusion_TMS_count(fusions)
+        overlap_percent_fus = net_overlap / tcdb_tms
         
 
-    if tot_cov >= S_COV_THRESH and tot_tmoverlap >= TMS_THRESH_GREEN:
+    tot_cov = float(tot_cov / int(fusions[0]['hit_length'])) * 100
+    
+    if tot_cov >= S_COV_THRESH and overlap_percent_fus >= TMS_THRESH_GREEN:
         return 'green'
-    elif tot_cov >= LOW_COV:
+    elif tot_cov >= LOW_COV and overlap_percent_fus >= TMS_THRESH_YELLOW:
         return 'yellow'
     else:
         return 'red'
     
 
-
-def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
-    # automatic green if e-val is 0 or extremely good with okay coverage and matching pfam
-    if (eval == 0.0 or eval <= EXCELLENT_EVAL) and (qcov > LOW_COV and scov > LOW_COV) and len(pfam_doms) > 0:
+def make_decision(row, fusions, tcdb_tms):
+    eval = eVal(row)
+    qcov = qCoverage(row)
+    scov = hCoverage(row)
+    pfam_doms = pfamDoms(row)
+    tmoverlap = overlap_percent(row)
+    # automatic green if e-val is 0 or extremely good with okay coverage and has some tms coverage
+    if (eval == 0.0 or eval <= EXCELLENT_EVAL) and (qcov > LOW_COV and scov > LOW_COV) and tcdb_tms > 0:
+        if tm_overlap_decision(row) == True or len(pfam_doms) > 0:
+            return 'green'
+        else:
+            return 'yellow'
+    elif (eval == 0.0 or eval <= EXCELLENT_EVAL) and (qcov > LOW_COV and scov > LOW_COV) and len(pfam_doms) > 0:
         return 'green'
+    
     # if coverage is less than a very low number it is impossible for it to be a good hit
-    if qcov <= AUTO_RED or scov <= AUTO_RED:
+    if qcov <= AUTO_RED or scov <= AUTO_RED and len(fusions) == 0:
         return 'red'
     # if there are less than 3 tms, there is a possiblity of mischaracterizing tms regions
     if tcdb_tms > 3:
         # if cov is too low it is automatically red
-        if qcov < LOW_COV or scov < LOW_COV:
+        if qcov < LOW_COV or scov < LOW_COV and len(fusions) == 0:
             return 'red'
         # great e val, there are common pfam domains, good cov and high tms overlap means good hit
         if eval <= E_VAL_GREEN and len(pfam_doms) > 0 and qcov >= Q_COV_THRESH and scov >= S_COV_THRESH and tmoverlap >= TMS_THRESH_GREEN:
@@ -230,8 +228,8 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
         # great e value, has good coverage or there is a high tms overlap means good hit
         if eval <= E_VAL_GREEN and len(pfam_doms) > 0 and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_GREEN):
             return 'green'
-        # okay e value, common doms, has good coverage or there is a high tms overlap means good hit
-        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_YELLOW):
+        # okay e value, has good coverage and there is a high tms overlap means good hit
+        if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and tm_overlap_decision(row) == True):
             return 'green'
         # great e-val no matching pfam domains but has goood coverage or good tmoverlap its a good hit
         if eval <= E_VAL_GREEN and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_GREEN):
@@ -255,15 +253,15 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
         # good e value, common doms match, good cov is good hit
         if eval <= E_VAL_GREEN and len(pfam_doms) > 0 and (qcov >= Q_COV_THRESH and scov >= S_COV_THRESH):
             return 'green'
-        # has ok e value, common doms match, good cov is good hit
-        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov >= LOW_COV and scov >= LOW_COV):
-            return 'green'
         # great e-val no matching pfam domains but has goood coverage or good tmoverlap its a good hit
-        if eval <= E_VAL_GREEN and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) or tmoverlap >= TMS_THRESH_GREEN):
+        if eval <= E_VAL_YELLOW and ((qcov >= Q_COV_THRESH and scov >= S_COV_THRESH) and tm_overlap_decision(row) == True):
             return 'green'
         # if there is a fusion found we need to do further analysis
         if len(fusions) > 0:
             return 'fusion found'
+        # has ok e value, common doms match, good cov is good hit
+        if eval <= E_VAL_YELLOW and len(pfam_doms) > 0 and (qcov >= LOW_COV and scov >= LOW_COV):
+            return 'yellow'
         # is fusion, ok e value and good coverage but not good tms overlap
         if eval <= E_VAL_YELLOW and qcov >= Q_COV_THRESH and scov >= S_COV_THRESH:
             return 'yellow'
@@ -279,14 +277,22 @@ def make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
         
     return 'red'
 
-def final_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms):
-    decision = make_decision(eval, qcov, scov, pfam_doms, fusions, tmoverlap, tcdb_tms)
+def final_decision(row, fusions, tcdb_tms):
+    eval = eVal(row)
+    qcov = qCoverage(row)
+    scov = hCoverage(row)
+    pfam_doms = pfamDoms(row)
+    tmoverlap = overlap_percent(row)
+    decision = make_decision(row, fusions, tcdb_tms)
     if decision == 'fusion found':
-        return assign_if_fusion(fusions, tcdb_tms)
+        # if assign_if_fusion returns red its a false fusion or unlikely
+        if assign_if_fusion(fusions, tcdb_tms) == 'red':
+            return make_decision(eval, qcov, scov, pfam_doms, [], tmoverlap, tcdb_tms)
+        else:
+            return assign_if_fusion(fusions, tcdb_tms)
     else:
         return decision
 
-parseTCDBcontent()
 
 # This function will check the tcdbSystems dictionary for the tcid given 
 def isSingleComp(row):
@@ -302,48 +308,59 @@ def categorizeSingleComp(row):
     row_to_write = row.tolist()
     sortedGeneArr = []
     fusions = ''
+    tcid = row['Hit_tcid']
+    tcdb_tms = row['Hit_n_TMS']    
+    fus_list = []
     fusion_results= geneFusions[row["Hit_tcid"] + "-" + row["Hit_xid"]]
+
     if(len(fusion_results) !=1):
         sortedGeneArr = sorted(fusion_results, key=lambda x: x['sstart'])
         if(len(isFusion(sortedGeneArr))!=0):
             sortedGeneArr = isFusion(sortedGeneArr)
             for k in range(0, len(sortedGeneArr)):
                 fusions += sortedGeneArr[k]['query'] + ' '
-                
             row_to_write.append(fusions)
         else:
+            sortedGeneArr = []
             row_to_write.append(fusions)
     else:
         row_to_write.append(fusions)
+    if assign_if_fusion(sortedGeneArr, tcdb_tms) == 'red':
+        sortedGeneArr = []
     
-    if row['#Query_id'] == 'WP_013242732.1':
-        print('start debugging')
-
-    tcdb_tms = row['Hit_n_TMS']
-
-    if final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'green':
+    if tcid == '2.A.6.6.11':
+        print(tm_overlap_decision(row))
+        #print(tcdb_tms)
+    if len(fusions) > 0:
+        fus_list = fusions.split(' ')
+        if row['#Query_id'] not in fus_list:
+            row_to_write.pop()
+            row_to_write.append('')
+    fus_color = ''
+    if len(fusions) != 0:
+        fus_color = assign_if_fusion(sortedGeneArr, tcdb_tms)
+    if tcid in tcid_assignments:
+        return (tcid_assignments[tcid], row_to_write)
+    
+    decision = final_decision(row, sortedGeneArr, tcdb_tms)
+    if tcid == '1.B.12.3.3':
+        print(decision)
+    if decision == 'green':
         green[row.get(key='#Query_id')] = row_to_write
+        tcid_assignments[row.get(key='Hit_tcid')] = 'Green'
         return ('Green', row_to_write)
-    elif final_decision(eVal(row), qCoverage(row), hCoverage(row), pfamDoms(row), sortedGeneArr, overlap_percent(row), tcdb_tms) == 'yellow':
+    elif decision == 'yellow':
         yellow[row.get(key='#Query_id')] = row_to_write
+        tcid_assignments[row.get(key='Hit_tcid')] = 'Yellow'
         return ('Yellow', row_to_write)
-    else:
+    elif decision == 'red':
         red[row.get(key='#Query_id')] = row_to_write
+        tcid_assignments[row.get(key='Hit_tcid')] = 'Red'
         return ('Red', row_to_write)
+
     
 
     
-##with open('hmmtop.out') as f:
-hmmtop_path=GENOME+ "/hmmtop.out"
-##Test db file
-'''
-with open(hmmtop_path_db, "rb") as file:
-        
-        db_data = pic.load(file)
-        print(type(db_data))
-        csv_file_path = "hmmtop_test_db.csv"  
-        pd.DataFrame.from_dict(db_data).to_csv(csv_file_path, index=False)
-'''
 def execute_command(command):
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     while True:
@@ -358,46 +375,10 @@ def execute_command(command):
     else:
         print(f"command'{command}'fail")
 
-print(hmmtop_path)
-print(os.path.exists(hmmtop_path))        
-if not os.path.exists(hmmtop_path):
-    TCDB_seqs = GENOME + "analysis/mcs_tcids"
-    if os.path.exists(TCDB_seqs):
-        os.system(f"rm -r {TCDB_seqs}")
-    os.mkdir(TCDB_seqs)
-    data = pd.read_csv(args.genome + '/results.tsv', sep='\t')
-    hit_tcid_array = data['Hit_tcid'].unique()
-    try:
-        with open(GENOME + '/analysis/mcs_tcids.txt', 'w') as f:
-            for tcid in hit_tcid_array:
-                f.write(tcid + '\n')
-            f.close()
-    except Exception as e:
-        print("An error occurred:", str(e))
-    command_1=[f"extractTCDB.pl -i {GENOME}/analysis/mcs_tcids.txt -o {GENOME}/analysis/mcs_tcids -f fasta"]
-    print(command_1)
-    joined_commands = ';'.join(command_1)
-    execute_command(joined_commands)
-    command2=f"cd {args.genome};rm -f all.faa;cat analysis/mcs_tcids/*faa >> all.faa &&hmmtop -if=all.faa -of=hmmtop.out -sf=FAS -pi=spred -is=pseudo"
-    print(command2)
-    execute_command(command2)
-
-with open(hmmtop_path) as f:
-    lines = f.readlines()
-    hmmtop_df = pd.DataFrame(columns=['Hit_tcid', 'Hit_xid', 'Hit_n_TMS','Match_length'])
-    ##Create a dataframe that include above columns 
-    for line in lines:
-        fields = re.split(r'[ -]+', line.strip())
-        ##split the system and protein names
-        new_col=[fields[2],fields[3],fields[5]]
-        new_row = pd.Series([fields[2],fields[3],fields[5],fields[1]], index=hmmtop_df.columns)
-        hmmtop_df.loc[len(hmmtop_df)] = new_row
-    hmmtop_df['Hit_n_TMS'] = hmmtop_df['Hit_n_TMS'].astype(int)
-
 # returns empty list when there are no membrane proteins found. 
 # otherwise returns list of membrane protein accessions.
 def FindMembraneProtein(row,df):
-
+    
     if isSingleComp(row): ##get rid of single comp system first
         return ([])
     tcid = row["Hit_tcid"]
@@ -464,19 +445,19 @@ def multicomp_decision(tcdb_proteins, protein_type, mem_dict, tc_filter_arr):
         membrane_proteins_accessions = list(mem_dict["Hit_xid"].values())
         membrane_proteins_tcids = list(mem_dict["Hit_tcid"].values())
         membrane_tmss = list(mem_dict["Hit_n_TMS"].values())
-
+        
+        membrane_proteins = membrane_proteins_accessions
         for i in range(0, len(membrane_proteins_accessions)):
             protein = membrane_proteins_tcids[i] + '-' + membrane_proteins_accessions[i]
-            membrane_proteins.append(protein)
             membrane_protein_tms[protein] = membrane_tmss[i]
-        
+            membrane_tmss = list(mem_dict['Hit_n_TMS'].values()) 
         # sorts the dictionary based on ascending tms values
         membrane_protein_tms = {k: membrane_protein_tms[k] for k in sorted(membrane_protein_tms, key=membrane_protein_tms.get, reverse=True)}
         for key in membrane_protein_tms:
             max_tms = membrane_protein_tms[key]
             break
     
-    
+     
     # if beta barrell and most proteins are in the system should be yellow->green
     if protein_type == '1.B' and abs(len(tcdb_proteins) - len(tc_filter_arr)) <= 2:
         return 'yellow->green'
@@ -488,7 +469,7 @@ def multicomp_decision(tcdb_proteins, protein_type, mem_dict, tc_filter_arr):
                 break
     else:
         for protein in membrane_proteins:
-            accession = protein.split('-')[1]
+            accession = protein
             if accession not in tc_filter_arr:
                 all_mems_found = False
                 break
@@ -553,23 +534,56 @@ def isMultiComp(row,df,input):
     sortedGeneArr = []
     if(len(Fusion_results) !=1):
         sortedGeneArr = sorted(Fusion_results, key=lambda x: x['sstart'])
-        Fusion_Add=[x["query"] for x in isFusion(sortedGeneArr)]             
+        if len(isFusion(sortedGeneArr)) != 0:
+            Fusion_Add=[x["query"] for x in isFusion(sortedGeneArr)]
+        else:
+            sortedGeneArr = []
     tc_arr = tcdbSystems.get(tcid)
     tc_all_arr= [arr.split("-")[1] for arr in tc_arr] ##All the proteins that TCDB provide
     tc_filter_arr= list(filter(lambda x: (len(df.query(f"Hit_xid=='{x}' and Hit_tcid=='{tcid}'"))) !=0, tc_all_arr))
     tc_missing_arr= list(set(tc_all_arr) - set(tc_filter_arr))
 
     fusions = '' 
-    id = row['#Query_id']
+    qid = row['#Query_id']
+    
+    if len(Fusion_Add) > 0:
+        if qid not in Fusion_Add:
+            Fusion_Add = []       
+
     protein_type = row['Hit_tcid'].split('.')[0] + '.' + row['Hit_tcid'].split('.')[1]
-    if id == 'WP_005280145.1':
-        print('here')
     tcdb_tms = row['Hit_n_TMS']
+    if tcid == '2.A.2.3.3':
+        if tcid in tcid_assignments:
+            print(tcid_assignments[row['Hit_tcid']])
+        else:
+            print('not assigned yet')
+
+
+    if row['Hit_tcid'] in tcid_assignments:
+        if tcid_assignments[tcid] == 'yellow->green':
+            return({"color": 'Green',
+                    "Found_proteins":tc_filter_arr,
+                    "All_proteins":tc_arr,
+                    'Missing_proteins':tc_missing_arr,
+                    "Fusion_results":Fusion_Add,
+                    "isFusion":len(Fusion_Add)>0,
+                    "Initial_decision": 'Yellow'})
+        return({"color": tcid_assignments[row['Hit_tcid']],
+                "Found_proteins":tc_filter_arr,
+                "All_proteins":tc_arr,
+                'Missing_proteins':tc_missing_arr,
+                "Fusion_results":Fusion_Add,
+                "isFusion":len(Fusion_Add)>0,
+                "Initial_decision": tcid_assignments[row['Hit_tcid']]})
+    
     if(set(tc_all_arr)==set(tc_filter_arr)):##If all the proteins in that system can be found, then green
         #print(tc_arr)
         #print("green",tc_filter_arr,"Fusion Results:",Fusion_Add)
-       
-        if(eVal(row) <= E_VAL_GREEN and qCoverage(row) >= Q_COV_THRESH and hCoverage(row) >= S_COV_THRESH and len(pfamDoms(row)) != 0 and tm_overlap_decision(row) == True):
+        #if tcid == '3.A.1.12.4':
+        #    print(eVal(row) <= E_VAL_GREEN and qCoverage(row) >= Q_COV_THRESH and hCoverage(row) >= S_COV_THRESH and len(pfamDoms(row)) != 0 and tm_overlap_decision(row) == True)
+        #if(eVal(row) <= E_VAL_GREEN and qCoverage(row) >= Q_COV_THRESH and hCoverage(row) >= S_COV_THRESH and len(pfamDoms(row)) != 0 and tm_overlap_decision(row) == True):
+        if(eVal(row) <= E_VAL_GREEN and qCoverage(row) >= Q_COV_THRESH and hCoverage(row) >= S_COV_THRESH and len(pfamDoms(row)) != 0 and tm_overlap_decision(row) == True):    
+            tcid_assignments[row['Hit_tcid']] = 'Green'
             return({"color":"Green",
                     "Found_proteins":tc_filter_arr,
                     "All_proteins":tc_arr,
@@ -599,10 +613,27 @@ def isMultiComp(row,df,input):
     if row['Hit_tcid'] == '2.A.63.1.1':
         print(decision)
         print(len(set(tc_filter_arr)))
+<<<<<<< Updated upstream
     # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
     if (total_tcmem > 0 and input <= float(count_mem / total_tcmem)) or (len(set(tc_filter_arr))>0 and isEmpty(MembraneProteins)):
         ##given some proteins can be found while containing the membrane proteins 
+=======
+    if len(tc_missing_arr) == 0 and final_decision(row, sortedGeneArr, tcdb_tms) == 'yellow':
+        tcid_assignments[row['Hit_tcid']] = 'Yellow'
+        return({"color":"Yellow",
+                "Found_proteins":tc_filter_arr,
+                "All_proteins":tc_arr,
+                'Missing_proteins':tc_missing_arr,
+                "Fusion_results":Fusion_Add,
+                "isFusion":len(Fusion_Add)>0,
+                'Initial_decision': 'Yellow'})
+    # if(input*len(tc_all_arr)<=len(tc_filter_arr)) and len(set(MembraneProteins) & set(tc_filter_arr))>0:
+    if (total_tcmem > 0 and input <= float(count_mem / total_tcmem)) or (len(set(tc_filter_arr))>0 and isEmpty(MembraneProteins)):
+        ##given some proteins can be found while containing the membrane proteins
+        if final_decision(row, sortedGeneArr, tcdb_tms) == 'yellow' or final_decision(row, sortedGeneArr, tcdb_tms) == 'green':
+>>>>>>> Stashed changes
             if decision == 'yellow':
+                tcid_assignments[row['Hit_tcid']] = 'Yellow'
                 return({"color":"Yellow",
                         "Found_proteins":tc_filter_arr,
                         "All_proteins":tc_arr,
@@ -611,6 +642,7 @@ def isMultiComp(row,df,input):
                         "isFusion":len(Fusion_Add)>0, 
                         'Initial_decision': 'Yellow'})
             elif decision == 'yellow->green':
+                tcid_assignments[tcid] = 'yellow->green'
                 return({"color":"Green",
                         "Found_proteins":tc_filter_arr,
                         "All_proteins":tc_arr,
@@ -619,7 +651,7 @@ def isMultiComp(row,df,input):
                         "isFusion":len(Fusion_Add)>0,
                         'Initial_decision': 'Yellow'})
 
-
+    tcid_assignments[row['Hit_tcid']] = 'Red'
     return({"color":"Red",
             "Found_proteins":tc_filter_arr,
             "All_proteins":tc_arr,
@@ -628,12 +660,6 @@ def isMultiComp(row,df,input):
             "isFusion":len(Fusion_Add)>0,
             'Initial_decision': 'Red'})
    
-
-
-
-
-
-parseTCDBcontent()
 
 
 '''    
@@ -669,7 +695,7 @@ def Write_multicomp(Output_dict,Output_df_row):
         Intermediate['Missing_components'] = str(Output_dict['Missing_proteins'])
     Intermediate['Initial_decision'] = Output_dict['Initial_decision']
     filename=f"{Output_dict['color']}.tsv"
-    filename = GENOME + 'analysis/' + filename
+    filename = GENOME + '/analysis/' + filename
     filemode='a' if os.path.exists(filename) else 'w' 
     #print(Intermediate)
     with open(filename, mode=filemode, encoding='utf-8') as f:
@@ -700,7 +726,7 @@ def write_singlecomp(output_dict,Output_df_row):
     Intermediate['Missing_components']= missing_proteins
     Intermediate['Initial_decision'] = 'NA'
     filename=f"{color}.tsv"
-    filename = GENOME + 'analysis/' + filename
+    filename = GENOME + '/analysis/' + filename
 
     filemode='a' if os.path.exists(filename) else 'w' 
     #print(Intermediate)
@@ -710,10 +736,6 @@ def write_singlecomp(output_dict,Output_df_row):
 
 
 
-
-geneFusions={}
-Missing_protein_list=[]
-genDict(geneFusions, GENOME)
 
 def remove_duplicates(input_file, output_file):
     seen = set()  # Track seen rows
@@ -742,51 +764,182 @@ def custom_sort(row):
     num4 = int(parts[4])
     return num1, letter, num2, num3, num4
 
-for filename in [GENOME + "analysis/Green.tsv",GENOME + "analysis/Red.tsv",GENOME + "analysis/Yellow.tsv"]:
-    if os.path.exists(filename):
-        os.remove(filename)
-        
-
-for index, row in df.iterrows():
-    single = isSingleComp(row)
-
-    # if row['Hit_tcid'] == '1.C.3.4.2':
-    #     print('here')
-    if(not single):
-        Output_dict = isMultiComp(row, df, 0.5)
-        Write_multicomp(Output_dict,Output_df.loc[[index],Output_df.columns])
-    else:
-        output_dict = categorizeSingleComp(row)
-        write_singlecomp(output_dict, Output_df.loc[[index],Output_df.columns])
-
-input_files = ['Green.tsv', 'Red.tsv', 'Yellow.tsv']
-output_files = ['Green_adj.tsv', 'Red_adj.tsv', 'Yellow_adj.tsv']
-
-for i in range(len(input_files)):
-    in_file = GENOME + '/analysis/' + input_files[i]
-    out = GENOME + '/analysis/' + output_files[i]
-    remove_duplicates(in_file, out)
-
-
-print([GENOME + "Green.tsv",GENOME + "Red.tsv",GENOME + "Yellow.tsv"])
-for filename in [GENOME + "analysis/Green.tsv",GENOME + "analysis/Red.tsv",GENOME + "analysis/Yellow.tsv"]: 
-    if os.path.exists(filename):
-        df = pd.read_csv(filename, sep='\t')
-        df = df.fillna('NA')
-        NA_count = df.eq('NA').sum(axis=1).rename('NA_count')
-        df['na_sort'] = NA_count
-        df = df.sort_values(by=['Hit_tcid','na_sort']).drop(columns=['na_sort'])
-        mask = (df['#Query_id'] == 'NA') & (df['e-value'] == 'NA')
-        df_temp = df.loc[mask] 
-        df_temp.drop_duplicates(subset=['Hit_tcid','Hit_xid'], keep='first', inplace=True) 
-        df.loc[mask] = df_temp
-        df.dropna(inplace=True)
-        df.to_csv(filename, sep='\t', index=False)
-        # df.sort_values(by=df.columns[0], key=lambda x: x.map(custom_sort))
-        command = f"sort -o {filename} -t '.' -k1,1n -k2,2 -k3,3n -k4,4n -k5,5n {filename}"
-        subprocess.run(command, shell=True)
-        
-   
         
 
     #print(Output_dict)
+
+def main():
+#def run():
+    # GENOME = 'MicrobiomeResults/GCF_000013425.1'  # we can make this a command line argument
+    
+    parser = argparse.ArgumentParser(description='Microbiome analysis script')
+    parser.add_argument('-g', '--genome', type=str, help='Genome ID')
+    parser.add_argument('-q', '--qcov', type=float, help='Query coverage threshold')
+    parser.add_argument('-s', '--scov', type=float, help='Subject coverage threshold')
+    parser.add_argument('-r', '--autored', type=float, help='Lowest possible coverage allowed')
+    parser.add_argument('-m', '--membrane', type=int, help='Membrane proteins threshold')
+    parser.add_argument('-t', '--tmsdiff', type=int, help='Lowest amount of TMSs to be a Membrane Protein')
+    args = parser.parse_args()
+    '''
+    if not os.path.exists(args.genome):
+        print(f"Genome folder not found: {args.genome}")
+        exit()
+    '''
+    global GENOME
+    global Q_COV_THRESH
+    global S_COV_THRESH
+    global AUTO_RED
+    global Membraneprotein_threshold
+    global Hit_TMS_Diff
+    global df
+
+    if args.genome is not None:
+        GENOME = args.genome
+    elif len(GENOME) == 0:
+        return 'Genome not provided'
+    if args.qcov is not None:
+        Q_COV_THRESH = args.qcov
+    if args.scov is not None:
+        S_COV_THRESH = args.scov
+    if args.autored is not None:
+        AUTO_RED = args.autored
+    if args.membrane is not None:
+        Membraneprotein_threshold = args.membrane
+    if args.tmsdiff is not None:
+        Hit_TMS_Diff = args.tmsdiff
+    print('starting')
+    # construct df with all data from results.tsv
+    df = pd.read_table(GENOME + '/results.tsv')
+    setGenome(GENOME)
+    # print columns of df for dev use in constructing filtered_df later
+    print(GENOME)
+    if not os.path.exists(GENOME + '/analysis/'):
+        os.mkdir(GENOME + '/analysis')
+
+    # create empty dfs for tagging with green, yellow, and red labels
+    green_df = df.copy()
+    green_df = green_df.iloc[0:0]
+    yellow_df = green_df.copy()
+    red_df = green_df.copy()
+
+    # construct filtered_df with only relevant data points for each protein matche
+    filtered_df = df[['#Query_id', '%_identity', 'e-value', 'Q_start', 'Q_end', 'S_start', 'S_end', 
+    'Query_Coverage', 'Hit_Coverage', 'Query_Pfam']]
+    print('adjusting overlap score')
+    adjustOverlapScore(df)
+
+    Output_df= df[['Hit_tcid','Hit_xid','#Query_id','Match_length','e-value','%_identity','Query_Length','Hit_Length','Q_start',
+    'Q_end','S_start','S_end','Query_Coverage','Hit_Coverage','Query_n_TMS','Hit_n_TMS','TM_Overlap_Score','Family_Abrv'
+    ,'Predicted_Substrate','Query_Pfam','Subject_Pfam']]
+
+    df.to_csv('adj.csv', index=False)
+
+    # To distinguish between single and multiple component systems. 
+    # Example content:
+    #  1.A.1.1.1 =>  ["1.A.1.1.1-P0A334"],
+    #  3.A.1.1.1 =>  ["3.A.1.1.1-P02916", ""3.A.1.1.1-XXXXX", "3.A.1.1.1-YYYYYY", "3.A.1.1.1-ZZZZZZZZZ"],
+    #  ....
+
+    input = open("tcdb.faa")
+
+
+    parseTCDBcontent(input)
+
+    ##with open('hmmtop.out') as f:
+    hmmtop_path=GENOME+ "/analysis/hmmtop.out"
+    ##Test db file
+    '''
+    with open(hmmtop_path_db, "rb") as file:
+            
+            db_data = pic.load(file)
+            print(type(db_data))
+            csv_file_path = "hmmtop_test_db.csv"  
+            pd.DataFrame.from_dict(db_data).to_csv(csv_file_path, index=False)
+    '''
+    print(hmmtop_path)
+    print(os.path.exists(hmmtop_path))        
+    if not os.path.exists(hmmtop_path):
+        TCDB_seqs = GENOME + "/analysis/mcs_tcids"
+        if os.path.exists(TCDB_seqs):
+            os.system(f"rm -r {TCDB_seqs}")
+        os.mkdir(TCDB_seqs)
+        data = pd.read_csv(GENOME + '/results.tsv', sep='\t')
+        hit_tcid_array = data['Hit_tcid'].unique()
+        try:
+            with open(GENOME + '/analysis/mcs_tcids.txt', 'w') as f:
+                for tcid in hit_tcid_array:
+                    f.write(tcid + '\n')
+                f.close()
+        except Exception as e:
+            print("An error occurred:", str(e))
+        command_1=[f"extractTCDB.pl -i {GENOME}/analysis/mcs_tcids.txt -o {GENOME}/analysis/mcs_tcids -f fasta"]
+        print(command_1)
+        joined_commands = ';'.join(command_1)
+        execute_command(joined_commands)
+        command2=f"cd {GENOME};cat analysis/mcs_tcids/*faa > analysis/all.faa &&hmmtop -if=analysis/all.faa -of=analysis/hmmtop.out -sf=FAS -pi=spred -is=pseudo"
+        print(command2)
+        execute_command(command2)
+        
+        
+    with open(hmmtop_path) as f:
+        lines = f.readlines()
+        ##Create a dataframe that include above columns 
+        for line in lines:
+            fields = re.split(r'[ -]+', line.strip())
+            ##split the system and protein names
+            new_col=[fields[2],fields[3],fields[5]]
+            new_row = pd.Series([fields[2],fields[3],fields[5],fields[1]], index=hmmtop_df.columns)
+            hmmtop_df.loc[len(hmmtop_df)] = new_row
+        hmmtop_df['Hit_n_TMS'] = hmmtop_df['Hit_n_TMS'].astype(int)
+    
+    parseTCDBcontent(input)
+    Missing_protein_list=[]
+    genDict(geneFusions, GENOME)
+    for filename in [GENOME + "/analysis/Green.tsv",GENOME + "/analysis/Red.tsv",GENOME + "/analysis/Yellow.tsv"]:
+        if os.path.exists(filename):
+            os.remove(filename)
+            
+
+    for index, row in df.iterrows():
+        single = isSingleComp(row)
+
+        # if row['Hit_tcid'] == '1.C.3.4.2':
+        #     print('here')
+        if(not single):
+            Output_dict = isMultiComp(row, df, 0.5)
+            # tcid_assignments[row['Hit_tcid']] = Output_dict['color']
+            Write_multicomp(Output_dict,Output_df.loc[[index],Output_df.columns])
+        else:
+            output_dict = categorizeSingleComp(row)
+            if row['Hit_tcid'] == '2.A.2.3.3':
+                print(output_dict)
+            write_singlecomp(output_dict, Output_df.loc[[index],Output_df.columns])
+
+    input_files = ['Green.tsv', 'Red.tsv', 'Yellow.tsv']
+    output_files = ['Green_adj.tsv', 'Red_adj.tsv', 'Yellow_adj.tsv']
+
+    for i in range(len(input_files)):
+        in_file = GENOME + '/analysis/' + input_files[i]
+        out = GENOME + '/analysis/' + output_files[i]
+        remove_duplicates(in_file, out)
+
+
+    print([GENOME + "Green.tsv",GENOME + "Red.tsv",GENOME + "Yellow.tsv"])
+    for filename in [GENOME + "/analysis/Green.tsv",GENOME + "/analysis/Red.tsv",GENOME + "/analysis/Yellow.tsv"]: 
+        if os.path.exists(filename):
+            df = pd.read_csv(filename, sep='\t')
+            df = df.fillna('NA')
+            NA_count = df.eq('NA').sum(axis=1).rename('NA_count')
+            df['na_sort'] = NA_count
+            df = df.sort_values(by=['Hit_tcid','na_sort']).drop(columns=['na_sort'])
+            mask = (df['#Query_id'] == 'NA') & (df['e-value'] == 'NA')
+            df_temp = df.loc[mask] 
+            df_temp.drop_duplicates(subset=['Hit_tcid','Hit_xid'], keep='first', inplace=True) 
+            df.loc[mask] = df_temp
+            df.dropna(inplace=True)
+            df.to_csv(filename, sep='\t', index=False)
+            # df.sort_values(by=df.columns[0], key=lambda x: x.map(custom_sort))
+            command = f"sort -o {filename} -t '.' -k1,1n -k2,2 -k3,3n -k4,4n -k5,5n {filename}"
+            subprocess.run(command, shell=True)
+
+main()

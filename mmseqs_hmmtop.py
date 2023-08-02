@@ -262,7 +262,6 @@ def overlapDict(mmseqsDict, hmmtopDict, minRes):
         return overlaps
 
 
-	
     for key in mmseqsDict:
         qaln = mmseqsDict[key]['qaln']
         taln = mmseqsDict[key]['taln']
@@ -289,8 +288,9 @@ def overlapDict(mmseqsDict, hmmtopDict, minRes):
         targetAndOverlap['target'] = tAccession
         targetAndOverlap['alignedTMS'] = overlaps
 
-        overlap_dict[key] = targetAndOverlap
-
+        overlap_dict[key] = targetAndOverlap	
+   
+        
     return overlap_dict
 
 
