@@ -84,7 +84,6 @@ def isFusion(sortedArr):
     elif (tot_length/fus_list[0]['hit_length'])*100 < MIN_FUSION_COVERAGE:
         return []
     elif len(fusion_groups) > 1:
-        print(fus_list)
         return fus_list
     else:
         return []
