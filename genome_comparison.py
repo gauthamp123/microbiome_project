@@ -6,18 +6,69 @@ import pandas as pd
 import argparse
 import pickle as pic
 import os
+import math
 import subprocess
 #from Bio.SearchIO import FastaIO
 from Bio import SearchIO
-NUM_GENOMES = 2
 
 master_table_columns = ['Hit_tcid', 'Hit_xid', 'CE', 'hit_tms_no', 'Genome1', 'Genome2']
 template = pd.DataFrame(columns=master_table_columns)
 sw_output = {}
 genomes = []
-
+matches = {}
+query_tms = {}
+query_to_run = []
 
 tms_info = {}
+
+def get_matches(directory):
+    files = os.listdir(directory + '/greens')
+    
+    for file in files:
+        df = pd.read_table(os.path.join(directory + '/greens', file))
+        
+        genome = file.split('.')[0] + '.' + file.split('.')[1]
+        genome = genome.split('_')[0] + '_' + genome.split('_')[1]
+        matches[genome] = {}
+        
+        protein_tcid_dict = {}
+
+        with open(directory + '/' + genome + '/tcdbprots.txt', 'r') as f:
+            lines = f.readlines()
+
+        for line in lines:
+            tc_acc = line.strip()
+            protein_tcid_dict[tc_acc.split('-')[0]] = tc_acc.split('-')[1]
+
+        for index, row  in df.iterrows():
+            tc_acc = ''
+            if row['Hit_tcid'] not in protein_tcid_dict:
+                xid = row['Hit_xid']
+                fix_cmd = f'grep {xid} ~/db/blastdb/tcdb.faa'
+                correct_tcdb = subprocess.run([fix_cmd], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, text=True).stdout.strip().split('>')[1]
+                tc_acc = correct_tcdb
+            else:
+                tc_acc = row['Hit_tcid'] + '-' + row['Hit_xid']
+
+
+            if tc_acc in matches[genome]:
+                matches[genome][tc_acc].append(row['#Query_id'])
+            else:
+                matches[genome][tc_acc] = [row['#Query_id']]
+            
+
+            #query_tms[row['#Query_id']] = row['Query_n_TMS']
+            #print(type(row['Query_n_TMS']))
+
+def is_float(string):
+    try:
+        float(string)
+        return True
+
+    except ValueError:
+        return False
+
+'''
 def extract_pickle(hmmtop_file, genome):
     query_data = {}
     target_data = {}
@@ -36,7 +87,7 @@ def extract_pickle(hmmtop_file, genome):
         target_data[new_key] = data['tcdb'][key]
     
     tms_info[genome] = {'target_data': target_data, 'query_data': query_data}
-
+'''
 # PRE-CONDITION: all green files are located within a directory titled greens/ and there is an hmmtop.db file for each genome being worked with
 def getSmithWaterman(directory):
     row_to_add = template.copy()
@@ -48,8 +99,6 @@ def getSmithWaterman(directory):
         genome = file.split('.')[0] + '.' + file.split('.')[1]
         genome = genome.split('_')[0] + '_' + genome.split('_')[1] 
         genomes.append(genome)
-        hmmtop_file = '/ResearchData/Microbiome/gblast/' + genome + '/hmmtop.db'
-        extract_pickle(hmmtop_file, genome)
         
 
         if os.path.exists(directory + '/' + genome) and os.path.isdir(directory + '/' + genome):
@@ -97,7 +146,7 @@ def getSmithWaterman(directory):
     
         with open(directory + '/' + genome + '/queryprots.txt', 'w') as f:
             for protein in query_proteins:
-                if protein != 'NA':
+                if is_float(protein) == False and protein != 'nan' and protein != 'NA':
                     f.write(protein + '\n')
                 else:
                     f.write('none' + '\n')
@@ -146,37 +195,75 @@ def getSmithWaterman(directory):
         print(genome + ' done')
 
 
-
+# PRE-CONDITION: all green files are labeled with the genome and all genome files have ssearch.out
 def parse_sw(directory):
+    get_matches(directory)
     dirs = os.listdir(directory)
+    matches_recorded = {}
     for d in dirs:
         if os.path.exists(directory + '/' + d) and os.path.isdir(directory + '/' + d):
             if 'ssearch.out' in os.listdir(directory + '/' + d):
+                print(d)
                 file_path = os.path.join(directory + '/' + d, 'ssearch.out')
                 search_results = SearchIO.parse(file_path, "fasta-m10")
                 sw_output[d] = {}
+                been_matched = []
+
+                matches_recorded[d] = {}
                 for search_result in search_results:
-                    
+
                     for query in search_result:
+                        #print(query)
+                        #exit()
+                        #tcacc_len = search_result.seq_len
+                        #temp['query_len'] = tcacc_len
+                        #temp['query_id'] = search_result.id
                         # QueryResult
-                        sw_output[d][query.id] = {}
-                        #sw_output[query_id]['target'] = query.target
+                       
+
+                        if search_result.id in sw_output[d] and query.id not in matches[d][search_result.id]:
+                            continue
+                            
+                        comps_found = []
                         for hit in query:
                             # HSP
-                            # sw_output[query_id]['Hit_id'] = hit.id
-                            sw_output[d][query.id]['eval'] = hit.evalue
-                            sw_output[d][query.id]['pident'] = hit.ident_pct
-                            sw_output[d][query.id]['hit_seq'] = str(hit.query.seq)
-                            sw_output[d][query.id]['hit_id'] = hit.query.id
-                            sw_output[d][query.id]['hit_start'] = hit.query_start
-                            sw_output[d][query.id]['hit_end'] = hit.query_end
-                            sw_output[d][query.id]['query_seq'] = str(hit.hit.seq)
-                            sw_output[d][query.id]['query_start'] = hit.hit_start
-                            sw_output[d][query.id]['query_end'] = hit.hit_end
+                            if search_result.id == '3.A.1.134.11-Q9RL74' and d == 'GCF_000013425.1':
+                                print('here')
 
+                            temp = {}
+                            temp['query_len'] = search_result.seq_len
+                            temp['query_id'] = search_result.id
+
+                            temp['hit_len'] = query.seq_len
+                            
+                            temp['hit_id'] = hit.hit.id
+                            temp['eval'] = hit.evalue
+                            temp['pident'] = int(hit.ident_pct)
+                            temp['query_seq'] = str(hit.query.seq)
+                            temp['query_start'] = hit.query_start + 1
+                            temp['query_end'] = hit.query_end
+                            temp['hit_seq'] = str(hit.hit.seq)
+                            temp['hit_start'] = hit.hit_start + 1
+                            temp['hit_end'] = hit.hit_end
                             
 
 
+                            if search_result.id in sw_output[d] and hit.hit.id in matches[d][search_result.id] and hit.hit.id not in comps_found:
+                                for match in matches[d][search_result.id]:
+                                    if match == hit.hit.id and hit.hit.id not in matches_recorded[d][search_result.id] and temp['hit_id'] not in been_matched and float(temp['eval']) < 1e-3:
+                                        sw_output[d][search_result.id].append(temp)
+                                        matches_recorded[d][search_result.id].append(temp['hit_id'])
+                                        been_matched.append(temp['hit_id'])
+                                        comps_found.append(temp['hit_id'])
+
+                            if search_result.id not in sw_output[d] and float(temp['eval']) < 1e-3 and hit.hit.id in matches[d][search_result.id]:
+                                sw_output[d][search_result.id] = [temp]
+                                matches_recorded[d][search_result.id] = [temp['hit_id']]
+                                been_matched.append(temp['hit_id'])
+                                comps_found.append(temp['hit_id'])
+                    
+
+'''
 # TODO: ask R2 if we can still use the info from hmmtop.db as that was from blast results
 def getTMOverlap():
     for genome in genomes:
@@ -198,35 +285,35 @@ def getTMOverlap():
                     tms_dict[query] = len(qtms['tms'])
                     if query not in hmmtop_dict:
                         hmmtop_dict[query] = qtms
+'''
 
-
-
+# Given a query it returns its data in df format
 def getInfoAsRow(genome, query):
     #TODO: ask Rif if he wants data as a dict or df
+    
     if genome not in sw_output:
         print('Genome not been processed: ' + genome)
         return
 
     genome_data = sw_output[genome]
+    
+    
 
     if query not in genome_data:
-        print('Query was not processed: ' + query)
+        raise Exception('Query was not processed: ' + query)
         return 
-
+    
+    
     query_data = genome_data[query]
-   
-    df = pd.DataFrame.from_dict(query_data, orient='index')
-    df.insert(0, 'query', query)
 
+    df = pd.DataFrame(query_data)
 
     return df
 
 
 
-parse_sw('/Users/gautham/microbiome_project/test_comparisons')
 #getSmithWaterman('/Users/gautham/microbiome_project/test_comparisons')
-print(getInfoAsRow('GCF_008632635.1', 'WP_150205269.1'))
-
-
+#parse_sw('/Users/gautham/microbiome_project/test_comparisons')
+#print(getInfoAsRow('GCF_000013425.1', '3.A.1.134.11-Q9RL74'))
 
 
